@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/activation_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/base"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/connection_history_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_addressbook_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/event_delivery"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/event_repository"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/events"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/license_management"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/location_capture"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/PhoenixProtocol"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/preference_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/util"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/app_context"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/data_delivery_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/configuration_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/server_address_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_bridge"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

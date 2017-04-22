@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.vvt.eventdelivery.tests"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7" />
+	
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    
+    <instrumentation android:targetPackage="com.vvt.eventdelivery.tests" android:name="android.test.InstrumentationTestRunner"></instrumentation>
+    
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".Event_delivery_testsActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+	<uses-library android:name="android.test.runner" />
+    </application>
+</manifest>

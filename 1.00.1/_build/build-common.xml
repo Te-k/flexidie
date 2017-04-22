@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="build-common" default="">
+	
+	<property file="environment.properties"/>
+	<property file="common.properties"/>
+	<property file="build.properties"/>
+	<import file="dependencies.xml"/>
+
+	<property name="classes.dir" value="${build.dir}/${classes.dir.name}"/>
+    <property name="classes.location" value="${basedir}/${classes.dir}"/>
+	<property name="jar.dir" value="${build.dir}/${jar.dir.name}"/>
+	<property name="jar.file" value="${ant.project.name}.jar"/>
+    <!-- dx does not properly support incorrect / or \ based on the platform
+         and Ant cannot convert them because the parameter is not a valid path.
+         Because of this we have to compute different paths depending on the platform. -->
+    <condition property="intermediate.dex.location"
+            value="${basedir}\${intermediate.dex}"
+            else="${basedir}/${intermediate.dex}">
+        <os family="windows"/>
+    </condition>
+
+	<target name="clean.build.dependencies" description="Clean build all dependency projects">
+		<antcall target="depend.${ant.project.name}"/>
+	</target>
+
+	<!--
+	Useful macros/tasks ===========================================================================
+	-->
+	
+	<taskdef name="eclipse" classname="prantl.ant.eclipse.EclipseTask" 
+		classpath="${build.scripts.dir}/ant-lib/ant-eclipse-1.0-jvm1.2.jar"/>
+	
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+		<classpath>
+			<pathelement location="${build.scripts.dir}/ant-lib/ant-contrib-1.0b3.jar"/>
+		</classpath>
+	</taskdef>
+	
+	<taskdef resource="proguard/ant/task.properties"
+	         classpath="${build.scripts.dir}/ant-lib/proguard.jar" />
+	
+	<macrodef name="adb-push" description="Push a local file to the device">
+		<attribute name="localfile"/>
+		<attribute name="devicefile"/>
+		<sequential>
+		<echo>adb-push # ENTER ...</echo>
+		<exec executable="${adb}" failonerror="true">
+			<arg value="${adb.device.param}" />
+			<arg value="push" />
+			<arg value="@{localfile}" />
+			<arg value="@{devicefile}" />
+		</exec>
+		<echo>adb-push # EXIT ...</echo>
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="adb-shell-su_internal" 
+			description="Execute a command as superuser on the device">
+		<attribute name="cmd"/>
+		<attribute name="failonerror"/>
+		<attribute name="output" default="${default.output.file}"/>
+		<attribute name="error" default="${default.error.file}"/>
+    	<sequential>
+    		<echo>adb-shell-su_internal # ENTER ...</echo>
+    		<echo>adb-shell-su_internal # Executing: @{cmd}</echo>
+    		<echo>adb-shell-su_internal # SU command: ${su}</echo>
+			<exec executable="${adb}" 
+				  failonerror="${failonerror}" 
+				  output="@{output}" 
+				  error="@{error}">
+								<arg value="${adb.device.param}" />
+								<arg value="shell" />
+			 		        	<arg value="${su}" />
+			 		        	<arg value="-c" />
+			 		        	<arg line="${quote}@{cmd}${quote}" />
+			</exec>
+    		<concat>
+    			<fileset file="@{output}"/>
+    		</concat>
+    		<echo>adb-shell-su_internal # EXIT ...</echo>
+		</sequential>
+	</macrodef>
+		
+	<macrodef name="adb-shell_internal">
+		<attribute name="cmd"/>
+		<attribute name="failonerror"/>
+    	<sequential>
+    		<echo>adb-shell_internal # ENTER ...</echo>
+    		<echo>adb-shell_internal # Executing: @{cmd}</echo>
+			<exec executable="${adb}" failonerror="${failonerror}">
+								<arg value="${adb.device.param}" />
+								<arg value="shell" />
+			 		        	<arg line="&quot;@{cmd}&quot;" />
+			</exec>
+    		<echo>adb-shell_internal # EXIT ...</echo>
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="adb-shell-su">
+		<attribute name="cmd"/>
+		<sequential>
+			<echo>adb-shell-su # ENTER ...</echo>
+		    <adb-shell-su_internal cmd="@{cmd}" failonerror="true"/>
+			<echo>adb-shell-su # EXIT ...</echo>
+		</sequential>	
+	</macrodef>
+	
+	<macrodef name="adb-shell-su-nofailonerror">
+		<attribute name="cmd"/>
+		<sequential>
+			<echo>adb-shell-su-nofailonerror # ENTER ...</echo>
+		    <adb-shell-su_internal cmd="@{cmd}" failonerror="false"/>
+			<echo>adb-shell-su-nofailonerror # EXIT ...</echo>
+		</sequential>	
+	</macrodef>
+	
+	<macrodef name="adb-shell">
+		<attribute name="cmd"/>
+		<sequential>
+			<echo>adb-shell # ENTER ...</echo>
+		    <adb-shell_internal cmd="@{cmd}" failonerror="true"/>
+			<echo>adb-shell # EXIT ...</echo>
+		</sequential>	
+	</macrodef>
+	
+	<macrodef name="adb-shell-nofailonerror">
+		<attribute name="cmd"/>
+		<sequential>
+			<echo>adb-shell-nofailonerror # ENTER ...</echo>
+		    <adb-shell_internal cmd="@{cmd}" failonerror="false"/>
+			<echo>adb-shell-nofailonerror # EXIT ...</echo>
+		</sequential>	
+	</macrodef>
+	
+	<macrodef name="adb-install">
+		<attribute name="apk.file" />
+		<sequential>
+			<echo>adb-install # ENTER ...</echo>
+			
+			<exec executable="${adb}" failonerror="true">
+				<arg value="install" />
+				<arg value="@{apk.file}" />
+			</exec>
+			
+			<echo>adb-install # EXIT ...</echo>
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="adb-uninstall">
+		<attribute name="apk.package" />
+		<sequential>
+			<echo>adb-uninstall # ENTER ...</echo>
+
+			<exec executable="${adb}" failonerror="true">
+				<arg value="uninstall" />
+				<arg value="@{apk.file}" />
+			</exec>
+			
+			<echo>adb-uninstall # EXIT ...</echo>
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="compile" description="Compile .java files to .class files">
+		<attribute name="classpathref" />
+		<attribute name="source.dir" default="${src.dir}" description="source directory" />
+		<sequential>
+			<echo>compile # ENTER ...</echo>
+			<echo>compile # classpathref=@{classpathref}</echo>
+			<echo>compile # Creating directory ${classes.dir}...</echo>
+	        <mkdir dir="${classes.dir}"/>
+			
+			<echo>compile # Compiling code...</echo>
+	        <javac includeAntRuntime="false" encoding="ascii" target="1.5" debug="true" extdirs=""
+	                destdir="${classes.dir}">
+	            <src path="@{source.dir}" />
+	            <classpath refid="@{classpathref}"/>
+	        </javac>
+			<echo>compile # EXIT ...</echo>
+		</sequential>
+	</macrodef>
+				
+	<macrodef name="obfuscate" description="Obfuscate input JAR to output JAR">
+		<sequential>
+			<if>
+				<equals arg1="${obfuscate.option}" arg2="enable"/>
+				<then>
+					<echo>Obfuscate option is enabled!</echo>
+					<proguard configuration="${build.scripts.dir}/proguard.cfg">
+		                <injar file="${jar.dir}/in.jar"/>
+		                <outjar file="${jar.dir}/out.jar"/>
+		                <libraryjar file="${android.lib.jar}"/>
+		            </proguard>
+				</then>
+				<else>
+					<echo>Obfuscate option is SKIPPED!!</echo>
+					<copy file="${jar.dir}/in.jar" tofile="${jar.dir}/out.jar"/>
+				</else>
+			</if>
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="compile-c">
+		<sequential>
+			<echo>compile-c # ENTER ...</echo>
+			
+			<exec executable="${cygwin.dir}/bin/bash" failonerror="true">
+				<arg value="${cygwin.ndk.path}/ndk-build"/>
+			</exec>
+			
+			<echo>compile-c # EXIT ...</echo>
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="dex" description="Build the dex file">
+		<attribute name="classpathref"/>
+		<sequential>
+			<echo>dex # ENTER ...</echo>
+			<echo>dex # Building DEX...</echo>
+	        <apply executable="${dx}" failonerror="true" parallel="true">
+	            <arg value="--dex"/>
+	            <arg value="--output=${intermediate.dex.location}"/>
+	            <arg path="${jar.dir}/out.jar"/>
+	        	<fileset dir="${libs.dir}" includes="*.jar"/>
+	        </apply>
+			
+			<echo>dex # Finished! The dex file is ${intermediate.dex.location}</echo>
+			<echo>dex # EXIT ...</echo>
+			
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="create-android-project" 
+			description="Creates an android project. After creating you can use Eclipse with the project by New -> Android Project -> Create project from existing source, then choose project folder.">
+		<attribute name="target"/>
+		<attribute name="package"/>
+		<attribute name="activity"/>
+		<attribute name="name"/>
+		<attribute name="path"/>
+		<attribute name="min.sdk.version"/>
+		<sequential>
+			<echo>create-android-project # ENTER ...</echo>
+			<exec executable="${android}" failonerror="true">
+				<arg value="create"/>
+				<arg value="project"/>
+				<arg value="-t"/>
+				<arg value="@{target}"/>
+				<arg value="-k"/>
+				<arg value="@{package}"/>
+				<arg value="-a"/>
+				<arg value="@{activity}"/>
+				<arg value="-n"/>
+				<arg value="@{name}"/>
+				<arg value="-p"/>
+				<arg value="@{path}"/>
+			</exec>
+			<replaceregexp
+				file="@{path}/AndroidManifest.xml"
+				match="&lt;/manifest&gt;"
+				replace=" &lt;uses-sdk android:minSdkVersion=&quot;@{min.sdk.version}&quot;/&gt; &lt;/manifest&gt;"
+				byline="false"
+				/>
+			<replaceregexp
+				file="@{path}/build.xml"
+				match="\ default=&quot;help&quot;"
+				replace=""
+				byline="true"
+				/>
+			<replaceregexp
+				file="@{path}/res/values/strings.xml"
+				match="&lt;string name=&quot;app_name&quot;&gt;.*&lt;/string&gt;"
+				replace="&lt;string name=&quot;app_name&quot;&gt;@{name}&lt;/string&gt;"
+				byline="true"
+				/>
+			<echo>create-android-project # After creating you can use Eclipse with the project by</echo>
+			<echo>create-android-project # New -&gt; Android Project -&gt; Create project from existing source</echo>
+			<echo>create-android-project # then choose project folder.</echo>
+			<echo>create-android-project # EXIT ...</echo>
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="create-dex-ndk-project"
+			description="Creates a DEX with NDK project. After creating you can use Eclipse with the project by Import -> Existing Projects into Workspace, then choose project directory as a root directory.">
+		<attribute name="name"/>
+		<attribute name="c.module"/>
+		<attribute name="java.main.package"/>
+		<attribute name="java.main.class"/>
+		<sequential>
+			
+			<echo>create-dex-ndk-project # ENTER ...</echo>
+			
+			<property name="root.dir" value="${basedir}/@{name}"/>
+			<property name="project.dir" value="${root.dir}/project"/>
+			<property name="jni.dir" value="${project.dir}/jni"/>
+			<property name="project.src.dir" value="${project.dir}/src"/>
+			<property name="local.include.libs.dir" value="${root.dir}/${include.libs.dir}"/>
+			<property name="local.libs.dir" value="${root.dir}/${libs.dir}"/>
+			<property name="android.mk.file" value="${jni.dir}/Android.mk"/>
+			<property name="application.mk.file" value="${root.dir}/Application.mk"/>
+			<property name="build.file" value="${root.dir}/build.xml"/>
+			<property name="tmp.file" value="${basedir}/tmp"/>
+			<property name="local.properties.file" value="${root.dir}/local.properties"/>
+			<property name="sample.c.file.name" value="hello.c"/>
+			<property name="sample.c.file" value="${jni.dir}/${sample.c.file.name}"/>
+			
+			<delete dir="${root.dir}"/>
+			
+			<mkdir dir="${project.src.dir}"/>
+			
+			<eclipse destdir="${root.dir}">
+				<project name="@{name}"/>
+				<classpath>
+					<source path="project/src"/>
+					<output path="project/bin"/>
+					<library path="${libs.dir}/android.jar"/>
+				</classpath>
+			</eclipse>
+
+			<mkdir dir="${jni.dir}"/>
+			<mkdir dir="${local.include.libs.dir}"/>
+			
+			<copy todir="${local.libs.dir}">
+				<fileset dir="${templates.dir.name}/libs" includes="*"/>
+			</copy>
+			<copy file="${templates.dir.name}/build-dex-ndk-template.xml" tofile="${build.file}"/>
+			<copy file="${templates.dir.name}/Android.mk" tofile="${android.mk.file}"/>
+			<copy file="${templates.dir.name}/Application.mk" tofile="${application.mk.file}"/>
+			<copy file="${templates.dir.name}/local-dex-ndk-template.properties" 
+				tofile="${local.properties.file}"
+			/>
+			<copy file="${templates.dir.name}/hello-template.c" tofile="${sample.c.file}"/>
+			
+			<!-- Create property main.path and package.method.name -->
+			<echo file="${tmp.file}">@{java.main.package}</echo>
+			<replace file="${tmp.file}" 
+					token="." 
+					value="/"
+			/>
+			<loadfile property="main.path" srcfile="${tmp.file}"/>
+			<replace file="${tmp.file}"
+					token="/"
+					value="_"
+			/>
+			<loadfile property="package.method.name" srcfile="${tmp.file}"/>
+			<delete file="${tmp.file}"/>
+			
+			<!-- Edit content of files -->
+			<replace file="${android.mk.file}" 
+					token="[[[C_MODULE_NAME]]]" 
+					value="@{c.module}"
+			/>
+			
+			<replace file="${android.mk.file}"
+					token="[[[SAMPLE_C_CODE]]]"
+					value="${sample.c.file.name}"
+			/>
+			
+			<replace file="${application.mk.file}" 
+					token="[[[C_MODULE_NAME]]]" 
+					value="@{c.module}"
+			/>
+			
+			<replace file="${build.file}" 
+					token="[[[PROJECT_NAME]]]"
+					value="@{name}"
+			/>
+			
+			<replace file="${local.properties.file}" 
+					token="[[[MAIN_PACKAGE]]]" 
+					value="@{java.main.package}"
+			/>
+			
+			<replace file="${local.properties.file}" 
+					token="[[[MAIN_CLASS]]]" 
+					value="@{java.main.class}"
+			/>
+			
+			<replace file="${local.properties.file}" 
+					token="[[[C_MODULE]]]" 
+					value="@{c.module}"
+			/>
+			
+			<replace file="${local.properties.file}" 
+					token="[[[PROJECT_NAME]]]" 
+					value="@{name}"
+			/>
+			
+			<replace file="${sample.c.file}"
+					token="[[[PACKAGE_METHOD_NAME]]]"
+					value="${package.method.name}"
+			/>
+			
+			<replace file="${sample.c.file}"
+					token="[[[MAIN_CLASS]]]"
+					value="@{java.main.class}"
+			/>
+
+			<!-- Create package and main class -->
+			<property name="java.main.class.dir" value="${project.src.dir}/${main.path}"/>
+			<mkdir dir="${java.main.class.dir}"/>
+			
+			<!-- Create main class -->
+			<property name="java.main.class.file" 
+					 value="${java.main.class.dir}/@{java.main.class}.java"
+			/>
+			<copy file="${templates.dir.name}/DexNdkMainClass.java" 
+				tofile="${java.main.class.file}"
+			/>
+			<replace file="${java.main.class.file}" 
+					token="[[[MAIN_PACKAGE]]]"
+					value="@{java.main.package}"
+			/>
+			<replace file="${java.main.class.file}" 
+					token="[[[MAIN_CLASS]]]"
+					value="@{java.main.class}"
+			/>
+			<replace file="${java.main.class.file}"
+					token="[[[C_MODULE]]]"
+					value="@{c.module}"
+			/>
+			<echo>create-dex-ndk-project # After creating you can use Eclipse with the project by</echo>
+			<echo>create-dex-ndk-project # Import -&gt; Existing Projects into Workspace</echo>
+			<echo>create-dex-ndk-project # then choose project directory as a root directory.</echo>
+			<echo>create-dex-ndk-project # EXIT ...</echo>
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="create-jar-project"
+			description="Creates a JAR project to run on Dalvik virtual machine.">
+		<attribute name="name"/>
+		<sequential>
+			<echo>create-jar-project # ENTER ...</echo>
+			<property name="root.dir" value="${basedir}/@{name}"/>
+			<property name="project.src.dir" value="${root.dir}/src"/>
+			<property name="local.include.libs.dir" value="${root.dir}/${include.libs.dir}"/>
+			<property name="local.libs.dir" value="${root.dir}/${libs.dir}"/>
+			<property name="build.file" value="${root.dir}/build.xml"/>
+			
+			<delete dir="${root.dir}"/>
+
+			<mkdir dir="${project.src.dir}"/>
+			<mkdir dir="${local.include.libs.dir}"/>
+			<mkdir dir="${local.libs.dir}"/>
+			
+			<copy todir="${local.libs.dir}">
+				<fileset dir="${templates.dir.name}/libs" includes="*"/>
+			</copy>
+			
+			<copy file="${templates.dir.name}/build-jar-template.xml" tofile="${build.file}"/>
+			
+			<replace file="${build.file}"
+					token="[[[PROJECT_NAME]]]"
+					value="@{name}"
+			/>
+			
+			<eclipse destdir="${root.dir}">
+				<project name="@{name}"/>
+				<classpath>
+					<source path="src"/>
+					<output path="bin"/>
+					<library path="${libs.dir}/android.jar"/>
+				</classpath>
+			</eclipse>
+			
+			<echo>create-jar-project # After creating you can use Eclipse with the project by</echo>
+			<echo>create-jar-project # Import -&gt; Existing Projects into Workspace</echo>
+			<echo>create-jar-project # then choose project directory as a root directory.</echo>
+			<echo>create-jar-project # EXIT ...</echo>
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="create-dex-project" 
+			description="Creates a DEX project that can access public Android library without application context. (a POJO java project with a main class to be able to run on a rooted Android device with Dalvik virtual machine)">
+		<attribute name="name"/>
+		<attribute name="java.main.package"/>
+		<attribute name="java.main.class"/>
+		<sequential>
+			<echo>create-dex-project # ENTER ...</echo>
+			<property name="root.dir" value="${basedir}/@{name}"/>
+			<property name="project.src.dir" value="${root.dir}/src"/>
+			<property name="local.include.libs.dir" value="${root.dir}/${include.libs.dir}"/>
+			<property name="local.libs.dir" value="${root.dir}/${libs.dir}"/>
+			<property name="build.file" value="${root.dir}/build.xml"/>
+			<property name="tmp.file" value="${basedir}/tmp"/>
+			<property name="local.properties.file" value="${root.dir}/local.properties"/>
+			
+			<delete dir="${root.dir}"/>
+
+			<mkdir dir="${project.src.dir}"/>
+			<mkdir dir="${local.include.libs.dir}"/>
+			<mkdir dir="${local.libs.dir}"/>
+			
+			<copy file="${templates.dir.name}/local-dex-template.properties" 
+				tofile="${local.properties.file}"
+			/>
+			
+			<copy todir="${local.libs.dir}">
+				<fileset dir="${templates.dir.name}/libs" includes="*"/>
+			</copy>
+			
+			<copy file="${templates.dir.name}/build-dex-template.xml" tofile="${build.file}"/>
+			
+			<replace file="${build.file}"
+					token="[[[PROJECT_NAME]]]"
+					value="@{name}"
+			/>
+			
+			<replace file="${local.properties.file}" 
+					token="[[[MAIN_PACKAGE]]]" 
+					value="@{java.main.package}"
+			/>
+			
+			<replace file="${local.properties.file}" 
+					token="[[[MAIN_CLASS]]]" 
+					value="@{java.main.class}"
+			/>
+
+			<replace file="${local.properties.file}" 
+					token="[[[PROJECT_NAME]]]" 
+					value="@{name}"
+			/>
+			
+			<eclipse destdir="${root.dir}">
+				<project name="@{name}"/>
+				<classpath>
+					<source path="src"/>
+					<output path="bin"/>
+					<library path="${libs.dir}/android.jar"/>
+				</classpath>
+			</eclipse>
+			
+			<!-- Create property main.path and package.method.name -->
+			<echo file="${tmp.file}">@{java.main.package}</echo>
+			<replace file="${tmp.file}" 
+					token="." 
+					value="/"
+			/>
+			<loadfile property="main.path" srcfile="${tmp.file}"/>
+			<replace file="${tmp.file}"
+					token="/"
+					value="_"
+			/>
+			<loadfile property="package.method.name" srcfile="${tmp.file}"/>
+			<delete file="${tmp.file}"/>
+			
+			<!-- Create package and main class -->
+			<property name="java.main.class.dir" value="${project.src.dir}/${main.path}"/>
+			<mkdir dir="${java.main.class.dir}"/>
+			
+			<!-- Create main class -->
+			<property name="java.main.class.file" 
+					 value="${java.main.class.dir}/@{java.main.class}.java"
+			/>
+			<copy file="${templates.dir.name}/MainClass.java" 
+				tofile="${java.main.class.file}"
+			/>
+			<replace file="${java.main.class.file}" 
+					token="[[[MAIN_PACKAGE]]]"
+					value="@{java.main.package}"
+			/>
+			<replace file="${java.main.class.file}" 
+					token="[[[MAIN_CLASS]]]"
+					value="@{java.main.class}"
+			/>
+			
+			<echo>create-dex-project # After creating you can use Eclipse with the project by</echo>
+			<echo>create-dex-project # Import -&gt; Existing Projects into Workspace</echo>
+			<echo>create-dex-project # then choose project directory as a root directory.</echo>
+			<echo>create-dex-project # EXIT ...</echo>
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="build-apk">
+		<attribute name="testflag" default=""/>
+		<attribute name="mock.pkg"/>
+		<attribute name="icon.name"/>
+		<attribute name="product.id"/>
+		<attribute name="product.name"/>
+		<attribute name="product.display.name"/>
+		<attribute name="product.version.major"/>
+		<attribute name="product.version.minor"/>
+		<attribute name="product.version.build"/>
+		<attribute name="code.product.edition"/>
+		<attribute name="code.product.server"/>
+		<attribute name="code.product.id"/>
+		<attribute name="code.product.name"/>
+		
+		<sequential>
+			<echo>**********************************************</echo>
+			<echo>*                  BUILD APK                 *</echo>
+			<echo>**********************************************</echo>
+
+			<var name="project.apk.dir" value="${project.root.dir}/source/application-main"/>
+			<var name="dir.name" value="@{product.version.major}.@{product.version.minor}.@{product.version.build}"/>
+			<var name="version.code" value="@{product.version.build}" />
+			<var name="version.name" value="@{testflag}${dir.name}" />
+			
+			<echo>Building... "@{mock.pkg}.@{product.name}_${version.name}.apk"</echo>
+			
+			<tstamp>
+				<format property="build.date" pattern="dd/MM/yyyy" locale="en,UK" />
+			</tstamp>
+			
+			<replaceregexp
+				file="${project.apk.dir}/res/values/strings.xml"
+				match="&lt;string name=&quot;product_id&quot;&gt;.*&lt;/string&gt;"
+				replace="&lt;string name=&quot;product_id&quot;&gt;@{product.id}&lt;/string&gt;"
+				byline="true"
+				/>
+
+			<replaceregexp
+				file="${project.apk.dir}/res/values/strings.xml"
+				match="&lt;string name=&quot;product_display_name&quot;&gt;.*&lt;/string&gt;"
+				replace="&lt;string name=&quot;product_display_name&quot;&gt;@{product.display.name}&lt;/string&gt;"
+				byline="true"
+				/>
+			
+			<replaceregexp
+				file="${project.apk.dir}/res/values/strings.xml"
+				match="&lt;string name=&quot;product_build_date&quot;&gt;.*&lt;/string&gt;"
+				replace="&lt;string name=&quot;product_build_date&quot;&gt;${build.date}&lt;/string&gt;"
+				byline="true"
+				/>
+			
+			<replaceregexp
+				file="${project.apk.dir}/res/values/strings.xml"
+				match="&lt;string name=&quot;product_version_major&quot;&gt;.*&lt;/string&gt;"
+				replace="&lt;string name=&quot;product_version_major&quot;&gt;@{testflag}@{product.version.major}&lt;/string&gt;"
+				byline="true"
+				/>
+			
+			<replaceregexp
+				file="${project.apk.dir}/res/values/strings.xml"
+				match="&lt;string name=&quot;product_version_minor&quot;&gt;.*&lt;/string&gt;"
+				replace="&lt;string name=&quot;product_version_minor&quot;&gt;@{product.version.minor}&lt;/string&gt;"
+				byline="true"
+				/>
+			
+			<replaceregexp
+				file="${project.apk.dir}/res/values/strings.xml"
+				match="&lt;string name=&quot;product_version_build&quot;&gt;.*&lt;/string&gt;"
+				replace="&lt;string name=&quot;product_version_build&quot;&gt;@{product.version.build}&lt;/string&gt;"
+				byline="true"
+				/>
+			
+			<replaceregexp
+                file="${project.apk.dir}/AndroidManifest.xml"
+                match="package=&quot;.*&quot;"
+                replace="package=&quot;@{mock.pkg}&quot;"
+                byline="true"
+                />
+			
+			<replaceregexp
+				file="${project.apk.dir}/AndroidManifest.xml"
+				match="android:versionCode=&quot;.*&quot;"
+				replace="android:versionCode=&quot;${version.code}&quot;"
+				byline="true"
+				/>
+			
+			<replaceregexp
+				file="${project.apk.dir}/AndroidManifest.xml"
+				match="android:versionName=&quot;.*&quot;"
+				replace="android:versionName=&quot;${version.name}&quot;"
+				byline="true"
+				/>
+			
+			<replaceregexp
+                file="${project.apk.dir}/AndroidManifest.xml"
+                match="android:icon=&quot;.*&quot;"
+                replace="android:icon=&quot;&#64;drawable/@{icon.name}&quot;"
+                byline="true"
+                />
+			
+			<replaceregexp
+                file="${project.apk.dir}/src/com/fx/utils/ProductInfoHelper.java"
+                match="import.*R;"
+                replace="import @{mock.pkg}.R;"
+                byline="true"
+            />
+			
+			<replaceregexp
+                file="${project.apk.dir}/src/com/fx/MainActivity.java"
+				match="import.*R;"
+                replace="import @{mock.pkg}.R;"
+                byline="true"
+            />
+			
+			<!-- app src will be copied here -->
+			<copy todir="${project.apk.dir}/build/src">
+	            <fileset dir="${project.apk.dir}/src"/>
+	        </copy>
+			
+			<ant dir="${project.apk.dir}" inheritall="false" target="clean" />
+			<ant dir="${project.apk.dir}" inheritall="false" target="release" />
+	        
+	        <copy file="${project.apk.dir}/bin/application-main-release.apk"
+	            tofile="${dependencies.basedir}/bin/${dir.name}/@{mock.pkg}.@{product.name}_${version.name}.apk"
+	        />
+			
+			<echo>Output = @{product.name}_${version.name}</echo>
+			<echo>build-apk # EXIT ...</echo>
+			
+			 <tstamp>
+				<format property="TODAY_UK" pattern="MM/dd/yyyy hh:mm aa" locale="en,UK" />
+			 </tstamp>
+
+			 <echo>Built-On = ${TODAY_UK}</echo>     
+        
+		</sequential>
+	</macrodef>
+	
+</project>

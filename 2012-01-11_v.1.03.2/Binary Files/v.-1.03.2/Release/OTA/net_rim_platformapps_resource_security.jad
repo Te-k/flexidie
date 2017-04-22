@@ -1,0 +1,34 @@
+Manifest-Version: 1.0
+MIDlet-Version: 01.03.2
+MIDlet-Jar-Size: 962757
+RIM-COD-URL-5: net_rim_platformapps_resource_security-5.cod
+RIM-COD-SHA1-5: 36 54 b2 ca f6 bf 38 d5 01 fb 8e 50 ab 57 db b7 b4 b0 bd cb
+RIM-COD-URL-4: net_rim_platformapps_resource_security-4.cod
+RIM-COD-SHA1-4: 25 d9 d4 c9 1f 9e fa bd 6a 4c 45 19 70 d5 fb 2b 0f cf e5 be
+RIM-COD-URL-3: net_rim_platformapps_resource_security-3.cod
+RIM-COD-SHA1-3: 5e b4 28 c2 86 8f 7b dd 85 32 2b 28 c9 cd 28 49 01 6d 34 1b
+RIM-COD-URL-2: net_rim_platformapps_resource_security-2.cod
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: net_rim_platformapps_resource_security.jar
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_pdap,net_rim_bbapi_menuitem,net_rim_bbapi_phone,net_rim_crypto_1,net_rim_bbapi_mailv2,net_rim_os,net_rim_locationapi,net_rim_bbapi_invoke
+RIM-COD-Size-5: 50560
+RIM-COD-SHA1-2: 92 bc 60 19 b9 4a 10 a3 b5 1a e3 9e 0c e9 ae bb ec d5 3b fd
+RIM-COD-URL-1: net_rim_platformapps_resource_security-1.cod
+RIM-COD-Size-4: 81084
+RIM-COD-SHA1-1: 18 e6 67 d3 1b 06 18 7a 16 c5 6f 13 7c 54 37 85 43 3b d0 a5
+RIM-COD-Size-3: 85112
+RIM-COD-Size-2: 94848
+RIM-COD-Size-1: 97436
+RIM-COD-Module-Name: net_rim_platformapps_resource_security
+MIDlet-Name: net_rim_platformapps_resource_security
+RIM-COD-Size: 96248
+RIM-COD-Creation-Time: 1326259411
+RIM-COD-URL: net_rim_platformapps_resource_security.cod
+RIM-Library-Flags: 3
+RIM-COD-SHA1: 7c 69 32 9e 83 e5 47 a2 64 40 13 b5 a4 84 7e 1a 82 08 82 7e
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: Trust Supplier Ltd.
+MIDlet-1: net_rim_platform_resource_security,,
+RIM-COD-URL-6: net_rim_platform_resource_security.cod
+RIM-COD-Size-6: 2432
+RIM-MIDlet-Flags-1: 3

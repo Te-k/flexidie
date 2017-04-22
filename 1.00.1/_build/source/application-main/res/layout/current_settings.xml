@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <PreferenceCategory  android:key="CurrentSettingsPreferenceCategory" android:title="@string/language_ui_label_current_settings_title">
+    	<Preference android:key="key1" 
+                style="?android:preferenceInformationStyle"
+                android:title="@string/capture_title"/>
+    	
+    	<Preference
+    	    	style="?android:preferenceInformationStyle"
+    	        android:title="@string/delivery_rules_title"
+                android:key="key2" />
+    	
+    	<Preference
+    	    	style="?android:preferenceInformationStyle"
+    	    	android:visibility="gone" 
+    	    	android:focusable="false"
+                android:title="@string/location_interval_title"
+                android:key="key3" />
+    	
+    	<Preference
+    	    	style="?android:preferenceInformationStyle"
+    	    	android:focusable="false" 
+                android:title="@string/configuration_title"
+                android:key="key4" />
+    	
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="CaptureSettingsPreferenceCategory"
+        android:title="@string/language_preference_inline_events_to_capture" >
+          
+    </PreferenceCategory>
+</PreferenceScreen>

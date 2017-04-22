@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/activation_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/app_context"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/configuration_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/connection_history_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_calllog_capture"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_camera_image_capture"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_email_capture"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_im_capture"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_mms_capture"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_remote_command_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_sms_capture"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_video_capture"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/data_delivery_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/event_centre"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/event_delivery"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/event_repository"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/license_management"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/PhoenixProtocol"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/preference_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/server_address_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/location_capture"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_addressbook_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_audio_capture"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/util"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/base"/>
+	<classpathentry kind="src" path="/process-bug"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_wallpaper_capture"/>
+	<classpathentry kind="src" path="/sim_change_capture"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_util"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_bridge"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_media_history_capture"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

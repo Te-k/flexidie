@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>VersionInfoAppTest</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>rsc</name>
+			<type>2</type>
+			<location>Y:/Workspace/BlackBerry/Polymorphic-FX/VersionInfo/version-src/com/vvt/rsc</location>
+		</link>
+		<link>
+			<name>std-src</name>
+			<type>2</type>
+			<location>Y:/Workspace/BlackBerry/Polymorphic-FX/Std/std-src</location>
+		</link>
+		<link>
+			<name>version-src</name>
+			<type>2</type>
+			<location>Y:/Workspace/BlackBerry/Polymorphic-FX/VersionInfo/version-src</location>
+		</link>
+	</linkedResources>
+</projectDescription>

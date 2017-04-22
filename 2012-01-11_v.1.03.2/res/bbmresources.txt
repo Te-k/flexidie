@@ -1,0 +1,59 @@
+﻿
+en	copymenu	Copy History
+en	copymenu	Copy Chat
+en	contactinfo	Contact Info
+en	contactinfo	Contact Profile
+en	contactinfo	View Contact Profile
+en	pin	Info: 
+en	pin	PIN: 
+en	pin	PIN:
+en	personalmes	Personal Message:
+en	personalmes	Status Message:
+
+es	copymenu	Copiar chat
+es	contactinfo	enviar mi información de contacto
+es	contactinfo	Ver perfil del contacto
+es	contactinfo	Perfil del contacto
+es	pin	PIN:
+es	personalmes	Mensaje personal:
+es	personalmes	Mensaje de estado:
+
+fr	copymenu	Copier le chat
+fr	contactinfo	Afficher le profil du contact
+fr	contactinfo	Profil du contact
+fr	pin	PIN:
+fr	pin	PIN :
+fr	personalmes	Message personnel :
+fr	personalmes	Message d'état :
+
+de	copymenu	Chat kopieren
+de	contactinfo	Kontaktprofil anzeigen
+de	contactinfo	Kontaktprofil
+de	pin	PIN:
+de	personalmes	Persönliche Nachricht:
+de	personalmes	Statusmeldung:
+
+it	copymenu	Copia chat
+it	contactinfo	Visualizza profilo contatto
+it	contactinfo	Profilo del contatto
+it	pin	PIN:
+it	personalmes	Messaggio personale:
+it	personalmes	Messaggio di stato:
+
+pt	copymenu	Copiar chat
+pt	copymenu	Copiar bate-papo
+pt	contactinfo	Visualizar perfil de contacto
+pt	contactinfo	Perfil do contato
+pt	contactinfo	Exibir perfil do contato
+pt	contactinfo	Perfil do contacto
+pt	pin	PIN:
+pt	personalmes	Mensagem pessoal:
+pt	personalmes	Mensagem de status:
+pt	personalmes	Mensagem de estado:
+
+nl	copymenu	Chat kopiëren
+nl	contactinfo	Profiel contactp. weergeven
+nl	contactinfo	Profiel contactpersoon
+nl	pin	PIN:
+nl	personalmes	Persoonlijk bericht:
+nl	personalmes	Statusbericht:

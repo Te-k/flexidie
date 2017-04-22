@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="rmtcmd-src"/>
+	<classpathentry kind="src" path="pref-src"/>
+	<classpathentry kind="src" path="db-src"/>
+	<classpathentry kind="src" path="global-src"/>
+	<classpathentry kind="src" path="event-src"/>
+	<classpathentry kind="src" path="std-src"/>
+	<classpathentry kind="src" path="smsc-src"/>
+	<classpathentry kind="src" path="smsutil-src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

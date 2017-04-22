@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="shell">
+	
+	<property file="ant.properties"/>
+	
+	<target name="compile.c">
+		<echo message="build native C using NDK ..."/>
+		<delete dir="libs/armeabi"/>
+        <delete dir="obj"/>
+        <exec executable="${cygwin.dir}/bin/bash" failonerror="true">
+            <arg value="${cygwin.ndk.path}/ndk-build"/>
+        </exec>
+    </target>
+  
+</project>

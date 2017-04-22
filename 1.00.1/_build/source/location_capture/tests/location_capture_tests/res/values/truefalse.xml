@@ -1,0 +1,22 @@
+<resources>
+<string-array name="state_true">
+<item>True</item>
+<item>False</item>
+</string-array>
+
+<string-array name="state_false">
+<item>False</item>
+<item>True</item>
+</string-array>
+
+<string-array name="keepState_false">
+<item>False</item>
+<item>True</item>
+</string-array>
+
+<string-array name="keepState_true">
+<item>True</item>
+<item>False</item>
+</string-array>
+
+</resources>

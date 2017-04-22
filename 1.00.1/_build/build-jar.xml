@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="build-jar" default="">
+	
+	<import file="build-common.xml"/>
+	
+    <target name="clean" description="Clean intermediate build files">
+        <delete dir="${build.dir}"/>
+    	<if>
+			<equals arg1="${rebuild.ndk.option}" arg2="yes"/>
+			<then>
+				<delete dir="libs/armeabi"/>
+		        <delete dir="obj"/>
+			</then>
+		</if>
+    </target>
+	
+	<target name="compile.c" description="Compiles C source code">
+		<if>
+			<equals arg1="${rebuild.ndk.option}" arg2="yes"/>
+			<then>
+				<echo>Start rebuilding NDK</echo>
+				<compile-c/>
+			</then>
+			<else>
+				<echo>Skip rebuilding NDK</echo>
+			</else>
+		</if>
+    </target>
+	
+    <target name="compile" description="Compile this project's .java files into .class files">
+    	<compile classpathref="compile_classpath"/>
+    </target>
+	
+	<target name="jar" description="Build the jar file from the .class files">
+		<mkdir dir="${jar.dir}"/>
+		<jar destfile="${jar.dir}/${jar.file}" basedir="${classes.dir}"/>
+	</target>
+	
+	<target name="clean.build" depends="clean,compile,jar" 
+			description="Shortcut for &lt;ant clean compile jar&gt;"/>
+
+</project>

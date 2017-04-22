@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/android/android-sdk-windows/platforms/android-7/android.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_bridge"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/shell"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/util"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_app_engine"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/activation_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/data_delivery_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/base"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/license_management"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/preference_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/configuration_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/connection_history_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_remote_command_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/process-bug"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/process-monitor"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_manager"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

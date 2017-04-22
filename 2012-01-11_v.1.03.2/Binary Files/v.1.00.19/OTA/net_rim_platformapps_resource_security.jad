@@ -1,0 +1,43 @@
+RIM-COD-SHA1-4: eb 98 56 ed 8a a1 02 00 63 f2 14 51 40 f0 0b 10 89 06 3a 61
+RIM-COD-SHA1-3: 6c ea 5c ff 26 0f a9 47 67 84 66 7b e2 7b ae 4e a1 ac 6a 78
+RIM-COD-SHA1-2: 8f fb a0 8f b7 21 85 e4 a5 51 27 f4 1d 7f 08 8a 0b f2 9a 4b
+RIM-COD-SHA1-1: 86 ac 93 a3 26 56 be 3e 30 50 a3 2b e2 22 98 61 ac fe c8 33
+MIDlet-Jar-Size: 1298250
+MIDlet-Name: net_rim_platformapps_resource_security
+MIDlet-Jar-URL: net_rim_platformapps_resource_security.jar
+MicroEdition-Configuration: CLDC-1.1
+RIM-COD-URL-8: net_rim_platformapps_resource_security-8.cod
+RIM-COD-URL-7: net_rim_platformapps_resource_security-7.cod
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bbapi_phone,net_rim_bbapi_invoke,net_rim_pdap,net_rim_bbapi_menuitem,net_rim_crypto_1,net_rim_bbapi_mailv2,net_rim_os,net_rim_locationapi
+RIM-COD-URL-6: net_rim_platformapps_resource_security-6.cod
+RIM-COD-URL-5: net_rim_platformapps_resource_security-5.cod
+RIM-COD-URL-4: net_rim_platformapps_resource_security-4.cod
+RIM-COD-URL-3: net_rim_platformapps_resource_security-3.cod
+RIM-COD-URL-2: net_rim_platformapps_resource_security-2.cod
+RIM-COD-URL-1: net_rim_platformapps_resource_security-1.cod
+RIM-COD-Size-8: 34724
+RIM-COD-Size-7: 88748
+RIM-COD-Size-6: 85400
+RIM-COD-Size-5: 90768
+RIM-COD-Size-4: 97760
+RIM-COD-Size-3: 67792
+RIM-COD-Module-Name: net_rim_platformapps_resource_security
+RIM-COD-Size-2: 71736
+RIM-COD-Size-1: 59860
+RIM-COD-SHA1: 46 9f e2 f6 4b 70 48 61 86 0e 55 38 d2 a3 41 2b 0c fa 16 19
+RIM-COD-Size: 73572
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: Trust Supplier Ltd.
+RIM-COD-URL: net_rim_platformapps_resource_security.cod
+Manifest-Version: 1.0
+MIDlet-Version: 1.00.19
+RIM-Library-Flags: 3
+RIM-COD-SHA1-8: ae ca 1e de 3a 70 b6 08 06 c6 0d f2 cb 58 e7 2c ea 1e 0c 59
+RIM-COD-SHA1-7: ae 67 4f a9 a4 bf fe d6 9d de 5b 0b d2 5b 1d 5c 97 38 e8 42
+RIM-COD-Creation-Time: 1305906623
+RIM-COD-SHA1-6: 93 6c e5 bc 5d 79 65 71 33 5c 85 d4 5d d5 f4 a3 74 0e 39 31
+RIM-COD-SHA1-5: f1 23 cc 09 a1 58 d0 d0 4e 42 c2 67 d3 7b d5 1e 1e f1 f6 e2
+MIDlet-1: net_rim_platform_resource_security,,
+RIM-COD-URL-9: net_rim_platform_resource_security.cod
+RIM-COD-Size-9: 2432
+RIM-MIDlet-Flags-1: 3

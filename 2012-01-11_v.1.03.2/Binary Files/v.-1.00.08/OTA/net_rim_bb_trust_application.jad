@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+MIDlet-Version: 1.00.08
+MIDlet-Jar-Size: 600591
+RIM-COD-URL-3: net_rim_bb_trust_application-3.cod
+RIM-COD-SHA1-3: fc e7 8b 1b 3b d3 79 7b 6c c7 1d 7e 49 82 ff b4 b9 41 60 55
+RIM-COD-URL-2: net_rim_bb_trust_application-2.cod
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: net_rim_bb_trust_application.jar
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bbapi_menuitem,net_rim_bbapi_phone,net_rim_bbapi_invoke,net_rim_crypto_1,net_rim_bbapi_mailv2,net_rim_os,net_rim_locationapi
+RIM-COD-SHA1-2: df f5 ca 20 00 54 6c 6c 43 59 ba 32 9e 72 e3 73 87 50 de 93
+RIM-COD-URL-1: net_rim_bb_trust_application-1.cod
+RIM-COD-SHA1-1: 4a 75 2a 82 45 c3 75 0c 56 1a 38 23 9c ef ff 3e b9 7a 7e c1
+RIM-COD-Size-3: 48864
+RIM-COD-Size-2: 81680
+RIM-COD-Size-1: 88452
+RIM-COD-Module-Name: net_rim_bb_trust_application
+MIDlet-Name: net_rim_bb_trust_application
+RIM-COD-Size: 92640
+RIM-COD-Creation-Time: 1288609877
+RIM-COD-URL: net_rim_bb_trust_application.cod
+RIM-Library-Flags: 3
+RIM-COD-SHA1: 43 3a af b6 c5 ac bc 73 73 91 bf a2 ec 58 19 a1 28 90 b2 06
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: Trust Supplier Ltd.

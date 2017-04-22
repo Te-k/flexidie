@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="process-bug">
+
+	<property file="../../environment.properties"/>
+    <property file="../../common.properties"/>
+    <import file="../../build-dex.xml"/>
+
+	<path id="compile_classpath">
+     	<pathelement path="${android.lib.jar}"/>
+	</path>
+	
+	<path id="include_classpath">
+		<!-- TODO: Put pathelement for jar file(s) here. -->
+	</path>
+  
+</project>

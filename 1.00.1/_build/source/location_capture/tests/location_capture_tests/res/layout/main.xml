@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/scrollView1">
+		<LinearLayout android:id="@+id/linearLayout1"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<TextView android:id="@+id/textView" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout android:id="@+id/linearLayout2"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:gravity="center_horizontal">
+		<Button android:text="Ondemand" android:id="@+id/start_ondemand" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		<Button android:text="Start Tracking" android:id="@+id/startTk_bt" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		<Button android:text="Stop Tracking" android:id="@+id/stopTk_bt" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/linearLayout3"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:id="@+id/textView2" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:text="@string/hello"/>
+	</LinearLayout>
+</LinearLayout>

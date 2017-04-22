@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/shell"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_bridge"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/process-bug"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/process-main"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/process-monitor"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_app_engine"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/configuration_manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/util"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/license_management"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

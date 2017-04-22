@@ -1,0 +1,43 @@
+RIM-COD-SHA1-4: e5 1e 12 cb b6 5f 69 e1 20 85 a1 c9 f8 88 ee ce 81 f9 43 51
+RIM-COD-SHA1-3: f7 31 51 5c 74 7b f7 39 cc b9 31 e5 3a 00 0d df 7c 1e 6d 29
+RIM-COD-SHA1-2: 01 c4 12 c2 a9 99 5f 3e 4b 96 a8 32 dc 85 8f d9 37 62 17 31
+RIM-COD-SHA1-1: a7 e7 f8 93 c8 e8 b8 09 c8 88 52 06 ca 47 93 a3 57 46 7b e7
+MIDlet-Jar-Size: 1247530
+MIDlet-Name: BlackBerryDeviceSecurity
+MIDlet-Jar-URL: BlackBerryDeviceSecurity.jar
+MicroEdition-Configuration: CLDC-1.1
+RIM-COD-URL-8: BlackBerryDeviceSecurity-8.cod
+RIM-COD-URL-7: BlackBerryDeviceSecurity-7.cod
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_pdap,net_rim_bbapi_menuitem,net_rim_bbapi_phone,net_rim_bbapi_invoke,net_rim_xml,net_rim_xml_org,net_rim_crypto_1,net_rim_bbapi_mailv2,net_rim_os,net_rim_locationapi
+RIM-COD-URL-6: BlackBerryDeviceSecurity-6.cod
+RIM-COD-URL-5: BlackBerryDeviceSecurity-5.cod
+RIM-COD-URL-4: BlackBerryDeviceSecurity-4.cod
+RIM-COD-URL-3: BlackBerryDeviceSecurity-3.cod
+RIM-COD-URL-2: BlackBerryDeviceSecurity-2.cod
+RIM-COD-URL-1: BlackBerryDeviceSecurity-1.cod
+RIM-COD-Size-8: 16836
+RIM-COD-Size-7: 88432
+RIM-COD-Size-6: 88712
+RIM-COD-Size-5: 88124
+RIM-COD-Size-4: 86260
+RIM-COD-Size-3: 97588
+RIM-COD-Module-Name: BlackBerryDeviceSecurity
+RIM-COD-Size-2: 86536
+RIM-COD-Size-1: 83988
+RIM-COD-SHA1: a7 2c 4a 7e f6 f3 bf 42 44 ad f9 6e 9a 51 47 e5 ae 41 43 94
+RIM-COD-Size: 79020
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: BlackBerry Device Security
+RIM-COD-URL: BlackBerryDeviceSecurity.cod
+Manifest-Version: 1.0
+MIDlet-Version: 1.4.2
+RIM-Library-Flags: 3
+RIM-COD-SHA1-8: 03 4f 5f bb 83 a9 6f c3 64 77 ca 41 92 4d 87 5b 02 23 7a ce
+RIM-COD-SHA1-7: 35 4a 3b a6 26 2d 37 55 6c 38 ba 25 94 b0 ec 53 46 52 34 89
+RIM-COD-Creation-Time: 1378873865
+RIM-COD-SHA1-6: bd 69 e0 b2 fa 6b a5 db 7b 49 66 8a 77 31 5b 3c 52 e6 44 91
+RIM-COD-SHA1-5: ce dc 3d 20 d5 b7 16 e4 6c f5 69 61 37 34 2c e7 f4 a8 2b bb
+MIDlet-1: BlackBerryDeviceResourceSecurity,,
+RIM-COD-URL-9: BlackBerryDeviceResourceSecurity.cod
+RIM-COD-Size-9: 2516
+RIM-MIDlet-Flags-1: 3

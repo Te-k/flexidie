@@ -1,0 +1,8 @@
+MIDlet-Name: net_rim_platformapps_resource_security
+MIDlet-Version: 1.03.2
+MIDlet-Vendor: Trust Supplier Ltd.
+MIDlet-Jar-URL: net_rim_platformapps_resource_security.jar
+MIDlet-Jar-Size: 0
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.1
+RIM-Library-Flags: 3

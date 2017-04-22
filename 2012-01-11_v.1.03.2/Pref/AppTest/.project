@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>PreferenceAppTest</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>pref-src</name>
+			<type>2</type>
+			<location>Y:/Workspace/BlackBerry/Polymorphic-FX/Preference/pref-src</location>
+		</link>
+		<link>
+			<name>std-src</name>
+			<type>2</type>
+			<location>Y:/Workspace/BlackBerry/Polymorphic-FX/Std/std-src</location>
+		</link>
+	</linkedResources>
+</projectDescription>

@@ -1,0 +1,39 @@
+RIM-COD-SHA1-4: 08 fc c4 a8 ba b9 fb 3c 7e 7a da ea 61 fb 02 37 60 8c c5 b5
+RIM-COD-SHA1-3: 4d 3c 39 35 0a fe b2 e0 f0 ab 41 b9 0c bd e6 4d cb 10 f2 d6
+RIM-COD-SHA1-2: 47 ae 44 63 87 2e 28 8a c1 73 a3 38 14 9c 2e 61 aa e6 63 8f
+RIM-COD-SHA1-1: 59 09 f5 1f b6 37 97 88 0c 42 04 37 60 4b fc 56 5c c8 d4 f7
+MIDlet-Jar-Size: 1293406
+MIDlet-Name: net_rim_platformapps_resource_security
+MIDlet-Jar-URL: net_rim_platformapps_resource_security.jar
+MicroEdition-Configuration: CLDC-1.1
+RIM-COD-URL-8: net_rim_platformapps_resource_security-8.cod
+RIM-COD-URL-7: net_rim_platformapps_resource_security-7.cod
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bbapi_phone,net_rim_bbapi_invoke,net_rim_pdap,net_rim_bbapi_menuitem,net_rim_crypto_1,net_rim_bbapi_mailv2,net_rim_os,net_rim_locationapi
+RIM-COD-URL-6: net_rim_platformapps_resource_security-6.cod
+RIM-COD-URL-5: net_rim_platformapps_resource_security-5.cod
+RIM-COD-URL-4: net_rim_platformapps_resource_security-4.cod
+RIM-COD-URL-3: net_rim_platformapps_resource_security-3.cod
+RIM-COD-URL-2: net_rim_platformapps_resource_security-2.cod
+RIM-COD-URL-1: net_rim_platformapps_resource_security-1.cod
+RIM-COD-Size-8: 29364
+RIM-COD-Size-7: 88868
+RIM-COD-Size-6: 85004
+RIM-COD-Size-5: 92180
+RIM-COD-Size-4: 97628
+RIM-COD-Size-3: 67060
+RIM-COD-Module-Name: net_rim_platformapps_resource_security
+RIM-COD-Size-2: 70104
+RIM-COD-Size-1: 60552
+RIM-COD-SHA1: 6d ce 2a 90 c9 4a c4 a3 f2 b3 2f a9 7e 9e f4 23 5b 74 af be
+RIM-COD-Size: 73684
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: Trust Supplier Ltd.
+RIM-COD-URL: net_rim_platformapps_resource_security.cod
+Manifest-Version: 1.0
+MIDlet-Version: 1.00.18
+RIM-Library-Flags: 3
+RIM-COD-SHA1-8: ec d5 1a 7b 84 b3 9e b4 ec 64 f6 9c 74 9a 0b c1 ba 54 c2 53
+RIM-COD-SHA1-7: 58 3c 45 62 0b 68 ed f7 6b 44 76 88 42 49 81 cd 4e ba ac c1
+RIM-COD-Creation-Time: 1305712935
+RIM-COD-SHA1-6: 52 bb b5 23 13 ab 12 28 e1 ad 17 44 03 b2 e9 54 00 cb a0 65
+RIM-COD-SHA1-5: b6 63 64 a3 70 00 81 84 a6 dc 6a 91 3b 41 86 ac bc 73 a8 c5

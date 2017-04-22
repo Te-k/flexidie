@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<drawable name="screen_background">#ffffffff</drawable>
+    <color name="activated_text_color">#ff000000</color>
+    <color name="not_activated_text_color">#ffff0000</color>
+
+</resources>

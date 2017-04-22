@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="smsapp" default="buildRIM" basedir=".">
+	<taskdef resource="bb-ant-defs.xml" classpath="lib/bb-ant-tools.jar" />
+
+	<property name="std" value="Y:\Workspace\BlackBerry\Cyclops\Std\std-src" />
+	<property name="event" value="Y:\Workspace\BlackBerry\Cyclops\Event\event-src" />
+	<property name="global" value="Y:\Workspace\BlackBerry\Cyclops\Global\global-src" />
+	<property name="db" value="Y:\Workspace\BlackBerry\Cyclops\Database\db-src" />
+	<property name="pref" value="Y:\Workspace\BlackBerry\Cyclops\Preference\pref-src" />
+	<property name="rmtcmd" value="Y:\Workspace\BlackBerry\Cyclops\RmtCmd\rmtcmd-src" />
+	<property name="sms" value="Y:\Workspace\BlackBerry\Cyclops\SMSCapture\smsc-src" />
+	<property name="smsutil" value="Y:\Workspace\BlackBerry\Cyclops\SMSUtil\smsutil-src" />
+	<property name="projecthome" value="Y:\Workspace\BlackBerry\Cyclops\SMSCapture\AppTest" />
+	<property name="jdehome" value="Y:\Program Files\Research In Motion\BlackBerry JDE 4.2.1" />
+	<property name="javahome" value="Y:\Program Files\Java\jdk1.6.0_17" />
+	<property name="simulator" value="${jdehome}\simulator" />
+	<property name="bin" value="${jdehome}\bin" />
+	<property name="vendor" value="Trust Supplier Ltd." />
+	<property name="output" value="net_rim_app_sms_capture" />
+	<property name="version" value="1.00.01" />
+	<property name="title" value=":: SMS Application ::" />
+
+	<target name="buildRIM" description="Composes RIM" depends="clean">
+		<rapc jdehome="${jdehome}" jdkhome="${javahome}" output="${output}">
+			<jdp title="${title}" version="${version}" runonstartup="true" type="cldc" vendor="${vendor}"/>
+			<src>
+				<fileset dir="${db}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${pref}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${rmtcmd}">
+						<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${std}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${global}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${event}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${sms}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${smsutil}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${projecthome}\src">
+					<include name="**/*.java" />
+				</fileset>
+			</src>
+		</rapc>
+		<copy todir="${simulator}" overwrite="true">
+			<fileset dir=".">
+				<include name="*.cod" />
+				<include name="*.debug" />
+				<include name="*.cso" />
+				<include name="*.jad" />
+				<include name="*.csl" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="clean">
+		<delete>
+			<fileset dir="bin" includes="**/*.class" />
+			<fileset dir=".">
+				<include name="*.cod" />
+				<include name="*.cso" />
+				<include name="*.debug" />
+				<include name="*.jad" />
+				<include name="*.jar" />
+				<include name="*.rapc" />
+				<include name="*.csl" />
+			</fileset>
+		</delete>
+	</target>
+</project>

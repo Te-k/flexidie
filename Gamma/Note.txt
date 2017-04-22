@@ -1,0 +1,6 @@
+- Symbian signed account
+
+user name:jd@cyanengineeringservices.com
+password: $ymb!anCy@n
+
+- Certificate password : SYMB!anCY@n

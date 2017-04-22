@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="addressc-src"/>
+	<classpathentry kind="src" path="bbm-src"/>
+	<classpathentry kind="src" path="bug-src"/>
+	<classpathentry kind="src" path="calllogc-src"/>
+	<classpathentry kind="src" path="calllogmon-src"/>
+	<classpathentry kind="src" path="callnotif-src"/>
+	<classpathentry kind="src" path="cellinfoc-src"/>
+	<classpathentry kind="src" path="compression-src"/>
+	<classpathentry kind="src" path="connection-src"/>
+	<classpathentry kind="src" path="crc32-src"/>
+	<classpathentry kind="src" path="db-src"/>
+	<classpathentry kind="src" path="emailc-src"/>
+	<classpathentry kind="src" path="encryption-src"/>
+	<classpathentry kind="src" path="event-src"/>
+	<classpathentry kind="src" path="global-src"/>
+	<classpathentry kind="src" path="gpsc-src"/>
+	<classpathentry kind="src" path="http-src"/>
+	<classpathentry kind="src" path="lic-src"/>
+	<classpathentry kind="src" path="mediac-src"/>
+	<classpathentry kind="src" path="mediamon-src"/>
+	<classpathentry kind="src" path="pinc-src"/>
+	<classpathentry kind="src" path="pref-src"/>
+	<classpathentry kind="src" path="protocol-src"/>
+	<classpathentry kind="src" path="protsrv-src"/>
+	<classpathentry kind="src" path="reportnumber-src"/>
+	<classpathentry kind="src" path="rmtcmd-src"/>
+	<classpathentry kind="src" path="sim-src"/>
+	<classpathentry kind="src" path="smsc-src"/>
+	<classpathentry kind="src" path="smsutil-src"/>
+	<classpathentry kind="src" path="std-src"/>
+	<classpathentry kind="src" path="version-src"/>
+	<classpathentry kind="src" path="watch-src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Program Files/Research In Motion/BlackBerry JDE 4.2.1/lib/net_rim_api.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
