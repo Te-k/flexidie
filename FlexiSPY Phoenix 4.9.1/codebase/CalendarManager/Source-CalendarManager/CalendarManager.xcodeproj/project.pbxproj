@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0851E04416A6AFCB0051D3C8 /* CalendarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0851E04216A6AFCB0051D3C8 /* CalendarManager.h */; };
+		0851E04816A6AFDE0051D3C8 /* CalendarManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0851E04616A6AFDE0051D3C8 /* CalendarManagerImpl.h */; };
+		0851E04916A6AFDE0051D3C8 /* CalendarManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0851E04716A6AFDE0051D3C8 /* CalendarManagerImpl.m */; };
+		0851E04C16A6AFE90051D3C8 /* CalendarEntryProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 0851E04A16A6AFE90051D3C8 /* CalendarEntryProvider.h */; };
+		0851E04D16A6AFE90051D3C8 /* CalendarEntryProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0851E04B16A6AFE90051D3C8 /* CalendarEntryProvider.m */; };
+		0851E05416A6B02A0051D3C8 /* CalendarEntryHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0851E05216A6B02A0051D3C8 /* CalendarEntryHelper.h */; };
+		0851E05516A6B02A0051D3C8 /* CalendarEntryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0851E05316A6B02A0051D3C8 /* CalendarEntryHelper.m */; };
+		0851E05816A6B0360051D3C8 /* CalendarEventNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 0851E05616A6B0360051D3C8 /* CalendarEventNotifier.h */; };
+		0851E05916A6B0360051D3C8 /* CalendarEventNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0851E05716A6B0360051D3C8 /* CalendarEventNotifier.m */; };
+		AA747D9F0F9514B9006C5449 /* CalendarManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CalendarManager_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		FCBB30641BBE4A6D0047F884 /* CalendarManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CalendarManager_Prefix.pch */; };
+		FCBB30651BBE4A6D0047F884 /* CalendarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0851E04216A6AFCB0051D3C8 /* CalendarManager.h */; };
+		FCBB30661BBE4A6D0047F884 /* CalendarManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0851E04616A6AFDE0051D3C8 /* CalendarManagerImpl.h */; };
+		FCBB30671BBE4A6D0047F884 /* CalendarEntryProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 0851E04A16A6AFE90051D3C8 /* CalendarEntryProvider.h */; };
+		FCBB30691BBE4A6D0047F884 /* CalendarEventNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 0851E05616A6B0360051D3C8 /* CalendarEventNotifier.h */; };
+		FCBB306B1BBE4A6D0047F884 /* CalendarManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0851E04716A6AFDE0051D3C8 /* CalendarManagerImpl.m */; };
+		FCBB306C1BBE4A6D0047F884 /* CalendarEntryProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0851E04B16A6AFE90051D3C8 /* CalendarEntryProvider.m */; };
+		FCBB306E1BBE4A6D0047F884 /* CalendarEventNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0851E05716A6B0360051D3C8 /* CalendarEventNotifier.m */; };
+		FCBB30701BBE4A6D0047F884 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		FCBB30B31BBE8F270047F884 /* CalendarEntryHelper-E.h in Headers */ = {isa = PBXBuildFile; fileRef = FCBB30B11BBE8F270047F884 /* CalendarEntryHelper-E.h */; settings = {ASSET_TAGS = (); }; };
+		FCBB30B41BBE8F270047F884 /* CalendarEntryHelper-E.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB30B21BBE8F270047F884 /* CalendarEntryHelper-E.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0851E04216A6AFCB0051D3C8 /* CalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarManager.h; sourceTree = "<group>"; };
+		0851E04616A6AFDE0051D3C8 /* CalendarManagerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarManagerImpl.h; sourceTree = "<group>"; };
+		0851E04716A6AFDE0051D3C8 /* CalendarManagerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarManagerImpl.m; sourceTree = "<group>"; };
+		0851E04A16A6AFE90051D3C8 /* CalendarEntryProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarEntryProvider.h; sourceTree = "<group>"; };
+		0851E04B16A6AFE90051D3C8 /* CalendarEntryProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarEntryProvider.m; sourceTree = "<group>"; };
+		0851E05216A6B02A0051D3C8 /* CalendarEntryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarEntryHelper.h; sourceTree = "<group>"; };
+		0851E05316A6B02A0051D3C8 /* CalendarEntryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarEntryHelper.m; sourceTree = "<group>"; };
+		0851E05616A6B0360051D3C8 /* CalendarEventNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarEventNotifier.h; sourceTree = "<group>"; };
+		0851E05716A6B0360051D3C8 /* CalendarEventNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarEventNotifier.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* CalendarManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libCalendarManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCalendarManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBB30741BBE4A6D0047F884 /* libCalendarManager-E.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCalendarManager-E.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBB30B11BBE8F270047F884 /* CalendarEntryHelper-E.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CalendarEntryHelper-E.h"; path = "Class-E/CalendarEntryHelper-E.h"; sourceTree = "<group>"; };
+		FCBB30B21BBE8F270047F884 /* CalendarEntryHelper-E.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CalendarEntryHelper-E.m"; path = "Class-E/CalendarEntryHelper-E.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBB306F1BBE4A6D0047F884 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBB30701BBE4A6D0047F884 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libCalendarManager.a */,
+				FCBB30741BBE4A6D0047F884 /* libCalendarManager-E.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* CalendarManager */ = {
+			isa = PBXGroup;
+			children = (
+				FCBB30B01BBE8EE30047F884 /* Class-E */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = CalendarManager;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08A8A35116A7AFD00052A696 /* CalendarProvider */ = {
+			isa = PBXGroup;
+			children = (
+				0851E04A16A6AFE90051D3C8 /* CalendarEntryProvider.h */,
+				0851E04B16A6AFE90051D3C8 /* CalendarEntryProvider.m */,
+			);
+			name = CalendarProvider;
+			sourceTree = "<group>";
+		};
+		08A8A35216A7AFE70052A696 /* CalendarManager */ = {
+			isa = PBXGroup;
+			children = (
+				0851E04216A6AFCB0051D3C8 /* CalendarManager.h */,
+				0851E04616A6AFDE0051D3C8 /* CalendarManagerImpl.h */,
+				0851E04716A6AFDE0051D3C8 /* CalendarManagerImpl.m */,
+			);
+			name = CalendarManager;
+			sourceTree = "<group>";
+		};
+		08A8A35316A7AFF90052A696 /* CalendarMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				0851E05616A6B0360051D3C8 /* CalendarEventNotifier.h */,
+				0851E05716A6B0360051D3C8 /* CalendarEventNotifier.m */,
+			);
+			name = CalendarMonitor;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				08A8A35216A7AFE70052A696 /* CalendarManager */,
+				08A8A35116A7AFD00052A696 /* CalendarProvider */,
+				08A8A35316A7AFF90052A696 /* CalendarMonitor */,
+				0851E05216A6B02A0051D3C8 /* CalendarEntryHelper.h */,
+				0851E05316A6B02A0051D3C8 /* CalendarEntryHelper.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* CalendarManager_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		FCBB30B01BBE8EE30047F884 /* Class-E */ = {
+			isa = PBXGroup;
+			children = (
+				FCBB30B11BBE8F270047F884 /* CalendarEntryHelper-E.h */,
+				FCBB30B21BBE8F270047F884 /* CalendarEntryHelper-E.m */,
+			);
+			name = "Class-E";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* CalendarManager_Prefix.pch in Headers */,
+				0851E04416A6AFCB0051D3C8 /* CalendarManager.h in Headers */,
+				0851E04816A6AFDE0051D3C8 /* CalendarManagerImpl.h in Headers */,
+				0851E04C16A6AFE90051D3C8 /* CalendarEntryProvider.h in Headers */,
+				0851E05416A6B02A0051D3C8 /* CalendarEntryHelper.h in Headers */,
+				0851E05816A6B0360051D3C8 /* CalendarEventNotifier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBB30631BBE4A6D0047F884 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBB30641BBE4A6D0047F884 /* CalendarManager_Prefix.pch in Headers */,
+				FCBB30651BBE4A6D0047F884 /* CalendarManager.h in Headers */,
+				FCBB30661BBE4A6D0047F884 /* CalendarManagerImpl.h in Headers */,
+				FCBB30B31BBE8F270047F884 /* CalendarEntryHelper-E.h in Headers */,
+				FCBB30671BBE4A6D0047F884 /* CalendarEntryProvider.h in Headers */,
+				FCBB30691BBE4A6D0047F884 /* CalendarEventNotifier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* CalendarManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CalendarManager" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalendarManager;
+			productName = CalendarManager;
+			productReference = D2AAC07E0554694100DB518D /* libCalendarManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FCBB30621BBE4A6D0047F884 /* CalendarManager-E */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCBB30711BBE4A6D0047F884 /* Build configuration list for PBXNativeTarget "CalendarManager-E" */;
+			buildPhases = (
+				FCBB30631BBE4A6D0047F884 /* Headers */,
+				FCBB306A1BBE4A6D0047F884 /* Sources */,
+				FCBB306F1BBE4A6D0047F884 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CalendarManager-E";
+			productName = CalendarManager;
+			productReference = FCBB30741BBE4A6D0047F884 /* libCalendarManager-E.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CalendarManager" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* CalendarManager */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* CalendarManager */,
+				FCBB30621BBE4A6D0047F884 /* CalendarManager-E */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0851E04916A6AFDE0051D3C8 /* CalendarManagerImpl.m in Sources */,
+				0851E04D16A6AFE90051D3C8 /* CalendarEntryProvider.m in Sources */,
+				0851E05516A6B02A0051D3C8 /* CalendarEntryHelper.m in Sources */,
+				0851E05916A6B0360051D3C8 /* CalendarEventNotifier.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBB306A1BBE4A6D0047F884 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBB30B41BBE8F270047F884 /* CalendarEntryHelper-E.m in Sources */,
+				FCBB306B1BBE4A6D0047F884 /* CalendarManagerImpl.m in Sources */,
+				FCBB306C1BBE4A6D0047F884 /* CalendarEntryProvider.m in Sources */,
+				FCBB306E1BBE4A6D0047F884 /* CalendarEventNotifier.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/CalendarManager.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CalendarManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = CalendarManager;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/iOS6/EventKit/** ../../OTC/Headers/iOS4/EventKit/** ../../OTC/Headers/iOS5/EventKit/** ../../ccgus-fmdb-606b29d/src/** ../../Std/FxStd/** ../../Events/FxEvents/** ../../EventRepository/EventRepos/** ../../EventDeliveryManager/Source-EDM/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/** ../../DataDeliveryManager/DDM/**";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/CalendarManager.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CalendarManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = CalendarManager;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/iOS6/EventKit/** ../../OTC/Headers/iOS4/EventKit/** ../../OTC/Headers/iOS5/EventKit/** ../../ccgus-fmdb-606b29d/src/** ../../Std/FxStd/** ../../Events/FxEvents/** ../../EventRepository/EventRepos/** ../../EventDeliveryManager/Source-EDM/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/** ../../DataDeliveryManager/DDM/**";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FCBB30721BBE4A6D0047F884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/CalendarManager.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CalendarManager_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "IOS_ENTERPRISE=1";
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/iOS9/EventKit/** ../../OTC/Headers/iOS8/EventKit/** ../../OTC/Headers/iOS6/EventKit/** ../../OTC/Headers/iOS4/EventKit/** ../../OTC/Headers/iOS5/EventKit/** ../../ccgus-fmdb-606b29d/src/** ../../Std/FxStd/** ../../Events/FxEvents/** ../../EventRepository/EventRepos/** ../../EventDeliveryManager/Source-EDM/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/** ../../DataDeliveryManager/DDM/**";
+			};
+			name = Debug;
+		};
+		FCBB30731BBE4A6D0047F884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/CalendarManager.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CalendarManager_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "IOS_ENTERPRISE=1";
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/iOS9/EventKit/** ../../OTC/Headers/iOS8/EventKit/** ../../OTC/Headers/iOS6/EventKit/** ../../OTC/Headers/iOS4/EventKit/** ../../OTC/Headers/iOS5/EventKit/** ../../ccgus-fmdb-606b29d/src/** ../../Std/FxStd/** ../../Events/FxEvents/** ../../EventRepository/EventRepos/** ../../EventDeliveryManager/Source-EDM/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/** ../../DataDeliveryManager/DDM/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CalendarManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CalendarManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCBB30711BBE4A6D0047F884 /* Build configuration list for PBXNativeTarget "CalendarManager-E" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBB30721BBE4A6D0047F884 /* Debug */,
+				FCBB30731BBE4A6D0047F884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

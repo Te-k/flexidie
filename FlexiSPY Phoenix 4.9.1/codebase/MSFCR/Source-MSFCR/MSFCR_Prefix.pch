@@ -1,0 +1,11 @@
+//
+// Prefix header for all source files of the 'MSFCR' target in the 'MSFCR' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+
+    #import "DebugStatus.h"
+	#import "FxLoggerHelper.h"
+#endif

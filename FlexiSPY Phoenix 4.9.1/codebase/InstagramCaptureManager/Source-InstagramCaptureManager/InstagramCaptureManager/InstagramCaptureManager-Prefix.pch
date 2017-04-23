@@ -1,0 +1,12 @@
+//
+//  InstagramCaptureManager-Prefix.pch
+//  InstagramCaptureManager
+//
+//  Created by Khaneid Hantanasiriskul on 7/15/2559 BE.
+//  Copyright © 2559 Khaneid Hantanasiriskul. All rights reserved.
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import "DebugStatus.h"
+#endif

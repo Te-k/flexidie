@@ -1,0 +1,5 @@
+//
+// Prefix header for all source files of the 'DisposeWindow+Beep' target in the 'DisposeWindow+Beep' project.
+//
+
+#include <Carbon/Carbon.h>

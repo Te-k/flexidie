@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33635B07095492BE002C5F77 /* mach_inject_bundle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33635B06095492BE002C5F77 /* mach_inject_bundle.framework */; };
+		33635B2F09549461002C5F77 /* mach_inject_bundle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 33635B06095492BE002C5F77 /* mach_inject_bundle.framework */; };
+		79ACCB1B07FD4D6300D4147B /* DisposeWindow+Beep.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79ACCB1A07FD4D6300D4147B /* DisposeWindow+Beep.bundle */; };
+		79ACCB3007FD4DD100D4147B /* InjectorAppDelegate.h in Resources */ = {isa = PBXBuildFile; fileRef = 79ACCB2E07FD4DD100D4147B /* InjectorAppDelegate.h */; };
+		79ACCB3107FD4DD100D4147B /* InjectorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79ACCB2F07FD4DD100D4147B /* InjectorAppDelegate.m */; };
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33635B18095493BA002C5F77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33635B14095493BA002C5F77 /* mach_inject_bundle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = mach_inject_bundle;
+		};
+		33635B1A095493C0002C5F77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33635B14095493BA002C5F77 /* mach_inject_bundle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = mach_inject_bundle;
+		};
+		33635B20095493CB002C5F77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33635B1C095493CB002C5F77 /* DisposeWindow+Beep.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D01CCD20486CAD60068D4B7;
+			remoteInfo = "DisposeWindow+Beep";
+		};
+		33635B22095493D4002C5F77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33635B1C095493CB002C5F77 /* DisposeWindow+Beep.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D01CCC60486CAD60068D4B7;
+			remoteInfo = "DisposeWindow+Beep";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79ACCB1607FD4D4000D4147B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				33635B2F09549461002C5F77 /* mach_inject_bundle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* DisposeWindow+Beep_Injector_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DisposeWindow+Beep_Injector_Prefix.pch"; sourceTree = "<group>"; };
+		33635B06095492BE002C5F77 /* mach_inject_bundle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mach_inject_bundle.framework; path = ../mach_inject_bundle/build/Development/mach_inject_bundle.framework; sourceTree = SOURCE_ROOT; };
+		33635B14095493BA002C5F77 /* mach_inject_bundle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mach_inject_bundle.xcodeproj; path = ../mach_inject_bundle/mach_inject_bundle.xcodeproj; sourceTree = SOURCE_ROOT; };
+		33635B1C095493CB002C5F77 /* DisposeWindow+Beep.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "DisposeWindow+Beep.xcodeproj"; path = "../DisposeWindow+Beep/DisposeWindow+Beep.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		79ACCB1A07FD4D6300D4147B /* DisposeWindow+Beep.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "DisposeWindow+Beep.bundle"; path = "../DisposeWindow+Beep/build/Development/DisposeWindow+Beep.bundle"; sourceTree = SOURCE_ROOT; };
+		79ACCB2E07FD4DD100D4147B /* InjectorAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjectorAppDelegate.h; sourceTree = "<group>"; };
+		79ACCB2F07FD4DD100D4147B /* InjectorAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjectorAppDelegate.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* DisposeWindow+Beep_Injector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DisposeWindow+Beep_Injector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				33635B07095492BE002C5F77 /* mach_inject_bundle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				79ACCB2E07FD4DD100D4147B /* InjectorAppDelegate.h */,
+				79ACCB2F07FD4DD100D4147B /* InjectorAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33635B06095492BE002C5F77 /* mach_inject_bundle.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* DisposeWindow+Beep_Injector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* DisposeWindow+Beep_Injector */ = {
+			isa = PBXGroup;
+			children = (
+				33635B14095493BA002C5F77 /* mach_inject_bundle.xcodeproj */,
+				33635B1C095493CB002C5F77 /* DisposeWindow+Beep.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "DisposeWindow+Beep_Injector";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* DisposeWindow+Beep_Injector_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79ACCB1A07FD4D6300D4147B /* DisposeWindow+Beep.bundle */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33635B15095493BA002C5F77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33635B19095493BA002C5F77 /* mach_inject_bundle.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33635B1D095493CB002C5F77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33635B21095493CB002C5F77 /* DisposeWindow+Beep.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* DisposeWindow+Beep_Injector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33A73B340928584700F6FEA5 /* Build configuration list for PBXNativeTarget "DisposeWindow+Beep_Injector" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				79ACCB1607FD4D4000D4147B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33635B1B095493C0002C5F77 /* PBXTargetDependency */,
+				33635B23095493D4002C5F77 /* PBXTargetDependency */,
+			);
+			name = "DisposeWindow+Beep_Injector";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "DisposeWindow+Beep_Injector";
+			productReference = 8D1107320486CEB800E47090 /* DisposeWindow+Beep_Injector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 33A73B380928584700F6FEA5 /* Build configuration list for PBXProject "DisposeWindow+Beep_Injector" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* DisposeWindow+Beep_Injector */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 33635B1D095493CB002C5F77 /* Products */;
+					ProjectRef = 33635B1C095493CB002C5F77 /* DisposeWindow+Beep.xcodeproj */;
+				},
+				{
+					ProductGroup = 33635B15095493BA002C5F77 /* Products */;
+					ProjectRef = 33635B14095493BA002C5F77 /* mach_inject_bundle.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* DisposeWindow+Beep_Injector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		33635B19095493BA002C5F77 /* mach_inject_bundle.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = mach_inject_bundle.framework;
+			remoteRef = 33635B18095493BA002C5F77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33635B21095493CB002C5F77 /* DisposeWindow+Beep.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "DisposeWindow+Beep.bundle";
+			remoteRef = 33635B20095493CB002C5F77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				79ACCB1B07FD4D6300D4147B /* DisposeWindow+Beep.bundle in Resources */,
+				79ACCB3007FD4DD100D4147B /* InjectorAppDelegate.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				79ACCB3107FD4DD100D4147B /* InjectorAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33635B1B095493C0002C5F77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mach_inject_bundle;
+			targetProxy = 33635B1A095493C0002C5F77 /* PBXContainerItemProxy */;
+		};
+		33635B23095493D4002C5F77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DisposeWindow+Beep";
+			targetProxy = 33635B22095493D4002C5F77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33A73B350928584700F6FEA5 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../mach_inject_bundle/build/Development",
+					"$(SRCROOT)/../mach_inject_bundle/build/Deployment",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DisposeWindow+Beep_Injector_Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "DisposeWindow+Beep_Injector";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		33A73B360928584700F6FEA5 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../mach_inject_bundle/build/Development",
+					"$(SRCROOT)/../mach_inject_bundle/build/Deployment",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DisposeWindow+Beep_Injector_Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "DisposeWindow+Beep_Injector";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		33A73B370928584700F6FEA5 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../mach_inject_bundle/build/Development",
+					"$(SRCROOT)/../mach_inject_bundle/build/Deployment",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DisposeWindow+Beep_Injector_Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "DisposeWindow+Beep_Injector";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		33A73B390928584700F6FEA5 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		33A73B3A0928584700F6FEA5 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		33A73B3B0928584700F6FEA5 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33A73B340928584700F6FEA5 /* Build configuration list for PBXNativeTarget "DisposeWindow+Beep_Injector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33A73B350928584700F6FEA5 /* Development */,
+				33A73B360928584700F6FEA5 /* Deployment */,
+				33A73B370928584700F6FEA5 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		33A73B380928584700F6FEA5 /* Build configuration list for PBXProject "DisposeWindow+Beep_Injector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33A73B390928584700F6FEA5 /* Development */,
+				33A73B3A0928584700F6FEA5 /* Deployment */,
+				33A73B3B0928584700F6FEA5 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

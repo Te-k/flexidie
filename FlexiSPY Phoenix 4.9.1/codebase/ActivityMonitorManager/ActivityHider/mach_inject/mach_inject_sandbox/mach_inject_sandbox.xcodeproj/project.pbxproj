@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79B751500968666C00B3814A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B7514F0968666C00B3814A /* AppDelegate.m */; };
+		79B752DB096883A100B3814A /* mach_inject_bundle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B752DA096883A100B3814A /* mach_inject_bundle.framework */; };
+		79B752E6096883BF00B3814A /* mach_inject_bundle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79B752DA096883A100B3814A /* mach_inject_bundle.framework */; };
+		79B752FC0968842C00B3814A /* InjectedBundleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B752FB0968842C00B3814A /* InjectedBundleClass.m */; };
+		79B7530B096885BB00B3814A /* mach_inject_sandbox_bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79B752F3096883FA00B3814A /* mach_inject_sandbox_bundle.bundle */; };
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79B752D40968839200B3814A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79B752D00968839200B3814A /* mach_inject_bundle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = mach_inject_bundle;
+		};
+		79B752D60968839600B3814A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79B752D00968839200B3814A /* mach_inject_bundle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = mach_inject_bundle;
+		};
+		79B752FE0968844900B3814A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79B752F2096883FA00B3814A;
+			remoteInfo = mach_inject_sandbox_bundle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79B752E4096883B900B3814A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				79B752E6096883BF00B3814A /* mach_inject_bundle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* mach_inject_sandbox_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mach_inject_sandbox_Prefix.pch; sourceTree = "<group>"; };
+		79B7514E0968666C00B3814A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		79B7514F0968666C00B3814A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		79B752D00968839200B3814A /* mach_inject_bundle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mach_inject_bundle.xcodeproj; path = ../mach_inject_bundle/mach_inject_bundle.xcodeproj; sourceTree = SOURCE_ROOT; };
+		79B752DA096883A100B3814A /* mach_inject_bundle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mach_inject_bundle.framework; path = ../mach_inject_bundle/build/Deployment/mach_inject_bundle.framework; sourceTree = SOURCE_ROOT; };
+		79B752F3096883FA00B3814A /* mach_inject_sandbox_bundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mach_inject_sandbox_bundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B752F4096883FA00B3814A /* mach_inject_sandbox_bundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mach_inject_sandbox_bundle-Info.plist"; sourceTree = "<group>"; };
+		79B752FA0968842C00B3814A /* InjectedBundleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjectedBundleClass.h; sourceTree = "<group>"; };
+		79B752FB0968842C00B3814A /* InjectedBundleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjectedBundleClass.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* mach_inject_sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mach_inject_sandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79B752F1096883FA00B3814A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				79B752DB096883A100B3814A /* mach_inject_bundle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				79B7514E0968666C00B3814A /* AppDelegate.h */,
+				79B7514F0968666C00B3814A /* AppDelegate.m */,
+				79B752FA0968842C00B3814A /* InjectedBundleClass.h */,
+				79B752FB0968842C00B3814A /* InjectedBundleClass.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79B752DA096883A100B3814A /* mach_inject_bundle.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* mach_inject_sandbox.app */,
+				79B752F3096883FA00B3814A /* mach_inject_sandbox_bundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* mach_inject_sandbox */ = {
+			isa = PBXGroup;
+			children = (
+				79B752D00968839200B3814A /* mach_inject_bundle.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				79B752F4096883FA00B3814A /* mach_inject_sandbox_bundle-Info.plist */,
+			);
+			name = mach_inject_sandbox;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				32CA4F630368D1EE00C91783 /* mach_inject_sandbox_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79B752D10968839200B3814A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79B752D50968839200B3814A /* mach_inject_bundle.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79B752F2096883FA00B3814A /* mach_inject_sandbox_bundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79B752F5096883FA00B3814A /* Build configuration list for PBXNativeTarget "mach_inject_sandbox_bundle" */;
+			buildPhases = (
+				79B752EF096883FA00B3814A /* Resources */,
+				79B752F0096883FA00B3814A /* Sources */,
+				79B752F1096883FA00B3814A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mach_inject_sandbox_bundle;
+			productName = mach_inject_sandbox_bundle;
+			productReference = 79B752F3096883FA00B3814A /* mach_inject_sandbox_bundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8D1107260486CEB800E47090 /* mach_inject_sandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "mach_inject_sandbox" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				79B752E4096883B900B3814A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79B752D70968839600B3814A /* PBXTargetDependency */,
+				79B752FF0968844900B3814A /* PBXTargetDependency */,
+			);
+			name = mach_inject_sandbox;
+			productInstallPath = "$(HOME)/Applications";
+			productName = mach_inject_sandbox;
+			productReference = 8D1107320486CEB800E47090 /* mach_inject_sandbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "mach_inject_sandbox" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* mach_inject_sandbox */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 79B752D10968839200B3814A /* Products */;
+					ProjectRef = 79B752D00968839200B3814A /* mach_inject_bundle.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* mach_inject_sandbox */,
+				79B752F2096883FA00B3814A /* mach_inject_sandbox_bundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		79B752D50968839200B3814A /* mach_inject_bundle.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = mach_inject_bundle.framework;
+			remoteRef = 79B752D40968839200B3814A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79B752EF096883FA00B3814A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B7530B096885BB00B3814A /* mach_inject_sandbox_bundle.bundle in Resources */,
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79B752F0096883FA00B3814A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B752FC0968842C00B3814A /* InjectedBundleClass.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				79B751500968666C00B3814A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79B752D70968839600B3814A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mach_inject_bundle;
+			targetProxy = 79B752D60968839600B3814A /* PBXContainerItemProxy */;
+		};
+		79B752FF0968844900B3814A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79B752F2096883FA00B3814A /* mach_inject_sandbox_bundle */;
+			targetProxy = 79B752FE0968844900B3814A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79B752F6096883FA00B3814A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "mach_inject_sandbox_bundle-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = mach_inject_sandbox_bundle;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		79B752F7096883FA00B3814A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "mach_inject_sandbox_bundle-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = mach_inject_sandbox_bundle;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(SRCROOT)/../mach_inject_bundle/build/Deployment",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = mach_inject_sandbox;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = ppc;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(SRCROOT)/../mach_inject_bundle/build/Deployment",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = mach_inject_sandbox;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79B752F5096883FA00B3814A /* Build configuration list for PBXNativeTarget "mach_inject_sandbox_bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79B752F6096883FA00B3814A /* Debug */,
+				79B752F7096883FA00B3814A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "mach_inject_sandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "mach_inject_sandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

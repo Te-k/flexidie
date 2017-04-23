@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		085C0B24180BA8D700271CCB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085C0B23180BA8D700271CCB /* Cocoa.framework */; };
+		085C0B2E180BA8D700271CCB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 085C0B2C180BA8D700271CCB /* InfoPlist.strings */; };
+		085C0B30180BA8D700271CCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 085C0B2F180BA8D700271CCB /* main.m */; };
+		085C0B34180BA8D700271CCB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 085C0B32180BA8D700271CCB /* Credits.rtf */; };
+		085C0B37180BA8D700271CCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 085C0B36180BA8D700271CCB /* AppDelegate.m */; };
+		085C0B3A180BA8D700271CCB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 085C0B38180BA8D700271CCB /* MainMenu.xib */; };
+		085C0B52180BA99400271CCB /* libProtocolBuilderMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 085C0B4F180BA97600271CCB /* libProtocolBuilderMac.a */; };
+		085C0B60180BAA4300271CCB /* libGZIPMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 085C0B5D180BAA3400271CCB /* libGZIPMac.a */; };
+		085C0B6F180BC19500271CCB /* libCRC32Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 085C0B6C180BC16900271CCB /* libCRC32Mac.a */; };
+		085C0B8D180BC31A00271CCB /* libFxStdMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 085C0B8A180BC30D00271CCB /* libFxStdMac.a */; };
+		085C0BA6180BC3B000271CCB /* libCryptographyMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 085C0BA0180BC3A400271CCB /* libCryptographyMac.a */; };
+		085C0BD0180BC59200271CCB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085C0BCF180BC59200271CCB /* Security.framework */; };
+		085C0BE2180BC5E400271CCB /* libfmdbMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 085C0BDF180BC5A500271CCB /* libfmdbMac.a */; };
+		085C0BE4180BC5F900271CCB /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 085C0BE3180BC5F900271CCB /* libsqlite3.0.dylib */; };
+		085C0BE6180BC63500271CCB /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 085C0BE5180BC63500271CCB /* libz.1.2.3.dylib */; };
+		085C0BE7180BC65C00271CCB /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085C0B26180BA8D700271CCB /* AppKit.framework */; };
+		085C0BE9180BC91F00271CCB /* server.pub in Resources */ = {isa = PBXBuildFile; fileRef = 085C0BE8180BC91F00271CCB /* server.pub */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		085C0B4A180BA97600271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0B40180BA97500271CCB /* ProtocolBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = ProtocolBuilder;
+		};
+		085C0B4C180BA97600271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0B40180BA97500271CCB /* ProtocolBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FD67C6F13DE6B4D00623ACC;
+			remoteInfo = ProtocolBuilderLib;
+		};
+		085C0B4E180BA97600271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0B40180BA97500271CCB /* ProtocolBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 082441B9180BA31500182EA1;
+			remoteInfo = ProtocolBuilderMac;
+		};
+		085C0B50180BA98F00271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0B40180BA97500271CCB /* ProtocolBuilder.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 082441B8180BA31500182EA1;
+			remoteInfo = ProtocolBuilderMac;
+		};
+		085C0B5A180BAA3400271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0B53180BAA3400271CCB /* GZIP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = GZIP;
+		};
+		085C0B5C180BAA3400271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0B53180BAA3400271CCB /* GZIP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 084926E017EAE67900AE874B;
+			remoteInfo = GZIPMac;
+		};
+		085C0B5E180BAA3E00271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0B53180BAA3400271CCB /* GZIP.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 084926DF17EAE67900AE874B;
+			remoteInfo = GZIPMac;
+		};
+		085C0B69180BC16900271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0B61180BC16800271CCB /* CRC32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CRC32;
+		};
+		085C0B6B180BC16900271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0B61180BC16800271CCB /* CRC32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885386F17F9A00D00AB08F2;
+			remoteInfo = CRC32Mac;
+		};
+		085C0B6D180BC19100271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0B61180BC16800271CCB /* CRC32.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0885386E17F9A00D00AB08F2;
+			remoteInfo = CRC32Mac;
+		};
+		085C0B87180BC30D00271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0B7F180BC30C00271CCB /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		085C0B89180BC30D00271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0B7F180BC30C00271CCB /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		085C0B8B180BC31700271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0B7F180BC30C00271CCB /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0885379917F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		085C0B9D180BC3A400271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0B95180BC3A300271CCB /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		085C0B9F180BC3A400271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0B95180BC3A300271CCB /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 088536E417F989BB00AB08F2;
+			remoteInfo = CryptographyMac;
+		};
+		085C0BA1180BC3AC00271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0B95180BC3A300271CCB /* Cryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 088536E317F989BB00AB08F2;
+			remoteInfo = CryptographyMac;
+		};
+		085C0BDA180BC5A500271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0BD1180BC5A300271CCB /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		085C0BDC180BC5A500271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0BD1180BC5A300271CCB /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		085C0BDE180BC5A500271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0BD1180BC5A300271CCB /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08A4D04B18029C15004A2589;
+			remoteInfo = fmdbMac;
+		};
+		085C0BE0180BC5D100271CCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085C0BD1180BC5A300271CCB /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08A4D04A18029C15004A2589;
+			remoteInfo = fmdbMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		085C0B1F180BA8D700271CCB /* ProtocolBuilderTestAppForMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolBuilderTestAppForMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		085C0B23180BA8D700271CCB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		085C0B26180BA8D700271CCB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		085C0B27180BA8D700271CCB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		085C0B28180BA8D700271CCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		085C0B2B180BA8D700271CCB /* ProtocolBuilderTestAppForMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProtocolBuilderTestAppForMac-Info.plist"; sourceTree = "<group>"; };
+		085C0B2D180BA8D700271CCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		085C0B2F180BA8D700271CCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		085C0B31180BA8D700271CCB /* ProtocolBuilderTestAppForMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProtocolBuilderTestAppForMac-Prefix.pch"; sourceTree = "<group>"; };
+		085C0B33180BA8D700271CCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		085C0B35180BA8D700271CCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		085C0B36180BA8D700271CCB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		085C0B39180BA8D700271CCB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		085C0B40180BA97500271CCB /* ProtocolBuilder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProtocolBuilder.xcodeproj; path = ../ProtocolBuilder/ProtocolBuilder.xcodeproj; sourceTree = "<group>"; };
+		085C0B53180BAA3400271CCB /* GZIP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GZIP.xcodeproj; path = "../../../GZIP/Source-GZIP/GZIP.xcodeproj"; sourceTree = "<group>"; };
+		085C0B61180BC16800271CCB /* CRC32.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CRC32.xcodeproj; path = "../../../CRC32/Source-CRC32/CRC32.xcodeproj"; sourceTree = "<group>"; };
+		085C0B7F180BC30C00271CCB /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../../Std/FxStd/FxStd.xcodeproj; sourceTree = "<group>"; };
+		085C0B95180BC3A300271CCB /* Cryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cryptography.xcodeproj; path = "../../../Cryptography/Source-Cryptography/Cryptography.xcodeproj"; sourceTree = "<group>"; };
+		085C0BCF180BC59200271CCB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		085C0BD1180BC5A300271CCB /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = "../../../ccgus-fmdb-606b29d/fmdb.xcodeproj"; sourceTree = "<group>"; };
+		085C0BE3180BC5F900271CCB /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		085C0BE5180BC63500271CCB /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		085C0BE8180BC91F00271CCB /* server.pub */ = {isa = PBXFileReference; lastKnownFileType = file; path = server.pub; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		085C0B1C180BA8D700271CCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085C0BE7180BC65C00271CCB /* AppKit.framework in Frameworks */,
+				085C0BE6180BC63500271CCB /* libz.1.2.3.dylib in Frameworks */,
+				085C0BE4180BC5F900271CCB /* libsqlite3.0.dylib in Frameworks */,
+				085C0BE2180BC5E400271CCB /* libfmdbMac.a in Frameworks */,
+				085C0BD0180BC59200271CCB /* Security.framework in Frameworks */,
+				085C0BA6180BC3B000271CCB /* libCryptographyMac.a in Frameworks */,
+				085C0B8D180BC31A00271CCB /* libFxStdMac.a in Frameworks */,
+				085C0B6F180BC19500271CCB /* libCRC32Mac.a in Frameworks */,
+				085C0B60180BAA4300271CCB /* libGZIPMac.a in Frameworks */,
+				085C0B52180BA99400271CCB /* libProtocolBuilderMac.a in Frameworks */,
+				085C0B24180BA8D700271CCB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		085C0B14180BA8D700271CCB = {
+			isa = PBXGroup;
+			children = (
+				085C0BD1180BC5A300271CCB /* fmdb.xcodeproj */,
+				085C0B95180BC3A300271CCB /* Cryptography.xcodeproj */,
+				085C0B7F180BC30C00271CCB /* FxStd.xcodeproj */,
+				085C0B61180BC16800271CCB /* CRC32.xcodeproj */,
+				085C0B53180BAA3400271CCB /* GZIP.xcodeproj */,
+				085C0B40180BA97500271CCB /* ProtocolBuilder.xcodeproj */,
+				085C0B29180BA8D700271CCB /* ProtocolBuilderTestAppForMac */,
+				085C0B22180BA8D700271CCB /* Frameworks */,
+				085C0B20180BA8D700271CCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		085C0B20180BA8D700271CCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				085C0B1F180BA8D700271CCB /* ProtocolBuilderTestAppForMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		085C0B22180BA8D700271CCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				085C0B23180BA8D700271CCB /* Cocoa.framework */,
+				085C0B25180BA8D700271CCB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		085C0B25180BA8D700271CCB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				085C0BE5180BC63500271CCB /* libz.1.2.3.dylib */,
+				085C0BE3180BC5F900271CCB /* libsqlite3.0.dylib */,
+				085C0BCF180BC59200271CCB /* Security.framework */,
+				085C0B26180BA8D700271CCB /* AppKit.framework */,
+				085C0B27180BA8D700271CCB /* CoreData.framework */,
+				085C0B28180BA8D700271CCB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		085C0B29180BA8D700271CCB /* ProtocolBuilderTestAppForMac */ = {
+			isa = PBXGroup;
+			children = (
+				085C0B35180BA8D700271CCB /* AppDelegate.h */,
+				085C0B36180BA8D700271CCB /* AppDelegate.m */,
+				085C0B38180BA8D700271CCB /* MainMenu.xib */,
+				085C0B2A180BA8D700271CCB /* Supporting Files */,
+			);
+			path = ProtocolBuilderTestAppForMac;
+			sourceTree = "<group>";
+		};
+		085C0B2A180BA8D700271CCB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				085C0B31180BA8D700271CCB /* ProtocolBuilderTestAppForMac-Prefix.pch */,
+				085C0BE8180BC91F00271CCB /* server.pub */,
+				085C0B2F180BA8D700271CCB /* main.m */,
+				085C0B2B180BA8D700271CCB /* ProtocolBuilderTestAppForMac-Info.plist */,
+				085C0B2C180BA8D700271CCB /* InfoPlist.strings */,
+				085C0B32180BA8D700271CCB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		085C0B41180BA97500271CCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				085C0B4B180BA97600271CCB /* ProtocolBuilder.app */,
+				085C0B4D180BA97600271CCB /* libProtocolBuilderLib.a */,
+				085C0B4F180BA97600271CCB /* libProtocolBuilderMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		085C0B54180BAA3400271CCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				085C0B5B180BAA3400271CCB /* libGZIP.a */,
+				085C0B5D180BAA3400271CCB /* libGZIPMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		085C0B62180BC16800271CCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				085C0B6A180BC16900271CCB /* libCRC32.a */,
+				085C0B6C180BC16900271CCB /* libCRC32Mac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		085C0B80180BC30C00271CCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				085C0B88180BC30D00271CCB /* libFxStd.a */,
+				085C0B8A180BC30D00271CCB /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		085C0B96180BC3A300271CCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				085C0B9E180BC3A400271CCB /* libCryptography.a */,
+				085C0BA0180BC3A400271CCB /* libCryptographyMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		085C0BD2180BC5A300271CCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				085C0BDB180BC5A500271CCB /* fmdb */,
+				085C0BDD180BC5A500271CCB /* libFMDB.a */,
+				085C0BDF180BC5A500271CCB /* libfmdbMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		085C0B1E180BA8D700271CCB /* ProtocolBuilderTestAppForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 085C0B3D180BA8D700271CCB /* Build configuration list for PBXNativeTarget "ProtocolBuilderTestAppForMac" */;
+			buildPhases = (
+				085C0B1B180BA8D700271CCB /* Sources */,
+				085C0B1C180BA8D700271CCB /* Frameworks */,
+				085C0B1D180BA8D700271CCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				085C0BE1180BC5D100271CCB /* PBXTargetDependency */,
+				085C0BA2180BC3AC00271CCB /* PBXTargetDependency */,
+				085C0B8C180BC31700271CCB /* PBXTargetDependency */,
+				085C0B6E180BC19100271CCB /* PBXTargetDependency */,
+				085C0B5F180BAA3E00271CCB /* PBXTargetDependency */,
+				085C0B51180BA98F00271CCB /* PBXTargetDependency */,
+			);
+			name = ProtocolBuilderTestAppForMac;
+			productName = ProtocolBuilderTestAppForMac;
+			productReference = 085C0B1F180BA8D700271CCB /* ProtocolBuilderTestAppForMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		085C0B16180BA8D700271CCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 085C0B19180BA8D700271CCB /* Build configuration list for PBXProject "ProtocolBuilderTestAppForMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 085C0B14180BA8D700271CCB;
+			productRefGroup = 085C0B20180BA8D700271CCB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 085C0B62180BC16800271CCB /* Products */;
+					ProjectRef = 085C0B61180BC16800271CCB /* CRC32.xcodeproj */;
+				},
+				{
+					ProductGroup = 085C0B96180BC3A300271CCB /* Products */;
+					ProjectRef = 085C0B95180BC3A300271CCB /* Cryptography.xcodeproj */;
+				},
+				{
+					ProductGroup = 085C0BD2180BC5A300271CCB /* Products */;
+					ProjectRef = 085C0BD1180BC5A300271CCB /* fmdb.xcodeproj */;
+				},
+				{
+					ProductGroup = 085C0B80180BC30C00271CCB /* Products */;
+					ProjectRef = 085C0B7F180BC30C00271CCB /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = 085C0B54180BAA3400271CCB /* Products */;
+					ProjectRef = 085C0B53180BAA3400271CCB /* GZIP.xcodeproj */;
+				},
+				{
+					ProductGroup = 085C0B41180BA97500271CCB /* Products */;
+					ProjectRef = 085C0B40180BA97500271CCB /* ProtocolBuilder.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				085C0B1E180BA8D700271CCB /* ProtocolBuilderTestAppForMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		085C0B4B180BA97600271CCB /* ProtocolBuilder.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ProtocolBuilder.app;
+			remoteRef = 085C0B4A180BA97600271CCB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		085C0B4D180BA97600271CCB /* libProtocolBuilderLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libProtocolBuilderLib.a;
+			remoteRef = 085C0B4C180BA97600271CCB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		085C0B4F180BA97600271CCB /* libProtocolBuilderMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libProtocolBuilderMac.a;
+			remoteRef = 085C0B4E180BA97600271CCB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		085C0B5B180BAA3400271CCB /* libGZIP.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGZIP.a;
+			remoteRef = 085C0B5A180BAA3400271CCB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		085C0B5D180BAA3400271CCB /* libGZIPMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGZIPMac.a;
+			remoteRef = 085C0B5C180BAA3400271CCB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		085C0B6A180BC16900271CCB /* libCRC32.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCRC32.a;
+			remoteRef = 085C0B69180BC16900271CCB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		085C0B6C180BC16900271CCB /* libCRC32Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCRC32Mac.a;
+			remoteRef = 085C0B6B180BC16900271CCB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		085C0B88180BC30D00271CCB /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = 085C0B87180BC30D00271CCB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		085C0B8A180BC30D00271CCB /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = 085C0B89180BC30D00271CCB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		085C0B9E180BC3A400271CCB /* libCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptography.a;
+			remoteRef = 085C0B9D180BC3A400271CCB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		085C0BA0180BC3A400271CCB /* libCryptographyMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptographyMac.a;
+			remoteRef = 085C0B9F180BC3A400271CCB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		085C0BDB180BC5A500271CCB /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = 085C0BDA180BC5A500271CCB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		085C0BDD180BC5A500271CCB /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = 085C0BDC180BC5A500271CCB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		085C0BDF180BC5A500271CCB /* libfmdbMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libfmdbMac.a;
+			remoteRef = 085C0BDE180BC5A500271CCB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		085C0B1D180BA8D700271CCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085C0B2E180BA8D700271CCB /* InfoPlist.strings in Resources */,
+				085C0B34180BA8D700271CCB /* Credits.rtf in Resources */,
+				085C0B3A180BA8D700271CCB /* MainMenu.xib in Resources */,
+				085C0BE9180BC91F00271CCB /* server.pub in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		085C0B1B180BA8D700271CCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085C0B30180BA8D700271CCB /* main.m in Sources */,
+				085C0B37180BA8D700271CCB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		085C0B51180BA98F00271CCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProtocolBuilderMac;
+			targetProxy = 085C0B50180BA98F00271CCB /* PBXContainerItemProxy */;
+		};
+		085C0B5F180BAA3E00271CCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GZIPMac;
+			targetProxy = 085C0B5E180BAA3E00271CCB /* PBXContainerItemProxy */;
+		};
+		085C0B6E180BC19100271CCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CRC32Mac;
+			targetProxy = 085C0B6D180BC19100271CCB /* PBXContainerItemProxy */;
+		};
+		085C0B8C180BC31700271CCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStdMac;
+			targetProxy = 085C0B8B180BC31700271CCB /* PBXContainerItemProxy */;
+		};
+		085C0BA2180BC3AC00271CCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptographyMac;
+			targetProxy = 085C0BA1180BC3AC00271CCB /* PBXContainerItemProxy */;
+		};
+		085C0BE1180BC5D100271CCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fmdbMac;
+			targetProxy = 085C0BE0180BC5D100271CCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		085C0B2C180BA8D700271CCB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				085C0B2D180BA8D700271CCB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		085C0B32180BA8D700271CCB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				085C0B33180BA8D700271CCB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		085C0B38180BA8D700271CCB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				085C0B39180BA8D700271CCB /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		085C0B3B180BA8D700271CCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		085C0B3C180BA8D700271CCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		085C0B3E180BA8D700271CCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProtocolBuilderTestAppForMac/ProtocolBuilderTestAppForMac-Prefix.pch";
+				INFOPLIST_FILE = "ProtocolBuilderTestAppForMac/ProtocolBuilderTestAppForMac-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
+				USER_HEADER_SEARCH_PATHS = "../ProtocolBuilder/** ../../../Std/FxStd/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		085C0B3F180BA8D700271CCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProtocolBuilderTestAppForMac/ProtocolBuilderTestAppForMac-Prefix.pch";
+				INFOPLIST_FILE = "ProtocolBuilderTestAppForMac/ProtocolBuilderTestAppForMac-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
+				USER_HEADER_SEARCH_PATHS = "../ProtocolBuilder/** ../../../Std/FxStd/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		085C0B19180BA8D700271CCB /* Build configuration list for PBXProject "ProtocolBuilderTestAppForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085C0B3B180BA8D700271CCB /* Debug */,
+				085C0B3C180BA8D700271CCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		085C0B3D180BA8D700271CCB /* Build configuration list for PBXNativeTarget "ProtocolBuilderTestAppForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085C0B3E180BA8D700271CCB /* Debug */,
+				085C0B3F180BA8D700271CCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 085C0B16180BA8D700271CCB /* Project object */;
+}
