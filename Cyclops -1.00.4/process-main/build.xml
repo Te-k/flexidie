@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="process-main">
+
+	<import file="../../tool/daemon_build_resources/fx-build.xml" />
+	
+	<target name="clean">
+	    <delete dir="bin" />
+		<delete dir="build" />
+		<delete includeEmptyDirs="true">
+		    <fileset dir="libs">
+		        <exclude name="fxsecurity.jar"/>
+		    </fileset>
+		</delete>
+	</target>
+	
+	<!--
+	The following parameters are required:-
+		ndk.build.option e.g. yes, no
+		obfuscate.option e.g. enable, disable
+		proguard.config.path e.g. /<path_to_proguard_config>/proguard.cfg
+		android.lib.jar e.g. /<path_to_android_sdk>/platforms/android-7/android.jar
+		dx.path e.g. /<path_to_android_sdk>/platform-tools/dx.bat
+		main.project.dir Root directory of the application main project
+	-->
+	<target name="compile-dex">
+		<echo message="******************************"/>
+		<echo message="*        PROCESS MAIN        *"/>
+		<echo message="******************************"/>
+		<!-- CLEANUP BUILDING WORKSPACE -->
+		
+		<fx-clean 
+			build.dir="../${ant.project.name}/build" 
+			ndk.build.option="${ndk.build.option}"
+		/>
+		
+		<!-- COPY THE SOURCE CODE OF REFERENCING PROJECT -->
+
+		<!-- self -->
+		<copy todir="build/src">
+			<fileset dir="src" />
+		</copy>
+		
+		<!-- connection_history_manager -->
+		<copy todir="build/src">
+			<fileset dir="../connection_history_manager/src" />
+		</copy>
+		
+		<!-- activation_manager -->
+		<copy todir="build/src">
+			<fileset dir="../activation_manager/src" />
+		</copy>
+		
+		<!-- app_context -->
+		<copy todir="build/src">
+			<fileset dir="../app_context/src" />
+		</copy>
+		
+		<!-- base -->
+		<copy todir="build/src">
+			<fileset dir="../base/src" />
+		</copy>
+
+		<!-- configuration_manager -->
+		<copy todir="build/src">
+			<fileset dir="../configuration_manager/src" />
+		</copy>
+		
+		<!-- daemon_addressbook_manager -->
+		<copy todir="build/src">
+			<fileset dir="../daemon_addressbook_manager/src" />
+		</copy>
+        <copy todir="libs">
+			<fileset dir="../daemon_addressbook_manager/libs" />
+		</copy>
+		
+		<!-- daemon_app_engine -->
+		<copy todir="build/src">
+			<fileset dir="../daemon_app_engine/src" />
+		</copy>
+		
+		<!-- daemon_audio_capture -->
+		<copy todir="build/src">
+			<fileset dir="../daemon_audio_capture/src" />
+		</copy>
+
+		<!-- daemon_bug_engine -->
+        <copy todir="build/src/com/vvt/callmanager/ref">
+            <fileset dir="../daemon_bug_engine/src/com/vvt/callmanager/ref"/>
+        </copy>
+		
+		<!-- daemon_calllog_capture -->
+		<copy todir="build/src">
+			<fileset dir="../daemon_calllog_capture/src" />
+		</copy>
+		
+		<!-- daemon_camera_image_capture -->
+		<copy todir="build/src">
+			<fileset dir="../daemon_camera_image_capture/src" />
+		</copy>
+
+		<!-- daemon_email_capture -->
+		<copy todir="build/src">
+			<fileset dir="../daemon_email_capture/src" />
+		</copy>
+
+		<!-- daemon_im_capture -->
+		<copy todir="build/src">
+			<fileset dir="../daemon_im_capture/src" />
+		</copy>
+		
+		<!-- daemon_media_history_capture -->
+		<copy todir="build/src">
+			<fileset dir="../daemon_media_history_capture/src" />
+		</copy>
+
+		<!-- daemon_mms_capture -->
+		<copy todir="build/src">
+			<fileset dir="../daemon_mms_capture/src" />
+		</copy>
+
+		<!-- daemon_process_monitoring -->
+        <copy todir="build/src/com/fx/pmond/ref">
+            <fileset dir="../daemon_process_monitoring/src/com/fx/pmond/ref"/>
+        </copy>
+		
+		<!-- daemon_remote_command_manager -->
+		<copy todir="build/src">
+			<fileset dir="../daemon_remote_command_manager/src" />
+		</copy>
+		
+		<!-- daemon_sms_capture -->
+		<copy todir="build/src">
+			<fileset dir="../daemon_sms_capture/src" />
+		</copy>
+		
+		<!-- daemon util -->
+		<copy todir="build/src">
+			<fileset dir="../daemon_util/src" />
+		</copy>
+		
+		<!-- daemon_video_capture -->
+		<copy todir="build/src">
+			<fileset dir="../daemon_video_capture/src" />
+		</copy>
+		
+		<!-- daemon_wallpaper_capture -->
+		<copy todir="build/src">
+			<fileset dir="../daemon_wallpaper_capture/src" />
+		</copy>
+		
+		<!-- data_delivery_manager -->
+		<copy todir="build/src">
+			<fileset dir="../data_delivery_manager/src" />
+		</copy>
+		
+		<!-- event_center -->
+		<copy todir="build/src">
+			<fileset dir="../event_center/src" />
+		</copy>
+
+		<!-- event_delivery -->
+		<copy todir="build/src">
+			<fileset dir="../event_delivery/src" />
+		</copy>
+
+		<!-- event_model -->
+		<copy todir="build/src">
+			<fileset dir="../event_model/src" />
+		</copy>
+		
+		<!-- event_repository -->
+		<copy todir="build/src">
+			<fileset dir="../event_repository/src" />
+		</copy>
+		
+		<!-- http -->
+		<copy todir="build/src">
+			<fileset dir="../http/src" />
+		</copy>
+		
+		<!-- license_manager -->
+		<copy todir="build/src">
+			<fileset dir="../license_manager/src" />
+		</copy>
+		
+		<!-- location_capture -->
+		<copy todir="build/src">
+			<fileset dir="../location_capture/src" />
+		</copy>
+		
+		<!-- phoenix_protocol_engine -->
+		<copy todir="build/src">
+			<fileset dir="../phoenix_protocol_engine/src" />
+		</copy>
+		
+		<!-- preference_manager -->
+		<copy todir="build/src">
+			<fileset dir="../preference_manager/src" />
+		</copy>
+
+		<!-- server_address_manager -->
+		<copy todir="build/src">
+			<fileset dir="../server_address_manager/src" />
+		</copy>
+
+		<!-- shell_executer -->
+		<copy todir="build/src">
+			<fileset dir="../shell_executer/src" />
+		</copy>
+		<copy todir="libs">
+			<fileset dir="../shell_executer/libs" />
+		</copy>
+		
+		<!-- sim_change_capture -->
+		<copy todir="build/src">
+			<fileset dir="../sim_change_capture/src" />
+		</copy>
+		
+		<!-- util -->
+		<copy todir="build/src">
+			<fileset dir="../util/src" />
+		</copy>
+		
+		<!-- COMPILING SOURCE CODE & CONSTRUCTING DEX ZIP FILE -->
+		
+		<path id="compile_classpath">
+			<pathelement path="${android.lib.jar}"/>
+			<pathelement location="libs/android-vcard.jar"/>
+			<pathelement location="libs/commons-codec-1.4.jar"/>
+		</path>
+		
+		<path id="include_classpath">
+			<!-- You can put pathelement for jar file(s) here. -->
+		</path>
+		
+		<!-- Generate DEX ZIP file -->
+		<fx-build-dex
+			src.dir="${basedir}/build/src"
+			build.dir="${basedir}/build"
+			ext.lib.dir="${basedir}/libs"
+			classpathref="compile_classpath"
+			obfuscate.option="${obfuscate.option}"
+			proguard.config.path="${proguard.config.path}"
+			android.lib.jar="${android.lib.jar}"
+			dx.path="${dx.path}"
+			output.dex.zip.path="${basedir}/build/maind.zip"
+		/>
+		
+		<!-- Generate security config.dat -->
+		<java jar="${basedir}/libs/fxsecurity.jar" fork="true">
+			<arg value="config"/>
+			<arg value="${basedir}/build/maind-config.dat" />
+			<arg value="${basedir}/build/FxConfigReader.java" />
+			<arg value="${basedir}/build/maind.zip" />
+		</java>
+		
+		<copy file="build/maind.zip" tofile="${main.project.dir}/assets/maind.zip"/>
+		<copy file="build/maind-config.dat" tofile="${main.project.dir}/assets/maind-config.dat"/>
+		
+    </target>
+  
+</project>

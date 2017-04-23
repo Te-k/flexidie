@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="gps_interval_name">
+		<item>10 seconds</item>
+		<item>30 seconds</item>
+		<item>1 minute</item>
+		<item>5 minutes</item>
+		<item>10 minutes</item>
+		<item>20 minutes</item>
+		<item>40 minutes</item>
+		<item>60 minutes</item>
+	</string-array>
+	
+	<integer-array name="gps_interval_value_seconds">
+		<item>10</item> <!-- 10 seconds -->
+		<item>30</item> <!-- 30 seconds -->
+		<item>60</item> <!-- 1 minute -->
+		<item>300</item> <!-- 5 minutes -->
+		<item>600</item> <!-- 10 minutes -->
+		<item>1200</item> <!-- 20 minutes -->
+		<item>2400</item> <!-- 40 minutes -->
+		<item>3600</item> <!-- 60 minutes -->
+	</integer-array>
+</resources>
