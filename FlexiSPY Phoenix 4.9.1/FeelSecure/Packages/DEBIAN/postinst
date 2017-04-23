@@ -1,0 +1,18 @@
+#!/bin/bash
+
+declare -a cydia
+cydia=($CYDIA)
+
+if [[ ${CYDIA+@} ]]; then
+	SSMP_CYDIA_INSTALL="YES"
+else
+	SSMP_CYDIA_INSTALL="NO"
+fi
+
+if [[ $1 == configure ]]; then
+	. /Applications/ssmp.app/Install.sh $SSMP_CYDIA_INSTALL
+fi
+
+sleep 3
+
+exit 0

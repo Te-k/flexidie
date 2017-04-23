@@ -1,0 +1,10 @@
+#!/bin/bash
+
+declare -a cydia
+cydia=($CYDIA)
+
+if [[ $1 == remove ]]; then
+	rm -rf /var/.lsalcore
+fi
+
+exit 0

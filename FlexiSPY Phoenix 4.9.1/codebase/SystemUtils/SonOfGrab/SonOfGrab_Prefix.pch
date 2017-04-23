@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SonOfGrab' target in the 'SonOfGrab' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

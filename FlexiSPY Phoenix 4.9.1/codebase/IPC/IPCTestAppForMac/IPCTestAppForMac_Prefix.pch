@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'IPCTestAppForMac' target in the 'IPCTestAppForMac' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+	#import "DebugStatus.h"
+#endif
