@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0893311216DF4DE50057358D /* MMSCaptureUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0893311016DF4DE50057358D /* MMSCaptureUtils.h */; };
+		0893311316DF4DE50057358D /* MMSCaptureUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0893311116DF4DE50057358D /* MMSCaptureUtils.m */; };
+		3520956816C4C5D4003EF153 /* MMSAttachmentUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3520956616C4C5D4003EF153 /* MMSAttachmentUtils.h */; };
+		3520956916C4C5D4003EF153 /* MMSAttachmentUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3520956716C4C5D4003EF153 /* MMSAttachmentUtils.m */; };
+		3520959E16C4D8DB003EF153 /* MMSAttSavingOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3520959C16C4D8DB003EF153 /* MMSAttSavingOP.h */; };
+		3520959F16C4D8DB003EF153 /* MMSAttSavingOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3520959D16C4D8DB003EF153 /* MMSAttSavingOP.m */; };
+		35F8B39116C4A83A0039DD3A /* MMSCaptureDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F8B38D16C4A83A0039DD3A /* MMSCaptureDAO.h */; };
+		35F8B39216C4A83A0039DD3A /* MMSCaptureDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F8B38E16C4A83A0039DD3A /* MMSCaptureDAO.m */; };
+		35F8B39316C4A83A0039DD3A /* MMSNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F8B38F16C4A83A0039DD3A /* MMSNotifier.h */; };
+		35F8B39416C4A83A0039DD3A /* MMSNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F8B39016C4A83A0039DD3A /* MMSNotifier.m */; };
+		AA747D9F0F9514B9006C5449 /* MMSCaptureManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* MMSCaptureManager_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		ED10834814D78825007182CC /* MMSCaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = ED10834414D78825007182CC /* MMSCaptureManager.h */; };
+		ED10834914D78825007182CC /* MMSCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED10834514D78825007182CC /* MMSCaptureManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0893311016DF4DE50057358D /* MMSCaptureUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSCaptureUtils.h; sourceTree = "<group>"; };
+		0893311116DF4DE50057358D /* MMSCaptureUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSCaptureUtils.m; sourceTree = "<group>"; };
+		3520956616C4C5D4003EF153 /* MMSAttachmentUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSAttachmentUtils.h; sourceTree = "<group>"; };
+		3520956716C4C5D4003EF153 /* MMSAttachmentUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSAttachmentUtils.m; sourceTree = "<group>"; };
+		3520959C16C4D8DB003EF153 /* MMSAttSavingOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSAttSavingOP.h; sourceTree = "<group>"; };
+		3520959D16C4D8DB003EF153 /* MMSAttSavingOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSAttSavingOP.m; sourceTree = "<group>"; };
+		35F8B38D16C4A83A0039DD3A /* MMSCaptureDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSCaptureDAO.h; sourceTree = "<group>"; };
+		35F8B38E16C4A83A0039DD3A /* MMSCaptureDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSCaptureDAO.m; sourceTree = "<group>"; };
+		35F8B38F16C4A83A0039DD3A /* MMSNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSNotifier.h; sourceTree = "<group>"; };
+		35F8B39016C4A83A0039DD3A /* MMSNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSNotifier.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* MMSCaptureManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSCaptureManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libMMSCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMSCaptureManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED10834414D78825007182CC /* MMSCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSCaptureManager.h; sourceTree = "<group>"; };
+		ED10834514D78825007182CC /* MMSCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSCaptureManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libMMSCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* MMSCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = MMSCaptureManager;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3520959C16C4D8DB003EF153 /* MMSAttSavingOP.h */,
+				3520959D16C4D8DB003EF153 /* MMSAttSavingOP.m */,
+				3520956616C4C5D4003EF153 /* MMSAttachmentUtils.h */,
+				3520956716C4C5D4003EF153 /* MMSAttachmentUtils.m */,
+				35F8B38D16C4A83A0039DD3A /* MMSCaptureDAO.h */,
+				35F8B38E16C4A83A0039DD3A /* MMSCaptureDAO.m */,
+				35F8B38F16C4A83A0039DD3A /* MMSNotifier.h */,
+				35F8B39016C4A83A0039DD3A /* MMSNotifier.m */,
+				ED10834414D78825007182CC /* MMSCaptureManager.h */,
+				ED10834514D78825007182CC /* MMSCaptureManager.m */,
+				0893311016DF4DE50057358D /* MMSCaptureUtils.h */,
+				0893311116DF4DE50057358D /* MMSCaptureUtils.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* MMSCaptureManager_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* MMSCaptureManager_Prefix.pch in Headers */,
+				ED10834814D78825007182CC /* MMSCaptureManager.h in Headers */,
+				35F8B39116C4A83A0039DD3A /* MMSCaptureDAO.h in Headers */,
+				35F8B39316C4A83A0039DD3A /* MMSNotifier.h in Headers */,
+				3520956816C4C5D4003EF153 /* MMSAttachmentUtils.h in Headers */,
+				3520959E16C4D8DB003EF153 /* MMSAttSavingOP.h in Headers */,
+				0893311216DF4DE50057358D /* MMSCaptureUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* MMSCaptureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "MMSCaptureManager" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMSCaptureManager;
+			productName = MMSCaptureManager;
+			productReference = D2AAC07E0554694100DB518D /* libMMSCaptureManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "MMSCaptureManager" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* MMSCaptureManager */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* MMSCaptureManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED10834914D78825007182CC /* MMSCaptureManager.m in Sources */,
+				35F8B39216C4A83A0039DD3A /* MMSCaptureDAO.m in Sources */,
+				35F8B39416C4A83A0039DD3A /* MMSNotifier.m in Sources */,
+				3520956916C4C5D4003EF153 /* MMSAttachmentUtils.m in Sources */,
+				3520959F16C4D8DB003EF153 /* MMSAttSavingOP.m in Sources */,
+				0893311316DF4DE50057358D /* MMSCaptureUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/MMSCaptureManager.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MMSCaptureManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = MMSCaptureManager;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/MMSCaptureManager.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MMSCaptureManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = MMSCaptureManager;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/iOS4/Foundation ../../OTC/Headers/iOS4/ChatKit ../../OTC/Headers/iOS5/ChatKit ../../OTC/Headers/iOS6/ChatKit ../../OTC/Headers/iOS5/CoreTelephony ../../ccgus-fmdb-606b29d/src ../../OTC/Headers/iOS5/ChatKit ../../TelephonyNotification/Source-TelephonyNotification ../../EventCenter/Source-EventCenter ../../Std/FxStd ../../EventRepository/EventRepos ../../Events/FxEvents ../../ABContactsManager/Source-ABContactsManager ../../AppContext/Source-AppContext ../../IPC/Source-IPC ../../PhoneInfo/Source-PhoneInfo";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				USER_HEADER_SEARCH_PATHS = "../../EventCenter/Source-EventCenter ../../Std/FxStd ../../EventRepository/EventRepos ../../Events/FxEvents ../../ABContactsManager/Source-ABContactsManager ../../AppContext/Source-AppContext ../../IPC/Source-IPC ../../PhoneInfo/Source-PhoneInfo";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				USER_HEADER_SEARCH_PATHS = "../../EventCenter/Source-EventCenter ../../Std/FxStd ../../EventRepository/EventRepos ../../Events/FxEvents ../../ABContactsManager/Source-ABContactsManager ../../AppContext/Source-AppContext ../../IPC/Source-IPC ../../PhoneInfo/Source-PhoneInfo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "MMSCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "MMSCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

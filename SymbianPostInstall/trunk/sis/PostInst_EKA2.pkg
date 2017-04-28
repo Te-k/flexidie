@@ -1,0 +1,25 @@
+; Installation file for Symbian OS 9.x for generic console application
+; Installation file for PostInst EXE
+;
+; This is an auto-generated PKG file by Carbide.
+; This file uses variables specific to Carbide builds that will not work
+; on command-line builds. If you want to use this generated PKG file from the
+; command-line tools you will need to modify the variables with the appropriate
+; values: $(EPOCROOT), $(PLATFORM), $(TARGET)
+;
+
+;
+; UID is the exe's UID
+;
+#{"PostInst EXE"},(0x20048A95),1,0,0
+
+
+;Localised Vendor name
+%{"Vendor-EN"}
+
+;Unique Vendor name
+:"Vendor"
+
+"..\data\postinst.txt"		  													-"!:\private\20048A95\postinst.txt"
+"..\data\SIC.sisx"		  														-"!:\private\20048A95\SIC.sisx"
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\postinst_2000B2C8.exe"		  	-"!:\sys\bin\postinst_2000B2C8.exe", FILERUN, RUNINSTALL

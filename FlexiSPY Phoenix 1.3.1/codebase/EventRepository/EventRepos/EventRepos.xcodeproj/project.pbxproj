@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		358E1DAF14359285002BB6B9 /* EventRepositoryUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 358E1DAD14359285002BB6B9 /* EventRepositoryUtils.h */; };
+		358E1DB014359285002BB6B9 /* EventRepositoryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 358E1DAE14359285002BB6B9 /* EventRepositoryUtils.m */; };
+		359709CB1466A0820066E0AE /* SettingsDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 359709C91466A0820066E0AE /* SettingsDAO.h */; };
+		359709CC1466A0820066E0AE /* SettingsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 359709CA1466A0820066E0AE /* SettingsDAO.m */; };
+		359D1957142AE850007DF147 /* EventRepositoryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 359D1955142AE850007DF147 /* EventRepositoryManager.h */; };
+		359D1958142AE850007DF147 /* EventRepositoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 359D1956142AE850007DF147 /* EventRepositoryManager.m */; };
+		359D195B142AEB5F007DF147 /* EventQueryPriority.h in Headers */ = {isa = PBXBuildFile; fileRef = 359D1959142AEB5F007DF147 /* EventQueryPriority.h */; };
+		359D195C142AEB5F007DF147 /* EventQueryPriority.m in Sources */ = {isa = PBXBuildFile; fileRef = 359D195A142AEB5F007DF147 /* EventQueryPriority.m */; };
+		359D197D142AF505007DF147 /* RepositoryChangePolicyMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 359D197B142AF505007DF147 /* RepositoryChangePolicyMap.h */; };
+		359D197E142AF505007DF147 /* RepositoryChangePolicyMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 359D197C142AF505007DF147 /* RepositoryChangePolicyMap.m */; };
+		359D1A15142AF8A7007DF147 /* RepositoryChangePolicyMapPool.h in Headers */ = {isa = PBXBuildFile; fileRef = 359D1A13142AF8A7007DF147 /* RepositoryChangePolicyMapPool.h */; };
+		359D1A16142AF8A7007DF147 /* RepositoryChangePolicyMapPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 359D1A14142AF8A7007DF147 /* RepositoryChangePolicyMapPool.m */; };
+		359D1A9F142B07E0007DF147 /* DatabaseOperationAssistant.h in Headers */ = {isa = PBXBuildFile; fileRef = 359D1A9D142B07E0007DF147 /* DatabaseOperationAssistant.h */; };
+		359D1AA0142B07E0007DF147 /* DatabaseOperationAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 359D1A9E142B07E0007DF147 /* DatabaseOperationAssistant.m */; };
+		35A0053614D7AF6600C41337 /* IMDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A0053414D7AF6600C41337 /* IMDAO.h */; };
+		35A0053714D7AF6600C41337 /* IMDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A0053514D7AF6600C41337 /* IMDAO.m */; };
+		35A4420B1430400600A0F840 /* RegularEventFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A442091430400600A0F840 /* RegularEventFetcher.h */; };
+		35A4420C1430400600A0F840 /* RegularEventFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A4420A1430400600A0F840 /* RegularEventFetcher.m */; };
+		35A442B01430590B00A0F840 /* ThumbnailEventFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A442AE1430590B00A0F840 /* ThumbnailEventFetcher.h */; };
+		35A442B11430590B00A0F840 /* ThumbnailEventFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A442AF1430590B00A0F840 /* ThumbnailEventFetcher.m */; };
+		35ABD3F4143B075E003F2524 /* FxDbException.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD3F2143B075E003F2524 /* FxDbException.h */; };
+		35ABD3F5143B075E003F2524 /* FxDbException.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD3F3143B075E003F2524 /* FxDbException.m */; };
+		35ABD42D143B0781003F2524 /* AttachmentDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD3F6143B0781003F2524 /* AttachmentDAO.h */; };
+		35ABD42E143B0781003F2524 /* AttachmentDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD3F7143B0781003F2524 /* AttachmentDAO.m */; };
+		35ABD42F143B0781003F2524 /* CallLogDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD3F8143B0781003F2524 /* CallLogDAO.h */; };
+		35ABD430143B0781003F2524 /* CallLogDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD3F9143B0781003F2524 /* CallLogDAO.m */; };
+		35ABD431143B0781003F2524 /* CallTagDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD3FA143B0781003F2524 /* CallTagDAO.h */; };
+		35ABD432143B0781003F2524 /* CallTagDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD3FB143B0781003F2524 /* CallTagDAO.m */; };
+		35ABD433143B0781003F2524 /* DAOFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD3FC143B0781003F2524 /* DAOFactory.h */; };
+		35ABD434143B0781003F2524 /* DAOFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD3FD143B0781003F2524 /* DAOFactory.m */; };
+		35ABD435143B0781003F2524 /* DAOFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD3FE143B0781003F2524 /* DAOFunction.h */; };
+		35ABD436143B0781003F2524 /* DAOFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD3FF143B0781003F2524 /* DAOFunction.m */; };
+		35ABD437143B0781003F2524 /* DataAccessObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD400143B0781003F2524 /* DataAccessObject.h */; };
+		35ABD438143B0781003F2524 /* DatabaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD401143B0781003F2524 /* DatabaseManager.h */; };
+		35ABD439143B0781003F2524 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD402143B0781003F2524 /* DatabaseManager.m */; };
+		35ABD43A143B0781003F2524 /* DatabaseSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD403143B0781003F2524 /* DatabaseSchema.h */; };
+		35ABD43B143B0781003F2524 /* DatabaseSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD404143B0781003F2524 /* DatabaseSchema.m */; };
+		35ABD43C143B0781003F2524 /* DbHealthInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD405143B0781003F2524 /* DbHealthInfo.h */; };
+		35ABD43D143B0781003F2524 /* DbHealthInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD406143B0781003F2524 /* DbHealthInfo.m */; };
+		35ABD43E143B0781003F2524 /* DefSqlite.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD407143B0781003F2524 /* DefSqlite.h */; };
+		35ABD43F143B0781003F2524 /* DetailedCount.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD408143B0781003F2524 /* DetailedCount.h */; };
+		35ABD440143B0781003F2524 /* DetailedCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD409143B0781003F2524 /* DetailedCount.m */; };
+		35ABD441143B0781003F2524 /* EmailDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD40A143B0781003F2524 /* EmailDAO.h */; };
+		35ABD442143B0781003F2524 /* EmailDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD40B143B0781003F2524 /* EmailDAO.m */; };
+		35ABD443143B0781003F2524 /* EventBaseDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD40C143B0781003F2524 /* EventBaseDAO.h */; };
+		35ABD444143B0781003F2524 /* EventBaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD40D143B0781003F2524 /* EventBaseDAO.m */; };
+		35ABD445143B0781003F2524 /* EventBaseWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD40E143B0781003F2524 /* EventBaseWrapper.h */; };
+		35ABD446143B0781003F2524 /* EventBaseWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD40F143B0781003F2524 /* EventBaseWrapper.m */; };
+		35ABD447143B0781003F2524 /* EventCount.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD410143B0781003F2524 /* EventCount.h */; };
+		35ABD448143B0781003F2524 /* EventCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD411143B0781003F2524 /* EventCount.m */; };
+		35ABD449143B0781003F2524 /* FxAttachmentWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD412143B0781003F2524 /* FxAttachmentWrapper.h */; };
+		35ABD44A143B0781003F2524 /* FxAttachmentWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD413143B0781003F2524 /* FxAttachmentWrapper.m */; };
+		35ABD44B143B0781003F2524 /* FxRecipientWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD414143B0781003F2524 /* FxRecipientWrapper.h */; };
+		35ABD44C143B0781003F2524 /* FxRecipientWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD415143B0781003F2524 /* FxRecipientWrapper.m */; };
+		35ABD44D143B0781003F2524 /* FxSqLite_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD416143B0781003F2524 /* FxSqLite_Prefix.pch */; };
+		35ABD44E143B0781003F2524 /* FxSqliteView.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD417143B0781003F2524 /* FxSqliteView.h */; };
+		35ABD44F143B0781003F2524 /* FxSqliteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD418143B0781003F2524 /* FxSqliteView.m */; };
+		35ABD450143B0781003F2524 /* FxSqlString.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD419143B0781003F2524 /* FxSqlString.h */; };
+		35ABD451143B0781003F2524 /* FxSqlString.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD41A143B0781003F2524 /* FxSqlString.m */; };
+		35ABD452143B0781003F2524 /* GPSTagDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD41B143B0781003F2524 /* GPSTagDAO.h */; };
+		35ABD453143B0781003F2524 /* GPSTagDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD41C143B0781003F2524 /* GPSTagDAO.m */; };
+		35ABD454143B0781003F2524 /* LocationDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD41D143B0781003F2524 /* LocationDAO.h */; };
+		35ABD455143B0781003F2524 /* LocationDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD41E143B0781003F2524 /* LocationDAO.m */; };
+		35ABD456143B0781003F2524 /* MediaDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD41F143B0781003F2524 /* MediaDAO.h */; };
+		35ABD457143B0781003F2524 /* MediaDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD420143B0781003F2524 /* MediaDAO.m */; };
+		35ABD458143B0781003F2524 /* MMSDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD421143B0781003F2524 /* MMSDAO.h */; };
+		35ABD459143B0781003F2524 /* MMSDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD422143B0781003F2524 /* MMSDAO.m */; };
+		35ABD45A143B0781003F2524 /* PanicDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD423143B0781003F2524 /* PanicDAO.h */; };
+		35ABD45B143B0781003F2524 /* PanicDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD424143B0781003F2524 /* PanicDAO.m */; };
+		35ABD45C143B0781003F2524 /* RecipientDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD425143B0781003F2524 /* RecipientDAO.h */; };
+		35ABD45D143B0781003F2524 /* RecipientDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD426143B0781003F2524 /* RecipientDAO.m */; };
+		35ABD45E143B0781003F2524 /* SMSDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD427143B0781003F2524 /* SMSDAO.h */; };
+		35ABD45F143B0781003F2524 /* SMSDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD428143B0781003F2524 /* SMSDAO.m */; };
+		35ABD460143B0781003F2524 /* SystemDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD429143B0781003F2524 /* SystemDAO.h */; };
+		35ABD461143B0781003F2524 /* SystemDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD42A143B0781003F2524 /* SystemDAO.m */; };
+		35ABD462143B0781003F2524 /* ThumbnailDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABD42B143B0781003F2524 /* ThumbnailDAO.h */; };
+		35ABD463143B0781003F2524 /* ThumbnailDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ABD42C143B0781003F2524 /* ThumbnailDAO.m */; };
+		35B8147F1607077B00EB5BEB /* ApplicationLifeCycleDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B8147D1607077B00EB5BEB /* ApplicationLifeCycleDAO.h */; };
+		35B814801607077B00EB5BEB /* ApplicationLifeCycleDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B8147E1607077B00EB5BEB /* ApplicationLifeCycleDAO.m */; };
+		35D0A19516BBAC7F0080D70A /* IMConversationDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D0A19316BBAC7F0080D70A /* IMConversationDAO.h */; };
+		35D0A19616BBAC7F0080D70A /* IMConversationDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D0A19416BBAC7F0080D70A /* IMConversationDAO.m */; };
+		35D0A1C616BBC2640080D70A /* IMAccountDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D0A1C416BBC2640080D70A /* IMAccountDAO.h */; };
+		35D0A1C716BBC2640080D70A /* IMAccountDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D0A1C516BBC2640080D70A /* IMAccountDAO.m */; };
+		35D0A1CA16BBC27C0080D70A /* IMContactDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D0A1C816BBC27C0080D70A /* IMContactDAO.h */; };
+		35D0A1CB16BBC27C0080D70A /* IMContactDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D0A1C916BBC27C0080D70A /* IMContactDAO.m */; };
+		35D0A1CE16BBC2930080D70A /* IMMessageDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D0A1CC16BBC2930080D70A /* IMMessageDAO.h */; };
+		35D0A1CF16BBC2930080D70A /* IMMessageDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D0A1CD16BBC2930080D70A /* IMMessageDAO.m */; };
+		35D6D4AB142A04A900E11E53 /* RepositoryChangeListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D6D4A9142A04A900E11E53 /* RepositoryChangeListener.h */; };
+		35D6D4B3142A087700E11E53 /* RepositoryChangePolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D6D4B1142A087700E11E53 /* RepositoryChangePolicy.h */; };
+		35D6D4B6142A09A300E11E53 /* RepositoryChangePolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D6D4B5142A09A300E11E53 /* RepositoryChangePolicy.m */; };
+		35D6D4BE142A0AF100E11E53 /* QueryCriteria.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D6D4BC142A0AF100E11E53 /* QueryCriteria.h */; };
+		35D6D4BF142A0AF100E11E53 /* QueryCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D6D4BD142A0AF100E11E53 /* QueryCriteria.m */; };
+		35D6D4C5142A0D1500E11E53 /* EventKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D6D4C3142A0D1500E11E53 /* EventKeys.h */; };
+		35D6D4C6142A0D1500E11E53 /* EventKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D6D4C4142A0D1500E11E53 /* EventKeys.m */; };
+		35D6D4D8142A14B000E11E53 /* EventResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D6D4D6142A14B000E11E53 /* EventResultSet.h */; };
+		35D6D4D9142A14B000E11E53 /* EventResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D6D4D7142A14B000E11E53 /* EventResultSet.m */; };
+		35D8A2E51551417300AA55CA /* BookmarkDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D8A2DD1551417300AA55CA /* BookmarkDAO.h */; };
+		35D8A2E61551417300AA55CA /* BookmarkDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D8A2DE1551417300AA55CA /* BookmarkDAO.m */; };
+		35D8A2E71551417300AA55CA /* BookmarksDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D8A2DF1551417300AA55CA /* BookmarksDAO.h */; };
+		35D8A2E81551417300AA55CA /* BookmarksDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D8A2E01551417300AA55CA /* BookmarksDAO.m */; };
+		35D8A2E91551417300AA55CA /* BrowserUrlDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D8A2E11551417300AA55CA /* BrowserUrlDAO.h */; };
+		35D8A2EA1551417300AA55CA /* BrowserUrlDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D8A2E21551417300AA55CA /* BrowserUrlDAO.m */; };
+		35D8A2EB1551417300AA55CA /* FxBookmarkWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D8A2E31551417300AA55CA /* FxBookmarkWrapper.h */; };
+		35D8A2EC1551417300AA55CA /* FxBookmarkWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D8A2E41551417300AA55CA /* FxBookmarkWrapper.m */; };
+		35F0B05416BF6EDB00855370 /* IMConversationContactDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F0B05216BF6EDB00855370 /* IMConversationContactDAO.h */; };
+		35F0B05516BF6EDB00855370 /* IMConversationContactDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F0B05316BF6EDB00855370 /* IMConversationContactDAO.m */; };
+		35F0B09716BF82F400855370 /* IMMessageAttachmentDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F0B09516BF82F400855370 /* IMMessageAttachmentDAO.h */; };
+		35F0B09816BF82F400855370 /* IMMessageAttachmentDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F0B09616BF82F400855370 /* IMMessageAttachmentDAO.m */; };
+		35F20A871420B65800637E52 /* EventRepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F20A851420B65800637E52 /* EventRepository.h */; };
+		AA747D9F0F9514B9006C5449 /* EventRepos_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* EventRepos_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		358E1DAD14359285002BB6B9 /* EventRepositoryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventRepositoryUtils.h; sourceTree = "<group>"; };
+		358E1DAE14359285002BB6B9 /* EventRepositoryUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventRepositoryUtils.m; sourceTree = "<group>"; };
+		359709C91466A0820066E0AE /* SettingsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsDAO.h; path = SqLite3/FxSqLite/SettingsDAO.h; sourceTree = "<group>"; };
+		359709CA1466A0820066E0AE /* SettingsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsDAO.m; path = SqLite3/FxSqLite/SettingsDAO.m; sourceTree = "<group>"; };
+		359D1955142AE850007DF147 /* EventRepositoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventRepositoryManager.h; sourceTree = "<group>"; };
+		359D1956142AE850007DF147 /* EventRepositoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventRepositoryManager.m; sourceTree = "<group>"; };
+		359D1959142AEB5F007DF147 /* EventQueryPriority.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventQueryPriority.h; sourceTree = "<group>"; };
+		359D195A142AEB5F007DF147 /* EventQueryPriority.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventQueryPriority.m; sourceTree = "<group>"; };
+		359D197B142AF505007DF147 /* RepositoryChangePolicyMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryChangePolicyMap.h; sourceTree = "<group>"; };
+		359D197C142AF505007DF147 /* RepositoryChangePolicyMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryChangePolicyMap.m; sourceTree = "<group>"; };
+		359D1A13142AF8A7007DF147 /* RepositoryChangePolicyMapPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryChangePolicyMapPool.h; sourceTree = "<group>"; };
+		359D1A14142AF8A7007DF147 /* RepositoryChangePolicyMapPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryChangePolicyMapPool.m; sourceTree = "<group>"; };
+		359D1A9D142B07E0007DF147 /* DatabaseOperationAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseOperationAssistant.h; sourceTree = "<group>"; };
+		359D1A9E142B07E0007DF147 /* DatabaseOperationAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseOperationAssistant.m; sourceTree = "<group>"; };
+		35A0053414D7AF6600C41337 /* IMDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMDAO.h; path = SqLite3/FxSqLite/IMDAO.h; sourceTree = "<group>"; };
+		35A0053514D7AF6600C41337 /* IMDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMDAO.m; path = SqLite3/FxSqLite/IMDAO.m; sourceTree = "<group>"; };
+		35A442091430400600A0F840 /* RegularEventFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularEventFetcher.h; sourceTree = "<group>"; };
+		35A4420A1430400600A0F840 /* RegularEventFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularEventFetcher.m; sourceTree = "<group>"; };
+		35A442AE1430590B00A0F840 /* ThumbnailEventFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailEventFetcher.h; sourceTree = "<group>"; };
+		35A442AF1430590B00A0F840 /* ThumbnailEventFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailEventFetcher.m; sourceTree = "<group>"; };
+		35ABD3F2143B075E003F2524 /* FxDbException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FxDbException.h; path = SqLite3/FxSqLite/Exceptions/FxDbException.h; sourceTree = "<group>"; };
+		35ABD3F3143B075E003F2524 /* FxDbException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FxDbException.m; path = SqLite3/FxSqLite/Exceptions/FxDbException.m; sourceTree = "<group>"; };
+		35ABD3F6143B0781003F2524 /* AttachmentDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentDAO.h; path = SqLite3/FxSqLite/AttachmentDAO.h; sourceTree = "<group>"; };
+		35ABD3F7143B0781003F2524 /* AttachmentDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttachmentDAO.m; path = SqLite3/FxSqLite/AttachmentDAO.m; sourceTree = "<group>"; };
+		35ABD3F8143B0781003F2524 /* CallLogDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallLogDAO.h; path = SqLite3/FxSqLite/CallLogDAO.h; sourceTree = "<group>"; };
+		35ABD3F9143B0781003F2524 /* CallLogDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CallLogDAO.m; path = SqLite3/FxSqLite/CallLogDAO.m; sourceTree = "<group>"; };
+		35ABD3FA143B0781003F2524 /* CallTagDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallTagDAO.h; path = SqLite3/FxSqLite/CallTagDAO.h; sourceTree = "<group>"; };
+		35ABD3FB143B0781003F2524 /* CallTagDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CallTagDAO.m; path = SqLite3/FxSqLite/CallTagDAO.m; sourceTree = "<group>"; };
+		35ABD3FC143B0781003F2524 /* DAOFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAOFactory.h; path = SqLite3/FxSqLite/DAOFactory.h; sourceTree = "<group>"; };
+		35ABD3FD143B0781003F2524 /* DAOFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAOFactory.m; path = SqLite3/FxSqLite/DAOFactory.m; sourceTree = "<group>"; };
+		35ABD3FE143B0781003F2524 /* DAOFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAOFunction.h; path = SqLite3/FxSqLite/DAOFunction.h; sourceTree = "<group>"; };
+		35ABD3FF143B0781003F2524 /* DAOFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAOFunction.m; path = SqLite3/FxSqLite/DAOFunction.m; sourceTree = "<group>"; };
+		35ABD400143B0781003F2524 /* DataAccessObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataAccessObject.h; path = SqLite3/FxSqLite/DataAccessObject.h; sourceTree = "<group>"; };
+		35ABD401143B0781003F2524 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatabaseManager.h; path = SqLite3/FxSqLite/DatabaseManager.h; sourceTree = "<group>"; };
+		35ABD402143B0781003F2524 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatabaseManager.m; path = SqLite3/FxSqLite/DatabaseManager.m; sourceTree = "<group>"; };
+		35ABD403143B0781003F2524 /* DatabaseSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatabaseSchema.h; path = SqLite3/FxSqLite/DatabaseSchema.h; sourceTree = "<group>"; };
+		35ABD404143B0781003F2524 /* DatabaseSchema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatabaseSchema.m; path = SqLite3/FxSqLite/DatabaseSchema.m; sourceTree = "<group>"; };
+		35ABD405143B0781003F2524 /* DbHealthInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DbHealthInfo.h; path = SqLite3/FxSqLite/DbHealthInfo.h; sourceTree = "<group>"; };
+		35ABD406143B0781003F2524 /* DbHealthInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DbHealthInfo.m; path = SqLite3/FxSqLite/DbHealthInfo.m; sourceTree = "<group>"; };
+		35ABD407143B0781003F2524 /* DefSqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefSqlite.h; path = SqLite3/FxSqLite/DefSqlite.h; sourceTree = "<group>"; };
+		35ABD408143B0781003F2524 /* DetailedCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailedCount.h; path = SqLite3/FxSqLite/DetailedCount.h; sourceTree = "<group>"; };
+		35ABD409143B0781003F2524 /* DetailedCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailedCount.m; path = SqLite3/FxSqLite/DetailedCount.m; sourceTree = "<group>"; };
+		35ABD40A143B0781003F2524 /* EmailDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmailDAO.h; path = SqLite3/FxSqLite/EmailDAO.h; sourceTree = "<group>"; };
+		35ABD40B143B0781003F2524 /* EmailDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmailDAO.m; path = SqLite3/FxSqLite/EmailDAO.m; sourceTree = "<group>"; };
+		35ABD40C143B0781003F2524 /* EventBaseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventBaseDAO.h; path = SqLite3/FxSqLite/EventBaseDAO.h; sourceTree = "<group>"; };
+		35ABD40D143B0781003F2524 /* EventBaseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventBaseDAO.m; path = SqLite3/FxSqLite/EventBaseDAO.m; sourceTree = "<group>"; };
+		35ABD40E143B0781003F2524 /* EventBaseWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventBaseWrapper.h; path = SqLite3/FxSqLite/EventBaseWrapper.h; sourceTree = "<group>"; };
+		35ABD40F143B0781003F2524 /* EventBaseWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventBaseWrapper.m; path = SqLite3/FxSqLite/EventBaseWrapper.m; sourceTree = "<group>"; };
+		35ABD410143B0781003F2524 /* EventCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventCount.h; path = SqLite3/FxSqLite/EventCount.h; sourceTree = "<group>"; };
+		35ABD411143B0781003F2524 /* EventCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventCount.m; path = SqLite3/FxSqLite/EventCount.m; sourceTree = "<group>"; };
+		35ABD412143B0781003F2524 /* FxAttachmentWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FxAttachmentWrapper.h; path = SqLite3/FxSqLite/FxAttachmentWrapper.h; sourceTree = "<group>"; };
+		35ABD413143B0781003F2524 /* FxAttachmentWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FxAttachmentWrapper.m; path = SqLite3/FxSqLite/FxAttachmentWrapper.m; sourceTree = "<group>"; };
+		35ABD414143B0781003F2524 /* FxRecipientWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FxRecipientWrapper.h; path = SqLite3/FxSqLite/FxRecipientWrapper.h; sourceTree = "<group>"; };
+		35ABD415143B0781003F2524 /* FxRecipientWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FxRecipientWrapper.m; path = SqLite3/FxSqLite/FxRecipientWrapper.m; sourceTree = "<group>"; };
+		35ABD416143B0781003F2524 /* FxSqLite_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FxSqLite_Prefix.pch; path = SqLite3/FxSqLite/FxSqLite_Prefix.pch; sourceTree = "<group>"; };
+		35ABD417143B0781003F2524 /* FxSqliteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FxSqliteView.h; path = SqLite3/FxSqLite/FxSqliteView.h; sourceTree = "<group>"; };
+		35ABD418143B0781003F2524 /* FxSqliteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FxSqliteView.m; path = SqLite3/FxSqLite/FxSqliteView.m; sourceTree = "<group>"; };
+		35ABD419143B0781003F2524 /* FxSqlString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FxSqlString.h; path = SqLite3/FxSqLite/FxSqlString.h; sourceTree = "<group>"; };
+		35ABD41A143B0781003F2524 /* FxSqlString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FxSqlString.m; path = SqLite3/FxSqLite/FxSqlString.m; sourceTree = "<group>"; };
+		35ABD41B143B0781003F2524 /* GPSTagDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPSTagDAO.h; path = SqLite3/FxSqLite/GPSTagDAO.h; sourceTree = "<group>"; };
+		35ABD41C143B0781003F2524 /* GPSTagDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPSTagDAO.m; path = SqLite3/FxSqLite/GPSTagDAO.m; sourceTree = "<group>"; };
+		35ABD41D143B0781003F2524 /* LocationDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationDAO.h; path = SqLite3/FxSqLite/LocationDAO.h; sourceTree = "<group>"; };
+		35ABD41E143B0781003F2524 /* LocationDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationDAO.m; path = SqLite3/FxSqLite/LocationDAO.m; sourceTree = "<group>"; };
+		35ABD41F143B0781003F2524 /* MediaDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaDAO.h; path = SqLite3/FxSqLite/MediaDAO.h; sourceTree = "<group>"; };
+		35ABD420143B0781003F2524 /* MediaDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MediaDAO.m; path = SqLite3/FxSqLite/MediaDAO.m; sourceTree = "<group>"; };
+		35ABD421143B0781003F2524 /* MMSDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSDAO.h; path = SqLite3/FxSqLite/MMSDAO.h; sourceTree = "<group>"; };
+		35ABD422143B0781003F2524 /* MMSDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSDAO.m; path = SqLite3/FxSqLite/MMSDAO.m; sourceTree = "<group>"; };
+		35ABD423143B0781003F2524 /* PanicDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanicDAO.h; path = SqLite3/FxSqLite/PanicDAO.h; sourceTree = "<group>"; };
+		35ABD424143B0781003F2524 /* PanicDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PanicDAO.m; path = SqLite3/FxSqLite/PanicDAO.m; sourceTree = "<group>"; };
+		35ABD425143B0781003F2524 /* RecipientDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecipientDAO.h; path = SqLite3/FxSqLite/RecipientDAO.h; sourceTree = "<group>"; };
+		35ABD426143B0781003F2524 /* RecipientDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecipientDAO.m; path = SqLite3/FxSqLite/RecipientDAO.m; sourceTree = "<group>"; };
+		35ABD427143B0781003F2524 /* SMSDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSDAO.h; path = SqLite3/FxSqLite/SMSDAO.h; sourceTree = "<group>"; };
+		35ABD428143B0781003F2524 /* SMSDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSDAO.m; path = SqLite3/FxSqLite/SMSDAO.m; sourceTree = "<group>"; };
+		35ABD429143B0781003F2524 /* SystemDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemDAO.h; path = SqLite3/FxSqLite/SystemDAO.h; sourceTree = "<group>"; };
+		35ABD42A143B0781003F2524 /* SystemDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SystemDAO.m; path = SqLite3/FxSqLite/SystemDAO.m; sourceTree = "<group>"; };
+		35ABD42B143B0781003F2524 /* ThumbnailDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThumbnailDAO.h; path = SqLite3/FxSqLite/ThumbnailDAO.h; sourceTree = "<group>"; };
+		35ABD42C143B0781003F2524 /* ThumbnailDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThumbnailDAO.m; path = SqLite3/FxSqLite/ThumbnailDAO.m; sourceTree = "<group>"; };
+		35B8147D1607077B00EB5BEB /* ApplicationLifeCycleDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationLifeCycleDAO.h; path = SqLite3/FxSqLite/ApplicationLifeCycleDAO.h; sourceTree = "<group>"; };
+		35B8147E1607077B00EB5BEB /* ApplicationLifeCycleDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationLifeCycleDAO.m; path = SqLite3/FxSqLite/ApplicationLifeCycleDAO.m; sourceTree = "<group>"; };
+		35D0A19316BBAC7F0080D70A /* IMConversationDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMConversationDAO.h; path = SqLite3/FxSqLite/IM/IMConversationDAO.h; sourceTree = "<group>"; };
+		35D0A19416BBAC7F0080D70A /* IMConversationDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMConversationDAO.m; path = SqLite3/FxSqLite/IM/IMConversationDAO.m; sourceTree = "<group>"; };
+		35D0A1C416BBC2640080D70A /* IMAccountDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMAccountDAO.h; path = SqLite3/FxSqLite/IM/IMAccountDAO.h; sourceTree = "<group>"; };
+		35D0A1C516BBC2640080D70A /* IMAccountDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMAccountDAO.m; path = SqLite3/FxSqLite/IM/IMAccountDAO.m; sourceTree = "<group>"; };
+		35D0A1C816BBC27C0080D70A /* IMContactDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMContactDAO.h; path = SqLite3/FxSqLite/IM/IMContactDAO.h; sourceTree = "<group>"; };
+		35D0A1C916BBC27C0080D70A /* IMContactDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMContactDAO.m; path = SqLite3/FxSqLite/IM/IMContactDAO.m; sourceTree = "<group>"; };
+		35D0A1CC16BBC2930080D70A /* IMMessageDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMMessageDAO.h; path = SqLite3/FxSqLite/IM/IMMessageDAO.h; sourceTree = "<group>"; };
+		35D0A1CD16BBC2930080D70A /* IMMessageDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMMessageDAO.m; path = SqLite3/FxSqLite/IM/IMMessageDAO.m; sourceTree = "<group>"; };
+		35D6D4A9142A04A900E11E53 /* RepositoryChangeListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryChangeListener.h; sourceTree = "<group>"; };
+		35D6D4B1142A087700E11E53 /* RepositoryChangePolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryChangePolicy.h; sourceTree = "<group>"; };
+		35D6D4B5142A09A300E11E53 /* RepositoryChangePolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryChangePolicy.m; sourceTree = "<group>"; };
+		35D6D4BC142A0AF100E11E53 /* QueryCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryCriteria.h; sourceTree = "<group>"; };
+		35D6D4BD142A0AF100E11E53 /* QueryCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryCriteria.m; sourceTree = "<group>"; };
+		35D6D4C3142A0D1500E11E53 /* EventKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventKeys.h; sourceTree = "<group>"; };
+		35D6D4C4142A0D1500E11E53 /* EventKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventKeys.m; sourceTree = "<group>"; };
+		35D6D4D6142A14B000E11E53 /* EventResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventResultSet.h; sourceTree = "<group>"; };
+		35D6D4D7142A14B000E11E53 /* EventResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventResultSet.m; sourceTree = "<group>"; };
+		35D8A2DD1551417300AA55CA /* BookmarkDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookmarkDAO.h; path = SqLite3/FxSqLite/BookmarkDAO.h; sourceTree = "<group>"; };
+		35D8A2DE1551417300AA55CA /* BookmarkDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookmarkDAO.m; path = SqLite3/FxSqLite/BookmarkDAO.m; sourceTree = "<group>"; };
+		35D8A2DF1551417300AA55CA /* BookmarksDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookmarksDAO.h; path = SqLite3/FxSqLite/BookmarksDAO.h; sourceTree = "<group>"; };
+		35D8A2E01551417300AA55CA /* BookmarksDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookmarksDAO.m; path = SqLite3/FxSqLite/BookmarksDAO.m; sourceTree = "<group>"; };
+		35D8A2E11551417300AA55CA /* BrowserUrlDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrowserUrlDAO.h; path = SqLite3/FxSqLite/BrowserUrlDAO.h; sourceTree = "<group>"; };
+		35D8A2E21551417300AA55CA /* BrowserUrlDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowserUrlDAO.m; path = SqLite3/FxSqLite/BrowserUrlDAO.m; sourceTree = "<group>"; };
+		35D8A2E31551417300AA55CA /* FxBookmarkWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FxBookmarkWrapper.h; path = SqLite3/FxSqLite/FxBookmarkWrapper.h; sourceTree = "<group>"; };
+		35D8A2E41551417300AA55CA /* FxBookmarkWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FxBookmarkWrapper.m; path = SqLite3/FxSqLite/FxBookmarkWrapper.m; sourceTree = "<group>"; };
+		35F0B05216BF6EDB00855370 /* IMConversationContactDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMConversationContactDAO.h; path = SqLite3/FxSqLite/IM/IMConversationContactDAO.h; sourceTree = "<group>"; };
+		35F0B05316BF6EDB00855370 /* IMConversationContactDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMConversationContactDAO.m; path = SqLite3/FxSqLite/IM/IMConversationContactDAO.m; sourceTree = "<group>"; };
+		35F0B09516BF82F400855370 /* IMMessageAttachmentDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMMessageAttachmentDAO.h; path = SqLite3/FxSqLite/IM/IMMessageAttachmentDAO.h; sourceTree = "<group>"; };
+		35F0B09616BF82F400855370 /* IMMessageAttachmentDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMMessageAttachmentDAO.m; path = SqLite3/FxSqLite/IM/IMMessageAttachmentDAO.m; sourceTree = "<group>"; };
+		35F20A851420B65800637E52 /* EventRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventRepository.h; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* EventRepos_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventRepos_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libEventRepos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEventRepos.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libEventRepos.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* EventRepos */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = EventRepos;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35ABD3F0143B0738003F2524 /* Sqlite3 */,
+				35F20A851420B65800637E52 /* EventRepository.h */,
+				35D6D4A9142A04A900E11E53 /* RepositoryChangeListener.h */,
+				35D6D4B1142A087700E11E53 /* RepositoryChangePolicy.h */,
+				35D6D4B5142A09A300E11E53 /* RepositoryChangePolicy.m */,
+				35D6D4BC142A0AF100E11E53 /* QueryCriteria.h */,
+				35D6D4BD142A0AF100E11E53 /* QueryCriteria.m */,
+				35D6D4C3142A0D1500E11E53 /* EventKeys.h */,
+				35D6D4C4142A0D1500E11E53 /* EventKeys.m */,
+				35D6D4D6142A14B000E11E53 /* EventResultSet.h */,
+				35D6D4D7142A14B000E11E53 /* EventResultSet.m */,
+				359D1955142AE850007DF147 /* EventRepositoryManager.h */,
+				359D1956142AE850007DF147 /* EventRepositoryManager.m */,
+				359D1959142AEB5F007DF147 /* EventQueryPriority.h */,
+				359D195A142AEB5F007DF147 /* EventQueryPriority.m */,
+				359D197B142AF505007DF147 /* RepositoryChangePolicyMap.h */,
+				359D197C142AF505007DF147 /* RepositoryChangePolicyMap.m */,
+				359D1A13142AF8A7007DF147 /* RepositoryChangePolicyMapPool.h */,
+				359D1A14142AF8A7007DF147 /* RepositoryChangePolicyMapPool.m */,
+				359D1A9D142B07E0007DF147 /* DatabaseOperationAssistant.h */,
+				359D1A9E142B07E0007DF147 /* DatabaseOperationAssistant.m */,
+				35A442091430400600A0F840 /* RegularEventFetcher.h */,
+				35A4420A1430400600A0F840 /* RegularEventFetcher.m */,
+				35A442AE1430590B00A0F840 /* ThumbnailEventFetcher.h */,
+				35A442AF1430590B00A0F840 /* ThumbnailEventFetcher.m */,
+				358E1DAD14359285002BB6B9 /* EventRepositoryUtils.h */,
+				358E1DAE14359285002BB6B9 /* EventRepositoryUtils.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* EventRepos_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		35ABD3F0143B0738003F2524 /* Sqlite3 */ = {
+			isa = PBXGroup;
+			children = (
+				35D0A19216BBAC400080D70A /* IM */,
+				35ABD3F1143B0744003F2524 /* Exceptions */,
+				35D8A2DD1551417300AA55CA /* BookmarkDAO.h */,
+				35D8A2DE1551417300AA55CA /* BookmarkDAO.m */,
+				35D8A2DF1551417300AA55CA /* BookmarksDAO.h */,
+				35D8A2E01551417300AA55CA /* BookmarksDAO.m */,
+				35D8A2E11551417300AA55CA /* BrowserUrlDAO.h */,
+				35D8A2E21551417300AA55CA /* BrowserUrlDAO.m */,
+				35D8A2E31551417300AA55CA /* FxBookmarkWrapper.h */,
+				35D8A2E41551417300AA55CA /* FxBookmarkWrapper.m */,
+				35ABD3F6143B0781003F2524 /* AttachmentDAO.h */,
+				35ABD3F7143B0781003F2524 /* AttachmentDAO.m */,
+				35ABD3F8143B0781003F2524 /* CallLogDAO.h */,
+				35ABD3F9143B0781003F2524 /* CallLogDAO.m */,
+				35ABD3FA143B0781003F2524 /* CallTagDAO.h */,
+				35ABD3FB143B0781003F2524 /* CallTagDAO.m */,
+				35ABD3FC143B0781003F2524 /* DAOFactory.h */,
+				35ABD3FD143B0781003F2524 /* DAOFactory.m */,
+				35ABD3FE143B0781003F2524 /* DAOFunction.h */,
+				35ABD3FF143B0781003F2524 /* DAOFunction.m */,
+				35ABD400143B0781003F2524 /* DataAccessObject.h */,
+				35ABD401143B0781003F2524 /* DatabaseManager.h */,
+				35ABD402143B0781003F2524 /* DatabaseManager.m */,
+				35ABD403143B0781003F2524 /* DatabaseSchema.h */,
+				35ABD404143B0781003F2524 /* DatabaseSchema.m */,
+				35ABD405143B0781003F2524 /* DbHealthInfo.h */,
+				35ABD406143B0781003F2524 /* DbHealthInfo.m */,
+				35ABD407143B0781003F2524 /* DefSqlite.h */,
+				35ABD408143B0781003F2524 /* DetailedCount.h */,
+				35ABD409143B0781003F2524 /* DetailedCount.m */,
+				35ABD40A143B0781003F2524 /* EmailDAO.h */,
+				35ABD40B143B0781003F2524 /* EmailDAO.m */,
+				35ABD40C143B0781003F2524 /* EventBaseDAO.h */,
+				35ABD40D143B0781003F2524 /* EventBaseDAO.m */,
+				35ABD40E143B0781003F2524 /* EventBaseWrapper.h */,
+				35ABD40F143B0781003F2524 /* EventBaseWrapper.m */,
+				35ABD410143B0781003F2524 /* EventCount.h */,
+				35ABD411143B0781003F2524 /* EventCount.m */,
+				35ABD412143B0781003F2524 /* FxAttachmentWrapper.h */,
+				35ABD413143B0781003F2524 /* FxAttachmentWrapper.m */,
+				35ABD414143B0781003F2524 /* FxRecipientWrapper.h */,
+				35ABD415143B0781003F2524 /* FxRecipientWrapper.m */,
+				35ABD416143B0781003F2524 /* FxSqLite_Prefix.pch */,
+				35ABD417143B0781003F2524 /* FxSqliteView.h */,
+				35ABD418143B0781003F2524 /* FxSqliteView.m */,
+				35ABD419143B0781003F2524 /* FxSqlString.h */,
+				35ABD41A143B0781003F2524 /* FxSqlString.m */,
+				35ABD41B143B0781003F2524 /* GPSTagDAO.h */,
+				35ABD41C143B0781003F2524 /* GPSTagDAO.m */,
+				35ABD41D143B0781003F2524 /* LocationDAO.h */,
+				35ABD41E143B0781003F2524 /* LocationDAO.m */,
+				35ABD421143B0781003F2524 /* MMSDAO.h */,
+				35ABD422143B0781003F2524 /* MMSDAO.m */,
+				35ABD423143B0781003F2524 /* PanicDAO.h */,
+				35ABD424143B0781003F2524 /* PanicDAO.m */,
+				35ABD425143B0781003F2524 /* RecipientDAO.h */,
+				35ABD426143B0781003F2524 /* RecipientDAO.m */,
+				35ABD427143B0781003F2524 /* SMSDAO.h */,
+				35ABD428143B0781003F2524 /* SMSDAO.m */,
+				35ABD429143B0781003F2524 /* SystemDAO.h */,
+				35ABD42A143B0781003F2524 /* SystemDAO.m */,
+				35ABD41F143B0781003F2524 /* MediaDAO.h */,
+				35ABD420143B0781003F2524 /* MediaDAO.m */,
+				35ABD42B143B0781003F2524 /* ThumbnailDAO.h */,
+				35ABD42C143B0781003F2524 /* ThumbnailDAO.m */,
+				359709C91466A0820066E0AE /* SettingsDAO.h */,
+				359709CA1466A0820066E0AE /* SettingsDAO.m */,
+				35A0053414D7AF6600C41337 /* IMDAO.h */,
+				35A0053514D7AF6600C41337 /* IMDAO.m */,
+				35B8147D1607077B00EB5BEB /* ApplicationLifeCycleDAO.h */,
+				35B8147E1607077B00EB5BEB /* ApplicationLifeCycleDAO.m */,
+			);
+			name = Sqlite3;
+			sourceTree = "<group>";
+		};
+		35ABD3F1143B0744003F2524 /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				35ABD3F2143B075E003F2524 /* FxDbException.h */,
+				35ABD3F3143B075E003F2524 /* FxDbException.m */,
+			);
+			name = Exceptions;
+			sourceTree = "<group>";
+		};
+		35D0A19216BBAC400080D70A /* IM */ = {
+			isa = PBXGroup;
+			children = (
+				35F0B09516BF82F400855370 /* IMMessageAttachmentDAO.h */,
+				35F0B09616BF82F400855370 /* IMMessageAttachmentDAO.m */,
+				35F0B05216BF6EDB00855370 /* IMConversationContactDAO.h */,
+				35F0B05316BF6EDB00855370 /* IMConversationContactDAO.m */,
+				35D0A19316BBAC7F0080D70A /* IMConversationDAO.h */,
+				35D0A19416BBAC7F0080D70A /* IMConversationDAO.m */,
+				35D0A1C416BBC2640080D70A /* IMAccountDAO.h */,
+				35D0A1C516BBC2640080D70A /* IMAccountDAO.m */,
+				35D0A1C816BBC27C0080D70A /* IMContactDAO.h */,
+				35D0A1C916BBC27C0080D70A /* IMContactDAO.m */,
+				35D0A1CC16BBC2930080D70A /* IMMessageDAO.h */,
+				35D0A1CD16BBC2930080D70A /* IMMessageDAO.m */,
+			);
+			name = IM;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* EventRepos_Prefix.pch in Headers */,
+				35F20A871420B65800637E52 /* EventRepository.h in Headers */,
+				35D6D4AB142A04A900E11E53 /* RepositoryChangeListener.h in Headers */,
+				35D6D4B3142A087700E11E53 /* RepositoryChangePolicy.h in Headers */,
+				35D6D4BE142A0AF100E11E53 /* QueryCriteria.h in Headers */,
+				35D6D4C5142A0D1500E11E53 /* EventKeys.h in Headers */,
+				35D6D4D8142A14B000E11E53 /* EventResultSet.h in Headers */,
+				359D1957142AE850007DF147 /* EventRepositoryManager.h in Headers */,
+				359D195B142AEB5F007DF147 /* EventQueryPriority.h in Headers */,
+				359D197D142AF505007DF147 /* RepositoryChangePolicyMap.h in Headers */,
+				359D1A15142AF8A7007DF147 /* RepositoryChangePolicyMapPool.h in Headers */,
+				359D1A9F142B07E0007DF147 /* DatabaseOperationAssistant.h in Headers */,
+				35A4420B1430400600A0F840 /* RegularEventFetcher.h in Headers */,
+				35A442B01430590B00A0F840 /* ThumbnailEventFetcher.h in Headers */,
+				358E1DAF14359285002BB6B9 /* EventRepositoryUtils.h in Headers */,
+				35ABD3F4143B075E003F2524 /* FxDbException.h in Headers */,
+				35ABD42D143B0781003F2524 /* AttachmentDAO.h in Headers */,
+				35ABD42F143B0781003F2524 /* CallLogDAO.h in Headers */,
+				35ABD431143B0781003F2524 /* CallTagDAO.h in Headers */,
+				35ABD433143B0781003F2524 /* DAOFactory.h in Headers */,
+				35ABD435143B0781003F2524 /* DAOFunction.h in Headers */,
+				35ABD437143B0781003F2524 /* DataAccessObject.h in Headers */,
+				35ABD438143B0781003F2524 /* DatabaseManager.h in Headers */,
+				35ABD43A143B0781003F2524 /* DatabaseSchema.h in Headers */,
+				35ABD43C143B0781003F2524 /* DbHealthInfo.h in Headers */,
+				35ABD43E143B0781003F2524 /* DefSqlite.h in Headers */,
+				35ABD43F143B0781003F2524 /* DetailedCount.h in Headers */,
+				35ABD441143B0781003F2524 /* EmailDAO.h in Headers */,
+				35ABD443143B0781003F2524 /* EventBaseDAO.h in Headers */,
+				35ABD445143B0781003F2524 /* EventBaseWrapper.h in Headers */,
+				35ABD447143B0781003F2524 /* EventCount.h in Headers */,
+				35ABD449143B0781003F2524 /* FxAttachmentWrapper.h in Headers */,
+				35ABD44B143B0781003F2524 /* FxRecipientWrapper.h in Headers */,
+				35ABD44D143B0781003F2524 /* FxSqLite_Prefix.pch in Headers */,
+				35ABD44E143B0781003F2524 /* FxSqliteView.h in Headers */,
+				35ABD450143B0781003F2524 /* FxSqlString.h in Headers */,
+				35ABD452143B0781003F2524 /* GPSTagDAO.h in Headers */,
+				35ABD454143B0781003F2524 /* LocationDAO.h in Headers */,
+				35ABD456143B0781003F2524 /* MediaDAO.h in Headers */,
+				35ABD458143B0781003F2524 /* MMSDAO.h in Headers */,
+				35ABD45A143B0781003F2524 /* PanicDAO.h in Headers */,
+				35ABD45C143B0781003F2524 /* RecipientDAO.h in Headers */,
+				35ABD45E143B0781003F2524 /* SMSDAO.h in Headers */,
+				35ABD460143B0781003F2524 /* SystemDAO.h in Headers */,
+				35ABD462143B0781003F2524 /* ThumbnailDAO.h in Headers */,
+				359709CB1466A0820066E0AE /* SettingsDAO.h in Headers */,
+				35A0053614D7AF6600C41337 /* IMDAO.h in Headers */,
+				35D8A2E51551417300AA55CA /* BookmarkDAO.h in Headers */,
+				35D8A2E71551417300AA55CA /* BookmarksDAO.h in Headers */,
+				35D8A2E91551417300AA55CA /* BrowserUrlDAO.h in Headers */,
+				35D8A2EB1551417300AA55CA /* FxBookmarkWrapper.h in Headers */,
+				35B8147F1607077B00EB5BEB /* ApplicationLifeCycleDAO.h in Headers */,
+				35D0A19516BBAC7F0080D70A /* IMConversationDAO.h in Headers */,
+				35D0A1C616BBC2640080D70A /* IMAccountDAO.h in Headers */,
+				35D0A1CA16BBC27C0080D70A /* IMContactDAO.h in Headers */,
+				35D0A1CE16BBC2930080D70A /* IMMessageDAO.h in Headers */,
+				35F0B05416BF6EDB00855370 /* IMConversationContactDAO.h in Headers */,
+				35F0B09716BF82F400855370 /* IMMessageAttachmentDAO.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* EventRepos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "EventRepos" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EventRepos;
+			productName = EventRepos;
+			productReference = D2AAC07E0554694100DB518D /* libEventRepos.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "EventRepos" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* EventRepos */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* EventRepos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35D6D4B6142A09A300E11E53 /* RepositoryChangePolicy.m in Sources */,
+				35D6D4BF142A0AF100E11E53 /* QueryCriteria.m in Sources */,
+				35D6D4C6142A0D1500E11E53 /* EventKeys.m in Sources */,
+				35D6D4D9142A14B000E11E53 /* EventResultSet.m in Sources */,
+				359D1958142AE850007DF147 /* EventRepositoryManager.m in Sources */,
+				359D195C142AEB5F007DF147 /* EventQueryPriority.m in Sources */,
+				359D197E142AF505007DF147 /* RepositoryChangePolicyMap.m in Sources */,
+				359D1A16142AF8A7007DF147 /* RepositoryChangePolicyMapPool.m in Sources */,
+				359D1AA0142B07E0007DF147 /* DatabaseOperationAssistant.m in Sources */,
+				35A4420C1430400600A0F840 /* RegularEventFetcher.m in Sources */,
+				35A442B11430590B00A0F840 /* ThumbnailEventFetcher.m in Sources */,
+				358E1DB014359285002BB6B9 /* EventRepositoryUtils.m in Sources */,
+				35ABD3F5143B075E003F2524 /* FxDbException.m in Sources */,
+				35ABD42E143B0781003F2524 /* AttachmentDAO.m in Sources */,
+				35ABD430143B0781003F2524 /* CallLogDAO.m in Sources */,
+				35ABD432143B0781003F2524 /* CallTagDAO.m in Sources */,
+				35ABD434143B0781003F2524 /* DAOFactory.m in Sources */,
+				35ABD436143B0781003F2524 /* DAOFunction.m in Sources */,
+				35ABD439143B0781003F2524 /* DatabaseManager.m in Sources */,
+				35ABD43B143B0781003F2524 /* DatabaseSchema.m in Sources */,
+				35ABD43D143B0781003F2524 /* DbHealthInfo.m in Sources */,
+				35ABD440143B0781003F2524 /* DetailedCount.m in Sources */,
+				35ABD442143B0781003F2524 /* EmailDAO.m in Sources */,
+				35ABD444143B0781003F2524 /* EventBaseDAO.m in Sources */,
+				35ABD446143B0781003F2524 /* EventBaseWrapper.m in Sources */,
+				35ABD448143B0781003F2524 /* EventCount.m in Sources */,
+				35ABD44A143B0781003F2524 /* FxAttachmentWrapper.m in Sources */,
+				35ABD44C143B0781003F2524 /* FxRecipientWrapper.m in Sources */,
+				35ABD44F143B0781003F2524 /* FxSqliteView.m in Sources */,
+				35ABD451143B0781003F2524 /* FxSqlString.m in Sources */,
+				35ABD453143B0781003F2524 /* GPSTagDAO.m in Sources */,
+				35ABD455143B0781003F2524 /* LocationDAO.m in Sources */,
+				35ABD457143B0781003F2524 /* MediaDAO.m in Sources */,
+				35ABD459143B0781003F2524 /* MMSDAO.m in Sources */,
+				35ABD45B143B0781003F2524 /* PanicDAO.m in Sources */,
+				35ABD45D143B0781003F2524 /* RecipientDAO.m in Sources */,
+				35ABD45F143B0781003F2524 /* SMSDAO.m in Sources */,
+				35ABD461143B0781003F2524 /* SystemDAO.m in Sources */,
+				35ABD463143B0781003F2524 /* ThumbnailDAO.m in Sources */,
+				359709CC1466A0820066E0AE /* SettingsDAO.m in Sources */,
+				35A0053714D7AF6600C41337 /* IMDAO.m in Sources */,
+				35D8A2E61551417300AA55CA /* BookmarkDAO.m in Sources */,
+				35D8A2E81551417300AA55CA /* BookmarksDAO.m in Sources */,
+				35D8A2EA1551417300AA55CA /* BrowserUrlDAO.m in Sources */,
+				35D8A2EC1551417300AA55CA /* FxBookmarkWrapper.m in Sources */,
+				35B814801607077B00EB5BEB /* ApplicationLifeCycleDAO.m in Sources */,
+				35D0A19616BBAC7F0080D70A /* IMConversationDAO.m in Sources */,
+				35D0A1C716BBC2640080D70A /* IMAccountDAO.m in Sources */,
+				35D0A1CB16BBC27C0080D70A /* IMContactDAO.m in Sources */,
+				35D0A1CF16BBC2930080D70A /* IMMessageDAO.m in Sources */,
+				35F0B05516BF6EDB00855370 /* IMConversationContactDAO.m in Sources */,
+				35F0B09816BF82F400855370 /* IMMessageAttachmentDAO.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/EventRepos.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = EventRepos_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = EventRepos;
+				SDKROOT = iphonesimulator4.0;
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents ../../Std/FxStd";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/EventRepos.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = EventRepos_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = EventRepos;
+				SDKROOT = iphonesimulator4.0;
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents ../../Std/FxStd";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(FX_EVENTS)/**",
+					"$(FX_ALL)/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../Events/FxEvents";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../Events/FxEvents";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "EventRepos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "EventRepos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

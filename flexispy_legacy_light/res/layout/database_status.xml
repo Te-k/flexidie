@@ -1,0 +1,190 @@
+<!-- PARENT OF LOG EVENTS INFORMATION -->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:padding="20dip">
+             
+	<!-- INFORMATION EVENT TOTAL -->
+	<LinearLayout 
+	     android:orientation="horizontal"
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content">
+
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/language_database_status_event_total" 
+			android:textSize="20dip"/>
+          
+       	<TextView
+			android:id="@+id/database_status_event_total"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:textSize="20dip"
+			android:gravity="right"/>
+        </LinearLayout>
+        
+        <!-- INFORMATION EVENT INCOMING CALL -->
+        <LinearLayout 
+             android:orientation="horizontal"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+             
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="@string/language_database_status_event_incoming_call"
+                android:textSize="15dip"/>
+                
+            <TextView
+                android:id="@+id/database_status_event_incoming_call"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:textSize="15dip"
+                android:gravity="right"/>
+        </LinearLayout>
+        
+        <!-- INFORMATION EVENT OUTGOING CALL -->
+        <LinearLayout 
+             android:orientation="horizontal"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+             
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="@string/language_database_status_event_outgoing_call"
+                android:textSize="15dip"/>
+                
+            <TextView
+                android:id="@+id/database_status_event_outgoing_call"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:textSize="15dip"
+                android:gravity="right"/>
+        </LinearLayout>
+        
+        <!-- INFORMATION EVENT MISSED CALL -->
+        <LinearLayout 
+             android:orientation="horizontal"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+             
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="@string/language_database_status_event_missed_call"
+                android:textSize="15dip"/>
+                
+            <TextView
+                android:id="@+id/database_status_event_missed_call"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:textSize="15dip"
+                android:gravity="right"/>
+        </LinearLayout>
+        
+        <!-- INFORMATION EVENT INCOMING SMS -->
+        <LinearLayout 
+             android:orientation="horizontal"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+             
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="@string/language_database_status_event_incoming_sms"
+                android:textSize="15dip"/>
+                
+            <TextView
+                android:id="@+id/database_status_event_incoming_sms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:textSize="15dip"
+                android:gravity="right"/>
+        </LinearLayout>
+        
+        <!-- INFORMATION EVENT OUTGOING SMS -->
+        <LinearLayout 
+             android:orientation="horizontal"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+             
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="@string/language_database_status_event_outgoing_sms"
+                android:textSize="15dip"/>
+                
+            <TextView
+                android:id="@+id/database_status_event_outgoing_sms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:textSize="15dip"
+                android:gravity="right"/>
+        </LinearLayout>
+        
+        <!-- INFORMATION EVENT LOCATION -->
+        <LinearLayout 
+             android:orientation="horizontal"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+             
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="@string/language_database_status_event_location"
+                android:textSize="15dip"/>
+                
+            <TextView
+                android:id="@+id/database_status_event_location"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:textSize="15dip"
+                android:gravity="right"/>
+        </LinearLayout>
+        
+        <!-- INFORMATION OF INCOMING SYSTEM EVENT -->
+        <LinearLayout 
+             android:orientation="horizontal"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+             
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="@string/language_database_status_event_incoming_system"
+                android:textSize="15dip"/>
+                
+            <TextView
+                android:id="@+id/database_status_event_incoming_system"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:textSize="15dip"
+                android:gravity="right"/>
+        </LinearLayout>
+        
+        <!-- INFORMATION OF OUTGOING SYSTEM EVENT -->
+        <LinearLayout 
+             android:orientation="horizontal"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+             
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="@string/language_database_status_event_outgoing_system"
+                android:textSize="15dip"/>
+                
+            <TextView
+                android:id="@+id/database_status_event_outgoing_system"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:textSize="15dip"
+                android:gravity="right"/>
+        </LinearLayout>
+          
+</LinearLayout>
+	

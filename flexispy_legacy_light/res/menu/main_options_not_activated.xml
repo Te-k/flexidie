@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:id="@+id/menu_main_about" 
+		android:title="@string/language_ui_label_about"
+		android:icon="@android:drawable/ic_menu_info_details"
+		/>
+		
+	<item
+        android:id="@+id/menu_main_activate" 
+        android:title="@string/language_ui_label_activate"
+        android:icon="@android:drawable/ic_menu_upload"
+        />
+		
+	<item
+        android:id="@+id/menu_main_uninstall" 
+        android:title="@string/language_ui_label_uninstall" 
+        android:icon="@android:drawable/ic_menu_delete"
+        />
+
+</menu>

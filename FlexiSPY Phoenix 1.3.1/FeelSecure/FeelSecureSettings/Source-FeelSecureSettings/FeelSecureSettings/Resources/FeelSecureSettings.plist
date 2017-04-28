@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>FeelSecure</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>set</key>
+			<string>setValue:forSpecifier:</string>
+			<key>get</key>
+			<string>getValueForSpecifier:</string>
+			<key>default</key>
+			<true/>
+			<key>id</key>
+			<string>SirenSound</string>
+			<key>label</key>
+			<string>Siren sound</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Emergency Numbers</string>
+			<key>footerText</key>
+			<string>Choose who to send an emergency message with your location</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>EmergencyNumberController</string>
+			<key>label</key>
+			<string>Emergency number</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Panic Mode</string>
+			<key>footerText</key>
+			<string>Send real time images from your iPhone&apos;s camera or just current location</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>defaults</key>
+			<string>com.app.ssmp.plist</string>
+			<key>label</key>
+			<string>Mode</string>
+			<key>id</key>
+			<string>PanicMode</string>
+			<key>set</key>
+			<string>setValue:forSpecifier:</string>
+			<key>get</key>
+			<string>getValueForSpecifier:</string>
+			<key>validValues</key>
+			<array>
+				<string>2</string>
+				<string>1</string>
+			</array>
+			<key>validTitles</key>
+			<array>
+				<string>Location only</string>
+				<string>Location and Image</string>
+			</array>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Emergency Message</string>
+			<key>footerText</key>
+			<string>You can customizee the message to be sent with your location. This message will be sent along with your current location</string>
+		</dict>
+		<dict>
+			<key>set</key>
+			<string>setValue:forSpecifier:</string>
+			<key>get</key>
+			<string>getValueForSpecifier:</string>
+			<key>default</key>
+			<string>Help, please contact me now!</string>
+			<key>id</key>
+			<string>EmergencyMessage</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>get</key>
+			<string>getValueForSpecifier:</string>
+			<key>default</key>
+			<string></string>
+			<key>id</key>
+			<string>Version</string>
+			<key>cell</key>
+			<string>PSStaticTextCell</string>
+			<key>label</key>
+			<string>Version</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>More Application Information</string>
+			<key>footerText</key>
+			<string>Powered by FeelSecure, Inc.</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>advancedButtonPressed:</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Advanced</string>
+			<key>PostNotification</key>
+			<string>com.app.ssmp.FeelSecureSettings.AdvancedButtonClicked</string>
+		</dict>
+	</array>
+</dict>
+</plist>

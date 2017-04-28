@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3591E3A6147BD93B00BF730A /* ConfigurationID.h in Headers */ = {isa = PBXBuildFile; fileRef = 3591E3A4147BD93B00BF730A /* ConfigurationID.h */; };
+		3591E3AA147BDF6900BF730A /* ConfigurationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3591E3A8147BDF6900BF730A /* ConfigurationManager.h */; };
+		3591E3AE147BDF8E00BF730A /* ConfigurationManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 3591E3AC147BDF8E00BF730A /* ConfigurationManagerImpl.h */; };
+		3591E3AF147BDF8E00BF730A /* ConfigurationManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3591E3AD147BDF8E00BF730A /* ConfigurationManagerImpl.m */; };
+		3591E3B2147BE06700BF730A /* FeatureIDFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3591E3B0147BE06700BF730A /* FeatureIDFactory.h */; };
+		3591E3B3147BE06700BF730A /* FeatureIDFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3591E3B1147BE06700BF730A /* FeatureIDFactory.m */; };
+		3591E3B6147BE08100BF730A /* RemoteCmdCodeFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3591E3B4147BE08100BF730A /* RemoteCmdCodeFactory.h */; };
+		3591E3B7147BE08100BF730A /* RemoteCmdCodeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3591E3B5147BE08100BF730A /* RemoteCmdCodeFactory.m */; };
+		35AAEC8C147C982A000446E2 /* Configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = 35AAEC8A147C982A000446E2 /* Configuration.h */; };
+		35AAEC8D147C982A000446E2 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 35AAEC8B147C982A000446E2 /* Configuration.m */; };
+		35B133741638E2A200407D49 /* AutomateAESKeyPCF.c in Sources */ = {isa = PBXBuildFile; fileRef = 35B133721638E2A200407D49 /* AutomateAESKeyPCF.c */; };
+		35B133751638E2A200407D49 /* AutomateAESKeyPCF.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B133731638E2A200407D49 /* AutomateAESKeyPCF.h */; };
+		35C5E30B1637AC5400C764AC /* S21.c in Sources */ = {isa = PBXBuildFile; fileRef = 35C5E3091637AC5400C764AC /* S21.c */; };
+		35C5E30C1637AC5400C764AC /* S21.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C5E30A1637AC5400C764AC /* S21.h */; };
+		35C5E3651637B7DC00C764AC /* AutomateAESKeyPCFCHECKSUM.c in Sources */ = {isa = PBXBuildFile; fileRef = 35C5E3631637B7DC00C764AC /* AutomateAESKeyPCFCHECKSUM.c */; };
+		35C5E3661637B7DC00C764AC /* AutomateAESKeyPCFCHECKSUM.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C5E3641637B7DC00C764AC /* AutomateAESKeyPCFCHECKSUM.h */; };
+		96BD43B7148399DF0044F63E /* ConfigDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BD43B5148399DF0044F63E /* ConfigDecryptor.h */; };
+		96BD43B8148399DF0044F63E /* ConfigDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BD43B6148399DF0044F63E /* ConfigDecryptor.m */; };
+		AA747D9F0F9514B9006C5449 /* ConfigurationManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ConfigurationManager_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3591E3A4147BD93B00BF730A /* ConfigurationID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationID.h; sourceTree = "<group>"; };
+		3591E3A8147BDF6900BF730A /* ConfigurationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationManager.h; sourceTree = "<group>"; };
+		3591E3AC147BDF8E00BF730A /* ConfigurationManagerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationManagerImpl.h; sourceTree = "<group>"; };
+		3591E3AD147BDF8E00BF730A /* ConfigurationManagerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurationManagerImpl.m; sourceTree = "<group>"; };
+		3591E3B0147BE06700BF730A /* FeatureIDFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureIDFactory.h; sourceTree = "<group>"; };
+		3591E3B1147BE06700BF730A /* FeatureIDFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureIDFactory.m; sourceTree = "<group>"; };
+		3591E3B4147BE08100BF730A /* RemoteCmdCodeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteCmdCodeFactory.h; sourceTree = "<group>"; };
+		3591E3B5147BE08100BF730A /* RemoteCmdCodeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteCmdCodeFactory.m; sourceTree = "<group>"; };
+		35AAEC8A147C982A000446E2 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		35AAEC8B147C982A000446E2 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
+		35B133721638E2A200407D49 /* AutomateAESKeyPCF.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AutomateAESKeyPCF.c; sourceTree = "<group>"; };
+		35B133731638E2A200407D49 /* AutomateAESKeyPCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutomateAESKeyPCF.h; sourceTree = "<group>"; };
+		35C5E3091637AC5400C764AC /* S21.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = S21.c; sourceTree = "<group>"; };
+		35C5E30A1637AC5400C764AC /* S21.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S21.h; sourceTree = "<group>"; };
+		35C5E3631637B7DC00C764AC /* AutomateAESKeyPCFCHECKSUM.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AutomateAESKeyPCFCHECKSUM.c; sourceTree = "<group>"; };
+		35C5E3641637B7DC00C764AC /* AutomateAESKeyPCFCHECKSUM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutomateAESKeyPCFCHECKSUM.h; sourceTree = "<group>"; };
+		96BD43B5148399DF0044F63E /* ConfigDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigDecryptor.h; sourceTree = "<group>"; };
+		96BD43B6148399DF0044F63E /* ConfigDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigDecryptor.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* ConfigurationManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libConfigurationManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libConfigurationManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libConfigurationManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* ConfigurationManager */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = ConfigurationManager;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35B133721638E2A200407D49 /* AutomateAESKeyPCF.c */,
+				35B133731638E2A200407D49 /* AutomateAESKeyPCF.h */,
+				35C5E3631637B7DC00C764AC /* AutomateAESKeyPCFCHECKSUM.c */,
+				35C5E3641637B7DC00C764AC /* AutomateAESKeyPCFCHECKSUM.h */,
+				35C5E3091637AC5400C764AC /* S21.c */,
+				35C5E30A1637AC5400C764AC /* S21.h */,
+				3591E3A4147BD93B00BF730A /* ConfigurationID.h */,
+				3591E3A8147BDF6900BF730A /* ConfigurationManager.h */,
+				3591E3AC147BDF8E00BF730A /* ConfigurationManagerImpl.h */,
+				3591E3AD147BDF8E00BF730A /* ConfigurationManagerImpl.m */,
+				3591E3B0147BE06700BF730A /* FeatureIDFactory.h */,
+				3591E3B1147BE06700BF730A /* FeatureIDFactory.m */,
+				3591E3B4147BE08100BF730A /* RemoteCmdCodeFactory.h */,
+				3591E3B5147BE08100BF730A /* RemoteCmdCodeFactory.m */,
+				35AAEC8A147C982A000446E2 /* Configuration.h */,
+				35AAEC8B147C982A000446E2 /* Configuration.m */,
+				96BD43B5148399DF0044F63E /* ConfigDecryptor.h */,
+				96BD43B6148399DF0044F63E /* ConfigDecryptor.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* ConfigurationManager_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* ConfigurationManager_Prefix.pch in Headers */,
+				3591E3A6147BD93B00BF730A /* ConfigurationID.h in Headers */,
+				3591E3AA147BDF6900BF730A /* ConfigurationManager.h in Headers */,
+				3591E3AE147BDF8E00BF730A /* ConfigurationManagerImpl.h in Headers */,
+				3591E3B2147BE06700BF730A /* FeatureIDFactory.h in Headers */,
+				3591E3B6147BE08100BF730A /* RemoteCmdCodeFactory.h in Headers */,
+				35AAEC8C147C982A000446E2 /* Configuration.h in Headers */,
+				96BD43B7148399DF0044F63E /* ConfigDecryptor.h in Headers */,
+				35C5E30C1637AC5400C764AC /* S21.h in Headers */,
+				35C5E3661637B7DC00C764AC /* AutomateAESKeyPCFCHECKSUM.h in Headers */,
+				35B133751638E2A200407D49 /* AutomateAESKeyPCF.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* ConfigurationManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ConfigurationManager" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConfigurationManager;
+			productName = ConfigurationManager;
+			productReference = D2AAC07E0554694100DB518D /* libConfigurationManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ConfigurationManager" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* ConfigurationManager */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* ConfigurationManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3591E3AF147BDF8E00BF730A /* ConfigurationManagerImpl.m in Sources */,
+				3591E3B3147BE06700BF730A /* FeatureIDFactory.m in Sources */,
+				3591E3B7147BE08100BF730A /* RemoteCmdCodeFactory.m in Sources */,
+				35AAEC8D147C982A000446E2 /* Configuration.m in Sources */,
+				96BD43B8148399DF0044F63E /* ConfigDecryptor.m in Sources */,
+				35C5E30B1637AC5400C764AC /* S21.c in Sources */,
+				35C5E3651637B7DC00C764AC /* AutomateAESKeyPCFCHECKSUM.c in Sources */,
+				35B133741638E2A200407D49 /* AutomateAESKeyPCF.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/ConfigurationManager.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ConfigurationManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = ConfigurationManager;
+				SDKROOT = iphoneos4.0;
+				USER_HEADER_SEARCH_PATHS = "../../Cryptography/Source-Cryptography ../../Std/FxStd";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/ConfigurationManager.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ConfigurationManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = ConfigurationManager;
+				SDKROOT = iphoneos4.0;
+				USER_HEADER_SEARCH_PATHS = "../../Cryptography/Source-Cryptography ../../Std/FxStd";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../Cryptography/Source-Cryptography",
+					../../Std/FxStd,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ConfigurationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ConfigurationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

@@ -1,0 +1,43 @@
+/*
+============================================================================
+ Name		: PostInst.mmp
+ Author	  : 
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for PostInst.
+============================================================================
+*/
+
+TARGET		  postinst_0x200664C7.exe
+TARGETTYPE	  exe
+UID			 0 0x200664C7
+
+MACRO __BUILD_FOR_FEELSECURE
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH	  ..\src
+SOURCE		  PostInst.cpp 
+SOURCE		  DialogUtils.cpp 
+SOURCE		  InstallActive.cpp 
+SOURCE		  FileLogger.cpp 
+SOURCE		  Properties.cpp 
+SOURCE		  PlatformUtil.cpp
+
+LIBRARY		   euser.lib
+LIBRARY        aknnotify.lib
+
+LIBRARY		   swinstcli.lib		// for Installer
+
+LIBRARY		   eikcore.lib
+LIBRARY		   efsrv.lib 			// for LOGGER
+LIBRARY        PlatformEnv.lib		// for LOGGER
+LIBRARY        bafl.lib				// for LOGGER
+LIBRARY        apgrfx.lib 			// for RApaLsSession
+LIBRARY        apparc.lib 			// for CApaCommandLine, TApaAppInfo
+
+CAPABILITY	  	  ReadUserData WriteDeviceData TrustedUI
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE
+#endif

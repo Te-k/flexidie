@@ -1,0 +1,3171 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		082156F415240D9F002ED7C4 /* libAppAgent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 082156F315240D3A002ED7C4 /* libAppAgent.a */; };
+		0822D9B516ACEC400056BAAF /* libCalendarManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0822D9B416ACEC110056BAAF /* libCalendarManager.a */; };
+		0822D9BD16ACEC8D0056BAAF /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0822D9BC16ACEC8D0056BAAF /* EventKit.framework */; };
+		08D0C9D615217469002CC00D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D0C9D515217469002CC00D /* AudioToolbox.framework */; };
+		08FA200C166C843000110E30 /* libAmbientRecordingManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA200B166C838B00110E30 /* libAmbientRecordingManager.a */; };
+		1D3623260D0F684500981E51 /* MobileSPYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MobileSPYAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* RootViewController.xib */; };
+		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		350F1340172E89740001A493 /* libViberCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 350F133F172E895B0001A493 /* libViberCaptureManager.a */; };
+		3513AAF1167196B700B993FB /* libSkypeCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3513AAF01671969C00B993FB /* libSkypeCaptureManager.a */; };
+		3520424E1498BCE600FB90CE /* version.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3520424D1498BCE600FB90CE /* version.xml */; };
+		35204BF01581F99B006FC2E9 /* libAppEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35204BEF1581F97C006FC2E9 /* libAppEngine.a */; };
+		352769C116848514002F7671 /* Notes in Frameworks */ = {isa = PBXBuildFile; fileRef = 352769C016848514002F7671 /* Notes */; };
+		352769CA1684855A002F7671 /* SpringBoardServices in Frameworks */ = {isa = PBXBuildFile; fileRef = 352769C91684855A002F7671 /* SpringBoardServices */; };
+		3536AC4514A1862400493288 /* libSystemUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3536AC3C14A1858A00493288 /* libSystemUtils.a */; };
+		3573A25C14DA9E5F00B8E582 /* libiMessageCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3573A25B14DA9E3500B8E582 /* libiMessageCaptureManager.a */; };
+		3573A27214DAA06900B8E582 /* libMMSCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3573A27114DAA04C00B8E582 /* libMMSCaptureManager.a */; };
+		3575000A14907EF7002E68B3 /* libDDM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575FFEC14907EE2002E68B3 /* libDDM.a */; };
+		3575000B14907EFC002E68B3 /* libCommandServiceManagerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575000914907EF1002E68B3 /* libCommandServiceManagerLib.a */; };
+		3575002114907F1F002E68B3 /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575001714907F10002E68B3 /* libFMDB.a */; };
+		3575002214907F24002E68B3 /* libActivationCodeCapture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575002014907F1A002E68B3 /* libActivationCodeCapture.a */; };
+		3575003514907F50002E68B3 /* libServerAddressManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575002B14907F3C002E68B3 /* libServerAddressManager.a */; };
+		3575003614907F53002E68B3 /* libEventRepos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575003414907F4A002E68B3 /* libEventRepos.a */; };
+		3575004914907F85002E68B3 /* libConfigurationManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575003F14907F72002E68B3 /* libConfigurationManager.a */; };
+		3575004A14907F89002E68B3 /* libTelephonyNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575004814907F82002E68B3 /* libTelephonyNotification.a */; };
+		3575007014908760002E68B3 /* libActivation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575005B1490872E002E68B3 /* libActivation.a */; };
+		3575007114908766002E68B3 /* libRCM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575006614908743002E68B3 /* libRCM.a */; };
+		357500721490876E002E68B3 /* libIPC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575006F1490875A002E68B3 /* libIPC.a */; };
+		3575008514908799002E68B3 /* libLocationManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575007B14908785002E68B3 /* libLocationManager.a */; };
+		357500861490879D002E68B3 /* libEDM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575008414908794002E68B3 /* libEDM.a */; };
+		357500A2149087DE002E68B3 /* libCRC32.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575008F149087B6002E68B3 /* libCRC32.a */; };
+		357500A3149087E3002E68B3 /* libGZIP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35750098149087C9002E68B3 /* libGZIP.a */; };
+		357500A4149087E8002E68B3 /* libCryptography.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 357500A1149087D6002E68B3 /* libCryptography.a */; };
+		357500B71490880E002E68B3 /* libSIMChangeCapture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 357500AD149087FB002E68B3 /* libSIMChangeCapture.a */; };
+		357500B814908813002E68B3 /* libPreferences.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 357500B614908809002E68B3 /* libPreferences.a */; };
+		35750104149089B7002E68B3 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 35750103149089B7002E68B3 /* libsqlite3.0.dylib */; };
+		35750106149089C4002E68B3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35750105149089C4002E68B3 /* Security.framework */; };
+		35750108149089CE002E68B3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35750107149089CE002E68B3 /* SystemConfiguration.framework */; };
+		3575010A149089D9002E68B3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35750109149089D9002E68B3 /* CFNetwork.framework */; };
+		3575010C149089EB002E68B3 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575010B149089EB002E68B3 /* libz.1.2.3.dylib */; };
+		3575010E149089F6002E68B3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575010D149089F6002E68B3 /* MobileCoreServices.framework */; };
+		35750110149089FE002E68B3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575010F149089FE002E68B3 /* CoreLocation.framework */; };
+		3575011214908A0B002E68B3 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575011114908A0B002E68B3 /* AddressBook.framework */; };
+		3575011614908A35002E68B3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575011514908A35002E68B3 /* CoreTelephony.framework */; };
+		3575011914908A46002E68B3 /* CoreTelephony in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575011814908A46002E68B3 /* CoreTelephony */; };
+		3575011B14908A58002E68B3 /* IOKit in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575011A14908A58002E68B3 /* IOKit */; };
+		3575FF8B14907D64002E68B3 /* libAppContext.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575FF8A14907D61002E68B3 /* libAppContext.a */; };
+		3575FF9614907D81002E68B3 /* libConnectionHistoryManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575FF9514907D7D002E68B3 /* libConnectionHistoryManager.a */; };
+		3575FFA014907DA6002E68B3 /* libPhoneInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575FF9F14907DA2002E68B3 /* libPhoneInfo.a */; };
+		3575FFBC14907DD5002E68B3 /* libFxStd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575FFA914907DB9002E68B3 /* libFxStd.a */; };
+		3575FFBD14907DD9002E68B3 /* libFxEvents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575FFB214907DC3002E68B3 /* libFxEvents.a */; };
+		3575FFBE14907DDD002E68B3 /* libEventCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575FFBB14907DD1002E68B3 /* libEventCenter.a */; };
+		3575FFE114907E41002E68B3 /* libSMSSender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575FFD714907E29002E68B3 /* libSMSSender.a */; };
+		3575FFE214907E49002E68B3 /* libLicenseManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575FFE014907E3C002E68B3 /* libLicenseManager.a */; };
+		3584149C14EB987E001C8128 /* libMediaFinder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3584149B14EB9861001C8128 /* libMediaFinder.a */; };
+		359CC7E514E4FE63008C61D5 /* libAddressbookManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 359CC7E214E4FE30008C61D5 /* libAddressbookManager.a */; };
+		359E26181491E9C400983B38 /* libHTTPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 359E26171491E97200983B38 /* libHTTPLib.a */; };
+		359E26421491EB5500983B38 /* libProtocolBuilderLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 359E26351491EB3800983B38 /* libProtocolBuilderLib.a */; };
+		359E26431491EB5E00983B38 /* libUnstructuredManagerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 359E26411491EB4700983B38 /* libUnstructuredManagerLib.a */; };
+		35A0DF7F155A0E1D00EAD9EB /* libBrowserUrlCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A0DF7E155A0DF800EAD9EB /* libBrowserUrlCaptureManager.a */; };
+		35A291AC149F385B000305F2 /* com.applle.systemcore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35A291AB149F385B000305F2 /* com.applle.systemcore.plist */; };
+		35A2B50114A0A00E002F24FB /* Launch.sh in Resources */ = {isa = PBXBuildFile; fileRef = 35A2B50014A0A00E002F24FB /* Launch.sh */; };
+		35A2B50314A0A0C1002F24FB /* Uninstall.sh in Resources */ = {isa = PBXBuildFile; fileRef = 35A2B50214A0A0C1002F24FB /* Uninstall.sh */; };
+		35A5CB2514A03B2500121CB3 /* Install.sh in Resources */ = {isa = PBXBuildFile; fileRef = 35A5CB2414A03B2500121CB3 /* Install.sh */; };
+		35A9DAD7149A5EDC0039D78C /* libMailCapture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A9DAD6149A5EB70039D78C /* libMailCapture.a */; };
+		35AC9B4E1495E433003666AC /* libCallLogCapture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35AC9B441495E3E3003666AC /* libCallLogCapture.a */; };
+		35AC9B501495E47B003666AC /* libSMSCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35AC9B4D1495E417003666AC /* libSMSCaptureManager.a */; };
+		35AC9BE11495EBE9003666AC /* libABContactsManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35AC9BE01495EBCE003666AC /* libABContactsManager.a */; };
+		35B571E214EE133800244B77 /* libMediaThumbnail.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B571C414EE018200244B77 /* libMediaThumbnail.a */; };
+		35B571E314EE134400244B77 /* libMediaCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B571CD14EE055700244B77 /* libMediaCaptureManager.a */; };
+		35B571F214EE142C00244B77 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B571F114EE142C00244B77 /* AVFoundation.framework */; };
+		35B571F914EE145800244B77 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B571F814EE145800244B77 /* CoreMedia.framework */; };
+		35B5720014EE14FF00244B77 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B571FF14EE14FF00244B77 /* MediaPlayer.framework */; };
+		35B9495015216A03007F47BD /* libSpyCall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B9492F15216690007F47BD /* libSpyCall.a */; };
+		35D52E21165A300500BDE60B /* libCleanser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D52E20165A2FE000BDE60B /* libCleanser.a */; };
+		35D52F3D165A495D00BDE60B /* libSecurityManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D52F3C165A495200BDE60B /* libSecurityManager.a */; };
+		35D52F58165A4C1700BDE60B /* libALCManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D52F57165A4C0700BDE60B /* libALCManager.a */; };
+		35D52FAC165A53AB00BDE60B /* libApplicationManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D52FAB165A53A200BDE60B /* libApplicationManager.a */; };
+		35D52FB8165A54FD00BDE60B /* PCF.xml in Resources */ = {isa = PBXBuildFile; fileRef = 35D52FB7165A54FD00BDE60B /* PCF.xml */; };
+		35E9A1F9165F542D005DF1D0 /* libBookmarkManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E9A1F8165F541C005DF1D0 /* libBookmarkManager.a */; };
+		35E9A22B165F646A005DF1D0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E9A22A165F646A005DF1D0 /* icon.png */; };
+		35E9FF5D1686D58F0019B0F2 /* ConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E9FF5C1686D58F0019B0F2 /* ConfigurationViewController.m */; };
+		35E9FFDD1686D63F0019B0F2 /* ConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35E9FFDC1686D63F0019B0F2 /* ConfigurationViewController.xib */; };
+		35EA904D166474650067E7DF /* libLINECaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EA904C166474520067E7DF /* libLINECaptureManager.a */; };
+		35EB35D816A7F98F00CF8F93 /* libNoteManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EB35D716A7F96A00CF8F93 /* libNoteManager.a */; };
+		35ECBA7A1688378A0063A0C4 /* libFacebookCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35ECBA791688376F0063A0C4 /* libFacebookCaptureManager.a */; };
+		35ED569114A20CF7009A55A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35ED569014A20CF7009A55A1 /* Localizable.strings */; };
+		35EDF94816AFAE9700309EA7 /* libCameraCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EDF94716AFAE7D00309EA7 /* libCameraCaptureManager.a */; };
+		35EDF95216AFAEE900309EA7 /* PhotoLibrary in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EDF95116AFAEE900309EA7 /* PhotoLibrary */; };
+		35EDF95616AFAF0400309EA7 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EDF95516AFAF0400309EA7 /* CoreVideo.framework */; };
+		35EDF95816AFAF0E00309EA7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EDF95716AFAF0E00309EA7 /* CoreMedia.framework */; };
+		35EDF95C16AFAF4000309EA7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EDF95B16AFAF4000309EA7 /* AssetsLibrary.framework */; };
+		35F42E61165CF00C004FEDB7 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F42E60165CF00C004FEDB7 /* ImageIO.framework */; };
+		35F8B35416C4A6C10039DD3A /* ChatKit in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F8B35316C4A6C10039DD3A /* ChatKit */; };
+		963DDEE11488BC5800EEB12F /* LastConnectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DDEDF1488BC5800EEB12F /* LastConnectionCell.m */; };
+		963DDEE21488BC5800EEB12F /* LastConnectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 963DDEE01488BC5800EEB12F /* LastConnectionCell.xib */; };
+		9691CF251487911500C6A647 /* Activation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9691CF231487911500C6A647 /* Activation.m */; };
+		9691CF261487911500C6A647 /* Activation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9691CF241487911500C6A647 /* Activation.xib */; };
+		9691CF2A1487912400C6A647 /* Uninstall.m in Sources */ = {isa = PBXBuildFile; fileRef = 9691CF281487912400C6A647 /* Uninstall.m */; };
+		9691CF2B1487912400C6A647 /* Uninstall.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9691CF291487912400C6A647 /* Uninstall.xib */; };
+		9691CF311487913900C6A647 /* Diagnostics.m in Sources */ = {isa = PBXBuildFile; fileRef = 9691CF2F1487913900C6A647 /* Diagnostics.m */; };
+		9691CF321487913900C6A647 /* Diagnostics.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9691CF301487913900C6A647 /* Diagnostics.xib */; };
+		9691CF381487914900C6A647 /* About.m in Sources */ = {isa = PBXBuildFile; fileRef = 9691CF361487914900C6A647 /* About.m */; };
+		9691CF391487914900C6A647 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9691CF371487914900C6A647 /* About.xib */; };
+		9691CF3D1487915800C6A647 /* CurrentSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 9691CF3B1487915800C6A647 /* CurrentSettings.m */; };
+		9691CF3E1487915800C6A647 /* CurrentSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9691CF3C1487915800C6A647 /* CurrentSettings.xib */; };
+		9691CF441487916900C6A647 /* LastConnections.m in Sources */ = {isa = PBXBuildFile; fileRef = 9691CF421487916900C6A647 /* LastConnections.m */; };
+		9691CF451487916900C6A647 /* LastConnections.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9691CF431487916900C6A647 /* LastConnections.xib */; };
+		96A75E5A148877240025C3CC /* Res.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A75E59148877240025C3CC /* Res.m */; };
+		96AC4165148DBDA50008B259 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AC4164148DBDA50008B259 /* SettingCell.m */; };
+		96AC42B0148DCC6D0008B259 /* DiagnosticCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AC42AF148DCC6D0008B259 /* DiagnosticCell.m */; };
+		96AC42C6148DD2BA0008B259 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AC42C5148DD2BA0008B259 /* Utils.m */; };
+		ED513DC3152313EF00F32C0F /* libWhatsAppCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED513DB8152313C800F32C0F /* libWhatsAppCaptureManager.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		082156F215240D3A002ED7C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 082156EE15240D3A002ED7C4 /* AppAgent.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = AppAgent;
+		};
+		082156F515240DA8002ED7C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 082156EE15240D3A002ED7C4 /* AppAgent.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = AppAgent;
+		};
+		0822D9B316ACEC110056BAAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0822D9AC16ACEC110056BAAF /* CalendarManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CalendarManager;
+		};
+		0822D9B616ACEC4C0056BAAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0822D9AC16ACEC110056BAAF /* CalendarManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CalendarManager;
+		};
+		08FA200A166C838B00110E30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FA2006166C838B00110E30 /* AmbientRecordingManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = AmbientRecordingManager;
+		};
+		08FA2042166C879400110E30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FA2006166C838B00110E30 /* AmbientRecordingManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = AmbientRecordingManager;
+		};
+		350F133E172E895B0001A493 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 350F133A172E895B0001A493 /* ViberCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ViberCaptureManager;
+		};
+		350F1341172E89820001A493 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 350F133A172E895B0001A493 /* ViberCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ViberCaptureManager;
+		};
+		3513AAEF1671969C00B993FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3513AAEB1671969C00B993FB /* SkypeCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SkypeCaptureManager;
+		};
+		3513AAF2167196CB00B993FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3513AAEB1671969C00B993FB /* SkypeCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = SkypeCaptureManager;
+		};
+		35204BEE1581F97C006FC2E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35204BE71581F97C006FC2E9 /* AppEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = AppEngine;
+		};
+		35204BF11581F9BA006FC2E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35204BE71581F97C006FC2E9 /* AppEngine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = AppEngine;
+		};
+		3536AC3B14A1858A00493288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3536AC3414A1858A00493288 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+		3536AC4614A1863300493288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3536AC3414A1858A00493288 /* SystemUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+		3573A25A14DA9E3500B8E582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3573A25314DA9E3500B8E582 /* iMessageCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = iMessageCaptureManager;
+		};
+		3573A25D14DA9E7600B8E582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3573A25314DA9E3500B8E582 /* iMessageCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = iMessageCaptureManager;
+		};
+		3573A27014DAA04C00B8E582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3573A26914DAA04C00B8E582 /* MMSCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = MMSCaptureManager;
+		};
+		3573A27314DAA0AC00B8E582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3573A26914DAA04C00B8E582 /* MMSCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = MMSCaptureManager;
+		};
+		3575000614907EF1002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FFED14907EF1002E68B3 /* CommandServiceManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = CommandServiceManager;
+		};
+		3575000814907EF1002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FFED14907EF1002E68B3 /* CommandServiceManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FFBFBA813E28FE100BF374E;
+			remoteInfo = CommandServiceManagerLib;
+		};
+		3575001414907F10002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575000C14907F10002E68B3 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		3575001614907F10002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575000C14907F10002E68B3 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		3575001F14907F1A002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575001814907F1A002E68B3 /* ActivationCodeCapture.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ActivationCodeCapture;
+		};
+		3575002A14907F3C002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575002314907F3C002E68B3 /* ServerAddressManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ServerAddressManager;
+		};
+		3575003314907F4A002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575002C14907F4A002E68B3 /* EventRepos.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = EventRepos;
+		};
+		3575003E14907F72002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575003714907F72002E68B3 /* ConfigurationManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ConfigurationManager;
+		};
+		3575004714907F82002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575004014907F82002E68B3 /* TelephonyNotification.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = TelephonyNotification;
+		};
+		357500581490872E002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575004D1490872E002E68B3 /* Activation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = ActivationTestApp;
+		};
+		3575005A1490872E002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575004D1490872E002E68B3 /* Activation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F10D812145FA8080033C747;
+			remoteInfo = Activation;
+		};
+		3575005C1490872E002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575004D1490872E002E68B3 /* Activation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F72F5A41463A25B00D7F303;
+			remoteInfo = UnitTest;
+		};
+		3575006514908743002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575005E14908743002E68B3 /* RCM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = RCM;
+		};
+		3575006E1490875A002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357500671490875A002E68B3 /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		3575007A14908785002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575007314908785002E68B3 /* LocationManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = LocationManager;
+		};
+		3575008314908794002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575007C14908794002E68B3 /* EDM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = EDM;
+		};
+		3575008E149087B6002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35750087149087B6002E68B3 /* CRC32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CRC32;
+		};
+		35750097149087C9002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35750090149087C9002E68B3 /* GZIP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = GZIP;
+		};
+		357500A0149087D6002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35750099149087D6002E68B3 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		357500AC149087FB002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357500A5149087FB002E68B3 /* SIMChangeCapture.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SIMChangeCapture;
+		};
+		357500B514908809002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357500AE14908809002E68B3 /* Preferences.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Preferences;
+		};
+		357500BB14908834002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FF8214907D61002E68B3 /* AppContext.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = AppContext;
+		};
+		357500BD14908840002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FF8C14907D7D002E68B3 /* ConnectionHistoryManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ConnectionHistoryManager;
+		};
+		357500BF1490884B002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FF9714907DA2002E68B3 /* PhoneInfo.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = PhoneInfo;
+		};
+		357500C114908858002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FFA114907DB9002E68B3 /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		357500C314908861002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FFAA14907DC3002E68B3 /* FxEvents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		357500C514908867002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FFB314907DD1002E68B3 /* EventCenter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = EventCenter;
+		};
+		357500C71490886F002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FFCF14907E29002E68B3 /* SMSSender.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = SMSSender;
+		};
+		357500C914908873002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FFD814907E3C002E68B3 /* LicenseManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = LicenseManager;
+		};
+		357500CB1490887D002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FFE414907EE2002E68B3 /* DDM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = DDM;
+		};
+		357500CD1490888A002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FFED14907EF1002E68B3 /* CommandServiceManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FFBFBA713E28FE100BF374E;
+			remoteInfo = CommandServiceManagerLib;
+		};
+		357500CF149088BB002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575000C14907F10002E68B3 /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE4290EE12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		357500D1149088C2002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575004D1490872E002E68B3 /* Activation.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F10D811145FA8080033C747;
+			remoteInfo = Activation;
+		};
+		357500D3149088CB002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575002314907F3C002E68B3 /* ServerAddressManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ServerAddressManager;
+		};
+		357500D5149088CF002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575002C14907F4A002E68B3 /* EventRepos.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = EventRepos;
+		};
+		357500D7149088DD002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575003714907F72002E68B3 /* ConfigurationManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ConfigurationManager;
+		};
+		357500D9149088E1002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575004014907F82002E68B3 /* TelephonyNotification.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = TelephonyNotification;
+		};
+		357500DB149088F4002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575001814907F1A002E68B3 /* ActivationCodeCapture.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ActivationCodeCapture;
+		};
+		357500DD149088FC002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575005E14908743002E68B3 /* RCM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = RCM;
+		};
+		357500DF14908907002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357500671490875A002E68B3 /* IPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		357500E11490890D002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575007314908785002E68B3 /* LocationManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = LocationManager;
+		};
+		357500E314908917002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575007C14908794002E68B3 /* EDM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = EDM;
+		};
+		357500E51490891A002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35750087149087B6002E68B3 /* CRC32.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CRC32;
+		};
+		357500E71490891F002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35750090149087C9002E68B3 /* GZIP.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = GZIP;
+		};
+		357500E914908922002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35750099149087D6002E68B3 /* Cryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		357500EB1490892A002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357500A5149087FB002E68B3 /* SIMChangeCapture.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = SIMChangeCapture;
+		};
+		357500ED1490892D002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357500AE14908809002E68B3 /* Preferences.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Preferences;
+		};
+		3575FF8914907D61002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FF8214907D61002E68B3 /* AppContext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = AppContext;
+		};
+		3575FF9414907D7D002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FF8C14907D7D002E68B3 /* ConnectionHistoryManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ConnectionHistoryManager;
+		};
+		3575FF9E14907DA2002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FF9714907DA2002E68B3 /* PhoneInfo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = PhoneInfo;
+		};
+		3575FFA814907DB9002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FFA114907DB9002E68B3 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		3575FFB114907DC3002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FFAA14907DC3002E68B3 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		3575FFBA14907DD1002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FFB314907DD1002E68B3 /* EventCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = EventCenter;
+		};
+		3575FFD614907E29002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FFCF14907E29002E68B3 /* SMSSender.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SMSSender;
+		};
+		3575FFDF14907E3C002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FFD814907E3C002E68B3 /* LicenseManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = LicenseManager;
+		};
+		3575FFEB14907EE2002E68B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3575FFE414907EE2002E68B3 /* DDM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = DDM;
+		};
+		3584149A14EB9861001C8128 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3584149314EB9861001C8128 /* MediaFinder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = MediaFinder;
+		};
+		3584149D14EB9897001C8128 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3584149314EB9861001C8128 /* MediaFinder.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = MediaFinder;
+		};
+		359CC7E114E4FE30008C61D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359CC7DD14E4FE30008C61D5 /* AddressbookManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = AddressbookManager;
+		};
+		359CC7E314E4FE45008C61D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359CC7DD14E4FE30008C61D5 /* AddressbookManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = AddressbookManager;
+		};
+		359E26141491E97200983B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359E260C1491E97200983B38 /* HTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = HTTP;
+		};
+		359E26161491E97200983B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359E260C1491E97200983B38 /* HTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F5E974213D9647700ACA74F;
+			remoteInfo = HTTPLib;
+		};
+		359E26191491E9CE00983B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359E260C1491E97200983B38 /* HTTP.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F5E974113D9647700ACA74F;
+			remoteInfo = HTTPLib;
+		};
+		359E26321491EB3800983B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359E262A1491EB3800983B38 /* ProtocolBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = ProtocolBuilder;
+		};
+		359E26341491EB3800983B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359E262A1491EB3800983B38 /* ProtocolBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FD67C6F13DE6B4D00623ACC;
+			remoteInfo = ProtocolBuilderLib;
+		};
+		359E263E1491EB4700983B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359E26361491EB4700983B38 /* UnstructuredManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = UnstructuredManagerDemo;
+		};
+		359E26401491EB4700983B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359E26361491EB4700983B38 /* UnstructuredManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FC8C25A13D6CE40002DC85B;
+			remoteInfo = UnstructuredManagerLib;
+		};
+		359E26461491EB9900983B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359E262A1491EB3800983B38 /* ProtocolBuilder.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FD67C6E13DE6B4D00623ACC;
+			remoteInfo = ProtocolBuilderLib;
+		};
+		359E26481491EB9E00983B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359E26361491EB4700983B38 /* UnstructuredManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FC8C25913D6CE40002DC85B;
+			remoteInfo = UnstructuredManagerLib;
+		};
+		35A0DF7D155A0DF800EAD9EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A0DF76155A0DF800EAD9EB /* BrowserUrlCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = BrowserUrlCaptureManager;
+		};
+		35A0DF81155A0E4700EAD9EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A0DF76155A0DF800EAD9EB /* BrowserUrlCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = BrowserUrlCaptureManager;
+		};
+		35A9DAD5149A5EB70039D78C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A9DACE149A5EB70039D78C /* MailCapture.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = MailCapture;
+		};
+		35A9DAD8149A5EEB0039D78C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A9DACE149A5EB70039D78C /* MailCapture.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = MailCapture;
+		};
+		35AC9B431495E3E3003666AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35AC9B3C1495E3E3003666AC /* CallLogCapture.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CallLogCapture;
+		};
+		35AC9B4C1495E417003666AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35AC9B451495E417003666AC /* SMSCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SMSCaptureManager;
+		};
+		35AC9B521495E498003666AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35AC9B3C1495E3E3003666AC /* CallLogCapture.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CallLogCapture;
+		};
+		35AC9B541495E49C003666AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35AC9B451495E417003666AC /* SMSCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = SMSCaptureManager;
+		};
+		35AC9BDF1495EBCE003666AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35AC9BD81495EBCE003666AC /* ABContactsManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ABContactsManager;
+		};
+		35AC9C381495F067003666AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35AC9BD81495EBCE003666AC /* ABContactsManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ABContactsManager;
+		};
+		35B571C314EE018200244B77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B571BB14EE018200244B77 /* MediaThumbnail.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = MediaThumbnail;
+		};
+		35B571CC14EE055700244B77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B571C514EE055700244B77 /* MediaCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = MediaCaptureManager;
+		};
+		35B571DE14EE131700244B77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B571BB14EE018200244B77 /* MediaThumbnail.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = MediaThumbnail;
+		};
+		35B571E014EE131D00244B77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B571C514EE055700244B77 /* MediaCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = MediaCaptureManager;
+		};
+		35B9492E15216690007F47BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B9492715216690007F47BD /* SpyCall.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SpyCall;
+		};
+		35B9495115216A0F007F47BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B9492715216690007F47BD /* SpyCall.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = SpyCall;
+		};
+		35D52E1F165A2FE000BDE60B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D52E1B165A2FE000BDE60B /* Cleanser.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Cleanser;
+		};
+		35D52E22165A302900BDE60B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D52E1B165A2FE000BDE60B /* Cleanser.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Cleanser;
+		};
+		35D52F3B165A495200BDE60B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D52F37165A495200BDE60B /* SecurityManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SecurityManager;
+		};
+		35D52F3E165A496A00BDE60B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D52F37165A495200BDE60B /* SecurityManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = SecurityManager;
+		};
+		35D52F56165A4C0700BDE60B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D52F52165A4C0700BDE60B /* ALCManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ALCManager;
+		};
+		35D52F59165A4C2100BDE60B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D52F52165A4C0700BDE60B /* ALCManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ALCManager;
+		};
+		35D52FAA165A53A200BDE60B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D52FA6165A53A200BDE60B /* ApplicationManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ApplicationManager;
+		};
+		35D52FAD165A53BA00BDE60B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D52FA6165A53A200BDE60B /* ApplicationManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ApplicationManager;
+		};
+		35E9A1F7165F541C005DF1D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35E9A1F3165F541C005DF1D0 /* BookmarkManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = BookmarkManager;
+		};
+		35E9A1FA165F543C005DF1D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35E9A1F3165F541C005DF1D0 /* BookmarkManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = BookmarkManager;
+		};
+		35EA904B166474520067E7DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EA9047166474520067E7DF /* LINECaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = LINECaptureManager;
+		};
+		35EA904E166474780067E7DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EA9047166474520067E7DF /* LINECaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = LINECaptureManager;
+		};
+		35EB35D616A7F96A00CF8F93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EB35CF16A7F96A00CF8F93 /* NoteManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = NoteManager;
+		};
+		35EB35D916A7F9B100CF8F93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EB35CF16A7F96A00CF8F93 /* NoteManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = NoteManager;
+		};
+		35ECBA781688376F0063A0C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35ECBA741688376F0063A0C4 /* FacebookCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FacebookCaptureManager;
+		};
+		35ECBA7B1688379C0063A0C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35ECBA741688376F0063A0C4 /* FacebookCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FacebookCaptureManager;
+		};
+		35EDF94616AFAE7D00309EA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EDF94216AFAE7D00309EA7 /* CameraCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CameraCaptureManager;
+		};
+		35EDF94B16AFAEAF00309EA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EDF94216AFAE7D00309EA7 /* CameraCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CameraCaptureManager;
+		};
+		ED513DB7152313C800F32C0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED513DB0152313C800F32C0F /* WhatsAppCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = WhatsAppCaptureManager;
+		};
+		ED513DC61523143500F32C0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED513DB0152313C800F32C0F /* WhatsAppCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = WhatsAppCaptureManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		082156EE15240D3A002ED7C4 /* AppAgent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppAgent.xcodeproj; path = "../codebase/AppAgent/Source-AppAgent/AppAgent.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		0822D9AC16ACEC110056BAAF /* CalendarManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CalendarManager.xcodeproj; path = "../codebase/CalendarManager/Source-CalendarManager/CalendarManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		0822D9BC16ACEC8D0056BAAF /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		08D0C9D515217469002CC00D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		08FA2006166C838B00110E30 /* AmbientRecordingManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AmbientRecordingManager.xcodeproj; path = "../codebase/AmbientRecordingManager/Source-AmbientRecordingManager/AmbientRecordingManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* MobileSPYAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileSPYAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* MobileSPYAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobileSPYAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* systemcore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = systemcore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E55F0DE3E45000AC0155 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		28A0AAE50D9B0CCF005BE974 /* FlexiSPY_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexiSPY_Prefix.pch; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		350F133A172E895B0001A493 /* ViberCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ViberCaptureManager.xcodeproj; path = "../codebase/ViberCaptureManager/Source-ViberCaptureManager/ViberCaptureManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3513AAEB1671969C00B993FB /* SkypeCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SkypeCaptureManager.xcodeproj; path = "../codebase/SkypeCaptureManager/Source-SkypeCaptureManager/SkypeCaptureManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3520424D1498BCE600FB90CE /* version.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = version.xml; path = ProductInfo/version.xml; sourceTree = "<group>"; };
+		35204BE71581F97C006FC2E9 /* AppEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppEngine.xcodeproj; path = "AppEngine/Source-AppEngine/AppEngine.xcodeproj"; sourceTree = "<group>"; };
+		352769C016848514002F7671 /* Notes */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = Notes; path = ../codebase/OTC/Frameworks/iOS4/Notes/Notes; sourceTree = SOURCE_ROOT; };
+		352769C91684855A002F7671 /* SpringBoardServices */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = SpringBoardServices; path = ../codebase/OTC/Frameworks/iOS4/SpringBoardServices.framework/SpringBoardServices; sourceTree = SOURCE_ROOT; };
+		3536AC3414A1858A00493288 /* SystemUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SystemUtils.xcodeproj; path = "../codebase/SystemUtils/Source-SystemUtils/SystemUtils.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3573A25314DA9E3500B8E582 /* iMessageCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iMessageCaptureManager.xcodeproj; path = "../codebase/iMessageCaptureManager/Source-iMessageCaptureManager/iMessageCaptureManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3573A26914DAA04C00B8E582 /* MMSCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MMSCaptureManager.xcodeproj; path = "../codebase/MMSCaptureManager/Source-MMSCaptureManager/MMSCaptureManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3575000C14907F10002E68B3 /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = "../codebase/ccgus-fmdb-606b29d/fmdb.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3575001814907F1A002E68B3 /* ActivationCodeCapture.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ActivationCodeCapture.xcodeproj; path = "../codebase/ActivationCodeCapture/Source-ActivationCodeCapture/ActivationCodeCapture.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3575002314907F3C002E68B3 /* ServerAddressManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ServerAddressManager.xcodeproj; path = "../codebase/ServerAddressManager/Source-ServerAddressManager/ServerAddressManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3575002C14907F4A002E68B3 /* EventRepos.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EventRepos.xcodeproj; path = ../codebase/EventRepository/EventRepos/EventRepos.xcodeproj; sourceTree = SOURCE_ROOT; };
+		3575003714907F72002E68B3 /* ConfigurationManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ConfigurationManager.xcodeproj; path = "../codebase/ConfigurationManager/Source-ConfigurationManager/ConfigurationManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3575004014907F82002E68B3 /* TelephonyNotification.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TelephonyNotification.xcodeproj; path = "../codebase/TelephonyNotification/Source-TelephonyNotification/TelephonyNotification.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3575004D1490872E002E68B3 /* Activation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Activation.xcodeproj; path = ../codebase/Activation/Activation.xcodeproj; sourceTree = SOURCE_ROOT; };
+		3575005E14908743002E68B3 /* RCM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCM.xcodeproj; path = "../codebase/RCM/Source-RCM/RCM.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		357500671490875A002E68B3 /* IPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IPC.xcodeproj; path = "../codebase/IPC/Source-IPC/IPC.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3575007314908785002E68B3 /* LocationManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LocationManager.xcodeproj; path = "../codebase/LocationManager/Source-LocationManager/LocationManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3575007C14908794002E68B3 /* EDM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EDM.xcodeproj; path = "../codebase/EventDeliveryManager/Source-EDM/EDM.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35750087149087B6002E68B3 /* CRC32.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CRC32.xcodeproj; path = "../codebase/CRC32/Source-CRC32/CRC32.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35750090149087C9002E68B3 /* GZIP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GZIP.xcodeproj; path = "../codebase/GZIP/Source-GZIP/GZIP.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35750099149087D6002E68B3 /* Cryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cryptography.xcodeproj; path = "../codebase/Cryptography/Source-Cryptography/Cryptography.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		357500A5149087FB002E68B3 /* SIMChangeCapture.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SIMChangeCapture.xcodeproj; path = "../codebase/SIMChangeCapture/Source-SIMChangeCapture/SIMChangeCapture.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		357500AE14908809002E68B3 /* Preferences.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Preferences.xcodeproj; path = "../codebase/Preferences/Source-Preferences/Preferences.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35750103149089B7002E68B3 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		35750105149089C4002E68B3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		35750107149089CE002E68B3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		35750109149089D9002E68B3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3575010B149089EB002E68B3 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		3575010D149089F6002E68B3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3575010F149089FE002E68B3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3575011114908A0B002E68B3 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		3575011514908A35002E68B3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = ../codebase/OTC/Frameworks/iOS3/CoreTelephony.framework; sourceTree = SOURCE_ROOT; };
+		3575011814908A46002E68B3 /* CoreTelephony */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = CoreTelephony; path = ../codebase/PhoneInfo/Frameworks/CoreTelephony; sourceTree = SOURCE_ROOT; };
+		3575011A14908A58002E68B3 /* IOKit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = IOKit; path = ../codebase/PhoneInfo/Frameworks/IOKit; sourceTree = SOURCE_ROOT; };
+		3575FF8214907D61002E68B3 /* AppContext.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppContext.xcodeproj; path = "../codebase/AppContext/Source-AppContext/AppContext.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3575FF8C14907D7D002E68B3 /* ConnectionHistoryManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ConnectionHistoryManager.xcodeproj; path = "../codebase/ConnectionHistoryManager/Source-ConnectionHistoryManager/ConnectionHistoryManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3575FF9714907DA2002E68B3 /* PhoneInfo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PhoneInfo.xcodeproj; path = "../codebase/PhoneInfo/Source-PhoneInfo/PhoneInfo.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3575FFA114907DB9002E68B3 /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../codebase/Std/FxStd/FxStd.xcodeproj; sourceTree = SOURCE_ROOT; };
+		3575FFAA14907DC3002E68B3 /* FxEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxEvents.xcodeproj; path = ../codebase/Events/FxEvents/FxEvents.xcodeproj; sourceTree = SOURCE_ROOT; };
+		3575FFB314907DD1002E68B3 /* EventCenter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EventCenter.xcodeproj; path = "../codebase/EventCenter/Source-EventCenter/EventCenter.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3575FFCF14907E29002E68B3 /* SMSSender.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SMSSender.xcodeproj; path = "../codebase/SMSSender/Source-SMSSender/SMSSender.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3575FFD814907E3C002E68B3 /* LicenseManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LicenseManager.xcodeproj; path = "../codebase/LicenseManager/Source-LicenseManager/LicenseManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3575FFE414907EE2002E68B3 /* DDM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DDM.xcodeproj; path = ../codebase/DataDeliveryManager/DDM/DDM.xcodeproj; sourceTree = SOURCE_ROOT; };
+		3575FFED14907EF1002E68B3 /* CommandServiceManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommandServiceManager.xcodeproj; path = ../codebase/PhoenixEngine/Phoenix/CommandServiceManager/CommandServiceManager.xcodeproj; sourceTree = SOURCE_ROOT; };
+		3584149314EB9861001C8128 /* MediaFinder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MediaFinder.xcodeproj; path = "../codebase/MediaFinder/Source-MediaFinder/MediaFinder.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		359CC7DD14E4FE30008C61D5 /* AddressbookManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AddressbookManager.xcodeproj; path = "../codebase/AddressbookManager/Source-AddressbookManager/AddressbookManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		359E260C1491E97200983B38 /* HTTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HTTP.xcodeproj; path = ../codebase/PhoenixEngine/Phoenix/HTTP/HTTP.xcodeproj; sourceTree = SOURCE_ROOT; };
+		359E262A1491EB3800983B38 /* ProtocolBuilder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProtocolBuilder.xcodeproj; path = ../codebase/PhoenixEngine/Phoenix/ProtocolBuilder/ProtocolBuilder.xcodeproj; sourceTree = SOURCE_ROOT; };
+		359E26361491EB4700983B38 /* UnstructuredManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UnstructuredManager.xcodeproj; path = ../codebase/PhoenixEngine/Phoenix/UnstructuredManager/UnstructuredManager.xcodeproj; sourceTree = SOURCE_ROOT; };
+		35A0DF76155A0DF800EAD9EB /* BrowserUrlCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BrowserUrlCaptureManager.xcodeproj; path = "../codebase/BrowserUrlCaptureManager/Source-BrowserUrlCaptureManager/BrowserUrlCaptureManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35A291AB149F385B000305F2 /* com.applle.systemcore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.applle.systemcore.plist; sourceTree = "<group>"; };
+		35A2B50014A0A00E002F24FB /* Launch.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = Launch.sh; path = Scripts/Launch.sh; sourceTree = "<group>"; };
+		35A2B50214A0A0C1002F24FB /* Uninstall.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = Uninstall.sh; path = Scripts/Uninstall.sh; sourceTree = "<group>"; };
+		35A5CB2414A03B2500121CB3 /* Install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = Install.sh; path = Scripts/Install.sh; sourceTree = "<group>"; };
+		35A9DACE149A5EB70039D78C /* MailCapture.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MailCapture.xcodeproj; path = "../codebase/MailCapture/Source-MailCapture/MailCapture.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35AC9B3C1495E3E3003666AC /* CallLogCapture.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CallLogCapture.xcodeproj; path = "../codebase/CallLogCapture/Source-CallLogCapture/CallLogCapture.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35AC9B451495E417003666AC /* SMSCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SMSCaptureManager.xcodeproj; path = "../codebase/SMSCaptureManager/Source-SMSCaptureManager/SMSCaptureManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35AC9BD81495EBCE003666AC /* ABContactsManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ABContactsManager.xcodeproj; path = "../codebase/ABContactsManager/Source-ABContactsManager/ABContactsManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35B32DCE1581E50E00D5BF91 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Product.h; path = ProductInfo/Product.h; sourceTree = "<group>"; };
+		35B571BB14EE018200244B77 /* MediaThumbnail.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MediaThumbnail.xcodeproj; path = "../codebase/MediaThumbnail/Source-MediaThumbnail/MediaThumbnail.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35B571C514EE055700244B77 /* MediaCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MediaCaptureManager.xcodeproj; path = "../codebase/MediaCaptureManager/Source-MediaCaptureManager/MediaCaptureManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35B571F114EE142C00244B77 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		35B571F814EE145800244B77 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		35B571FF14EE14FF00244B77 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		35B9492715216690007F47BD /* SpyCall.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpyCall.xcodeproj; path = "../codebase/SpyCall/Source-SpyCall/SpyCall.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35D52E1B165A2FE000BDE60B /* Cleanser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cleanser.xcodeproj; path = "../codebase/Cleanser/Source-Cleanser/Cleanser.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35D52F37165A495200BDE60B /* SecurityManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SecurityManager.xcodeproj; path = "../codebase/SecurityManager/Source-SecurityManager/SecurityManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35D52F52165A4C0700BDE60B /* ALCManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ALCManager.xcodeproj; path = "../codebase/ApplicationLifeCycleManager/Source-ApplicationLifeCycleManager/ALCManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35D52FA6165A53A200BDE60B /* ApplicationManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ApplicationManager.xcodeproj; path = "../codebase/ApplicationManager/Source-ApplicationManager/ApplicationManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35D52FB7165A54FD00BDE60B /* PCF.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = PCF.xml; path = ProductInfo/PCF.xml; sourceTree = "<group>"; };
+		35E9A1F3165F541C005DF1D0 /* BookmarkManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BookmarkManager.xcodeproj; path = "../codebase/BookmarkManager/Source-BookmarkManager/BookmarkManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35E9A22A165F646A005DF1D0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		35E9FF5B1686D58F0019B0F2 /* ConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationViewController.h; sourceTree = "<group>"; };
+		35E9FF5C1686D58F0019B0F2 /* ConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurationViewController.m; sourceTree = "<group>"; };
+		35E9FFDC1686D63F0019B0F2 /* ConfigurationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ConfigurationViewController.xib; path = Classes/ConfigurationViewController.xib; sourceTree = "<group>"; };
+		35EA9047166474520067E7DF /* LINECaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LINECaptureManager.xcodeproj; path = "../codebase/LINECaptureManager/Source-LINECaptureManager/LINECaptureManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35EB35CF16A7F96A00CF8F93 /* NoteManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NoteManager.xcodeproj; path = "../codebase/NoteManager/Source-NoteManager/NoteManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35ECBA741688376F0063A0C4 /* FacebookCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FacebookCaptureManager.xcodeproj; path = "../codebase/FacebookCaptureManager/Source-FacebookCaptureManager/FacebookCaptureManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35ED568E14A20CDF009A55A1 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		35EDF94216AFAE7D00309EA7 /* CameraCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CameraCaptureManager.xcodeproj; path = "../codebase/CameraCaptureManager/Source-CameraCaptureManager/CameraCaptureManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35EDF95116AFAEE900309EA7 /* PhotoLibrary */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = PhotoLibrary; path = ../codebase/OTC/Frameworks/iOS4/PhotoLibrary/PhotoLibrary; sourceTree = SOURCE_ROOT; };
+		35EDF95516AFAF0400309EA7 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		35EDF95716AFAF0E00309EA7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		35EDF95B16AFAF4000309EA7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		35F42E60165CF00C004FEDB7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		35F8B35316C4A6C10039DD3A /* ChatKit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = ChatKit; path = ../codebase/OTC/Frameworks/iOS5/ChatKit/ChatKit; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* FlexiSPY-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FlexiSPY-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		963DDEDE1488BC5800EEB12F /* LastConnectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastConnectionCell.h; sourceTree = "<group>"; };
+		963DDEDF1488BC5800EEB12F /* LastConnectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastConnectionCell.m; sourceTree = "<group>"; };
+		963DDEE01488BC5800EEB12F /* LastConnectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LastConnectionCell.xib; path = Classes/LastConnectionCell.xib; sourceTree = "<group>"; };
+		9691CF221487911500C6A647 /* Activation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activation.h; sourceTree = "<group>"; };
+		9691CF231487911500C6A647 /* Activation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activation.m; sourceTree = "<group>"; };
+		9691CF241487911500C6A647 /* Activation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Activation.xib; path = Classes/Activation.xib; sourceTree = "<group>"; };
+		9691CF271487912400C6A647 /* Uninstall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Uninstall.h; sourceTree = "<group>"; };
+		9691CF281487912400C6A647 /* Uninstall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Uninstall.m; sourceTree = "<group>"; };
+		9691CF291487912400C6A647 /* Uninstall.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Uninstall.xib; path = Classes/Uninstall.xib; sourceTree = "<group>"; };
+		9691CF2E1487913900C6A647 /* Diagnostics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diagnostics.h; sourceTree = "<group>"; };
+		9691CF2F1487913900C6A647 /* Diagnostics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diagnostics.m; sourceTree = "<group>"; };
+		9691CF301487913900C6A647 /* Diagnostics.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Diagnostics.xib; path = Classes/Diagnostics.xib; sourceTree = "<group>"; };
+		9691CF351487914900C6A647 /* About.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = About.h; sourceTree = "<group>"; };
+		9691CF361487914900C6A647 /* About.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = About.m; sourceTree = "<group>"; };
+		9691CF371487914900C6A647 /* About.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = About.xib; path = Classes/About.xib; sourceTree = "<group>"; };
+		9691CF3A1487915800C6A647 /* CurrentSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentSettings.h; sourceTree = "<group>"; };
+		9691CF3B1487915800C6A647 /* CurrentSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentSettings.m; sourceTree = "<group>"; };
+		9691CF3C1487915800C6A647 /* CurrentSettings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CurrentSettings.xib; path = Classes/CurrentSettings.xib; sourceTree = "<group>"; };
+		9691CF411487916900C6A647 /* LastConnections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastConnections.h; sourceTree = "<group>"; };
+		9691CF421487916900C6A647 /* LastConnections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastConnections.m; sourceTree = "<group>"; };
+		9691CF431487916900C6A647 /* LastConnections.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LastConnections.xib; path = Classes/LastConnections.xib; sourceTree = "<group>"; };
+		96A75E58148877240025C3CC /* Res.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Res.h; sourceTree = "<group>"; };
+		96A75E59148877240025C3CC /* Res.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Res.m; sourceTree = "<group>"; };
+		96AC4163148DBDA50008B259 /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
+		96AC4164148DBDA50008B259 /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
+		96AC42AE148DCC6D0008B259 /* DiagnosticCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiagnosticCell.h; sourceTree = "<group>"; };
+		96AC42AF148DCC6D0008B259 /* DiagnosticCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiagnosticCell.m; sourceTree = "<group>"; };
+		96AC42C4148DD2BA0008B259 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		96AC42C5148DD2BA0008B259 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		ED513DB0152313C800F32C0F /* WhatsAppCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WhatsAppCaptureManager.xcodeproj; path = "../codebase/WhatsAppCaptureManager/Source-WhatsAppCaptureManager/WhatsAppCaptureManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350F1340172E89740001A493 /* libViberCaptureManager.a in Frameworks */,
+				35EDF94816AFAE9700309EA7 /* libCameraCaptureManager.a in Frameworks */,
+				0822D9B516ACEC400056BAAF /* libCalendarManager.a in Frameworks */,
+				35EB35D816A7F98F00CF8F93 /* libNoteManager.a in Frameworks */,
+				35ECBA7A1688378A0063A0C4 /* libFacebookCaptureManager.a in Frameworks */,
+				3513AAF1167196B700B993FB /* libSkypeCaptureManager.a in Frameworks */,
+				08FA200C166C843000110E30 /* libAmbientRecordingManager.a in Frameworks */,
+				35EA904D166474650067E7DF /* libLINECaptureManager.a in Frameworks */,
+				35E9A1F9165F542D005DF1D0 /* libBookmarkManager.a in Frameworks */,
+				35D52FAC165A53AB00BDE60B /* libApplicationManager.a in Frameworks */,
+				35D52F58165A4C1700BDE60B /* libALCManager.a in Frameworks */,
+				35D52F3D165A495D00BDE60B /* libSecurityManager.a in Frameworks */,
+				35D52E21165A300500BDE60B /* libCleanser.a in Frameworks */,
+				35204BF01581F99B006FC2E9 /* libAppEngine.a in Frameworks */,
+				35A0DF7F155A0E1D00EAD9EB /* libBrowserUrlCaptureManager.a in Frameworks */,
+				082156F415240D9F002ED7C4 /* libAppAgent.a in Frameworks */,
+				ED513DC3152313EF00F32C0F /* libWhatsAppCaptureManager.a in Frameworks */,
+				35B9495015216A03007F47BD /* libSpyCall.a in Frameworks */,
+				35B571E314EE134400244B77 /* libMediaCaptureManager.a in Frameworks */,
+				35B571E214EE133800244B77 /* libMediaThumbnail.a in Frameworks */,
+				3584149C14EB987E001C8128 /* libMediaFinder.a in Frameworks */,
+				359CC7E514E4FE63008C61D5 /* libAddressbookManager.a in Frameworks */,
+				3573A27214DAA06900B8E582 /* libMMSCaptureManager.a in Frameworks */,
+				3573A25C14DA9E5F00B8E582 /* libiMessageCaptureManager.a in Frameworks */,
+				3536AC4514A1862400493288 /* libSystemUtils.a in Frameworks */,
+				35A9DAD7149A5EDC0039D78C /* libMailCapture.a in Frameworks */,
+				35AC9BE11495EBE9003666AC /* libABContactsManager.a in Frameworks */,
+				35AC9B501495E47B003666AC /* libSMSCaptureManager.a in Frameworks */,
+				35AC9B4E1495E433003666AC /* libCallLogCapture.a in Frameworks */,
+				359E26431491EB5E00983B38 /* libUnstructuredManagerLib.a in Frameworks */,
+				359E26421491EB5500983B38 /* libProtocolBuilderLib.a in Frameworks */,
+				359E26181491E9C400983B38 /* libHTTPLib.a in Frameworks */,
+				357500B814908813002E68B3 /* libPreferences.a in Frameworks */,
+				357500B71490880E002E68B3 /* libSIMChangeCapture.a in Frameworks */,
+				357500A4149087E8002E68B3 /* libCryptography.a in Frameworks */,
+				357500A3149087E3002E68B3 /* libGZIP.a in Frameworks */,
+				357500A2149087DE002E68B3 /* libCRC32.a in Frameworks */,
+				357500861490879D002E68B3 /* libEDM.a in Frameworks */,
+				3575008514908799002E68B3 /* libLocationManager.a in Frameworks */,
+				357500721490876E002E68B3 /* libIPC.a in Frameworks */,
+				3575007114908766002E68B3 /* libRCM.a in Frameworks */,
+				3575007014908760002E68B3 /* libActivation.a in Frameworks */,
+				3575004A14907F89002E68B3 /* libTelephonyNotification.a in Frameworks */,
+				3575004914907F85002E68B3 /* libConfigurationManager.a in Frameworks */,
+				3575003614907F53002E68B3 /* libEventRepos.a in Frameworks */,
+				3575003514907F50002E68B3 /* libServerAddressManager.a in Frameworks */,
+				3575002214907F24002E68B3 /* libActivationCodeCapture.a in Frameworks */,
+				3575002114907F1F002E68B3 /* libFMDB.a in Frameworks */,
+				3575000B14907EFC002E68B3 /* libCommandServiceManagerLib.a in Frameworks */,
+				3575000A14907EF7002E68B3 /* libDDM.a in Frameworks */,
+				3575FFE214907E49002E68B3 /* libLicenseManager.a in Frameworks */,
+				3575FFE114907E41002E68B3 /* libSMSSender.a in Frameworks */,
+				3575FFBE14907DDD002E68B3 /* libEventCenter.a in Frameworks */,
+				3575FFBD14907DD9002E68B3 /* libFxEvents.a in Frameworks */,
+				3575FFBC14907DD5002E68B3 /* libFxStd.a in Frameworks */,
+				3575FFA014907DA6002E68B3 /* libPhoneInfo.a in Frameworks */,
+				3575FF9614907D81002E68B3 /* libConnectionHistoryManager.a in Frameworks */,
+				3575FF8B14907D64002E68B3 /* libAppContext.a in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				35750104149089B7002E68B3 /* libsqlite3.0.dylib in Frameworks */,
+				35750106149089C4002E68B3 /* Security.framework in Frameworks */,
+				35750108149089CE002E68B3 /* SystemConfiguration.framework in Frameworks */,
+				3575010A149089D9002E68B3 /* CFNetwork.framework in Frameworks */,
+				3575010C149089EB002E68B3 /* libz.1.2.3.dylib in Frameworks */,
+				3575010E149089F6002E68B3 /* MobileCoreServices.framework in Frameworks */,
+				35750110149089FE002E68B3 /* CoreLocation.framework in Frameworks */,
+				3575011214908A0B002E68B3 /* AddressBook.framework in Frameworks */,
+				3575011614908A35002E68B3 /* CoreTelephony.framework in Frameworks */,
+				3575011914908A46002E68B3 /* CoreTelephony in Frameworks */,
+				3575011B14908A58002E68B3 /* IOKit in Frameworks */,
+				35B571F214EE142C00244B77 /* AVFoundation.framework in Frameworks */,
+				35B571F914EE145800244B77 /* CoreMedia.framework in Frameworks */,
+				35B5720014EE14FF00244B77 /* MediaPlayer.framework in Frameworks */,
+				08D0C9D615217469002CC00D /* AudioToolbox.framework in Frameworks */,
+				35F42E61165CF00C004FEDB7 /* ImageIO.framework in Frameworks */,
+				352769C116848514002F7671 /* Notes in Frameworks */,
+				352769CA1684855A002F7671 /* SpringBoardServices in Frameworks */,
+				0822D9BD16ACEC8D0056BAAF /* EventKit.framework in Frameworks */,
+				35EDF95216AFAEE900309EA7 /* PhotoLibrary in Frameworks */,
+				35EDF95616AFAF0400309EA7 /* CoreVideo.framework in Frameworks */,
+				35EDF95816AFAF0E00309EA7 /* CoreMedia.framework in Frameworks */,
+				35EDF95C16AFAF4000309EA7 /* AssetsLibrary.framework in Frameworks */,
+				35F8B35416C4A6C10039DD3A /* ChatKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				963DDE931488B69D00EEB12F /* Cells */,
+				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
+				28C286E00D94DF7D0034E888 /* RootViewController.m */,
+				1D3623240D0F684500981E51 /* MobileSPYAppDelegate.h */,
+				1D3623250D0F684500981E51 /* MobileSPYAppDelegate.m */,
+				9691CF221487911500C6A647 /* Activation.h */,
+				9691CF231487911500C6A647 /* Activation.m */,
+				9691CF271487912400C6A647 /* Uninstall.h */,
+				9691CF281487912400C6A647 /* Uninstall.m */,
+				9691CF2E1487913900C6A647 /* Diagnostics.h */,
+				9691CF2F1487913900C6A647 /* Diagnostics.m */,
+				9691CF351487914900C6A647 /* About.h */,
+				9691CF361487914900C6A647 /* About.m */,
+				9691CF3A1487915800C6A647 /* CurrentSettings.h */,
+				9691CF3B1487915800C6A647 /* CurrentSettings.m */,
+				9691CF411487916900C6A647 /* LastConnections.h */,
+				9691CF421487916900C6A647 /* LastConnections.m */,
+				96A75E59148877240025C3CC /* Res.m */,
+				96A75E58148877240025C3CC /* Res.h */,
+				96AC42C4148DD2BA0008B259 /* Utils.h */,
+				96AC42C5148DD2BA0008B259 /* Utils.m */,
+				35E9FF5B1686D58F0019B0F2 /* ConfigurationViewController.h */,
+				35E9FF5C1686D58F0019B0F2 /* ConfigurationViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		082156EF15240D3A002ED7C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				082156F315240D3A002ED7C4 /* libAppAgent.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0822D9AD16ACEC110056BAAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0822D9B416ACEC110056BAAF /* libCalendarManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08FA2007166C838B00110E30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08FA200B166C838B00110E30 /* libAmbientRecordingManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* systemcore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				350F133A172E895B0001A493 /* ViberCaptureManager.xcodeproj */,
+				35EDF94216AFAE7D00309EA7 /* CameraCaptureManager.xcodeproj */,
+				0822D9AC16ACEC110056BAAF /* CalendarManager.xcodeproj */,
+				35EB35CF16A7F96A00CF8F93 /* NoteManager.xcodeproj */,
+				35ECBA741688376F0063A0C4 /* FacebookCaptureManager.xcodeproj */,
+				3513AAEB1671969C00B993FB /* SkypeCaptureManager.xcodeproj */,
+				08FA2006166C838B00110E30 /* AmbientRecordingManager.xcodeproj */,
+				35EA9047166474520067E7DF /* LINECaptureManager.xcodeproj */,
+				35E9A1F3165F541C005DF1D0 /* BookmarkManager.xcodeproj */,
+				35D52FA6165A53A200BDE60B /* ApplicationManager.xcodeproj */,
+				35D52F52165A4C0700BDE60B /* ALCManager.xcodeproj */,
+				35D52F37165A495200BDE60B /* SecurityManager.xcodeproj */,
+				35D52E1B165A2FE000BDE60B /* Cleanser.xcodeproj */,
+				35204BE71581F97C006FC2E9 /* AppEngine.xcodeproj */,
+				35A0DF76155A0DF800EAD9EB /* BrowserUrlCaptureManager.xcodeproj */,
+				082156EE15240D3A002ED7C4 /* AppAgent.xcodeproj */,
+				ED513DB0152313C800F32C0F /* WhatsAppCaptureManager.xcodeproj */,
+				35B9492715216690007F47BD /* SpyCall.xcodeproj */,
+				35B571C514EE055700244B77 /* MediaCaptureManager.xcodeproj */,
+				35B571BB14EE018200244B77 /* MediaThumbnail.xcodeproj */,
+				3584149314EB9861001C8128 /* MediaFinder.xcodeproj */,
+				359CC7DD14E4FE30008C61D5 /* AddressbookManager.xcodeproj */,
+				3573A26914DAA04C00B8E582 /* MMSCaptureManager.xcodeproj */,
+				3573A25314DA9E3500B8E582 /* iMessageCaptureManager.xcodeproj */,
+				3536AC3414A1858A00493288 /* SystemUtils.xcodeproj */,
+				35A9DACE149A5EB70039D78C /* MailCapture.xcodeproj */,
+				35AC9BD81495EBCE003666AC /* ABContactsManager.xcodeproj */,
+				35AC9B451495E417003666AC /* SMSCaptureManager.xcodeproj */,
+				35AC9B3C1495E3E3003666AC /* CallLogCapture.xcodeproj */,
+				359E26361491EB4700983B38 /* UnstructuredManager.xcodeproj */,
+				359E262A1491EB3800983B38 /* ProtocolBuilder.xcodeproj */,
+				359E260C1491E97200983B38 /* HTTP.xcodeproj */,
+				357500AE14908809002E68B3 /* Preferences.xcodeproj */,
+				357500A5149087FB002E68B3 /* SIMChangeCapture.xcodeproj */,
+				35750099149087D6002E68B3 /* Cryptography.xcodeproj */,
+				35750090149087C9002E68B3 /* GZIP.xcodeproj */,
+				35750087149087B6002E68B3 /* CRC32.xcodeproj */,
+				3575007C14908794002E68B3 /* EDM.xcodeproj */,
+				3575007314908785002E68B3 /* LocationManager.xcodeproj */,
+				357500671490875A002E68B3 /* IPC.xcodeproj */,
+				3575005E14908743002E68B3 /* RCM.xcodeproj */,
+				3575004D1490872E002E68B3 /* Activation.xcodeproj */,
+				3575004014907F82002E68B3 /* TelephonyNotification.xcodeproj */,
+				3575003714907F72002E68B3 /* ConfigurationManager.xcodeproj */,
+				3575002C14907F4A002E68B3 /* EventRepos.xcodeproj */,
+				3575002314907F3C002E68B3 /* ServerAddressManager.xcodeproj */,
+				3575001814907F1A002E68B3 /* ActivationCodeCapture.xcodeproj */,
+				3575000C14907F10002E68B3 /* fmdb.xcodeproj */,
+				3575FFED14907EF1002E68B3 /* CommandServiceManager.xcodeproj */,
+				3575FFE414907EE2002E68B3 /* DDM.xcodeproj */,
+				3575FFD814907E3C002E68B3 /* LicenseManager.xcodeproj */,
+				3575FFCF14907E29002E68B3 /* SMSSender.xcodeproj */,
+				3575FFB314907DD1002E68B3 /* EventCenter.xcodeproj */,
+				3575FFAA14907DC3002E68B3 /* FxEvents.xcodeproj */,
+				3575FFA114907DB9002E68B3 /* FxStd.xcodeproj */,
+				3575FF9714907DA2002E68B3 /* PhoneInfo.xcodeproj */,
+				3575FF8C14907D7D002E68B3 /* ConnectionHistoryManager.xcodeproj */,
+				3575FF8214907D61002E68B3 /* AppContext.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				35750103149089B7002E68B3 /* libsqlite3.0.dylib */,
+				35750105149089C4002E68B3 /* Security.framework */,
+				35750107149089CE002E68B3 /* SystemConfiguration.framework */,
+				35750109149089D9002E68B3 /* CFNetwork.framework */,
+				3575010B149089EB002E68B3 /* libz.1.2.3.dylib */,
+				3575010D149089F6002E68B3 /* MobileCoreServices.framework */,
+				3575010F149089FE002E68B3 /* CoreLocation.framework */,
+				3575011114908A0B002E68B3 /* AddressBook.framework */,
+				35B571F114EE142C00244B77 /* AVFoundation.framework */,
+				35B571F814EE145800244B77 /* CoreMedia.framework */,
+				35B571FF14EE14FF00244B77 /* MediaPlayer.framework */,
+				35F42E60165CF00C004FEDB7 /* ImageIO.framework */,
+				35EDF95516AFAF0400309EA7 /* CoreVideo.framework */,
+				35EDF95716AFAF0E00309EA7 /* CoreMedia.framework */,
+				35EDF95B16AFAF4000309EA7 /* AssetsLibrary.framework */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				35E9A22A165F646A005DF1D0 /* icon.png */,
+				35D52FB7165A54FD00BDE60B /* PCF.xml */,
+				35A5CB2414A03B2500121CB3 /* Install.sh */,
+				35A2B50214A0A0C1002F24FB /* Uninstall.sh */,
+				35A2B50014A0A00E002F24FB /* Launch.sh */,
+				3520424D1498BCE600FB90CE /* version.xml */,
+				35B32DCE1581E50E00D5BF91 /* Product.h */,
+				28A0AAE50D9B0CCF005BE974 /* FlexiSPY_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9691CF371487914900C6A647 /* About.xib */,
+				9691CF241487911500C6A647 /* Activation.xib */,
+				9691CF291487912400C6A647 /* Uninstall.xib */,
+				9691CF301487913900C6A647 /* Diagnostics.xib */,
+				9691CF3C1487915800C6A647 /* CurrentSettings.xib */,
+				9691CF431487916900C6A647 /* LastConnections.xib */,
+				963DDEE01488BC5800EEB12F /* LastConnectionCell.xib */,
+				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				35E9FFDC1686D63F0019B0F2 /* ConfigurationViewController.xib */,
+				8D1107310486CEB800E47090 /* FlexiSPY-Info.plist */,
+				35A291AB149F385B000305F2 /* com.applle.systemcore.plist */,
+				35ED569014A20CF7009A55A1 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35F8B35316C4A6C10039DD3A /* ChatKit */,
+				35EDF95116AFAEE900309EA7 /* PhotoLibrary */,
+				352769C91684855A002F7671 /* SpringBoardServices */,
+				352769C016848514002F7671 /* Notes */,
+				3575011A14908A58002E68B3 /* IOKit */,
+				3575011814908A46002E68B3 /* CoreTelephony */,
+				3575011514908A35002E68B3 /* CoreTelephony.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+				08D0C9D515217469002CC00D /* AudioToolbox.framework */,
+				0822D9BC16ACEC8D0056BAAF /* EventKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		350F133B172E895B0001A493 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				350F133F172E895B0001A493 /* libViberCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3513AAEC1671969C00B993FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3513AAF01671969C00B993FB /* libSkypeCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35204BE81581F97C006FC2E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35204BEF1581F97C006FC2E9 /* libAppEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3536AC3514A1858A00493288 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3536AC3C14A1858A00493288 /* libSystemUtils.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3573A25414DA9E3500B8E582 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3573A25B14DA9E3500B8E582 /* libiMessageCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3573A26A14DAA04C00B8E582 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3573A27114DAA04C00B8E582 /* libMMSCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575000D14907F10002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575001514907F10002E68B3 /* fmdb */,
+				3575001714907F10002E68B3 /* libFMDB.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575001914907F1A002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575002014907F1A002E68B3 /* libActivationCodeCapture.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575002414907F3C002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575002B14907F3C002E68B3 /* libServerAddressManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575002D14907F4A002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575003414907F4A002E68B3 /* libEventRepos.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575003814907F72002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575003F14907F72002E68B3 /* libConfigurationManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575004114907F82002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575004814907F82002E68B3 /* libTelephonyNotification.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575004E1490872E002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				357500591490872E002E68B3 /* Activation.app */,
+				3575005B1490872E002E68B3 /* libActivation.a */,
+				3575005D1490872E002E68B3 /* UnitTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575005F14908743002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575006614908743002E68B3 /* libRCM.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		357500681490875A002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575006F1490875A002E68B3 /* libIPC.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575007414908785002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575007B14908785002E68B3 /* libLocationManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575007D14908794002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575008414908794002E68B3 /* libEDM.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35750088149087B6002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575008F149087B6002E68B3 /* libCRC32.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35750091149087C9002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35750098149087C9002E68B3 /* libGZIP.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575009A149087D6002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				357500A1149087D6002E68B3 /* libCryptography.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		357500A6149087FB002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				357500AD149087FB002E68B3 /* libSIMChangeCapture.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		357500AF14908809002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				357500B614908809002E68B3 /* libPreferences.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575FF8314907D61002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575FF8A14907D61002E68B3 /* libAppContext.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575FF8D14907D7D002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575FF9514907D7D002E68B3 /* libConnectionHistoryManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575FF9814907DA2002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575FF9F14907DA2002E68B3 /* libPhoneInfo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575FFA214907DB9002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575FFA914907DB9002E68B3 /* libFxStd.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575FFAB14907DC3002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575FFB214907DC3002E68B3 /* libFxEvents.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575FFB414907DD1002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575FFBB14907DD1002E68B3 /* libEventCenter.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575FFD014907E29002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575FFD714907E29002E68B3 /* libSMSSender.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575FFD914907E3C002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575FFE014907E3C002E68B3 /* libLicenseManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575FFE514907EE2002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575FFEC14907EE2002E68B3 /* libDDM.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3575FFEE14907EF1002E68B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3575000714907EF1002E68B3 /* CommandServiceManager.app */,
+				3575000914907EF1002E68B3 /* libCommandServiceManagerLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3584149414EB9861001C8128 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3584149B14EB9861001C8128 /* libMediaFinder.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		359CC7DE14E4FE30008C61D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				359CC7E214E4FE30008C61D5 /* libAddressbookManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		359E260D1491E97200983B38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				359E26151491E97200983B38 /* HTTP.app */,
+				359E26171491E97200983B38 /* libHTTPLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		359E262B1491EB3800983B38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				359E26331491EB3800983B38 /* ProtocolBuilder.app */,
+				359E26351491EB3800983B38 /* libProtocolBuilderLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		359E26371491EB4700983B38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				359E263F1491EB4700983B38 /* UnstructuredManager.app */,
+				359E26411491EB4700983B38 /* libUnstructuredManagerLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35A0DF77155A0DF800EAD9EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35A0DF7E155A0DF800EAD9EB /* libBrowserUrlCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35A9DACF149A5EB70039D78C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35A9DAD6149A5EB70039D78C /* libMailCapture.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35AC9B3D1495E3E3003666AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35AC9B441495E3E3003666AC /* libCallLogCapture.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35AC9B461495E417003666AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35AC9B4D1495E417003666AC /* libSMSCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35AC9BD91495EBCE003666AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35AC9BE01495EBCE003666AC /* libABContactsManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35B571BC14EE018200244B77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35B571C414EE018200244B77 /* libMediaThumbnail.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35B571C614EE055700244B77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35B571CD14EE055700244B77 /* libMediaCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35B9492815216690007F47BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35B9492F15216690007F47BD /* libSpyCall.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35D52E1C165A2FE000BDE60B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35D52E20165A2FE000BDE60B /* libCleanser.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35D52F38165A495200BDE60B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35D52F3C165A495200BDE60B /* libSecurityManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35D52F53165A4C0700BDE60B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35D52F57165A4C0700BDE60B /* libALCManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35D52FA7165A53A200BDE60B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35D52FAB165A53A200BDE60B /* libApplicationManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35E9A1F4165F541C005DF1D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35E9A1F8165F541C005DF1D0 /* libBookmarkManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EA9048166474520067E7DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EA904C166474520067E7DF /* libLINECaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EB35D016A7F96A00CF8F93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EB35D716A7F96A00CF8F93 /* libNoteManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35ECBA751688376F0063A0C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35ECBA791688376F0063A0C4 /* libFacebookCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EDF94316AFAE7D00309EA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EDF94716AFAE7D00309EA7 /* libCameraCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		963DDE931488B69D00EEB12F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				963DDEDE1488BC5800EEB12F /* LastConnectionCell.h */,
+				963DDEDF1488BC5800EEB12F /* LastConnectionCell.m */,
+				96AC4163148DBDA50008B259 /* SettingCell.h */,
+				96AC4164148DBDA50008B259 /* SettingCell.m */,
+				96AC42AE148DCC6D0008B259 /* DiagnosticCell.h */,
+				96AC42AF148DCC6D0008B259 /* DiagnosticCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		ED513DB1152313C800F32C0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED513DB8152313C800F32C0F /* libWhatsAppCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* FlexiSPY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "FlexiSPY" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				35B94E061490B1F1000E4206 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35204BF21581F9BA006FC2E9 /* PBXTargetDependency */,
+				35D52E23165A302900BDE60B /* PBXTargetDependency */,
+				357500BC14908834002E68B3 /* PBXTargetDependency */,
+				357500BE14908840002E68B3 /* PBXTargetDependency */,
+				357500C01490884B002E68B3 /* PBXTargetDependency */,
+				357500C214908858002E68B3 /* PBXTargetDependency */,
+				357500C414908861002E68B3 /* PBXTargetDependency */,
+				357500C614908867002E68B3 /* PBXTargetDependency */,
+				357500C81490886F002E68B3 /* PBXTargetDependency */,
+				357500CA14908873002E68B3 /* PBXTargetDependency */,
+				357500CC1490887D002E68B3 /* PBXTargetDependency */,
+				357500CE1490888A002E68B3 /* PBXTargetDependency */,
+				357500D0149088BB002E68B3 /* PBXTargetDependency */,
+				357500D2149088C2002E68B3 /* PBXTargetDependency */,
+				357500D4149088CB002E68B3 /* PBXTargetDependency */,
+				357500D6149088CF002E68B3 /* PBXTargetDependency */,
+				357500D8149088DD002E68B3 /* PBXTargetDependency */,
+				357500DA149088E1002E68B3 /* PBXTargetDependency */,
+				357500DC149088F4002E68B3 /* PBXTargetDependency */,
+				357500DE149088FC002E68B3 /* PBXTargetDependency */,
+				357500E014908907002E68B3 /* PBXTargetDependency */,
+				357500E21490890D002E68B3 /* PBXTargetDependency */,
+				357500E414908917002E68B3 /* PBXTargetDependency */,
+				357500E61490891A002E68B3 /* PBXTargetDependency */,
+				357500E81490891F002E68B3 /* PBXTargetDependency */,
+				357500EA14908922002E68B3 /* PBXTargetDependency */,
+				357500EC1490892A002E68B3 /* PBXTargetDependency */,
+				357500EE1490892D002E68B3 /* PBXTargetDependency */,
+				359E261A1491E9CE00983B38 /* PBXTargetDependency */,
+				359E26471491EB9900983B38 /* PBXTargetDependency */,
+				359E26491491EB9E00983B38 /* PBXTargetDependency */,
+				35AC9B531495E498003666AC /* PBXTargetDependency */,
+				35AC9B551495E49C003666AC /* PBXTargetDependency */,
+				35AC9C391495F067003666AC /* PBXTargetDependency */,
+				35A9DAD9149A5EEB0039D78C /* PBXTargetDependency */,
+				3536AC4714A1863300493288 /* PBXTargetDependency */,
+				3573A25E14DA9E7600B8E582 /* PBXTargetDependency */,
+				3573A27414DAA0AC00B8E582 /* PBXTargetDependency */,
+				359CC7E414E4FE45008C61D5 /* PBXTargetDependency */,
+				3584149E14EB9897001C8128 /* PBXTargetDependency */,
+				35B571DF14EE131700244B77 /* PBXTargetDependency */,
+				35B571E114EE131D00244B77 /* PBXTargetDependency */,
+				35B9495215216A0F007F47BD /* PBXTargetDependency */,
+				ED513DC71523143500F32C0F /* PBXTargetDependency */,
+				082156F615240DA8002ED7C4 /* PBXTargetDependency */,
+				35A0DF82155A0E4700EAD9EB /* PBXTargetDependency */,
+				35D52F3F165A496A00BDE60B /* PBXTargetDependency */,
+				35D52F5A165A4C2100BDE60B /* PBXTargetDependency */,
+				35D52FAE165A53BA00BDE60B /* PBXTargetDependency */,
+				35E9A1FB165F543C005DF1D0 /* PBXTargetDependency */,
+				35EA904F166474780067E7DF /* PBXTargetDependency */,
+				08FA2043166C879400110E30 /* PBXTargetDependency */,
+				3513AAF3167196CB00B993FB /* PBXTargetDependency */,
+				35ECBA7C1688379C0063A0C4 /* PBXTargetDependency */,
+				35EB35DA16A7F9B100CF8F93 /* PBXTargetDependency */,
+				0822D9B716ACEC4C0056BAAF /* PBXTargetDependency */,
+				35EDF94C16AFAEAF00309EA7 /* PBXTargetDependency */,
+				350F1342172E89820001A493 /* PBXTargetDependency */,
+			);
+			name = FlexiSPY;
+			productName = FlexiSPY;
+			productReference = 1D6058910D05DD3D006BFB54 /* systemcore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FlexiSPY" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 35AC9BD91495EBCE003666AC /* Products */;
+					ProjectRef = 35AC9BD81495EBCE003666AC /* ABContactsManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575004E1490872E002E68B3 /* Products */;
+					ProjectRef = 3575004D1490872E002E68B3 /* Activation.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575001914907F1A002E68B3 /* Products */;
+					ProjectRef = 3575001814907F1A002E68B3 /* ActivationCodeCapture.xcodeproj */;
+				},
+				{
+					ProductGroup = 359CC7DE14E4FE30008C61D5 /* Products */;
+					ProjectRef = 359CC7DD14E4FE30008C61D5 /* AddressbookManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35D52F53165A4C0700BDE60B /* Products */;
+					ProjectRef = 35D52F52165A4C0700BDE60B /* ALCManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 08FA2007166C838B00110E30 /* Products */;
+					ProjectRef = 08FA2006166C838B00110E30 /* AmbientRecordingManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 082156EF15240D3A002ED7C4 /* Products */;
+					ProjectRef = 082156EE15240D3A002ED7C4 /* AppAgent.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575FF8314907D61002E68B3 /* Products */;
+					ProjectRef = 3575FF8214907D61002E68B3 /* AppContext.xcodeproj */;
+				},
+				{
+					ProductGroup = 35204BE81581F97C006FC2E9 /* Products */;
+					ProjectRef = 35204BE71581F97C006FC2E9 /* AppEngine.xcodeproj */;
+				},
+				{
+					ProductGroup = 35D52FA7165A53A200BDE60B /* Products */;
+					ProjectRef = 35D52FA6165A53A200BDE60B /* ApplicationManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35E9A1F4165F541C005DF1D0 /* Products */;
+					ProjectRef = 35E9A1F3165F541C005DF1D0 /* BookmarkManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35A0DF77155A0DF800EAD9EB /* Products */;
+					ProjectRef = 35A0DF76155A0DF800EAD9EB /* BrowserUrlCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 0822D9AD16ACEC110056BAAF /* Products */;
+					ProjectRef = 0822D9AC16ACEC110056BAAF /* CalendarManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35AC9B3D1495E3E3003666AC /* Products */;
+					ProjectRef = 35AC9B3C1495E3E3003666AC /* CallLogCapture.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EDF94316AFAE7D00309EA7 /* Products */;
+					ProjectRef = 35EDF94216AFAE7D00309EA7 /* CameraCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35D52E1C165A2FE000BDE60B /* Products */;
+					ProjectRef = 35D52E1B165A2FE000BDE60B /* Cleanser.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575FFEE14907EF1002E68B3 /* Products */;
+					ProjectRef = 3575FFED14907EF1002E68B3 /* CommandServiceManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575003814907F72002E68B3 /* Products */;
+					ProjectRef = 3575003714907F72002E68B3 /* ConfigurationManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575FF8D14907D7D002E68B3 /* Products */;
+					ProjectRef = 3575FF8C14907D7D002E68B3 /* ConnectionHistoryManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35750088149087B6002E68B3 /* Products */;
+					ProjectRef = 35750087149087B6002E68B3 /* CRC32.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575009A149087D6002E68B3 /* Products */;
+					ProjectRef = 35750099149087D6002E68B3 /* Cryptography.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575FFE514907EE2002E68B3 /* Products */;
+					ProjectRef = 3575FFE414907EE2002E68B3 /* DDM.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575007D14908794002E68B3 /* Products */;
+					ProjectRef = 3575007C14908794002E68B3 /* EDM.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575FFB414907DD1002E68B3 /* Products */;
+					ProjectRef = 3575FFB314907DD1002E68B3 /* EventCenter.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575002D14907F4A002E68B3 /* Products */;
+					ProjectRef = 3575002C14907F4A002E68B3 /* EventRepos.xcodeproj */;
+				},
+				{
+					ProductGroup = 35ECBA751688376F0063A0C4 /* Products */;
+					ProjectRef = 35ECBA741688376F0063A0C4 /* FacebookCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575000D14907F10002E68B3 /* Products */;
+					ProjectRef = 3575000C14907F10002E68B3 /* fmdb.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575FFAB14907DC3002E68B3 /* Products */;
+					ProjectRef = 3575FFAA14907DC3002E68B3 /* FxEvents.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575FFA214907DB9002E68B3 /* Products */;
+					ProjectRef = 3575FFA114907DB9002E68B3 /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = 35750091149087C9002E68B3 /* Products */;
+					ProjectRef = 35750090149087C9002E68B3 /* GZIP.xcodeproj */;
+				},
+				{
+					ProductGroup = 359E260D1491E97200983B38 /* Products */;
+					ProjectRef = 359E260C1491E97200983B38 /* HTTP.xcodeproj */;
+				},
+				{
+					ProductGroup = 3573A25414DA9E3500B8E582 /* Products */;
+					ProjectRef = 3573A25314DA9E3500B8E582 /* iMessageCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 357500681490875A002E68B3 /* Products */;
+					ProjectRef = 357500671490875A002E68B3 /* IPC.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575FFD914907E3C002E68B3 /* Products */;
+					ProjectRef = 3575FFD814907E3C002E68B3 /* LicenseManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EA9048166474520067E7DF /* Products */;
+					ProjectRef = 35EA9047166474520067E7DF /* LINECaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575007414908785002E68B3 /* Products */;
+					ProjectRef = 3575007314908785002E68B3 /* LocationManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35A9DACF149A5EB70039D78C /* Products */;
+					ProjectRef = 35A9DACE149A5EB70039D78C /* MailCapture.xcodeproj */;
+				},
+				{
+					ProductGroup = 35B571C614EE055700244B77 /* Products */;
+					ProjectRef = 35B571C514EE055700244B77 /* MediaCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 3584149414EB9861001C8128 /* Products */;
+					ProjectRef = 3584149314EB9861001C8128 /* MediaFinder.xcodeproj */;
+				},
+				{
+					ProductGroup = 35B571BC14EE018200244B77 /* Products */;
+					ProjectRef = 35B571BB14EE018200244B77 /* MediaThumbnail.xcodeproj */;
+				},
+				{
+					ProductGroup = 3573A26A14DAA04C00B8E582 /* Products */;
+					ProjectRef = 3573A26914DAA04C00B8E582 /* MMSCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EB35D016A7F96A00CF8F93 /* Products */;
+					ProjectRef = 35EB35CF16A7F96A00CF8F93 /* NoteManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575FF9814907DA2002E68B3 /* Products */;
+					ProjectRef = 3575FF9714907DA2002E68B3 /* PhoneInfo.xcodeproj */;
+				},
+				{
+					ProductGroup = 357500AF14908809002E68B3 /* Products */;
+					ProjectRef = 357500AE14908809002E68B3 /* Preferences.xcodeproj */;
+				},
+				{
+					ProductGroup = 359E262B1491EB3800983B38 /* Products */;
+					ProjectRef = 359E262A1491EB3800983B38 /* ProtocolBuilder.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575005F14908743002E68B3 /* Products */;
+					ProjectRef = 3575005E14908743002E68B3 /* RCM.xcodeproj */;
+				},
+				{
+					ProductGroup = 35D52F38165A495200BDE60B /* Products */;
+					ProjectRef = 35D52F37165A495200BDE60B /* SecurityManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575002414907F3C002E68B3 /* Products */;
+					ProjectRef = 3575002314907F3C002E68B3 /* ServerAddressManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 357500A6149087FB002E68B3 /* Products */;
+					ProjectRef = 357500A5149087FB002E68B3 /* SIMChangeCapture.xcodeproj */;
+				},
+				{
+					ProductGroup = 3513AAEC1671969C00B993FB /* Products */;
+					ProjectRef = 3513AAEB1671969C00B993FB /* SkypeCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35AC9B461495E417003666AC /* Products */;
+					ProjectRef = 35AC9B451495E417003666AC /* SMSCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575FFD014907E29002E68B3 /* Products */;
+					ProjectRef = 3575FFCF14907E29002E68B3 /* SMSSender.xcodeproj */;
+				},
+				{
+					ProductGroup = 35B9492815216690007F47BD /* Products */;
+					ProjectRef = 35B9492715216690007F47BD /* SpyCall.xcodeproj */;
+				},
+				{
+					ProductGroup = 3536AC3514A1858A00493288 /* Products */;
+					ProjectRef = 3536AC3414A1858A00493288 /* SystemUtils.xcodeproj */;
+				},
+				{
+					ProductGroup = 3575004114907F82002E68B3 /* Products */;
+					ProjectRef = 3575004014907F82002E68B3 /* TelephonyNotification.xcodeproj */;
+				},
+				{
+					ProductGroup = 359E26371491EB4700983B38 /* Products */;
+					ProjectRef = 359E26361491EB4700983B38 /* UnstructuredManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 350F133B172E895B0001A493 /* Products */;
+					ProjectRef = 350F133A172E895B0001A493 /* ViberCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = ED513DB1152313C800F32C0F /* Products */;
+					ProjectRef = ED513DB0152313C800F32C0F /* WhatsAppCaptureManager.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* FlexiSPY */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		082156F315240D3A002ED7C4 /* libAppAgent.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppAgent.a;
+			remoteRef = 082156F215240D3A002ED7C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0822D9B416ACEC110056BAAF /* libCalendarManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCalendarManager.a;
+			remoteRef = 0822D9B316ACEC110056BAAF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08FA200B166C838B00110E30 /* libAmbientRecordingManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAmbientRecordingManager.a;
+			remoteRef = 08FA200A166C838B00110E30 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		350F133F172E895B0001A493 /* libViberCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libViberCaptureManager.a;
+			remoteRef = 350F133E172E895B0001A493 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3513AAF01671969C00B993FB /* libSkypeCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSkypeCaptureManager.a;
+			remoteRef = 3513AAEF1671969C00B993FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35204BEF1581F97C006FC2E9 /* libAppEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppEngine.a;
+			remoteRef = 35204BEE1581F97C006FC2E9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3536AC3C14A1858A00493288 /* libSystemUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtils.a;
+			remoteRef = 3536AC3B14A1858A00493288 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3573A25B14DA9E3500B8E582 /* libiMessageCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libiMessageCaptureManager.a;
+			remoteRef = 3573A25A14DA9E3500B8E582 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3573A27114DAA04C00B8E582 /* libMMSCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMMSCaptureManager.a;
+			remoteRef = 3573A27014DAA04C00B8E582 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575000714907EF1002E68B3 /* CommandServiceManager.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CommandServiceManager.app;
+			remoteRef = 3575000614907EF1002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575000914907EF1002E68B3 /* libCommandServiceManagerLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCommandServiceManagerLib.a;
+			remoteRef = 3575000814907EF1002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575001514907F10002E68B3 /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = 3575001414907F10002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575001714907F10002E68B3 /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = 3575001614907F10002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575002014907F1A002E68B3 /* libActivationCodeCapture.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libActivationCodeCapture.a;
+			remoteRef = 3575001F14907F1A002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575002B14907F3C002E68B3 /* libServerAddressManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libServerAddressManager.a;
+			remoteRef = 3575002A14907F3C002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575003414907F4A002E68B3 /* libEventRepos.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventRepos.a;
+			remoteRef = 3575003314907F4A002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575003F14907F72002E68B3 /* libConfigurationManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libConfigurationManager.a;
+			remoteRef = 3575003E14907F72002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575004814907F82002E68B3 /* libTelephonyNotification.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTelephonyNotification.a;
+			remoteRef = 3575004714907F82002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		357500591490872E002E68B3 /* Activation.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Activation.app;
+			remoteRef = 357500581490872E002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575005B1490872E002E68B3 /* libActivation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libActivation.a;
+			remoteRef = 3575005A1490872E002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575005D1490872E002E68B3 /* UnitTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = UnitTest.app;
+			remoteRef = 3575005C1490872E002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575006614908743002E68B3 /* libRCM.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCM.a;
+			remoteRef = 3575006514908743002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575006F1490875A002E68B3 /* libIPC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPC.a;
+			remoteRef = 3575006E1490875A002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575007B14908785002E68B3 /* libLocationManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLocationManager.a;
+			remoteRef = 3575007A14908785002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575008414908794002E68B3 /* libEDM.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEDM.a;
+			remoteRef = 3575008314908794002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575008F149087B6002E68B3 /* libCRC32.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCRC32.a;
+			remoteRef = 3575008E149087B6002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35750098149087C9002E68B3 /* libGZIP.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGZIP.a;
+			remoteRef = 35750097149087C9002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		357500A1149087D6002E68B3 /* libCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptography.a;
+			remoteRef = 357500A0149087D6002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		357500AD149087FB002E68B3 /* libSIMChangeCapture.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSIMChangeCapture.a;
+			remoteRef = 357500AC149087FB002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		357500B614908809002E68B3 /* libPreferences.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPreferences.a;
+			remoteRef = 357500B514908809002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575FF8A14907D61002E68B3 /* libAppContext.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppContext.a;
+			remoteRef = 3575FF8914907D61002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575FF9514907D7D002E68B3 /* libConnectionHistoryManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libConnectionHistoryManager.a;
+			remoteRef = 3575FF9414907D7D002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575FF9F14907DA2002E68B3 /* libPhoneInfo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPhoneInfo.a;
+			remoteRef = 3575FF9E14907DA2002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575FFA914907DB9002E68B3 /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = 3575FFA814907DB9002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575FFB214907DC3002E68B3 /* libFxEvents.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEvents.a;
+			remoteRef = 3575FFB114907DC3002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575FFBB14907DD1002E68B3 /* libEventCenter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventCenter.a;
+			remoteRef = 3575FFBA14907DD1002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575FFD714907E29002E68B3 /* libSMSSender.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSMSSender.a;
+			remoteRef = 3575FFD614907E29002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575FFE014907E3C002E68B3 /* libLicenseManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLicenseManager.a;
+			remoteRef = 3575FFDF14907E3C002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3575FFEC14907EE2002E68B3 /* libDDM.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDDM.a;
+			remoteRef = 3575FFEB14907EE2002E68B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3584149B14EB9861001C8128 /* libMediaFinder.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMediaFinder.a;
+			remoteRef = 3584149A14EB9861001C8128 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		359CC7E214E4FE30008C61D5 /* libAddressbookManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAddressbookManager.a;
+			remoteRef = 359CC7E114E4FE30008C61D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		359E26151491E97200983B38 /* HTTP.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HTTP.app;
+			remoteRef = 359E26141491E97200983B38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		359E26171491E97200983B38 /* libHTTPLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libHTTPLib.a;
+			remoteRef = 359E26161491E97200983B38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		359E26331491EB3800983B38 /* ProtocolBuilder.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ProtocolBuilder.app;
+			remoteRef = 359E26321491EB3800983B38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		359E26351491EB3800983B38 /* libProtocolBuilderLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libProtocolBuilderLib.a;
+			remoteRef = 359E26341491EB3800983B38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		359E263F1491EB4700983B38 /* UnstructuredManager.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = UnstructuredManager.app;
+			remoteRef = 359E263E1491EB4700983B38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		359E26411491EB4700983B38 /* libUnstructuredManagerLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUnstructuredManagerLib.a;
+			remoteRef = 359E26401491EB4700983B38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35A0DF7E155A0DF800EAD9EB /* libBrowserUrlCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBrowserUrlCaptureManager.a;
+			remoteRef = 35A0DF7D155A0DF800EAD9EB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35A9DAD6149A5EB70039D78C /* libMailCapture.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMailCapture.a;
+			remoteRef = 35A9DAD5149A5EB70039D78C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35AC9B441495E3E3003666AC /* libCallLogCapture.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCallLogCapture.a;
+			remoteRef = 35AC9B431495E3E3003666AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35AC9B4D1495E417003666AC /* libSMSCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSMSCaptureManager.a;
+			remoteRef = 35AC9B4C1495E417003666AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35AC9BE01495EBCE003666AC /* libABContactsManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libABContactsManager.a;
+			remoteRef = 35AC9BDF1495EBCE003666AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35B571C414EE018200244B77 /* libMediaThumbnail.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMediaThumbnail.a;
+			remoteRef = 35B571C314EE018200244B77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35B571CD14EE055700244B77 /* libMediaCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMediaCaptureManager.a;
+			remoteRef = 35B571CC14EE055700244B77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35B9492F15216690007F47BD /* libSpyCall.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSpyCall.a;
+			remoteRef = 35B9492E15216690007F47BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35D52E20165A2FE000BDE60B /* libCleanser.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCleanser.a;
+			remoteRef = 35D52E1F165A2FE000BDE60B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35D52F3C165A495200BDE60B /* libSecurityManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSecurityManager.a;
+			remoteRef = 35D52F3B165A495200BDE60B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35D52F57165A4C0700BDE60B /* libALCManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libALCManager.a;
+			remoteRef = 35D52F56165A4C0700BDE60B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35D52FAB165A53A200BDE60B /* libApplicationManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libApplicationManager.a;
+			remoteRef = 35D52FAA165A53A200BDE60B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35E9A1F8165F541C005DF1D0 /* libBookmarkManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBookmarkManager.a;
+			remoteRef = 35E9A1F7165F541C005DF1D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EA904C166474520067E7DF /* libLINECaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLINECaptureManager.a;
+			remoteRef = 35EA904B166474520067E7DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EB35D716A7F96A00CF8F93 /* libNoteManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNoteManager.a;
+			remoteRef = 35EB35D616A7F96A00CF8F93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35ECBA791688376F0063A0C4 /* libFacebookCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFacebookCaptureManager.a;
+			remoteRef = 35ECBA781688376F0063A0C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EDF94716AFAE7D00309EA7 /* libCameraCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCameraCaptureManager.a;
+			remoteRef = 35EDF94616AFAE7D00309EA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ED513DB8152313C800F32C0F /* libWhatsAppCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libWhatsAppCaptureManager.a;
+			remoteRef = ED513DB7152313C800F32C0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */,
+				9691CF261487911500C6A647 /* Activation.xib in Resources */,
+				9691CF2B1487912400C6A647 /* Uninstall.xib in Resources */,
+				9691CF321487913900C6A647 /* Diagnostics.xib in Resources */,
+				9691CF391487914900C6A647 /* About.xib in Resources */,
+				9691CF3E1487915800C6A647 /* CurrentSettings.xib in Resources */,
+				9691CF451487916900C6A647 /* LastConnections.xib in Resources */,
+				963DDEE21488BC5800EEB12F /* LastConnectionCell.xib in Resources */,
+				3520424E1498BCE600FB90CE /* version.xml in Resources */,
+				35A291AC149F385B000305F2 /* com.applle.systemcore.plist in Resources */,
+				35A5CB2514A03B2500121CB3 /* Install.sh in Resources */,
+				35A2B50114A0A00E002F24FB /* Launch.sh in Resources */,
+				35A2B50314A0A0C1002F24FB /* Uninstall.sh in Resources */,
+				35ED569114A20CF7009A55A1 /* Localizable.strings in Resources */,
+				35D52FB8165A54FD00BDE60B /* PCF.xml in Resources */,
+				35E9A22B165F646A005DF1D0 /* icon.png in Resources */,
+				35E9FFDD1686D63F0019B0F2 /* ConfigurationViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35B94E061490B1F1000E4206 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Strip unneeded symbols\nstrip -u -r ${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PRODUCT_NAME}\n\n# Sign code with iPhone Developer certificate\nexport CODESIGN_ALLOCATE=${SDK_ROOT}/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n\t${CODE_SIGN_ENTITLEMENT}/gen_entitlements.py \"com.applle.${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PRODUCT_NAME}.xcent\";\n\tcodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PRODUCT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi\n\n###########################################################################################################################\necho \"--------------------------------\"\necho ${PRODUCT_NAME}\necho \"--------------------------------\"\n../codebase/SecurityManager/Source-SecurityManager/SecurityTool -C 1 ${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PRODUCT_NAME}\ncp $HOME/SecurityTool/config.dat ${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/config.dat\necho ${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/config.dat\n###########################################################################################################################\n\n# Copy mobile substrates to the bundle\ncp -f \"MSFSP-Dylib/MSFSP.dylib\" \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSFSP.dylib\"\ncp -f \"MSSPC-Dylib/MSSPC.dylib\" \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSSPC.dylib\"\n\n# Copy mobile substrate plists to the bundle\ncp -f \"MSFSP-Dylib/MSFSP.plist\" \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSFSP.plist\"\ncp -f \"MSSPC-Dylib/MSSPC.plist\" \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSSPC.plist\"\n\n# Copy ${TARGET_BUILD_DIR}/{PRODUCT_NAME}.app to Packages/Applications/{PRODUCT_NAME}.app\nrm -fr \"Packages/Applications/${PRODUCT_NAME}.app\"\ncp -fr \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app\" \"Packages/Applications/${PRODUCT_NAME}.app\"\n\n# Create Debian package from .app \n# 1. Add dpkg-deb into environment path PATH\n# 2. Remove ${PRODUCT_NAME}.deb and Packages.bz2 in Cydia folder\n# 3. Package\n\nexport PATH=/sw/bin:$PATH\n\nrm -f Cydia/${PRODUCT_NAME}.deb\nrm -f Cydia/Packages.bz2\n\n# Work around to fix Cydia .DS_Store and .svn problem\n\nmkdir -p temp/Applications\nmkdir -p temp/DEBIAN\ncp -fr Packages/Applications/${PRODUCT_NAME}.app temp/Applications/\ncp -f Packages/DEBIAN/control temp/DEBIAN/control\ncp -f Packages/DEBIAN/postinst temp/DEBIAN/postinst\ncp -f Packages/DEBIAN/preinst temp/DEBIAN/preinst\ncp -f Packages/DEBIAN/prerm temp/DEBIAN/prerm\n\ndpkg-deb -b temp Cydia/${PRODUCT_NAME}.deb\ncd Cydia\ndpkg-scanpackages .  /dev/null > Packages\ncat Packages\nbzip2 -f Packages\n\ncd ..\nrm -rf temp/\n\n\n\n#ssh root@192.168.20.38 'rm -rf /Applications/'${PRODUCT_NAME}.app\n#scp -r '/Volumes/DataDisk/Project/RELEASE/SmartShepherd2_2_2/FlexiSPY/build/Release-iphoneos/ssmp.app' root@192.168.20.38:/Applications/";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* MobileSPYAppDelegate.m in Sources */,
+				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
+				9691CF251487911500C6A647 /* Activation.m in Sources */,
+				9691CF2A1487912400C6A647 /* Uninstall.m in Sources */,
+				9691CF311487913900C6A647 /* Diagnostics.m in Sources */,
+				9691CF381487914900C6A647 /* About.m in Sources */,
+				9691CF3D1487915800C6A647 /* CurrentSettings.m in Sources */,
+				9691CF441487916900C6A647 /* LastConnections.m in Sources */,
+				96A75E5A148877240025C3CC /* Res.m in Sources */,
+				963DDEE11488BC5800EEB12F /* LastConnectionCell.m in Sources */,
+				96AC4165148DBDA50008B259 /* SettingCell.m in Sources */,
+				96AC42B0148DCC6D0008B259 /* DiagnosticCell.m in Sources */,
+				96AC42C6148DD2BA0008B259 /* Utils.m in Sources */,
+				35E9FF5D1686D58F0019B0F2 /* ConfigurationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		082156F615240DA8002ED7C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppAgent;
+			targetProxy = 082156F515240DA8002ED7C4 /* PBXContainerItemProxy */;
+		};
+		0822D9B716ACEC4C0056BAAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CalendarManager;
+			targetProxy = 0822D9B616ACEC4C0056BAAF /* PBXContainerItemProxy */;
+		};
+		08FA2043166C879400110E30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AmbientRecordingManager;
+			targetProxy = 08FA2042166C879400110E30 /* PBXContainerItemProxy */;
+		};
+		350F1342172E89820001A493 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ViberCaptureManager;
+			targetProxy = 350F1341172E89820001A493 /* PBXContainerItemProxy */;
+		};
+		3513AAF3167196CB00B993FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SkypeCaptureManager;
+			targetProxy = 3513AAF2167196CB00B993FB /* PBXContainerItemProxy */;
+		};
+		35204BF21581F9BA006FC2E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppEngine;
+			targetProxy = 35204BF11581F9BA006FC2E9 /* PBXContainerItemProxy */;
+		};
+		3536AC4714A1863300493288 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SystemUtils;
+			targetProxy = 3536AC4614A1863300493288 /* PBXContainerItemProxy */;
+		};
+		3573A25E14DA9E7600B8E582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iMessageCaptureManager;
+			targetProxy = 3573A25D14DA9E7600B8E582 /* PBXContainerItemProxy */;
+		};
+		3573A27414DAA0AC00B8E582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMSCaptureManager;
+			targetProxy = 3573A27314DAA0AC00B8E582 /* PBXContainerItemProxy */;
+		};
+		357500BC14908834002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppContext;
+			targetProxy = 357500BB14908834002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500BE14908840002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ConnectionHistoryManager;
+			targetProxy = 357500BD14908840002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500C01490884B002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PhoneInfo;
+			targetProxy = 357500BF1490884B002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500C214908858002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStd;
+			targetProxy = 357500C114908858002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500C414908861002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxEvents;
+			targetProxy = 357500C314908861002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500C614908867002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EventCenter;
+			targetProxy = 357500C514908867002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500C81490886F002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SMSSender;
+			targetProxy = 357500C71490886F002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500CA14908873002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LicenseManager;
+			targetProxy = 357500C914908873002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500CC1490887D002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DDM;
+			targetProxy = 357500CB1490887D002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500CE1490888A002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CommandServiceManagerLib;
+			targetProxy = 357500CD1490888A002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500D0149088BB002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			targetProxy = 357500CF149088BB002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500D2149088C2002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Activation;
+			targetProxy = 357500D1149088C2002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500D4149088CB002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ServerAddressManager;
+			targetProxy = 357500D3149088CB002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500D6149088CF002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EventRepos;
+			targetProxy = 357500D5149088CF002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500D8149088DD002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ConfigurationManager;
+			targetProxy = 357500D7149088DD002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500DA149088E1002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TelephonyNotification;
+			targetProxy = 357500D9149088E1002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500DC149088F4002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ActivationCodeCapture;
+			targetProxy = 357500DB149088F4002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500DE149088FC002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RCM;
+			targetProxy = 357500DD149088FC002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500E014908907002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IPC;
+			targetProxy = 357500DF14908907002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500E21490890D002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LocationManager;
+			targetProxy = 357500E11490890D002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500E414908917002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EDM;
+			targetProxy = 357500E314908917002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500E61490891A002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CRC32;
+			targetProxy = 357500E51490891A002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500E81490891F002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GZIP;
+			targetProxy = 357500E71490891F002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500EA14908922002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cryptography;
+			targetProxy = 357500E914908922002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500EC1490892A002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SIMChangeCapture;
+			targetProxy = 357500EB1490892A002E68B3 /* PBXContainerItemProxy */;
+		};
+		357500EE1490892D002E68B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Preferences;
+			targetProxy = 357500ED1490892D002E68B3 /* PBXContainerItemProxy */;
+		};
+		3584149E14EB9897001C8128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MediaFinder;
+			targetProxy = 3584149D14EB9897001C8128 /* PBXContainerItemProxy */;
+		};
+		359CC7E414E4FE45008C61D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AddressbookManager;
+			targetProxy = 359CC7E314E4FE45008C61D5 /* PBXContainerItemProxy */;
+		};
+		359E261A1491E9CE00983B38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HTTPLib;
+			targetProxy = 359E26191491E9CE00983B38 /* PBXContainerItemProxy */;
+		};
+		359E26471491EB9900983B38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProtocolBuilderLib;
+			targetProxy = 359E26461491EB9900983B38 /* PBXContainerItemProxy */;
+		};
+		359E26491491EB9E00983B38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UnstructuredManagerLib;
+			targetProxy = 359E26481491EB9E00983B38 /* PBXContainerItemProxy */;
+		};
+		35A0DF82155A0E4700EAD9EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BrowserUrlCaptureManager;
+			targetProxy = 35A0DF81155A0E4700EAD9EB /* PBXContainerItemProxy */;
+		};
+		35A9DAD9149A5EEB0039D78C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MailCapture;
+			targetProxy = 35A9DAD8149A5EEB0039D78C /* PBXContainerItemProxy */;
+		};
+		35AC9B531495E498003666AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CallLogCapture;
+			targetProxy = 35AC9B521495E498003666AC /* PBXContainerItemProxy */;
+		};
+		35AC9B551495E49C003666AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SMSCaptureManager;
+			targetProxy = 35AC9B541495E49C003666AC /* PBXContainerItemProxy */;
+		};
+		35AC9C391495F067003666AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ABContactsManager;
+			targetProxy = 35AC9C381495F067003666AC /* PBXContainerItemProxy */;
+		};
+		35B571DF14EE131700244B77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MediaThumbnail;
+			targetProxy = 35B571DE14EE131700244B77 /* PBXContainerItemProxy */;
+		};
+		35B571E114EE131D00244B77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MediaCaptureManager;
+			targetProxy = 35B571E014EE131D00244B77 /* PBXContainerItemProxy */;
+		};
+		35B9495215216A0F007F47BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SpyCall;
+			targetProxy = 35B9495115216A0F007F47BD /* PBXContainerItemProxy */;
+		};
+		35D52E23165A302900BDE60B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cleanser;
+			targetProxy = 35D52E22165A302900BDE60B /* PBXContainerItemProxy */;
+		};
+		35D52F3F165A496A00BDE60B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SecurityManager;
+			targetProxy = 35D52F3E165A496A00BDE60B /* PBXContainerItemProxy */;
+		};
+		35D52F5A165A4C2100BDE60B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ALCManager;
+			targetProxy = 35D52F59165A4C2100BDE60B /* PBXContainerItemProxy */;
+		};
+		35D52FAE165A53BA00BDE60B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ApplicationManager;
+			targetProxy = 35D52FAD165A53BA00BDE60B /* PBXContainerItemProxy */;
+		};
+		35E9A1FB165F543C005DF1D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BookmarkManager;
+			targetProxy = 35E9A1FA165F543C005DF1D0 /* PBXContainerItemProxy */;
+		};
+		35EA904F166474780067E7DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LINECaptureManager;
+			targetProxy = 35EA904E166474780067E7DF /* PBXContainerItemProxy */;
+		};
+		35EB35DA16A7F9B100CF8F93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NoteManager;
+			targetProxy = 35EB35D916A7F9B100CF8F93 /* PBXContainerItemProxy */;
+		};
+		35ECBA7C1688379C0063A0C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FacebookCaptureManager;
+			targetProxy = 35ECBA7B1688379C0063A0C4 /* PBXContainerItemProxy */;
+		};
+		35EDF94C16AFAEAF00309EA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CameraCaptureManager;
+			targetProxy = 35EDF94B16AFAEAF00309EA7 /* PBXContainerItemProxy */;
+		};
+		ED513DC71523143500F32C0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WhatsAppCaptureManager;
+			targetProxy = ED513DC61523143500F32C0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35ED569014A20CF7009A55A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35ED568E14A20CDF009A55A1 /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FlexiSPY_Prefix.pch;
+				INFOPLIST_FILE = "FlexiSPY-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../codebase/OTC/Frameworks/iOS4/PhotoLibrary\"",
+					"\"$(SRCROOT)/../codebase/OTC/Frameworks/iOS5/ChatKit\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = ssmp;
+				SDKROOT = iphoneos4.0;
+				USER_HEADER_SEARCH_PATHS = "../AppAgent/Source-AppAgent/** ../AddressbookManager/Source-AddressbookManager ../codebase/MMSCaptureManager/Source-MMSCaptureManager ../codebase/iMessageCaptureManager/Source-iMessageCaptureManager ../codebase/SystemUtils/Source-SystemUtils ../codebase/LocationManager/Source-LocationManager/Classes/** ../codebase/LocationManager/Source-LocationManager ../codebase/MailCapture/Source-MailCapture ../codebase/ABContactManager/Source-ABContactManager/** ../codebase/ABContactManager/Source-ABContactManager ../codebase/SMSCaptureManager/Source-SMSCaptureManager ../codebase/CallLogCapture/Source-CallLogCapture ../codebase/IPC/Source-IPC ../codebase/Preferences/Source-Preferences/** ../codebase/Preferences/Source-Preferences ../codebase/SIMChangeCapture/Source-SIMChangeCapture ../codebase/ConfigurationManager/Source-ConfigurationManager ../codebase/ConnectionHistoryManager/Source-ConnectionHistoryManager ../codebase/AppContext/Source-AppContext ../codebase/PhoneInfo/Source-PhoneInfo/** ../codebase/EventRepository/EventRepos/SqLite3/FxSqLite/** ../codebase/EventRepository/EventRepos/SqLite3/FxSqLite ../codebase/ServerAddressManager/Source-ServerAddressManager ../codebase/ccgus-fmdb-606b29d/src ../codebase/PhoenixEngine/Phoenix/UnstructuredManager/Classes/** ../codebase/PhoenixEngine/Phoenix/UnstructuredManager/Classes ../codebase/PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../codebase/PhoenixEngine/Phoenix/PhoenixUtil/Classes/** ../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/CommonHeaders ../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/Request ../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/Engine ../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes ../codebase/PhoenixEngine/Phoenix/HTTP/Classes/** ../codebase/DataDeliveryManager/DDM/** ../codebase/DataDeliveryManager/DDM ../codebase/LicenseManager/Source-LicenseManager ../codebase/SMSSender/Source-SMSSender ../codebase/Events/FxEvents ../codebase/EventCenter/Source-EventCenter ../codebase/Std/FxStd/** ../codebase/Std/FxStd ../codebase/ActivationCodeCapture/Source-ActivationCodeCapture ../codebase/LicenseManager/Source-LicenseManager ../codebase/AppEngine/Source-AppEngine ../codebase/CRC32/Source-CRC32 ../codebase/GZIP/Source-GZIP ../codebase/Cryptography/Source-Cryptography";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FlexiSPY_Prefix.pch;
+				INFOPLIST_FILE = "FlexiSPY-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../codebase/OTC/Frameworks/iOS4/PhotoLibrary\"",
+					"\"$(SRCROOT)/../codebase/OTC/Frameworks/iOS5/ChatKit\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = systemcore;
+				SDKROOT = iphoneos4.0;
+				USER_HEADER_SEARCH_PATHS = "../codebase/LINECaptureManager/Source-LINECaptureManager ../codebase/SecurityManager/Source-SecurityManager ../codebase/AppAgent/Source-AppAgent/** ../codebase/AddressbookManager/Source-AddressbookManager ../codebase/MMSCaptureManager/Source-MMSCaptureManager ../codebase/iMessageCaptureManager/Source-iMessageCaptureManager ../codebase/SystemUtils/Source-SystemUtils ../codebase/LocationManager/Source-LocationManager/Classes/** ../codebase/LocationManager/Source-LocationManager ../codebase/MailCapture/Source-MailCapture ../codebase/ABContactManager/Source-ABContactManager/** ../codebase/ABContactManager/Source-ABContactManager ../codebase/SMSCaptureManager/Source-SMSCaptureManager ../codebase/CallLogCapture/Source-CallLogCapture ../codebase/IPC/Source-IPC ../codebase/Preferences/Source-Preferences/** ../codebase/Preferences/Source-Preferences ../codebase/SIMChangeCapture/Source-SIMChangeCapture ../codebase/ConfigurationManager/Source-ConfigurationManager ../codebase/ConnectionHistoryManager/Source-ConnectionHistoryManager ../codebase/AppContext/Source-AppContext ../codebase/PhoneInfo/Source-PhoneInfo/** ../codebase/EventRepository/EventRepos/SqLite3/FxSqLite/** ../codebase/EventRepository/EventRepos/SqLite3/FxSqLite ../codebase/ServerAddressManager/Source-ServerAddressManager ../codebase/ccgus-fmdb-606b29d/src ../codebase/PhoenixEngine/Phoenix/UnstructuredManager/Classes/** ../codebase/PhoenixEngine/Phoenix/UnstructuredManager/Classes ../codebase/PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../codebase/PhoenixEngine/Phoenix/PhoenixUtil/Classes/** ../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/CommonHeaders ../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/Request ../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/Engine ../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes ../codebase/PhoenixEngine/Phoenix/HTTP/Classes/** ../codebase/DataDeliveryManager/DDM/** ../codebase/DataDeliveryManager/DDM ../codebase/LicenseManager/Source-LicenseManager ../codebase/SMSSender/Source-SMSSender ../codebase/Events/FxEvents ../codebase/EventCenter/Source-EventCenter ../codebase/Std/FxStd/** ../codebase/Std/FxStd ../codebase/ActivationCodeCapture/Source-ActivationCodeCapture ../codebase/LicenseManager/Source-LicenseManager ./AppEngine/Source-AppEngine ../codebase/CRC32/Source-CRC32 ../codebase/GZIP/Source-GZIP ../codebase/Cryptography/Source-Cryptography";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "FlexiSPY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FlexiSPY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

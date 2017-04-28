@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		358F53AF14E3B92C00FC46D4 /* AddressbookManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 358F53AD14E3B92C00FC46D4 /* AddressbookManager.h */; };
+		358F53B314E3B94700FC46D4 /* AddressbookManagerImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 358F53B114E3B94700FC46D4 /* AddressbookManagerImp.h */; };
+		358F53B414E3B94700FC46D4 /* AddressbookManagerImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 358F53B214E3B94700FC46D4 /* AddressbookManagerImp.m */; };
+		358F53B714E3BB7900FC46D4 /* AddressbookChangesDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 358F53B514E3BB7900FC46D4 /* AddressbookChangesDelegate.h */; };
+		358F53BB14E3BBA500FC46D4 /* AddressbookDeliveryDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 358F53B914E3BBA500FC46D4 /* AddressbookDeliveryDelegate.h */; };
+		358F53C214E3BD8300FC46D4 /* FxContact.h in Headers */ = {isa = PBXBuildFile; fileRef = 358F53C014E3BD8300FC46D4 /* FxContact.h */; };
+		358F53C314E3BD8300FC46D4 /* FxContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 358F53C114E3BD8300FC46D4 /* FxContact.m */; };
+		358F53DB14E3C26200FC46D4 /* AddressbookMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 358F53D914E3C26200FC46D4 /* AddressbookMonitor.h */; };
+		358F53DC14E3C26200FC46D4 /* AddressbookMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 358F53DA14E3C26200FC46D4 /* AddressbookMonitor.m */; };
+		358F53E414E3C49800FC46D4 /* AddressbookDelivery.h in Headers */ = {isa = PBXBuildFile; fileRef = 358F53E214E3C49800FC46D4 /* AddressbookDelivery.h */; };
+		358F53E814E3C7D900FC46D4 /* AddressbookDeliveryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 358F53E614E3C7D900FC46D4 /* AddressbookDeliveryManager.h */; };
+		358F53E914E3C7D900FC46D4 /* AddressbookDeliveryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 358F53E714E3C7D900FC46D4 /* AddressbookDeliveryManager.m */; };
+		358F53EC14E3CAD500FC46D4 /* AddressbookRepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 358F53EA14E3CAD500FC46D4 /* AddressbookRepository.h */; };
+		358F53F014E3CAED00FC46D4 /* AddressbookRepositoryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 358F53EE14E3CAED00FC46D4 /* AddressbookRepositoryManager.h */; };
+		358F53F114E3CAED00FC46D4 /* AddressbookRepositoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 358F53EF14E3CAED00FC46D4 /* AddressbookRepositoryManager.m */; };
+		358F53F614E3D23600FC46D4 /* ApprovalStatusChangeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 358F53F414E3D23600FC46D4 /* ApprovalStatusChangeDelegate.h */; };
+		358F544714E3F98C00FC46D4 /* AddressbookDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 358F544514E3F98C00FC46D4 /* AddressbookDataProvider.h */; };
+		358F544814E3F98C00FC46D4 /* AddressbookDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 358F544614E3F98C00FC46D4 /* AddressbookDataProvider.m */; };
+		35ABF2F9163A7BF4009F6B31 /* NSString+Emoji.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ABF2F7163A7BF4009F6B31 /* NSString+Emoji.h */; };
+		35B167B615899C4900BCA947 /* AddressbookUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B167B415899C4900BCA947 /* AddressbookUtils.h */; };
+		35B167B715899C4900BCA947 /* AddressbookUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B167B515899C4900BCA947 /* AddressbookUtils.m */; };
+		35B167DD15899F6300BCA947 /* SendAddressbookForApprovalDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B167DB15899F6300BCA947 /* SendAddressbookForApprovalDataProvider.h */; };
+		35B167DE15899F6300BCA947 /* SendAddressbookForApprovalDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B167DC15899F6300BCA947 /* SendAddressbookForApprovalDataProvider.m */; };
+		35B74A641611E60500CF7359 /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B74A621611E60500CF7359 /* Base64.h */; };
+		35B74A651611E60500CF7359 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B74A631611E60500CF7359 /* Base64.m */; };
+		35BF71E9158AFC3A004E45B2 /* SyncContact.h in Headers */ = {isa = PBXBuildFile; fileRef = 35BF71E7158AFC3A004E45B2 /* SyncContact.h */; };
+		35BF71EA158AFC3A004E45B2 /* SyncContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BF71E8158AFC3A004E45B2 /* SyncContact.m */; };
+		35E9865F161EC76D0097E5E8 /* ContactPhotoDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35E9865D161EC76D0097E5E8 /* ContactPhotoDAO.h */; };
+		35E98660161EC76D0097E5E8 /* ContactPhotoDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E9865E161EC76D0097E5E8 /* ContactPhotoDAO.m */; };
+		35E986A2161ED8880097E5E8 /* ABImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 35E986A0161ED8880097E5E8 /* ABImageUtils.h */; };
+		35E986A3161ED8880097E5E8 /* ABImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E986A1161ED8880097E5E8 /* ABImageUtils.m */; };
+		35F22A861588902F00069E49 /* ContactDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F22A841588902F00069E49 /* ContactDAO.h */; };
+		35F22A871588902F00069E49 /* ContactDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F22A851588902F00069E49 /* ContactDAO.m */; };
+		35F22A8A1588903F00069E49 /* ContactNumberDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F22A881588903F00069E49 /* ContactNumberDAO.h */; };
+		35F22A8B1588903F00069E49 /* ContactNumberDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F22A891588903F00069E49 /* ContactNumberDAO.m */; };
+		35F22A8E1588905000069E49 /* ContactEmailDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F22A8C1588905000069E49 /* ContactEmailDAO.h */; };
+		35F22A8F1588905000069E49 /* ContactEmailDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F22A8D1588905000069E49 /* ContactEmailDAO.m */; };
+		35F22A921588906E00069E49 /* ContactDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F22A901588906E00069E49 /* ContactDatabase.h */; };
+		35F22A931588906E00069E49 /* ContactDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F22A911588906E00069E49 /* ContactDatabase.m */; };
+		AA747D9F0F9514B9006C5449 /* AddressbookManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* AddressbookManager_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		358F53AD14E3B92C00FC46D4 /* AddressbookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressbookManager.h; sourceTree = "<group>"; };
+		358F53B114E3B94700FC46D4 /* AddressbookManagerImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressbookManagerImp.h; sourceTree = "<group>"; };
+		358F53B214E3B94700FC46D4 /* AddressbookManagerImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressbookManagerImp.m; sourceTree = "<group>"; };
+		358F53B514E3BB7900FC46D4 /* AddressbookChangesDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressbookChangesDelegate.h; sourceTree = "<group>"; };
+		358F53B914E3BBA500FC46D4 /* AddressbookDeliveryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressbookDeliveryDelegate.h; sourceTree = "<group>"; };
+		358F53C014E3BD8300FC46D4 /* FxContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxContact.h; sourceTree = "<group>"; };
+		358F53C114E3BD8300FC46D4 /* FxContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxContact.m; sourceTree = "<group>"; };
+		358F53D914E3C26200FC46D4 /* AddressbookMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressbookMonitor.h; sourceTree = "<group>"; };
+		358F53DA14E3C26200FC46D4 /* AddressbookMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressbookMonitor.m; sourceTree = "<group>"; };
+		358F53E214E3C49800FC46D4 /* AddressbookDelivery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressbookDelivery.h; sourceTree = "<group>"; };
+		358F53E614E3C7D900FC46D4 /* AddressbookDeliveryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressbookDeliveryManager.h; sourceTree = "<group>"; };
+		358F53E714E3C7D900FC46D4 /* AddressbookDeliveryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressbookDeliveryManager.m; sourceTree = "<group>"; };
+		358F53EA14E3CAD500FC46D4 /* AddressbookRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressbookRepository.h; sourceTree = "<group>"; };
+		358F53EE14E3CAED00FC46D4 /* AddressbookRepositoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressbookRepositoryManager.h; sourceTree = "<group>"; };
+		358F53EF14E3CAED00FC46D4 /* AddressbookRepositoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressbookRepositoryManager.m; sourceTree = "<group>"; };
+		358F53F414E3D23600FC46D4 /* ApprovalStatusChangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalStatusChangeDelegate.h; sourceTree = "<group>"; };
+		358F544514E3F98C00FC46D4 /* AddressbookDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressbookDataProvider.h; sourceTree = "<group>"; };
+		358F544614E3F98C00FC46D4 /* AddressbookDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressbookDataProvider.m; sourceTree = "<group>"; };
+		35ABF2F7163A7BF4009F6B31 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		35ABF2F8163A7BF4009F6B31 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		35B167B415899C4900BCA947 /* AddressbookUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressbookUtils.h; sourceTree = "<group>"; };
+		35B167B515899C4900BCA947 /* AddressbookUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressbookUtils.m; sourceTree = "<group>"; };
+		35B167DB15899F6300BCA947 /* SendAddressbookForApprovalDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendAddressbookForApprovalDataProvider.h; sourceTree = "<group>"; };
+		35B167DC15899F6300BCA947 /* SendAddressbookForApprovalDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendAddressbookForApprovalDataProvider.m; sourceTree = "<group>"; };
+		35B74A621611E60500CF7359 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64.h; path = Base64/Base64.h; sourceTree = "<group>"; };
+		35B74A631611E60500CF7359 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Base64.m; path = Base64/Base64.m; sourceTree = "<group>"; };
+		35BF71E7158AFC3A004E45B2 /* SyncContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncContact.h; sourceTree = "<group>"; };
+		35BF71E8158AFC3A004E45B2 /* SyncContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncContact.m; sourceTree = "<group>"; };
+		35E9865D161EC76D0097E5E8 /* ContactPhotoDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactPhotoDAO.h; sourceTree = "<group>"; };
+		35E9865E161EC76D0097E5E8 /* ContactPhotoDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactPhotoDAO.m; sourceTree = "<group>"; };
+		35E986A0161ED8880097E5E8 /* ABImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABImageUtils.h; sourceTree = "<group>"; };
+		35E986A1161ED8880097E5E8 /* ABImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABImageUtils.m; sourceTree = "<group>"; };
+		35F22A841588902F00069E49 /* ContactDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDAO.h; sourceTree = "<group>"; };
+		35F22A851588902F00069E49 /* ContactDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDAO.m; sourceTree = "<group>"; };
+		35F22A881588903F00069E49 /* ContactNumberDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactNumberDAO.h; sourceTree = "<group>"; };
+		35F22A891588903F00069E49 /* ContactNumberDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactNumberDAO.m; sourceTree = "<group>"; };
+		35F22A8C1588905000069E49 /* ContactEmailDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactEmailDAO.h; sourceTree = "<group>"; };
+		35F22A8D1588905000069E49 /* ContactEmailDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactEmailDAO.m; sourceTree = "<group>"; };
+		35F22A901588906E00069E49 /* ContactDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDatabase.h; sourceTree = "<group>"; };
+		35F22A911588906E00069E49 /* ContactDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDatabase.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* AddressbookManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressbookManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libAddressbookManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAddressbookManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libAddressbookManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* AddressbookManager */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = AddressbookManager;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35B74A611611E5F100CF7359 /* Base64 */,
+				358F542E14E3DB4A00FC46D4 /* Addressbook Data Provider */,
+				358F53E114E3C46A00FC46D4 /* Addressbook Delivery */,
+				358F53B514E3BB7900FC46D4 /* AddressbookChangesDelegate.h */,
+				358F53B914E3BBA500FC46D4 /* AddressbookDeliveryDelegate.h */,
+				358F53AD14E3B92C00FC46D4 /* AddressbookManager.h */,
+				358F53B114E3B94700FC46D4 /* AddressbookManagerImp.h */,
+				358F53B214E3B94700FC46D4 /* AddressbookManagerImp.m */,
+				358F53D914E3C26200FC46D4 /* AddressbookMonitor.h */,
+				358F53DA14E3C26200FC46D4 /* AddressbookMonitor.m */,
+				35B167B415899C4900BCA947 /* AddressbookUtils.h */,
+				35B167B515899C4900BCA947 /* AddressbookUtils.m */,
+				35BF71E7158AFC3A004E45B2 /* SyncContact.h */,
+				35BF71E8158AFC3A004E45B2 /* SyncContact.m */,
+				358F53C014E3BD8300FC46D4 /* FxContact.h */,
+				358F53C114E3BD8300FC46D4 /* FxContact.m */,
+				35ABF2F7163A7BF4009F6B31 /* NSString+Emoji.h */,
+				35ABF2F8163A7BF4009F6B31 /* NSString+Emoji.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* AddressbookManager_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		358F53E114E3C46A00FC46D4 /* Addressbook Delivery */ = {
+			isa = PBXGroup;
+			children = (
+				35E9869F161ECDE40097E5E8 /* IphoneABPhotoUtils */,
+				35B167B01589913000BCA947 /* Database */,
+				358F53E214E3C49800FC46D4 /* AddressbookDelivery.h */,
+				358F53E614E3C7D900FC46D4 /* AddressbookDeliveryManager.h */,
+				358F53E714E3C7D900FC46D4 /* AddressbookDeliveryManager.m */,
+				358F53F414E3D23600FC46D4 /* ApprovalStatusChangeDelegate.h */,
+				358F53EA14E3CAD500FC46D4 /* AddressbookRepository.h */,
+				358F53EE14E3CAED00FC46D4 /* AddressbookRepositoryManager.h */,
+				358F53EF14E3CAED00FC46D4 /* AddressbookRepositoryManager.m */,
+			);
+			name = "Addressbook Delivery";
+			sourceTree = "<group>";
+		};
+		358F542E14E3DB4A00FC46D4 /* Addressbook Data Provider */ = {
+			isa = PBXGroup;
+			children = (
+				358F544514E3F98C00FC46D4 /* AddressbookDataProvider.h */,
+				358F544614E3F98C00FC46D4 /* AddressbookDataProvider.m */,
+				35B167DB15899F6300BCA947 /* SendAddressbookForApprovalDataProvider.h */,
+				35B167DC15899F6300BCA947 /* SendAddressbookForApprovalDataProvider.m */,
+			);
+			name = "Addressbook Data Provider";
+			sourceTree = "<group>";
+		};
+		35B167B01589913000BCA947 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				35F22A841588902F00069E49 /* ContactDAO.h */,
+				35F22A851588902F00069E49 /* ContactDAO.m */,
+				35F22A881588903F00069E49 /* ContactNumberDAO.h */,
+				35F22A891588903F00069E49 /* ContactNumberDAO.m */,
+				35F22A8C1588905000069E49 /* ContactEmailDAO.h */,
+				35F22A8D1588905000069E49 /* ContactEmailDAO.m */,
+				35E9865D161EC76D0097E5E8 /* ContactPhotoDAO.h */,
+				35E9865E161EC76D0097E5E8 /* ContactPhotoDAO.m */,
+				35F22A901588906E00069E49 /* ContactDatabase.h */,
+				35F22A911588906E00069E49 /* ContactDatabase.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		35B74A611611E5F100CF7359 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				35B74A621611E60500CF7359 /* Base64.h */,
+				35B74A631611E60500CF7359 /* Base64.m */,
+			);
+			name = Base64;
+			sourceTree = "<group>";
+		};
+		35E9869F161ECDE40097E5E8 /* IphoneABPhotoUtils */ = {
+			isa = PBXGroup;
+			children = (
+				35E986A0161ED8880097E5E8 /* ABImageUtils.h */,
+				35E986A1161ED8880097E5E8 /* ABImageUtils.m */,
+			);
+			name = IphoneABPhotoUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* AddressbookManager_Prefix.pch in Headers */,
+				358F53AF14E3B92C00FC46D4 /* AddressbookManager.h in Headers */,
+				358F53B314E3B94700FC46D4 /* AddressbookManagerImp.h in Headers */,
+				358F53B714E3BB7900FC46D4 /* AddressbookChangesDelegate.h in Headers */,
+				358F53BB14E3BBA500FC46D4 /* AddressbookDeliveryDelegate.h in Headers */,
+				358F53C214E3BD8300FC46D4 /* FxContact.h in Headers */,
+				358F53DB14E3C26200FC46D4 /* AddressbookMonitor.h in Headers */,
+				358F53E414E3C49800FC46D4 /* AddressbookDelivery.h in Headers */,
+				358F53E814E3C7D900FC46D4 /* AddressbookDeliveryManager.h in Headers */,
+				358F53EC14E3CAD500FC46D4 /* AddressbookRepository.h in Headers */,
+				358F53F014E3CAED00FC46D4 /* AddressbookRepositoryManager.h in Headers */,
+				358F53F614E3D23600FC46D4 /* ApprovalStatusChangeDelegate.h in Headers */,
+				358F544714E3F98C00FC46D4 /* AddressbookDataProvider.h in Headers */,
+				35F22A861588902F00069E49 /* ContactDAO.h in Headers */,
+				35F22A8A1588903F00069E49 /* ContactNumberDAO.h in Headers */,
+				35F22A8E1588905000069E49 /* ContactEmailDAO.h in Headers */,
+				35F22A921588906E00069E49 /* ContactDatabase.h in Headers */,
+				35B167B615899C4900BCA947 /* AddressbookUtils.h in Headers */,
+				35B167DD15899F6300BCA947 /* SendAddressbookForApprovalDataProvider.h in Headers */,
+				35BF71E9158AFC3A004E45B2 /* SyncContact.h in Headers */,
+				35B74A641611E60500CF7359 /* Base64.h in Headers */,
+				35E9865F161EC76D0097E5E8 /* ContactPhotoDAO.h in Headers */,
+				35E986A2161ED8880097E5E8 /* ABImageUtils.h in Headers */,
+				35ABF2F9163A7BF4009F6B31 /* NSString+Emoji.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* AddressbookManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "AddressbookManager" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AddressbookManager;
+			productName = AddressbookManager;
+			productReference = D2AAC07E0554694100DB518D /* libAddressbookManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "AddressbookManager" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* AddressbookManager */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* AddressbookManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				358F53B414E3B94700FC46D4 /* AddressbookManagerImp.m in Sources */,
+				358F53C314E3BD8300FC46D4 /* FxContact.m in Sources */,
+				358F53DC14E3C26200FC46D4 /* AddressbookMonitor.m in Sources */,
+				358F53E914E3C7D900FC46D4 /* AddressbookDeliveryManager.m in Sources */,
+				358F53F114E3CAED00FC46D4 /* AddressbookRepositoryManager.m in Sources */,
+				358F544814E3F98C00FC46D4 /* AddressbookDataProvider.m in Sources */,
+				35F22A871588902F00069E49 /* ContactDAO.m in Sources */,
+				35F22A8B1588903F00069E49 /* ContactNumberDAO.m in Sources */,
+				35F22A8F1588905000069E49 /* ContactEmailDAO.m in Sources */,
+				35F22A931588906E00069E49 /* ContactDatabase.m in Sources */,
+				35B167B715899C4900BCA947 /* AddressbookUtils.m in Sources */,
+				35B167DE15899F6300BCA947 /* SendAddressbookForApprovalDataProvider.m in Sources */,
+				35BF71EA158AFC3A004E45B2 /* SyncContact.m in Sources */,
+				35B74A651611E60500CF7359 /* Base64.m in Sources */,
+				35E98660161EC76D0097E5E8 /* ContactPhotoDAO.m in Sources */,
+				35E986A3161ED8880097E5E8 /* ABImageUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/AddressbookManager.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AddressbookManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = AddressbookManager;
+				USER_HEADER_SEARCH_PATHS = "../../IPC/Source-IPC ../../Std/FxStd/** ../../Std/FxStd ../../OTC/Headers/iOS4/AddressBook ../../PhoenixEngine/Phoenix/UnstructuredManager/Classes/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../PhoenixEngine/Phoenix/PhoenixUtil/Classes/** ../../PhoenixEngine/Phoenix/HTTP/Classes/** ../../PhoenixEngine/Phoenix/CommandServiceManager/Classes/** ../../DataDeliveryManager/DDM/** ../../DataDeliveryManager/DDM";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/AddressbookManager.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AddressbookManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = AddressbookManager;
+				USER_HEADER_SEARCH_PATHS = "../../IPC/Source-IPC ../../Std/FxStd/** ../../Std/FxStd ../../OTC/Headers/iOS4/AddressBook ../../PhoenixEngine/Phoenix/UnstructuredManager/Classes/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../PhoenixEngine/Phoenix/PhoenixUtil/Classes/** ../../PhoenixEngine/Phoenix/HTTP/Classes/** ../../PhoenixEngine/Phoenix/CommandServiceManager/Classes/** ../../DataDeliveryManager/DDM/** ../../DataDeliveryManager/DDM";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "AddressbookManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "AddressbookManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

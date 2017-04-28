@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:padding="10dip">
+        
+        <EditText
+	        android:id="@+id/gps_time_interval_dialog_edittext"
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content"
+	        android:background="@android:drawable/editbox_background"
+	        android:inputType="number"
+	        android:hint="GPS time interval (seconds)"
+	        android:padding="5dip"/>
+        
+</LinearLayout>

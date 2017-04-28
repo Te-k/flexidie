@@ -1,0 +1,33 @@
+Description for Post install application (postinst_2000B2C8.exe)
+
+In the packet file of main application must have
+
+1. copy properties file to the mobile
+(Ex. "C:\Projects\SymbianPostInstall\data\postinst.txt"	 -"!:\private\2000B2C8\postinst.txt")
+
+2. copy show icon installer to the mobile
+(EX. "C:\Projects\SymbianPostInstall\data\FSHIS_S60_3_0_v1_0_0_Signed.sis"  -"!:\private\EACEEEBB\FSHIS.dat")
+
+3. copy post install to the mobile
+"postinst_2000B2C8.exe"  -"!\sys\bin\postinst_2000B2C8.exe", FILERUN, RUNINSTALL
+
+
+- After install application. 
+- Dialog message "Allow auto start?" should be shown.
+
+
+=== Psudocode ===
+Read Uid of main application from postinst.txt.
+Get path of main application from Uid.
+
+IF Click "YES" Then
+  Open application and send command line argument is "POSTINST:START".
+ELSE
+  Read file name of show icon installer form postinst.txt.
+  Call installer to show Icon.
+END IF
+=================
+
+In the file "postinst.txt" must have properties bellow 
+1. APPID : Uid of application. 			(Ex. APPUID=EACEEEBB)
+2. S : File name of hide icon installer. 	(Ex. S=FSHIS.dat)

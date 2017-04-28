@@ -1,0 +1,291 @@
+\hypertarget{interface_command_service_manager}{
+\section{CommandServiceManager Class Reference}
+\label{interface_command_service_manager}\index{CommandServiceManager@{CommandServiceManager}}
+}
+
+
+{\ttfamily \#import $<$CommandServiceManager.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(long) -\/ \hyperlink{interface_command_service_manager_af47dff2aa93a04edc38ce783bb0bcc64}{execute:}
+\item 
+(void) -\/ \hyperlink{interface_command_service_manager_a14bad68c299dcec24925f8a21c6155ca}{cancelRequest:}
+\item 
+(void) -\/ \hyperlink{interface_command_service_manager_a1cc62e871aefb4c0a07fbd92a7463e6b}{deleteSession:}
+\item 
+(NSArray $\ast$) -\/ \hyperlink{interface_command_service_manager_a453bcb0bbfbdfa7b7fb86c395443bc7c}{getAllOrphanedSession}
+\item 
+(NSArray $\ast$) -\/ \hyperlink{interface_command_service_manager_af5f1b4c870d88b81cf49bed3bb48753b}{getAllPendingSession}
+\item 
+(void) -\/ \hyperlink{interface_command_service_manager_aaaf717b91f26a94b5f672742dd45200b}{resume:withDelegate:}
+\item 
+(void) -\/ \hyperlink{interface_command_service_manager_a8b168a833d86a82cbff12a5c9fbde7c8}{testCancelRequest}
+\item 
+(\hyperlink{interface_request}{Request} $\ast$) -\/ \hyperlink{interface_command_service_manager_af6e2ec735906e0993b23449f0f1cf1a0}{deQueue}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_command_service_manager}{CommandServiceManager} $\ast$) + \hyperlink{interface_command_service_manager_a5308ace3c404c5b655ed1a08f3645553}{sharedManager}
+\item 
+(\hyperlink{interface_command_service_manager}{CommandServiceManager} $\ast$) + \hyperlink{interface_command_service_manager_a946db9813ede4ed57884afdd5bb49415}{sharedManagerWithPayloadPath:withDBPath:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_command_service_manager_ae247c3d2ff2e257ebf8b940c5ba9648a}{
+NSURL $\ast$ {\bfseries structuredURL}}
+\label{interface_command_service_manager_ae247c3d2ff2e257ebf8b940c5ba9648a}
+
+\item 
+\hypertarget{interface_command_service_manager_ab58cdedf7b8bb94f0e0fdd507624ec6e}{
+NSURL $\ast$ {\bfseries unstructuredURL}}
+\label{interface_command_service_manager_ab58cdedf7b8bb94f0e0fdd507624ec6e}
+
+\item 
+\hypertarget{interface_command_service_manager_ab8a317ec602402c3642cde5f76a3bf97}{
+NSString $\ast$ {\bfseries payloadPath}}
+\label{interface_command_service_manager_ab8a317ec602402c3642cde5f76a3bf97}
+
+\item 
+\hypertarget{interface_command_service_manager_a4bc10b66b56b688687e0b682605e3a8f}{
+NSString $\ast$ {\bfseries databasePath}}
+\label{interface_command_service_manager_a4bc10b66b56b688687e0b682605e3a8f}
+
+\item 
+\hyperlink{interface_session_manager}{SessionManager} $\ast$ \hyperlink{interface_command_service_manager_a50e3b4268a2a5cfe06921a3d4b342a12}{sessionManager}
+\item 
+\hyperlink{interface_command_executor}{CommandExecutor} $\ast$ \hyperlink{interface_command_service_manager_a952be87323bf86b13f564f4ae3c3f5b4}{executor}
+\item 
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_command_service_manager_ac073942c39cc3cda8fb4bff35a39aa77}{priorityQueue}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_command_service_manager}{CommandServiceManager} is a singleton using as Phoenix interface 
+
+Definition at line 25 of file CommandServiceManager.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_command_service_manager_a14bad68c299dcec24925f8a21c6155ca}{
+\index{CommandServiceManager@{CommandServiceManager}!cancelRequest:@{cancelRequest:}}
+\index{cancelRequest:@{cancelRequest:}!CommandServiceManager@{CommandServiceManager}}
+\subsubsection[{cancelRequest:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) cancelRequest: 
+\begin{DoxyParamCaption}
+\item[{dummy(uint32\_\-t)}]{CSID}
+\end{DoxyParamCaption}
+}}
+\label{interface_command_service_manager_a14bad68c299dcec24925f8a21c6155ca}
+Cancel a request by client session id 
+\begin{DoxyParams}{Parameters}
+{\em CSID} & the client session id wanted to cancel \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 232 of file CommandServiceManager.m.
+
+\hypertarget{interface_command_service_manager_a1cc62e871aefb4c0a07fbd92a7463e6b}{
+\index{CommandServiceManager@{CommandServiceManager}!deleteSession:@{deleteSession:}}
+\index{deleteSession:@{deleteSession:}!CommandServiceManager@{CommandServiceManager}}
+\subsubsection[{deleteSession:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) deleteSession: 
+\begin{DoxyParamCaption}
+\item[{dummy(uint32\_\-t)}]{CSID}
+\end{DoxyParamCaption}
+}}
+\label{interface_command_service_manager_a1cc62e871aefb4c0a07fbd92a7463e6b}
+Delete a session from database by client session id 
+\begin{DoxyParams}{Parameters}
+{\em CSID} & the client session id wanted to delete \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 226 of file CommandServiceManager.m.
+
+\hypertarget{interface_command_service_manager_af6e2ec735906e0993b23449f0f1cf1a0}{
+\index{CommandServiceManager@{CommandServiceManager}!deQueue@{deQueue}}
+\index{deQueue@{deQueue}!CommandServiceManager@{CommandServiceManager}}
+\subsubsection[{deQueue}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Request} $\ast$) deQueue 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_command_service_manager_af6e2ec735906e0993b23449f0f1cf1a0}
+Pop request from queue \begin{DoxyReturn}{Returns}
+the highest priorty request in queue 
+\end{DoxyReturn}
+
+
+Definition at line 213 of file CommandServiceManager.m.
+
+\hypertarget{interface_command_service_manager_af47dff2aa93a04edc38ce783bb0bcc64}{
+\index{CommandServiceManager@{CommandServiceManager}!execute:@{execute:}}
+\index{execute:@{execute:}!CommandServiceManager@{CommandServiceManager}}
+\subsubsection[{execute:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (long) execute: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf CommandRequest} $\ast$)}]{request}
+\end{DoxyParamCaption}
+}}
+\label{interface_command_service_manager_af47dff2aa93a04edc38ce783bb0bcc64}
+Execute a request, will put in to queue and start executor if it's idle 
+\begin{DoxyParams}{Parameters}
+{\em CSID} & the client session id wanted to delete \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Client session id of the request 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file CommandServiceManager.m.
+
+\hypertarget{interface_command_service_manager_a453bcb0bbfbdfa7b7fb86c395443bc7c}{
+\index{CommandServiceManager@{CommandServiceManager}!getAllOrphanedSession@{getAllOrphanedSession}}
+\index{getAllOrphanedSession@{getAllOrphanedSession}!CommandServiceManager@{CommandServiceManager}}
+\subsubsection[{getAllOrphanedSession}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSArray $\ast$) getAllOrphanedSession 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_command_service_manager_a453bcb0bbfbdfa7b7fb86c395443bc7c}
+Get all client session ids that payload is not finished yet \begin{DoxyReturn}{Returns}
+array of client session id that payload\_\-ready\_\-flag=0 
+\end{DoxyReturn}
+
+
+Definition at line 218 of file CommandServiceManager.m.
+
+\hypertarget{interface_command_service_manager_af5f1b4c870d88b81cf49bed3bb48753b}{
+\index{CommandServiceManager@{CommandServiceManager}!getAllPendingSession@{getAllPendingSession}}
+\index{getAllPendingSession@{getAllPendingSession}!CommandServiceManager@{CommandServiceManager}}
+\subsubsection[{getAllPendingSession}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSArray $\ast$) getAllPendingSession 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_command_service_manager_af5f1b4c870d88b81cf49bed3bb48753b}
+Get all client session ids that payload is finished \begin{DoxyReturn}{Returns}
+array of client session id that payload\_\-ready\_\-flag=1 
+\end{DoxyReturn}
+
+
+Definition at line 222 of file CommandServiceManager.m.
+
+\hypertarget{interface_command_service_manager_aaaf717b91f26a94b5f672742dd45200b}{
+\index{CommandServiceManager@{CommandServiceManager}!resume:withDelegate:@{resume:withDelegate:}}
+\index{resume:withDelegate:@{resume:withDelegate:}!CommandServiceManager@{CommandServiceManager}}
+\subsubsection[{resume:withDelegate:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) resume: 
+\begin{DoxyParamCaption}
+\item[{dummy(uint32\_\-t)}]{CSID}
+\item[{withDelegate:(id$<${\bf CommandDelegate}$>$)}]{delegate}
+\end{DoxyParamCaption}
+}}
+\label{interface_command_service_manager_aaaf717b91f26a94b5f672742dd45200b}
+Resume a request that have this client session id and set callback object 
+\begin{DoxyParams}{Parameters}
+{\em CSID} & client session id that wanted to resume \\
+\hline
+{\em delegate} & callback object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 181 of file CommandServiceManager.m.
+
+\hypertarget{interface_command_service_manager_a5308ace3c404c5b655ed1a08f3645553}{
+\index{CommandServiceManager@{CommandServiceManager}!sharedManager@{sharedManager}}
+\index{sharedManager@{sharedManager}!CommandServiceManager@{CommandServiceManager}}
+\subsubsection[{sharedManager}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf CommandServiceManager} $\ast$) sharedManager 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_command_service_manager_a5308ace3c404c5b655ed1a08f3645553}
+Get singleton \hyperlink{interface_command_service_manager}{CommandServiceManager} object \begin{DoxyReturn}{Returns}
+shared \hyperlink{interface_command_service_manager}{CommandServiceManager} instance 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+don't use this, it does not set db path for session manager 
+\end{DoxyWarning}
+
+
+Definition at line 30 of file CommandServiceManager.m.
+
+\hypertarget{interface_command_service_manager_a946db9813ede4ed57884afdd5bb49415}{
+\index{CommandServiceManager@{CommandServiceManager}!sharedManagerWithPayloadPath:withDBPath:@{sharedManagerWithPayloadPath:withDBPath:}}
+\index{sharedManagerWithPayloadPath:withDBPath:@{sharedManagerWithPayloadPath:withDBPath:}!CommandServiceManager@{CommandServiceManager}}
+\subsubsection[{sharedManagerWithPayloadPath:withDBPath:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf CommandServiceManager} $\ast$) sharedManagerWithPayloadPath: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{PLPath}
+\item[{withDBPath:(NSString $\ast$)}]{DBPath}
+\end{DoxyParamCaption}
+}}
+\label{interface_command_service_manager_a946db9813ede4ed57884afdd5bb49415}
+Get singleton \hyperlink{interface_command_service_manager}{CommandServiceManager} object then set payload path and database path at that time \begin{DoxyReturn}{Returns}
+shared \hyperlink{interface_command_service_manager}{CommandServiceManager} instance that have payload path and database path 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em PLPath} & writable path to save payload file \\
+\hline
+{\em DBPath} & writable path to crate/read/update database file \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 53 of file CommandServiceManager.m.
+
+\hypertarget{interface_command_service_manager_a8b168a833d86a82cbff12a5c9fbde7c8}{
+\index{CommandServiceManager@{CommandServiceManager}!testCancelRequest@{testCancelRequest}}
+\index{testCancelRequest@{testCancelRequest}!CommandServiceManager@{CommandServiceManager}}
+\subsubsection[{testCancelRequest}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) testCancelRequest 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_command_service_manager_a8b168a833d86a82cbff12a5c9fbde7c8}
+For test cancel flow it will cancel the first request in the queue 
+
+Definition at line 206 of file CommandServiceManager.m.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_command_service_manager_a952be87323bf86b13f564f4ae3c3f5b4}{
+\index{CommandServiceManager@{CommandServiceManager}!executor@{executor}}
+\index{executor@{executor}!CommandServiceManager@{CommandServiceManager}}
+\subsubsection[{executor}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf CommandExecutor} $\ast$) executor\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_command_service_manager_a952be87323bf86b13f564f4ae3c3f5b4}
+Weak link to \hyperlink{interface_command_executor}{CommandExecutor} shared instance 
+
+Definition at line 27 of file CommandServiceManager.h.
+
+\hypertarget{interface_command_service_manager_ac073942c39cc3cda8fb4bff35a39aa77}{
+\index{CommandServiceManager@{CommandServiceManager}!priorityQueue@{priorityQueue}}
+\index{priorityQueue@{priorityQueue}!CommandServiceManager@{CommandServiceManager}}
+\subsubsection[{priorityQueue}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSMutableArray} $\ast$) priorityQueue\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}
+\label{interface_command_service_manager_ac073942c39cc3cda8fb4bff35a39aa77}
+Priority queue \hyperlink{class_n_s_mutable_array}{NSMutableArray} category 
+
+Definition at line 32 of file CommandServiceManager.h.
+
+\hypertarget{interface_command_service_manager_a50e3b4268a2a5cfe06921a3d4b342a12}{
+\index{CommandServiceManager@{CommandServiceManager}!sessionManager@{sessionManager}}
+\index{sessionManager@{sessionManager}!CommandServiceManager@{CommandServiceManager}}
+\subsubsection[{sessionManager}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf SessionManager} $\ast$) sessionManager\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_command_service_manager_a50e3b4268a2a5cfe06921a3d4b342a12}
+Weak link to \hyperlink{interface_session_manager}{SessionManager} shared instance 
+
+Definition at line 26 of file CommandServiceManager.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Classes/Engine/CommandServiceManager.h\item 
+Classes/Engine/CommandServiceManager.m\end{DoxyCompactItemize}

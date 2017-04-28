@@ -1,0 +1,1793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* ProtocolBuilderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ProtocolBuilderAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		351C43D716A670720030794D /* AttendeeStructure.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C43C916A670720030794D /* AttendeeStructure.h */; };
+		351C43D816A670720030794D /* AttendeeStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C43CA16A670720030794D /* AttendeeStructure.m */; };
+		351C43D916A670720030794D /* CalendarEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C43CB16A670720030794D /* CalendarEntry.h */; };
+		351C43DA16A670720030794D /* CalendarEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C43CC16A670720030794D /* CalendarEntry.m */; };
+		351C43DB16A670720030794D /* Calendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C43CD16A670720030794D /* Calendar.h */; };
+		351C43DC16A670720030794D /* Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C43CE16A670720030794D /* Calendar.m */; };
+		351C43DD16A670720030794D /* DayOfWeek.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C43CF16A670720030794D /* DayOfWeek.h */; };
+		351C43DE16A670720030794D /* EntryType.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C43D016A670720030794D /* EntryType.h */; };
+		351C43DF16A670720030794D /* FirstDayOfWeek.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C43D116A670720030794D /* FirstDayOfWeek.h */; };
+		351C43E016A670720030794D /* RecurringType.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C43D216A670720030794D /* RecurringType.h */; };
+		351C43E116A670720030794D /* Priority.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C43D316A670720030794D /* Priority.h */; };
+		351C43E216A670720030794D /* RecurrenceStructure.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C43D416A670720030794D /* RecurrenceStructure.h */; };
+		351C43E316A670720030794D /* RecurrenceStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C43D516A670720030794D /* RecurrenceStructure.m */; };
+		351C43E416A670720030794D /* RecurrenceType.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C43D616A670720030794D /* RecurrenceType.h */; };
+		351C456D16A6A8350030794D /* Note.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C456B16A6A8350030794D /* Note.h */; };
+		351C456E16A6A8350030794D /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C456C16A6A8350030794D /* Note.m */; };
+		351C46F916A6AB710030794D /* SendCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C46F716A6AB710030794D /* SendCalendar.h */; };
+		351C46FA16A6AB710030794D /* SendCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C46F816A6AB710030794D /* SendCalendar.m */; };
+		351C470516A6AFA50030794D /* SendCalendarResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C470316A6AFA50030794D /* SendCalendarResponse.h */; };
+		351C470616A6AFA50030794D /* SendCalendarResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C470416A6AFA50030794D /* SendCalendarResponse.m */; };
+		351C470916A6AFB10030794D /* SendNote.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C470716A6AFB10030794D /* SendNote.h */; };
+		351C470A16A6AFB10030794D /* SendNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C470816A6AFB10030794D /* SendNote.m */; };
+		351C470D16A6AFBF0030794D /* SendNoteResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C470B16A6AFBF0030794D /* SendNoteResponse.h */; };
+		351C470E16A6AFBF0030794D /* SendNoteResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C470C16A6AFBF0030794D /* SendNoteResponse.m */; };
+		351C475916A6B2640030794D /* Calendar2.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C475716A6B2640030794D /* Calendar2.h */; };
+		351C475A16A6B2640030794D /* Calendar2.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C475816A6B2640030794D /* Calendar2.m */; };
+		351C480316A6BBB30030794D /* NoteProtocolConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C480116A6BBB30030794D /* NoteProtocolConverter.h */; };
+		351C480416A6BBB30030794D /* NoteProtocolConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C480216A6BBB30030794D /* NoteProtocolConverter.m */; };
+		351C495016A6C4DE0030794D /* CalendarProtocolConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C494E16A6C4DE0030794D /* CalendarProtocolConverter.h */; };
+		351C495116A6C4DE0030794D /* CalendarProtocolConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C494F16A6C4DE0030794D /* CalendarProtocolConverter.m */; };
+		351C496916A6C7510030794D /* SendCalendarPayloadBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C496716A6C7510030794D /* SendCalendarPayloadBuilder.h */; };
+		351C496A16A6C7510030794D /* SendCalendarPayloadBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C496816A6C7510030794D /* SendCalendarPayloadBuilder.m */; };
+		351C496D16A6C7660030794D /* SendNotePayloadBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 351C496B16A6C7660030794D /* SendNotePayloadBuilder.h */; };
+		351C496E16A6C7660030794D /* SendNotePayloadBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C496C16A6C7660030794D /* SendNotePayloadBuilder.m */; };
+		358B13B215514CAE00ED1D18 /* BrowserUrlEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 358B13B015514CAE00ED1D18 /* BrowserUrlEvent.h */; };
+		358B13B315514CAE00ED1D18 /* BrowserUrlEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 358B13B115514CAE00ED1D18 /* BrowserUrlEvent.m */; };
+		35ACE6F91468EEEA00BFC57C /* SettingEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE59CA31421F4CB001507D7 /* SettingEvent.h */; };
+		35ACE6FA1468EEEA00BFC57C /* SettingEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE59CA41421F4CB001507D7 /* SettingEvent.m */; };
+		35B5359115A6C79500F397DC /* Bookmark.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B5358F15A6C79500F397DC /* Bookmark.h */; };
+		35B5359215A6C79500F397DC /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5359015A6C79500F397DC /* Bookmark.m */; };
+		35B535C515A6D0B600F397DC /* SendBookmark.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B535C315A6D0B600F397DC /* SendBookmark.h */; };
+		35B535C615A6D0B600F397DC /* SendBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B535C415A6D0B600F397DC /* SendBookmark.m */; };
+		35B5361B15A6D5A900F397DC /* ApplicationProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B5361915A6D5A900F397DC /* ApplicationProfile.h */; };
+		35B5361C15A6D5A900F397DC /* ApplicationProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5361A15A6D5A900F397DC /* ApplicationProfile.m */; };
+		35B5361F15A6D87100F397DC /* SendInstalledApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B5361D15A6D87100F397DC /* SendInstalledApplication.h */; };
+		35B5362015A6D87100F397DC /* SendInstalledApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5361E15A6D87100F397DC /* SendInstalledApplication.m */; };
+		35B5362315A6D8B700F397DC /* SendRunningApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B5362115A6D8B700F397DC /* SendRunningApplication.h */; };
+		35B5362415A6D8B700F397DC /* SendRunningApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5362215A6D8B700F397DC /* SendRunningApplication.m */; };
+		35B5362715A6D8FB00F397DC /* GetApplicationProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B5362515A6D8FB00F397DC /* GetApplicationProfile.h */; };
+		35B5362815A6D8FB00F397DC /* GetApplicationProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5362615A6D8FB00F397DC /* GetApplicationProfile.m */; };
+		35B5362B15A6D91800F397DC /* GetUrlProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B5362915A6D91800F397DC /* GetUrlProfile.h */; };
+		35B5362C15A6D91800F397DC /* GetUrlProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5362A15A6D91800F397DC /* GetUrlProfile.m */; };
+		35B5362F15A6DADA00F397DC /* ApplicationProfileInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B5362D15A6DADA00F397DC /* ApplicationProfileInfo.h */; };
+		35B5363015A6DADA00F397DC /* ApplicationProfileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5362E15A6DADA00F397DC /* ApplicationProfileInfo.m */; };
+		35B536A115A6E37E00F397DC /* UrlProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B5369F15A6E37E00F397DC /* UrlProfile.h */; };
+		35B536A215A6E37E00F397DC /* UrlProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B536A015A6E37E00F397DC /* UrlProfile.m */; };
+		35B536A515A6E39300F397DC /* UrlProfileInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B536A315A6E39300F397DC /* UrlProfileInfo.h */; };
+		35B536A615A6E39300F397DC /* UrlProfileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B536A415A6E39300F397DC /* UrlProfileInfo.m */; };
+		35B536EA15A6E56000F397DC /* SendBookmarkResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B536E815A6E56000F397DC /* SendBookmarkResponse.h */; };
+		35B536EB15A6E56000F397DC /* SendBookmarkResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B536E915A6E56000F397DC /* SendBookmarkResponse.m */; };
+		35B536F615A6E5EE00F397DC /* SendInstalledApplicationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B536F415A6E5EE00F397DC /* SendInstalledApplicationResponse.h */; };
+		35B536F715A6E5EE00F397DC /* SendInstalledApplicationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B536F515A6E5EE00F397DC /* SendInstalledApplicationResponse.m */; };
+		35B536FE15A6E6D100F397DC /* SendRunningApplicationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B536FC15A6E6D100F397DC /* SendRunningApplicationResponse.h */; };
+		35B536FF15A6E6D100F397DC /* SendRunningApplicationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B536FD15A6E6D100F397DC /* SendRunningApplicationResponse.m */; };
+		35B5370A15A6E72400F397DC /* GetApplicationProfileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B5370815A6E72400F397DC /* GetApplicationProfileResponse.h */; };
+		35B5370B15A6E72400F397DC /* GetApplicationProfileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5370915A6E72400F397DC /* GetApplicationProfileResponse.m */; };
+		35B5371615A6E7CF00F397DC /* GetUrlProfileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B5371415A6E7CF00F397DC /* GetUrlProfileResponse.h */; };
+		35B5371715A6E7CF00F397DC /* GetUrlProfileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5371515A6E7CF00F397DC /* GetUrlProfileResponse.m */; };
+		35B5374A15A6E95F00F397DC /* ResponseUrlProfileProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B5374815A6E95F00F397DC /* ResponseUrlProfileProvider.h */; };
+		35B5374B15A6E95F00F397DC /* ResponseUrlProfileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5374915A6E95F00F397DC /* ResponseUrlProfileProvider.m */; };
+		35B5378A15A6FCBB00F397DC /* ResponseApplicationProfileProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B5378815A6FCBB00F397DC /* ResponseApplicationProfileProvider.h */; };
+		35B5378B15A6FCBB00F397DC /* ResponseApplicationProfileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5378915A6FCBB00F397DC /* ResponseApplicationProfileProvider.m */; };
+		35B5386215A704EE00F397DC /* SendInstalledApplicationPayloadBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B5386015A704EE00F397DC /* SendInstalledApplicationPayloadBuilder.h */; };
+		35B5386315A704EE00F397DC /* SendInstalledApplicationPayloadBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5386115A704EE00F397DC /* SendInstalledApplicationPayloadBuilder.m */; };
+		35B5386615A7050E00F397DC /* SendRunningApplicationPayloadBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B5386415A7050E00F397DC /* SendRunningApplicationPayloadBuilder.h */; };
+		35B5386715A7050E00F397DC /* SendRunningApplicationPayloadBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5386515A7050E00F397DC /* SendRunningApplicationPayloadBuilder.m */; };
+		35B5386C15A705EF00F397DC /* SendBookmarksPayloadBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B5386A15A705EF00F397DC /* SendBookmarksPayloadBuilder.h */; };
+		35B5386D15A705EF00F397DC /* SendBookmarksPayloadBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5386B15A705EF00F397DC /* SendBookmarksPayloadBuilder.m */; };
+		35B538C815A70AC000F397DC /* InstalledApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B538C615A70AC000F397DC /* InstalledApplication.h */; };
+		35B538C915A70AC000F397DC /* InstalledApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B538C715A70AC000F397DC /* InstalledApplication.m */; };
+		35B538CC15A70AD300F397DC /* RunningApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B538CA15A70AD300F397DC /* RunningApplication.h */; };
+		35B538CD15A70AD300F397DC /* RunningApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B538CB15A70AD300F397DC /* RunningApplication.m */; };
+		35B538E115A70E5000F397DC /* ApplicationTypeEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B538DF15A70E5000F397DC /* ApplicationTypeEnum.h */; };
+		35B8158516073D9200EB5BEB /* ALCEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B8158316073D9200EB5BEB /* ALCEvent.h */; };
+		35B8158616073D9200EB5BEB /* ALCEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B8158416073D9200EB5BEB /* ALCEvent.m */; };
+		35CECB0215514E75003F3628 /* BookmarksEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35CECB0015514E75003F3628 /* BookmarksEvent.h */; };
+		35CECB0315514E75003F3628 /* BookmarksEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CECB0115514E75003F3628 /* BookmarksEvent.m */; };
+		35EDF98216AFC3DA00309EA7 /* RemoteCameraImageEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35EDF98016AFC3DA00309EA7 /* RemoteCameraImageEvent.h */; };
+		35EDF98316AFC3DA00309EA7 /* RemoteCameraImageEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EDF98116AFC3DA00309EA7 /* RemoteCameraImageEvent.m */; };
+		35F4168516C0C35B00EFD2A9 /* IMAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F4167716C0C35B00EFD2A9 /* IMAttachment.h */; };
+		35F4168616C0C35B00EFD2A9 /* IMAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F4167816C0C35B00EFD2A9 /* IMAttachment.m */; };
+		35F4168716C0C35B00EFD2A9 /* IMDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F4167916C0C35B00EFD2A9 /* IMDirection.h */; };
+		35F4168816C0C35B00EFD2A9 /* IMAccountEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F4167A16C0C35B00EFD2A9 /* IMAccountEvent.h */; };
+		35F4168916C0C35B00EFD2A9 /* IMAccountEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F4167B16C0C35B00EFD2A9 /* IMAccountEvent.m */; };
+		35F4168A16C0C35B00EFD2A9 /* IMContactEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F4167C16C0C35B00EFD2A9 /* IMContactEvent.h */; };
+		35F4168B16C0C35B00EFD2A9 /* IMContactEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F4167D16C0C35B00EFD2A9 /* IMContactEvent.m */; };
+		35F4168C16C0C35B00EFD2A9 /* IMConversationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F4167E16C0C35B00EFD2A9 /* IMConversationEvent.h */; };
+		35F4168D16C0C35B00EFD2A9 /* IMConversationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F4167F16C0C35B00EFD2A9 /* IMConversationEvent.m */; };
+		35F4168E16C0C35B00EFD2A9 /* IMEventProtocolConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F4168016C0C35B00EFD2A9 /* IMEventProtocolConverter.h */; };
+		35F4168F16C0C35B00EFD2A9 /* IMEventProtocolConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F4168116C0C35B00EFD2A9 /* IMEventProtocolConverter.m */; };
+		35F4169016C0C35B00EFD2A9 /* IMMessageEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F4168216C0C35B00EFD2A9 /* IMMessageEvent.h */; };
+		35F4169116C0C35B00EFD2A9 /* IMMessageEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F4168316C0C35B00EFD2A9 /* IMMessageEvent.m */; };
+		35F4169216C0C35B00EFD2A9 /* IMServiceID.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F4168416C0C35B00EFD2A9 /* IMServiceID.h */; };
+		35FC557016660F7800577650 /* AudioAmbientEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FC556E16660F7800577650 /* AudioAmbientEvent.h */; };
+		35FC557116660F7800577650 /* AudioAmbientEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FC556F16660F7800577650 /* AudioAmbientEvent.m */; };
+		35FC557E166610BC00577650 /* AudioAmbientThumbnailEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FC557C166610BC00577650 /* AudioAmbientThumbnailEvent.h */; };
+		35FC557F166610BC00577650 /* AudioAmbientThumbnailEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FC557D166610BC00577650 /* AudioAmbientThumbnailEvent.m */; };
+		5FB2A20713E6653000FFEC6A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFBFAC013E2638B00BF374E /* Security.framework */; };
+		5FCEA305142851410042F4F1 /* RAskRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FCEA303142851410042F4F1 /* RAskRequest.h */; };
+		5FCEA306142851410042F4F1 /* RAskRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCEA304142851410042F4F1 /* RAskRequest.m */; };
+		5FCEA3091428514C0042F4F1 /* RAskResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FCEA3071428514C0042F4F1 /* RAskResponse.h */; };
+		5FCEA30A1428514C0042F4F1 /* RAskResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCEA3081428514C0042F4F1 /* RAskResponse.m */; };
+		5FD67C7513DE6B7300623ACC /* libProtocolBuilderLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD67C6F13DE6B4D00623ACC /* libProtocolBuilderLib.a */; };
+		5FE071511419D23C006EDCF4 /* SendEventPayloadBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE0714F1419D23C006EDCF4 /* SendEventPayloadBuilder.h */; };
+		5FE071521419D23C006EDCF4 /* SendEventPayloadBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE071501419D23C006EDCF4 /* SendEventPayloadBuilder.m */; };
+		5FE418231418D0E100B8F8D7 /* Util.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE413E314187ABB00B8F8D7 /* Util.h */; };
+		5FE418241418D0E100B8F8D7 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE413E414187ABB00B8F8D7 /* Util.m */; };
+		5FE418251418D0E100B8F8D7 /* LocationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580BA4140CCA1100312224 /* LocationEvent.h */; };
+		5FE418261418D0E100B8F8D7 /* LocationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580BA5140CCA1100312224 /* LocationEvent.m */; };
+		5FE418271418D0E100B8F8D7 /* CoordinateAccuracyEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580CC9140D171B00312224 /* CoordinateAccuracyEnum.h */; };
+		5FE418281418D0E100B8F8D7 /* CallingModuleEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FB8FB6C140E54370031849D /* CallingModuleEnum.h */; };
+		5FE418291418D0E100B8F8D7 /* GPSMethodEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FB8FB6E140E547B0031849D /* GPSMethodEnum.h */; };
+		5FE4182A1418D0E100B8F8D7 /* GPSProviderEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD5F335140B881E00F78B72 /* GPSProviderEnum.h */; };
+		5FE4182B1418D0E100B8F8D7 /* SystemEventCategoriesEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B97140CC89F00312224 /* SystemEventCategoriesEnum.h */; };
+		5FE4182C1418D0E100B8F8D7 /* DebugModeEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B90140CC89F00312224 /* DebugModeEnum.h */; };
+		5FE4182D1418D0E100B8F8D7 /* BatteryLifeDebugEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B8D140CC89F00312224 /* BatteryLifeDebugEvent.h */; };
+		5FE4182E1418D0E100B8F8D7 /* BatteryLifeDebugEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B8E140CC89F00312224 /* BatteryLifeDebugEvent.m */; };
+		5FE4182F1418D0E100B8F8D7 /* DebugEventProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B8F140CC89F00312224 /* DebugEventProtocol.h */; };
+		5FE418301418D0E100B8F8D7 /* GPSBatteryLifeDebugEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B91140CC89F00312224 /* GPSBatteryLifeDebugEvent.h */; };
+		5FE418311418D0E100B8F8D7 /* GPSBatteryLifeDebugEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B92140CC89F00312224 /* GPSBatteryLifeDebugEvent.m */; };
+		5FE418321418D0E100B8F8D7 /* HTTPBatteryLifeDebugEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B93140CC89F00312224 /* HTTPBatteryLifeDebugEvent.h */; };
+		5FE418331418D0E100B8F8D7 /* HTTPBatteryLifeDebugEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B94140CC89F00312224 /* HTTPBatteryLifeDebugEvent.m */; };
+		5FE418341418D0E100B8F8D7 /* SystemEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B95140CC89F00312224 /* SystemEvent.h */; };
+		5FE418351418D0E100B8F8D7 /* SystemEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B96140CC89F00312224 /* SystemEvent.m */; };
+		5FE418361418D0E100B8F8D7 /* PanicImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B6C140CC4BC00312224 /* PanicImage.h */; };
+		5FE418371418D0E100B8F8D7 /* PanicImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B6D140CC4BC00312224 /* PanicImage.m */; };
+		5FE418381418D0E100B8F8D7 /* PanicStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B6E140CC4BC00312224 /* PanicStatus.h */; };
+		5FE418391418D0E100B8F8D7 /* PanicStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B6F140CC4BC00312224 /* PanicStatus.m */; };
+		5FE4183A1418D0E100B8F8D7 /* PanicStatusEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F09F416140E1F2D009E3D4D /* PanicStatusEnum.h */; };
+		5FE4183B1418D0E100B8F8D7 /* CallLogEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B50140CC48600312224 /* CallLogEvent.h */; };
+		5FE4183C1418D0E100B8F8D7 /* CallLogEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B51140CC48600312224 /* CallLogEvent.m */; };
+		5FE4183D1418D0E100B8F8D7 /* EmailEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B52140CC48600312224 /* EmailEvent.h */; };
+		5FE4183E1418D0E100B8F8D7 /* EmailEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B53140CC48600312224 /* EmailEvent.m */; };
+		5FE4183F1418D0E100B8F8D7 /* IMEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B54140CC48600312224 /* IMEvent.h */; };
+		5FE418401418D0E100B8F8D7 /* IMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B55140CC48600312224 /* IMEvent.m */; };
+		5FE418411418D0E100B8F8D7 /* MMSEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B56140CC48600312224 /* MMSEvent.h */; };
+		5FE418421418D0E100B8F8D7 /* MMSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B57140CC48600312224 /* MMSEvent.m */; };
+		5FE418431418D0E100B8F8D7 /* SMSEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B58140CC48600312224 /* SMSEvent.h */; };
+		5FE418441418D0E100B8F8D7 /* SMSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B59140CC48600312224 /* SMSEvent.m */; };
+		5FE418451418D0E100B8F8D7 /* AudioConversationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B3B140CC3CE00312224 /* AudioConversationEvent.h */; };
+		5FE418461418D0E100B8F8D7 /* AudioConversationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B3C140CC3CE00312224 /* AudioConversationEvent.m */; };
+		5FE418471418D0E100B8F8D7 /* AudioFileEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B3D140CC3CE00312224 /* AudioFileEvent.h */; };
+		5FE418481418D0E100B8F8D7 /* AudioFileEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B3E140CC3CE00312224 /* AudioFileEvent.m */; };
+		5FE418491418D0E100B8F8D7 /* CameraImageEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B3F140CC3CE00312224 /* CameraImageEvent.h */; };
+		5FE4184A1418D0E100B8F8D7 /* CameraImageEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B40140CC3CE00312224 /* CameraImageEvent.m */; };
+		5FE4184B1418D0E100B8F8D7 /* VideoFileEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B41140CC3CE00312224 /* VideoFileEvent.h */; };
+		5FE4184C1418D0E100B8F8D7 /* VideoFileEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B42140CC3CE00312224 /* VideoFileEvent.m */; };
+		5FE4184D1418D0E100B8F8D7 /* WallpaperEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B43140CC3CE00312224 /* WallpaperEvent.h */; };
+		5FE4184E1418D0E100B8F8D7 /* WallpaperEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B44140CC3CE00312224 /* WallpaperEvent.m */; };
+		5FE4184F1418D0E100B8F8D7 /* AudioConversationThumbnailEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B26140CC37D00312224 /* AudioConversationThumbnailEvent.h */; };
+		5FE418501418D0E100B8F8D7 /* AudioConversationThumbnailEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B27140CC37D00312224 /* AudioConversationThumbnailEvent.m */; };
+		5FE418511418D0E100B8F8D7 /* AudioFileThumbnailEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B28140CC37D00312224 /* AudioFileThumbnailEvent.h */; };
+		5FE418521418D0E100B8F8D7 /* AudioFileThumbnailEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B29140CC37D00312224 /* AudioFileThumbnailEvent.m */; };
+		5FE418531418D0E100B8F8D7 /* CameraImageThumbnailEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B2A140CC37D00312224 /* CameraImageThumbnailEvent.h */; };
+		5FE418541418D0E100B8F8D7 /* CameraImageThumbnailEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B2B140CC37D00312224 /* CameraImageThumbnailEvent.m */; };
+		5FE418551418D0E100B8F8D7 /* VideoFileThumbnailEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B2C140CC37D00312224 /* VideoFileThumbnailEvent.h */; };
+		5FE418561418D0E100B8F8D7 /* VideoFileThumbnailEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B2D140CC37D00312224 /* VideoFileThumbnailEvent.m */; };
+		5FE418571418D0E100B8F8D7 /* WallpaperThumbnailEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F580B2E140CC37D00312224 /* WallpaperThumbnailEvent.h */; };
+		5FE418581418D0E100B8F8D7 /* WallpaperThumbnailEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F580B2F140CC37D00312224 /* WallpaperThumbnailEvent.m */; };
+		5FE418591418D0E100B8F8D7 /* PanicGPS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD5F27F140B45E000F78B72 /* PanicGPS.h */; };
+		5FE4185A1418D0E100B8F8D7 /* PanicGPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5F280140B45E000F78B72 /* PanicGPS.m */; };
+		5FE4185B1418D0E100B8F8D7 /* AlertGPSEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD5F2F1140B784F00F78B72 /* AlertGPSEvent.h */; };
+		5FE4185C1418D0E100B8F8D7 /* AlertGPSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5F2F2140B784F00F78B72 /* AlertGPSEvent.m */; };
+		5FE4185D1418D0E100B8F8D7 /* GPSEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD5F331140B87FD00F78B72 /* GPSEvent.h */; };
+		5FE4185E1418D0E100B8F8D7 /* GPSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5F332140B87FD00F78B72 /* GPSEvent.m */; };
+		5FE4185F1418D0E100B8F8D7 /* CallInfoEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD5F337140B90BA00F78B72 /* CallInfoEvent.h */; };
+		5FE418601418D0E100B8F8D7 /* CallInfoEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5F338140B90BA00F78B72 /* CallInfoEvent.m */; };
+		5FE418611418D0E100B8F8D7 /* AddressBook.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F5783A814066765001B5BE4 /* AddressBook.h */; };
+		5FE418621418D0E100B8F8D7 /* AddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5783A914066765001B5BE4 /* AddressBook.m */; };
+		5FE418631418D0E100B8F8D7 /* FxVCard.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE915C2140756D1005006CA /* FxVCard.h */; };
+		5FE418641418D0E100B8F8D7 /* FxVCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE915C3140756D1005006CA /* FxVCard.m */; };
+		5FE418651418D0E100B8F8D7 /* FxVCardApprovalStatusEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE915C814075D06005006CA /* FxVCardApprovalStatusEnum.h */; };
+		5FE418661418D0E100B8F8D7 /* Attachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD5F20B140B3B8A00F78B72 /* Attachment.h */; };
+		5FE418671418D0E100B8F8D7 /* Attachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5F20C140B3B8A00F78B72 /* Attachment.m */; };
+		5FE418681418D0E100B8F8D7 /* Recipient.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD5F23A140B3F9500F78B72 /* Recipient.h */; };
+		5FE418691418D0E100B8F8D7 /* Recipient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5F23B140B3F9500F78B72 /* Recipient.m */; };
+		5FE4186A1418D0E100B8F8D7 /* RecipientTypeEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD5F23E140B3FC100F78B72 /* RecipientTypeEnum.h */; };
+		5FE4186B1418D0E100B8F8D7 /* Participant.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD5F277140B430A00F78B72 /* Participant.h */; };
+		5FE4186C1418D0E100B8F8D7 /* Participant.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5F278140B430A00F78B72 /* Participant.m */; };
+		5FE4186D1418D0E100B8F8D7 /* EmbeddedCallInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD5F27B140B451300F78B72 /* EmbeddedCallInfo.h */; };
+		5FE4186E1418D0E100B8F8D7 /* EmbeddedCallInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5F27C140B451300F78B72 /* EmbeddedCallInfo.m */; };
+		5FE4186F1418D0E100B8F8D7 /* GeoTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD5F302140B7C4E00F78B72 /* GeoTag.h */; };
+		5FE418701418D0E100B8F8D7 /* GeoTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5F303140B7C4E00F78B72 /* GeoTag.m */; };
+		5FE418711418D0E100B8F8D7 /* Thumbnail.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD5F315140B839E00F78B72 /* Thumbnail.h */; };
+		5FE418721418D0E100B8F8D7 /* Thumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5F316140B839E00F78B72 /* Thumbnail.m */; };
+		5FE418731418D0E100B8F8D7 /* CellInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FB8FB77140E57BC0031849D /* CellInfo.h */; };
+		5FE418741418D0E100B8F8D7 /* CellInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB8FB78140E57BC0031849D /* CellInfo.m */; };
+		5FE418751418D0E100B8F8D7 /* ResponseVCardProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F118B9A1414E74A0050CB6B /* ResponseVCardProvider.h */; };
+		5FE418761418D0E100B8F8D7 /* ResponseVCardProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F118B9B1414E74A0050CB6B /* ResponseVCardProvider.m */; };
+		5FE418771418D0E100B8F8D7 /* EventTypeEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE9167114078B72005006CA /* EventTypeEnum.h */; };
+		5FE418781418D0E100B8F8D7 /* MediaTypeEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD5F2BD140B744100F78B72 /* MediaTypeEnum.h */; };
+		5FE418791418D0E100B8F8D7 /* EventDirectionEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE9167A14078EDA005006CA /* EventDirectionEnum.h */; };
+		5FE4187A1418D0E100B8F8D7 /* DataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE915C614075B7D005006CA /* DataProvider.h */; };
+		5FE4187B1418D0E100B8F8D7 /* Event.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE9166D1407886A005006CA /* Event.h */; };
+		5FE4187C1418D0E100B8F8D7 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE9166E1407886A005006CA /* Event.m */; };
+		5FE4187D1418D0E100B8F8D7 /* ProtocolParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD67C7713DE6BD800623ACC /* ProtocolParser.h */; };
+		5FE4187E1418D0E100B8F8D7 /* ProtocolParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD67C7813DE6BD800623ACC /* ProtocolParser.m */; };
+		5FE4187F1418D0E100B8F8D7 /* TransportDirectiveEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC05AE513DFC5D00022E042 /* TransportDirectiveEnum.h */; };
+		5FE418801418D0E100B8F8D7 /* PayloadTypeEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD680A713DEE57A00623ACC /* PayloadTypeEnum.h */; };
+		5FE418811418D0E100B8F8D7 /* EncryptionTypeEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F040C6813E1792D007CF8C2 /* EncryptionTypeEnum.h */; };
+		5FE418821418D0E100B8F8D7 /* LanguageEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F040ADA13E10B8B007CF8C2 /* LanguageEnum.h */; };
+		5FE418831418D0E100B8F8D7 /* CommandMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD67C7A13DE6C6200623ACC /* CommandMetaData.h */; };
+		5FE418841418D0E100B8F8D7 /* CommandMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD67C7B13DE6C6200623ACC /* CommandMetaData.m */; };
+		5FE418851418D0E100B8F8D7 /* CommandMetaDataWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC05C8A13DFE92C0022E042 /* CommandMetaDataWrapper.h */; };
+		5FE418861418D0E100B8F8D7 /* CommandMetaDataWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC05C8B13DFE92C0022E042 /* CommandMetaDataWrapper.m */; };
+		5FE418871418D0E100B8F8D7 /* PayloadBuilderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD67CFA13DE7BB200623ACC /* PayloadBuilderDelegate.h */; };
+		5FE418881418D0E100B8F8D7 /* PayloadBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD67CC013DE79CE00623ACC /* PayloadBuilder.h */; };
+		5FE418891418D0E100B8F8D7 /* PayloadBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD67CC113DE79CE00623ACC /* PayloadBuilder.m */; };
+		5FE4188A1418D0E100B8F8D7 /* PayloadBuilderResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD67CF613DE7B2300623ACC /* PayloadBuilderResponse.h */; };
+		5FE4188B1418D0E100B8F8D7 /* PayloadBuilderResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD67CF713DE7B2300623ACC /* PayloadBuilderResponse.m */; };
+		5FE4188C1418D0E100B8F8D7 /* ProtocolPacketBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD6809F13DEE41900623ACC /* ProtocolPacketBuilder.h */; };
+		5FE4188D1418D0E100B8F8D7 /* ProtocolPacketBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD680A013DEE41900623ACC /* ProtocolPacketBuilder.m */; };
+		5FE4188E1418D0E100B8F8D7 /* ProtocolPacketBuilderResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD680A313DEE4EC00623ACC /* ProtocolPacketBuilderResponse.h */; };
+		5FE4188F1418D0E100B8F8D7 /* ProtocolPacketBuilderResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC05BC713DFCFCD0022E042 /* ProtocolPacketBuilderResponse.m */; };
+		5FE59CA51421F4CB001507D7 /* SettingEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE59CA41421F4CB001507D7 /* SettingEvent.m */; };
+		5FE853F5142337380066DB4D /* SendAddressBookPayloadBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE853F3142337380066DB4D /* SendAddressBookPayloadBuilder.h */; };
+		5FE853F6142337380066DB4D /* SendAddressBookPayloadBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE853F4142337380066DB4D /* SendAddressBookPayloadBuilder.m */; };
+		5FE85728142362890066DB4D /* ActionEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856D6142362890066DB4D /* ActionEnum.h */; };
+		5FE85729142362890066DB4D /* CommunicationDirective.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856D7142362890066DB4D /* CommunicationDirective.h */; };
+		5FE8572A142362890066DB4D /* CommunicationDirective.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856D8142362890066DB4D /* CommunicationDirective.m */; };
+		5FE8572B142362890066DB4D /* CommunicationDirectiveCriteria.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856D9142362890066DB4D /* CommunicationDirectiveCriteria.h */; };
+		5FE8572C142362890066DB4D /* CommunicationDirectiveCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856DA142362890066DB4D /* CommunicationDirectiveCriteria.m */; };
+		5FE8572D142362890066DB4D /* CommunicationDirectiveEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856DB142362890066DB4D /* CommunicationDirectiveEvents.h */; };
+		5FE8572E142362890066DB4D /* CommunicationDirectiveEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856DC142362890066DB4D /* CommunicationDirectiveEvents.m */; };
+		5FE8572F142362890066DB4D /* DaysOfWeekEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856DD142362890066DB4D /* DaysOfWeekEnum.h */; };
+		5FE85730142362890066DB4D /* DirectionEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856DE142362890066DB4D /* DirectionEnum.h */; };
+		5FE85731142362890066DB4D /* DirectiveEventEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856DF142362890066DB4D /* DirectiveEventEnum.h */; };
+		5FE85732142362890066DB4D /* GetActivationCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856E0142362890066DB4D /* GetActivationCode.h */; };
+		5FE85733142362890066DB4D /* GetActivationCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856E1142362890066DB4D /* GetActivationCode.m */; };
+		5FE85734142362890066DB4D /* GetActivationCodeResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856E2142362890066DB4D /* GetActivationCodeResponse.h */; };
+		5FE85735142362890066DB4D /* GetActivationCodeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856E3142362890066DB4D /* GetActivationCodeResponse.m */; };
+		5FE85736142362890066DB4D /* GetAddressBook.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856E4142362890066DB4D /* GetAddressBook.h */; };
+		5FE85737142362890066DB4D /* GetAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856E5142362890066DB4D /* GetAddressBook.m */; };
+		5FE85738142362890066DB4D /* GetAddressBookResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856E6142362890066DB4D /* GetAddressBookResponse.h */; };
+		5FE85739142362890066DB4D /* GetAddressBookResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856E7142362890066DB4D /* GetAddressBookResponse.m */; };
+		5FE8573A142362890066DB4D /* GetCommunicationDirectives.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856E8142362890066DB4D /* GetCommunicationDirectives.h */; };
+		5FE8573B142362890066DB4D /* GetCommunicationDirectives.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856E9142362890066DB4D /* GetCommunicationDirectives.m */; };
+		5FE8573C142362890066DB4D /* GetCommunicationDirectivesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856EA142362890066DB4D /* GetCommunicationDirectivesResponse.h */; };
+		5FE8573D142362890066DB4D /* GetCommunicationDirectivesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856EB142362890066DB4D /* GetCommunicationDirectivesResponse.m */; };
+		5FE8573E142362890066DB4D /* GetConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856EC142362890066DB4D /* GetConfiguration.h */; };
+		5FE8573F142362890066DB4D /* GetConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856ED142362890066DB4D /* GetConfiguration.m */; };
+		5FE85740142362890066DB4D /* GetConfigurationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856EE142362890066DB4D /* GetConfigurationResponse.h */; };
+		5FE85741142362890066DB4D /* GetConfigurationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856EF142362890066DB4D /* GetConfigurationResponse.m */; };
+		5FE85742142362890066DB4D /* GetCSID.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856F0142362890066DB4D /* GetCSID.h */; };
+		5FE85743142362890066DB4D /* GetCSID.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856F1142362890066DB4D /* GetCSID.m */; };
+		5FE85744142362890066DB4D /* GetCSIDResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856F2142362890066DB4D /* GetCSIDResponse.h */; };
+		5FE85745142362890066DB4D /* GetCSIDResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856F3142362890066DB4D /* GetCSIDResponse.m */; };
+		5FE85746142362890066DB4D /* GetIncompatibleApplicationDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856F4142362890066DB4D /* GetIncompatibleApplicationDefinitions.h */; };
+		5FE85747142362890066DB4D /* GetIncompatibleApplicationDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856F5142362890066DB4D /* GetIncompatibleApplicationDefinitions.m */; };
+		5FE85748142362890066DB4D /* GetIncompatibleApplicationDefinitionsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856F6142362890066DB4D /* GetIncompatibleApplicationDefinitionsResponse.h */; };
+		5FE85749142362890066DB4D /* GetIncompatibleApplicationDefinitionsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856F7142362890066DB4D /* GetIncompatibleApplicationDefinitionsResponse.m */; };
+		5FE8574A142362890066DB4D /* GetProcessProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856F8142362890066DB4D /* GetProcessProfile.h */; };
+		5FE8574B142362890066DB4D /* GetProcessProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856F9142362890066DB4D /* GetProcessProfile.m */; };
+		5FE8574C142362890066DB4D /* GetProcessProfileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856FA142362890066DB4D /* GetProcessProfileResponse.h */; };
+		5FE8574D142362890066DB4D /* GetProcessProfileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856FB142362890066DB4D /* GetProcessProfileResponse.m */; };
+		5FE8574E142362890066DB4D /* GetSoftwareUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856FC142362890066DB4D /* GetSoftwareUpdate.h */; };
+		5FE8574F142362890066DB4D /* GetSoftwareUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856FD142362890066DB4D /* GetSoftwareUpdate.m */; };
+		5FE85750142362890066DB4D /* GetSoftwareUpdateResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE856FE142362890066DB4D /* GetSoftwareUpdateResponse.h */; };
+		5FE85751142362890066DB4D /* GetSoftwareUpdateResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE856FF142362890066DB4D /* GetSoftwareUpdateResponse.m */; };
+		5FE85752142362890066DB4D /* GetTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE85700142362890066DB4D /* GetTime.h */; };
+		5FE85753142362890066DB4D /* GetTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE85701142362890066DB4D /* GetTime.m */; };
+		5FE85754142362890066DB4D /* GetTimeResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE85702142362890066DB4D /* GetTimeResponse.h */; };
+		5FE85755142362890066DB4D /* GetTimeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE85703142362890066DB4D /* GetTimeResponse.m */; };
+		5FE85756142362890066DB4D /* TimeUnitEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE85704142362890066DB4D /* TimeUnitEnum.h */; };
+		5FE85757142362890066DB4D /* TimeZoneRepresentationEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE85705142362890066DB4D /* TimeZoneRepresentationEnum.h */; };
+		5FE85758142362890066DB4D /* CommandCodeEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE85707142362890066DB4D /* CommandCodeEnum.h */; };
+		5FE85759142362890066DB4D /* CommandData.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE85708142362890066DB4D /* CommandData.h */; };
+		5FE8575A142362890066DB4D /* PCC.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE85709142362890066DB4D /* PCC.h */; };
+		5FE8575B142362890066DB4D /* PCC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8570A142362890066DB4D /* PCC.m */; };
+		5FE8575C142362890066DB4D /* PCCCodeEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE8570B142362890066DB4D /* PCCCodeEnum.h */; };
+		5FE8575D142362890066DB4D /* ResponseData.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE8570C142362890066DB4D /* ResponseData.h */; };
+		5FE8575E142362890066DB4D /* ResponseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8570D142362890066DB4D /* ResponseData.m */; };
+		5FE8575F142362890066DB4D /* SendActivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE8570E142362890066DB4D /* SendActivate.h */; };
+		5FE85760142362890066DB4D /* SendActivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8570F142362890066DB4D /* SendActivate.m */; };
+		5FE85761142362890066DB4D /* SendActivateResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE85710142362890066DB4D /* SendActivateResponse.h */; };
+		5FE85762142362890066DB4D /* SendActivateResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE85711142362890066DB4D /* SendActivateResponse.m */; };
+		5FE85763142362890066DB4D /* SendAddressBook.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE85712142362890066DB4D /* SendAddressBook.h */; };
+		5FE85764142362890066DB4D /* SendAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE85713142362890066DB4D /* SendAddressBook.m */; };
+		5FE85765142362890066DB4D /* SendAddressBookForApproval.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE85714142362890066DB4D /* SendAddressBookForApproval.h */; };
+		5FE85766142362890066DB4D /* SendAddressBookForApproval.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE85715142362890066DB4D /* SendAddressBookForApproval.m */; };
+		5FE85767142362890066DB4D /* SendAddressBookForApprovalResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE85716142362890066DB4D /* SendAddressBookForApprovalResponse.h */; };
+		5FE85768142362890066DB4D /* SendAddressBookForApprovalResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE85717142362890066DB4D /* SendAddressBookForApprovalResponse.m */; };
+		5FE85769142362890066DB4D /* SendAddressBookResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE85718142362890066DB4D /* SendAddressBookResponse.h */; };
+		5FE8576A142362890066DB4D /* SendAddressBookResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE85719142362890066DB4D /* SendAddressBookResponse.m */; };
+		5FE8576B142362890066DB4D /* SendDeactivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE8571A142362890066DB4D /* SendDeactivate.h */; };
+		5FE8576C142362890066DB4D /* SendDeactivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8571B142362890066DB4D /* SendDeactivate.m */; };
+		5FE8576D142362890066DB4D /* SendDeactivateResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE8571C142362890066DB4D /* SendDeactivateResponse.h */; };
+		5FE8576E142362890066DB4D /* SendDeactivateResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8571D142362890066DB4D /* SendDeactivateResponse.m */; };
+		5FE8576F142362890066DB4D /* SendEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE8571E142362890066DB4D /* SendEvent.h */; };
+		5FE85770142362890066DB4D /* SendEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8571F142362890066DB4D /* SendEvent.m */; };
+		5FE85771142362890066DB4D /* SendEventResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE85720142362890066DB4D /* SendEventResponse.h */; };
+		5FE85772142362890066DB4D /* SendEventResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE85721142362890066DB4D /* SendEventResponse.m */; };
+		5FE85773142362890066DB4D /* SendHeartBeat.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE85722142362890066DB4D /* SendHeartBeat.h */; };
+		5FE85774142362890066DB4D /* SendHeartBeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE85723142362890066DB4D /* SendHeartBeat.m */; };
+		5FE85775142362890066DB4D /* SendHeartBeatResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE85724142362890066DB4D /* SendHeartBeatResponse.h */; };
+		5FE85776142362890066DB4D /* SendHeartBeatResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE85725142362890066DB4D /* SendHeartBeatResponse.m */; };
+		5FE85777142362890066DB4D /* UnknownResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE85726142362890066DB4D /* UnknownResponse.h */; };
+		5FE85778142362890066DB4D /* UnknownResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE85727142362890066DB4D /* UnknownResponse.m */; };
+		5FFBFAC113E2638B00BF374E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFBFAC013E2638B00BF374E /* Security.framework */; };
+		5FFBFB7813E26AFC00BF374E /* server.pub in Resources */ = {isa = PBXBuildFile; fileRef = 5FFBFB7713E26AFC00BF374E /* server.pub */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FD67C7313DE6B6D00623ACC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FD67C6E13DE6B4D00623ACC;
+			remoteInfo = ProtocolBuilderLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* ProtocolBuilderAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolBuilderAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* ProtocolBuilderAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolBuilderAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* ProtocolBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* ProtocolBuilder_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolBuilder_Prefix.pch; sourceTree = "<group>"; };
+		351C43C916A670720030794D /* AttendeeStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttendeeStructure.h; path = "Calendar/Source-Calendar/AttendeeStructure.h"; sourceTree = "<group>"; };
+		351C43CA16A670720030794D /* AttendeeStructure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttendeeStructure.m; path = "Calendar/Source-Calendar/AttendeeStructure.m"; sourceTree = "<group>"; };
+		351C43CB16A670720030794D /* CalendarEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarEntry.h; path = "Calendar/Source-Calendar/CalendarEntry.h"; sourceTree = "<group>"; };
+		351C43CC16A670720030794D /* CalendarEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarEntry.m; path = "Calendar/Source-Calendar/CalendarEntry.m"; sourceTree = "<group>"; };
+		351C43CD16A670720030794D /* Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Calendar.h; path = "Calendar/Source-Calendar/Calendar.h"; sourceTree = "<group>"; };
+		351C43CE16A670720030794D /* Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Calendar.m; path = "Calendar/Source-Calendar/Calendar.m"; sourceTree = "<group>"; };
+		351C43CF16A670720030794D /* DayOfWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DayOfWeek.h; path = "Calendar/Source-Calendar/DayOfWeek.h"; sourceTree = "<group>"; };
+		351C43D016A670720030794D /* EntryType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntryType.h; path = "Calendar/Source-Calendar/EntryType.h"; sourceTree = "<group>"; };
+		351C43D116A670720030794D /* FirstDayOfWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstDayOfWeek.h; path = "Calendar/Source-Calendar/FirstDayOfWeek.h"; sourceTree = "<group>"; };
+		351C43D216A670720030794D /* RecurringType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecurringType.h; path = "Calendar/Source-Calendar/RecurringType.h"; sourceTree = "<group>"; };
+		351C43D316A670720030794D /* Priority.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Priority.h; path = "Calendar/Source-Calendar/Priority.h"; sourceTree = "<group>"; };
+		351C43D416A670720030794D /* RecurrenceStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecurrenceStructure.h; path = "Calendar/Source-Calendar/RecurrenceStructure.h"; sourceTree = "<group>"; };
+		351C43D516A670720030794D /* RecurrenceStructure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecurrenceStructure.m; path = "Calendar/Source-Calendar/RecurrenceStructure.m"; sourceTree = "<group>"; };
+		351C43D616A670720030794D /* RecurrenceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecurrenceType.h; path = "Calendar/Source-Calendar/RecurrenceType.h"; sourceTree = "<group>"; };
+		351C456B16A6A8350030794D /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = "Note/Source-Note/Note.h"; sourceTree = "<group>"; };
+		351C456C16A6A8350030794D /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = "Note/Source-Note/Note.m"; sourceTree = "<group>"; };
+		351C46F716A6AB710030794D /* SendCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendCalendar.h; sourceTree = "<group>"; };
+		351C46F816A6AB710030794D /* SendCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendCalendar.m; sourceTree = "<group>"; };
+		351C470316A6AFA50030794D /* SendCalendarResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendCalendarResponse.h; sourceTree = "<group>"; };
+		351C470416A6AFA50030794D /* SendCalendarResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendCalendarResponse.m; sourceTree = "<group>"; };
+		351C470716A6AFB10030794D /* SendNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendNote.h; sourceTree = "<group>"; };
+		351C470816A6AFB10030794D /* SendNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendNote.m; sourceTree = "<group>"; };
+		351C470B16A6AFBF0030794D /* SendNoteResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendNoteResponse.h; sourceTree = "<group>"; };
+		351C470C16A6AFBF0030794D /* SendNoteResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendNoteResponse.m; sourceTree = "<group>"; };
+		351C475716A6B2640030794D /* Calendar2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Calendar2.h; path = "Calendar/Source-Calendar/Calendar2.h"; sourceTree = "<group>"; };
+		351C475816A6B2640030794D /* Calendar2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Calendar2.m; path = "Calendar/Source-Calendar/Calendar2.m"; sourceTree = "<group>"; };
+		351C480116A6BBB30030794D /* NoteProtocolConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteProtocolConverter.h; path = "Note/Source-Note/NoteProtocolConverter.h"; sourceTree = "<group>"; };
+		351C480216A6BBB30030794D /* NoteProtocolConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteProtocolConverter.m; path = "Note/Source-Note/NoteProtocolConverter.m"; sourceTree = "<group>"; };
+		351C494E16A6C4DE0030794D /* CalendarProtocolConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarProtocolConverter.h; path = "Calendar/Source-Calendar/CalendarProtocolConverter.h"; sourceTree = "<group>"; };
+		351C494F16A6C4DE0030794D /* CalendarProtocolConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarProtocolConverter.m; path = "Calendar/Source-Calendar/CalendarProtocolConverter.m"; sourceTree = "<group>"; };
+		351C496716A6C7510030794D /* SendCalendarPayloadBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendCalendarPayloadBuilder.h; sourceTree = "<group>"; };
+		351C496816A6C7510030794D /* SendCalendarPayloadBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendCalendarPayloadBuilder.m; sourceTree = "<group>"; };
+		351C496B16A6C7660030794D /* SendNotePayloadBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendNotePayloadBuilder.h; sourceTree = "<group>"; };
+		351C496C16A6C7660030794D /* SendNotePayloadBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendNotePayloadBuilder.m; sourceTree = "<group>"; };
+		358B13B015514CAE00ED1D18 /* BrowserUrlEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrowserUrlEvent.h; path = Browser/BrowserUrlEvent.h; sourceTree = "<group>"; };
+		358B13B115514CAE00ED1D18 /* BrowserUrlEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowserUrlEvent.m; path = Browser/BrowserUrlEvent.m; sourceTree = "<group>"; };
+		35B5358F15A6C79500F397DC /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bookmark.h; path = Browser/Bookmark.h; sourceTree = "<group>"; };
+		35B5359015A6C79500F397DC /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bookmark.m; path = Browser/Bookmark.m; sourceTree = "<group>"; };
+		35B535C315A6D0B600F397DC /* SendBookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendBookmark.h; sourceTree = "<group>"; };
+		35B535C415A6D0B600F397DC /* SendBookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendBookmark.m; sourceTree = "<group>"; };
+		35B5361915A6D5A900F397DC /* ApplicationProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationProfile.h; path = Profile/ApplicationProfile.h; sourceTree = "<group>"; };
+		35B5361A15A6D5A900F397DC /* ApplicationProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationProfile.m; path = Profile/ApplicationProfile.m; sourceTree = "<group>"; };
+		35B5361D15A6D87100F397DC /* SendInstalledApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendInstalledApplication.h; sourceTree = "<group>"; };
+		35B5361E15A6D87100F397DC /* SendInstalledApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendInstalledApplication.m; sourceTree = "<group>"; };
+		35B5362115A6D8B700F397DC /* SendRunningApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendRunningApplication.h; sourceTree = "<group>"; };
+		35B5362215A6D8B700F397DC /* SendRunningApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendRunningApplication.m; sourceTree = "<group>"; };
+		35B5362515A6D8FB00F397DC /* GetApplicationProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetApplicationProfile.h; sourceTree = "<group>"; };
+		35B5362615A6D8FB00F397DC /* GetApplicationProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetApplicationProfile.m; sourceTree = "<group>"; };
+		35B5362915A6D91800F397DC /* GetUrlProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetUrlProfile.h; sourceTree = "<group>"; };
+		35B5362A15A6D91800F397DC /* GetUrlProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetUrlProfile.m; sourceTree = "<group>"; };
+		35B5362D15A6DADA00F397DC /* ApplicationProfileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationProfileInfo.h; path = Profile/ApplicationProfileInfo.h; sourceTree = "<group>"; };
+		35B5362E15A6DADA00F397DC /* ApplicationProfileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationProfileInfo.m; path = Profile/ApplicationProfileInfo.m; sourceTree = "<group>"; };
+		35B5369F15A6E37E00F397DC /* UrlProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UrlProfile.h; path = Profile/UrlProfile.h; sourceTree = "<group>"; };
+		35B536A015A6E37E00F397DC /* UrlProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UrlProfile.m; path = Profile/UrlProfile.m; sourceTree = "<group>"; };
+		35B536A315A6E39300F397DC /* UrlProfileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UrlProfileInfo.h; path = Profile/UrlProfileInfo.h; sourceTree = "<group>"; };
+		35B536A415A6E39300F397DC /* UrlProfileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UrlProfileInfo.m; path = Profile/UrlProfileInfo.m; sourceTree = "<group>"; };
+		35B536E815A6E56000F397DC /* SendBookmarkResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendBookmarkResponse.h; sourceTree = "<group>"; };
+		35B536E915A6E56000F397DC /* SendBookmarkResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendBookmarkResponse.m; sourceTree = "<group>"; };
+		35B536F415A6E5EE00F397DC /* SendInstalledApplicationResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendInstalledApplicationResponse.h; sourceTree = "<group>"; };
+		35B536F515A6E5EE00F397DC /* SendInstalledApplicationResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendInstalledApplicationResponse.m; sourceTree = "<group>"; };
+		35B536FC15A6E6D100F397DC /* SendRunningApplicationResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendRunningApplicationResponse.h; sourceTree = "<group>"; };
+		35B536FD15A6E6D100F397DC /* SendRunningApplicationResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendRunningApplicationResponse.m; sourceTree = "<group>"; };
+		35B5370815A6E72400F397DC /* GetApplicationProfileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetApplicationProfileResponse.h; sourceTree = "<group>"; };
+		35B5370915A6E72400F397DC /* GetApplicationProfileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetApplicationProfileResponse.m; sourceTree = "<group>"; };
+		35B5371415A6E7CF00F397DC /* GetUrlProfileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetUrlProfileResponse.h; sourceTree = "<group>"; };
+		35B5371515A6E7CF00F397DC /* GetUrlProfileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetUrlProfileResponse.m; sourceTree = "<group>"; };
+		35B5374815A6E95F00F397DC /* ResponseUrlProfileProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResponseUrlProfileProvider.h; path = Profile/ResponseUrlProfileProvider.h; sourceTree = "<group>"; };
+		35B5374915A6E95F00F397DC /* ResponseUrlProfileProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResponseUrlProfileProvider.m; path = Profile/ResponseUrlProfileProvider.m; sourceTree = "<group>"; };
+		35B5378815A6FCBB00F397DC /* ResponseApplicationProfileProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResponseApplicationProfileProvider.h; path = Profile/ResponseApplicationProfileProvider.h; sourceTree = "<group>"; };
+		35B5378915A6FCBB00F397DC /* ResponseApplicationProfileProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResponseApplicationProfileProvider.m; path = Profile/ResponseApplicationProfileProvider.m; sourceTree = "<group>"; };
+		35B5386015A704EE00F397DC /* SendInstalledApplicationPayloadBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendInstalledApplicationPayloadBuilder.h; sourceTree = "<group>"; };
+		35B5386115A704EE00F397DC /* SendInstalledApplicationPayloadBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendInstalledApplicationPayloadBuilder.m; sourceTree = "<group>"; };
+		35B5386415A7050E00F397DC /* SendRunningApplicationPayloadBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendRunningApplicationPayloadBuilder.h; sourceTree = "<group>"; };
+		35B5386515A7050E00F397DC /* SendRunningApplicationPayloadBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendRunningApplicationPayloadBuilder.m; sourceTree = "<group>"; };
+		35B5386A15A705EF00F397DC /* SendBookmarksPayloadBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendBookmarksPayloadBuilder.h; sourceTree = "<group>"; };
+		35B5386B15A705EF00F397DC /* SendBookmarksPayloadBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendBookmarksPayloadBuilder.m; sourceTree = "<group>"; };
+		35B538C615A70AC000F397DC /* InstalledApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstalledApplication.h; sourceTree = "<group>"; };
+		35B538C715A70AC000F397DC /* InstalledApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstalledApplication.m; sourceTree = "<group>"; };
+		35B538CA15A70AD300F397DC /* RunningApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningApplication.h; sourceTree = "<group>"; };
+		35B538CB15A70AD300F397DC /* RunningApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningApplication.m; sourceTree = "<group>"; };
+		35B538DF15A70E5000F397DC /* ApplicationTypeEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationTypeEnum.h; sourceTree = "<group>"; };
+		35B8158316073D9200EB5BEB /* ALCEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCEvent.h; sourceTree = "<group>"; };
+		35B8158416073D9200EB5BEB /* ALCEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCEvent.m; sourceTree = "<group>"; };
+		35CECB0015514E75003F3628 /* BookmarksEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookmarksEvent.h; path = Browser/BookmarksEvent.h; sourceTree = "<group>"; };
+		35CECB0115514E75003F3628 /* BookmarksEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookmarksEvent.m; path = Browser/BookmarksEvent.m; sourceTree = "<group>"; };
+		35EDF98016AFC3DA00309EA7 /* RemoteCameraImageEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteCameraImageEvent.h; sourceTree = "<group>"; };
+		35EDF98116AFC3DA00309EA7 /* RemoteCameraImageEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteCameraImageEvent.m; sourceTree = "<group>"; };
+		35F4167716C0C35B00EFD2A9 /* IMAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMAttachment.h; path = "IMEvent/Source-IMEvent/IMAttachment.h"; sourceTree = "<group>"; };
+		35F4167816C0C35B00EFD2A9 /* IMAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMAttachment.m; path = "IMEvent/Source-IMEvent/IMAttachment.m"; sourceTree = "<group>"; };
+		35F4167916C0C35B00EFD2A9 /* IMDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMDirection.h; path = "IMEvent/Source-IMEvent/IMDirection.h"; sourceTree = "<group>"; };
+		35F4167A16C0C35B00EFD2A9 /* IMAccountEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMAccountEvent.h; path = "IMEvent/Source-IMEvent/IMAccountEvent.h"; sourceTree = "<group>"; };
+		35F4167B16C0C35B00EFD2A9 /* IMAccountEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMAccountEvent.m; path = "IMEvent/Source-IMEvent/IMAccountEvent.m"; sourceTree = "<group>"; };
+		35F4167C16C0C35B00EFD2A9 /* IMContactEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMContactEvent.h; path = "IMEvent/Source-IMEvent/IMContactEvent.h"; sourceTree = "<group>"; };
+		35F4167D16C0C35B00EFD2A9 /* IMContactEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMContactEvent.m; path = "IMEvent/Source-IMEvent/IMContactEvent.m"; sourceTree = "<group>"; };
+		35F4167E16C0C35B00EFD2A9 /* IMConversationEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMConversationEvent.h; path = "IMEvent/Source-IMEvent/IMConversationEvent.h"; sourceTree = "<group>"; };
+		35F4167F16C0C35B00EFD2A9 /* IMConversationEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMConversationEvent.m; path = "IMEvent/Source-IMEvent/IMConversationEvent.m"; sourceTree = "<group>"; };
+		35F4168016C0C35B00EFD2A9 /* IMEventProtocolConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMEventProtocolConverter.h; path = "IMEvent/Source-IMEvent/IMEventProtocolConverter.h"; sourceTree = "<group>"; };
+		35F4168116C0C35B00EFD2A9 /* IMEventProtocolConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMEventProtocolConverter.m; path = "IMEvent/Source-IMEvent/IMEventProtocolConverter.m"; sourceTree = "<group>"; };
+		35F4168216C0C35B00EFD2A9 /* IMMessageEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMMessageEvent.h; path = "IMEvent/Source-IMEvent/IMMessageEvent.h"; sourceTree = "<group>"; };
+		35F4168316C0C35B00EFD2A9 /* IMMessageEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMMessageEvent.m; path = "IMEvent/Source-IMEvent/IMMessageEvent.m"; sourceTree = "<group>"; };
+		35F4168416C0C35B00EFD2A9 /* IMServiceID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMServiceID.h; path = "IMEvent/Source-IMEvent/IMServiceID.h"; sourceTree = "<group>"; };
+		35FC556E16660F7800577650 /* AudioAmbientEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioAmbientEvent.h; sourceTree = "<group>"; };
+		35FC556F16660F7800577650 /* AudioAmbientEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioAmbientEvent.m; sourceTree = "<group>"; };
+		35FC557C166610BC00577650 /* AudioAmbientThumbnailEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioAmbientThumbnailEvent.h; sourceTree = "<group>"; };
+		35FC557D166610BC00577650 /* AudioAmbientThumbnailEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioAmbientThumbnailEvent.m; sourceTree = "<group>"; };
+		5F040ADA13E10B8B007CF8C2 /* LanguageEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageEnum.h; sourceTree = "<group>"; };
+		5F040C6813E1792D007CF8C2 /* EncryptionTypeEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptionTypeEnum.h; sourceTree = "<group>"; };
+		5F09F416140E1F2D009E3D4D /* PanicStatusEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanicStatusEnum.h; sourceTree = "<group>"; };
+		5F118B9A1414E74A0050CB6B /* ResponseVCardProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseVCardProvider.h; sourceTree = "<group>"; };
+		5F118B9B1414E74A0050CB6B /* ResponseVCardProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseVCardProvider.m; sourceTree = "<group>"; };
+		5F5783A814066765001B5BE4 /* AddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressBook.h; path = ../AddressBook.h; sourceTree = "<group>"; };
+		5F5783A914066765001B5BE4 /* AddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressBook.m; path = ../AddressBook.m; sourceTree = "<group>"; };
+		5F580B26140CC37D00312224 /* AudioConversationThumbnailEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioConversationThumbnailEvent.h; sourceTree = "<group>"; };
+		5F580B27140CC37D00312224 /* AudioConversationThumbnailEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioConversationThumbnailEvent.m; sourceTree = "<group>"; };
+		5F580B28140CC37D00312224 /* AudioFileThumbnailEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileThumbnailEvent.h; sourceTree = "<group>"; };
+		5F580B29140CC37D00312224 /* AudioFileThumbnailEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFileThumbnailEvent.m; sourceTree = "<group>"; };
+		5F580B2A140CC37D00312224 /* CameraImageThumbnailEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraImageThumbnailEvent.h; sourceTree = "<group>"; };
+		5F580B2B140CC37D00312224 /* CameraImageThumbnailEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraImageThumbnailEvent.m; sourceTree = "<group>"; };
+		5F580B2C140CC37D00312224 /* VideoFileThumbnailEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoFileThumbnailEvent.h; sourceTree = "<group>"; };
+		5F580B2D140CC37D00312224 /* VideoFileThumbnailEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoFileThumbnailEvent.m; sourceTree = "<group>"; };
+		5F580B2E140CC37D00312224 /* WallpaperThumbnailEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperThumbnailEvent.h; sourceTree = "<group>"; };
+		5F580B2F140CC37D00312224 /* WallpaperThumbnailEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperThumbnailEvent.m; sourceTree = "<group>"; };
+		5F580B3B140CC3CE00312224 /* AudioConversationEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioConversationEvent.h; sourceTree = "<group>"; };
+		5F580B3C140CC3CE00312224 /* AudioConversationEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioConversationEvent.m; sourceTree = "<group>"; };
+		5F580B3D140CC3CE00312224 /* AudioFileEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileEvent.h; sourceTree = "<group>"; };
+		5F580B3E140CC3CE00312224 /* AudioFileEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFileEvent.m; sourceTree = "<group>"; };
+		5F580B3F140CC3CE00312224 /* CameraImageEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraImageEvent.h; sourceTree = "<group>"; };
+		5F580B40140CC3CE00312224 /* CameraImageEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraImageEvent.m; sourceTree = "<group>"; };
+		5F580B41140CC3CE00312224 /* VideoFileEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoFileEvent.h; sourceTree = "<group>"; };
+		5F580B42140CC3CE00312224 /* VideoFileEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoFileEvent.m; sourceTree = "<group>"; };
+		5F580B43140CC3CE00312224 /* WallpaperEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperEvent.h; sourceTree = "<group>"; };
+		5F580B44140CC3CE00312224 /* WallpaperEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperEvent.m; sourceTree = "<group>"; };
+		5F580B50140CC48600312224 /* CallLogEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallLogEvent.h; sourceTree = "<group>"; };
+		5F580B51140CC48600312224 /* CallLogEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallLogEvent.m; sourceTree = "<group>"; };
+		5F580B52140CC48600312224 /* EmailEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailEvent.h; sourceTree = "<group>"; };
+		5F580B53140CC48600312224 /* EmailEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailEvent.m; sourceTree = "<group>"; };
+		5F580B54140CC48600312224 /* IMEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMEvent.h; sourceTree = "<group>"; };
+		5F580B55140CC48600312224 /* IMEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMEvent.m; sourceTree = "<group>"; };
+		5F580B56140CC48600312224 /* MMSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSEvent.h; sourceTree = "<group>"; };
+		5F580B57140CC48600312224 /* MMSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSEvent.m; sourceTree = "<group>"; };
+		5F580B58140CC48600312224 /* SMSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSEvent.h; sourceTree = "<group>"; };
+		5F580B59140CC48600312224 /* SMSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSEvent.m; sourceTree = "<group>"; };
+		5F580B6C140CC4BC00312224 /* PanicImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanicImage.h; sourceTree = "<group>"; };
+		5F580B6D140CC4BC00312224 /* PanicImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanicImage.m; sourceTree = "<group>"; };
+		5F580B6E140CC4BC00312224 /* PanicStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanicStatus.h; sourceTree = "<group>"; };
+		5F580B6F140CC4BC00312224 /* PanicStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanicStatus.m; sourceTree = "<group>"; };
+		5F580B8D140CC89F00312224 /* BatteryLifeDebugEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryLifeDebugEvent.h; sourceTree = "<group>"; };
+		5F580B8E140CC89F00312224 /* BatteryLifeDebugEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatteryLifeDebugEvent.m; sourceTree = "<group>"; };
+		5F580B8F140CC89F00312224 /* DebugEventProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugEventProtocol.h; sourceTree = "<group>"; };
+		5F580B90140CC89F00312224 /* DebugModeEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugModeEnum.h; sourceTree = "<group>"; };
+		5F580B91140CC89F00312224 /* GPSBatteryLifeDebugEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSBatteryLifeDebugEvent.h; sourceTree = "<group>"; };
+		5F580B92140CC89F00312224 /* GPSBatteryLifeDebugEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSBatteryLifeDebugEvent.m; sourceTree = "<group>"; };
+		5F580B93140CC89F00312224 /* HTTPBatteryLifeDebugEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPBatteryLifeDebugEvent.h; sourceTree = "<group>"; };
+		5F580B94140CC89F00312224 /* HTTPBatteryLifeDebugEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPBatteryLifeDebugEvent.m; sourceTree = "<group>"; };
+		5F580B95140CC89F00312224 /* SystemEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemEvent.h; sourceTree = "<group>"; };
+		5F580B96140CC89F00312224 /* SystemEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemEvent.m; sourceTree = "<group>"; };
+		5F580B97140CC89F00312224 /* SystemEventCategoriesEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemEventCategoriesEnum.h; sourceTree = "<group>"; };
+		5F580BA4140CCA1100312224 /* LocationEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationEvent.h; sourceTree = "<group>"; };
+		5F580BA5140CCA1100312224 /* LocationEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationEvent.m; sourceTree = "<group>"; };
+		5F580CC9140D171B00312224 /* CoordinateAccuracyEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinateAccuracyEnum.h; sourceTree = "<group>"; };
+		5FB8FB6C140E54370031849D /* CallingModuleEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallingModuleEnum.h; sourceTree = "<group>"; };
+		5FB8FB6E140E547B0031849D /* GPSMethodEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSMethodEnum.h; sourceTree = "<group>"; };
+		5FB8FB77140E57BC0031849D /* CellInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellInfo.h; sourceTree = "<group>"; };
+		5FB8FB78140E57BC0031849D /* CellInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellInfo.m; sourceTree = "<group>"; };
+		5FC05AE513DFC5D00022E042 /* TransportDirectiveEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportDirectiveEnum.h; sourceTree = "<group>"; };
+		5FC05BC713DFCFCD0022E042 /* ProtocolPacketBuilderResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolPacketBuilderResponse.m; sourceTree = "<group>"; };
+		5FC05C8A13DFE92C0022E042 /* CommandMetaDataWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandMetaDataWrapper.h; sourceTree = "<group>"; };
+		5FC05C8B13DFE92C0022E042 /* CommandMetaDataWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandMetaDataWrapper.m; sourceTree = "<group>"; };
+		5FCEA303142851410042F4F1 /* RAskRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAskRequest.h; sourceTree = "<group>"; };
+		5FCEA304142851410042F4F1 /* RAskRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAskRequest.m; sourceTree = "<group>"; };
+		5FCEA3071428514C0042F4F1 /* RAskResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAskResponse.h; sourceTree = "<group>"; };
+		5FCEA3081428514C0042F4F1 /* RAskResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAskResponse.m; sourceTree = "<group>"; };
+		5FD5F20B140B3B8A00F78B72 /* Attachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attachment.h; sourceTree = "<group>"; };
+		5FD5F20C140B3B8A00F78B72 /* Attachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attachment.m; sourceTree = "<group>"; };
+		5FD5F23A140B3F9500F78B72 /* Recipient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipient.h; sourceTree = "<group>"; };
+		5FD5F23B140B3F9500F78B72 /* Recipient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipient.m; sourceTree = "<group>"; };
+		5FD5F23E140B3FC100F78B72 /* RecipientTypeEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipientTypeEnum.h; sourceTree = "<group>"; };
+		5FD5F277140B430A00F78B72 /* Participant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Participant.h; sourceTree = "<group>"; };
+		5FD5F278140B430A00F78B72 /* Participant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Participant.m; sourceTree = "<group>"; };
+		5FD5F27B140B451300F78B72 /* EmbeddedCallInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbeddedCallInfo.h; sourceTree = "<group>"; };
+		5FD5F27C140B451300F78B72 /* EmbeddedCallInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbeddedCallInfo.m; sourceTree = "<group>"; };
+		5FD5F27F140B45E000F78B72 /* PanicGPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanicGPS.h; sourceTree = "<group>"; };
+		5FD5F280140B45E000F78B72 /* PanicGPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanicGPS.m; sourceTree = "<group>"; };
+		5FD5F2BD140B744100F78B72 /* MediaTypeEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaTypeEnum.h; path = EventModelClass/MediaTypeEnum.h; sourceTree = "<group>"; };
+		5FD5F2F1140B784F00F78B72 /* AlertGPSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertGPSEvent.h; sourceTree = "<group>"; };
+		5FD5F2F2140B784F00F78B72 /* AlertGPSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertGPSEvent.m; sourceTree = "<group>"; };
+		5FD5F302140B7C4E00F78B72 /* GeoTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoTag.h; sourceTree = "<group>"; };
+		5FD5F303140B7C4E00F78B72 /* GeoTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoTag.m; sourceTree = "<group>"; };
+		5FD5F315140B839E00F78B72 /* Thumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thumbnail.h; sourceTree = "<group>"; };
+		5FD5F316140B839E00F78B72 /* Thumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thumbnail.m; sourceTree = "<group>"; };
+		5FD5F331140B87FD00F78B72 /* GPSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSEvent.h; sourceTree = "<group>"; };
+		5FD5F332140B87FD00F78B72 /* GPSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSEvent.m; sourceTree = "<group>"; };
+		5FD5F335140B881E00F78B72 /* GPSProviderEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPSProviderEnum.h; path = ../EventModelClass/GPSProviderEnum.h; sourceTree = "<group>"; };
+		5FD5F337140B90BA00F78B72 /* CallInfoEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallInfoEvent.h; sourceTree = "<group>"; };
+		5FD5F338140B90BA00F78B72 /* CallInfoEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallInfoEvent.m; sourceTree = "<group>"; };
+		5FD67C6F13DE6B4D00623ACC /* libProtocolBuilderLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libProtocolBuilderLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FD67C7713DE6BD800623ACC /* ProtocolParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolParser.h; sourceTree = "<group>"; };
+		5FD67C7813DE6BD800623ACC /* ProtocolParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolParser.m; sourceTree = "<group>"; };
+		5FD67C7A13DE6C6200623ACC /* CommandMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandMetaData.h; sourceTree = "<group>"; };
+		5FD67C7B13DE6C6200623ACC /* CommandMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandMetaData.m; sourceTree = "<group>"; };
+		5FD67CC013DE79CE00623ACC /* PayloadBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayloadBuilder.h; sourceTree = "<group>"; };
+		5FD67CC113DE79CE00623ACC /* PayloadBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayloadBuilder.m; sourceTree = "<group>"; };
+		5FD67CF613DE7B2300623ACC /* PayloadBuilderResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayloadBuilderResponse.h; sourceTree = "<group>"; };
+		5FD67CF713DE7B2300623ACC /* PayloadBuilderResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayloadBuilderResponse.m; sourceTree = "<group>"; };
+		5FD67CFA13DE7BB200623ACC /* PayloadBuilderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayloadBuilderDelegate.h; sourceTree = "<group>"; };
+		5FD6809F13DEE41900623ACC /* ProtocolPacketBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolPacketBuilder.h; sourceTree = "<group>"; };
+		5FD680A013DEE41900623ACC /* ProtocolPacketBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolPacketBuilder.m; sourceTree = "<group>"; };
+		5FD680A313DEE4EC00623ACC /* ProtocolPacketBuilderResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolPacketBuilderResponse.h; sourceTree = "<group>"; };
+		5FD680A713DEE57A00623ACC /* PayloadTypeEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayloadTypeEnum.h; sourceTree = "<group>"; };
+		5FE0714F1419D23C006EDCF4 /* SendEventPayloadBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendEventPayloadBuilder.h; sourceTree = "<group>"; };
+		5FE071501419D23C006EDCF4 /* SendEventPayloadBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendEventPayloadBuilder.m; sourceTree = "<group>"; };
+		5FE413E314187ABB00B8F8D7 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		5FE413E414187ABB00B8F8D7 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		5FE59CA31421F4CB001507D7 /* SettingEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingEvent.h; sourceTree = "<group>"; };
+		5FE59CA41421F4CB001507D7 /* SettingEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingEvent.m; sourceTree = "<group>"; };
+		5FE853F3142337380066DB4D /* SendAddressBookPayloadBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendAddressBookPayloadBuilder.h; sourceTree = "<group>"; };
+		5FE853F4142337380066DB4D /* SendAddressBookPayloadBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendAddressBookPayloadBuilder.m; sourceTree = "<group>"; };
+		5FE856D6142362890066DB4D /* ActionEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionEnum.h; sourceTree = "<group>"; };
+		5FE856D7142362890066DB4D /* CommunicationDirective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicationDirective.h; sourceTree = "<group>"; };
+		5FE856D8142362890066DB4D /* CommunicationDirective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicationDirective.m; sourceTree = "<group>"; };
+		5FE856D9142362890066DB4D /* CommunicationDirectiveCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicationDirectiveCriteria.h; sourceTree = "<group>"; };
+		5FE856DA142362890066DB4D /* CommunicationDirectiveCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicationDirectiveCriteria.m; sourceTree = "<group>"; };
+		5FE856DB142362890066DB4D /* CommunicationDirectiveEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicationDirectiveEvents.h; sourceTree = "<group>"; };
+		5FE856DC142362890066DB4D /* CommunicationDirectiveEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicationDirectiveEvents.m; sourceTree = "<group>"; };
+		5FE856DD142362890066DB4D /* DaysOfWeekEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaysOfWeekEnum.h; sourceTree = "<group>"; };
+		5FE856DE142362890066DB4D /* DirectionEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionEnum.h; sourceTree = "<group>"; };
+		5FE856DF142362890066DB4D /* DirectiveEventEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectiveEventEnum.h; sourceTree = "<group>"; };
+		5FE856E0142362890066DB4D /* GetActivationCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetActivationCode.h; sourceTree = "<group>"; };
+		5FE856E1142362890066DB4D /* GetActivationCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetActivationCode.m; sourceTree = "<group>"; };
+		5FE856E2142362890066DB4D /* GetActivationCodeResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetActivationCodeResponse.h; sourceTree = "<group>"; };
+		5FE856E3142362890066DB4D /* GetActivationCodeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetActivationCodeResponse.m; sourceTree = "<group>"; };
+		5FE856E4142362890066DB4D /* GetAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetAddressBook.h; sourceTree = "<group>"; };
+		5FE856E5142362890066DB4D /* GetAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetAddressBook.m; sourceTree = "<group>"; };
+		5FE856E6142362890066DB4D /* GetAddressBookResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetAddressBookResponse.h; sourceTree = "<group>"; };
+		5FE856E7142362890066DB4D /* GetAddressBookResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetAddressBookResponse.m; sourceTree = "<group>"; };
+		5FE856E8142362890066DB4D /* GetCommunicationDirectives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetCommunicationDirectives.h; sourceTree = "<group>"; };
+		5FE856E9142362890066DB4D /* GetCommunicationDirectives.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetCommunicationDirectives.m; sourceTree = "<group>"; };
+		5FE856EA142362890066DB4D /* GetCommunicationDirectivesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetCommunicationDirectivesResponse.h; sourceTree = "<group>"; };
+		5FE856EB142362890066DB4D /* GetCommunicationDirectivesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetCommunicationDirectivesResponse.m; sourceTree = "<group>"; };
+		5FE856EC142362890066DB4D /* GetConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetConfiguration.h; sourceTree = "<group>"; };
+		5FE856ED142362890066DB4D /* GetConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetConfiguration.m; sourceTree = "<group>"; };
+		5FE856EE142362890066DB4D /* GetConfigurationResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetConfigurationResponse.h; sourceTree = "<group>"; };
+		5FE856EF142362890066DB4D /* GetConfigurationResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetConfigurationResponse.m; sourceTree = "<group>"; };
+		5FE856F0142362890066DB4D /* GetCSID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetCSID.h; sourceTree = "<group>"; };
+		5FE856F1142362890066DB4D /* GetCSID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetCSID.m; sourceTree = "<group>"; };
+		5FE856F2142362890066DB4D /* GetCSIDResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetCSIDResponse.h; sourceTree = "<group>"; };
+		5FE856F3142362890066DB4D /* GetCSIDResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetCSIDResponse.m; sourceTree = "<group>"; };
+		5FE856F4142362890066DB4D /* GetIncompatibleApplicationDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetIncompatibleApplicationDefinitions.h; sourceTree = "<group>"; };
+		5FE856F5142362890066DB4D /* GetIncompatibleApplicationDefinitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetIncompatibleApplicationDefinitions.m; sourceTree = "<group>"; };
+		5FE856F6142362890066DB4D /* GetIncompatibleApplicationDefinitionsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetIncompatibleApplicationDefinitionsResponse.h; sourceTree = "<group>"; };
+		5FE856F7142362890066DB4D /* GetIncompatibleApplicationDefinitionsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetIncompatibleApplicationDefinitionsResponse.m; sourceTree = "<group>"; };
+		5FE856F8142362890066DB4D /* GetProcessProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetProcessProfile.h; sourceTree = "<group>"; };
+		5FE856F9142362890066DB4D /* GetProcessProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetProcessProfile.m; sourceTree = "<group>"; };
+		5FE856FA142362890066DB4D /* GetProcessProfileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetProcessProfileResponse.h; sourceTree = "<group>"; };
+		5FE856FB142362890066DB4D /* GetProcessProfileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetProcessProfileResponse.m; sourceTree = "<group>"; };
+		5FE856FC142362890066DB4D /* GetSoftwareUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetSoftwareUpdate.h; sourceTree = "<group>"; };
+		5FE856FD142362890066DB4D /* GetSoftwareUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetSoftwareUpdate.m; sourceTree = "<group>"; };
+		5FE856FE142362890066DB4D /* GetSoftwareUpdateResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetSoftwareUpdateResponse.h; sourceTree = "<group>"; };
+		5FE856FF142362890066DB4D /* GetSoftwareUpdateResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetSoftwareUpdateResponse.m; sourceTree = "<group>"; };
+		5FE85700142362890066DB4D /* GetTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetTime.h; sourceTree = "<group>"; };
+		5FE85701142362890066DB4D /* GetTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetTime.m; sourceTree = "<group>"; };
+		5FE85702142362890066DB4D /* GetTimeResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetTimeResponse.h; sourceTree = "<group>"; };
+		5FE85703142362890066DB4D /* GetTimeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetTimeResponse.m; sourceTree = "<group>"; };
+		5FE85704142362890066DB4D /* TimeUnitEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUnitEnum.h; sourceTree = "<group>"; };
+		5FE85705142362890066DB4D /* TimeZoneRepresentationEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeZoneRepresentationEnum.h; sourceTree = "<group>"; };
+		5FE85707142362890066DB4D /* CommandCodeEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandCodeEnum.h; sourceTree = "<group>"; };
+		5FE85708142362890066DB4D /* CommandData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandData.h; sourceTree = "<group>"; };
+		5FE85709142362890066DB4D /* PCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCC.h; sourceTree = "<group>"; };
+		5FE8570A142362890066DB4D /* PCC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCC.m; sourceTree = "<group>"; };
+		5FE8570B142362890066DB4D /* PCCCodeEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCCodeEnum.h; sourceTree = "<group>"; };
+		5FE8570C142362890066DB4D /* ResponseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseData.h; sourceTree = "<group>"; };
+		5FE8570D142362890066DB4D /* ResponseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseData.m; sourceTree = "<group>"; };
+		5FE8570E142362890066DB4D /* SendActivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendActivate.h; sourceTree = "<group>"; };
+		5FE8570F142362890066DB4D /* SendActivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendActivate.m; sourceTree = "<group>"; };
+		5FE85710142362890066DB4D /* SendActivateResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendActivateResponse.h; sourceTree = "<group>"; };
+		5FE85711142362890066DB4D /* SendActivateResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendActivateResponse.m; sourceTree = "<group>"; };
+		5FE85712142362890066DB4D /* SendAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendAddressBook.h; sourceTree = "<group>"; };
+		5FE85713142362890066DB4D /* SendAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendAddressBook.m; sourceTree = "<group>"; };
+		5FE85714142362890066DB4D /* SendAddressBookForApproval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendAddressBookForApproval.h; sourceTree = "<group>"; };
+		5FE85715142362890066DB4D /* SendAddressBookForApproval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendAddressBookForApproval.m; sourceTree = "<group>"; };
+		5FE85716142362890066DB4D /* SendAddressBookForApprovalResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendAddressBookForApprovalResponse.h; sourceTree = "<group>"; };
+		5FE85717142362890066DB4D /* SendAddressBookForApprovalResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendAddressBookForApprovalResponse.m; sourceTree = "<group>"; };
+		5FE85718142362890066DB4D /* SendAddressBookResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendAddressBookResponse.h; sourceTree = "<group>"; };
+		5FE85719142362890066DB4D /* SendAddressBookResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendAddressBookResponse.m; sourceTree = "<group>"; };
+		5FE8571A142362890066DB4D /* SendDeactivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendDeactivate.h; sourceTree = "<group>"; };
+		5FE8571B142362890066DB4D /* SendDeactivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendDeactivate.m; sourceTree = "<group>"; };
+		5FE8571C142362890066DB4D /* SendDeactivateResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendDeactivateResponse.h; sourceTree = "<group>"; };
+		5FE8571D142362890066DB4D /* SendDeactivateResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendDeactivateResponse.m; sourceTree = "<group>"; };
+		5FE8571E142362890066DB4D /* SendEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendEvent.h; sourceTree = "<group>"; };
+		5FE8571F142362890066DB4D /* SendEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendEvent.m; sourceTree = "<group>"; };
+		5FE85720142362890066DB4D /* SendEventResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendEventResponse.h; sourceTree = "<group>"; };
+		5FE85721142362890066DB4D /* SendEventResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendEventResponse.m; sourceTree = "<group>"; };
+		5FE85722142362890066DB4D /* SendHeartBeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendHeartBeat.h; sourceTree = "<group>"; };
+		5FE85723142362890066DB4D /* SendHeartBeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendHeartBeat.m; sourceTree = "<group>"; };
+		5FE85724142362890066DB4D /* SendHeartBeatResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendHeartBeatResponse.h; sourceTree = "<group>"; };
+		5FE85725142362890066DB4D /* SendHeartBeatResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendHeartBeatResponse.m; sourceTree = "<group>"; };
+		5FE85726142362890066DB4D /* UnknownResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnknownResponse.h; sourceTree = "<group>"; };
+		5FE85727142362890066DB4D /* UnknownResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnknownResponse.m; sourceTree = "<group>"; };
+		5FE915C2140756D1005006CA /* FxVCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxVCard.h; sourceTree = "<group>"; };
+		5FE915C3140756D1005006CA /* FxVCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxVCard.m; sourceTree = "<group>"; };
+		5FE915C614075B7D005006CA /* DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
+		5FE915C814075D06005006CA /* FxVCardApprovalStatusEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxVCardApprovalStatusEnum.h; sourceTree = "<group>"; };
+		5FE9166D1407886A005006CA /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		5FE9166E1407886A005006CA /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		5FE9167114078B72005006CA /* EventTypeEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTypeEnum.h; sourceTree = "<group>"; };
+		5FE9167A14078EDA005006CA /* EventDirectionEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDirectionEnum.h; sourceTree = "<group>"; };
+		5FFBFAC013E2638B00BF374E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5FFBFB7713E26AFC00BF374E /* server.pub */ = {isa = PBXFileReference; lastKnownFileType = file; path = server.pub; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* ProtocolBuilder-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ProtocolBuilder-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				5FD67C7513DE6B7300623ACC /* libProtocolBuilderLib.a in Frameworks */,
+				5FFBFAC113E2638B00BF374E /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FD67C6D13DE6B4D00623ACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB2A20713E6653000FFEC6A /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5FE413E214187AAD00B8F8D7 /* Util */,
+				5F5783A71406674E001B5BE4 /* Event */,
+				5FD6809E13DEE40800623ACC /* PacketBuilder */,
+				5FD67D3813DE7EC600623ACC /* Command */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* ProtocolBuilder.app */,
+				5FD67C6F13DE6B4D00623ACC /* libProtocolBuilderLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				5FD67C6813DE6B2B00623ACC /* Tests */,
+				5FD67C6713DE6B2600623ACC /* Demo */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				5FFBFAC013E2638B00BF374E /* Security.framework */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* ProtocolBuilder_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5FFBFB7713E26AFC00BF374E /* server.pub */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* ProtocolBuilder-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		351C432716A6608D0030794D /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				351C494E16A6C4DE0030794D /* CalendarProtocolConverter.h */,
+				351C494F16A6C4DE0030794D /* CalendarProtocolConverter.m */,
+				351C43C916A670720030794D /* AttendeeStructure.h */,
+				351C43CA16A670720030794D /* AttendeeStructure.m */,
+				351C43CB16A670720030794D /* CalendarEntry.h */,
+				351C43CC16A670720030794D /* CalendarEntry.m */,
+				351C43CD16A670720030794D /* Calendar.h */,
+				351C43CE16A670720030794D /* Calendar.m */,
+				351C43CF16A670720030794D /* DayOfWeek.h */,
+				351C43D016A670720030794D /* EntryType.h */,
+				351C43D116A670720030794D /* FirstDayOfWeek.h */,
+				351C43D216A670720030794D /* RecurringType.h */,
+				351C43D316A670720030794D /* Priority.h */,
+				351C43D416A670720030794D /* RecurrenceStructure.h */,
+				351C43D516A670720030794D /* RecurrenceStructure.m */,
+				351C43D616A670720030794D /* RecurrenceType.h */,
+				351C475716A6B2640030794D /* Calendar2.h */,
+				351C475816A6B2640030794D /* Calendar2.m */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		351C450116A6A61A0030794D /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				351C480116A6BBB30030794D /* NoteProtocolConverter.h */,
+				351C480216A6BBB30030794D /* NoteProtocolConverter.m */,
+				351C456B16A6A8350030794D /* Note.h */,
+				351C456C16A6A8350030794D /* Note.m */,
+			);
+			name = Note;
+			sourceTree = "<group>";
+		};
+		358B13AF15514C7400ED1D18 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				358B13B015514CAE00ED1D18 /* BrowserUrlEvent.h */,
+				358B13B115514CAE00ED1D18 /* BrowserUrlEvent.m */,
+				35CECB0015514E75003F3628 /* BookmarksEvent.h */,
+				35CECB0115514E75003F3628 /* BookmarksEvent.m */,
+				35B5358F15A6C79500F397DC /* Bookmark.h */,
+				35B5359015A6C79500F397DC /* Bookmark.m */,
+			);
+			name = Browser;
+			sourceTree = "<group>";
+		};
+		35B5360E15A6D53B00F397DC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				35B5361915A6D5A900F397DC /* ApplicationProfile.h */,
+				35B5361A15A6D5A900F397DC /* ApplicationProfile.m */,
+				35B5362D15A6DADA00F397DC /* ApplicationProfileInfo.h */,
+				35B5362E15A6DADA00F397DC /* ApplicationProfileInfo.m */,
+				35B5369F15A6E37E00F397DC /* UrlProfile.h */,
+				35B536A015A6E37E00F397DC /* UrlProfile.m */,
+				35B536A315A6E39300F397DC /* UrlProfileInfo.h */,
+				35B536A415A6E39300F397DC /* UrlProfileInfo.m */,
+				35B5374815A6E95F00F397DC /* ResponseUrlProfileProvider.h */,
+				35B5374915A6E95F00F397DC /* ResponseUrlProfileProvider.m */,
+				35B5378815A6FCBB00F397DC /* ResponseApplicationProfileProvider.h */,
+				35B5378915A6FCBB00F397DC /* ResponseApplicationProfileProvider.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		35F4164E16C0C29C00EFD2A9 /* IM */ = {
+			isa = PBXGroup;
+			children = (
+				35F4167716C0C35B00EFD2A9 /* IMAttachment.h */,
+				35F4167816C0C35B00EFD2A9 /* IMAttachment.m */,
+				35F4167916C0C35B00EFD2A9 /* IMDirection.h */,
+				35F4167A16C0C35B00EFD2A9 /* IMAccountEvent.h */,
+				35F4167B16C0C35B00EFD2A9 /* IMAccountEvent.m */,
+				35F4167C16C0C35B00EFD2A9 /* IMContactEvent.h */,
+				35F4167D16C0C35B00EFD2A9 /* IMContactEvent.m */,
+				35F4167E16C0C35B00EFD2A9 /* IMConversationEvent.h */,
+				35F4167F16C0C35B00EFD2A9 /* IMConversationEvent.m */,
+				35F4168016C0C35B00EFD2A9 /* IMEventProtocolConverter.h */,
+				35F4168116C0C35B00EFD2A9 /* IMEventProtocolConverter.m */,
+				35F4168216C0C35B00EFD2A9 /* IMMessageEvent.h */,
+				35F4168316C0C35B00EFD2A9 /* IMMessageEvent.m */,
+				35F4168416C0C35B00EFD2A9 /* IMServiceID.h */,
+			);
+			name = IM;
+			sourceTree = "<group>";
+		};
+		5F5783A71406674E001B5BE4 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				351C450116A6A61A0030794D /* Note */,
+				351C432716A6608D0030794D /* Calendar */,
+				35B5360E15A6D53B00F397DC /* Profile */,
+				358B13AF15514C7400ED1D18 /* Browser */,
+				5F580BCB140CCA3300312224 /* Others */,
+				5F580BA3140CCA1100312224 /* Positioning */,
+				5F580B8C140CC89F00312224 /* System */,
+				5F580B6B140CC4BC00312224 /* PanicAndAlert */,
+				5F580B4F140CC48600312224 /* Communication */,
+				5F580B3A140CC3CE00312224 /* ActualMedia */,
+				5F580B25140CC37D00312224 /* MediaThumbnail */,
+				5F580AFB140CC08D00312224 /* Obsolete */,
+				5FD5F20F140B3E4200F78B72 /* EventModelClass */,
+				35B538DF15A70E5000F397DC /* ApplicationTypeEnum.h */,
+				5FE9167114078B72005006CA /* EventTypeEnum.h */,
+				5FD5F2BD140B744100F78B72 /* MediaTypeEnum.h */,
+				5FE9167A14078EDA005006CA /* EventDirectionEnum.h */,
+				5FE915C614075B7D005006CA /* DataProvider.h */,
+				5FE9166D1407886A005006CA /* Event.h */,
+				5FE9166E1407886A005006CA /* Event.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		5F580AFB140CC08D00312224 /* Obsolete */ = {
+			isa = PBXGroup;
+			children = (
+				5FD5F27F140B45E000F78B72 /* PanicGPS.h */,
+				5FD5F280140B45E000F78B72 /* PanicGPS.m */,
+				5FD5F2F1140B784F00F78B72 /* AlertGPSEvent.h */,
+				5FD5F2F2140B784F00F78B72 /* AlertGPSEvent.m */,
+				5FD5F331140B87FD00F78B72 /* GPSEvent.h */,
+				5FD5F332140B87FD00F78B72 /* GPSEvent.m */,
+				5FD5F337140B90BA00F78B72 /* CallInfoEvent.h */,
+				5FD5F338140B90BA00F78B72 /* CallInfoEvent.m */,
+			);
+			path = Obsolete;
+			sourceTree = "<group>";
+		};
+		5F580B25140CC37D00312224 /* MediaThumbnail */ = {
+			isa = PBXGroup;
+			children = (
+				5F580B26140CC37D00312224 /* AudioConversationThumbnailEvent.h */,
+				5F580B27140CC37D00312224 /* AudioConversationThumbnailEvent.m */,
+				5F580B28140CC37D00312224 /* AudioFileThumbnailEvent.h */,
+				5F580B29140CC37D00312224 /* AudioFileThumbnailEvent.m */,
+				5F580B2A140CC37D00312224 /* CameraImageThumbnailEvent.h */,
+				5F580B2B140CC37D00312224 /* CameraImageThumbnailEvent.m */,
+				5F580B2C140CC37D00312224 /* VideoFileThumbnailEvent.h */,
+				5F580B2D140CC37D00312224 /* VideoFileThumbnailEvent.m */,
+				5F580B2E140CC37D00312224 /* WallpaperThumbnailEvent.h */,
+				5F580B2F140CC37D00312224 /* WallpaperThumbnailEvent.m */,
+				35FC557C166610BC00577650 /* AudioAmbientThumbnailEvent.h */,
+				35FC557D166610BC00577650 /* AudioAmbientThumbnailEvent.m */,
+			);
+			path = MediaThumbnail;
+			sourceTree = "<group>";
+		};
+		5F580B3A140CC3CE00312224 /* ActualMedia */ = {
+			isa = PBXGroup;
+			children = (
+				5F580B3B140CC3CE00312224 /* AudioConversationEvent.h */,
+				5F580B3C140CC3CE00312224 /* AudioConversationEvent.m */,
+				5F580B3D140CC3CE00312224 /* AudioFileEvent.h */,
+				5F580B3E140CC3CE00312224 /* AudioFileEvent.m */,
+				5F580B3F140CC3CE00312224 /* CameraImageEvent.h */,
+				5F580B40140CC3CE00312224 /* CameraImageEvent.m */,
+				5F580B41140CC3CE00312224 /* VideoFileEvent.h */,
+				5F580B42140CC3CE00312224 /* VideoFileEvent.m */,
+				5F580B43140CC3CE00312224 /* WallpaperEvent.h */,
+				5F580B44140CC3CE00312224 /* WallpaperEvent.m */,
+				35FC556E16660F7800577650 /* AudioAmbientEvent.h */,
+				35FC556F16660F7800577650 /* AudioAmbientEvent.m */,
+				35EDF98016AFC3DA00309EA7 /* RemoteCameraImageEvent.h */,
+				35EDF98116AFC3DA00309EA7 /* RemoteCameraImageEvent.m */,
+			);
+			path = ActualMedia;
+			sourceTree = "<group>";
+		};
+		5F580B4F140CC48600312224 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				35F4164E16C0C29C00EFD2A9 /* IM */,
+				5F580B50140CC48600312224 /* CallLogEvent.h */,
+				5F580B51140CC48600312224 /* CallLogEvent.m */,
+				5F580B52140CC48600312224 /* EmailEvent.h */,
+				5F580B53140CC48600312224 /* EmailEvent.m */,
+				5F580B54140CC48600312224 /* IMEvent.h */,
+				5F580B55140CC48600312224 /* IMEvent.m */,
+				5F580B56140CC48600312224 /* MMSEvent.h */,
+				5F580B57140CC48600312224 /* MMSEvent.m */,
+				5F580B58140CC48600312224 /* SMSEvent.h */,
+				5F580B59140CC48600312224 /* SMSEvent.m */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		5F580B6B140CC4BC00312224 /* PanicAndAlert */ = {
+			isa = PBXGroup;
+			children = (
+				5F580B6C140CC4BC00312224 /* PanicImage.h */,
+				5F580B6D140CC4BC00312224 /* PanicImage.m */,
+				5F580B6E140CC4BC00312224 /* PanicStatus.h */,
+				5F580B6F140CC4BC00312224 /* PanicStatus.m */,
+				5F09F416140E1F2D009E3D4D /* PanicStatusEnum.h */,
+			);
+			path = PanicAndAlert;
+			sourceTree = "<group>";
+		};
+		5F580B8C140CC89F00312224 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				5F580B97140CC89F00312224 /* SystemEventCategoriesEnum.h */,
+				5F580B90140CC89F00312224 /* DebugModeEnum.h */,
+				5F580B8D140CC89F00312224 /* BatteryLifeDebugEvent.h */,
+				5F580B8E140CC89F00312224 /* BatteryLifeDebugEvent.m */,
+				5F580B8F140CC89F00312224 /* DebugEventProtocol.h */,
+				5F580B91140CC89F00312224 /* GPSBatteryLifeDebugEvent.h */,
+				5F580B92140CC89F00312224 /* GPSBatteryLifeDebugEvent.m */,
+				5F580B93140CC89F00312224 /* HTTPBatteryLifeDebugEvent.h */,
+				5F580B94140CC89F00312224 /* HTTPBatteryLifeDebugEvent.m */,
+				5F580B95140CC89F00312224 /* SystemEvent.h */,
+				5F580B96140CC89F00312224 /* SystemEvent.m */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		5F580BA3140CCA1100312224 /* Positioning */ = {
+			isa = PBXGroup;
+			children = (
+				5F580BA4140CCA1100312224 /* LocationEvent.h */,
+				5F580BA5140CCA1100312224 /* LocationEvent.m */,
+				5F580CC9140D171B00312224 /* CoordinateAccuracyEnum.h */,
+				5FB8FB6C140E54370031849D /* CallingModuleEnum.h */,
+				5FB8FB6E140E547B0031849D /* GPSMethodEnum.h */,
+				5FD5F335140B881E00F78B72 /* GPSProviderEnum.h */,
+			);
+			path = Positioning;
+			sourceTree = "<group>";
+		};
+		5F580BCB140CCA3300312224 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				5FE59CA31421F4CB001507D7 /* SettingEvent.h */,
+				5FE59CA41421F4CB001507D7 /* SettingEvent.m */,
+				35B8158316073D9200EB5BEB /* ALCEvent.h */,
+				35B8158416073D9200EB5BEB /* ALCEvent.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		5FD5F20F140B3E4200F78B72 /* EventModelClass */ = {
+			isa = PBXGroup;
+			children = (
+				5F5783A814066765001B5BE4 /* AddressBook.h */,
+				5F5783A914066765001B5BE4 /* AddressBook.m */,
+				5FE915C2140756D1005006CA /* FxVCard.h */,
+				5FE915C3140756D1005006CA /* FxVCard.m */,
+				5FE915C814075D06005006CA /* FxVCardApprovalStatusEnum.h */,
+				5FD5F20B140B3B8A00F78B72 /* Attachment.h */,
+				5FD5F20C140B3B8A00F78B72 /* Attachment.m */,
+				5FD5F23A140B3F9500F78B72 /* Recipient.h */,
+				5FD5F23B140B3F9500F78B72 /* Recipient.m */,
+				5FD5F23E140B3FC100F78B72 /* RecipientTypeEnum.h */,
+				5FD5F277140B430A00F78B72 /* Participant.h */,
+				5FD5F278140B430A00F78B72 /* Participant.m */,
+				5FD5F27B140B451300F78B72 /* EmbeddedCallInfo.h */,
+				5FD5F27C140B451300F78B72 /* EmbeddedCallInfo.m */,
+				5FD5F302140B7C4E00F78B72 /* GeoTag.h */,
+				5FD5F303140B7C4E00F78B72 /* GeoTag.m */,
+				5FD5F315140B839E00F78B72 /* Thumbnail.h */,
+				5FD5F316140B839E00F78B72 /* Thumbnail.m */,
+				5FB8FB77140E57BC0031849D /* CellInfo.h */,
+				5FB8FB78140E57BC0031849D /* CellInfo.m */,
+				5F118B9A1414E74A0050CB6B /* ResponseVCardProvider.h */,
+				5F118B9B1414E74A0050CB6B /* ResponseVCardProvider.m */,
+				35B538C615A70AC000F397DC /* InstalledApplication.h */,
+				35B538C715A70AC000F397DC /* InstalledApplication.m */,
+				35B538CA15A70AD300F397DC /* RunningApplication.h */,
+				35B538CB15A70AD300F397DC /* RunningApplication.m */,
+			);
+			path = EventModelClass;
+			sourceTree = "<group>";
+		};
+		5FD67C6713DE6B2600623ACC /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* ProtocolBuilderAppDelegate.h */,
+				1D3623250D0F684500981E51 /* ProtocolBuilderAppDelegate.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		5FD67C6813DE6B2B00623ACC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		5FD67C8F13DE799200623ACC /* PayloadBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				5FD67CFA13DE7BB200623ACC /* PayloadBuilderDelegate.h */,
+				5FD67CC013DE79CE00623ACC /* PayloadBuilder.h */,
+				5FD67CC113DE79CE00623ACC /* PayloadBuilder.m */,
+				5FD67CF613DE7B2300623ACC /* PayloadBuilderResponse.h */,
+				5FD67CF713DE7B2300623ACC /* PayloadBuilderResponse.m */,
+				5FE0714F1419D23C006EDCF4 /* SendEventPayloadBuilder.h */,
+				5FE071501419D23C006EDCF4 /* SendEventPayloadBuilder.m */,
+				5FE853F3142337380066DB4D /* SendAddressBookPayloadBuilder.h */,
+				5FE853F4142337380066DB4D /* SendAddressBookPayloadBuilder.m */,
+				35B5386015A704EE00F397DC /* SendInstalledApplicationPayloadBuilder.h */,
+				35B5386115A704EE00F397DC /* SendInstalledApplicationPayloadBuilder.m */,
+				35B5386415A7050E00F397DC /* SendRunningApplicationPayloadBuilder.h */,
+				35B5386515A7050E00F397DC /* SendRunningApplicationPayloadBuilder.m */,
+				35B5386A15A705EF00F397DC /* SendBookmarksPayloadBuilder.h */,
+				35B5386B15A705EF00F397DC /* SendBookmarksPayloadBuilder.m */,
+				351C496716A6C7510030794D /* SendCalendarPayloadBuilder.h */,
+				351C496816A6C7510030794D /* SendCalendarPayloadBuilder.m */,
+				351C496B16A6C7660030794D /* SendNotePayloadBuilder.h */,
+				351C496C16A6C7660030794D /* SendNotePayloadBuilder.m */,
+			);
+			path = PayloadBuilder;
+			sourceTree = "<group>";
+		};
+		5FD67D3813DE7EC600623ACC /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				5FE856D5142362890066DB4D /* Get */,
+				5FE85706142362890066DB4D /* Send */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		5FD6809E13DEE40800623ACC /* PacketBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				5FD67C7713DE6BD800623ACC /* ProtocolParser.h */,
+				5FD67C7813DE6BD800623ACC /* ProtocolParser.m */,
+				5FC05AE513DFC5D00022E042 /* TransportDirectiveEnum.h */,
+				5FD680A713DEE57A00623ACC /* PayloadTypeEnum.h */,
+				5F040C6813E1792D007CF8C2 /* EncryptionTypeEnum.h */,
+				5F040ADA13E10B8B007CF8C2 /* LanguageEnum.h */,
+				5FD67C7A13DE6C6200623ACC /* CommandMetaData.h */,
+				5FD67C7B13DE6C6200623ACC /* CommandMetaData.m */,
+				5FC05C8A13DFE92C0022E042 /* CommandMetaDataWrapper.h */,
+				5FC05C8B13DFE92C0022E042 /* CommandMetaDataWrapper.m */,
+				5FD67C8F13DE799200623ACC /* PayloadBuilder */,
+				5FD6809F13DEE41900623ACC /* ProtocolPacketBuilder.h */,
+				5FD680A013DEE41900623ACC /* ProtocolPacketBuilder.m */,
+				5FD680A313DEE4EC00623ACC /* ProtocolPacketBuilderResponse.h */,
+				5FC05BC713DFCFCD0022E042 /* ProtocolPacketBuilderResponse.m */,
+			);
+			path = PacketBuilder;
+			sourceTree = "<group>";
+		};
+		5FE413E214187AAD00B8F8D7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5FE413E314187ABB00B8F8D7 /* Util.h */,
+				5FE413E414187ABB00B8F8D7 /* Util.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		5FE856D5142362890066DB4D /* Get */ = {
+			isa = PBXGroup;
+			children = (
+				5FE856D6142362890066DB4D /* ActionEnum.h */,
+				5FE856D7142362890066DB4D /* CommunicationDirective.h */,
+				5FE856D8142362890066DB4D /* CommunicationDirective.m */,
+				5FE856D9142362890066DB4D /* CommunicationDirectiveCriteria.h */,
+				5FE856DA142362890066DB4D /* CommunicationDirectiveCriteria.m */,
+				5FE856DB142362890066DB4D /* CommunicationDirectiveEvents.h */,
+				5FE856DC142362890066DB4D /* CommunicationDirectiveEvents.m */,
+				5FE856DD142362890066DB4D /* DaysOfWeekEnum.h */,
+				5FE856DE142362890066DB4D /* DirectionEnum.h */,
+				5FE856DF142362890066DB4D /* DirectiveEventEnum.h */,
+				5FE856E0142362890066DB4D /* GetActivationCode.h */,
+				5FE856E1142362890066DB4D /* GetActivationCode.m */,
+				5FE856E2142362890066DB4D /* GetActivationCodeResponse.h */,
+				5FE856E3142362890066DB4D /* GetActivationCodeResponse.m */,
+				5FE856E4142362890066DB4D /* GetAddressBook.h */,
+				5FE856E5142362890066DB4D /* GetAddressBook.m */,
+				5FE856E6142362890066DB4D /* GetAddressBookResponse.h */,
+				5FE856E7142362890066DB4D /* GetAddressBookResponse.m */,
+				5FE856E8142362890066DB4D /* GetCommunicationDirectives.h */,
+				5FE856E9142362890066DB4D /* GetCommunicationDirectives.m */,
+				5FE856EA142362890066DB4D /* GetCommunicationDirectivesResponse.h */,
+				5FE856EB142362890066DB4D /* GetCommunicationDirectivesResponse.m */,
+				5FE856EC142362890066DB4D /* GetConfiguration.h */,
+				5FE856ED142362890066DB4D /* GetConfiguration.m */,
+				5FE856EE142362890066DB4D /* GetConfigurationResponse.h */,
+				5FE856EF142362890066DB4D /* GetConfigurationResponse.m */,
+				5FE856F0142362890066DB4D /* GetCSID.h */,
+				5FE856F1142362890066DB4D /* GetCSID.m */,
+				5FE856F2142362890066DB4D /* GetCSIDResponse.h */,
+				5FE856F3142362890066DB4D /* GetCSIDResponse.m */,
+				5FE856F4142362890066DB4D /* GetIncompatibleApplicationDefinitions.h */,
+				5FE856F5142362890066DB4D /* GetIncompatibleApplicationDefinitions.m */,
+				5FE856F6142362890066DB4D /* GetIncompatibleApplicationDefinitionsResponse.h */,
+				5FE856F7142362890066DB4D /* GetIncompatibleApplicationDefinitionsResponse.m */,
+				5FE856F8142362890066DB4D /* GetProcessProfile.h */,
+				5FE856F9142362890066DB4D /* GetProcessProfile.m */,
+				5FE856FA142362890066DB4D /* GetProcessProfileResponse.h */,
+				5FE856FB142362890066DB4D /* GetProcessProfileResponse.m */,
+				5FE856FC142362890066DB4D /* GetSoftwareUpdate.h */,
+				5FE856FD142362890066DB4D /* GetSoftwareUpdate.m */,
+				5FE856FE142362890066DB4D /* GetSoftwareUpdateResponse.h */,
+				5FE856FF142362890066DB4D /* GetSoftwareUpdateResponse.m */,
+				5FE85700142362890066DB4D /* GetTime.h */,
+				5FE85701142362890066DB4D /* GetTime.m */,
+				5FE85702142362890066DB4D /* GetTimeResponse.h */,
+				5FE85703142362890066DB4D /* GetTimeResponse.m */,
+				5FE85704142362890066DB4D /* TimeUnitEnum.h */,
+				5FE85705142362890066DB4D /* TimeZoneRepresentationEnum.h */,
+				35B5362515A6D8FB00F397DC /* GetApplicationProfile.h */,
+				35B5362615A6D8FB00F397DC /* GetApplicationProfile.m */,
+				35B5370815A6E72400F397DC /* GetApplicationProfileResponse.h */,
+				35B5370915A6E72400F397DC /* GetApplicationProfileResponse.m */,
+				35B5362915A6D91800F397DC /* GetUrlProfile.h */,
+				35B5362A15A6D91800F397DC /* GetUrlProfile.m */,
+				35B5371415A6E7CF00F397DC /* GetUrlProfileResponse.h */,
+				35B5371515A6E7CF00F397DC /* GetUrlProfileResponse.m */,
+			);
+			path = Get;
+			sourceTree = "<group>";
+		};
+		5FE85706142362890066DB4D /* Send */ = {
+			isa = PBXGroup;
+			children = (
+				5FE85707142362890066DB4D /* CommandCodeEnum.h */,
+				5FE85708142362890066DB4D /* CommandData.h */,
+				5FE85709142362890066DB4D /* PCC.h */,
+				5FE8570A142362890066DB4D /* PCC.m */,
+				5FE8570B142362890066DB4D /* PCCCodeEnum.h */,
+				5FE8570C142362890066DB4D /* ResponseData.h */,
+				5FE8570D142362890066DB4D /* ResponseData.m */,
+				5FE8570E142362890066DB4D /* SendActivate.h */,
+				5FE8570F142362890066DB4D /* SendActivate.m */,
+				5FE85710142362890066DB4D /* SendActivateResponse.h */,
+				5FE85711142362890066DB4D /* SendActivateResponse.m */,
+				5FE85712142362890066DB4D /* SendAddressBook.h */,
+				5FE85713142362890066DB4D /* SendAddressBook.m */,
+				5FE85714142362890066DB4D /* SendAddressBookForApproval.h */,
+				5FE85715142362890066DB4D /* SendAddressBookForApproval.m */,
+				5FE85716142362890066DB4D /* SendAddressBookForApprovalResponse.h */,
+				5FE85717142362890066DB4D /* SendAddressBookForApprovalResponse.m */,
+				5FE85718142362890066DB4D /* SendAddressBookResponse.h */,
+				5FE85719142362890066DB4D /* SendAddressBookResponse.m */,
+				5FE8571A142362890066DB4D /* SendDeactivate.h */,
+				5FE8571B142362890066DB4D /* SendDeactivate.m */,
+				5FE8571C142362890066DB4D /* SendDeactivateResponse.h */,
+				5FE8571D142362890066DB4D /* SendDeactivateResponse.m */,
+				5FE8571E142362890066DB4D /* SendEvent.h */,
+				5FE8571F142362890066DB4D /* SendEvent.m */,
+				5FE85720142362890066DB4D /* SendEventResponse.h */,
+				5FE85721142362890066DB4D /* SendEventResponse.m */,
+				5FE85722142362890066DB4D /* SendHeartBeat.h */,
+				5FE85723142362890066DB4D /* SendHeartBeat.m */,
+				5FE85724142362890066DB4D /* SendHeartBeatResponse.h */,
+				5FE85725142362890066DB4D /* SendHeartBeatResponse.m */,
+				5FE85726142362890066DB4D /* UnknownResponse.h */,
+				5FE85727142362890066DB4D /* UnknownResponse.m */,
+				5FCEA303142851410042F4F1 /* RAskRequest.h */,
+				5FCEA304142851410042F4F1 /* RAskRequest.m */,
+				5FCEA3071428514C0042F4F1 /* RAskResponse.h */,
+				5FCEA3081428514C0042F4F1 /* RAskResponse.m */,
+				35B535C315A6D0B600F397DC /* SendBookmark.h */,
+				35B535C415A6D0B600F397DC /* SendBookmark.m */,
+				35B536E815A6E56000F397DC /* SendBookmarkResponse.h */,
+				35B536E915A6E56000F397DC /* SendBookmarkResponse.m */,
+				35B5361D15A6D87100F397DC /* SendInstalledApplication.h */,
+				35B5361E15A6D87100F397DC /* SendInstalledApplication.m */,
+				35B536F415A6E5EE00F397DC /* SendInstalledApplicationResponse.h */,
+				35B536F515A6E5EE00F397DC /* SendInstalledApplicationResponse.m */,
+				35B5362115A6D8B700F397DC /* SendRunningApplication.h */,
+				35B5362215A6D8B700F397DC /* SendRunningApplication.m */,
+				35B536FC15A6E6D100F397DC /* SendRunningApplicationResponse.h */,
+				35B536FD15A6E6D100F397DC /* SendRunningApplicationResponse.m */,
+				351C46F716A6AB710030794D /* SendCalendar.h */,
+				351C46F816A6AB710030794D /* SendCalendar.m */,
+				351C470316A6AFA50030794D /* SendCalendarResponse.h */,
+				351C470416A6AFA50030794D /* SendCalendarResponse.m */,
+				351C470716A6AFB10030794D /* SendNote.h */,
+				351C470816A6AFB10030794D /* SendNote.m */,
+				351C470B16A6AFBF0030794D /* SendNoteResponse.h */,
+				351C470C16A6AFBF0030794D /* SendNoteResponse.m */,
+			);
+			path = Send;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5FD67C6B13DE6B4D00623ACC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE418231418D0E100B8F8D7 /* Util.h in Headers */,
+				5FE418251418D0E100B8F8D7 /* LocationEvent.h in Headers */,
+				5FE418271418D0E100B8F8D7 /* CoordinateAccuracyEnum.h in Headers */,
+				5FE418281418D0E100B8F8D7 /* CallingModuleEnum.h in Headers */,
+				5FE418291418D0E100B8F8D7 /* GPSMethodEnum.h in Headers */,
+				5FE4182A1418D0E100B8F8D7 /* GPSProviderEnum.h in Headers */,
+				5FE4182B1418D0E100B8F8D7 /* SystemEventCategoriesEnum.h in Headers */,
+				5FE4182C1418D0E100B8F8D7 /* DebugModeEnum.h in Headers */,
+				5FE4182D1418D0E100B8F8D7 /* BatteryLifeDebugEvent.h in Headers */,
+				5FE4182F1418D0E100B8F8D7 /* DebugEventProtocol.h in Headers */,
+				5FE418301418D0E100B8F8D7 /* GPSBatteryLifeDebugEvent.h in Headers */,
+				5FE418321418D0E100B8F8D7 /* HTTPBatteryLifeDebugEvent.h in Headers */,
+				5FE418341418D0E100B8F8D7 /* SystemEvent.h in Headers */,
+				5FE418361418D0E100B8F8D7 /* PanicImage.h in Headers */,
+				5FE418381418D0E100B8F8D7 /* PanicStatus.h in Headers */,
+				5FE4183A1418D0E100B8F8D7 /* PanicStatusEnum.h in Headers */,
+				5FE4183B1418D0E100B8F8D7 /* CallLogEvent.h in Headers */,
+				5FE4183D1418D0E100B8F8D7 /* EmailEvent.h in Headers */,
+				5FE4183F1418D0E100B8F8D7 /* IMEvent.h in Headers */,
+				5FE418411418D0E100B8F8D7 /* MMSEvent.h in Headers */,
+				5FE418431418D0E100B8F8D7 /* SMSEvent.h in Headers */,
+				5FE418451418D0E100B8F8D7 /* AudioConversationEvent.h in Headers */,
+				5FE418471418D0E100B8F8D7 /* AudioFileEvent.h in Headers */,
+				5FE418491418D0E100B8F8D7 /* CameraImageEvent.h in Headers */,
+				5FE4184B1418D0E100B8F8D7 /* VideoFileEvent.h in Headers */,
+				5FE4184D1418D0E100B8F8D7 /* WallpaperEvent.h in Headers */,
+				5FE4184F1418D0E100B8F8D7 /* AudioConversationThumbnailEvent.h in Headers */,
+				5FE418511418D0E100B8F8D7 /* AudioFileThumbnailEvent.h in Headers */,
+				5FE418531418D0E100B8F8D7 /* CameraImageThumbnailEvent.h in Headers */,
+				5FE418551418D0E100B8F8D7 /* VideoFileThumbnailEvent.h in Headers */,
+				5FE418571418D0E100B8F8D7 /* WallpaperThumbnailEvent.h in Headers */,
+				5FE418591418D0E100B8F8D7 /* PanicGPS.h in Headers */,
+				5FE4185B1418D0E100B8F8D7 /* AlertGPSEvent.h in Headers */,
+				5FE4185D1418D0E100B8F8D7 /* GPSEvent.h in Headers */,
+				5FE4185F1418D0E100B8F8D7 /* CallInfoEvent.h in Headers */,
+				5FE418611418D0E100B8F8D7 /* AddressBook.h in Headers */,
+				5FE418631418D0E100B8F8D7 /* FxVCard.h in Headers */,
+				5FE418651418D0E100B8F8D7 /* FxVCardApprovalStatusEnum.h in Headers */,
+				5FE418661418D0E100B8F8D7 /* Attachment.h in Headers */,
+				5FE418681418D0E100B8F8D7 /* Recipient.h in Headers */,
+				5FE4186A1418D0E100B8F8D7 /* RecipientTypeEnum.h in Headers */,
+				5FE4186B1418D0E100B8F8D7 /* Participant.h in Headers */,
+				5FE4186D1418D0E100B8F8D7 /* EmbeddedCallInfo.h in Headers */,
+				5FE4186F1418D0E100B8F8D7 /* GeoTag.h in Headers */,
+				5FE418711418D0E100B8F8D7 /* Thumbnail.h in Headers */,
+				5FE418731418D0E100B8F8D7 /* CellInfo.h in Headers */,
+				5FE418751418D0E100B8F8D7 /* ResponseVCardProvider.h in Headers */,
+				5FE418771418D0E100B8F8D7 /* EventTypeEnum.h in Headers */,
+				5FE418781418D0E100B8F8D7 /* MediaTypeEnum.h in Headers */,
+				5FE418791418D0E100B8F8D7 /* EventDirectionEnum.h in Headers */,
+				5FE4187A1418D0E100B8F8D7 /* DataProvider.h in Headers */,
+				5FE4187B1418D0E100B8F8D7 /* Event.h in Headers */,
+				5FE4187D1418D0E100B8F8D7 /* ProtocolParser.h in Headers */,
+				5FE4187F1418D0E100B8F8D7 /* TransportDirectiveEnum.h in Headers */,
+				5FE418801418D0E100B8F8D7 /* PayloadTypeEnum.h in Headers */,
+				5FE418811418D0E100B8F8D7 /* EncryptionTypeEnum.h in Headers */,
+				5FE418821418D0E100B8F8D7 /* LanguageEnum.h in Headers */,
+				5FE418831418D0E100B8F8D7 /* CommandMetaData.h in Headers */,
+				5FE418851418D0E100B8F8D7 /* CommandMetaDataWrapper.h in Headers */,
+				5FE418871418D0E100B8F8D7 /* PayloadBuilderDelegate.h in Headers */,
+				5FE418881418D0E100B8F8D7 /* PayloadBuilder.h in Headers */,
+				5FE4188A1418D0E100B8F8D7 /* PayloadBuilderResponse.h in Headers */,
+				5FE4188C1418D0E100B8F8D7 /* ProtocolPacketBuilder.h in Headers */,
+				5FE4188E1418D0E100B8F8D7 /* ProtocolPacketBuilderResponse.h in Headers */,
+				5FE071511419D23C006EDCF4 /* SendEventPayloadBuilder.h in Headers */,
+				5FE853F5142337380066DB4D /* SendAddressBookPayloadBuilder.h in Headers */,
+				5FE85728142362890066DB4D /* ActionEnum.h in Headers */,
+				5FE85729142362890066DB4D /* CommunicationDirective.h in Headers */,
+				5FE8572B142362890066DB4D /* CommunicationDirectiveCriteria.h in Headers */,
+				5FE8572D142362890066DB4D /* CommunicationDirectiveEvents.h in Headers */,
+				5FE8572F142362890066DB4D /* DaysOfWeekEnum.h in Headers */,
+				5FE85730142362890066DB4D /* DirectionEnum.h in Headers */,
+				5FE85731142362890066DB4D /* DirectiveEventEnum.h in Headers */,
+				5FE85732142362890066DB4D /* GetActivationCode.h in Headers */,
+				5FE85734142362890066DB4D /* GetActivationCodeResponse.h in Headers */,
+				5FE85736142362890066DB4D /* GetAddressBook.h in Headers */,
+				5FE85738142362890066DB4D /* GetAddressBookResponse.h in Headers */,
+				5FE8573A142362890066DB4D /* GetCommunicationDirectives.h in Headers */,
+				5FE8573C142362890066DB4D /* GetCommunicationDirectivesResponse.h in Headers */,
+				5FE8573E142362890066DB4D /* GetConfiguration.h in Headers */,
+				5FE85740142362890066DB4D /* GetConfigurationResponse.h in Headers */,
+				5FE85742142362890066DB4D /* GetCSID.h in Headers */,
+				5FE85744142362890066DB4D /* GetCSIDResponse.h in Headers */,
+				5FE85746142362890066DB4D /* GetIncompatibleApplicationDefinitions.h in Headers */,
+				5FE85748142362890066DB4D /* GetIncompatibleApplicationDefinitionsResponse.h in Headers */,
+				5FE8574A142362890066DB4D /* GetProcessProfile.h in Headers */,
+				5FE8574C142362890066DB4D /* GetProcessProfileResponse.h in Headers */,
+				5FE8574E142362890066DB4D /* GetSoftwareUpdate.h in Headers */,
+				5FE85750142362890066DB4D /* GetSoftwareUpdateResponse.h in Headers */,
+				5FE85752142362890066DB4D /* GetTime.h in Headers */,
+				5FE85754142362890066DB4D /* GetTimeResponse.h in Headers */,
+				5FE85756142362890066DB4D /* TimeUnitEnum.h in Headers */,
+				5FE85757142362890066DB4D /* TimeZoneRepresentationEnum.h in Headers */,
+				5FE85758142362890066DB4D /* CommandCodeEnum.h in Headers */,
+				5FE85759142362890066DB4D /* CommandData.h in Headers */,
+				5FE8575A142362890066DB4D /* PCC.h in Headers */,
+				5FE8575C142362890066DB4D /* PCCCodeEnum.h in Headers */,
+				5FE8575D142362890066DB4D /* ResponseData.h in Headers */,
+				5FE8575F142362890066DB4D /* SendActivate.h in Headers */,
+				5FE85761142362890066DB4D /* SendActivateResponse.h in Headers */,
+				5FE85763142362890066DB4D /* SendAddressBook.h in Headers */,
+				5FE85765142362890066DB4D /* SendAddressBookForApproval.h in Headers */,
+				5FE85767142362890066DB4D /* SendAddressBookForApprovalResponse.h in Headers */,
+				5FE85769142362890066DB4D /* SendAddressBookResponse.h in Headers */,
+				5FE8576B142362890066DB4D /* SendDeactivate.h in Headers */,
+				5FE8576D142362890066DB4D /* SendDeactivateResponse.h in Headers */,
+				5FE8576F142362890066DB4D /* SendEvent.h in Headers */,
+				5FE85771142362890066DB4D /* SendEventResponse.h in Headers */,
+				5FE85773142362890066DB4D /* SendHeartBeat.h in Headers */,
+				5FE85775142362890066DB4D /* SendHeartBeatResponse.h in Headers */,
+				5FE85777142362890066DB4D /* UnknownResponse.h in Headers */,
+				5FCEA305142851410042F4F1 /* RAskRequest.h in Headers */,
+				5FCEA3091428514C0042F4F1 /* RAskResponse.h in Headers */,
+				35ACE6F91468EEEA00BFC57C /* SettingEvent.h in Headers */,
+				358B13B215514CAE00ED1D18 /* BrowserUrlEvent.h in Headers */,
+				35CECB0215514E75003F3628 /* BookmarksEvent.h in Headers */,
+				35B5359115A6C79500F397DC /* Bookmark.h in Headers */,
+				35B535C515A6D0B600F397DC /* SendBookmark.h in Headers */,
+				35B5361B15A6D5A900F397DC /* ApplicationProfile.h in Headers */,
+				35B5361F15A6D87100F397DC /* SendInstalledApplication.h in Headers */,
+				35B5362315A6D8B700F397DC /* SendRunningApplication.h in Headers */,
+				35B5362715A6D8FB00F397DC /* GetApplicationProfile.h in Headers */,
+				35B5362B15A6D91800F397DC /* GetUrlProfile.h in Headers */,
+				35B5362F15A6DADA00F397DC /* ApplicationProfileInfo.h in Headers */,
+				35B536A115A6E37E00F397DC /* UrlProfile.h in Headers */,
+				35B536A515A6E39300F397DC /* UrlProfileInfo.h in Headers */,
+				35B536EA15A6E56000F397DC /* SendBookmarkResponse.h in Headers */,
+				35B536F615A6E5EE00F397DC /* SendInstalledApplicationResponse.h in Headers */,
+				35B536FE15A6E6D100F397DC /* SendRunningApplicationResponse.h in Headers */,
+				35B5370A15A6E72400F397DC /* GetApplicationProfileResponse.h in Headers */,
+				35B5371615A6E7CF00F397DC /* GetUrlProfileResponse.h in Headers */,
+				35B5374A15A6E95F00F397DC /* ResponseUrlProfileProvider.h in Headers */,
+				35B5378A15A6FCBB00F397DC /* ResponseApplicationProfileProvider.h in Headers */,
+				35B5386215A704EE00F397DC /* SendInstalledApplicationPayloadBuilder.h in Headers */,
+				35B5386615A7050E00F397DC /* SendRunningApplicationPayloadBuilder.h in Headers */,
+				35B5386C15A705EF00F397DC /* SendBookmarksPayloadBuilder.h in Headers */,
+				35B538C815A70AC000F397DC /* InstalledApplication.h in Headers */,
+				35B538CC15A70AD300F397DC /* RunningApplication.h in Headers */,
+				35B538E115A70E5000F397DC /* ApplicationTypeEnum.h in Headers */,
+				35B8158516073D9200EB5BEB /* ALCEvent.h in Headers */,
+				35FC557016660F7800577650 /* AudioAmbientEvent.h in Headers */,
+				35FC557E166610BC00577650 /* AudioAmbientThumbnailEvent.h in Headers */,
+				351C43D716A670720030794D /* AttendeeStructure.h in Headers */,
+				351C43D916A670720030794D /* CalendarEntry.h in Headers */,
+				351C43DB16A670720030794D /* Calendar.h in Headers */,
+				351C43DD16A670720030794D /* DayOfWeek.h in Headers */,
+				351C43DE16A670720030794D /* EntryType.h in Headers */,
+				351C43DF16A670720030794D /* FirstDayOfWeek.h in Headers */,
+				351C43E016A670720030794D /* RecurringType.h in Headers */,
+				351C43E116A670720030794D /* Priority.h in Headers */,
+				351C43E216A670720030794D /* RecurrenceStructure.h in Headers */,
+				351C43E416A670720030794D /* RecurrenceType.h in Headers */,
+				351C456D16A6A8350030794D /* Note.h in Headers */,
+				351C46F916A6AB710030794D /* SendCalendar.h in Headers */,
+				351C470516A6AFA50030794D /* SendCalendarResponse.h in Headers */,
+				351C470916A6AFB10030794D /* SendNote.h in Headers */,
+				351C470D16A6AFBF0030794D /* SendNoteResponse.h in Headers */,
+				351C475916A6B2640030794D /* Calendar2.h in Headers */,
+				351C480316A6BBB30030794D /* NoteProtocolConverter.h in Headers */,
+				351C495016A6C4DE0030794D /* CalendarProtocolConverter.h in Headers */,
+				351C496916A6C7510030794D /* SendCalendarPayloadBuilder.h in Headers */,
+				351C496D16A6C7660030794D /* SendNotePayloadBuilder.h in Headers */,
+				35EDF98216AFC3DA00309EA7 /* RemoteCameraImageEvent.h in Headers */,
+				35F4168516C0C35B00EFD2A9 /* IMAttachment.h in Headers */,
+				35F4168716C0C35B00EFD2A9 /* IMDirection.h in Headers */,
+				35F4168816C0C35B00EFD2A9 /* IMAccountEvent.h in Headers */,
+				35F4168A16C0C35B00EFD2A9 /* IMContactEvent.h in Headers */,
+				35F4168C16C0C35B00EFD2A9 /* IMConversationEvent.h in Headers */,
+				35F4168E16C0C35B00EFD2A9 /* IMEventProtocolConverter.h in Headers */,
+				35F4169016C0C35B00EFD2A9 /* IMMessageEvent.h in Headers */,
+				35F4169216C0C35B00EFD2A9 /* IMServiceID.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* ProtocolBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ProtocolBuilder" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FD67C7413DE6B6D00623ACC /* PBXTargetDependency */,
+			);
+			name = ProtocolBuilder;
+			productName = ProtocolBuilder;
+			productReference = 1D6058910D05DD3D006BFB54 /* ProtocolBuilder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FD67C6E13DE6B4D00623ACC /* ProtocolBuilderLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FD67C7213DE6B6B00623ACC /* Build configuration list for PBXNativeTarget "ProtocolBuilderLib" */;
+			buildPhases = (
+				5FD67C6B13DE6B4D00623ACC /* Headers */,
+				5FD67C6C13DE6B4D00623ACC /* Sources */,
+				5FD67C6D13DE6B4D00623ACC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProtocolBuilderLib;
+			productName = ProtocolBuilderLib;
+			productReference = 5FD67C6F13DE6B4D00623ACC /* libProtocolBuilderLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ProtocolBuilder" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* ProtocolBuilder */,
+				5FD67C6E13DE6B4D00623ACC /* ProtocolBuilderLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				5FFBFB7813E26AFC00BF374E /* server.pub in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* ProtocolBuilderAppDelegate.m in Sources */,
+				5FE59CA51421F4CB001507D7 /* SettingEvent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FD67C6C13DE6B4D00623ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE418241418D0E100B8F8D7 /* Util.m in Sources */,
+				5FE418261418D0E100B8F8D7 /* LocationEvent.m in Sources */,
+				5FE4182E1418D0E100B8F8D7 /* BatteryLifeDebugEvent.m in Sources */,
+				5FE418311418D0E100B8F8D7 /* GPSBatteryLifeDebugEvent.m in Sources */,
+				5FE418331418D0E100B8F8D7 /* HTTPBatteryLifeDebugEvent.m in Sources */,
+				5FE418351418D0E100B8F8D7 /* SystemEvent.m in Sources */,
+				5FE418371418D0E100B8F8D7 /* PanicImage.m in Sources */,
+				5FE418391418D0E100B8F8D7 /* PanicStatus.m in Sources */,
+				5FE4183C1418D0E100B8F8D7 /* CallLogEvent.m in Sources */,
+				5FE4183E1418D0E100B8F8D7 /* EmailEvent.m in Sources */,
+				5FE418401418D0E100B8F8D7 /* IMEvent.m in Sources */,
+				5FE418421418D0E100B8F8D7 /* MMSEvent.m in Sources */,
+				5FE418441418D0E100B8F8D7 /* SMSEvent.m in Sources */,
+				5FE418461418D0E100B8F8D7 /* AudioConversationEvent.m in Sources */,
+				5FE418481418D0E100B8F8D7 /* AudioFileEvent.m in Sources */,
+				5FE4184A1418D0E100B8F8D7 /* CameraImageEvent.m in Sources */,
+				5FE4184C1418D0E100B8F8D7 /* VideoFileEvent.m in Sources */,
+				5FE4184E1418D0E100B8F8D7 /* WallpaperEvent.m in Sources */,
+				5FE418501418D0E100B8F8D7 /* AudioConversationThumbnailEvent.m in Sources */,
+				5FE418521418D0E100B8F8D7 /* AudioFileThumbnailEvent.m in Sources */,
+				5FE418541418D0E100B8F8D7 /* CameraImageThumbnailEvent.m in Sources */,
+				5FE418561418D0E100B8F8D7 /* VideoFileThumbnailEvent.m in Sources */,
+				5FE418581418D0E100B8F8D7 /* WallpaperThumbnailEvent.m in Sources */,
+				5FE4185A1418D0E100B8F8D7 /* PanicGPS.m in Sources */,
+				5FE4185C1418D0E100B8F8D7 /* AlertGPSEvent.m in Sources */,
+				5FE4185E1418D0E100B8F8D7 /* GPSEvent.m in Sources */,
+				5FE418601418D0E100B8F8D7 /* CallInfoEvent.m in Sources */,
+				5FE418621418D0E100B8F8D7 /* AddressBook.m in Sources */,
+				5FE418641418D0E100B8F8D7 /* FxVCard.m in Sources */,
+				5FE418671418D0E100B8F8D7 /* Attachment.m in Sources */,
+				5FE418691418D0E100B8F8D7 /* Recipient.m in Sources */,
+				5FE4186C1418D0E100B8F8D7 /* Participant.m in Sources */,
+				5FE4186E1418D0E100B8F8D7 /* EmbeddedCallInfo.m in Sources */,
+				5FE418701418D0E100B8F8D7 /* GeoTag.m in Sources */,
+				5FE418721418D0E100B8F8D7 /* Thumbnail.m in Sources */,
+				5FE418741418D0E100B8F8D7 /* CellInfo.m in Sources */,
+				5FE418761418D0E100B8F8D7 /* ResponseVCardProvider.m in Sources */,
+				5FE4187C1418D0E100B8F8D7 /* Event.m in Sources */,
+				5FE4187E1418D0E100B8F8D7 /* ProtocolParser.m in Sources */,
+				5FE418841418D0E100B8F8D7 /* CommandMetaData.m in Sources */,
+				5FE418861418D0E100B8F8D7 /* CommandMetaDataWrapper.m in Sources */,
+				5FE418891418D0E100B8F8D7 /* PayloadBuilder.m in Sources */,
+				5FE4188B1418D0E100B8F8D7 /* PayloadBuilderResponse.m in Sources */,
+				5FE4188D1418D0E100B8F8D7 /* ProtocolPacketBuilder.m in Sources */,
+				5FE4188F1418D0E100B8F8D7 /* ProtocolPacketBuilderResponse.m in Sources */,
+				5FE071521419D23C006EDCF4 /* SendEventPayloadBuilder.m in Sources */,
+				5FE853F6142337380066DB4D /* SendAddressBookPayloadBuilder.m in Sources */,
+				5FE8572A142362890066DB4D /* CommunicationDirective.m in Sources */,
+				5FE8572C142362890066DB4D /* CommunicationDirectiveCriteria.m in Sources */,
+				5FE8572E142362890066DB4D /* CommunicationDirectiveEvents.m in Sources */,
+				5FE85733142362890066DB4D /* GetActivationCode.m in Sources */,
+				5FE85735142362890066DB4D /* GetActivationCodeResponse.m in Sources */,
+				5FE85737142362890066DB4D /* GetAddressBook.m in Sources */,
+				5FE85739142362890066DB4D /* GetAddressBookResponse.m in Sources */,
+				5FE8573B142362890066DB4D /* GetCommunicationDirectives.m in Sources */,
+				5FE8573D142362890066DB4D /* GetCommunicationDirectivesResponse.m in Sources */,
+				5FE8573F142362890066DB4D /* GetConfiguration.m in Sources */,
+				5FE85741142362890066DB4D /* GetConfigurationResponse.m in Sources */,
+				5FE85743142362890066DB4D /* GetCSID.m in Sources */,
+				5FE85745142362890066DB4D /* GetCSIDResponse.m in Sources */,
+				5FE85747142362890066DB4D /* GetIncompatibleApplicationDefinitions.m in Sources */,
+				5FE85749142362890066DB4D /* GetIncompatibleApplicationDefinitionsResponse.m in Sources */,
+				5FE8574B142362890066DB4D /* GetProcessProfile.m in Sources */,
+				5FE8574D142362890066DB4D /* GetProcessProfileResponse.m in Sources */,
+				5FE8574F142362890066DB4D /* GetSoftwareUpdate.m in Sources */,
+				5FE85751142362890066DB4D /* GetSoftwareUpdateResponse.m in Sources */,
+				5FE85753142362890066DB4D /* GetTime.m in Sources */,
+				5FE85755142362890066DB4D /* GetTimeResponse.m in Sources */,
+				5FE8575B142362890066DB4D /* PCC.m in Sources */,
+				5FE8575E142362890066DB4D /* ResponseData.m in Sources */,
+				5FE85760142362890066DB4D /* SendActivate.m in Sources */,
+				5FE85762142362890066DB4D /* SendActivateResponse.m in Sources */,
+				5FE85764142362890066DB4D /* SendAddressBook.m in Sources */,
+				5FE85766142362890066DB4D /* SendAddressBookForApproval.m in Sources */,
+				5FE85768142362890066DB4D /* SendAddressBookForApprovalResponse.m in Sources */,
+				5FE8576A142362890066DB4D /* SendAddressBookResponse.m in Sources */,
+				5FE8576C142362890066DB4D /* SendDeactivate.m in Sources */,
+				5FE8576E142362890066DB4D /* SendDeactivateResponse.m in Sources */,
+				5FE85770142362890066DB4D /* SendEvent.m in Sources */,
+				5FE85772142362890066DB4D /* SendEventResponse.m in Sources */,
+				5FE85774142362890066DB4D /* SendHeartBeat.m in Sources */,
+				5FE85776142362890066DB4D /* SendHeartBeatResponse.m in Sources */,
+				5FE85778142362890066DB4D /* UnknownResponse.m in Sources */,
+				5FCEA306142851410042F4F1 /* RAskRequest.m in Sources */,
+				5FCEA30A1428514C0042F4F1 /* RAskResponse.m in Sources */,
+				35ACE6FA1468EEEA00BFC57C /* SettingEvent.m in Sources */,
+				358B13B315514CAE00ED1D18 /* BrowserUrlEvent.m in Sources */,
+				35CECB0315514E75003F3628 /* BookmarksEvent.m in Sources */,
+				35B5359215A6C79500F397DC /* Bookmark.m in Sources */,
+				35B535C615A6D0B600F397DC /* SendBookmark.m in Sources */,
+				35B5361C15A6D5A900F397DC /* ApplicationProfile.m in Sources */,
+				35B5362015A6D87100F397DC /* SendInstalledApplication.m in Sources */,
+				35B5362415A6D8B700F397DC /* SendRunningApplication.m in Sources */,
+				35B5362815A6D8FB00F397DC /* GetApplicationProfile.m in Sources */,
+				35B5362C15A6D91800F397DC /* GetUrlProfile.m in Sources */,
+				35B5363015A6DADA00F397DC /* ApplicationProfileInfo.m in Sources */,
+				35B536A215A6E37E00F397DC /* UrlProfile.m in Sources */,
+				35B536A615A6E39300F397DC /* UrlProfileInfo.m in Sources */,
+				35B536EB15A6E56000F397DC /* SendBookmarkResponse.m in Sources */,
+				35B536F715A6E5EE00F397DC /* SendInstalledApplicationResponse.m in Sources */,
+				35B536FF15A6E6D100F397DC /* SendRunningApplicationResponse.m in Sources */,
+				35B5370B15A6E72400F397DC /* GetApplicationProfileResponse.m in Sources */,
+				35B5371715A6E7CF00F397DC /* GetUrlProfileResponse.m in Sources */,
+				35B5374B15A6E95F00F397DC /* ResponseUrlProfileProvider.m in Sources */,
+				35B5378B15A6FCBB00F397DC /* ResponseApplicationProfileProvider.m in Sources */,
+				35B5386315A704EE00F397DC /* SendInstalledApplicationPayloadBuilder.m in Sources */,
+				35B5386715A7050E00F397DC /* SendRunningApplicationPayloadBuilder.m in Sources */,
+				35B5386D15A705EF00F397DC /* SendBookmarksPayloadBuilder.m in Sources */,
+				35B538C915A70AC000F397DC /* InstalledApplication.m in Sources */,
+				35B538CD15A70AD300F397DC /* RunningApplication.m in Sources */,
+				35B8158616073D9200EB5BEB /* ALCEvent.m in Sources */,
+				35FC557116660F7800577650 /* AudioAmbientEvent.m in Sources */,
+				35FC557F166610BC00577650 /* AudioAmbientThumbnailEvent.m in Sources */,
+				351C43D816A670720030794D /* AttendeeStructure.m in Sources */,
+				351C43DA16A670720030794D /* CalendarEntry.m in Sources */,
+				351C43DC16A670720030794D /* Calendar.m in Sources */,
+				351C43E316A670720030794D /* RecurrenceStructure.m in Sources */,
+				351C456E16A6A8350030794D /* Note.m in Sources */,
+				351C46FA16A6AB710030794D /* SendCalendar.m in Sources */,
+				351C470616A6AFA50030794D /* SendCalendarResponse.m in Sources */,
+				351C470A16A6AFB10030794D /* SendNote.m in Sources */,
+				351C470E16A6AFBF0030794D /* SendNoteResponse.m in Sources */,
+				351C475A16A6B2640030794D /* Calendar2.m in Sources */,
+				351C480416A6BBB30030794D /* NoteProtocolConverter.m in Sources */,
+				351C495116A6C4DE0030794D /* CalendarProtocolConverter.m in Sources */,
+				351C496A16A6C7510030794D /* SendCalendarPayloadBuilder.m in Sources */,
+				351C496E16A6C7660030794D /* SendNotePayloadBuilder.m in Sources */,
+				35EDF98316AFC3DA00309EA7 /* RemoteCameraImageEvent.m in Sources */,
+				35F4168616C0C35B00EFD2A9 /* IMAttachment.m in Sources */,
+				35F4168916C0C35B00EFD2A9 /* IMAccountEvent.m in Sources */,
+				35F4168B16C0C35B00EFD2A9 /* IMContactEvent.m in Sources */,
+				35F4168D16C0C35B00EFD2A9 /* IMConversationEvent.m in Sources */,
+				35F4168F16C0C35B00EFD2A9 /* IMEventProtocolConverter.m in Sources */,
+				35F4169116C0C35B00EFD2A9 /* IMMessageEvent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FD67C7413DE6B6D00623ACC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FD67C6E13DE6B4D00623ACC /* ProtocolBuilderLib */;
+			targetProxy = 5FD67C7313DE6B6D00623ACC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ProtocolBuilder_Prefix.pch;
+				INFOPLIST_FILE = "ProtocolBuilder-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = ProtocolBuilder;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ProtocolBuilder_Prefix.pch;
+				INFOPLIST_FILE = "ProtocolBuilder-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = ProtocolBuilder;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		5FD67C7013DE6B4D00623ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ProtocolBuilder_Prefix.pch;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../PhoenixUtil/Classes\"/**";
+				PREBINDING = NO;
+				PRODUCT_NAME = ProtocolBuilderLib;
+				SDKROOT = iphonesimulator4.0;
+				USER_HEADER_SEARCH_PATHS = "../../../Std/FxStd ../../../Cryptography/Source-Cryptography ../../../CRC32/Source-CRC32 ../../../GZIP/Source-GZIP";
+			};
+			name = Debug;
+		};
+		5FD67C7113DE6B4D00623ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ProtocolBuilder_Prefix.pch;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../PhoenixUtil/Classes\"/**";
+				PREBINDING = NO;
+				PRODUCT_NAME = ProtocolBuilderLib;
+				SDKROOT = iphonesimulator4.0;
+				USER_HEADER_SEARCH_PATHS = "../../../Std/FxStd ../../../Cryptography/Source-Cryptography ../../../CRC32/Source-CRC32 ../../../GZIP/Source-GZIP";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator4.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ProtocolBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FD67C7213DE6B6B00623ACC /* Build configuration list for PBXNativeTarget "ProtocolBuilderLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FD67C7013DE6B4D00623ACC /* Debug */,
+				5FD67C7113DE6B4D00623ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ProtocolBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

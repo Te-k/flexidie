@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="daemon_bug_engine">
+	
+	<import file="../../tool/daemon_build_resources/fx-build.xml" />
+	
+	<target name="clean">
+		<delete dir="build" />
+		<delete dir="obj" />
+	</target>
+	
+	<!--
+	The following parameters are required:-
+		ndk.build.option e.g. yes, no
+		obfuscate.option e.g. enable, disable
+		proguard.config.path e.g. /<path_to_proguard_config>/proguard.cfg
+		android.lib.jar e.g. /<path_to_android_sdk>/platforms/android-7/android.jar
+		dx.path e.g. /<path_to_android_sdk>/platform-tools/dx.bat
+		main.project.dir Root directory of the application main project
+	-->
+	<target name="compile-dex">
+		<echo message="******************************"/>
+		<echo message="*        PROCESS BUG         *"/>
+		<echo message="******************************"/>
+		
+		<!-- CLEANUP BUILDING WORKSPACE -->
+		
+		<fx-clean 
+			build.dir="build" 
+			ndk.build.option="${ndk.build.option}"
+		/>
+		
+		<!-- NDK BUILD -->
+		
+		<!-- libfxril.so -->
+		<fx-ndk-build
+			ndk.build.option="${ndk.build.option}"
+			cygwin.dir="${cygwin.dir}"
+			cygwin.ndk.dir="${cygwin.ndk.dir}"
+			working.dir="${basedir}"
+		/>
+		
+		<!-- COPY THE SOURCE CODE OF REFERENCING PROJECT -->
+		
+		<!-- self -->
+		<copy todir="build/src">
+            <fileset dir="src"/>
+        </copy>
+		
+		<!-- shell_executer -->
+		<copy todir="build/src/com/vvt">
+            <fileset dir="../shell_executer/src/com/vvt"/>
+        </copy>
+		
+		<!-- shell_executer exec.so-->
+		<copy todir="libs">
+            <fileset dir="../shell_executer/libs"/>
+        </copy>
+    	
+		<!-- util -->
+    	<copy todir="build/src">
+            <fileset dir="../util/src"/>
+        </copy>
+		
+		<!-- daemon_util -->
+        <copy todir="build/src">
+            <fileset dir="../daemon_util/src"/>
+        </copy>
+		
+		<!-- daemon_process_monitoring -->
+        <copy todir="build/src/com/fx/pmond/ref">
+            <fileset dir="../daemon_process_monitoring/src/com/fx/pmond/ref"/>
+        </copy>
+		
+		<!-- COMPILING SOURCE CODE & CONSTRUCTING DEX ZIP FILE -->
+		
+		<!-- classpath for compiling java source code -->
+		<path id="compile_classpath">
+		    <pathelement path="${android.lib.jar}"/>
+		</path>
+		
+		<path id="include_classpath">
+			<!-- You can put pathelement for jar file(s) here. -->
+		</path>
+		
+		<!-- Generate DEX ZIP file -->
+		<fx-build-dex
+			src.dir="${basedir}/build/src"
+			build.dir="${basedir}/build"
+			ext.lib.dir="${basedir}/libs"
+			classpathref="compile_classpath"
+			obfuscate.option="${obfuscate.option}"
+			proguard.config.path="${proguard.config.path}"
+			android.lib.jar="${android.lib.jar}"
+			dx.path="${dx.path}"
+			output.dex.zip.path="${basedir}/build/bugd.zip"
+			delete.log.option="${delete.log.option}"
+		/>
+		
+		<!-- Generate security config.dat -->
+		<java jar="${basedir}/ext-libs/fxsecurity.jar" fork="true">
+			<arg value="config"/>
+			<arg value="${basedir}/build/bugd-config.dat" />
+			<arg value="${basedir}/build/FxConfigReader.java" />
+			<arg value="${basedir}/build/bugd.zip" />
+		</java>
+		
+		<copy file="build/bugd.zip" tofile="${main.project.dir}/assets/bugd.zip"/>
+		<copy file="build/bugd-config.dat" tofile="${main.project.dir}/assets/bugd-config.dat"/>
+		<copy todir="${main.project.dir}/assets/">
+            <fileset dir="libs/armeabi"/>
+        </copy>
+		
+    </target>
+  
+</project>

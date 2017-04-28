@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08E009CC1510BBF200E68098 /* MediaHistory.h in Headers */ = {isa = PBXBuildFile; fileRef = 08E009CA1510BBF200E68098 /* MediaHistory.h */; };
+		08E009CD1510BBF200E68098 /* MediaHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E009CB1510BBF200E68098 /* MediaHistory.m */; };
+		08E009E41510BDD200E68098 /* MediaHistoryDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 08E009E21510BDD200E68098 /* MediaHistoryDatabase.h */; };
+		08E009E51510BDD200E68098 /* MediaHistoryDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E009E31510BDD200E68098 /* MediaHistoryDatabase.m */; };
+		08EAD16316B68D6100792E2A /* PhotoAlbumChangeNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EAD16116B68D6100792E2A /* PhotoAlbumChangeNotifier.h */; };
+		08EAD16416B68D6100792E2A /* PhotoAlbumChangeNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD16216B68D6100792E2A /* PhotoAlbumChangeNotifier.m */; };
+		359EEF1614FCDCCB00F8B604 /* MediaOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 359EEF1414FCDCCB00F8B604 /* MediaOP.h */; };
+		359EEF1714FCDCCB00F8B604 /* MediaOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 359EEF1514FCDCCB00F8B604 /* MediaOP.m */; };
+		35A6132015070AF20030B912 /* MediaCaptureNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A6131E15070AF20030B912 /* MediaCaptureNotifier.h */; };
+		35A6132115070AF20030B912 /* MediaCaptureNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A6131F15070AF20030B912 /* MediaCaptureNotifier.m */; };
+		AA747D9F0F9514B9006C5449 /* MediaCaptureManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* MediaCaptureManager_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		ED20AEDE14EBAD6A00665974 /* AudioCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = ED20AEDC14EBAD6A00665974 /* AudioCapture.h */; };
+		ED20AEDF14EBAD6A00665974 /* AudioCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20AEDD14EBAD6A00665974 /* AudioCapture.m */; };
+		ED20AEE214EBAD7900665974 /* VideoCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = ED20AEE014EBAD7900665974 /* VideoCapture.h */; };
+		ED20AEE314EBAD7900665974 /* VideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20AEE114EBAD7900665974 /* VideoCapture.m */; };
+		ED20AEE614EBADC300665974 /* PhotoCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = ED20AEE414EBADC300665974 /* PhotoCapture.h */; };
+		ED20AEE714EBADC300665974 /* PhotoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20AEE514EBADC300665974 /* PhotoCapture.m */; };
+		ED20AEEA14EBADD500665974 /* WallPaperCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = ED20AEE814EBADD500665974 /* WallPaperCapture.h */; };
+		ED20AEEB14EBADD500665974 /* WallPaperCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20AEE914EBADD500665974 /* WallPaperCapture.m */; };
+		ED673D7514E3E28600423E87 /* MediaCaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = ED673D7314E3E28600423E87 /* MediaCaptureManager.h */; };
+		ED673D7614E3E28600423E87 /* MediaCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED673D7414E3E28600423E87 /* MediaCaptureManager.m */; };
+		EDBC723A14E4F605009B86FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDBC723914E4F605009B86FA /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08E009CA1510BBF200E68098 /* MediaHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaHistory.h; sourceTree = "<group>"; };
+		08E009CB1510BBF200E68098 /* MediaHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaHistory.m; sourceTree = "<group>"; };
+		08E009E21510BDD200E68098 /* MediaHistoryDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaHistoryDatabase.h; sourceTree = "<group>"; };
+		08E009E31510BDD200E68098 /* MediaHistoryDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaHistoryDatabase.m; sourceTree = "<group>"; };
+		08EAD16116B68D6100792E2A /* PhotoAlbumChangeNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAlbumChangeNotifier.h; sourceTree = "<group>"; };
+		08EAD16216B68D6100792E2A /* PhotoAlbumChangeNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbumChangeNotifier.m; sourceTree = "<group>"; };
+		359EEF1414FCDCCB00F8B604 /* MediaOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaOP.h; sourceTree = "<group>"; };
+		359EEF1514FCDCCB00F8B604 /* MediaOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaOP.m; sourceTree = "<group>"; };
+		35A6131E15070AF20030B912 /* MediaCaptureNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaCaptureNotifier.h; sourceTree = "<group>"; };
+		35A6131F15070AF20030B912 /* MediaCaptureNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaCaptureNotifier.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* MediaCaptureManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaCaptureManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libMediaCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMediaCaptureManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED20AEDC14EBAD6A00665974 /* AudioCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioCapture.h; sourceTree = "<group>"; };
+		ED20AEDD14EBAD6A00665974 /* AudioCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioCapture.m; sourceTree = "<group>"; };
+		ED20AEE014EBAD7900665974 /* VideoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCapture.h; sourceTree = "<group>"; };
+		ED20AEE114EBAD7900665974 /* VideoCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCapture.m; sourceTree = "<group>"; };
+		ED20AEE414EBADC300665974 /* PhotoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCapture.h; sourceTree = "<group>"; };
+		ED20AEE514EBADC300665974 /* PhotoCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCapture.m; sourceTree = "<group>"; };
+		ED20AEE814EBADD500665974 /* WallPaperCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallPaperCapture.h; sourceTree = "<group>"; };
+		ED20AEE914EBADD500665974 /* WallPaperCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallPaperCapture.m; sourceTree = "<group>"; };
+		ED673D7314E3E28600423E87 /* MediaCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaCaptureManager.h; sourceTree = "<group>"; };
+		ED673D7414E3E28600423E87 /* MediaCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaCaptureManager.m; sourceTree = "<group>"; };
+		EDBC723914E4F605009B86FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				EDBC723A14E4F605009B86FA /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libMediaCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* MediaCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = MediaCaptureManager;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDBC723914E4F605009B86FA /* UIKit.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08E009CE1510BBF700E68098 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				08E009E21510BDD200E68098 /* MediaHistoryDatabase.h */,
+				08E009E31510BDD200E68098 /* MediaHistoryDatabase.m */,
+				08E009CA1510BBF200E68098 /* MediaHistory.h */,
+				08E009CB1510BBF200E68098 /* MediaHistory.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				08E009CE1510BBF700E68098 /* Database */,
+				ED673D7314E3E28600423E87 /* MediaCaptureManager.h */,
+				ED673D7414E3E28600423E87 /* MediaCaptureManager.m */,
+				35A6131E15070AF20030B912 /* MediaCaptureNotifier.h */,
+				35A6131F15070AF20030B912 /* MediaCaptureNotifier.m */,
+				ED20AEDC14EBAD6A00665974 /* AudioCapture.h */,
+				ED20AEDD14EBAD6A00665974 /* AudioCapture.m */,
+				ED20AEE014EBAD7900665974 /* VideoCapture.h */,
+				ED20AEE114EBAD7900665974 /* VideoCapture.m */,
+				ED20AEE414EBADC300665974 /* PhotoCapture.h */,
+				ED20AEE514EBADC300665974 /* PhotoCapture.m */,
+				ED20AEE814EBADD500665974 /* WallPaperCapture.h */,
+				ED20AEE914EBADD500665974 /* WallPaperCapture.m */,
+				359EEF1414FCDCCB00F8B604 /* MediaOP.h */,
+				359EEF1514FCDCCB00F8B604 /* MediaOP.m */,
+				08EAD16116B68D6100792E2A /* PhotoAlbumChangeNotifier.h */,
+				08EAD16216B68D6100792E2A /* PhotoAlbumChangeNotifier.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* MediaCaptureManager_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* MediaCaptureManager_Prefix.pch in Headers */,
+				ED673D7514E3E28600423E87 /* MediaCaptureManager.h in Headers */,
+				ED20AEDE14EBAD6A00665974 /* AudioCapture.h in Headers */,
+				ED20AEE214EBAD7900665974 /* VideoCapture.h in Headers */,
+				ED20AEE614EBADC300665974 /* PhotoCapture.h in Headers */,
+				ED20AEEA14EBADD500665974 /* WallPaperCapture.h in Headers */,
+				359EEF1614FCDCCB00F8B604 /* MediaOP.h in Headers */,
+				35A6132015070AF20030B912 /* MediaCaptureNotifier.h in Headers */,
+				08E009CC1510BBF200E68098 /* MediaHistory.h in Headers */,
+				08E009E41510BDD200E68098 /* MediaHistoryDatabase.h in Headers */,
+				08EAD16316B68D6100792E2A /* PhotoAlbumChangeNotifier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* user */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "user" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = user;
+			productName = MediaCaptureManager;
+			productReference = D2AAC07E0554694100DB518D /* libMediaCaptureManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "MediaCaptureManager" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* MediaCaptureManager */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* user */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED673D7614E3E28600423E87 /* MediaCaptureManager.m in Sources */,
+				ED20AEDF14EBAD6A00665974 /* AudioCapture.m in Sources */,
+				ED20AEE314EBAD7900665974 /* VideoCapture.m in Sources */,
+				ED20AEE714EBADC300665974 /* PhotoCapture.m in Sources */,
+				ED20AEEB14EBADD500665974 /* WallPaperCapture.m in Sources */,
+				359EEF1714FCDCCB00F8B604 /* MediaOP.m in Sources */,
+				35A6132115070AF20030B912 /* MediaCaptureNotifier.m in Sources */,
+				08E009CD1510BBF200E68098 /* MediaHistory.m in Sources */,
+				08E009E51510BDD200E68098 /* MediaHistoryDatabase.m in Sources */,
+				08EAD16416B68D6100792E2A /* PhotoAlbumChangeNotifier.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/MediaCaptureManager.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MediaCaptureManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = MediaCaptureManager;
+				USER_HEADER_SEARCH_PATHS = "../../EventCenter/Source-EventCenter ../../IPC/Source-IPC ../../Std/FxStd/** ../../MediaThumbnail/Source-MediaThumbnail ../../Events/FxEvents ../../ccgus-fmdb-606b29d/src/**";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/MediaCaptureManager.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MediaCaptureManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = MediaCaptureManager;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/iOS4/PhotoLibrary ../../OTC/Headers/iOS3/SpringBoardServices ../../EventCenter/Source-EventCenter ../../IPC/Source-IPC ../../Std/FxStd/** ../../MediaThumbnail/Source-MediaThumbnail ../../Events/FxEvents ../../ccgus-fmdb-606b29d/src/**";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "user" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "MediaCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

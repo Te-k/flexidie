@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'PCFChecksum' target in the 'PCFChecksum' project.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

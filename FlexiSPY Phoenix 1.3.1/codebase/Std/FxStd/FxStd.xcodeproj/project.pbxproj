@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		088209D514B4370D00247E2C /* DesktopIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 088209D314B4370D00247E2C /* DesktopIcon.h */; };
+		088209D614B4370D00247E2C /* DesktopIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 088209D414B4370D00247E2C /* DesktopIcon.m */; };
+		08D172551591CDA20063070B /* AudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D172531591CDA20063070B /* AudioPlayer.h */; };
+		08D172561591CDA20063070B /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D172541591CDA20063070B /* AudioPlayer.m */; };
+		351BA70C154819BB00A9C2C8 /* TelephoneNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 351BA70A154819BB00A9C2C8 /* TelephoneNumber.h */; };
+		351BA70D154819BB00A9C2C8 /* TelephoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 351BA70B154819BB00A9C2C8 /* TelephoneNumber.m */; };
+		354FC1C114F670B2006874C2 /* DirecotryNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 354FC1BF14F670B2006874C2 /* DirecotryNotifier.h */; };
+		354FC1C214F670B2006874C2 /* DirecotryNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 354FC1C014F670B2006874C2 /* DirecotryNotifier.m */; };
+		3567AB5016352FAE0056E54A /* StringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3567AB4E16352FAE0056E54A /* StringUtils.h */; };
+		3567AB5116352FAE0056E54A /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3567AB4F16352FAE0056E54A /* StringUtils.m */; };
+		358FDCD114EA61D500CB53F9 /* UncaughtExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 358FDCCF14EA61D500CB53F9 /* UncaughtExceptionHandler.h */; };
+		358FDCD214EA61D500CB53F9 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 358FDCD014EA61D500CB53F9 /* UncaughtExceptionHandler.m */; };
+		35A5CB3514A0451700121CB3 /* DaemonPrivateHome.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A5CB3314A0451700121CB3 /* DaemonPrivateHome.h */; };
+		35A5CB3614A0451700121CB3 /* DaemonPrivateHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A5CB3414A0451700121CB3 /* DaemonPrivateHome.m */; };
+		35A6987D14F5EA0100F4337B /* FileDescriptorNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A6987B14F5EA0100F4337B /* FileDescriptorNotifier.h */; };
+		35A6987E14F5EA0100F4337B /* FileDescriptorNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A6987C14F5EA0100F4337B /* FileDescriptorNotifier.m */; };
+		35F088B516B79577005D9106 /* SBDidLaunchNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F088B316B79577005D9106 /* SBDidLaunchNotifier.h */; };
+		35F088B616B79577005D9106 /* SBDidLaunchNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F088B416B79577005D9106 /* SBDidLaunchNotifier.m */; };
+		35FF27731487492D001011E1 /* FxDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF27711487492D001011E1 /* FxDatabase.h */; };
+		35FF27741487492D001011E1 /* FxDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF27721487492D001011E1 /* FxDatabase.m */; };
+		35FF2799148749CB001011E1 /* ArrayUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF278A148749CB001011E1 /* ArrayUtils.h */; };
+		35FF279A148749CB001011E1 /* ArrayUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF278B148749CB001011E1 /* ArrayUtils.m */; };
+		35FF279B148749CB001011E1 /* DateTimeFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF278C148749CB001011E1 /* DateTimeFormat.h */; };
+		35FF279C148749CB001011E1 /* DateTimeFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF278D148749CB001011E1 /* DateTimeFormat.m */; };
+		35FF279D148749CB001011E1 /* DebugStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF278E148749CB001011E1 /* DebugStatus.h */; };
+		35FF279E148749CB001011E1 /* DefStd.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF278F148749CB001011E1 /* DefStd.h */; };
+		35FF279F148749CB001011E1 /* FileStreamAbstract.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2790148749CB001011E1 /* FileStreamAbstract.h */; };
+		35FF27A0148749CB001011E1 /* FileStreamAbstract.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF2791148749CB001011E1 /* FileStreamAbstract.m */; };
+		35FF27A1148749CB001011E1 /* FxErrorStd.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2792148749CB001011E1 /* FxErrorStd.h */; };
+		35FF27A2148749CB001011E1 /* FxException.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2793148749CB001011E1 /* FxException.h */; };
+		35FF27A3148749CB001011E1 /* FxException.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF2794148749CB001011E1 /* FxException.m */; };
+		35FF27A4148749CB001011E1 /* FxLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2795148749CB001011E1 /* FxLogger.h */; };
+		35FF27A5148749CB001011E1 /* FxLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF2796148749CB001011E1 /* FxLogger.m */; };
+		35FF27A6148749CB001011E1 /* FxLoggerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2797148749CB001011E1 /* FxLoggerHelper.h */; };
+		35FF27A7148749CB001011E1 /* OTCTypedef.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2798148749CB001011E1 /* OTCTypedef.h */; };
+		AA747D9F0F9514B9006C5449 /* FxStd_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* FxStd_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		088209D314B4370D00247E2C /* DesktopIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesktopIcon.h; sourceTree = "<group>"; };
+		088209D414B4370D00247E2C /* DesktopIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesktopIcon.m; sourceTree = "<group>"; };
+		08D172531591CDA20063070B /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
+		08D172541591CDA20063070B /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		351BA70A154819BB00A9C2C8 /* TelephoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelephoneNumber.h; sourceTree = "<group>"; };
+		351BA70B154819BB00A9C2C8 /* TelephoneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelephoneNumber.m; sourceTree = "<group>"; };
+		354FC1BF14F670B2006874C2 /* DirecotryNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirecotryNotifier.h; sourceTree = "<group>"; };
+		354FC1C014F670B2006874C2 /* DirecotryNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirecotryNotifier.m; sourceTree = "<group>"; };
+		3567AB4E16352FAE0056E54A /* StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
+		3567AB4F16352FAE0056E54A /* StringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtils.m; sourceTree = "<group>"; };
+		358FDCCF14EA61D500CB53F9 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UncaughtExceptionHandler.h; path = ExceptionHandler/UncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		358FDCD014EA61D500CB53F9 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UncaughtExceptionHandler.m; path = ExceptionHandler/UncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		35A5CB3314A0451700121CB3 /* DaemonPrivateHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaemonPrivateHome.h; sourceTree = "<group>"; };
+		35A5CB3414A0451700121CB3 /* DaemonPrivateHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaemonPrivateHome.m; sourceTree = "<group>"; };
+		35A6987B14F5EA0100F4337B /* FileDescriptorNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDescriptorNotifier.h; sourceTree = "<group>"; };
+		35A6987C14F5EA0100F4337B /* FileDescriptorNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDescriptorNotifier.m; sourceTree = "<group>"; };
+		35F088B316B79577005D9106 /* SBDidLaunchNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDidLaunchNotifier.h; sourceTree = "<group>"; };
+		35F088B416B79577005D9106 /* SBDidLaunchNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDidLaunchNotifier.m; sourceTree = "<group>"; };
+		35FF27711487492D001011E1 /* FxDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FxDatabase.h; path = DatabaseWrapper/FxDatabase.h; sourceTree = "<group>"; };
+		35FF27721487492D001011E1 /* FxDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FxDatabase.m; path = DatabaseWrapper/FxDatabase.m; sourceTree = "<group>"; };
+		35FF278A148749CB001011E1 /* ArrayUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayUtils.h; sourceTree = "<group>"; };
+		35FF278B148749CB001011E1 /* ArrayUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayUtils.m; sourceTree = "<group>"; };
+		35FF278C148749CB001011E1 /* DateTimeFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeFormat.h; sourceTree = "<group>"; };
+		35FF278D148749CB001011E1 /* DateTimeFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeFormat.m; sourceTree = "<group>"; };
+		35FF278E148749CB001011E1 /* DebugStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugStatus.h; sourceTree = "<group>"; };
+		35FF278F148749CB001011E1 /* DefStd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefStd.h; sourceTree = "<group>"; };
+		35FF2790148749CB001011E1 /* FileStreamAbstract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileStreamAbstract.h; sourceTree = "<group>"; };
+		35FF2791148749CB001011E1 /* FileStreamAbstract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileStreamAbstract.m; sourceTree = "<group>"; };
+		35FF2792148749CB001011E1 /* FxErrorStd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxErrorStd.h; sourceTree = "<group>"; };
+		35FF2793148749CB001011E1 /* FxException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxException.h; sourceTree = "<group>"; };
+		35FF2794148749CB001011E1 /* FxException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxException.m; sourceTree = "<group>"; };
+		35FF2795148749CB001011E1 /* FxLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxLogger.h; sourceTree = "<group>"; };
+		35FF2796148749CB001011E1 /* FxLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxLogger.m; sourceTree = "<group>"; };
+		35FF2797148749CB001011E1 /* FxLoggerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxLoggerHelper.h; sourceTree = "<group>"; };
+		35FF2798148749CB001011E1 /* OTCTypedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCTypedef.h; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* FxStd_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxStd_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libFxStd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFxStd.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libFxStd.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* FxStd */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = FxStd;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				08D172531591CDA20063070B /* AudioPlayer.h */,
+				08D172541591CDA20063070B /* AudioPlayer.m */,
+				088209D314B4370D00247E2C /* DesktopIcon.h */,
+				088209D414B4370D00247E2C /* DesktopIcon.m */,
+				35FF278A148749CB001011E1 /* ArrayUtils.h */,
+				35FF278B148749CB001011E1 /* ArrayUtils.m */,
+				35FF278C148749CB001011E1 /* DateTimeFormat.h */,
+				35FF278D148749CB001011E1 /* DateTimeFormat.m */,
+				35FF278E148749CB001011E1 /* DebugStatus.h */,
+				35FF278F148749CB001011E1 /* DefStd.h */,
+				35FF2790148749CB001011E1 /* FileStreamAbstract.h */,
+				35FF2791148749CB001011E1 /* FileStreamAbstract.m */,
+				35FF2792148749CB001011E1 /* FxErrorStd.h */,
+				35FF2793148749CB001011E1 /* FxException.h */,
+				35FF2794148749CB001011E1 /* FxException.m */,
+				35FF2795148749CB001011E1 /* FxLogger.h */,
+				35FF2796148749CB001011E1 /* FxLogger.m */,
+				35FF2797148749CB001011E1 /* FxLoggerHelper.h */,
+				35FF2798148749CB001011E1 /* OTCTypedef.h */,
+				35A5CB3314A0451700121CB3 /* DaemonPrivateHome.h */,
+				35A5CB3414A0451700121CB3 /* DaemonPrivateHome.m */,
+				35A6987B14F5EA0100F4337B /* FileDescriptorNotifier.h */,
+				35A6987C14F5EA0100F4337B /* FileDescriptorNotifier.m */,
+				354FC1BF14F670B2006874C2 /* DirecotryNotifier.h */,
+				354FC1C014F670B2006874C2 /* DirecotryNotifier.m */,
+				358FDCCE14EA61AC00CB53F9 /* ExceptionHandler */,
+				35FF277014874919001011E1 /* DatabaseWrapper */,
+				351BA70A154819BB00A9C2C8 /* TelephoneNumber.h */,
+				351BA70B154819BB00A9C2C8 /* TelephoneNumber.m */,
+				3567AB4E16352FAE0056E54A /* StringUtils.h */,
+				3567AB4F16352FAE0056E54A /* StringUtils.m */,
+				35F088B316B79577005D9106 /* SBDidLaunchNotifier.h */,
+				35F088B416B79577005D9106 /* SBDidLaunchNotifier.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* FxStd_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		358FDCCE14EA61AC00CB53F9 /* ExceptionHandler */ = {
+			isa = PBXGroup;
+			children = (
+				358FDCCF14EA61D500CB53F9 /* UncaughtExceptionHandler.h */,
+				358FDCD014EA61D500CB53F9 /* UncaughtExceptionHandler.m */,
+			);
+			name = ExceptionHandler;
+			sourceTree = "<group>";
+		};
+		35FF277014874919001011E1 /* DatabaseWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				35FF27711487492D001011E1 /* FxDatabase.h */,
+				35FF27721487492D001011E1 /* FxDatabase.m */,
+			);
+			name = DatabaseWrapper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* FxStd_Prefix.pch in Headers */,
+				35FF27731487492D001011E1 /* FxDatabase.h in Headers */,
+				35FF2799148749CB001011E1 /* ArrayUtils.h in Headers */,
+				35FF279B148749CB001011E1 /* DateTimeFormat.h in Headers */,
+				35FF279D148749CB001011E1 /* DebugStatus.h in Headers */,
+				35FF279E148749CB001011E1 /* DefStd.h in Headers */,
+				35FF279F148749CB001011E1 /* FileStreamAbstract.h in Headers */,
+				35FF27A1148749CB001011E1 /* FxErrorStd.h in Headers */,
+				35FF27A2148749CB001011E1 /* FxException.h in Headers */,
+				35FF27A4148749CB001011E1 /* FxLogger.h in Headers */,
+				35FF27A6148749CB001011E1 /* FxLoggerHelper.h in Headers */,
+				35FF27A7148749CB001011E1 /* OTCTypedef.h in Headers */,
+				35A5CB3514A0451700121CB3 /* DaemonPrivateHome.h in Headers */,
+				088209D514B4370D00247E2C /* DesktopIcon.h in Headers */,
+				358FDCD114EA61D500CB53F9 /* UncaughtExceptionHandler.h in Headers */,
+				35A6987D14F5EA0100F4337B /* FileDescriptorNotifier.h in Headers */,
+				354FC1C114F670B2006874C2 /* DirecotryNotifier.h in Headers */,
+				351BA70C154819BB00A9C2C8 /* TelephoneNumber.h in Headers */,
+				08D172551591CDA20063070B /* AudioPlayer.h in Headers */,
+				3567AB5016352FAE0056E54A /* StringUtils.h in Headers */,
+				35F088B516B79577005D9106 /* SBDidLaunchNotifier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* FxStd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "FxStd" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FxStd;
+			productName = FxStd;
+			productReference = D2AAC07E0554694100DB518D /* libFxStd.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "FxStd" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* FxStd */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* FxStd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FF27741487492D001011E1 /* FxDatabase.m in Sources */,
+				35FF279A148749CB001011E1 /* ArrayUtils.m in Sources */,
+				35FF279C148749CB001011E1 /* DateTimeFormat.m in Sources */,
+				35FF27A0148749CB001011E1 /* FileStreamAbstract.m in Sources */,
+				35FF27A3148749CB001011E1 /* FxException.m in Sources */,
+				35FF27A5148749CB001011E1 /* FxLogger.m in Sources */,
+				35A5CB3614A0451700121CB3 /* DaemonPrivateHome.m in Sources */,
+				088209D614B4370D00247E2C /* DesktopIcon.m in Sources */,
+				358FDCD214EA61D500CB53F9 /* UncaughtExceptionHandler.m in Sources */,
+				35A6987E14F5EA0100F4337B /* FileDescriptorNotifier.m in Sources */,
+				354FC1C214F670B2006874C2 /* DirecotryNotifier.m in Sources */,
+				351BA70D154819BB00A9C2C8 /* TelephoneNumber.m in Sources */,
+				08D172561591CDA20063070B /* AudioPlayer.m in Sources */,
+				3567AB5116352FAE0056E54A /* StringUtils.m in Sources */,
+				35F088B616B79577005D9106 /* SBDidLaunchNotifier.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/FxStd.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FxStd_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = FxStd;
+				SDKROOT = iphoneos4.0;
+				USER_HEADER_SEARCH_PATHS = "../../ccgus-fmdb-606b29d/src";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/FxStd.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FxStd_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = FxStd;
+				SDKROOT = iphoneos4.0;
+				USER_HEADER_SEARCH_PATHS = "../../ccgus-fmdb-606b29d/src";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "FxStd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "FxStd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

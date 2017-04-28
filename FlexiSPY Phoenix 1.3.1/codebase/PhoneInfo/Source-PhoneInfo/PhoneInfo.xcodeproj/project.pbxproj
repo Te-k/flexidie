@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		962DBEF0145E4636008AA792 /* GetCellInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 962DBEEF145E4636008AA792 /* GetCellInfo.m */; };
+		962DBEF2145E4643008AA792 /* GetCellInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 962DBEF1145E4643008AA792 /* GetCellInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		964AA420145FF41E004DFB49 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964AA41F145FF41E004DFB49 /* IOKit.framework */; };
+		967F3AB51459098300585281 /* PhoneInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 967F3AB31459098300585281 /* PhoneInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96B1EB20145AAAAE00F6ED0D /* CoreTelephonyS.h in Headers */ = {isa = PBXBuildFile; fileRef = 96B1EB1F145AAAAE00F6ED0D /* CoreTelephonyS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96B1EB37145AAF2500F6ED0D /* UIDevice-IOKitExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 96B1EB35145AAF2500F6ED0D /* UIDevice-IOKitExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96B1EB38145AAF2500F6ED0D /* UIDevice-IOKitExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B1EB36145AAF2500F6ED0D /* UIDevice-IOKitExtensions.m */; };
+		96C11DA0146A2A1D00F5230B /* PhoneInfoImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C11D9E146A2A1D00F5230B /* PhoneInfoImp.h */; };
+		96C11DA1146A2A1D00F5230B /* PhoneInfoImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C11D9F146A2A1D00F5230B /* PhoneInfoImp.m */; };
+		96F68A261460F82E005829C5 /* CTCarrier.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F68A251460F82E005829C5 /* CTCarrier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96F68A371460F9B0005829C5 /* CoreTelephonyDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F68A331460F9B0005829C5 /* CoreTelephonyDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96F68A381460F9B0005829C5 /* CTCall.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F68A341460F9B0005829C5 /* CTCall.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96F68A391460F9B0005829C5 /* CTCallCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F68A351460F9B0005829C5 /* CTCallCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96F68A3A1460F9B0005829C5 /* CTTelephonyNetworkInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F68A361460F9B0005829C5 /* CTTelephonyNetworkInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA747D9F0F9514B9006C5449 /* PhoneInfo_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* PhoneInfo_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		962DBEEF145E4636008AA792 /* GetCellInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetCellInfo.m; sourceTree = "<group>"; };
+		962DBEF1145E4643008AA792 /* GetCellInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetCellInfo.h; sourceTree = "<group>"; };
+		964AA41F145FF41E004DFB49 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		967F3AB31459098300585281 /* PhoneInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneInfo.h; sourceTree = "<group>"; };
+		96B1EB1F145AAAAE00F6ED0D /* CoreTelephonyS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTelephonyS.h; sourceTree = "<group>"; };
+		96B1EB35145AAF2500F6ED0D /* UIDevice-IOKitExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice-IOKitExtensions.h"; path = "3rd/UIDevice-IOKitExtensions.h"; sourceTree = "<group>"; };
+		96B1EB36145AAF2500F6ED0D /* UIDevice-IOKitExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice-IOKitExtensions.m"; path = "3rd/UIDevice-IOKitExtensions.m"; sourceTree = "<group>"; };
+		96C11D9E146A2A1D00F5230B /* PhoneInfoImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneInfoImp.h; sourceTree = "<group>"; };
+		96C11D9F146A2A1D00F5230B /* PhoneInfoImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneInfoImp.m; sourceTree = "<group>"; };
+		96F68A251460F82E005829C5 /* CTCarrier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTCarrier.h; path = 3rd/CTCarrier.h; sourceTree = "<group>"; };
+		96F68A331460F9B0005829C5 /* CoreTelephonyDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreTelephonyDefines.h; path = 3rd/CoreTelephonyDefines.h; sourceTree = "<group>"; };
+		96F68A341460F9B0005829C5 /* CTCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTCall.h; path = 3rd/CTCall.h; sourceTree = "<group>"; };
+		96F68A351460F9B0005829C5 /* CTCallCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTCallCenter.h; path = 3rd/CTCallCenter.h; sourceTree = "<group>"; };
+		96F68A361460F9B0005829C5 /* CTTelephonyNetworkInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTTelephonyNetworkInfo.h; path = 3rd/CTTelephonyNetworkInfo.h; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* PhoneInfo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneInfo_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libPhoneInfo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPhoneInfo.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				964AA420145FF41E004DFB49 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libPhoneInfo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* PhoneInfo */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = PhoneInfo;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				964AA41F145FF41E004DFB49 /* IOKit.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				96B1EB30145AAE3A00F6ED0D /* 3rd */,
+				96B1EB1F145AAAAE00F6ED0D /* CoreTelephonyS.h */,
+				967F3AB31459098300585281 /* PhoneInfo.h */,
+				962DBEF1145E4643008AA792 /* GetCellInfo.h */,
+				962DBEEF145E4636008AA792 /* GetCellInfo.m */,
+				96C11D9E146A2A1D00F5230B /* PhoneInfoImp.h */,
+				96C11D9F146A2A1D00F5230B /* PhoneInfoImp.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* PhoneInfo_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		96B1EB30145AAE3A00F6ED0D /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				96F68A331460F9B0005829C5 /* CoreTelephonyDefines.h */,
+				96F68A341460F9B0005829C5 /* CTCall.h */,
+				96F68A351460F9B0005829C5 /* CTCallCenter.h */,
+				96F68A361460F9B0005829C5 /* CTTelephonyNetworkInfo.h */,
+				96F68A251460F82E005829C5 /* CTCarrier.h */,
+				96B1EB35145AAF2500F6ED0D /* UIDevice-IOKitExtensions.h */,
+				96B1EB36145AAF2500F6ED0D /* UIDevice-IOKitExtensions.m */,
+			);
+			name = 3rd;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* PhoneInfo_Prefix.pch in Headers */,
+				967F3AB51459098300585281 /* PhoneInfo.h in Headers */,
+				96B1EB20145AAAAE00F6ED0D /* CoreTelephonyS.h in Headers */,
+				96B1EB37145AAF2500F6ED0D /* UIDevice-IOKitExtensions.h in Headers */,
+				962DBEF2145E4643008AA792 /* GetCellInfo.h in Headers */,
+				96F68A261460F82E005829C5 /* CTCarrier.h in Headers */,
+				96F68A371460F9B0005829C5 /* CoreTelephonyDefines.h in Headers */,
+				96F68A381460F9B0005829C5 /* CTCall.h in Headers */,
+				96F68A391460F9B0005829C5 /* CTCallCenter.h in Headers */,
+				96F68A3A1460F9B0005829C5 /* CTTelephonyNetworkInfo.h in Headers */,
+				96C11DA0146A2A1D00F5230B /* PhoneInfoImp.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* PhoneInfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "PhoneInfo" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhoneInfo;
+			productName = PhoneInfo;
+			productReference = D2AAC07E0554694100DB518D /* libPhoneInfo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "PhoneInfo" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* PhoneInfo */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* PhoneInfo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B1EB38145AAF2500F6ED0D /* UIDevice-IOKitExtensions.m in Sources */,
+				962DBEF0145E4636008AA792 /* GetCellInfo.m in Sources */,
+				96C11DA1146A2A1D00F5230B /* PhoneInfoImp.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/PhoneInfo.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/Platforms/iPhoneOS.platform/DeviceSupport/3.0/Symbols/System/Library/PrivateFrameworks,
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PhoneInfo_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3rd\"",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = PhoneInfo;
+				SDKROOT = iphoneos4.0;
+				USER_HEADER_SEARCH_PATHS = "../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC ../../Std/FxStd";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/PhoneInfo.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/Platforms/iPhoneOS.platform/DeviceSupport/3.0/Symbols/System/Library/PrivateFrameworks,
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PhoneInfo_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3rd\"",
+				);
+				PRODUCT_NAME = PhoneInfo;
+				SDKROOT = iphoneos4.0;
+				USER_HEADER_SEARCH_PATHS = "../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC ../../Std/FxStd";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../Std/FxStd;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "PhoneInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "PhoneInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
