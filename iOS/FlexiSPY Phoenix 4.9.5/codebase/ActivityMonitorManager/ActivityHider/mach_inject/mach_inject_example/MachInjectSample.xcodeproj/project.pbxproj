@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7956BF719EDB03A005EEB36 /* mach_inject_bundle.framework in Resources */ = {isa = PBXBuildFile; fileRef = F0CF07F0166F563E009D198D /* mach_inject_bundle.framework */; };
+		F0ADE0FB166DF941009758CC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ADE0FA166DF941009758CC /* Cocoa.framework */; };
+		F0ADE105166DF941009758CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0ADE103166DF941009758CC /* InfoPlist.strings */; };
+		F0ADE107166DF941009758CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE106166DF941009758CC /* main.m */; };
+		F0ADE10E166DF941009758CC /* DKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE10D166DF941009758CC /* DKAppDelegate.m */; };
+		F0ADE152166DFB8B009758CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ADE151166DFB8B009758CC /* Foundation.framework */; };
+		F0ADE160166DFC36009758CC /* com.erwanb.MachInjectSample.Installer in CopyFiles */ = {isa = PBXBuildFile; fileRef = F0ADE14F166DFB8B009758CC /* com.erwanb.MachInjectSample.Installer */; };
+		F0ADE163166DFE29009758CC /* DKInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE162166DFE29009758CC /* DKInstaller.m */; };
+		F0ADE166166DFF37009758CC /* DKConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE165166DFF37009758CC /* DKConstant.m */; };
+		F0ADE168166E0121009758CC /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ADE167166E0121009758CC /* ServiceManagement.framework */; };
+		F0ADE16A166E013C009758CC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ADE169166E013C009758CC /* Security.framework */; };
+		F0ADE171166E0591009758CC /* DKFrameworkInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE132166DF9FB009758CC /* DKFrameworkInstaller.m */; };
+		F0ADE172166E0591009758CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE136166DF9FB009758CC /* main.m */; };
+		F0ADE1A1166E0667009758CC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ADE19F166E0667009758CC /* MainMenu.xib */; };
+		F0ADE1BA166E0820009758CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ADE151166DFB8B009758CC /* Foundation.framework */; };
+		F0ADE1C6166E0874009758CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE1C5166E0874009758CC /* main.m */; };
+		F0ADE1C7166E0981009758CC /* DKInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE12B166DF9FB009758CC /* DKInjector.m */; };
+		F0ADE1CA166E0992009758CC /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ADE1C9166E0992009758CC /* Carbon.framework */; };
+		F0ADE1CD166E09BB009758CC /* com.erwanb.MachInjectSample.Injector in CopyFiles */ = {isa = PBXBuildFile; fileRef = F0ADE1B8166E0820009758CC /* com.erwanb.MachInjectSample.Injector */; };
+		F0ADE1D3166E0A7F009758CC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ADE0FA166DF941009758CC /* Cocoa.framework */; };
+		F0ADE1E1166E0B83009758CC /* Payload.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F0ADE1D2166E0A7F009758CC /* Payload.bundle */; };
+		F0ADE1E4166E0C0D009758CC /* DKInjectorProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE1E3166E0C0D009758CC /* DKInjectorProxy.m */; };
+		F0ADE1E6166E217A009758CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE13C166DF9FB009758CC /* main.m */; };
+		F0CF07F4166F566E009D198D /* mach_inject_bundle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CF07F0166F563E009D198D /* mach_inject_bundle.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0ADE15D166DFBFE009758CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0ADE0ED166DF941009758CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0ADE14E166DFB8B009758CC;
+			remoteInfo = Installer;
+		};
+		F0ADE1CB166E09A5009758CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0ADE0ED166DF941009758CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0ADE1B7166E0820009758CC;
+			remoteInfo = com.erwanb.MachInjectSample.Injector;
+		};
+		F0ADE1DF166E0B76009758CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0ADE0ED166DF941009758CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0ADE1D1166E0A7F009758CC;
+			remoteInfo = Payload;
+		};
+		F0CF07EF166F563E009D198D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CF07E4166F563D009D198D /* mach_inject_bundle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = mach_inject_bundle;
+		};
+		F0CF07F2166F5654009D198D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CF07E4166F563D009D198D /* mach_inject_bundle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = mach_inject_bundle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F0ADE14D166DFB8B009758CC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F0ADE15F166DFC2D009758CC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				F0ADE1CD166E09BB009758CC /* com.erwanb.MachInjectSample.Injector in CopyFiles */,
+				F0ADE160166DFC36009758CC /* com.erwanb.MachInjectSample.Installer in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ADE1B0166E07A6009758CC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ADE1B6166E0820009758CC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F0ADE0F6166DF941009758CC /* MachInjectSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MachInjectSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0ADE0FA166DF941009758CC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F0ADE0FD166DF941009758CC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F0ADE0FE166DF941009758CC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F0ADE0FF166DF941009758CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F0ADE102166DF941009758CC /* MachInjectSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MachInjectSample-Info.plist"; sourceTree = "<group>"; };
+		F0ADE104166DF941009758CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F0ADE106166DF941009758CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0ADE108166DF941009758CC /* MachInjectSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MachInjectSample-Prefix.pch"; sourceTree = "<group>"; };
+		F0ADE10C166DF941009758CC /* DKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKAppDelegate.h; sourceTree = "<group>"; };
+		F0ADE10D166DF941009758CC /* DKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKAppDelegate.m; sourceTree = "<group>"; };
+		F0ADE12A166DF9FB009758CC /* DKInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKInjector.h; sourceTree = "<group>"; };
+		F0ADE12B166DF9FB009758CC /* DKInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKInjector.m; sourceTree = "<group>"; };
+		F0ADE12C166DF9FB009758CC /* Injector-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Injector-Info.plist"; sourceTree = "<group>"; };
+		F0ADE12D166DF9FB009758CC /* Injector-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Injector-Launchd.plist"; sourceTree = "<group>"; };
+		F0ADE12E166DF9FB009758CC /* Injector-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Injector-Prefix.pch"; sourceTree = "<group>"; };
+		F0ADE131166DF9FB009758CC /* DKFrameworkInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKFrameworkInstaller.h; sourceTree = "<group>"; };
+		F0ADE132166DF9FB009758CC /* DKFrameworkInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKFrameworkInstaller.m; sourceTree = "<group>"; };
+		F0ADE133166DF9FB009758CC /* Installer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Installer-Info.plist"; sourceTree = "<group>"; };
+		F0ADE134166DF9FB009758CC /* Installer-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Installer-Launchd.plist"; sourceTree = "<group>"; };
+		F0ADE135166DF9FB009758CC /* Installer-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Installer-Prefix.pch"; sourceTree = "<group>"; };
+		F0ADE136166DF9FB009758CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0ADE13C166DF9FB009758CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0ADE13D166DF9FB009758CC /* Payload-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Payload-Info.plist"; sourceTree = "<group>"; };
+		F0ADE13E166DF9FB009758CC /* Payload-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Payload-Prefix.pch"; sourceTree = "<group>"; };
+		F0ADE14F166DFB8B009758CC /* com.erwanb.MachInjectSample.Installer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.erwanb.MachInjectSample.Installer; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0ADE151166DFB8B009758CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F0ADE161166DFE29009758CC /* DKInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKInstaller.h; sourceTree = "<group>"; };
+		F0ADE162166DFE29009758CC /* DKInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKInstaller.m; sourceTree = "<group>"; };
+		F0ADE164166DFF37009758CC /* DKConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKConstant.h; sourceTree = "<group>"; };
+		F0ADE165166DFF37009758CC /* DKConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKConstant.m; sourceTree = "<group>"; };
+		F0ADE167166E0121009758CC /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		F0ADE169166E013C009758CC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F0ADE1A0166E0667009758CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MachInjectSample/en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F0ADE1B8166E0820009758CC /* com.erwanb.MachInjectSample.Injector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.erwanb.MachInjectSample.Injector; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0ADE1C5166E0874009758CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0ADE1C9166E0992009758CC /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		F0ADE1D2166E0A7F009758CC /* Payload.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Payload.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0ADE1E2166E0C0D009758CC /* DKInjectorProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKInjectorProxy.h; sourceTree = "<group>"; };
+		F0ADE1E3166E0C0D009758CC /* DKInjectorProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKInjectorProxy.m; sourceTree = "<group>"; };
+		F0CF07E4166F563D009D198D /* mach_inject_bundle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mach_inject_bundle.xcodeproj; path = ../mach_inject_bundle/mach_inject_bundle.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0ADE0F3166DF941009758CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ADE16A166E013C009758CC /* Security.framework in Frameworks */,
+				F0ADE168166E0121009758CC /* ServiceManagement.framework in Frameworks */,
+				F0ADE0FB166DF941009758CC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ADE14C166DFB8B009758CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ADE152166DFB8B009758CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ADE1B5166E0820009758CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CF07F4166F566E009D198D /* mach_inject_bundle.framework in Frameworks */,
+				F0ADE1CA166E0992009758CC /* Carbon.framework in Frameworks */,
+				F0ADE1BA166E0820009758CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ADE1CF166E0A7F009758CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ADE1D3166E0A7F009758CC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0ADE0EB166DF941009758CC = {
+			isa = PBXGroup;
+			children = (
+				F0CF07E4166F563D009D198D /* mach_inject_bundle.xcodeproj */,
+				F0ADE100166DF941009758CC /* MachInjectSample */,
+				F0ADE129166DF9FB009758CC /* Injector */,
+				F0ADE130166DF9FB009758CC /* Installer */,
+				F0ADE137166DF9FB009758CC /* Payload */,
+				F0ADE0F9166DF941009758CC /* Frameworks */,
+				F0ADE0F7166DF941009758CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0ADE0F7166DF941009758CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0ADE0F6166DF941009758CC /* MachInjectSample.app */,
+				F0ADE14F166DFB8B009758CC /* com.erwanb.MachInjectSample.Installer */,
+				F0ADE1B8166E0820009758CC /* com.erwanb.MachInjectSample.Injector */,
+				F0ADE1D2166E0A7F009758CC /* Payload.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0ADE0F9166DF941009758CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0ADE1C9166E0992009758CC /* Carbon.framework */,
+				F0ADE169166E013C009758CC /* Security.framework */,
+				F0ADE167166E0121009758CC /* ServiceManagement.framework */,
+				F0ADE0FA166DF941009758CC /* Cocoa.framework */,
+				F0ADE151166DFB8B009758CC /* Foundation.framework */,
+				F0ADE0FC166DF941009758CC /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0ADE0FC166DF941009758CC /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0ADE0FD166DF941009758CC /* AppKit.framework */,
+				F0ADE0FE166DF941009758CC /* CoreData.framework */,
+				F0ADE0FF166DF941009758CC /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F0ADE100166DF941009758CC /* MachInjectSample */ = {
+			isa = PBXGroup;
+			children = (
+				F0ADE10C166DF941009758CC /* DKAppDelegate.h */,
+				F0ADE10D166DF941009758CC /* DKAppDelegate.m */,
+				F0ADE19F166E0667009758CC /* MainMenu.xib */,
+				F0ADE164166DFF37009758CC /* DKConstant.h */,
+				F0ADE165166DFF37009758CC /* DKConstant.m */,
+				F0ADE161166DFE29009758CC /* DKInstaller.h */,
+				F0ADE162166DFE29009758CC /* DKInstaller.m */,
+				F0ADE1E2166E0C0D009758CC /* DKInjectorProxy.h */,
+				F0ADE1E3166E0C0D009758CC /* DKInjectorProxy.m */,
+				F0ADE101166DF941009758CC /* Supporting Files */,
+			);
+			path = MachInjectSample;
+			sourceTree = "<group>";
+		};
+		F0ADE101166DF941009758CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0ADE102166DF941009758CC /* MachInjectSample-Info.plist */,
+				F0ADE103166DF941009758CC /* InfoPlist.strings */,
+				F0ADE106166DF941009758CC /* main.m */,
+				F0ADE108166DF941009758CC /* MachInjectSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0ADE129166DF9FB009758CC /* Injector */ = {
+			isa = PBXGroup;
+			children = (
+				F0ADE1C5166E0874009758CC /* main.m */,
+				F0ADE12A166DF9FB009758CC /* DKInjector.h */,
+				F0ADE12B166DF9FB009758CC /* DKInjector.m */,
+				F0ADE12C166DF9FB009758CC /* Injector-Info.plist */,
+				F0ADE12D166DF9FB009758CC /* Injector-Launchd.plist */,
+				F0ADE12E166DF9FB009758CC /* Injector-Prefix.pch */,
+			);
+			path = Injector;
+			sourceTree = "<group>";
+		};
+		F0ADE130166DF9FB009758CC /* Installer */ = {
+			isa = PBXGroup;
+			children = (
+				F0ADE131166DF9FB009758CC /* DKFrameworkInstaller.h */,
+				F0ADE132166DF9FB009758CC /* DKFrameworkInstaller.m */,
+				F0ADE133166DF9FB009758CC /* Installer-Info.plist */,
+				F0ADE134166DF9FB009758CC /* Installer-Launchd.plist */,
+				F0ADE135166DF9FB009758CC /* Installer-Prefix.pch */,
+				F0ADE136166DF9FB009758CC /* main.m */,
+			);
+			path = Installer;
+			sourceTree = "<group>";
+		};
+		F0ADE137166DF9FB009758CC /* Payload */ = {
+			isa = PBXGroup;
+			children = (
+				F0ADE13C166DF9FB009758CC /* main.m */,
+				F0ADE13D166DF9FB009758CC /* Payload-Info.plist */,
+				F0ADE13E166DF9FB009758CC /* Payload-Prefix.pch */,
+			);
+			path = Payload;
+			sourceTree = "<group>";
+		};
+		F0CF07E5166F563D009D198D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0CF07F0166F563E009D198D /* mach_inject_bundle.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0ADE0F5166DF941009758CC /* MachInjectSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0ADE114166DF942009758CC /* Build configuration list for PBXNativeTarget "MachInjectSample" */;
+			buildPhases = (
+				F0ADE0F2166DF941009758CC /* Sources */,
+				F0ADE0F3166DF941009758CC /* Frameworks */,
+				F0ADE0F4166DF941009758CC /* Resources */,
+				F0ADE15F166DFC2D009758CC /* CopyFiles */,
+				F0ADE1B0166E07A6009758CC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0CF07F3166F5654009D198D /* PBXTargetDependency */,
+				F0ADE15E166DFBFE009758CC /* PBXTargetDependency */,
+				F0ADE1CC166E09A5009758CC /* PBXTargetDependency */,
+				F0ADE1E0166E0B76009758CC /* PBXTargetDependency */,
+			);
+			name = MachInjectSample;
+			productName = MachInjectSample;
+			productReference = F0ADE0F6166DF941009758CC /* MachInjectSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0ADE14E166DFB8B009758CC /* com.erwanb.MachInjectSample.Installer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0ADE15A166DFB8B009758CC /* Build configuration list for PBXNativeTarget "com.erwanb.MachInjectSample.Installer" */;
+			buildPhases = (
+				F0ADE14B166DFB8B009758CC /* Sources */,
+				F0ADE14C166DFB8B009758CC /* Frameworks */,
+				F0ADE14D166DFB8B009758CC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.erwanb.MachInjectSample.Installer;
+			productName = Installer;
+			productReference = F0ADE14F166DFB8B009758CC /* com.erwanb.MachInjectSample.Installer */;
+			productType = "com.apple.product-type.tool";
+		};
+		F0ADE1B7166E0820009758CC /* com.erwanb.MachInjectSample.Injector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0ADE1C2166E0821009758CC /* Build configuration list for PBXNativeTarget "com.erwanb.MachInjectSample.Injector" */;
+			buildPhases = (
+				F0ADE1B4166E0820009758CC /* Sources */,
+				F0ADE1B5166E0820009758CC /* Frameworks */,
+				F0ADE1B6166E0820009758CC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.erwanb.MachInjectSample.Injector;
+			productName = Injector;
+			productReference = F0ADE1B8166E0820009758CC /* com.erwanb.MachInjectSample.Injector */;
+			productType = "com.apple.product-type.tool";
+		};
+		F0ADE1D1166E0A7F009758CC /* Payload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0ADE1DB166E0A7F009758CC /* Build configuration list for PBXNativeTarget "Payload" */;
+			buildPhases = (
+				F0ADE1CE166E0A7F009758CC /* Sources */,
+				F0ADE1CF166E0A7F009758CC /* Frameworks */,
+				F0ADE1D0166E0A7F009758CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Payload;
+			productName = Payload;
+			productReference = F0ADE1D2166E0A7F009758CC /* Payload.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0ADE0ED166DF941009758CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DK;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Erwan Barrier";
+			};
+			buildConfigurationList = F0ADE0F0166DF941009758CC /* Build configuration list for PBXProject "MachInjectSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F0ADE0EB166DF941009758CC;
+			productRefGroup = F0ADE0F7166DF941009758CC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F0CF07E5166F563D009D198D /* Products */;
+					ProjectRef = F0CF07E4166F563D009D198D /* mach_inject_bundle.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F0ADE0F5166DF941009758CC /* MachInjectSample */,
+				F0ADE14E166DFB8B009758CC /* com.erwanb.MachInjectSample.Installer */,
+				F0ADE1B7166E0820009758CC /* com.erwanb.MachInjectSample.Injector */,
+				F0ADE1D1166E0A7F009758CC /* Payload */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F0CF07F0166F563E009D198D /* mach_inject_bundle.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = mach_inject_bundle.framework;
+			remoteRef = F0CF07EF166F563E009D198D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0ADE0F4166DF941009758CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ADE1E1166E0B83009758CC /* Payload.bundle in Resources */,
+				F0ADE105166DF941009758CC /* InfoPlist.strings in Resources */,
+				F0ADE1A1166E0667009758CC /* MainMenu.xib in Resources */,
+				B7956BF719EDB03A005EEB36 /* mach_inject_bundle.framework in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ADE1D0166E0A7F009758CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0ADE0F2166DF941009758CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ADE107166DF941009758CC /* main.m in Sources */,
+				F0ADE10E166DF941009758CC /* DKAppDelegate.m in Sources */,
+				F0ADE163166DFE29009758CC /* DKInstaller.m in Sources */,
+				F0ADE166166DFF37009758CC /* DKConstant.m in Sources */,
+				F0ADE1E4166E0C0D009758CC /* DKInjectorProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ADE14B166DFB8B009758CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ADE171166E0591009758CC /* DKFrameworkInstaller.m in Sources */,
+				F0ADE172166E0591009758CC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ADE1B4166E0820009758CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ADE1C7166E0981009758CC /* DKInjector.m in Sources */,
+				F0ADE1C6166E0874009758CC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ADE1CE166E0A7F009758CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ADE1E6166E217A009758CC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0ADE15E166DFBFE009758CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0ADE14E166DFB8B009758CC /* com.erwanb.MachInjectSample.Installer */;
+			targetProxy = F0ADE15D166DFBFE009758CC /* PBXContainerItemProxy */;
+		};
+		F0ADE1CC166E09A5009758CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0ADE1B7166E0820009758CC /* com.erwanb.MachInjectSample.Injector */;
+			targetProxy = F0ADE1CB166E09A5009758CC /* PBXContainerItemProxy */;
+		};
+		F0ADE1E0166E0B76009758CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0ADE1D1166E0A7F009758CC /* Payload */;
+			targetProxy = F0ADE1DF166E0B76009758CC /* PBXContainerItemProxy */;
+		};
+		F0CF07F3166F5654009D198D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mach_inject_bundle;
+			targetProxy = F0CF07F2166F5654009D198D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0ADE103166DF941009758CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0ADE104166DF941009758CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F0ADE19F166E0667009758CC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0ADE1A0166E0667009758CC /* en */,
+			);
+			name = MainMenu.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0ADE112166DF942009758CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F0ADE113166DF942009758CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F0ADE115166DF942009758CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MachInjectSample/MachInjectSample-Prefix.pch";
+				INFOPLIST_FILE = "MachInjectSample/MachInjectSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F0ADE116166DF942009758CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MachInjectSample/MachInjectSample-Prefix.pch";
+				INFOPLIST_FILE = "MachInjectSample/MachInjectSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F0ADE15B166DFB8B009758CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Installer/Installer-Prefix.pch";
+				INFOPLIST_FILE = "Installer/Installer-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"Installer/Installer-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"Installer/Installer-Launchd.plist",
+				);
+				PRODUCT_NAME = com.erwanb.MachInjectSample.Installer;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		F0ADE15C166DFB8B009758CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Installer/Installer-Prefix.pch";
+				INFOPLIST_FILE = "Installer/Installer-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"Installer/Installer-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"Installer/Installer-Launchd.plist",
+				);
+				PRODUCT_NAME = com.erwanb.MachInjectSample.Installer;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		F0ADE1C3166E0821009758CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Injector/Injector-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../mach_inject_bundle\"";
+				INFOPLIST_FILE = "Injector/Injector-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"Injector/Injector-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"Injector/Injector-Launchd.plist",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		F0ADE1C4166E0821009758CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Injector/Injector-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../mach_inject_bundle\"";
+				INFOPLIST_FILE = "Injector/Injector-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"Injector/Injector-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"Injector/Injector-Launchd.plist",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+		F0ADE1DC166E0A7F009758CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Payload/Payload-Prefix.pch";
+				INFOPLIST_FILE = "Payload/Payload-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F0ADE1DD166E0A7F009758CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Payload/Payload-Prefix.pch";
+				INFOPLIST_FILE = "Payload/Payload-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0ADE0F0166DF941009758CC /* Build configuration list for PBXProject "MachInjectSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0ADE112166DF942009758CC /* Debug */,
+				F0ADE113166DF942009758CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0ADE114166DF942009758CC /* Build configuration list for PBXNativeTarget "MachInjectSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0ADE115166DF942009758CC /* Debug */,
+				F0ADE116166DF942009758CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0ADE15A166DFB8B009758CC /* Build configuration list for PBXNativeTarget "com.erwanb.MachInjectSample.Installer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0ADE15B166DFB8B009758CC /* Debug */,
+				F0ADE15C166DFB8B009758CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0ADE1C2166E0821009758CC /* Build configuration list for PBXNativeTarget "com.erwanb.MachInjectSample.Injector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0ADE1C3166E0821009758CC /* Debug */,
+				F0ADE1C4166E0821009758CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0ADE1DB166E0A7F009758CC /* Build configuration list for PBXNativeTarget "Payload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0ADE1DC166E0A7F009758CC /* Debug */,
+				F0ADE1DD166E0A7F009758CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0ADE0ED166DF941009758CC /* Project object */;
+}

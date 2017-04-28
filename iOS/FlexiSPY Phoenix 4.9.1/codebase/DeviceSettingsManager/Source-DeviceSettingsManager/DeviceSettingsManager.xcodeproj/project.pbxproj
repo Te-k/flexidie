@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3536607F18C5CA71006AF699 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3536607E18C5CA71006AF699 /* Foundation.framework */; };
+		3536608418C5CA71006AF699 /* DeviceSettingsManagerImpl.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3536608318C5CA71006AF699 /* DeviceSettingsManagerImpl.h */; };
+		3536608618C5CA71006AF699 /* DeviceSettingsManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3536608518C5CA71006AF699 /* DeviceSettingsManagerImpl.m */; };
+		353660A718C5D573006AF699 /* DeviceSettingsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 353660A618C5D573006AF699 /* DeviceSettingsUtils.m */; };
+		353660AA18C5D712006AF699 /* DevicePasscodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353660A918C5D712006AF699 /* DevicePasscodeController.m */; };
+		358D131E1A7A20EF00CA0FE6 /* DeviceSettingsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 353660A618C5D573006AF699 /* DeviceSettingsUtils.m */; };
+		358D131F1A7A20EF00CA0FE6 /* DevicePasscodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353660A918C5D712006AF699 /* DevicePasscodeController.m */; };
+		358D13201A7A20EF00CA0FE6 /* DeviceSettingsManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3536608518C5CA71006AF699 /* DeviceSettingsManagerImpl.m */; };
+		358D13221A7A20EF00CA0FE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3536607E18C5CA71006AF699 /* Foundation.framework */; };
+		358D13241A7A20EF00CA0FE6 /* DeviceSettingsManagerImpl.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3536608318C5CA71006AF699 /* DeviceSettingsManagerImpl.h */; };
+		358D13311A7A2CB700CA0FE6 /* GetPrimaryMACAddress.c in Sources */ = {isa = PBXBuildFile; fileRef = 358D132F1A7A2CB700CA0FE6 /* GetPrimaryMACAddress.c */; };
+		35DC864D1A7B875200541D15 /* NetworkInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC864C1A7B875200541D15 /* NetworkInformation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3536607918C5CA71006AF699 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				3536608418C5CA71006AF699 /* DeviceSettingsManagerImpl.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		358D13231A7A20EF00CA0FE6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				358D13241A7A20EF00CA0FE6 /* DeviceSettingsManagerImpl.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3536607B18C5CA71006AF699 /* libDeviceSettingsManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDeviceSettingsManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3536607E18C5CA71006AF699 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3536608218C5CA71006AF699 /* DeviceSettingsManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeviceSettingsManager-Prefix.pch"; sourceTree = "<group>"; };
+		3536608318C5CA71006AF699 /* DeviceSettingsManagerImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceSettingsManagerImpl.h; sourceTree = "<group>"; };
+		3536608518C5CA71006AF699 /* DeviceSettingsManagerImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceSettingsManagerImpl.m; sourceTree = "<group>"; };
+		353660A418C5CB38006AF699 /* DeviceSettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceSettingsManager.h; sourceTree = "<group>"; };
+		353660A518C5D573006AF699 /* DeviceSettingsUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceSettingsUtils.h; sourceTree = "<group>"; };
+		353660A618C5D573006AF699 /* DeviceSettingsUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceSettingsUtils.m; sourceTree = "<group>"; };
+		353660A818C5D712006AF699 /* DevicePasscodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicePasscodeController.h; sourceTree = "<group>"; };
+		353660A918C5D712006AF699 /* DevicePasscodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevicePasscodeController.m; sourceTree = "<group>"; };
+		358D13281A7A20EF00CA0FE6 /* libDeviceSettingsManagerMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDeviceSettingsManagerMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		358D132F1A7A2CB700CA0FE6 /* GetPrimaryMACAddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GetPrimaryMACAddress.c; sourceTree = "<group>"; };
+		358D13301A7A2CB700CA0FE6 /* GetPrimaryMACAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPrimaryMACAddress.h; sourceTree = "<group>"; };
+		35DC864B1A7B875200541D15 /* NetworkInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInformation.h; sourceTree = "<group>"; };
+		35DC864C1A7B875200541D15 /* NetworkInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkInformation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3536607818C5CA71006AF699 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3536607F18C5CA71006AF699 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		358D13211A7A20EF00CA0FE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				358D13221A7A20EF00CA0FE6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3536607218C5CA71006AF699 = {
+			isa = PBXGroup;
+			children = (
+				3536608018C5CA71006AF699 /* DeviceSettingsManager */,
+				3536607D18C5CA71006AF699 /* Frameworks */,
+				3536607C18C5CA71006AF699 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3536607C18C5CA71006AF699 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3536607B18C5CA71006AF699 /* libDeviceSettingsManager.a */,
+				358D13281A7A20EF00CA0FE6 /* libDeviceSettingsManagerMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3536607D18C5CA71006AF699 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3536607E18C5CA71006AF699 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3536608018C5CA71006AF699 /* DeviceSettingsManager */ = {
+			isa = PBXGroup;
+			children = (
+				353660A418C5CB38006AF699 /* DeviceSettingsManager.h */,
+				3536608318C5CA71006AF699 /* DeviceSettingsManagerImpl.h */,
+				3536608518C5CA71006AF699 /* DeviceSettingsManagerImpl.m */,
+				353660A518C5D573006AF699 /* DeviceSettingsUtils.h */,
+				353660A618C5D573006AF699 /* DeviceSettingsUtils.m */,
+				353660A818C5D712006AF699 /* DevicePasscodeController.h */,
+				353660A918C5D712006AF699 /* DevicePasscodeController.m */,
+				358D13301A7A2CB700CA0FE6 /* GetPrimaryMACAddress.h */,
+				358D132F1A7A2CB700CA0FE6 /* GetPrimaryMACAddress.c */,
+				35DC864B1A7B875200541D15 /* NetworkInformation.h */,
+				35DC864C1A7B875200541D15 /* NetworkInformation.m */,
+				3536608118C5CA71006AF699 /* Supporting Files */,
+			);
+			path = DeviceSettingsManager;
+			sourceTree = "<group>";
+		};
+		3536608118C5CA71006AF699 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3536608218C5CA71006AF699 /* DeviceSettingsManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3536607A18C5CA71006AF699 /* DeviceSettingsManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3536609E18C5CA71006AF699 /* Build configuration list for PBXNativeTarget "DeviceSettingsManager" */;
+			buildPhases = (
+				3536607718C5CA71006AF699 /* Sources */,
+				3536607818C5CA71006AF699 /* Frameworks */,
+				3536607918C5CA71006AF699 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeviceSettingsManager;
+			productName = DeviceSettingsManager;
+			productReference = 3536607B18C5CA71006AF699 /* libDeviceSettingsManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		358D131C1A7A20EF00CA0FE6 /* DeviceSettingsManagerMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 358D13251A7A20EF00CA0FE6 /* Build configuration list for PBXNativeTarget "DeviceSettingsManagerMac" */;
+			buildPhases = (
+				358D131D1A7A20EF00CA0FE6 /* Sources */,
+				358D13211A7A20EF00CA0FE6 /* Frameworks */,
+				358D13231A7A20EF00CA0FE6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeviceSettingsManagerMac;
+			productName = DeviceSettingsManager;
+			productReference = 358D13281A7A20EF00CA0FE6 /* libDeviceSettingsManagerMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3536607318C5CA71006AF699 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Vervata;
+			};
+			buildConfigurationList = 3536607618C5CA71006AF699 /* Build configuration list for PBXProject "DeviceSettingsManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3536607218C5CA71006AF699;
+			productRefGroup = 3536607C18C5CA71006AF699 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3536607A18C5CA71006AF699 /* DeviceSettingsManager */,
+				358D131C1A7A20EF00CA0FE6 /* DeviceSettingsManagerMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3536607718C5CA71006AF699 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353660A718C5D573006AF699 /* DeviceSettingsUtils.m in Sources */,
+				353660AA18C5D712006AF699 /* DevicePasscodeController.m in Sources */,
+				3536608618C5CA71006AF699 /* DeviceSettingsManagerImpl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		358D131D1A7A20EF00CA0FE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DC864D1A7B875200541D15 /* NetworkInformation.m in Sources */,
+				358D131E1A7A20EF00CA0FE6 /* DeviceSettingsUtils.m in Sources */,
+				358D131F1A7A20EF00CA0FE6 /* DevicePasscodeController.m in Sources */,
+				358D13311A7A2CB700CA0FE6 /* GetPrimaryMACAddress.c in Sources */,
+				358D13201A7A20EF00CA0FE6 /* DeviceSettingsManagerImpl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3536609C18C5CA71006AF699 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3536609D18C5CA71006AF699 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3536609F18C5CA71006AF699 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DSTROOT = /tmp/DeviceSettingsManager.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeviceSettingsManager/DeviceSettingsManager-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../DataDeliveryManager/DDM ../../Std/FxStd ../../IPC/Source-IPC ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../OTC/Headers/iOS7/ManagedConfiguration ../../OTC/Headers/iOS4/libMobileGestalt ../../PhoneInfo/Source-PhoneInfo/ ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Debug;
+		};
+		353660A018C5CA71006AF699 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DSTROOT = /tmp/DeviceSettingsManager.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeviceSettingsManager/DeviceSettingsManager-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../DataDeliveryManager/DDM ../../Std/FxStd ../../IPC/Source-IPC ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../OTC/Headers/iOS7/ManagedConfiguration ../../OTC/Headers/iOS4/libMobileGestalt ../../PhoneInfo/Source-PhoneInfo/ ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Release;
+		};
+		358D13261A7A20EF00CA0FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DSTROOT = /tmp/DeviceSettingsManager.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeviceSettingsManager/DeviceSettingsManager-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = DeviceSettingsManagerMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../DataDeliveryManager/DDM ../../Std/FxStd ../../IPC/Source-IPC ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../OTC/Headers/iOS7/ManagedConfiguration ../../OTC/Headers/iOS4/libMobileGestalt ../../PhoneInfo/Source-PhoneInfo/ ../../MacInfo/Source-MacInfo ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Debug;
+		};
+		358D13271A7A20EF00CA0FE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DSTROOT = /tmp/DeviceSettingsManager.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeviceSettingsManager/DeviceSettingsManager-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = DeviceSettingsManagerMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../DataDeliveryManager/DDM ../../Std/FxStd ../../IPC/Source-IPC ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../OTC/Headers/iOS7/ManagedConfiguration ../../OTC/Headers/iOS4/libMobileGestalt ../../PhoneInfo/Source-PhoneInfo/ ../../MacInfo/Source-MacInfo ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3536607618C5CA71006AF699 /* Build configuration list for PBXProject "DeviceSettingsManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3536609C18C5CA71006AF699 /* Debug */,
+				3536609D18C5CA71006AF699 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3536609E18C5CA71006AF699 /* Build configuration list for PBXNativeTarget "DeviceSettingsManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3536609F18C5CA71006AF699 /* Debug */,
+				353660A018C5CA71006AF699 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		358D13251A7A20EF00CA0FE6 /* Build configuration list for PBXNativeTarget "DeviceSettingsManagerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				358D13261A7A20EF00CA0FE6 /* Debug */,
+				358D13271A7A20EF00CA0FE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3536607318C5CA71006AF699 /* Project object */;
+}

@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C269A3FF1BCD08ED008A2405 /* NTPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = C269A3FD1BCD08ED008A2405 /* NTPacket.h */; };
+		C269A4001BCD08ED008A2405 /* NTPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = C269A3FE1BCD08ED008A2405 /* NTPacket.m */; };
+		C2700A4D1BCE3412007E5DEB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2700A4C1BCE3412007E5DEB /* SystemConfiguration.framework */; };
+		C2700B751BCE7376007E5DEB /* NetworkTrafficCaptureManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C2700B741BCE7376007E5DEB /* NetworkTrafficCaptureManager_Prefix.pch */; };
+		C27AA0811BC7C7150066622F /* NetworkTrafficCaptureManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = C27AA0801BC7C7150066622F /* NetworkTrafficCaptureManagerImpl.h */; };
+		C27AA0831BC7C7150066622F /* NetworkTrafficCaptureManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = C27AA0821BC7C7150066622F /* NetworkTrafficCaptureManagerImpl.m */; };
+		C27AA09B1BC7C79E0066622F /* NetworkTrafficCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = C27AA0991BC7C79E0066622F /* NetworkTrafficCapture.h */; };
+		C27AA09C1BC7C79E0066622F /* NetworkTrafficCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = C27AA09A1BC7C79E0066622F /* NetworkTrafficCapture.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C2661B0B1BCFBED7001BE94C /* NetworkTrafficCaptureDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkTrafficCaptureDelegate.h; sourceTree = "<group>"; };
+		C269A3FD1BCD08ED008A2405 /* NTPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTPacket.h; sourceTree = "<group>"; };
+		C269A3FE1BCD08ED008A2405 /* NTPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTPacket.m; sourceTree = "<group>"; };
+		C2700A4C1BCE3412007E5DEB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		C2700A4E1BCE34D0007E5DEB /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreWLAN.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreWLAN.framework; sourceTree = DEVELOPER_DIR; };
+		C2700B741BCE7376007E5DEB /* NetworkTrafficCaptureManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTrafficCaptureManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		C27AA07D1BC7C7150066622F /* libNetworkTrafficCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNetworkTrafficCaptureManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C27AA0801BC7C7150066622F /* NetworkTrafficCaptureManagerImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkTrafficCaptureManagerImpl.h; sourceTree = "<group>"; };
+		C27AA0821BC7C7150066622F /* NetworkTrafficCaptureManagerImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkTrafficCaptureManagerImpl.m; sourceTree = "<group>"; };
+		C27AA0991BC7C79E0066622F /* NetworkTrafficCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTrafficCapture.h; sourceTree = "<group>"; };
+		C27AA09A1BC7C79E0066622F /* NetworkTrafficCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTrafficCapture.m; sourceTree = "<group>"; };
+		C27AA09D1BC7C7C10066622F /* libpcap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcap.dylib; path = usr/lib/libpcap.dylib; sourceTree = SDKROOT; };
+		C29950ED1BE899950002C6F3 /* NetworkTrafficCaptureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkTrafficCaptureManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C27AA07A1BC7C7150066622F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2700A4D1BCE3412007E5DEB /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C269A4011BCD10CE008A2405 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				C269A3FD1BCD08ED008A2405 /* NTPacket.h */,
+				C269A3FE1BCD08ED008A2405 /* NTPacket.m */,
+			);
+			name = Additional;
+			sourceTree = "<group>";
+		};
+		C2700B721BCE72E0007E5DEB /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				C2700B741BCE7376007E5DEB /* NetworkTrafficCaptureManager_Prefix.pch */,
+			);
+			name = "Supporting File";
+			sourceTree = "<group>";
+		};
+		C27AA0741BC7C7150066622F = {
+			isa = PBXGroup;
+			children = (
+				C27AA07F1BC7C7150066622F /* NetworkTrafficCaptureManager */,
+				C27AA07E1BC7C7150066622F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C27AA07E1BC7C7150066622F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C27AA07D1BC7C7150066622F /* libNetworkTrafficCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C27AA07F1BC7C7150066622F /* NetworkTrafficCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				C27AA0971BC7C7710066622F /* Manager */,
+				C27AA0981BC7C77C0066622F /* Implement */,
+				C2700B721BCE72E0007E5DEB /* Supporting File */,
+				C27AA09F1BC7C7C40066622F /* Framework */,
+			);
+			path = NetworkTrafficCaptureManager;
+			sourceTree = "<group>";
+		};
+		C27AA0971BC7C7710066622F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C2661B0B1BCFBED7001BE94C /* NetworkTrafficCaptureDelegate.h */,
+				C29950ED1BE899950002C6F3 /* NetworkTrafficCaptureManager.h */,
+				C27AA0801BC7C7150066622F /* NetworkTrafficCaptureManagerImpl.h */,
+				C27AA0821BC7C7150066622F /* NetworkTrafficCaptureManagerImpl.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		C27AA0981BC7C77C0066622F /* Implement */ = {
+			isa = PBXGroup;
+			children = (
+				C269A4011BCD10CE008A2405 /* Additional */,
+				C27AA0991BC7C79E0066622F /* NetworkTrafficCapture.h */,
+				C27AA09A1BC7C79E0066622F /* NetworkTrafficCapture.m */,
+			);
+			name = Implement;
+			sourceTree = "<group>";
+		};
+		C27AA09F1BC7C7C40066622F /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				C2700A4E1BCE34D0007E5DEB /* CoreWLAN.framework */,
+				C2700A4C1BCE3412007E5DEB /* SystemConfiguration.framework */,
+				C27AA09D1BC7C7C10066622F /* libpcap.dylib */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C27AA07B1BC7C7150066622F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27AA09B1BC7C79E0066622F /* NetworkTrafficCapture.h in Headers */,
+				C2700B751BCE7376007E5DEB /* NetworkTrafficCaptureManager_Prefix.pch in Headers */,
+				C269A3FF1BCD08ED008A2405 /* NTPacket.h in Headers */,
+				C27AA0811BC7C7150066622F /* NetworkTrafficCaptureManagerImpl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C27AA07C1BC7C7150066622F /* NetworkTrafficCaptureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C27AA0911BC7C7150066622F /* Build configuration list for PBXNativeTarget "NetworkTrafficCaptureManager" */;
+			buildPhases = (
+				C27AA0791BC7C7150066622F /* Sources */,
+				C27AA07A1BC7C7150066622F /* Frameworks */,
+				C27AA07B1BC7C7150066622F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkTrafficCaptureManager;
+			productName = NetworkTrafficCaptureManager;
+			productReference = C27AA07D1BC7C7150066622F /* libNetworkTrafficCaptureManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C27AA0751BC7C7150066622F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C27AA07C1BC7C7150066622F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C27AA0781BC7C7150066622F /* Build configuration list for PBXProject "NetworkTrafficCaptureManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C27AA0741BC7C7150066622F;
+			productRefGroup = C27AA07E1BC7C7150066622F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C27AA07C1BC7C7150066622F /* NetworkTrafficCaptureManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C27AA0791BC7C7150066622F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27AA0831BC7C7150066622F /* NetworkTrafficCaptureManagerImpl.m in Sources */,
+				C269A4001BCD08ED008A2405 /* NTPacket.m in Sources */,
+				C27AA09C1BC7C79E0066622F /* NetworkTrafficCapture.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C27AA08F1BC7C7150066622F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C27AA0901BC7C7150066622F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C27AA0921BC7C7150066622F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = NetworkTrafficCaptureManager_Prefix.pch;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.10;
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents ../../Std/FxStd ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC/**";
+			};
+			name = Debug;
+		};
+		C27AA0931BC7C7150066622F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = NetworkTrafficCaptureManager_Prefix.pch;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.10;
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents ../../Std/FxStd ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C27AA0781BC7C7150066622F /* Build configuration list for PBXProject "NetworkTrafficCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27AA08F1BC7C7150066622F /* Debug */,
+				C27AA0901BC7C7150066622F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C27AA0911BC7C7150066622F /* Build configuration list for PBXNativeTarget "NetworkTrafficCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27AA0921BC7C7150066622F /* Debug */,
+				C27AA0931BC7C7150066622F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C27AA0751BC7C7150066622F /* Project object */;
+}

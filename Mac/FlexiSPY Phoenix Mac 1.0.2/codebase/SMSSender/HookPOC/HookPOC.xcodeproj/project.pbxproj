@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3510209F16E987AC0064D047 /* SMSSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 3510209E16E987AC0064D047 /* SMSSender.m */; };
+		3510233116E9FAD10064D047 /* SMSSender000.m in Sources */ = {isa = PBXBuildFile; fileRef = 3510233016E9FAD10064D047 /* SMSSender000.m */; };
+		3510233816E9FAFA0064D047 /* libIPC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3510233716E9FAF40064D047 /* libIPC.a */; };
+		851F89700F78271600A6C185 /* HookPOC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 851F896F0F78271600A6C185 /* HookPOC.mm */; };
+		851F89780F78276800A6C185 /* HookPOC-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 851F89770F78276800A6C185 /* HookPOC-Info.plist */; };
+		851F89900F7827DC00A6C185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851F898F0F7827DC00A6C185 /* Foundation.framework */; };
+		851F89E10F7827E700A6C185 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851F89E00F7827E700A6C185 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3510233616E9FAF40064D047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3510233216E9FAF40064D047 /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		3510233916E9FB0B0064D047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3510233216E9FAF40064D047 /* IPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		3513E3201851B39300AC9332 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3510233216E9FAF40064D047 /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 086B114117FA732900D21FD5 /* libIPCMac.a */;
+			remoteInfo = IPCMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32CA4F630368D1EE00C91783 /* HookPOC_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HookPOC_Prefix.pch; sourceTree = "<group>"; };
+		3510209D16E987AC0064D047 /* SMSSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSSender.h; sourceTree = "<group>"; };
+		3510209E16E987AC0064D047 /* SMSSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSSender.m; sourceTree = "<group>"; };
+		3510232F16E9FAD10064D047 /* SMSSender000.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSSender000.h; sourceTree = "<group>"; };
+		3510233016E9FAD10064D047 /* SMSSender000.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSSender000.m; sourceTree = "<group>"; };
+		3510233216E9FAF40064D047 /* IPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IPC.xcodeproj; path = "../../IPC/Source-IPC/IPC.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		85198FE10F780FA700C450C3 /* HookPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HookPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		851F896F0F78271600A6C185 /* HookPOC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = HookPOC.mm; path = Classes/HookPOC.mm; sourceTree = SOURCE_ROOT; };
+		851F89770F78276800A6C185 /* HookPOC-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HookPOC-Info.plist"; sourceTree = SOURCE_ROOT; };
+		851F898F0F7827DC00A6C185 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		851F89E00F7827E700A6C185 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3510233816E9FAFA0064D047 /* libIPC.a in Frameworks */,
+				851F89900F7827DC00A6C185 /* Foundation.framework in Frameworks */,
+				851F89E10F7827E700A6C185 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				851F896F0F78271600A6C185 /* HookPOC.mm */,
+				3510209D16E987AC0064D047 /* SMSSender.h */,
+				3510209E16E987AC0064D047 /* SMSSender.m */,
+				3510232F16E9FAD10064D047 /* SMSSender000.h */,
+				3510233016E9FAD10064D047 /* SMSSender000.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85198FE10F780FA700C450C3 /* HookPOC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				3510233216E9FAF40064D047 /* IPC.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* HookPOC_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				851F89770F78276800A6C185 /* HookPOC-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				851F89E00F7827E700A6C185 /* UIKit.framework */,
+				851F898F0F7827DC00A6C185 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3510233316E9FAF40064D047 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3510233716E9FAF40064D047 /* libIPC.a */,
+				3513E3211851B39300AC9332 /* libIPCMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* HookPOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "HookPOC" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				3557EBBC16E5AD02006CA809 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3510233A16E9FB0B0064D047 /* PBXTargetDependency */,
+			);
+			name = HookPOC;
+			productName = HookPOC;
+			productReference = 85198FE10F780FA700C450C3 /* HookPOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HookPOC" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3510233316E9FAF40064D047 /* Products */;
+					ProjectRef = 3510233216E9FAF40064D047 /* IPC.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* HookPOC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3510233716E9FAF40064D047 /* libIPC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPC.a;
+			remoteRef = 3510233616E9FAF40064D047 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3513E3211851B39300AC9332 /* libIPCMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPCMac.a;
+			remoteRef = 3513E3201851B39300AC9332 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851F89780F78276800A6C185 /* HookPOC-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3557EBBC16E5AD02006CA809 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "strip -u -r \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\"\ncp -f \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}.dylib\"\nldid -S \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}.dylib\"\n\nDEVICE_IP=192.168.20.76\nssh root@${DEVICE_IP} rm -rf /Library/MobileSubstrate/DynamicLibraries/${EXECUTABLE_NAME}.dylib\nscp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}.dylib\" root@${DEVICE_IP}:/Library/MobileSubstrate/DynamicLibraries/${EXECUTABLE_NAME}.dylib\nssh root@${DEVICE_IP} respring";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851F89700F78271600A6C185 /* HookPOC.mm in Sources */,
+				3510209F16E987AC0064D047 /* SMSSender.m in Sources */,
+				3510233116E9FAD10064D047 /* SMSSender000.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3510233A16E9FB0B0064D047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IPC;
+			targetProxy = 3510233916E9FB0B0064D047 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HookPOC_Prefix.pch;
+				INFOPLIST_FILE = "HookPOC-Info.plist";
+				PRODUCT_NAME = HookPOC;
+				USER_HEADER_SEARCH_PATHS = "../../IPC/Source-IPC ../../OTC/Headers/iOS4/Foundation ../../OTC/Headers/iOS6/IMCore";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HookPOC_Prefix.pch;
+				INFOPLIST_FILE = "HookPOC-Info.plist";
+				PRODUCT_NAME = HookPOC;
+				USER_HEADER_SEARCH_PATHS = "../../IPC/Source-IPC ../../OTC/Headers/iOS4/Foundation ../../OTC/Headers/iOS6/IMCore";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_OPENMP_FLAGS = "-fopenmp";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-init",
+					"_$(PROJECT_NAME)Initialize",
+					"-lsubstrate",
+					"-dynamiclib",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "HookPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HookPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

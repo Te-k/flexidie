@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="persistentapp" default="buildRIM" basedir=".">
+	<taskdef resource="bb-ant-defs.xml" classpath="lib/bb-ant-tools.jar" />
+
+	<property name="std" value="Y:\Workspace\BlackBerry\Polymorphic-FX\Std\std-src" />
+	<property name="event" value="Y:\Workspace\BlackBerry\Polymorphic-FX\Event\event-src" />
+	<property name="db" value="Y:\Workspace\BlackBerry\Polymorphic-FX\Database\db-src" />
+	<property name="projecthome" value="Y:\Workspace\BlackBerry\Polymorphic-FX\Database\AppTest" />
+	<property name="jdehome" value="Y:\Program Files\Research In Motion\BlackBerry JDE 4.2.1" />
+	<property name="javahome" value="Y:\Program Files\Java\jdk1.6.0_17" />
+	<property name="simulator" value="${jdehome}\simulator" />
+	<property name="bin" value="${jdehome}\bin" />
+	<property name="vendor" value="Trust Supplier Ltd." />
+	<property name="output" value="net_rim_app_persistent" />
+	<property name="version" value="1.00.01" />
+	<property name="title" value=":: Persistent Application ::" />
+
+	<target name="buildRIM" description="Composes RIM" depends="clean">
+		<rapc jdehome="${jdehome}" jdkhome="${javahome}" output="${output}">
+			<jdp title="${title}" version="${version}" runonstartup="true" type="cldc" vendor="${vendor}"/>
+			<src>
+				<fileset dir="${std}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${event}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${db}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${projecthome}\src">
+					<include name="**/*.java" />
+				</fileset>
+			</src>
+		</rapc>
+		<copy todir="${simulator}" overwrite="true">
+			<fileset dir=".">
+				<include name="*.cod" />
+				<include name="*.debug" />
+				<include name="*.cso" />
+				<include name="*.jad" />
+				<include name="*.csl" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="clean">
+		<delete>
+			<fileset dir="bin" includes="**/*.class" />
+			<fileset dir=".">
+				<include name="*.cod" />
+				<include name="*.cso" />
+				<include name="*.debug" />
+				<include name="*.jad" />
+				<include name="*.jar" />
+				<include name="*.rapc" />
+				<include name="*.csl" />
+			</fileset>
+		</delete>
+	</target>
+</project>

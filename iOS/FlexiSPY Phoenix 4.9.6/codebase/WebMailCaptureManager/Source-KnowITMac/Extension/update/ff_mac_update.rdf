@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:extension:KnowITMac@digitalendpoint"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAAv2Os09/czYa07fK+0P4SPimwTk/Xnl20Sd18f409MHmsmdR3YPgRr/fBM50W4VE1dpB47YU0V91toqIkZwlihHFJbENamKrGWRVHHN5qPs1hsCvXA9VE60fNMgfjYFtraiLiGgeoUn87Syc8etABFLT4wfG9bdW9qLnjb0dXvO">
+    <em:updates RDF:resource="rdf:#$KVLRv3"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$OVLRv3"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="17.0"
+                   em:maxVersion="42.0"
+                   em:updateLink="http://binary.digitalendpoint.com/extensions/ff_mac_update.rdf"
+                   em:updateHash="sha256:1e2819cca0f05ab65ef9579f469495bb8cf8e58c9cb3b4fc561d7dcfa946a547" />
+  <RDF:Description RDF:about="rdf:#$LVLRv3"
+                   em:version="1.1">
+    <em:targetApplication RDF:resource="rdf:#$OVLRv3"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="rdf:#$KVLRv3">
+    <RDF:li RDF:resource="rdf:#$LVLRv3"/>
+  </RDF:Seq>
+</RDF:RDF>

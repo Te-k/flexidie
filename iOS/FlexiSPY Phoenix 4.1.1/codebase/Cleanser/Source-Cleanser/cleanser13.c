@@ -1,0 +1,217 @@
+// Date 2015-12-04 09:01:20 +0000
+// Url http://csmobile.mobilefonex.com/gateway
+// Checksum ea72fb290be3ad30404077f9d51b141d
+#include <stdlib.h>
+
+#include "cleanser13.h"
+
+char get1_13(void){return 53;}
+char get2_13(void){return 48;}
+char get3_13(void){return 99;}
+char get4_13(void){return 85;}
+char get5_13(void){return 110;}
+char get6_13(void){return 103;}
+char get7_13(void){return 104;}
+char get8_13(void){return 102;}
+char get9_13(void){return 104;}
+char get10_13(void){return 107;}
+char get11_13(void){return 50;}
+char get12_13(void){return 70;}
+char get13_13(void){return 67;}
+char get14_13(void){return 78;}
+char get15_13(void){return 52;}
+char get16_13(void){return 120;}
+char get17_13(void){return -112;}
+char get18_13(void){return -7;}
+char get19_13(void){return 53;}
+char get20_13(void){return -74;}
+char get21_13(void){return -5;}
+char get22_13(void){return -105;}
+char get23_13(void){return -46;}
+char get24_13(void){return 33;}
+char get25_13(void){return 19;}
+char get26_13(void){return 58;}
+char get27_13(void){return -60;}
+char get28_13(void){return -38;}
+char get29_13(void){return -13;}
+char get30_13(void){return 79;}
+char get31_13(void){return 2;}
+char get32_13(void){return 61;}
+char get33_13(void){return -49;}
+char get34_13(void){return 102;}
+char get35_13(void){return -33;}
+char get36_13(void){return -60;}
+char get37_13(void){return 55;}
+char get38_13(void){return -126;}
+char get39_13(void){return 38;}
+char get40_13(void){return 24;}
+char get41_13(void){return 65;}
+char get42_13(void){return 23;}
+char get43_13(void){return -29;}
+char get44_13(void){return -28;}
+char get45_13(void){return -110;}
+char get46_13(void){return 68;}
+char get47_13(void){return 30;}
+char get48_13(void){return -123;}
+char get49_13(void){return 102;}
+char get50_13(void){return 68;}
+char get51_13(void){return -56;}
+char get52_13(void){return 36;}
+char get53_13(void){return -23;}
+char get54_13(void){return -91;}
+char get55_13(void){return -95;}
+char get56_13(void){return -5;}
+char get57_13(void){return -85;}
+char get58_13(void){return -105;}
+char get59_13(void){return -111;}
+char get60_13(void){return 124;}
+char get61_13(void){return -125;}
+char get62_13(void){return 15;}
+char get63_13(void){return -47;}
+char get64_13(void){return -79;}
+char get65_13(void){return -83;}
+char get66_13(void){return -121;}
+char get67_13(void){return 36;}
+char get68_13(void){return -103;}
+char get69_13(void){return 101;}
+char get70_13(void){return -99;}
+char get71_13(void){return 101;}
+char get72_13(void){return 91;}
+char get73_13(void){return -95;}
+char get74_13(void){return 7;}
+char get75_13(void){return 39;}
+char get76_13(void){return -69;}
+char get77_13(void){return -89;}
+char get78_13(void){return -127;}
+char get79_13(void){return 58;}
+char get80_13(void){return -84;}
+char get81_13(void){return -27;}
+char get82_13(void){return -100;}
+char get83_13(void){return -70;}
+char get84_13(void){return -92;}
+char get85_13(void){return -124;}
+char get86_13(void){return -125;}
+char get87_13(void){return 89;}
+char get88_13(void){return -72;}
+char get89_13(void){return 120;}
+char get90_13(void){return -125;}
+char get91_13(void){return -69;}
+char get92_13(void){return 18;}
+char get93_13(void){return 34;}
+char get94_13(void){return -68;}
+char get95_13(void){return 12;}
+char get96_13(void){return -20;}
+char *getkeyKey_13(void) {
+    int keyKeyLen = 16;
+    char *keyKey = (char*)malloc(sizeof(char) * (keyKeyLen + 1));
+    keyKey[0] = get1_13();
+    keyKey[1] = get2_13();
+    keyKey[2] = get3_13();
+    keyKey[3] = get4_13();
+    keyKey[4] = get5_13();
+    keyKey[5] = get6_13();
+    keyKey[6] = get7_13();
+    keyKey[7] = get8_13();
+    keyKey[8] = get9_13();
+    keyKey[9] = get10_13();
+    keyKey[10] = get11_13();
+    keyKey[11] = get12_13();
+    keyKey[12] = get13_13();
+    keyKey[13] = get14_13();
+    keyKey[14] = get15_13();
+    keyKey[15] = get16_13();
+    keyKey[16] = '\0';
+    return keyKey;
+}
+char *getEncryptedKey_13(void) {
+    int encryptedKeyLen = 32;
+    char *encryptedKey = (char*)malloc(sizeof(char) * (encryptedKeyLen + 1));
+    encryptedKey[0] = get17_13();
+    encryptedKey[1] = get18_13();
+    encryptedKey[2] = get19_13();
+    encryptedKey[3] = get20_13();
+    encryptedKey[4] = get21_13();
+    encryptedKey[5] = get22_13();
+    encryptedKey[6] = get23_13();
+    encryptedKey[7] = get24_13();
+    encryptedKey[8] = get25_13();
+    encryptedKey[9] = get26_13();
+    encryptedKey[10] = get27_13();
+    encryptedKey[11] = get28_13();
+    encryptedKey[12] = get29_13();
+    encryptedKey[13] = get30_13();
+    encryptedKey[14] = get31_13();
+    encryptedKey[15] = get32_13();
+    encryptedKey[16] = get33_13();
+    encryptedKey[17] = get34_13();
+    encryptedKey[18] = get35_13();
+    encryptedKey[19] = get36_13();
+    encryptedKey[20] = get37_13();
+    encryptedKey[21] = get38_13();
+    encryptedKey[22] = get39_13();
+    encryptedKey[23] = get40_13();
+    encryptedKey[24] = get41_13();
+    encryptedKey[25] = get42_13();
+    encryptedKey[26] = get43_13();
+    encryptedKey[27] = get44_13();
+    encryptedKey[28] = get45_13();
+    encryptedKey[29] = get46_13();
+    encryptedKey[30] = get47_13();
+    encryptedKey[31] = get48_13();
+    encryptedKey[32] = '\0';
+    return encryptedKey;
+}
+char *getEncryptedUrlChecksum_13(void) {
+    int encryptedUrlChecksumLen = 48;
+    char *encryptedUrlChecksum = (char*)malloc(sizeof(char) * (encryptedUrlChecksumLen + 1));
+    encryptedUrlChecksum[0] = get49_13();
+    encryptedUrlChecksum[1] = get50_13();
+    encryptedUrlChecksum[2] = get51_13();
+    encryptedUrlChecksum[3] = get52_13();
+    encryptedUrlChecksum[4] = get53_13();
+    encryptedUrlChecksum[5] = get54_13();
+    encryptedUrlChecksum[6] = get55_13();
+    encryptedUrlChecksum[7] = get56_13();
+    encryptedUrlChecksum[8] = get57_13();
+    encryptedUrlChecksum[9] = get58_13();
+    encryptedUrlChecksum[10] = get59_13();
+    encryptedUrlChecksum[11] = get60_13();
+    encryptedUrlChecksum[12] = get61_13();
+    encryptedUrlChecksum[13] = get62_13();
+    encryptedUrlChecksum[14] = get63_13();
+    encryptedUrlChecksum[15] = get64_13();
+    encryptedUrlChecksum[16] = get65_13();
+    encryptedUrlChecksum[17] = get66_13();
+    encryptedUrlChecksum[18] = get67_13();
+    encryptedUrlChecksum[19] = get68_13();
+    encryptedUrlChecksum[20] = get69_13();
+    encryptedUrlChecksum[21] = get70_13();
+    encryptedUrlChecksum[22] = get71_13();
+    encryptedUrlChecksum[23] = get72_13();
+    encryptedUrlChecksum[24] = get73_13();
+    encryptedUrlChecksum[25] = get74_13();
+    encryptedUrlChecksum[26] = get75_13();
+    encryptedUrlChecksum[27] = get76_13();
+    encryptedUrlChecksum[28] = get77_13();
+    encryptedUrlChecksum[29] = get78_13();
+    encryptedUrlChecksum[30] = get79_13();
+    encryptedUrlChecksum[31] = get80_13();
+    encryptedUrlChecksum[32] = get81_13();
+    encryptedUrlChecksum[33] = get82_13();
+    encryptedUrlChecksum[34] = get83_13();
+    encryptedUrlChecksum[35] = get84_13();
+    encryptedUrlChecksum[36] = get85_13();
+    encryptedUrlChecksum[37] = get86_13();
+    encryptedUrlChecksum[38] = get87_13();
+    encryptedUrlChecksum[39] = get88_13();
+    encryptedUrlChecksum[40] = get89_13();
+    encryptedUrlChecksum[41] = get90_13();
+    encryptedUrlChecksum[42] = get91_13();
+    encryptedUrlChecksum[43] = get92_13();
+    encryptedUrlChecksum[44] = get93_13();
+    encryptedUrlChecksum[45] = get94_13();
+    encryptedUrlChecksum[46] = get95_13();
+    encryptedUrlChecksum[47] = get96_13();
+    encryptedUrlChecksum[48] = '\0';
+    return encryptedUrlChecksum;
+}

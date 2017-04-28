@@ -1,0 +1,1627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35FF85791E1CDC9B00A664D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF85781E1CDC9B00A664D3 /* main.m */; };
+		35FF857C1E1CDC9B00A664D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF857B1E1CDC9B00A664D3 /* AppDelegate.m */; };
+		35FF857F1E1CDC9B00A664D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF857E1E1CDC9B00A664D3 /* ViewController.m */; };
+		35FF85821E1CDC9B00A664D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FF85801E1CDC9B00A664D3 /* Main.storyboard */; };
+		35FF85841E1CDC9B00A664D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FF85831E1CDC9B00A664D3 /* Assets.xcassets */; };
+		35FF85871E1CDC9B00A664D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FF85851E1CDC9B00A664D3 /* LaunchScreen.storyboard */; };
+		35FF85A61E1CDE7A00A664D3 /* libAppScreenShotManager-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FF858D1E1CDC9B00A664D3 /* libAppScreenShotManager-iOS.a */; };
+		35FF85A91E1CE05500A664D3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FF85A81E1CE05500A664D3 /* MobileCoreServices.framework */; };
+		35FF871B1E1E423800A664D3 /* IOKit in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FF871A1E1E423800A664D3 /* IOKit */; };
+		35FF87281E1E426D00A664D3 /* libIPC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FF87231E1E425E00A664D3 /* libIPC.a */; };
+		35FF87D81E1F514700A664D3 /* libFxStd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F5C81CC4CC07007C7AF8 /* libFxStd.a */; };
+		35FF87D91E1F514E00A664D3 /* libFxEvents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C26BAD9F1CC8E5A3003B9865 /* libFxEvents.a */; };
+		C224F62A1CC4CCDA007C7AF8 /* libCCryptography.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F5B71CC4CBD4007C7AF8 /* libCCryptography.a */; };
+		C224F62B1CC4CCDA007C7AF8 /* libCommandServiceManagerLibMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F5D81CC4CC2B007C7AF8 /* libCommandServiceManagerLibMac.a */; };
+		C224F62C1CC4CCDA007C7AF8 /* libCRC32Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F5EA1CC4CC53007C7AF8 /* libCRC32Mac.a */; };
+		C224F62D1CC4CCDA007C7AF8 /* libCryptographyMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F5E11CC4CC46007C7AF8 /* libCryptographyMac.a */; };
+		C224F62E1CC4CCDA007C7AF8 /* libDDMMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F5C01CC4CBEA007C7AF8 /* libDDMMac.a */; };
+		C224F62F1CC4CCDA007C7AF8 /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F5A11CC4CBA3007C7AF8 /* libFMDB.a */; };
+		C224F6301CC4CCDA007C7AF8 /* libFxStdMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F5CC1CC4CC07007C7AF8 /* libFxStdMac.a */; };
+		C224F6311CC4CCDA007C7AF8 /* libHTTPLibMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F58A1CC4CB62007C7AF8 /* libHTTPLibMac.a */; };
+		C224F6321CC4CCDA007C7AF8 /* libProtocolBuilderLibMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F5B11CC4CBC3007C7AF8 /* libProtocolBuilderLibMac.a */; };
+		C224F6331CC4CCDA007C7AF8 /* libSystemUtilsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F5931CC4CB7E007C7AF8 /* libSystemUtilsMac.a */; };
+		C224F6341CC4CCDA007C7AF8 /* libUnstructuredManagerLibMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F57E1CC4CB43007C7AF8 /* libUnstructuredManagerLibMac.a */; };
+		C224F6361CC4CCFF007C7AF8 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F6351CC4CCFF007C7AF8 /* libstdc++.6.0.9.dylib */; };
+		C224F6451CC4CD22007C7AF8 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F6441CC4CD22007C7AF8 /* libsqlite3.0.dylib */; };
+		C224F6721CC4CD9D007C7AF8 /* libGZIPMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F64E1CC4CD52007C7AF8 /* libGZIPMac.a */; };
+		C224F6811CC4CDE9007C7AF8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F6801CC4CDE9007C7AF8 /* libz.dylib */; };
+		C224F6F71CC4D107007C7AF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C224F6F61CC4D107007C7AF8 /* SystemConfiguration.framework */; };
+		C23AFBE61CAE5B9E0049A4C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C23AFBE51CAE5B9E0049A4C1 /* AppDelegate.m */; };
+		C23AFBE81CAE5B9E0049A4C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C23AFBE71CAE5B9E0049A4C1 /* main.m */; };
+		C23AFBEA1CAE5B9E0049A4C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23AFBE91CAE5B9E0049A4C1 /* Images.xcassets */; };
+		C23AFBED1CAE5B9E0049A4C1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C23AFBEB1CAE5B9E0049A4C1 /* MainMenu.xib */; };
+		C23AFC0A1CAE5CCA0049A4C1 /* libAppScreenShotManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C23AFC071CAE5BE80049A4C1 /* libAppScreenShotManager.a */; };
+		C26BADCC1CC8E5FC003B9865 /* libEventCenterMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C26BAD8A1CC8E587003B9865 /* libEventCenterMac.a */; };
+		C26BADCD1CC8E5FC003B9865 /* libFxEventsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C26BADA11CC8E5A3003B9865 /* libFxEventsMac.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35FF858C1E1CDC9B00A664D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23AFC021CAE5BE80049A4C1 /* AppScreenShotManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 35ECEDDB1E16672A00BD04AB;
+			remoteInfo = "AppScreenShotManager-iOS";
+		};
+		35FF85A41E1CDDAE00A664D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23AFC021CAE5BE80049A4C1 /* AppScreenShotManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 35ECEDDA1E16672A00BD04AB;
+			remoteInfo = "AppScreenShotManager-iOS";
+		};
+		35FF87221E1E425E00A664D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35FF871C1E1E425E00A664D3 /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		35FF87241E1E425E00A664D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35FF871C1E1E425E00A664D3 /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FC1D15E11BAAD607006E504B;
+			remoteInfo = "IPC-E";
+		};
+		35FF87261E1E425E00A664D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35FF871C1E1E425E00A664D3 /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 086B114117FA732900D21FD5;
+			remoteInfo = IPCMac;
+		};
+		35FF87291E1E427300A664D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35FF871C1E1E425E00A664D3 /* IPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		35FF87DA1E1F515300A664D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5C11CC4CC07007C7AF8 /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		35FF87DC1E1F515800A664D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26BAD991CC8E5A2003B9865 /* FxEvents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		C224F5791CC4CB43007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5731CC4CB43007C7AF8 /* UnstructuredManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = UnstructuredManagerDemo;
+		};
+		C224F57B1CC4CB43007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5731CC4CB43007C7AF8 /* UnstructuredManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FC8C25A13D6CE40002DC85B;
+			remoteInfo = UnstructuredManagerLib;
+		};
+		C224F57D1CC4CB43007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5731CC4CB43007C7AF8 /* UnstructuredManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 35EAC13D180BD41B00927F54;
+			remoteInfo = UnstructuredManagerLibMac;
+		};
+		C224F5851CC4CB62007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F57F1CC4CB62007C7AF8 /* HTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = HTTP;
+		};
+		C224F5871CC4CB62007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F57F1CC4CB62007C7AF8 /* HTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F5E974213D9647700ACA74F;
+			remoteInfo = HTTPLib;
+		};
+		C224F5891CC4CB62007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F57F1CC4CB62007C7AF8 /* HTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C22D07A7180BA578002EAF17;
+			remoteInfo = HTTPLibMac;
+		};
+		C224F5901CC4CB7E007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F58B1CC4CB7E007C7AF8 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+		C224F5921CC4CB7E007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F58B1CC4CB7E007C7AF8 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0840248017F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		C224F59C1CC4CBA3007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5941CC4CBA3007C7AF8 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		C224F59E1CC4CBA3007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5941CC4CBA3007C7AF8 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6290CBB5188FE836009790F8;
+			remoteInfo = "FMDB-IOS";
+		};
+		C224F5A01CC4CBA3007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5941CC4CBA3007C7AF8 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		C224F5A21CC4CBA3007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5941CC4CBA3007C7AF8 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83C73EFE1C326AB000FFC730;
+			remoteInfo = "FMDB iOS";
+		};
+		C224F5A41CC4CBA3007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5941CC4CBA3007C7AF8 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83C73F0B1C326ADA00FFC730;
+			remoteInfo = "FMDB MacOS";
+		};
+		C224F5AC1CC4CBC3007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5A61CC4CBC3007C7AF8 /* ProtocolBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = ProtocolBuilder;
+		};
+		C224F5AE1CC4CBC3007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5A61CC4CBC3007C7AF8 /* ProtocolBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FD67C6F13DE6B4D00623ACC;
+			remoteInfo = ProtocolBuilderLib;
+		};
+		C224F5B01CC4CBC3007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5A61CC4CBC3007C7AF8 /* ProtocolBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 082441B9180BA31500182EA1;
+			remoteInfo = ProtocolBuilderLibMac;
+		};
+		C224F5B61CC4CBD4007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5B21CC4CBD4007C7AF8 /* CCryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 357DE7CB181517FD00E1DD11;
+			remoteInfo = CCryptography;
+		};
+		C224F5BD1CC4CBEA007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5B81CC4CBEA007C7AF8 /* DDM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = DDM;
+		};
+		C224F5BF1CC4CBEA007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5B81CC4CBEA007C7AF8 /* DDM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08D41C1717FD553E003A0F1D;
+			remoteInfo = DDMMac;
+		};
+		C224F5C71CC4CC07007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5C11CC4CC07007C7AF8 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		C224F5C91CC4CC07007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5C11CC4CC07007C7AF8 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FCBD2F8C1BABEF5A0061109F;
+			remoteInfo = "FxStd-E";
+		};
+		C224F5CB1CC4CC07007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5C11CC4CC07007C7AF8 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		C224F5D31CC4CC2B007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5CD1CC4CC2B007C7AF8 /* CommandServiceManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = CommandServiceManager;
+		};
+		C224F5D51CC4CC2B007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5CD1CC4CC2B007C7AF8 /* CommandServiceManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FFBFBA813E28FE100BF374E;
+			remoteInfo = CommandServiceManagerLib;
+		};
+		C224F5D71CC4CC2B007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5CD1CC4CC2B007C7AF8 /* CommandServiceManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0857BD6F17FD7232003FC0F2;
+			remoteInfo = CommandServiceManagerLibMac;
+		};
+		C224F5DE1CC4CC46007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5D91CC4CC46007C7AF8 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		C224F5E01CC4CC46007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5D91CC4CC46007C7AF8 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 088536E417F989BB00AB08F2;
+			remoteInfo = CryptographyMac;
+		};
+		C224F5E71CC4CC53007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5E21CC4CC53007C7AF8 /* CRC32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CRC32;
+		};
+		C224F5E91CC4CC53007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5E21CC4CC53007C7AF8 /* CRC32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885386F17F9A00D00AB08F2;
+			remoteInfo = CRC32Mac;
+		};
+		C224F5F71CC4CC98007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5E21CC4CC53007C7AF8 /* CRC32.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0885386E17F9A00D00AB08F2;
+			remoteInfo = CRC32Mac;
+		};
+		C224F5F91CC4CC98007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5D91CC4CC46007C7AF8 /* Cryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 088536E317F989BB00AB08F2;
+			remoteInfo = CryptographyMac;
+		};
+		C224F5FB1CC4CC98007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5CD1CC4CC2B007C7AF8 /* CommandServiceManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0857BD6E17FD7232003FC0F2;
+			remoteInfo = CommandServiceManagerLibMac;
+		};
+		C224F5FD1CC4CC98007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5C11CC4CC07007C7AF8 /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0885379917F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		C224F5FF1CC4CC98007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5B81CC4CBEA007C7AF8 /* DDM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08D41C1617FD553E003A0F1D;
+			remoteInfo = DDMMac;
+		};
+		C224F6011CC4CC98007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5B21CC4CBD4007C7AF8 /* CCryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 357DE7CA181517FD00E1DD11;
+			remoteInfo = CCryptography;
+		};
+		C224F6031CC4CC98007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5A61CC4CBC3007C7AF8 /* ProtocolBuilder.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 082441B8180BA31500182EA1;
+			remoteInfo = ProtocolBuilderLibMac;
+		};
+		C224F6051CC4CC98007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5941CC4CBA3007C7AF8 /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE4290EE12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		C224F6071CC4CC98007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F58B1CC4CB7E007C7AF8 /* SystemUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0840247F17F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		C224F6091CC4CC98007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F57F1CC4CB62007C7AF8 /* HTTP.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C22D0783180BA578002EAF17;
+			remoteInfo = HTTPLibMac;
+		};
+		C224F60B1CC4CC98007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F5731CC4CB43007C7AF8 /* UnstructuredManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 35EAC128180BD41B00927F54;
+			remoteInfo = UnstructuredManagerLibMac;
+		};
+		C224F64B1CC4CD52007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F6461CC4CD52007C7AF8 /* GZIP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = GZIP;
+		};
+		C224F64D1CC4CD52007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F6461CC4CD52007C7AF8 /* GZIP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 084926E017EAE67900AE874B;
+			remoteInfo = GZIPMac;
+		};
+		C224F65C1CC4CD98007C7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C224F6461CC4CD52007C7AF8 /* GZIP.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 084926DF17EAE67900AE874B;
+			remoteInfo = GZIPMac;
+		};
+		C23AFC061CAE5BE80049A4C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23AFC021CAE5BE80049A4C1 /* AppScreenShotManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C23AFBBC1CAE5B4D0049A4C1;
+			remoteInfo = AppScreenShotManager;
+		};
+		C23AFC081CAE5CC70049A4C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23AFC021CAE5BE80049A4C1 /* AppScreenShotManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C23AFBBB1CAE5B4D0049A4C1;
+			remoteInfo = AppScreenShotManager;
+		};
+		C26BAD871CC8E587003B9865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26BAD7D1CC8E587003B9865 /* EventCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = EventCenter;
+		};
+		C26BAD891CC8E587003B9865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26BAD7D1CC8E587003B9865 /* EventCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0819FA3317F9340300DDE835;
+			remoteInfo = EventCenterMac;
+		};
+		C26BAD9E1CC8E5A3003B9865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26BAD991CC8E5A2003B9865 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		C26BADA01CC8E5A3003B9865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26BAD991CC8E5A2003B9865 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08629AF417F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		C26BADB11CC8E5F0003B9865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26BAD991CC8E5A2003B9865 /* FxEvents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08629AF317F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		C26BADCA1CC8E5F3003B9865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26BAD7D1CC8E587003B9865 /* EventCenter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0819FA3217F9340300DDE835;
+			remoteInfo = EventCenterMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35FF85751E1CDC9B00A664D3 /* TestApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35FF85781E1CDC9B00A664D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35FF857A1E1CDC9B00A664D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		35FF857B1E1CDC9B00A664D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		35FF857D1E1CDC9B00A664D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		35FF857E1E1CDC9B00A664D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		35FF85811E1CDC9B00A664D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35FF85831E1CDC9B00A664D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35FF85861E1CDC9B00A664D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35FF85881E1CDC9B00A664D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35FF85A81E1CE05500A664D3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		35FF871A1E1E423800A664D3 /* IOKit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = IOKit; path = ../../OTC/Frameworks/iOS7/IOKit.framework/Versions/A/IOKit; sourceTree = "<group>"; };
+		35FF871C1E1E425E00A664D3 /* IPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IPC.xcodeproj; path = "../../IPC/Source-IPC/IPC.xcodeproj"; sourceTree = "<group>"; };
+		C224F5731CC4CB43007C7AF8 /* UnstructuredManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UnstructuredManager.xcodeproj; path = ../../PhoenixEngine/Phoenix/UnstructuredManager/UnstructuredManager.xcodeproj; sourceTree = "<group>"; };
+		C224F57F1CC4CB62007C7AF8 /* HTTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HTTP.xcodeproj; path = ../../PhoenixEngine/Phoenix/HTTP/HTTP.xcodeproj; sourceTree = "<group>"; };
+		C224F58B1CC4CB7E007C7AF8 /* SystemUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SystemUtils.xcodeproj; path = "../../SystemUtils/Source-SystemUtils/SystemUtils.xcodeproj"; sourceTree = "<group>"; };
+		C224F5941CC4CBA3007C7AF8 /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = ../../FMDB/FMDB_2.4/fmdb.xcodeproj; sourceTree = "<group>"; };
+		C224F5A61CC4CBC3007C7AF8 /* ProtocolBuilder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProtocolBuilder.xcodeproj; path = ../../PhoenixEngine/Phoenix/ProtocolBuilder/ProtocolBuilder.xcodeproj; sourceTree = "<group>"; };
+		C224F5B21CC4CBD4007C7AF8 /* CCryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CCryptography.xcodeproj; path = "../../CCryptography/Source-CCryptography/CCryptography.xcodeproj"; sourceTree = "<group>"; };
+		C224F5B81CC4CBEA007C7AF8 /* DDM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DDM.xcodeproj; path = ../../DataDeliveryManager/DDM/DDM.xcodeproj; sourceTree = "<group>"; };
+		C224F5C11CC4CC07007C7AF8 /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../Std/FxStd/FxStd.xcodeproj; sourceTree = "<group>"; };
+		C224F5CD1CC4CC2B007C7AF8 /* CommandServiceManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommandServiceManager.xcodeproj; path = ../../PhoenixEngine/Phoenix/CommandServiceManager/CommandServiceManager.xcodeproj; sourceTree = "<group>"; };
+		C224F5D91CC4CC46007C7AF8 /* Cryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cryptography.xcodeproj; path = "../../Cryptography/Source-Cryptography/Cryptography.xcodeproj"; sourceTree = "<group>"; };
+		C224F5E21CC4CC53007C7AF8 /* CRC32.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CRC32.xcodeproj; path = "../../CRC32/Source-CRC32/CRC32.xcodeproj"; sourceTree = "<group>"; };
+		C224F6351CC4CCFF007C7AF8 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		C224F6441CC4CD22007C7AF8 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		C224F6461CC4CD52007C7AF8 /* GZIP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GZIP.xcodeproj; path = "../../GZIP/Source-GZIP/GZIP.xcodeproj"; sourceTree = "<group>"; };
+		C224F6801CC4CDE9007C7AF8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C224F6F61CC4D107007C7AF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C23AFBDF1CAE5B9E0049A4C1 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23AFBE31CAE5B9E0049A4C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C23AFBE41CAE5B9E0049A4C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C23AFBE51CAE5B9E0049A4C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C23AFBE71CAE5B9E0049A4C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C23AFBE91CAE5B9E0049A4C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C23AFBEC1CAE5B9E0049A4C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C23AFC021CAE5BE80049A4C1 /* AppScreenShotManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppScreenShotManager.xcodeproj; path = "../Source-AppScreenShotManager/AppScreenShotManager.xcodeproj"; sourceTree = "<group>"; };
+		C26BAD7D1CC8E587003B9865 /* EventCenter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EventCenter.xcodeproj; path = "../../EventCenter/Source-EventCenter/EventCenter.xcodeproj"; sourceTree = "<group>"; };
+		C26BAD991CC8E5A2003B9865 /* FxEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxEvents.xcodeproj; path = ../../Events/FxEvents/FxEvents.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35FF85721E1CDC9B00A664D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FF87D91E1F514E00A664D3 /* libFxEvents.a in Frameworks */,
+				35FF87D81E1F514700A664D3 /* libFxStd.a in Frameworks */,
+				35FF87281E1E426D00A664D3 /* libIPC.a in Frameworks */,
+				35FF85A61E1CDE7A00A664D3 /* libAppScreenShotManager-iOS.a in Frameworks */,
+				35FF871B1E1E423800A664D3 /* IOKit in Frameworks */,
+				35FF85A91E1CE05500A664D3 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23AFBDC1CAE5B9E0049A4C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26BADCC1CC8E5FC003B9865 /* libEventCenterMac.a in Frameworks */,
+				C26BADCD1CC8E5FC003B9865 /* libFxEventsMac.a in Frameworks */,
+				C224F6F71CC4D107007C7AF8 /* SystemConfiguration.framework in Frameworks */,
+				C224F6721CC4CD9D007C7AF8 /* libGZIPMac.a in Frameworks */,
+				C224F62A1CC4CCDA007C7AF8 /* libCCryptography.a in Frameworks */,
+				C224F62B1CC4CCDA007C7AF8 /* libCommandServiceManagerLibMac.a in Frameworks */,
+				C224F62C1CC4CCDA007C7AF8 /* libCRC32Mac.a in Frameworks */,
+				C224F62D1CC4CCDA007C7AF8 /* libCryptographyMac.a in Frameworks */,
+				C224F62E1CC4CCDA007C7AF8 /* libDDMMac.a in Frameworks */,
+				C224F62F1CC4CCDA007C7AF8 /* libFMDB.a in Frameworks */,
+				C224F6301CC4CCDA007C7AF8 /* libFxStdMac.a in Frameworks */,
+				C224F6311CC4CCDA007C7AF8 /* libHTTPLibMac.a in Frameworks */,
+				C224F6321CC4CCDA007C7AF8 /* libProtocolBuilderLibMac.a in Frameworks */,
+				C224F6331CC4CCDA007C7AF8 /* libSystemUtilsMac.a in Frameworks */,
+				C224F6341CC4CCDA007C7AF8 /* libUnstructuredManagerLibMac.a in Frameworks */,
+				C23AFC0A1CAE5CCA0049A4C1 /* libAppScreenShotManager.a in Frameworks */,
+				C224F6811CC4CDE9007C7AF8 /* libz.dylib in Frameworks */,
+				C224F6451CC4CD22007C7AF8 /* libsqlite3.0.dylib in Frameworks */,
+				C224F6361CC4CCFF007C7AF8 /* libstdc++.6.0.9.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35FF85761E1CDC9B00A664D3 /* TestApp-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				35FF857A1E1CDC9B00A664D3 /* AppDelegate.h */,
+				35FF857B1E1CDC9B00A664D3 /* AppDelegate.m */,
+				35FF857D1E1CDC9B00A664D3 /* ViewController.h */,
+				35FF857E1E1CDC9B00A664D3 /* ViewController.m */,
+				35FF85801E1CDC9B00A664D3 /* Main.storyboard */,
+				35FF85831E1CDC9B00A664D3 /* Assets.xcassets */,
+				35FF85851E1CDC9B00A664D3 /* LaunchScreen.storyboard */,
+				35FF85881E1CDC9B00A664D3 /* Info.plist */,
+				35FF85771E1CDC9B00A664D3 /* Supporting Files */,
+			);
+			path = "TestApp-iOS";
+			sourceTree = "<group>";
+		};
+		35FF85771E1CDC9B00A664D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35FF85781E1CDC9B00A664D3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35FF85A71E1CE05500A664D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35FF871A1E1E423800A664D3 /* IOKit */,
+				35FF85A81E1CE05500A664D3 /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35FF871D1E1E425E00A664D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35FF87231E1E425E00A664D3 /* libIPC.a */,
+				35FF87251E1E425E00A664D3 /* libIPC-E.a */,
+				35FF87271E1E425E00A664D3 /* libIPCMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C224F5741CC4CB43007C7AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C224F57A1CC4CB43007C7AF8 /* UnstructuredManager.app */,
+				C224F57C1CC4CB43007C7AF8 /* libUnstructuredManagerLib.a */,
+				C224F57E1CC4CB43007C7AF8 /* libUnstructuredManagerLibMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C224F5801CC4CB62007C7AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C224F5861CC4CB62007C7AF8 /* HTTP.app */,
+				C224F5881CC4CB62007C7AF8 /* libHTTPLib.a */,
+				C224F58A1CC4CB62007C7AF8 /* libHTTPLibMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C224F58C1CC4CB7E007C7AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C224F5911CC4CB7E007C7AF8 /* libSystemUtils.a */,
+				C224F5931CC4CB7E007C7AF8 /* libSystemUtilsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C224F5951CC4CBA3007C7AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C224F59D1CC4CBA3007C7AF8 /* fmdb */,
+				C224F59F1CC4CBA3007C7AF8 /* libFMDB-IOS.a */,
+				C224F5A11CC4CBA3007C7AF8 /* libFMDB.a */,
+				C224F5A31CC4CBA3007C7AF8 /* FMDB.framework */,
+				C224F5A51CC4CBA3007C7AF8 /* FMDB.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C224F5A71CC4CBC3007C7AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C224F5AD1CC4CBC3007C7AF8 /* ProtocolBuilder.app */,
+				C224F5AF1CC4CBC3007C7AF8 /* libProtocolBuilderLib.a */,
+				C224F5B11CC4CBC3007C7AF8 /* libProtocolBuilderLibMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C224F5B31CC4CBD4007C7AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C224F5B71CC4CBD4007C7AF8 /* libCCryptography.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C224F5B91CC4CBEA007C7AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C224F5BE1CC4CBEA007C7AF8 /* libDDM.a */,
+				C224F5C01CC4CBEA007C7AF8 /* libDDMMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C224F5C21CC4CC07007C7AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C224F5C81CC4CC07007C7AF8 /* libFxStd.a */,
+				C224F5CA1CC4CC07007C7AF8 /* libFxStd-E.a */,
+				C224F5CC1CC4CC07007C7AF8 /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C224F5CE1CC4CC2B007C7AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C224F5D41CC4CC2B007C7AF8 /* CommandServiceManager.app */,
+				C224F5D61CC4CC2B007C7AF8 /* libCommandServiceManagerLib.a */,
+				C224F5D81CC4CC2B007C7AF8 /* libCommandServiceManagerLibMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C224F5DA1CC4CC46007C7AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C224F5DF1CC4CC46007C7AF8 /* libCryptography.a */,
+				C224F5E11CC4CC46007C7AF8 /* libCryptographyMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C224F5E31CC4CC53007C7AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C224F5E81CC4CC53007C7AF8 /* libCRC32.a */,
+				C224F5EA1CC4CC53007C7AF8 /* libCRC32Mac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C224F6471CC4CD52007C7AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C224F64C1CC4CD52007C7AF8 /* libGZIP.a */,
+				C224F64E1CC4CD52007C7AF8 /* libGZIPMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C224F7601CC4E4ED007C7AF8 /* LIB */ = {
+			isa = PBXGroup;
+			children = (
+				35FF871C1E1E425E00A664D3 /* IPC.xcodeproj */,
+				C26BAD991CC8E5A2003B9865 /* FxEvents.xcodeproj */,
+				C26BAD7D1CC8E587003B9865 /* EventCenter.xcodeproj */,
+				C224F5731CC4CB43007C7AF8 /* UnstructuredManager.xcodeproj */,
+				C224F57F1CC4CB62007C7AF8 /* HTTP.xcodeproj */,
+				C224F58B1CC4CB7E007C7AF8 /* SystemUtils.xcodeproj */,
+				C224F5CD1CC4CC2B007C7AF8 /* CommandServiceManager.xcodeproj */,
+				C224F5B81CC4CBEA007C7AF8 /* DDM.xcodeproj */,
+				C224F5C11CC4CC07007C7AF8 /* FxStd.xcodeproj */,
+				C224F6461CC4CD52007C7AF8 /* GZIP.xcodeproj */,
+				C224F5B21CC4CBD4007C7AF8 /* CCryptography.xcodeproj */,
+				C224F5E21CC4CC53007C7AF8 /* CRC32.xcodeproj */,
+				C224F5D91CC4CC46007C7AF8 /* Cryptography.xcodeproj */,
+				C224F5A61CC4CBC3007C7AF8 /* ProtocolBuilder.xcodeproj */,
+				C224F5941CC4CBA3007C7AF8 /* fmdb.xcodeproj */,
+			);
+			name = LIB;
+			sourceTree = "<group>";
+		};
+		C23AFBD61CAE5B9E0049A4C1 = {
+			isa = PBXGroup;
+			children = (
+				C224F7601CC4E4ED007C7AF8 /* LIB */,
+				C23AFC021CAE5BE80049A4C1 /* AppScreenShotManager.xcodeproj */,
+				C23AFBE11CAE5B9E0049A4C1 /* TestApp */,
+				35FF85761E1CDC9B00A664D3 /* TestApp-iOS */,
+				C23AFBE01CAE5B9E0049A4C1 /* Products */,
+				35FF85A71E1CE05500A664D3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C23AFBE01CAE5B9E0049A4C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23AFBDF1CAE5B9E0049A4C1 /* TestApp.app */,
+				35FF85751E1CDC9B00A664D3 /* TestApp-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23AFBE11CAE5B9E0049A4C1 /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				C23AFBE41CAE5B9E0049A4C1 /* AppDelegate.h */,
+				C23AFBE51CAE5B9E0049A4C1 /* AppDelegate.m */,
+				C23AFBE91CAE5B9E0049A4C1 /* Images.xcassets */,
+				C23AFBEB1CAE5B9E0049A4C1 /* MainMenu.xib */,
+				C23AFBE21CAE5B9E0049A4C1 /* Supporting Files */,
+			);
+			path = TestApp;
+			sourceTree = "<group>";
+		};
+		C23AFBE21CAE5B9E0049A4C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C224F6F61CC4D107007C7AF8 /* SystemConfiguration.framework */,
+				C224F6801CC4CDE9007C7AF8 /* libz.dylib */,
+				C224F6441CC4CD22007C7AF8 /* libsqlite3.0.dylib */,
+				C224F6351CC4CCFF007C7AF8 /* libstdc++.6.0.9.dylib */,
+				C23AFBE31CAE5B9E0049A4C1 /* Info.plist */,
+				C23AFBE71CAE5B9E0049A4C1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C23AFC031CAE5BE80049A4C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23AFC071CAE5BE80049A4C1 /* libAppScreenShotManager.a */,
+				35FF858D1E1CDC9B00A664D3 /* libAppScreenShotManager-iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C26BAD7E1CC8E587003B9865 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C26BAD881CC8E587003B9865 /* libEventCenter.a */,
+				C26BAD8A1CC8E587003B9865 /* libEventCenterMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C26BAD9A1CC8E5A2003B9865 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C26BAD9F1CC8E5A3003B9865 /* libFxEvents.a */,
+				C26BADA11CC8E5A3003B9865 /* libFxEventsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35FF85741E1CDC9B00A664D3 /* TestApp-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35FF85A31E1CDC9B00A664D3 /* Build configuration list for PBXNativeTarget "TestApp-iOS" */;
+			buildPhases = (
+				35FF85711E1CDC9B00A664D3 /* Sources */,
+				35FF85721E1CDC9B00A664D3 /* Frameworks */,
+				35FF85731E1CDC9B00A664D3 /* Resources */,
+				35FF85FF1E1CE09800A664D3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35FF87DD1E1F515800A664D3 /* PBXTargetDependency */,
+				35FF87DB1E1F515300A664D3 /* PBXTargetDependency */,
+				35FF872A1E1E427300A664D3 /* PBXTargetDependency */,
+				35FF85A51E1CDDAE00A664D3 /* PBXTargetDependency */,
+			);
+			name = "TestApp-iOS";
+			productName = "TestApp-iOS";
+			productReference = 35FF85751E1CDC9B00A664D3 /* TestApp-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C23AFBDE1CAE5B9E0049A4C1 /* TestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23AFBFC1CAE5B9E0049A4C1 /* Build configuration list for PBXNativeTarget "TestApp" */;
+			buildPhases = (
+				C23AFBDB1CAE5B9E0049A4C1 /* Sources */,
+				C23AFBDC1CAE5B9E0049A4C1 /* Frameworks */,
+				C23AFBDD1CAE5B9E0049A4C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C26BADCB1CC8E5F3003B9865 /* PBXTargetDependency */,
+				C26BADB21CC8E5F0003B9865 /* PBXTargetDependency */,
+				C224F65D1CC4CD98007C7AF8 /* PBXTargetDependency */,
+				C224F5F81CC4CC98007C7AF8 /* PBXTargetDependency */,
+				C224F5FA1CC4CC98007C7AF8 /* PBXTargetDependency */,
+				C224F5FC1CC4CC98007C7AF8 /* PBXTargetDependency */,
+				C224F5FE1CC4CC98007C7AF8 /* PBXTargetDependency */,
+				C224F6001CC4CC98007C7AF8 /* PBXTargetDependency */,
+				C224F6021CC4CC98007C7AF8 /* PBXTargetDependency */,
+				C224F6041CC4CC98007C7AF8 /* PBXTargetDependency */,
+				C224F6061CC4CC98007C7AF8 /* PBXTargetDependency */,
+				C224F6081CC4CC98007C7AF8 /* PBXTargetDependency */,
+				C224F60A1CC4CC98007C7AF8 /* PBXTargetDependency */,
+				C224F60C1CC4CC98007C7AF8 /* PBXTargetDependency */,
+				C23AFC091CAE5CC70049A4C1 /* PBXTargetDependency */,
+			);
+			name = TestApp;
+			productName = TestApp;
+			productReference = C23AFBDF1CAE5B9E0049A4C1 /* TestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C23AFBD71CAE5B9E0049A4C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					35FF85741E1CDC9B00A664D3 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					C23AFBDE1CAE5B9E0049A4C1 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C23AFBDA1CAE5B9E0049A4C1 /* Build configuration list for PBXProject "TestApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C23AFBD61CAE5B9E0049A4C1;
+			productRefGroup = C23AFBE01CAE5B9E0049A4C1 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C23AFC031CAE5BE80049A4C1 /* Products */;
+					ProjectRef = C23AFC021CAE5BE80049A4C1 /* AppScreenShotManager.xcodeproj */;
+				},
+				{
+					ProductGroup = C224F5B31CC4CBD4007C7AF8 /* Products */;
+					ProjectRef = C224F5B21CC4CBD4007C7AF8 /* CCryptography.xcodeproj */;
+				},
+				{
+					ProductGroup = C224F5CE1CC4CC2B007C7AF8 /* Products */;
+					ProjectRef = C224F5CD1CC4CC2B007C7AF8 /* CommandServiceManager.xcodeproj */;
+				},
+				{
+					ProductGroup = C224F5E31CC4CC53007C7AF8 /* Products */;
+					ProjectRef = C224F5E21CC4CC53007C7AF8 /* CRC32.xcodeproj */;
+				},
+				{
+					ProductGroup = C224F5DA1CC4CC46007C7AF8 /* Products */;
+					ProjectRef = C224F5D91CC4CC46007C7AF8 /* Cryptography.xcodeproj */;
+				},
+				{
+					ProductGroup = C224F5B91CC4CBEA007C7AF8 /* Products */;
+					ProjectRef = C224F5B81CC4CBEA007C7AF8 /* DDM.xcodeproj */;
+				},
+				{
+					ProductGroup = C26BAD7E1CC8E587003B9865 /* Products */;
+					ProjectRef = C26BAD7D1CC8E587003B9865 /* EventCenter.xcodeproj */;
+				},
+				{
+					ProductGroup = C224F5951CC4CBA3007C7AF8 /* Products */;
+					ProjectRef = C224F5941CC4CBA3007C7AF8 /* fmdb.xcodeproj */;
+				},
+				{
+					ProductGroup = C26BAD9A1CC8E5A2003B9865 /* Products */;
+					ProjectRef = C26BAD991CC8E5A2003B9865 /* FxEvents.xcodeproj */;
+				},
+				{
+					ProductGroup = C224F5C21CC4CC07007C7AF8 /* Products */;
+					ProjectRef = C224F5C11CC4CC07007C7AF8 /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = C224F6471CC4CD52007C7AF8 /* Products */;
+					ProjectRef = C224F6461CC4CD52007C7AF8 /* GZIP.xcodeproj */;
+				},
+				{
+					ProductGroup = C224F5801CC4CB62007C7AF8 /* Products */;
+					ProjectRef = C224F57F1CC4CB62007C7AF8 /* HTTP.xcodeproj */;
+				},
+				{
+					ProductGroup = 35FF871D1E1E425E00A664D3 /* Products */;
+					ProjectRef = 35FF871C1E1E425E00A664D3 /* IPC.xcodeproj */;
+				},
+				{
+					ProductGroup = C224F5A71CC4CBC3007C7AF8 /* Products */;
+					ProjectRef = C224F5A61CC4CBC3007C7AF8 /* ProtocolBuilder.xcodeproj */;
+				},
+				{
+					ProductGroup = C224F58C1CC4CB7E007C7AF8 /* Products */;
+					ProjectRef = C224F58B1CC4CB7E007C7AF8 /* SystemUtils.xcodeproj */;
+				},
+				{
+					ProductGroup = C224F5741CC4CB43007C7AF8 /* Products */;
+					ProjectRef = C224F5731CC4CB43007C7AF8 /* UnstructuredManager.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C23AFBDE1CAE5B9E0049A4C1 /* TestApp */,
+				35FF85741E1CDC9B00A664D3 /* TestApp-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		35FF858D1E1CDC9B00A664D3 /* libAppScreenShotManager-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libAppScreenShotManager-iOS.a";
+			remoteRef = 35FF858C1E1CDC9B00A664D3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35FF87231E1E425E00A664D3 /* libIPC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPC.a;
+			remoteRef = 35FF87221E1E425E00A664D3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35FF87251E1E425E00A664D3 /* libIPC-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libIPC-E.a";
+			remoteRef = 35FF87241E1E425E00A664D3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35FF87271E1E425E00A664D3 /* libIPCMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPCMac.a;
+			remoteRef = 35FF87261E1E425E00A664D3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F57A1CC4CB43007C7AF8 /* UnstructuredManager.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = UnstructuredManager.app;
+			remoteRef = C224F5791CC4CB43007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F57C1CC4CB43007C7AF8 /* libUnstructuredManagerLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUnstructuredManagerLib.a;
+			remoteRef = C224F57B1CC4CB43007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F57E1CC4CB43007C7AF8 /* libUnstructuredManagerLibMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUnstructuredManagerLibMac.a;
+			remoteRef = C224F57D1CC4CB43007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5861CC4CB62007C7AF8 /* HTTP.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HTTP.app;
+			remoteRef = C224F5851CC4CB62007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5881CC4CB62007C7AF8 /* libHTTPLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libHTTPLib.a;
+			remoteRef = C224F5871CC4CB62007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F58A1CC4CB62007C7AF8 /* libHTTPLibMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libHTTPLibMac.a;
+			remoteRef = C224F5891CC4CB62007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5911CC4CB7E007C7AF8 /* libSystemUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtils.a;
+			remoteRef = C224F5901CC4CB7E007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5931CC4CB7E007C7AF8 /* libSystemUtilsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtilsMac.a;
+			remoteRef = C224F5921CC4CB7E007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F59D1CC4CBA3007C7AF8 /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = C224F59C1CC4CBA3007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F59F1CC4CBA3007C7AF8 /* libFMDB-IOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFMDB-IOS.a";
+			remoteRef = C224F59E1CC4CBA3007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5A11CC4CBA3007C7AF8 /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = C224F5A01CC4CBA3007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5A31CC4CBA3007C7AF8 /* FMDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FMDB.framework;
+			remoteRef = C224F5A21CC4CBA3007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5A51CC4CBA3007C7AF8 /* FMDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FMDB.framework;
+			remoteRef = C224F5A41CC4CBA3007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5AD1CC4CBC3007C7AF8 /* ProtocolBuilder.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ProtocolBuilder.app;
+			remoteRef = C224F5AC1CC4CBC3007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5AF1CC4CBC3007C7AF8 /* libProtocolBuilderLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libProtocolBuilderLib.a;
+			remoteRef = C224F5AE1CC4CBC3007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5B11CC4CBC3007C7AF8 /* libProtocolBuilderLibMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libProtocolBuilderLibMac.a;
+			remoteRef = C224F5B01CC4CBC3007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5B71CC4CBD4007C7AF8 /* libCCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCCryptography.a;
+			remoteRef = C224F5B61CC4CBD4007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5BE1CC4CBEA007C7AF8 /* libDDM.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDDM.a;
+			remoteRef = C224F5BD1CC4CBEA007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5C01CC4CBEA007C7AF8 /* libDDMMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDDMMac.a;
+			remoteRef = C224F5BF1CC4CBEA007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5C81CC4CC07007C7AF8 /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = C224F5C71CC4CC07007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5CA1CC4CC07007C7AF8 /* libFxStd-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFxStd-E.a";
+			remoteRef = C224F5C91CC4CC07007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5CC1CC4CC07007C7AF8 /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = C224F5CB1CC4CC07007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5D41CC4CC2B007C7AF8 /* CommandServiceManager.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CommandServiceManager.app;
+			remoteRef = C224F5D31CC4CC2B007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5D61CC4CC2B007C7AF8 /* libCommandServiceManagerLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCommandServiceManagerLib.a;
+			remoteRef = C224F5D51CC4CC2B007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5D81CC4CC2B007C7AF8 /* libCommandServiceManagerLibMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCommandServiceManagerLibMac.a;
+			remoteRef = C224F5D71CC4CC2B007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5DF1CC4CC46007C7AF8 /* libCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptography.a;
+			remoteRef = C224F5DE1CC4CC46007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5E11CC4CC46007C7AF8 /* libCryptographyMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptographyMac.a;
+			remoteRef = C224F5E01CC4CC46007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5E81CC4CC53007C7AF8 /* libCRC32.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCRC32.a;
+			remoteRef = C224F5E71CC4CC53007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F5EA1CC4CC53007C7AF8 /* libCRC32Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCRC32Mac.a;
+			remoteRef = C224F5E91CC4CC53007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F64C1CC4CD52007C7AF8 /* libGZIP.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGZIP.a;
+			remoteRef = C224F64B1CC4CD52007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C224F64E1CC4CD52007C7AF8 /* libGZIPMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGZIPMac.a;
+			remoteRef = C224F64D1CC4CD52007C7AF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C23AFC071CAE5BE80049A4C1 /* libAppScreenShotManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppScreenShotManager.a;
+			remoteRef = C23AFC061CAE5BE80049A4C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C26BAD881CC8E587003B9865 /* libEventCenter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventCenter.a;
+			remoteRef = C26BAD871CC8E587003B9865 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C26BAD8A1CC8E587003B9865 /* libEventCenterMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventCenterMac.a;
+			remoteRef = C26BAD891CC8E587003B9865 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C26BAD9F1CC8E5A3003B9865 /* libFxEvents.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEvents.a;
+			remoteRef = C26BAD9E1CC8E5A3003B9865 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C26BADA11CC8E5A3003B9865 /* libFxEventsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEventsMac.a;
+			remoteRef = C26BADA01CC8E5A3003B9865 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35FF85731E1CDC9B00A664D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FF85871E1CDC9B00A664D3 /* LaunchScreen.storyboard in Resources */,
+				35FF85841E1CDC9B00A664D3 /* Assets.xcassets in Resources */,
+				35FF85821E1CDC9B00A664D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23AFBDD1CAE5B9E0049A4C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23AFBEA1CAE5B9E0049A4C1 /* Images.xcassets in Resources */,
+				C23AFBED1CAE5B9E0049A4C1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35FF85FF1E1CE09800A664D3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Xcode 7 upward\nexport CODESIGN_ALLOCATE=${SDK_ROOT}/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n../../OTC/Entitlements/gen_entitlements.py \"com.applle.${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PRODUCT_NAME}.xcent\";\ncodesign -f -s \"iOS Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PRODUCT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi\n\n# Copy\nDEVICE_IP=192.168.20.40\nssh root@${DEVICE_IP} rm -rf /Applications/${WRAPPER_NAME}\nscp -r ${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME} root@${DEVICE_IP}:/Applications/";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35FF85711E1CDC9B00A664D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FF857F1E1CDC9B00A664D3 /* ViewController.m in Sources */,
+				35FF857C1E1CDC9B00A664D3 /* AppDelegate.m in Sources */,
+				35FF85791E1CDC9B00A664D3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23AFBDB1CAE5B9E0049A4C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23AFBE81CAE5B9E0049A4C1 /* main.m in Sources */,
+				C23AFBE61CAE5B9E0049A4C1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35FF85A51E1CDDAE00A664D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AppScreenShotManager-iOS";
+			targetProxy = 35FF85A41E1CDDAE00A664D3 /* PBXContainerItemProxy */;
+		};
+		35FF872A1E1E427300A664D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IPC;
+			targetProxy = 35FF87291E1E427300A664D3 /* PBXContainerItemProxy */;
+		};
+		35FF87DB1E1F515300A664D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStd;
+			targetProxy = 35FF87DA1E1F515300A664D3 /* PBXContainerItemProxy */;
+		};
+		35FF87DD1E1F515800A664D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxEvents;
+			targetProxy = 35FF87DC1E1F515800A664D3 /* PBXContainerItemProxy */;
+		};
+		C224F5F81CC4CC98007C7AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CRC32Mac;
+			targetProxy = C224F5F71CC4CC98007C7AF8 /* PBXContainerItemProxy */;
+		};
+		C224F5FA1CC4CC98007C7AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptographyMac;
+			targetProxy = C224F5F91CC4CC98007C7AF8 /* PBXContainerItemProxy */;
+		};
+		C224F5FC1CC4CC98007C7AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CommandServiceManagerLibMac;
+			targetProxy = C224F5FB1CC4CC98007C7AF8 /* PBXContainerItemProxy */;
+		};
+		C224F5FE1CC4CC98007C7AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStdMac;
+			targetProxy = C224F5FD1CC4CC98007C7AF8 /* PBXContainerItemProxy */;
+		};
+		C224F6001CC4CC98007C7AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DDMMac;
+			targetProxy = C224F5FF1CC4CC98007C7AF8 /* PBXContainerItemProxy */;
+		};
+		C224F6021CC4CC98007C7AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CCryptography;
+			targetProxy = C224F6011CC4CC98007C7AF8 /* PBXContainerItemProxy */;
+		};
+		C224F6041CC4CC98007C7AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProtocolBuilderLibMac;
+			targetProxy = C224F6031CC4CC98007C7AF8 /* PBXContainerItemProxy */;
+		};
+		C224F6061CC4CC98007C7AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			targetProxy = C224F6051CC4CC98007C7AF8 /* PBXContainerItemProxy */;
+		};
+		C224F6081CC4CC98007C7AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SystemUtilsMac;
+			targetProxy = C224F6071CC4CC98007C7AF8 /* PBXContainerItemProxy */;
+		};
+		C224F60A1CC4CC98007C7AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HTTPLibMac;
+			targetProxy = C224F6091CC4CC98007C7AF8 /* PBXContainerItemProxy */;
+		};
+		C224F60C1CC4CC98007C7AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UnstructuredManagerLibMac;
+			targetProxy = C224F60B1CC4CC98007C7AF8 /* PBXContainerItemProxy */;
+		};
+		C224F65D1CC4CD98007C7AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GZIPMac;
+			targetProxy = C224F65C1CC4CD98007C7AF8 /* PBXContainerItemProxy */;
+		};
+		C23AFC091CAE5CC70049A4C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppScreenShotManager;
+			targetProxy = C23AFC081CAE5CC70049A4C1 /* PBXContainerItemProxy */;
+		};
+		C26BADB21CC8E5F0003B9865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxEventsMac;
+			targetProxy = C26BADB11CC8E5F0003B9865 /* PBXContainerItemProxy */;
+		};
+		C26BADCB1CC8E5F3003B9865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EventCenterMac;
+			targetProxy = C26BADCA1CC8E5F3003B9865 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35FF85801E1CDC9B00A664D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35FF85811E1CDC9B00A664D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35FF85851E1CDC9B00A664D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35FF85861E1CDC9B00A664D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C23AFBEB1CAE5B9E0049A4C1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C23AFBEC1CAE5B9E0049A4C1 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35FF85891E1CDC9B00A664D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "TestApp-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.applle.TestApp-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../Source-AppScreenShotManager/**";
+			};
+			name = Debug;
+		};
+		35FF858A1E1CDC9B00A664D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "TestApp-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.applle.TestApp-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../Source-AppScreenShotManager/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C23AFBFA1CAE5B9E0049A4C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C23AFBFB1CAE5B9E0049A4C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C23AFBFD1CAE5B9E0049A4C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../FMDB/FMDB_2.4/** ../../Std/FxStd/** ../../EventCenter/Source-EventCenter ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../IPC/Source-IPC/** ../../GZIP/Source-GZIP/** ../../Cryptography/Source-Cryptography/** ../../CRC32/Source-CRC32/** ../../DataDeliveryManager/DDM/** ../../EventCenter/Source-EventCenter/** ../Source-AppScreenShotManager/**";
+			};
+			name = Debug;
+		};
+		C23AFBFE1CAE5B9E0049A4C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../FMDB/FMDB_2.4/** ../../Std/FxStd/** ../../EventCenter/Source-EventCenter ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../IPC/Source-IPC/** ../../GZIP/Source-GZIP/** ../../Cryptography/Source-Cryptography/** ../../CRC32/Source-CRC32/** ../../DataDeliveryManager/DDM/** ../../EventCenter/Source-EventCenter/** ../Source-AppScreenShotManager/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35FF85A31E1CDC9B00A664D3 /* Build configuration list for PBXNativeTarget "TestApp-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35FF85891E1CDC9B00A664D3 /* Debug */,
+				35FF858A1E1CDC9B00A664D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23AFBDA1CAE5B9E0049A4C1 /* Build configuration list for PBXProject "TestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23AFBFA1CAE5B9E0049A4C1 /* Debug */,
+				C23AFBFB1CAE5B9E0049A4C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23AFBFC1CAE5B9E0049A4C1 /* Build configuration list for PBXNativeTarget "TestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23AFBFD1CAE5B9E0049A4C1 /* Debug */,
+				C23AFBFE1CAE5B9E0049A4C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C23AFBD71CAE5B9E0049A4C1 /* Project object */;
+}

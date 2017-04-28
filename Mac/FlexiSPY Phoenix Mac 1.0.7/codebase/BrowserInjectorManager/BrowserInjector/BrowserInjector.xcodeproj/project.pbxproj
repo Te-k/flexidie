@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0279D9311634723E0072A5BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0279D9301634723E0072A5BD /* Foundation.framework */; };
+		0279D9701634882E0072A5BD /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0279D95E16347E670072A5BD /* AppKit.framework */; };
+		0291CA3C1635FA1C001E5737 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0279D95B16347E670072A5BD /* Cocoa.framework */; };
+		C20159D41AB96E350020B603 /* BrowserInjectorExt.m in Sources */ = {isa = PBXBuildFile; fileRef = C20159CE1AB96D690020B603 /* BrowserInjectorExt.m */; };
+		C20159D51AB96E440020B603 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C20159CB1AB96CB30020B603 /* InfoPlist.strings */; };
+		C234CE9D1ABBDD6100B27912 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C234CE9C1ABBDD6100B27912 /* libobjc.A.dylib */; };
+		C242B1E71ABAD7DE00301108 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C242B1E61ABAD7DE00301108 /* WebKit.framework */; };
+		C284975A1AB96EC20044A6B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C28497591AB96EC20044A6B4 /* main.m */; };
+		FC047E271DBF62D400F710B3 /* BrowserInjector.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = C22C10AD1ABA729E00F2F71E /* BrowserInjector.entitlements */; };
+		FC4301B81DC06AAB005D7522 /* mach_inject_bundle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4301AE1DC069F1005D7522 /* mach_inject_bundle.framework */; };
+		FC4301BB1DC06BD6005D7522 /* mach_inject_bundle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC4301AE1DC069F1005D7522 /* mach_inject_bundle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0279D96E163480800072A5BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0279D9231634723E0072A5BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0279D95916347E670072A5BD;
+			remoteInfo = FinderExt;
+		};
+		FC4301AD1DC069F1005D7522 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC4301A81DC069F0005D7522 /* mach_inject_bundle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = mach_inject_bundle;
+		};
+		FC4301B91DC06AB1005D7522 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC4301A81DC069F0005D7522 /* mach_inject_bundle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = mach_inject_bundle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0279D92A1634723E0072A5BD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		0279D951163476780072A5BD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FC4301BB1DC06BD6005D7522 /* mach_inject_bundle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0279D92C1634723E0072A5BD /* BrowserInjector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BrowserInjector; sourceTree = BUILT_PRODUCTS_DIR; };
+		0279D9301634723E0072A5BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0279D95A16347E670072A5BD /* BrowserInjectorExt.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowserInjectorExt.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0279D95B16347E670072A5BD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0279D95E16347E670072A5BD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0279D95F16347E670072A5BD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C20159CB1AB96CB30020B603 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		C20159CD1AB96D690020B603 /* BrowserInjectorExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserInjectorExt.h; sourceTree = SOURCE_ROOT; };
+		C20159CE1AB96D690020B603 /* BrowserInjectorExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserInjectorExt.m; sourceTree = SOURCE_ROOT; };
+		C22C10AD1ABA729E00F2F71E /* BrowserInjector.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BrowserInjector.entitlements; sourceTree = "<group>"; };
+		C234CE9C1ABBDD6100B27912 /* libobjc.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.A.dylib; path = usr/lib/libobjc.A.dylib; sourceTree = SDKROOT; };
+		C234CED91ABC336900B27912 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		C242B1E61ABAD7DE00301108 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C28497591AB96EC20044A6B4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		FC4301A21DC06969005D7522 /* mach_inject_bundle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mach_inject_bundle.framework; path = "../../../../../../Users/khaneid/Library/Developer/Xcode/DerivedData/blblu-bwyrwapjnnkupncpyxelnbfjodcq/Build/Products/Default/mach_inject_bundle.framework"; sourceTree = "<group>"; };
+		FC4301A81DC069F0005D7522 /* mach_inject_bundle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mach_inject_bundle.xcodeproj; path = ../../mach_inject/mach_inject_bundle/mach_inject_bundle.xcodeproj; sourceTree = "<group>"; };
+		FC78F2C81DC0A52900324C64 /* BrowserInjector-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BrowserInjector-Info.plist"; sourceTree = SOURCE_ROOT; };
+		FC78F2C91DC0A52900324C64 /* BrowserInjector-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BrowserInjector-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		FC78F2CA1DC0A53900324C64 /* BrowserInjectorExt-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BrowserInjectorExt-Info.plist"; sourceTree = SOURCE_ROOT; };
+		FC78F2CB1DC0A53900324C64 /* BrowserInjectorExt-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BrowserInjectorExt-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0279D9291634723E0072A5BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4301B81DC06AAB005D7522 /* mach_inject_bundle.framework in Frameworks */,
+				C234CE9D1ABBDD6100B27912 /* libobjc.A.dylib in Frameworks */,
+				C242B1E71ABAD7DE00301108 /* WebKit.framework in Frameworks */,
+				0279D9701634882E0072A5BD /* AppKit.framework in Frameworks */,
+				0279D9311634723E0072A5BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0279D95716347E670072A5BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0291CA3C1635FA1C001E5737 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0279D9211634723E0072A5BD = {
+			isa = PBXGroup;
+			children = (
+				FC4301A81DC069F0005D7522 /* mach_inject_bundle.xcodeproj */,
+				C22C10AD1ABA729E00F2F71E /* BrowserInjector.entitlements */,
+				0279D9321634723E0072A5BD /* Main */,
+				0279D9351634723E0072A5BD /* Supporting Files */,
+				0279D96116347E670072A5BD /* Hook */,
+				0279D92F1634723E0072A5BD /* Frameworks */,
+				0279D92D1634723E0072A5BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0279D92D1634723E0072A5BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0279D92C1634723E0072A5BD /* BrowserInjector */,
+				0279D95A16347E670072A5BD /* BrowserInjectorExt.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0279D92F1634723E0072A5BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC4301A21DC06969005D7522 /* mach_inject_bundle.framework */,
+				C234CED91ABC336900B27912 /* CoreServices.framework */,
+				C234CE9C1ABBDD6100B27912 /* libobjc.A.dylib */,
+				0279D95F16347E670072A5BD /* CoreData.framework */,
+				0279D95E16347E670072A5BD /* AppKit.framework */,
+				0279D9301634723E0072A5BD /* Foundation.framework */,
+				C242B1E61ABAD7DE00301108 /* WebKit.framework */,
+				0279D95B16347E670072A5BD /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0279D9321634723E0072A5BD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C28497591AB96EC20044A6B4 /* main.m */,
+			);
+			name = Main;
+			path = FinderMenu;
+			sourceTree = "<group>";
+		};
+		0279D9351634723E0072A5BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC78F2C81DC0A52900324C64 /* BrowserInjector-Info.plist */,
+				FC78F2C91DC0A52900324C64 /* BrowserInjector-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = FinderMenu;
+			sourceTree = "<group>";
+		};
+		0279D96116347E670072A5BD /* Hook */ = {
+			isa = PBXGroup;
+			children = (
+				C20159CD1AB96D690020B603 /* BrowserInjectorExt.h */,
+				C20159CE1AB96D690020B603 /* BrowserInjectorExt.m */,
+				0279D96216347E670072A5BD /* Supporting Files */,
+			);
+			name = Hook;
+			path = FinderExt;
+			sourceTree = "<group>";
+		};
+		0279D96216347E670072A5BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC78F2CA1DC0A53900324C64 /* BrowserInjectorExt-Info.plist */,
+				FC78F2CB1DC0A53900324C64 /* BrowserInjectorExt-Prefix.pch */,
+				C20159CB1AB96CB30020B603 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC4301A91DC069F0005D7522 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC4301AE1DC069F1005D7522 /* mach_inject_bundle.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0279D92B1634723E0072A5BD /* BrowserInjector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0279D93B1634723E0072A5BD /* Build configuration list for PBXNativeTarget "BrowserInjector" */;
+			buildPhases = (
+				0279D9281634723E0072A5BD /* Sources */,
+				0279D9291634723E0072A5BD /* Frameworks */,
+				0279D92A1634723E0072A5BD /* CopyFiles */,
+				0279D951163476780072A5BD /* CopyFiles */,
+				0279D95516347D0E0072A5BD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC4301BA1DC06AB1005D7522 /* PBXTargetDependency */,
+				0279D96F163480800072A5BD /* PBXTargetDependency */,
+			);
+			name = BrowserInjector;
+			productName = FinderMenu;
+			productReference = 0279D92C1634723E0072A5BD /* BrowserInjector */;
+			productType = "com.apple.product-type.tool";
+		};
+		0279D95916347E670072A5BD /* BrowserInjectorExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0279D96816347E670072A5BD /* Build configuration list for PBXNativeTarget "BrowserInjectorExt" */;
+			buildPhases = (
+				0279D95616347E670072A5BD /* Sources */,
+				0279D95716347E670072A5BD /* Frameworks */,
+				0279D95816347E670072A5BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrowserInjectorExt;
+			productName = FinderExt;
+			productReference = 0279D95A16347E670072A5BD /* BrowserInjectorExt.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0279D9231634723E0072A5BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = InfiniteLabs;
+			};
+			buildConfigurationList = 0279D9261634723E0072A5BD /* Build configuration list for PBXProject "BrowserInjector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0279D9211634723E0072A5BD;
+			productRefGroup = 0279D92D1634723E0072A5BD /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FC4301A91DC069F0005D7522 /* Products */;
+					ProjectRef = FC4301A81DC069F0005D7522 /* mach_inject_bundle.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0279D92B1634723E0072A5BD /* BrowserInjector */,
+				0279D95916347E670072A5BD /* BrowserInjectorExt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FC4301AE1DC069F1005D7522 /* mach_inject_bundle.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = mach_inject_bundle.framework;
+			remoteRef = FC4301AD1DC069F1005D7522 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0279D95816347E670072A5BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC047E271DBF62D400F710B3 /* BrowserInjector.entitlements in Resources */,
+				C20159D51AB96E440020B603 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0279D95516347D0E0072A5BD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"target build dir : $TARGET_BUILD_DIR\"\necho \"build products dir : $BUILT_PRODUCTS_DIR\"\n\ninstall_name_tool -change @rpath/Frameworks/mach_inject_bundle.framework/Versions/A/mach_inject_bundle @executable_path/mach_inject_bundle.framework/Versions/A/mach_inject_bundle ${TARGET_BUILD_DIR}/${TARGET_NAME}\n\n###############################################################################################\n# In case ActivityHider is used in main project, no need to copy mach_inject_bundle.framework #\n###############################################################################################\n\n# KnowIT\nrm -rf ../../../BlueBlood/blblu/Injector/BrowserInjector\nrm -rf ../../../BlueBlood/blblu/Injector/BrowserInjectorExt.bundle\n#rm -rf ../../../BlueBlood/blblu/Injector/mach_inject_bundle.framework\n\ncp -rf ${BUILT_PRODUCTS_DIR}/BrowserInjector                ../../../BlueBlood/blblu/Injector/BrowserInjector\ncp -rf ${BUILT_PRODUCTS_DIR}/BrowserInjectorExt.bundle      ../../../BlueBlood/blblu/Injector/BrowserInjectorExt.bundle\n#cp -rf ${TARGET_BUILD_DIR}/mach_inject_bundle.framework ../../../BlueBlood/blblu/Injector/mach_inject_bundle.framework\n\n# FlexiSPY Green\nrm -rf ../../../GreenBlood/blblu/Injector/BrowserInjector\nrm -rf ../../../GreenBlood/blblu/Injector/BrowserInjectorExt.bundle\n#rm -rf ../../../GreenBlood/blblu/Injector/mach_inject_bundle.framework\n\ncp -rf ${BUILT_PRODUCTS_DIR}/BrowserInjector                ../../../GreenBlood/blblu/Injector/BrowserInjector\ncp -rf ${BUILT_PRODUCTS_DIR}/BrowserInjectorExt.bundle      ../../../GreenBlood/blblu/Injector/BrowserInjectorExt.bundle\n#cp -rf ${TARGET_BUILD_DIR}/mach_inject_bundle.framework ../../../GreenBlood/blblu/Injector/mach_inject_bundle.framework\n\n# Artemis\nrm -rf ../../../../Artemis/blblu/Injector/BrowserInjecter\nrm -rf ../../../../Artemis/blblu/Injector/BrowserInjecterExt.bundle\n#rm -rf ../../../../Artemis/blblu/Injector/mach_inject_bundle.framework\n\ncp -rf ${BUILT_PRODUCTS_DIR}/BrowserInjector                ../../../Artemis/blblu/Injector/BrowserInjector\ncp -rf ${BUILT_PRODUCTS_DIR}/BrowserInjectorExt.bundle      ../../../Artemis/blblu/Injector/BrowserInjectorExt.bundle\n#cp -rf ${TARGET_BUILD_DIR}/mach_inject_bundle.framework ../../../Artemis/blblu/Injector/mach_inject_bundle.framework\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0279D9281634723E0072A5BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C284975A1AB96EC20044A6B4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0279D95616347E670072A5BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20159D41AB96E350020B603 /* BrowserInjectorExt.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0279D96F163480800072A5BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0279D95916347E670072A5BD /* BrowserInjectorExt */;
+			targetProxy = 0279D96E163480800072A5BD /* PBXContainerItemProxy */;
+		};
+		FC4301BA1DC06AB1005D7522 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mach_inject_bundle;
+			targetProxy = FC4301B91DC06AB1005D7522 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0279D9391634723E0072A5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = BrowserInjector.entitlements;
+				CODE_SIGN_IDENTITY = "macOS Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = ../../mach_inject/mach_inject_bundle/;
+			};
+			name = Debug;
+		};
+		0279D93A1634723E0072A5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = BrowserInjector.entitlements;
+				CODE_SIGN_IDENTITY = "macOS Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = ../../mach_inject/mach_inject_bundle/;
+			};
+			name = Release;
+		};
+		0279D93C1634723E0072A5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = BrowserInjector.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrowserInjector-Prefix.pch";
+				HEADER_SEARCH_PATHS = "mach_inject/**";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = BrowserInjector;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = ../../mach_inject/mach_inject_bundle/;
+			};
+			name = Debug;
+		};
+		0279D93D1634723E0072A5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = BrowserInjector.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrowserInjector-Prefix.pch";
+				HEADER_SEARCH_PATHS = "mach_inject/**";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = BrowserInjector;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = ../../mach_inject/mach_inject_bundle/;
+			};
+			name = Release;
+		};
+		0279D96916347E670072A5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = BrowserInjector.entitlements;
+				CODE_SIGN_IDENTITY = "macOS Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrowserInjectorExt-Prefix.pch";
+				INFOPLIST_FILE = "BrowserInjectorExt-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = BrowserInjectorExt;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		0279D96A16347E670072A5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = BrowserInjector.entitlements;
+				CODE_SIGN_IDENTITY = "macOS Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrowserInjectorExt-Prefix.pch";
+				INFOPLIST_FILE = "BrowserInjectorExt-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = BrowserInjectorExt;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0279D9261634723E0072A5BD /* Build configuration list for PBXProject "BrowserInjector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0279D9391634723E0072A5BD /* Debug */,
+				0279D93A1634723E0072A5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0279D93B1634723E0072A5BD /* Build configuration list for PBXNativeTarget "BrowserInjector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0279D93C1634723E0072A5BD /* Debug */,
+				0279D93D1634723E0072A5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0279D96816347E670072A5BD /* Build configuration list for PBXNativeTarget "BrowserInjectorExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0279D96916347E670072A5BD /* Debug */,
+				0279D96A16347E670072A5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0279D9231634723E0072A5BD /* Project object */;
+}

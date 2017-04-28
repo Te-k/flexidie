@@ -1,0 +1,940 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3583F44E1DE593AB009CC3E3 /* libPageVisitedCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3583F43C1DE59363009CC3E3 /* libPageVisitedCaptureManager.a */; };
+		3583F44F1DE593B1009CC3E3 /* libIPCMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3583F4481DE59372009CC3E3 /* libIPCMac.a */; };
+		3583F45B1DE593F4009CC3E3 /* libCryptographyMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3583F4581DE593E9009CC3E3 /* libCryptographyMac.a */; };
+		3583F4641DE5941D009CC3E3 /* libCCryptography.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3583F4611DE59412009CC3E3 /* libCCryptography.a */; };
+		3583F4661DE5943C009CC3E3 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3583F4651DE5943C009CC3E3 /* libstdc++.tbd */; };
+		3583F46A1DE59475009CC3E3 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3583F4691DE59475009CC3E3 /* libstdc++.6.tbd */; };
+		C23BD72C1BBA94B900FCD113 /* libSystemUtilsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C23BD7291BBA949F00FCD113 /* libSystemUtilsMac.a */; };
+		C23BD72E1BBA94E100FCD113 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23BD72D1BBA94E100FCD113 /* SystemConfiguration.framework */; };
+		C24082DC1BAFFE2B00A09DC7 /* libEventCenterMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C24082BC1BAFFC6000A09DC7 /* libEventCenterMac.a */; };
+		C24082DD1BAFFE3200A09DC7 /* libFxEventsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C24082B31BAFFC3400A09DC7 /* libFxEventsMac.a */; };
+		C24082DE1BAFFE3500A09DC7 /* libFxStdMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C24082C51BAFFCA600A09DC7 /* libFxStdMac.a */; };
+		C258F8BE1BAA719700643CF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C258F8BD1BAA719700643CF7 /* AppDelegate.m */; };
+		C258F8C01BAA719700643CF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C258F8BF1BAA719700643CF7 /* main.m */; };
+		C258F8C21BAA719700643CF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C258F8C11BAA719700643CF7 /* Images.xcassets */; };
+		C258F8C51BAA719800643CF7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C258F8C31BAA719800643CF7 /* MainMenu.xib */; };
+		C258F8F21BAA727500643CF7 /* libInternetFileTransferManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C258F8EF1BAA726800643CF7 /* libInternetFileTransferManager.a */; };
+		C258F9091BAABD1D00643CF7 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C258F9081BAABD1D00643CF7 /* libsqlite3.0.dylib */; };
+		C258F90C1BAABECD00643CF7 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C258F90B1BAABECD00643CF7 /* ScriptingBridge.framework */; };
+		C258F9471BAABF5F00643CF7 /* libFMDBMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C258F93F1BAABF4400643CF7 /* libFMDBMac.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3583F4341DE592C6009CC3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24082BD1BAFFCA600A09DC7 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FCBD2F8C1BABEF5A0061109F;
+			remoteInfo = "FxStd-E";
+		};
+		3583F43B1DE59363009CC3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3583F4371DE59363009CC3E3 /* PageVisitedCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C24A006C17FD5EF00073E7F6;
+			remoteInfo = PageVisitedCaptureManager;
+		};
+		3583F4431DE59372009CC3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3583F43D1DE59372009CC3E3 /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		3583F4451DE59372009CC3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3583F43D1DE59372009CC3E3 /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FC1D15E11BAAD607006E504B;
+			remoteInfo = "IPC-E";
+		};
+		3583F4471DE59372009CC3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3583F43D1DE59372009CC3E3 /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 086B114117FA732900D21FD5;
+			remoteInfo = IPCMac;
+		};
+		3583F44A1DE59396009CC3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3583F4371DE59363009CC3E3 /* PageVisitedCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C24A006B17FD5EF00073E7F6;
+			remoteInfo = PageVisitedCaptureManager;
+		};
+		3583F44C1DE5939A009CC3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3583F43D1DE59372009CC3E3 /* IPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 086B114017FA732900D21FD5;
+			remoteInfo = IPCMac;
+		};
+		3583F4551DE593E9009CC3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3583F4501DE593E9009CC3E3 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		3583F4571DE593E9009CC3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3583F4501DE593E9009CC3E3 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 088536E417F989BB00AB08F2;
+			remoteInfo = CryptographyMac;
+		};
+		3583F4591DE593F0009CC3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3583F4501DE593E9009CC3E3 /* Cryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 088536E317F989BB00AB08F2;
+			remoteInfo = CryptographyMac;
+		};
+		3583F4601DE59412009CC3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3583F45C1DE59412009CC3E3 /* CCryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 357DE7CB181517FD00E1DD11;
+			remoteInfo = CCryptography;
+		};
+		3583F4621DE59419009CC3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3583F45C1DE59412009CC3E3 /* CCryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 357DE7CA181517FD00E1DD11;
+			remoteInfo = CCryptography;
+		};
+		C23BD7261BBA949F00FCD113 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23BD71C1BBA949F00FCD113 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+		C23BD7281BBA949F00FCD113 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23BD71C1BBA949F00FCD113 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0840248017F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		C23BD72A1BBA94B500FCD113 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23BD71C1BBA949F00FCD113 /* SystemUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0840247F17F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		C24082B01BAFFC3400A09DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24082A91BAFFC3400A09DC7 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		C24082B21BAFFC3400A09DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24082A91BAFFC3400A09DC7 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08629AF417F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		C24082B91BAFFC6000A09DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24082B41BAFFC6000A09DC7 /* EventCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = EventCenter;
+		};
+		C24082BB1BAFFC6000A09DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24082B41BAFFC6000A09DC7 /* EventCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0819FA3317F9340300DDE835;
+			remoteInfo = EventCenterMac;
+		};
+		C24082C21BAFFCA600A09DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24082BD1BAFFCA600A09DC7 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		C24082C41BAFFCA600A09DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24082BD1BAFFCA600A09DC7 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		C24082DF1BAFFE3B00A09DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24082BD1BAFFCA600A09DC7 /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0885379917F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		C24082E11BAFFE3E00A09DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24082B41BAFFC6000A09DC7 /* EventCenter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0819FA3217F9340300DDE835;
+			remoteInfo = EventCenterMac;
+		};
+		C24082E31BAFFE4100A09DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24082A91BAFFC3400A09DC7 /* FxEvents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08629AF317F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		C258F8EE1BAA726800643CF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C258F8EA1BAA726800643CF7 /* InternetFileTransferManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2E401F71BA97BC000B96455;
+			remoteInfo = InternetFileTransferManager;
+		};
+		C258F8F01BAA727200643CF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C258F8EA1BAA726800643CF7 /* InternetFileTransferManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C2E401F61BA97BC000B96455;
+			remoteInfo = InternetFileTransferManager;
+		};
+		C258F93A1BAABF4400643CF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C258F9341BAABF4400643CF7 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		C258F93C1BAABF4400643CF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C258F9341BAABF4400643CF7 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		C258F93E1BAABF4400643CF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C258F9341BAABF4400643CF7 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08A4D04B18029C15004A2589;
+			remoteInfo = FMDBMac;
+		};
+		C258F9421BAABF5B00643CF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C258F9341BAABF4400643CF7 /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08A4D04A18029C15004A2589;
+			remoteInfo = FMDBMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3583F4371DE59363009CC3E3 /* PageVisitedCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PageVisitedCaptureManager.xcodeproj; path = "../../PageVisitedCaptureManager/Source-PageVisitedCaptureManager/PageVisitedCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+		3583F43D1DE59372009CC3E3 /* IPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IPC.xcodeproj; path = "../../IPC/Source-IPC/IPC.xcodeproj"; sourceTree = "<group>"; };
+		3583F4501DE593E9009CC3E3 /* Cryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cryptography.xcodeproj; path = "../../Cryptography/Source-Cryptography/Cryptography.xcodeproj"; sourceTree = "<group>"; };
+		3583F45C1DE59412009CC3E3 /* CCryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CCryptography.xcodeproj; path = "../../CCryptography/Source-CCryptography/CCryptography.xcodeproj"; sourceTree = "<group>"; };
+		3583F4651DE5943C009CC3E3 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		3583F4691DE59475009CC3E3 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		C23BD71C1BBA949F00FCD113 /* SystemUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SystemUtils.xcodeproj; path = "../../SystemUtils/Source-SystemUtils/SystemUtils.xcodeproj"; sourceTree = "<group>"; };
+		C23BD72D1BBA94E100FCD113 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C24082A91BAFFC3400A09DC7 /* FxEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxEvents.xcodeproj; path = ../../Events/FxEvents/FxEvents.xcodeproj; sourceTree = "<group>"; };
+		C24082B41BAFFC6000A09DC7 /* EventCenter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EventCenter.xcodeproj; path = "../../EventCenter/Source-EventCenter/EventCenter.xcodeproj"; sourceTree = "<group>"; };
+		C24082BD1BAFFCA600A09DC7 /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../Std/FxStd/FxStd.xcodeproj; sourceTree = "<group>"; };
+		C258F8B71BAA719700643CF7 /* TestIFTM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestIFTM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C258F8BB1BAA719700643CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C258F8BC1BAA719700643CF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C258F8BD1BAA719700643CF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C258F8BF1BAA719700643CF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C258F8C11BAA719700643CF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C258F8C41BAA719800643CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C258F8EA1BAA726800643CF7 /* InternetFileTransferManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = InternetFileTransferManager.xcodeproj; path = "../Source-InternetFileTransferManager/InternetFileTransferManager.xcodeproj"; sourceTree = "<group>"; };
+		C258F9081BAABD1D00643CF7 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libsqlite3.0.dylib; sourceTree = DEVELOPER_DIR; };
+		C258F90B1BAABECD00643CF7 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ScriptingBridge.framework; sourceTree = DEVELOPER_DIR; };
+		C258F9341BAABF4400643CF7 /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = "../../ccgus-fmdb-606b29d/fmdb.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C258F8B41BAA719700643CF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3583F4641DE5941D009CC3E3 /* libCCryptography.a in Frameworks */,
+				3583F45B1DE593F4009CC3E3 /* libCryptographyMac.a in Frameworks */,
+				3583F44F1DE593B1009CC3E3 /* libIPCMac.a in Frameworks */,
+				3583F44E1DE593AB009CC3E3 /* libPageVisitedCaptureManager.a in Frameworks */,
+				C23BD72C1BBA94B900FCD113 /* libSystemUtilsMac.a in Frameworks */,
+				C24082DE1BAFFE3500A09DC7 /* libFxStdMac.a in Frameworks */,
+				C24082DD1BAFFE3200A09DC7 /* libFxEventsMac.a in Frameworks */,
+				C24082DC1BAFFE2B00A09DC7 /* libEventCenterMac.a in Frameworks */,
+				C258F9471BAABF5F00643CF7 /* libFMDBMac.a in Frameworks */,
+				C258F8F21BAA727500643CF7 /* libInternetFileTransferManager.a in Frameworks */,
+				3583F46A1DE59475009CC3E3 /* libstdc++.6.tbd in Frameworks */,
+				3583F4661DE5943C009CC3E3 /* libstdc++.tbd in Frameworks */,
+				C258F90C1BAABECD00643CF7 /* ScriptingBridge.framework in Frameworks */,
+				C258F9091BAABD1D00643CF7 /* libsqlite3.0.dylib in Frameworks */,
+				C23BD72E1BBA94E100FCD113 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3583F4381DE59363009CC3E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3583F43C1DE59363009CC3E3 /* libPageVisitedCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3583F43E1DE59372009CC3E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3583F4441DE59372009CC3E3 /* libIPC.a */,
+				3583F4461DE59372009CC3E3 /* libIPC-E.a */,
+				3583F4481DE59372009CC3E3 /* libIPCMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3583F4491DE5937D009CC3E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3583F4691DE59475009CC3E3 /* libstdc++.6.tbd */,
+				3583F4651DE5943C009CC3E3 /* libstdc++.tbd */,
+				C23BD72D1BBA94E100FCD113 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3583F4511DE593E9009CC3E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3583F4561DE593E9009CC3E3 /* libCryptography.a */,
+				3583F4581DE593E9009CC3E3 /* libCryptographyMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3583F45D1DE59412009CC3E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3583F4611DE59412009CC3E3 /* libCCryptography.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23BD71D1BBA949F00FCD113 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23BD7271BBA949F00FCD113 /* libSystemUtils.a */,
+				C23BD7291BBA949F00FCD113 /* libSystemUtilsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C24082AA1BAFFC3400A09DC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C24082B11BAFFC3400A09DC7 /* libFxEvents.a */,
+				C24082B31BAFFC3400A09DC7 /* libFxEventsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C24082B51BAFFC6000A09DC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C24082BA1BAFFC6000A09DC7 /* libEventCenter.a */,
+				C24082BC1BAFFC6000A09DC7 /* libEventCenterMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C24082BE1BAFFCA600A09DC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C24082C31BAFFCA600A09DC7 /* libFxStd.a */,
+				3583F4351DE592C6009CC3E3 /* libFxStd-E.a */,
+				C24082C51BAFFCA600A09DC7 /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C258F8AE1BAA719700643CF7 = {
+			isa = PBXGroup;
+			children = (
+				C258F8DB1BAA724200643CF7 /* Library */,
+				C258F8B91BAA719700643CF7 /* TestIFTM */,
+				3583F4491DE5937D009CC3E3 /* Frameworks */,
+				C258F8B81BAA719700643CF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C258F8B81BAA719700643CF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C258F8B71BAA719700643CF7 /* TestIFTM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C258F8B91BAA719700643CF7 /* TestIFTM */ = {
+			isa = PBXGroup;
+			children = (
+				C258F8BC1BAA719700643CF7 /* AppDelegate.h */,
+				C258F8BD1BAA719700643CF7 /* AppDelegate.m */,
+				C258F8C11BAA719700643CF7 /* Images.xcassets */,
+				C258F8C31BAA719800643CF7 /* MainMenu.xib */,
+				C258F8BA1BAA719700643CF7 /* Supporting Files */,
+				C258F90A1BAABEBB00643CF7 /* Framework */,
+			);
+			path = TestIFTM;
+			sourceTree = "<group>";
+		};
+		C258F8BA1BAA719700643CF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C258F8BB1BAA719700643CF7 /* Info.plist */,
+				C258F8BF1BAA719700643CF7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C258F8DB1BAA724200643CF7 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				3583F45C1DE59412009CC3E3 /* CCryptography.xcodeproj */,
+				3583F4501DE593E9009CC3E3 /* Cryptography.xcodeproj */,
+				3583F43D1DE59372009CC3E3 /* IPC.xcodeproj */,
+				3583F4371DE59363009CC3E3 /* PageVisitedCaptureManager.xcodeproj */,
+				C23BD71C1BBA949F00FCD113 /* SystemUtils.xcodeproj */,
+				C24082BD1BAFFCA600A09DC7 /* FxStd.xcodeproj */,
+				C24082B41BAFFC6000A09DC7 /* EventCenter.xcodeproj */,
+				C24082A91BAFFC3400A09DC7 /* FxEvents.xcodeproj */,
+				C258F9341BAABF4400643CF7 /* fmdb.xcodeproj */,
+				C258F8EA1BAA726800643CF7 /* InternetFileTransferManager.xcodeproj */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		C258F8EB1BAA726800643CF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C258F8EF1BAA726800643CF7 /* libInternetFileTransferManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C258F90A1BAABEBB00643CF7 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				C258F90B1BAABECD00643CF7 /* ScriptingBridge.framework */,
+				C258F9081BAABD1D00643CF7 /* libsqlite3.0.dylib */,
+			);
+			name = Framework;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C258F9351BAABF4400643CF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C258F93B1BAABF4400643CF7 /* fmdb */,
+				C258F93D1BAABF4400643CF7 /* libFMDB.a */,
+				C258F93F1BAABF4400643CF7 /* libFMDBMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C258F8B61BAA719700643CF7 /* TestIFTM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C258F8D41BAA719800643CF7 /* Build configuration list for PBXNativeTarget "TestIFTM" */;
+			buildPhases = (
+				C258F8B31BAA719700643CF7 /* Sources */,
+				C258F8B41BAA719700643CF7 /* Frameworks */,
+				C258F8B51BAA719700643CF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3583F4631DE59419009CC3E3 /* PBXTargetDependency */,
+				3583F45A1DE593F0009CC3E3 /* PBXTargetDependency */,
+				3583F44D1DE5939A009CC3E3 /* PBXTargetDependency */,
+				3583F44B1DE59396009CC3E3 /* PBXTargetDependency */,
+				C23BD72B1BBA94B500FCD113 /* PBXTargetDependency */,
+				C24082E41BAFFE4100A09DC7 /* PBXTargetDependency */,
+				C24082E21BAFFE3E00A09DC7 /* PBXTargetDependency */,
+				C24082E01BAFFE3B00A09DC7 /* PBXTargetDependency */,
+				C258F9431BAABF5B00643CF7 /* PBXTargetDependency */,
+				C258F8F11BAA727200643CF7 /* PBXTargetDependency */,
+			);
+			name = TestIFTM;
+			productName = TestIFTM;
+			productReference = C258F8B71BAA719700643CF7 /* TestIFTM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C258F8AF1BAA719700643CF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C258F8B61BAA719700643CF7 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C258F8B21BAA719700643CF7 /* Build configuration list for PBXProject "TestIFTM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C258F8AE1BAA719700643CF7;
+			productRefGroup = C258F8B81BAA719700643CF7 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3583F45D1DE59412009CC3E3 /* Products */;
+					ProjectRef = 3583F45C1DE59412009CC3E3 /* CCryptography.xcodeproj */;
+				},
+				{
+					ProductGroup = 3583F4511DE593E9009CC3E3 /* Products */;
+					ProjectRef = 3583F4501DE593E9009CC3E3 /* Cryptography.xcodeproj */;
+				},
+				{
+					ProductGroup = C24082B51BAFFC6000A09DC7 /* Products */;
+					ProjectRef = C24082B41BAFFC6000A09DC7 /* EventCenter.xcodeproj */;
+				},
+				{
+					ProductGroup = C258F9351BAABF4400643CF7 /* Products */;
+					ProjectRef = C258F9341BAABF4400643CF7 /* fmdb.xcodeproj */;
+				},
+				{
+					ProductGroup = C24082AA1BAFFC3400A09DC7 /* Products */;
+					ProjectRef = C24082A91BAFFC3400A09DC7 /* FxEvents.xcodeproj */;
+				},
+				{
+					ProductGroup = C24082BE1BAFFCA600A09DC7 /* Products */;
+					ProjectRef = C24082BD1BAFFCA600A09DC7 /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = C258F8EB1BAA726800643CF7 /* Products */;
+					ProjectRef = C258F8EA1BAA726800643CF7 /* InternetFileTransferManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 3583F43E1DE59372009CC3E3 /* Products */;
+					ProjectRef = 3583F43D1DE59372009CC3E3 /* IPC.xcodeproj */;
+				},
+				{
+					ProductGroup = 3583F4381DE59363009CC3E3 /* Products */;
+					ProjectRef = 3583F4371DE59363009CC3E3 /* PageVisitedCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = C23BD71D1BBA949F00FCD113 /* Products */;
+					ProjectRef = C23BD71C1BBA949F00FCD113 /* SystemUtils.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C258F8B61BAA719700643CF7 /* TestIFTM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3583F4351DE592C6009CC3E3 /* libFxStd-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFxStd-E.a";
+			remoteRef = 3583F4341DE592C6009CC3E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3583F43C1DE59363009CC3E3 /* libPageVisitedCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPageVisitedCaptureManager.a;
+			remoteRef = 3583F43B1DE59363009CC3E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3583F4441DE59372009CC3E3 /* libIPC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPC.a;
+			remoteRef = 3583F4431DE59372009CC3E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3583F4461DE59372009CC3E3 /* libIPC-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libIPC-E.a";
+			remoteRef = 3583F4451DE59372009CC3E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3583F4481DE59372009CC3E3 /* libIPCMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPCMac.a;
+			remoteRef = 3583F4471DE59372009CC3E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3583F4561DE593E9009CC3E3 /* libCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptography.a;
+			remoteRef = 3583F4551DE593E9009CC3E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3583F4581DE593E9009CC3E3 /* libCryptographyMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptographyMac.a;
+			remoteRef = 3583F4571DE593E9009CC3E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3583F4611DE59412009CC3E3 /* libCCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCCryptography.a;
+			remoteRef = 3583F4601DE59412009CC3E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C23BD7271BBA949F00FCD113 /* libSystemUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtils.a;
+			remoteRef = C23BD7261BBA949F00FCD113 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C23BD7291BBA949F00FCD113 /* libSystemUtilsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtilsMac.a;
+			remoteRef = C23BD7281BBA949F00FCD113 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C24082B11BAFFC3400A09DC7 /* libFxEvents.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEvents.a;
+			remoteRef = C24082B01BAFFC3400A09DC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C24082B31BAFFC3400A09DC7 /* libFxEventsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEventsMac.a;
+			remoteRef = C24082B21BAFFC3400A09DC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C24082BA1BAFFC6000A09DC7 /* libEventCenter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventCenter.a;
+			remoteRef = C24082B91BAFFC6000A09DC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C24082BC1BAFFC6000A09DC7 /* libEventCenterMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventCenterMac.a;
+			remoteRef = C24082BB1BAFFC6000A09DC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C24082C31BAFFCA600A09DC7 /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = C24082C21BAFFCA600A09DC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C24082C51BAFFCA600A09DC7 /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = C24082C41BAFFCA600A09DC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C258F8EF1BAA726800643CF7 /* libInternetFileTransferManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libInternetFileTransferManager.a;
+			remoteRef = C258F8EE1BAA726800643CF7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C258F93B1BAABF4400643CF7 /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = C258F93A1BAABF4400643CF7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C258F93D1BAABF4400643CF7 /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = C258F93C1BAABF4400643CF7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C258F93F1BAABF4400643CF7 /* libFMDBMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDBMac.a;
+			remoteRef = C258F93E1BAABF4400643CF7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C258F8B51BAA719700643CF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C258F8C21BAA719700643CF7 /* Images.xcassets in Resources */,
+				C258F8C51BAA719800643CF7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C258F8B31BAA719700643CF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C258F8C01BAA719700643CF7 /* main.m in Sources */,
+				C258F8BE1BAA719700643CF7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3583F44B1DE59396009CC3E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PageVisitedCaptureManager;
+			targetProxy = 3583F44A1DE59396009CC3E3 /* PBXContainerItemProxy */;
+		};
+		3583F44D1DE5939A009CC3E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IPCMac;
+			targetProxy = 3583F44C1DE5939A009CC3E3 /* PBXContainerItemProxy */;
+		};
+		3583F45A1DE593F0009CC3E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptographyMac;
+			targetProxy = 3583F4591DE593F0009CC3E3 /* PBXContainerItemProxy */;
+		};
+		3583F4631DE59419009CC3E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CCryptography;
+			targetProxy = 3583F4621DE59419009CC3E3 /* PBXContainerItemProxy */;
+		};
+		C23BD72B1BBA94B500FCD113 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SystemUtilsMac;
+			targetProxy = C23BD72A1BBA94B500FCD113 /* PBXContainerItemProxy */;
+		};
+		C24082E01BAFFE3B00A09DC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStdMac;
+			targetProxy = C24082DF1BAFFE3B00A09DC7 /* PBXContainerItemProxy */;
+		};
+		C24082E21BAFFE3E00A09DC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EventCenterMac;
+			targetProxy = C24082E11BAFFE3E00A09DC7 /* PBXContainerItemProxy */;
+		};
+		C24082E41BAFFE4100A09DC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxEventsMac;
+			targetProxy = C24082E31BAFFE4100A09DC7 /* PBXContainerItemProxy */;
+		};
+		C258F8F11BAA727200643CF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = InternetFileTransferManager;
+			targetProxy = C258F8F01BAA727200643CF7 /* PBXContainerItemProxy */;
+		};
+		C258F9431BAABF5B00643CF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDBMac;
+			targetProxy = C258F9421BAABF5B00643CF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C258F8C31BAA719800643CF7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C258F8C41BAA719800643CF7 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C258F8D21BAA719800643CF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C258F8D31BAA719800643CF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C258F8D51BAA719800643CF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestIFTM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../Source-InternetFileTransferManager/** ../../EventCenter/Source-EventCenter/** ../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC ../../PageVisitedCaptureManager/Source-PageVisitedCaptureManager/**";
+			};
+			name = Debug;
+		};
+		C258F8D61BAA719800643CF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestIFTM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../Source-InternetFileTransferManager/** ../../EventCenter/Source-EventCenter/** ../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC ../../PageVisitedCaptureManager/Source-PageVisitedCaptureManager/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C258F8B21BAA719700643CF7 /* Build configuration list for PBXProject "TestIFTM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C258F8D21BAA719800643CF7 /* Debug */,
+				C258F8D31BAA719800643CF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C258F8D41BAA719800643CF7 /* Build configuration list for PBXNativeTarget "TestIFTM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C258F8D51BAA719800643CF7 /* Debug */,
+				C258F8D61BAA719800643CF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C258F8AF1BAA719700643CF7 /* Project object */;
+}

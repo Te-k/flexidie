@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		084C960A18040FA500F059AD /* FxIMGeoTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B3F37D16A948A500664F12 /* FxIMGeoTag.h */; };
+		08629AFA17F957150085D580 /* FxEvents_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* FxEvents_Prefix.pch */; };
+		08629AFB17F957150085D580 /* FxEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 359AD9CC14021517002EAB97 /* FxEvent.h */; };
+		08629AFC17F957150085D580 /* FxEventEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 359AD9DB140216DC002EAB97 /* FxEventEnums.h */; };
+		08629B0117F957150085D580 /* FxSystemEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35949D621414E87200396688 /* FxSystemEvent.h */; };
+		08629B0817F957150085D580 /* FxAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 357470E214597C8700EDABF7 /* FxAttachment.h */; };
+		08629B0A17F957150085D580 /* FxSettingsEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35970841146687850066E0AE /* FxSettingsEvent.h */; };
+		08629B0D17F957150085D580 /* FxBrowserUrlEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = CD73326315493B9E00132CC3 /* FxBrowserUrlEvent.h */; };
+		08629B0E17F957150085D580 /* FxApplicationLifeCycleEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B8145A1607014600EB5BEB /* FxApplicationLifeCycleEvent.h */; };
+		08629B1617F957150085D580 /* FxKeyLogEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0870952717D5DE2200312032 /* FxKeyLogEvent.h */; };
+		08629B2617F9572D0085D580 /* FxEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 359AD9CD14021517002EAB97 /* FxEvent.m */; };
+		08629B2B17F9572D0085D580 /* FxSystemEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35949D631414E87200396688 /* FxSystemEvent.m */; };
+		08629B3217F9572D0085D580 /* FxAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 357470E314597C8700EDABF7 /* FxAttachment.m */; };
+		08629B3417F9572D0085D580 /* FxSettingsEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35970842146687850066E0AE /* FxSettingsEvent.m */; };
+		08629B3717F9572D0085D580 /* FxBrowserUrlEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = CD73326415493B9E00132CC3 /* FxBrowserUrlEvent.m */; };
+		08629B3817F9572D0085D580 /* FxApplicationLifeCycleEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B8145B1607014600EB5BEB /* FxApplicationLifeCycleEvent.m */; };
+		08629B4017F9572D0085D580 /* FxKeyLogEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0870952817D5DE2200312032 /* FxKeyLogEvent.m */; };
+		08629BA217F95D2D0085D580 /* ThumbnailEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 359A5D1E1417816C001298BA /* ThumbnailEvent.h */; };
+		08629BA317F95D2D0085D580 /* MediaEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 359A5D2614178826001298BA /* MediaEvent.h */; };
+		08629BA417F95D360085D580 /* ThumbnailEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 359A5D1F1417816C001298BA /* ThumbnailEvent.m */; };
+		08629BA517F95D360085D580 /* MediaEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 359A5D2714178826001298BA /* MediaEvent.m */; };
+		0870952917D5DE2200312032 /* FxKeyLogEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0870952717D5DE2200312032 /* FxKeyLogEvent.h */; };
+		0870952A17D5DE2200312032 /* FxKeyLogEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0870952817D5DE2200312032 /* FxKeyLogEvent.m */; };
+		35075A47182B3FE90042BDCC /* FxPageVisitedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35075A45182B3FE90042BDCC /* FxPageVisitedEvent.h */; };
+		35075A48182B3FE90042BDCC /* FxPageVisitedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35075A46182B3FE90042BDCC /* FxPageVisitedEvent.m */; };
+		35075A51182B55730042BDCC /* FxPageVisitedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35075A45182B3FE90042BDCC /* FxPageVisitedEvent.h */; };
+		35075A52182B55870042BDCC /* FxPageVisitedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35075A46182B3FE90042BDCC /* FxPageVisitedEvent.m */; };
+		350A84FD1553801800E195DA /* FxBookmarkEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = CD73325F15493B8100132CC3 /* FxBookmarkEvent.h */; };
+		350A84FE1553801B00E195DA /* FxBookmarkEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = CD73326015493B8100132CC3 /* FxBookmarkEvent.m */; };
+		350A84FF1553801F00E195DA /* FxBrowserUrlEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = CD73326315493B9E00132CC3 /* FxBrowserUrlEvent.h */; };
+		350A85001553802100E195DA /* FxBrowserUrlEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = CD73326415493B9E00132CC3 /* FxBrowserUrlEvent.m */; };
+		350F04831A6CF2410016D82B /* FxPasswordEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 359E210818BB3CE300973978 /* FxPasswordEvent.m */; };
+		350F04841A6CF24F0016D82B /* FxPasswordEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 359E210718BB3CE300973978 /* FxPasswordEvent.h */; };
+		35377D9617967718007A6D01 /* FxVoIPEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35377D9417967718007A6D01 /* FxVoIPEvent.h */; };
+		35377D9717967718007A6D01 /* FxVoIPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35377D9517967718007A6D01 /* FxVoIPEvent.m */; };
+		353815BC1A8C60C40089208E /* FxEmailMacOSEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 353815BA1A8C60C40089208E /* FxEmailMacOSEvent.h */; };
+		353815BD1A8C60C40089208E /* FxEmailMacOSEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 353815BA1A8C60C40089208E /* FxEmailMacOSEvent.h */; };
+		353815BE1A8C60C40089208E /* FxEmailMacOSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 353815BB1A8C60C40089208E /* FxEmailMacOSEvent.m */; };
+		353815BF1A8C60C40089208E /* FxEmailMacOSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 353815BB1A8C60C40089208E /* FxEmailMacOSEvent.m */; };
+		353815C21A8C63D60089208E /* FxScreenshotEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 353815C01A8C63D60089208E /* FxScreenshotEvent.h */; };
+		353815C31A8C63D60089208E /* FxScreenshotEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 353815C01A8C63D60089208E /* FxScreenshotEvent.h */; };
+		353815C41A8C63D60089208E /* FxScreenshotEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 353815C11A8C63D60089208E /* FxScreenshotEvent.m */; };
+		353815C51A8C63D60089208E /* FxScreenshotEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 353815C11A8C63D60089208E /* FxScreenshotEvent.m */; };
+		357470E614597C8700EDABF7 /* FxAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 357470E214597C8700EDABF7 /* FxAttachment.h */; };
+		357470E714597C8700EDABF7 /* FxAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 357470E314597C8700EDABF7 /* FxAttachment.m */; };
+		357470E814597C8700EDABF7 /* FxRecipient.h in Headers */ = {isa = PBXBuildFile; fileRef = 357470E414597C8700EDABF7 /* FxRecipient.h */; };
+		357470E914597C8700EDABF7 /* FxRecipient.m in Sources */ = {isa = PBXBuildFile; fileRef = 357470E514597C8700EDABF7 /* FxRecipient.m */; };
+		35949D641414E87200396688 /* FxSystemEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35949D621414E87200396688 /* FxSystemEvent.h */; };
+		35949D651414E87200396688 /* FxSystemEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35949D631414E87200396688 /* FxSystemEvent.m */; };
+		3595F9EE1415D50A0014CBE3 /* FxPanicEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F9EC1415D50A0014CBE3 /* FxPanicEvent.h */; };
+		3595F9EF1415D50A0014CBE3 /* FxPanicEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F9ED1415D50A0014CBE3 /* FxPanicEvent.m */; };
+		3595FA041415D5B50014CBE3 /* FxLocationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595FA021415D5B50014CBE3 /* FxLocationEvent.h */; };
+		3595FA051415D5B50014CBE3 /* FxLocationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595FA031415D5B50014CBE3 /* FxLocationEvent.m */; };
+		3595FA56141607B90014CBE3 /* FxGPSTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595FA54141607B90014CBE3 /* FxGPSTag.h */; };
+		3595FA57141607B90014CBE3 /* FxGPSTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595FA55141607B90014CBE3 /* FxGPSTag.m */; };
+		35970843146687850066E0AE /* FxSettingsEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35970841146687850066E0AE /* FxSettingsEvent.h */; };
+		35970844146687850066E0AE /* FxSettingsEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35970842146687850066E0AE /* FxSettingsEvent.m */; };
+		3597AE9314064A610012B05F /* FxMmsEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3597AE9114064A610012B05F /* FxMmsEvent.h */; };
+		3597AE9414064A610012B05F /* FxMmsEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3597AE9214064A610012B05F /* FxMmsEvent.m */; };
+		3597AEB514064D8E0012B05F /* FxEmailEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3597AEB314064D8E0012B05F /* FxEmailEvent.h */; };
+		3597AEB614064D8E0012B05F /* FxEmailEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3597AEB414064D8E0012B05F /* FxEmailEvent.m */; };
+		359A5B8314172A48001298BA /* FxCallTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 359A5B8114172A48001298BA /* FxCallTag.h */; };
+		359A5B8414172A48001298BA /* FxCallTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 359A5B8214172A48001298BA /* FxCallTag.m */; };
+		359A5D201417816C001298BA /* ThumbnailEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 359A5D1E1417816C001298BA /* ThumbnailEvent.h */; };
+		359A5D211417816C001298BA /* ThumbnailEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 359A5D1F1417816C001298BA /* ThumbnailEvent.m */; };
+		359A5D2814178826001298BA /* MediaEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 359A5D2614178826001298BA /* MediaEvent.h */; };
+		359A5D2914178826001298BA /* MediaEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 359A5D2714178826001298BA /* MediaEvent.m */; };
+		359AD9CE14021517002EAB97 /* FxEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 359AD9CC14021517002EAB97 /* FxEvent.h */; };
+		359AD9CF14021517002EAB97 /* FxEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 359AD9CD14021517002EAB97 /* FxEvent.m */; };
+		359AD9DD140216DC002EAB97 /* FxEventEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 359AD9DB140216DC002EAB97 /* FxEventEnums.h */; };
+		359AD9E5140279D7002EAB97 /* FxCallLogEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 359AD9E3140279D7002EAB97 /* FxCallLogEvent.h */; };
+		359AD9E6140279D7002EAB97 /* FxCallLogEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 359AD9E4140279D7002EAB97 /* FxCallLogEvent.m */; };
+		359E210918BB3CE300973978 /* FxPasswordEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 359E210718BB3CE300973978 /* FxPasswordEvent.h */; };
+		359E210A18BB3CE300973978 /* FxPasswordEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 359E210818BB3CE300973978 /* FxPasswordEvent.m */; };
+		359EBEF11404A78A0048472E /* FxSmsEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 359EBEEF1404A78A0048472E /* FxSmsEvent.h */; };
+		359EBEF21404A78A0048472E /* FxSmsEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 359EBEF01404A78A0048472E /* FxSmsEvent.m */; };
+		35A0050914D796EC00C41337 /* FxIMEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A0050714D796EC00C41337 /* FxIMEvent.h */; };
+		35A0050A14D796EC00C41337 /* FxIMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A0050814D796EC00C41337 /* FxIMEvent.m */; };
+		35B3F37F16A948A500664F12 /* FxIMGeoTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B3F37D16A948A500664F12 /* FxIMGeoTag.h */; };
+		35B3F38016A948A500664F12 /* FxIMGeoTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B3F37E16A948A500664F12 /* FxIMGeoTag.m */; };
+		35B7E9CD1BD0A9E600365CC5 /* FxNetworkConnectionMacOSEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B7E9CB1BD0A9E600365CC5 /* FxNetworkConnectionMacOSEvent.h */; };
+		35B7E9CE1BD0A9E600365CC5 /* FxNetworkConnectionMacOSEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B7E9CB1BD0A9E600365CC5 /* FxNetworkConnectionMacOSEvent.h */; };
+		35B7E9CF1BD0A9E600365CC5 /* FxNetworkConnectionMacOSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B7E9CC1BD0A9E600365CC5 /* FxNetworkConnectionMacOSEvent.m */; };
+		35B7E9D01BD0A9E600365CC5 /* FxNetworkConnectionMacOSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B7E9CC1BD0A9E600365CC5 /* FxNetworkConnectionMacOSEvent.m */; };
+		35B7E9D31BD0AA3400365CC5 /* FxNetworkTrafficEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B7E9D11BD0AA3400365CC5 /* FxNetworkTrafficEvent.h */; };
+		35B7E9D41BD0AA3400365CC5 /* FxNetworkTrafficEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B7E9D11BD0AA3400365CC5 /* FxNetworkTrafficEvent.h */; };
+		35B7E9D51BD0AA3400365CC5 /* FxNetworkTrafficEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B7E9D21BD0AA3400365CC5 /* FxNetworkTrafficEvent.m */; };
+		35B7E9D61BD0AA3400365CC5 /* FxNetworkTrafficEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B7E9D21BD0AA3400365CC5 /* FxNetworkTrafficEvent.m */; };
+		35B8145C1607014600EB5BEB /* FxApplicationLifeCycleEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B8145A1607014600EB5BEB /* FxApplicationLifeCycleEvent.h */; };
+		35B8145D1607014600EB5BEB /* FxApplicationLifeCycleEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B8145B1607014600EB5BEB /* FxApplicationLifeCycleEvent.m */; };
+		35D0A0FC16BB7C760080D70A /* FxIMEventUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D0A0FA16BB7C760080D70A /* FxIMEventUtils.h */; };
+		35D0A0FD16BB7C760080D70A /* FxIMEventUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D0A0FB16BB7C760080D70A /* FxIMEventUtils.m */; };
+		35D6629A1A7F417200BB8D3B /* FxUSBConnectionEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D662981A7F417200BB8D3B /* FxUSBConnectionEvent.h */; };
+		35D6629B1A7F417200BB8D3B /* FxUSBConnectionEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D662981A7F417200BB8D3B /* FxUSBConnectionEvent.h */; };
+		35D6629C1A7F417200BB8D3B /* FxUSBConnectionEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D662991A7F417200BB8D3B /* FxUSBConnectionEvent.m */; };
+		35D6629D1A7F417200BB8D3B /* FxUSBConnectionEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D662991A7F417200BB8D3B /* FxUSBConnectionEvent.m */; };
+		35D662A01A7F483D00BB8D3B /* FxFileTransferEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D6629E1A7F483D00BB8D3B /* FxFileTransferEvent.h */; };
+		35D662A11A7F483D00BB8D3B /* FxFileTransferEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D6629E1A7F483D00BB8D3B /* FxFileTransferEvent.h */; };
+		35D662A21A7F483D00BB8D3B /* FxFileTransferEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D6629F1A7F483D00BB8D3B /* FxFileTransferEvent.m */; };
+		35D662A31A7F483D00BB8D3B /* FxFileTransferEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D6629F1A7F483D00BB8D3B /* FxFileTransferEvent.m */; };
+		35D662A61A7F602300BB8D3B /* FxLogonEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D662A41A7F602300BB8D3B /* FxLogonEvent.h */; };
+		35D662A71A7F602300BB8D3B /* FxLogonEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D662A41A7F602300BB8D3B /* FxLogonEvent.h */; };
+		35D662A81A7F602300BB8D3B /* FxLogonEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D662A51A7F602300BB8D3B /* FxLogonEvent.m */; };
+		35D662A91A7F602300BB8D3B /* FxLogonEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D662A51A7F602300BB8D3B /* FxLogonEvent.m */; };
+		35D662AC1A7F648A00BB8D3B /* FxApplicationUsageEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D662AA1A7F648A00BB8D3B /* FxApplicationUsageEvent.h */; };
+		35D662AD1A7F648A00BB8D3B /* FxApplicationUsageEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D662AA1A7F648A00BB8D3B /* FxApplicationUsageEvent.h */; };
+		35D662AE1A7F648A00BB8D3B /* FxApplicationUsageEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D662AB1A7F648A00BB8D3B /* FxApplicationUsageEvent.m */; };
+		35D662AF1A7F648A00BB8D3B /* FxApplicationUsageEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D662AB1A7F648A00BB8D3B /* FxApplicationUsageEvent.m */; };
+		35D662B21A7F663900BB8D3B /* FxIMMacOSEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D662B01A7F663900BB8D3B /* FxIMMacOSEvent.h */; };
+		35D662B31A7F663900BB8D3B /* FxIMMacOSEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D662B01A7F663900BB8D3B /* FxIMMacOSEvent.h */; };
+		35D662B41A7F663900BB8D3B /* FxIMMacOSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D662B11A7F663900BB8D3B /* FxIMMacOSEvent.m */; };
+		35D662B51A7F663900BB8D3B /* FxIMMacOSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D662B11A7F663900BB8D3B /* FxIMMacOSEvent.m */; };
+		35DA613716BAA50900B5EF4B /* FxIMMessageEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35DA613516BAA50900B5EF4B /* FxIMMessageEvent.h */; };
+		35DA613816BAA50900B5EF4B /* FxIMMessageEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DA613616BAA50900B5EF4B /* FxIMMessageEvent.m */; };
+		35DA618716BAAB3500B5EF4B /* FxIMAccountEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35DA618516BAAB3500B5EF4B /* FxIMAccountEvent.h */; };
+		35DA618816BAAB3500B5EF4B /* FxIMAccountEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DA618616BAAB3500B5EF4B /* FxIMAccountEvent.m */; };
+		35DA619416BAAD7100B5EF4B /* FxIMContactEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35DA619216BAAD7100B5EF4B /* FxIMContactEvent.h */; };
+		35DA619516BAAD7100B5EF4B /* FxIMContactEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DA619316BAAD7100B5EF4B /* FxIMContactEvent.m */; };
+		35F0B16716BF962E00855370 /* FxIMConversationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F0B16516BF962E00855370 /* FxIMConversationEvent.h */; };
+		35F0B16816BF962E00855370 /* FxIMConversationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F0B16616BF962E00855370 /* FxIMConversationEvent.m */; };
+		AA747D9F0F9514B9006C5449 /* FxEvents_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* FxEvents_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		C23786A81BB3E7D60080DAD1 /* FxFileActivityEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = C23786A61BB3E7D60080DAD1 /* FxFileActivityEvent.h */; };
+		C23786A91BB3E7D60080DAD1 /* FxFileActivityEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C23786A71BB3E7D60080DAD1 /* FxFileActivityEvent.m */; };
+		C237871C1BB404B80080DAD1 /* FxFileActivityEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C23786A71BB3E7D60080DAD1 /* FxFileActivityEvent.m */; };
+		C237871D1BB404C40080DAD1 /* FxFileActivityEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = C23786A61BB3E7D60080DAD1 /* FxFileActivityEvent.h */; };
+		C267CC8D1BF9874E00CC9625 /* FxPrintJobEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = C267CC8B1BF9874E00CC9625 /* FxPrintJobEvent.h */; };
+		C267CC8E1BF9874E00CC9625 /* FxPrintJobEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C267CC8C1BF9874E00CC9625 /* FxPrintJobEvent.m */; };
+		C267CC901BF98F4A00CC9625 /* FxPrintJobEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = C267CC8B1BF9874E00CC9625 /* FxPrintJobEvent.h */; };
+		C267CC911BF98F5300CC9625 /* FxPrintJobEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C267CC8C1BF9874E00CC9625 /* FxPrintJobEvent.m */; };
+		C278F654180405AA00FA7D4F /* FxIMGeoTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B3F37E16A948A500664F12 /* FxIMGeoTag.m */; };
+		C278F655180405AA00FA7D4F /* FxIMConversationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F0B16616BF962E00855370 /* FxIMConversationEvent.m */; };
+		C278F656180405AA00FA7D4F /* FxIMMessageEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DA613616BAA50900B5EF4B /* FxIMMessageEvent.m */; };
+		C278F657180405AA00FA7D4F /* FxIMAccountEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DA618616BAAB3500B5EF4B /* FxIMAccountEvent.m */; };
+		C278F658180405AA00FA7D4F /* FxIMContactEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DA619316BAAD7100B5EF4B /* FxIMContactEvent.m */; };
+		C278F659180405AA00FA7D4F /* FxIMEventUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D0A0FB16BB7C760080D70A /* FxIMEventUtils.m */; };
+		C278F65A180405AA00FA7D4F /* FxRecipient.m in Sources */ = {isa = PBXBuildFile; fileRef = 357470E514597C8700EDABF7 /* FxRecipient.m */; };
+		C278F65B180405AA00FA7D4F /* FxEmailEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3597AEB414064D8E0012B05F /* FxEmailEvent.m */; };
+		C278F65C180405AA00FA7D4F /* FxMmsEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3597AE9214064A610012B05F /* FxMmsEvent.m */; };
+		C278F65D180405AA00FA7D4F /* FxSmsEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 359EBEF01404A78A0048472E /* FxSmsEvent.m */; };
+		C278F65E180405AA00FA7D4F /* FxCallLogEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 359AD9E4140279D7002EAB97 /* FxCallLogEvent.m */; };
+		C278F65F180405AA00FA7D4F /* FxPanicEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F9ED1415D50A0014CBE3 /* FxPanicEvent.m */; };
+		C278F660180405AA00FA7D4F /* FxLocationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595FA031415D5B50014CBE3 /* FxLocationEvent.m */; };
+		C278F661180405AA00FA7D4F /* FxGPSTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595FA55141607B90014CBE3 /* FxGPSTag.m */; };
+		C278F662180405AA00FA7D4F /* FxCallTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 359A5B8214172A48001298BA /* FxCallTag.m */; };
+		C278F663180405AA00FA7D4F /* FxIMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A0050814D796EC00C41337 /* FxIMEvent.m */; };
+		C278F664180405AA00FA7D4F /* FxBookmarkEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = CD73326015493B8100132CC3 /* FxBookmarkEvent.m */; };
+		C278F665180405AA00FA7D4F /* FxVoIPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35377D9517967718007A6D01 /* FxVoIPEvent.m */; };
+		C278F66A180405DD00FA7D4F /* FxIMConversationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F0B16516BF962E00855370 /* FxIMConversationEvent.h */; };
+		C278F66B180405DD00FA7D4F /* FxIMMessageEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35DA613516BAA50900B5EF4B /* FxIMMessageEvent.h */; };
+		C278F66C180405DD00FA7D4F /* FxIMAccountEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35DA618516BAAB3500B5EF4B /* FxIMAccountEvent.h */; };
+		C278F66D180405DD00FA7D4F /* FxIMContactEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35DA619216BAAD7100B5EF4B /* FxIMContactEvent.h */; };
+		C278F66E180405DD00FA7D4F /* FxIMEventUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D0A0FA16BB7C760080D70A /* FxIMEventUtils.h */; };
+		C278F66F180405DD00FA7D4F /* FxRecipient.h in Headers */ = {isa = PBXBuildFile; fileRef = 357470E414597C8700EDABF7 /* FxRecipient.h */; };
+		C278F670180405DD00FA7D4F /* FxEmailEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3597AEB314064D8E0012B05F /* FxEmailEvent.h */; };
+		C278F671180405DD00FA7D4F /* FxMmsEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3597AE9114064A610012B05F /* FxMmsEvent.h */; };
+		C278F672180405DD00FA7D4F /* FxSmsEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 359EBEEF1404A78A0048472E /* FxSmsEvent.h */; };
+		C278F673180405DD00FA7D4F /* FxCallLogEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 359AD9E3140279D7002EAB97 /* FxCallLogEvent.h */; };
+		C278F674180405DD00FA7D4F /* FxPanicEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F9EC1415D50A0014CBE3 /* FxPanicEvent.h */; };
+		C278F675180405DD00FA7D4F /* FxLocationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595FA021415D5B50014CBE3 /* FxLocationEvent.h */; };
+		C278F676180405DD00FA7D4F /* FxGPSTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595FA54141607B90014CBE3 /* FxGPSTag.h */; };
+		C278F677180405DD00FA7D4F /* FxCallTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 359A5B8114172A48001298BA /* FxCallTag.h */; };
+		C278F678180405DD00FA7D4F /* FxIMEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A0050714D796EC00C41337 /* FxIMEvent.h */; };
+		C278F679180405DD00FA7D4F /* FxBookmarkEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = CD73325F15493B8100132CC3 /* FxBookmarkEvent.h */; };
+		C278F67A180405DD00FA7D4F /* FxVoIPEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35377D9417967718007A6D01 /* FxVoIPEvent.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08629AF417F957080085D580 /* libFxEventsMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFxEventsMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0870952717D5DE2200312032 /* FxKeyLogEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxKeyLogEvent.h; sourceTree = "<group>"; };
+		0870952817D5DE2200312032 /* FxKeyLogEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxKeyLogEvent.m; sourceTree = "<group>"; };
+		35075A45182B3FE90042BDCC /* FxPageVisitedEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxPageVisitedEvent.h; sourceTree = "<group>"; };
+		35075A46182B3FE90042BDCC /* FxPageVisitedEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxPageVisitedEvent.m; sourceTree = "<group>"; };
+		35377D9417967718007A6D01 /* FxVoIPEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxVoIPEvent.h; sourceTree = "<group>"; };
+		35377D9517967718007A6D01 /* FxVoIPEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxVoIPEvent.m; sourceTree = "<group>"; };
+		353815BA1A8C60C40089208E /* FxEmailMacOSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxEmailMacOSEvent.h; sourceTree = "<group>"; };
+		353815BB1A8C60C40089208E /* FxEmailMacOSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxEmailMacOSEvent.m; sourceTree = "<group>"; };
+		353815C01A8C63D60089208E /* FxScreenshotEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxScreenshotEvent.h; sourceTree = "<group>"; };
+		353815C11A8C63D60089208E /* FxScreenshotEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxScreenshotEvent.m; sourceTree = "<group>"; };
+		357470E214597C8700EDABF7 /* FxAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxAttachment.h; sourceTree = "<group>"; };
+		357470E314597C8700EDABF7 /* FxAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxAttachment.m; sourceTree = "<group>"; };
+		357470E414597C8700EDABF7 /* FxRecipient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxRecipient.h; sourceTree = "<group>"; };
+		357470E514597C8700EDABF7 /* FxRecipient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxRecipient.m; sourceTree = "<group>"; };
+		35949D621414E87200396688 /* FxSystemEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxSystemEvent.h; sourceTree = "<group>"; };
+		35949D631414E87200396688 /* FxSystemEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxSystemEvent.m; sourceTree = "<group>"; };
+		3595F9EC1415D50A0014CBE3 /* FxPanicEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxPanicEvent.h; sourceTree = "<group>"; };
+		3595F9ED1415D50A0014CBE3 /* FxPanicEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxPanicEvent.m; sourceTree = "<group>"; };
+		3595FA021415D5B50014CBE3 /* FxLocationEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxLocationEvent.h; sourceTree = "<group>"; };
+		3595FA031415D5B50014CBE3 /* FxLocationEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxLocationEvent.m; sourceTree = "<group>"; };
+		3595FA54141607B90014CBE3 /* FxGPSTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxGPSTag.h; sourceTree = "<group>"; };
+		3595FA55141607B90014CBE3 /* FxGPSTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxGPSTag.m; sourceTree = "<group>"; };
+		35970841146687850066E0AE /* FxSettingsEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxSettingsEvent.h; sourceTree = "<group>"; };
+		35970842146687850066E0AE /* FxSettingsEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxSettingsEvent.m; sourceTree = "<group>"; };
+		3597AE9114064A610012B05F /* FxMmsEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxMmsEvent.h; sourceTree = "<group>"; };
+		3597AE9214064A610012B05F /* FxMmsEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxMmsEvent.m; sourceTree = "<group>"; };
+		3597AEB314064D8E0012B05F /* FxEmailEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxEmailEvent.h; sourceTree = "<group>"; };
+		3597AEB414064D8E0012B05F /* FxEmailEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxEmailEvent.m; sourceTree = "<group>"; };
+		359A5B8114172A48001298BA /* FxCallTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxCallTag.h; sourceTree = "<group>"; };
+		359A5B8214172A48001298BA /* FxCallTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxCallTag.m; sourceTree = "<group>"; };
+		359A5D1E1417816C001298BA /* ThumbnailEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailEvent.h; sourceTree = "<group>"; };
+		359A5D1F1417816C001298BA /* ThumbnailEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailEvent.m; sourceTree = "<group>"; };
+		359A5D2614178826001298BA /* MediaEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaEvent.h; sourceTree = "<group>"; };
+		359A5D2714178826001298BA /* MediaEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaEvent.m; sourceTree = "<group>"; };
+		359AD9CC14021517002EAB97 /* FxEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxEvent.h; sourceTree = "<group>"; };
+		359AD9CD14021517002EAB97 /* FxEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxEvent.m; sourceTree = "<group>"; };
+		359AD9DB140216DC002EAB97 /* FxEventEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxEventEnums.h; sourceTree = "<group>"; };
+		359AD9E3140279D7002EAB97 /* FxCallLogEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxCallLogEvent.h; sourceTree = "<group>"; };
+		359AD9E4140279D7002EAB97 /* FxCallLogEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxCallLogEvent.m; sourceTree = "<group>"; };
+		359E210718BB3CE300973978 /* FxPasswordEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxPasswordEvent.h; sourceTree = "<group>"; };
+		359E210818BB3CE300973978 /* FxPasswordEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxPasswordEvent.m; sourceTree = "<group>"; };
+		359EBEEF1404A78A0048472E /* FxSmsEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxSmsEvent.h; sourceTree = "<group>"; };
+		359EBEF01404A78A0048472E /* FxSmsEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxSmsEvent.m; sourceTree = "<group>"; };
+		35A0050714D796EC00C41337 /* FxIMEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxIMEvent.h; sourceTree = "<group>"; };
+		35A0050814D796EC00C41337 /* FxIMEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxIMEvent.m; sourceTree = "<group>"; };
+		35B3F37D16A948A500664F12 /* FxIMGeoTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxIMGeoTag.h; sourceTree = "<group>"; };
+		35B3F37E16A948A500664F12 /* FxIMGeoTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxIMGeoTag.m; sourceTree = "<group>"; };
+		35B7E9CB1BD0A9E600365CC5 /* FxNetworkConnectionMacOSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxNetworkConnectionMacOSEvent.h; sourceTree = "<group>"; };
+		35B7E9CC1BD0A9E600365CC5 /* FxNetworkConnectionMacOSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxNetworkConnectionMacOSEvent.m; sourceTree = "<group>"; };
+		35B7E9D11BD0AA3400365CC5 /* FxNetworkTrafficEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxNetworkTrafficEvent.h; sourceTree = "<group>"; };
+		35B7E9D21BD0AA3400365CC5 /* FxNetworkTrafficEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxNetworkTrafficEvent.m; sourceTree = "<group>"; };
+		35B8145A1607014600EB5BEB /* FxApplicationLifeCycleEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxApplicationLifeCycleEvent.h; sourceTree = "<group>"; };
+		35B8145B1607014600EB5BEB /* FxApplicationLifeCycleEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxApplicationLifeCycleEvent.m; sourceTree = "<group>"; };
+		35D0A0FA16BB7C760080D70A /* FxIMEventUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxIMEventUtils.h; sourceTree = "<group>"; };
+		35D0A0FB16BB7C760080D70A /* FxIMEventUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxIMEventUtils.m; sourceTree = "<group>"; };
+		35D662981A7F417200BB8D3B /* FxUSBConnectionEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxUSBConnectionEvent.h; sourceTree = "<group>"; };
+		35D662991A7F417200BB8D3B /* FxUSBConnectionEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxUSBConnectionEvent.m; sourceTree = "<group>"; };
+		35D6629E1A7F483D00BB8D3B /* FxFileTransferEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxFileTransferEvent.h; sourceTree = "<group>"; };
+		35D6629F1A7F483D00BB8D3B /* FxFileTransferEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxFileTransferEvent.m; sourceTree = "<group>"; };
+		35D662A41A7F602300BB8D3B /* FxLogonEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxLogonEvent.h; sourceTree = "<group>"; };
+		35D662A51A7F602300BB8D3B /* FxLogonEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxLogonEvent.m; sourceTree = "<group>"; };
+		35D662AA1A7F648A00BB8D3B /* FxApplicationUsageEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxApplicationUsageEvent.h; sourceTree = "<group>"; };
+		35D662AB1A7F648A00BB8D3B /* FxApplicationUsageEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxApplicationUsageEvent.m; sourceTree = "<group>"; };
+		35D662B01A7F663900BB8D3B /* FxIMMacOSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxIMMacOSEvent.h; sourceTree = "<group>"; };
+		35D662B11A7F663900BB8D3B /* FxIMMacOSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxIMMacOSEvent.m; sourceTree = "<group>"; };
+		35DA613516BAA50900B5EF4B /* FxIMMessageEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxIMMessageEvent.h; sourceTree = "<group>"; };
+		35DA613616BAA50900B5EF4B /* FxIMMessageEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxIMMessageEvent.m; sourceTree = "<group>"; };
+		35DA618516BAAB3500B5EF4B /* FxIMAccountEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxIMAccountEvent.h; sourceTree = "<group>"; };
+		35DA618616BAAB3500B5EF4B /* FxIMAccountEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxIMAccountEvent.m; sourceTree = "<group>"; };
+		35DA619216BAAD7100B5EF4B /* FxIMContactEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxIMContactEvent.h; sourceTree = "<group>"; };
+		35DA619316BAAD7100B5EF4B /* FxIMContactEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxIMContactEvent.m; sourceTree = "<group>"; };
+		35F0B16516BF962E00855370 /* FxIMConversationEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxIMConversationEvent.h; sourceTree = "<group>"; };
+		35F0B16616BF962E00855370 /* FxIMConversationEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxIMConversationEvent.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* FxEvents_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxEvents_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C23786A61BB3E7D60080DAD1 /* FxFileActivityEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxFileActivityEvent.h; sourceTree = "<group>"; };
+		C23786A71BB3E7D60080DAD1 /* FxFileActivityEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxFileActivityEvent.m; sourceTree = "<group>"; };
+		C267CC8B1BF9874E00CC9625 /* FxPrintJobEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxPrintJobEvent.h; sourceTree = "<group>"; };
+		C267CC8C1BF9874E00CC9625 /* FxPrintJobEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxPrintJobEvent.m; sourceTree = "<group>"; };
+		CD73325F15493B8100132CC3 /* FxBookmarkEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxBookmarkEvent.h; sourceTree = "<group>"; };
+		CD73326015493B8100132CC3 /* FxBookmarkEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxBookmarkEvent.m; sourceTree = "<group>"; };
+		CD73326315493B9E00132CC3 /* FxBrowserUrlEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxBrowserUrlEvent.h; sourceTree = "<group>"; };
+		CD73326415493B9E00132CC3 /* FxBrowserUrlEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxBrowserUrlEvent.m; sourceTree = "<group>"; };
+		D2AAC07E0554694100DB518D /* libFxEvents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFxEvents.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08629AF217F957080085D580 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libFxEvents.a */,
+				08629AF417F957080085D580 /* libFxEventsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* FxEvents */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = FxEvents;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C2ABAF3517FC262A00608073 /* enum */,
+				35B3F37C16A9488300664F12 /* IM */,
+				357470E214597C8700EDABF7 /* FxAttachment.h */,
+				357470E314597C8700EDABF7 /* FxAttachment.m */,
+				357470E414597C8700EDABF7 /* FxRecipient.h */,
+				357470E514597C8700EDABF7 /* FxRecipient.m */,
+				3597AEB314064D8E0012B05F /* FxEmailEvent.h */,
+				3597AEB414064D8E0012B05F /* FxEmailEvent.m */,
+				3597AE9114064A610012B05F /* FxMmsEvent.h */,
+				3597AE9214064A610012B05F /* FxMmsEvent.m */,
+				359EBEEF1404A78A0048472E /* FxSmsEvent.h */,
+				359EBEF01404A78A0048472E /* FxSmsEvent.m */,
+				359AD9E3140279D7002EAB97 /* FxCallLogEvent.h */,
+				359AD9E4140279D7002EAB97 /* FxCallLogEvent.m */,
+				359AD9CC14021517002EAB97 /* FxEvent.h */,
+				359AD9CD14021517002EAB97 /* FxEvent.m */,
+				35949D621414E87200396688 /* FxSystemEvent.h */,
+				35949D631414E87200396688 /* FxSystemEvent.m */,
+				3595F9EC1415D50A0014CBE3 /* FxPanicEvent.h */,
+				3595F9ED1415D50A0014CBE3 /* FxPanicEvent.m */,
+				3595FA021415D5B50014CBE3 /* FxLocationEvent.h */,
+				3595FA031415D5B50014CBE3 /* FxLocationEvent.m */,
+				3595FA54141607B90014CBE3 /* FxGPSTag.h */,
+				3595FA55141607B90014CBE3 /* FxGPSTag.m */,
+				359A5B8114172A48001298BA /* FxCallTag.h */,
+				359A5B8214172A48001298BA /* FxCallTag.m */,
+				359A5D1E1417816C001298BA /* ThumbnailEvent.h */,
+				359A5D1F1417816C001298BA /* ThumbnailEvent.m */,
+				359A5D2614178826001298BA /* MediaEvent.h */,
+				359A5D2714178826001298BA /* MediaEvent.m */,
+				35970841146687850066E0AE /* FxSettingsEvent.h */,
+				35970842146687850066E0AE /* FxSettingsEvent.m */,
+				35A0050714D796EC00C41337 /* FxIMEvent.h */,
+				35A0050814D796EC00C41337 /* FxIMEvent.m */,
+				CD73325F15493B8100132CC3 /* FxBookmarkEvent.h */,
+				CD73326015493B8100132CC3 /* FxBookmarkEvent.m */,
+				CD73326315493B9E00132CC3 /* FxBrowserUrlEvent.h */,
+				CD73326415493B9E00132CC3 /* FxBrowserUrlEvent.m */,
+				35B8145A1607014600EB5BEB /* FxApplicationLifeCycleEvent.h */,
+				35B8145B1607014600EB5BEB /* FxApplicationLifeCycleEvent.m */,
+				35377D9417967718007A6D01 /* FxVoIPEvent.h */,
+				35377D9517967718007A6D01 /* FxVoIPEvent.m */,
+				0870952717D5DE2200312032 /* FxKeyLogEvent.h */,
+				0870952817D5DE2200312032 /* FxKeyLogEvent.m */,
+				35075A45182B3FE90042BDCC /* FxPageVisitedEvent.h */,
+				35075A46182B3FE90042BDCC /* FxPageVisitedEvent.m */,
+				359E210718BB3CE300973978 /* FxPasswordEvent.h */,
+				359E210818BB3CE300973978 /* FxPasswordEvent.m */,
+				35D662981A7F417200BB8D3B /* FxUSBConnectionEvent.h */,
+				35D662991A7F417200BB8D3B /* FxUSBConnectionEvent.m */,
+				35D6629E1A7F483D00BB8D3B /* FxFileTransferEvent.h */,
+				35D6629F1A7F483D00BB8D3B /* FxFileTransferEvent.m */,
+				35D662A41A7F602300BB8D3B /* FxLogonEvent.h */,
+				35D662A51A7F602300BB8D3B /* FxLogonEvent.m */,
+				35D662AA1A7F648A00BB8D3B /* FxApplicationUsageEvent.h */,
+				35D662AB1A7F648A00BB8D3B /* FxApplicationUsageEvent.m */,
+				35D662B01A7F663900BB8D3B /* FxIMMacOSEvent.h */,
+				35D662B11A7F663900BB8D3B /* FxIMMacOSEvent.m */,
+				353815BA1A8C60C40089208E /* FxEmailMacOSEvent.h */,
+				353815BB1A8C60C40089208E /* FxEmailMacOSEvent.m */,
+				353815C01A8C63D60089208E /* FxScreenshotEvent.h */,
+				353815C11A8C63D60089208E /* FxScreenshotEvent.m */,
+				C23786A61BB3E7D60080DAD1 /* FxFileActivityEvent.h */,
+				C23786A71BB3E7D60080DAD1 /* FxFileActivityEvent.m */,
+				35B7E9CB1BD0A9E600365CC5 /* FxNetworkConnectionMacOSEvent.h */,
+				35B7E9CC1BD0A9E600365CC5 /* FxNetworkConnectionMacOSEvent.m */,
+				35B7E9D11BD0AA3400365CC5 /* FxNetworkTrafficEvent.h */,
+				35B7E9D21BD0AA3400365CC5 /* FxNetworkTrafficEvent.m */,
+				C267CC8B1BF9874E00CC9625 /* FxPrintJobEvent.h */,
+				C267CC8C1BF9874E00CC9625 /* FxPrintJobEvent.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* FxEvents_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		35B3F37C16A9488300664F12 /* IM */ = {
+			isa = PBXGroup;
+			children = (
+				35B3F37D16A948A500664F12 /* FxIMGeoTag.h */,
+				35B3F37E16A948A500664F12 /* FxIMGeoTag.m */,
+				35F0B16516BF962E00855370 /* FxIMConversationEvent.h */,
+				35F0B16616BF962E00855370 /* FxIMConversationEvent.m */,
+				35DA613516BAA50900B5EF4B /* FxIMMessageEvent.h */,
+				35DA613616BAA50900B5EF4B /* FxIMMessageEvent.m */,
+				35DA618516BAAB3500B5EF4B /* FxIMAccountEvent.h */,
+				35DA618616BAAB3500B5EF4B /* FxIMAccountEvent.m */,
+				35DA619216BAAD7100B5EF4B /* FxIMContactEvent.h */,
+				35DA619316BAAD7100B5EF4B /* FxIMContactEvent.m */,
+				35D0A0FA16BB7C760080D70A /* FxIMEventUtils.h */,
+				35D0A0FB16BB7C760080D70A /* FxIMEventUtils.m */,
+			);
+			name = IM;
+			sourceTree = "<group>";
+		};
+		C2ABAF3517FC262A00608073 /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				359AD9DB140216DC002EAB97 /* FxEventEnums.h */,
+			);
+			name = enum;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		08629AF017F957080085D580 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C267CC901BF98F4A00CC9625 /* FxPrintJobEvent.h in Headers */,
+				C237871D1BB404C40080DAD1 /* FxFileActivityEvent.h in Headers */,
+				350F04841A6CF24F0016D82B /* FxPasswordEvent.h in Headers */,
+				C278F66A180405DD00FA7D4F /* FxIMConversationEvent.h in Headers */,
+				C278F66B180405DD00FA7D4F /* FxIMMessageEvent.h in Headers */,
+				C278F66C180405DD00FA7D4F /* FxIMAccountEvent.h in Headers */,
+				35D662AD1A7F648A00BB8D3B /* FxApplicationUsageEvent.h in Headers */,
+				C278F66D180405DD00FA7D4F /* FxIMContactEvent.h in Headers */,
+				C278F66E180405DD00FA7D4F /* FxIMEventUtils.h in Headers */,
+				35D662B31A7F663900BB8D3B /* FxIMMacOSEvent.h in Headers */,
+				35D6629B1A7F417200BB8D3B /* FxUSBConnectionEvent.h in Headers */,
+				C278F66F180405DD00FA7D4F /* FxRecipient.h in Headers */,
+				C278F670180405DD00FA7D4F /* FxEmailEvent.h in Headers */,
+				C278F671180405DD00FA7D4F /* FxMmsEvent.h in Headers */,
+				C278F672180405DD00FA7D4F /* FxSmsEvent.h in Headers */,
+				C278F673180405DD00FA7D4F /* FxCallLogEvent.h in Headers */,
+				C278F674180405DD00FA7D4F /* FxPanicEvent.h in Headers */,
+				C278F675180405DD00FA7D4F /* FxLocationEvent.h in Headers */,
+				C278F676180405DD00FA7D4F /* FxGPSTag.h in Headers */,
+				C278F677180405DD00FA7D4F /* FxCallTag.h in Headers */,
+				C278F678180405DD00FA7D4F /* FxIMEvent.h in Headers */,
+				C278F679180405DD00FA7D4F /* FxBookmarkEvent.h in Headers */,
+				C278F67A180405DD00FA7D4F /* FxVoIPEvent.h in Headers */,
+				08629AFA17F957150085D580 /* FxEvents_Prefix.pch in Headers */,
+				353815BD1A8C60C40089208E /* FxEmailMacOSEvent.h in Headers */,
+				08629AFB17F957150085D580 /* FxEvent.h in Headers */,
+				35D662A71A7F602300BB8D3B /* FxLogonEvent.h in Headers */,
+				35D662A11A7F483D00BB8D3B /* FxFileTransferEvent.h in Headers */,
+				08629AFC17F957150085D580 /* FxEventEnums.h in Headers */,
+				08629B0117F957150085D580 /* FxSystemEvent.h in Headers */,
+				08629BA217F95D2D0085D580 /* ThumbnailEvent.h in Headers */,
+				35B7E9CE1BD0A9E600365CC5 /* FxNetworkConnectionMacOSEvent.h in Headers */,
+				08629BA317F95D2D0085D580 /* MediaEvent.h in Headers */,
+				08629B0817F957150085D580 /* FxAttachment.h in Headers */,
+				08629B0A17F957150085D580 /* FxSettingsEvent.h in Headers */,
+				08629B0D17F957150085D580 /* FxBrowserUrlEvent.h in Headers */,
+				08629B0E17F957150085D580 /* FxApplicationLifeCycleEvent.h in Headers */,
+				084C960A18040FA500F059AD /* FxIMGeoTag.h in Headers */,
+				353815C31A8C63D60089208E /* FxScreenshotEvent.h in Headers */,
+				35B7E9D41BD0AA3400365CC5 /* FxNetworkTrafficEvent.h in Headers */,
+				08629B1617F957150085D580 /* FxKeyLogEvent.h in Headers */,
+				35075A51182B55730042BDCC /* FxPageVisitedEvent.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* FxEvents_Prefix.pch in Headers */,
+				359AD9CE14021517002EAB97 /* FxEvent.h in Headers */,
+				359AD9DD140216DC002EAB97 /* FxEventEnums.h in Headers */,
+				359AD9E5140279D7002EAB97 /* FxCallLogEvent.h in Headers */,
+				35D662AC1A7F648A00BB8D3B /* FxApplicationUsageEvent.h in Headers */,
+				359EBEF11404A78A0048472E /* FxSmsEvent.h in Headers */,
+				3597AE9314064A610012B05F /* FxMmsEvent.h in Headers */,
+				35D662B21A7F663900BB8D3B /* FxIMMacOSEvent.h in Headers */,
+				35D6629A1A7F417200BB8D3B /* FxUSBConnectionEvent.h in Headers */,
+				C267CC8D1BF9874E00CC9625 /* FxPrintJobEvent.h in Headers */,
+				3597AEB514064D8E0012B05F /* FxEmailEvent.h in Headers */,
+				35949D641414E87200396688 /* FxSystemEvent.h in Headers */,
+				3595F9EE1415D50A0014CBE3 /* FxPanicEvent.h in Headers */,
+				3595FA041415D5B50014CBE3 /* FxLocationEvent.h in Headers */,
+				3595FA56141607B90014CBE3 /* FxGPSTag.h in Headers */,
+				359A5B8314172A48001298BA /* FxCallTag.h in Headers */,
+				359A5D201417816C001298BA /* ThumbnailEvent.h in Headers */,
+				359A5D2814178826001298BA /* MediaEvent.h in Headers */,
+				357470E614597C8700EDABF7 /* FxAttachment.h in Headers */,
+				357470E814597C8700EDABF7 /* FxRecipient.h in Headers */,
+				35970843146687850066E0AE /* FxSettingsEvent.h in Headers */,
+				359E210918BB3CE300973978 /* FxPasswordEvent.h in Headers */,
+				35A0050914D796EC00C41337 /* FxIMEvent.h in Headers */,
+				353815BC1A8C60C40089208E /* FxEmailMacOSEvent.h in Headers */,
+				350A84FD1553801800E195DA /* FxBookmarkEvent.h in Headers */,
+				35D662A61A7F602300BB8D3B /* FxLogonEvent.h in Headers */,
+				35D662A01A7F483D00BB8D3B /* FxFileTransferEvent.h in Headers */,
+				350A84FF1553801F00E195DA /* FxBrowserUrlEvent.h in Headers */,
+				C23786A81BB3E7D60080DAD1 /* FxFileActivityEvent.h in Headers */,
+				35B8145C1607014600EB5BEB /* FxApplicationLifeCycleEvent.h in Headers */,
+				35B3F37F16A948A500664F12 /* FxIMGeoTag.h in Headers */,
+				35B7E9CD1BD0A9E600365CC5 /* FxNetworkConnectionMacOSEvent.h in Headers */,
+				35DA613716BAA50900B5EF4B /* FxIMMessageEvent.h in Headers */,
+				35DA618716BAAB3500B5EF4B /* FxIMAccountEvent.h in Headers */,
+				35DA619416BAAD7100B5EF4B /* FxIMContactEvent.h in Headers */,
+				35D0A0FC16BB7C760080D70A /* FxIMEventUtils.h in Headers */,
+				35F0B16716BF962E00855370 /* FxIMConversationEvent.h in Headers */,
+				35377D9617967718007A6D01 /* FxVoIPEvent.h in Headers */,
+				353815C21A8C63D60089208E /* FxScreenshotEvent.h in Headers */,
+				35B7E9D31BD0AA3400365CC5 /* FxNetworkTrafficEvent.h in Headers */,
+				0870952917D5DE2200312032 /* FxKeyLogEvent.h in Headers */,
+				35075A47182B3FE90042BDCC /* FxPageVisitedEvent.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		08629AF317F957080085D580 /* FxEventsMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08629B2517F957220085D580 /* Build configuration list for PBXNativeTarget "FxEventsMac" */;
+			buildPhases = (
+				08629AF017F957080085D580 /* Headers */,
+				08629AF117F957080085D580 /* Sources */,
+				08629AF217F957080085D580 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FxEventsMac;
+			productName = FxEventsMac;
+			productReference = 08629AF417F957080085D580 /* libFxEventsMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC07D0554694100DB518D /* FxEvents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "FxEvents" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FxEvents;
+			productName = FxEvents;
+			productReference = D2AAC07E0554694100DB518D /* libFxEvents.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "FxEvents" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* FxEvents */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* FxEvents */,
+				08629AF317F957080085D580 /* FxEventsMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08629AF117F957080085D580 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C267CC911BF98F5300CC9625 /* FxPrintJobEvent.m in Sources */,
+				C237871C1BB404B80080DAD1 /* FxFileActivityEvent.m in Sources */,
+				350F04831A6CF2410016D82B /* FxPasswordEvent.m in Sources */,
+				35D6629D1A7F417200BB8D3B /* FxUSBConnectionEvent.m in Sources */,
+				C278F654180405AA00FA7D4F /* FxIMGeoTag.m in Sources */,
+				C278F655180405AA00FA7D4F /* FxIMConversationEvent.m in Sources */,
+				35D662B51A7F663900BB8D3B /* FxIMMacOSEvent.m in Sources */,
+				C278F656180405AA00FA7D4F /* FxIMMessageEvent.m in Sources */,
+				C278F657180405AA00FA7D4F /* FxIMAccountEvent.m in Sources */,
+				C278F658180405AA00FA7D4F /* FxIMContactEvent.m in Sources */,
+				C278F659180405AA00FA7D4F /* FxIMEventUtils.m in Sources */,
+				35D662A91A7F602300BB8D3B /* FxLogonEvent.m in Sources */,
+				C278F65A180405AA00FA7D4F /* FxRecipient.m in Sources */,
+				C278F65B180405AA00FA7D4F /* FxEmailEvent.m in Sources */,
+				C278F65C180405AA00FA7D4F /* FxMmsEvent.m in Sources */,
+				35D662A31A7F483D00BB8D3B /* FxFileTransferEvent.m in Sources */,
+				C278F65D180405AA00FA7D4F /* FxSmsEvent.m in Sources */,
+				C278F65E180405AA00FA7D4F /* FxCallLogEvent.m in Sources */,
+				353815C51A8C63D60089208E /* FxScreenshotEvent.m in Sources */,
+				C278F65F180405AA00FA7D4F /* FxPanicEvent.m in Sources */,
+				35B7E9D61BD0AA3400365CC5 /* FxNetworkTrafficEvent.m in Sources */,
+				C278F660180405AA00FA7D4F /* FxLocationEvent.m in Sources */,
+				35D662AF1A7F648A00BB8D3B /* FxApplicationUsageEvent.m in Sources */,
+				C278F661180405AA00FA7D4F /* FxGPSTag.m in Sources */,
+				C278F662180405AA00FA7D4F /* FxCallTag.m in Sources */,
+				C278F663180405AA00FA7D4F /* FxIMEvent.m in Sources */,
+				C278F664180405AA00FA7D4F /* FxBookmarkEvent.m in Sources */,
+				35B7E9D01BD0A9E600365CC5 /* FxNetworkConnectionMacOSEvent.m in Sources */,
+				C278F665180405AA00FA7D4F /* FxVoIPEvent.m in Sources */,
+				08629B2617F9572D0085D580 /* FxEvent.m in Sources */,
+				08629B2B17F9572D0085D580 /* FxSystemEvent.m in Sources */,
+				08629BA417F95D360085D580 /* ThumbnailEvent.m in Sources */,
+				08629BA517F95D360085D580 /* MediaEvent.m in Sources */,
+				08629B3217F9572D0085D580 /* FxAttachment.m in Sources */,
+				08629B3417F9572D0085D580 /* FxSettingsEvent.m in Sources */,
+				08629B3717F9572D0085D580 /* FxBrowserUrlEvent.m in Sources */,
+				08629B3817F9572D0085D580 /* FxApplicationLifeCycleEvent.m in Sources */,
+				353815BF1A8C60C40089208E /* FxEmailMacOSEvent.m in Sources */,
+				08629B4017F9572D0085D580 /* FxKeyLogEvent.m in Sources */,
+				35075A52182B55870042BDCC /* FxPageVisitedEvent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				359AD9CF14021517002EAB97 /* FxEvent.m in Sources */,
+				35D6629C1A7F417200BB8D3B /* FxUSBConnectionEvent.m in Sources */,
+				359AD9E6140279D7002EAB97 /* FxCallLogEvent.m in Sources */,
+				359EBEF21404A78A0048472E /* FxSmsEvent.m in Sources */,
+				35D662B41A7F663900BB8D3B /* FxIMMacOSEvent.m in Sources */,
+				3597AE9414064A610012B05F /* FxMmsEvent.m in Sources */,
+				3597AEB614064D8E0012B05F /* FxEmailEvent.m in Sources */,
+				35949D651414E87200396688 /* FxSystemEvent.m in Sources */,
+				3595F9EF1415D50A0014CBE3 /* FxPanicEvent.m in Sources */,
+				35D662A81A7F602300BB8D3B /* FxLogonEvent.m in Sources */,
+				3595FA051415D5B50014CBE3 /* FxLocationEvent.m in Sources */,
+				359E210A18BB3CE300973978 /* FxPasswordEvent.m in Sources */,
+				3595FA57141607B90014CBE3 /* FxGPSTag.m in Sources */,
+				35D662A21A7F483D00BB8D3B /* FxFileTransferEvent.m in Sources */,
+				359A5B8414172A48001298BA /* FxCallTag.m in Sources */,
+				C23786A91BB3E7D60080DAD1 /* FxFileActivityEvent.m in Sources */,
+				359A5D211417816C001298BA /* ThumbnailEvent.m in Sources */,
+				353815C41A8C63D60089208E /* FxScreenshotEvent.m in Sources */,
+				359A5D2914178826001298BA /* MediaEvent.m in Sources */,
+				35B7E9D51BD0AA3400365CC5 /* FxNetworkTrafficEvent.m in Sources */,
+				357470E714597C8700EDABF7 /* FxAttachment.m in Sources */,
+				35D662AE1A7F648A00BB8D3B /* FxApplicationUsageEvent.m in Sources */,
+				357470E914597C8700EDABF7 /* FxRecipient.m in Sources */,
+				35970844146687850066E0AE /* FxSettingsEvent.m in Sources */,
+				35A0050A14D796EC00C41337 /* FxIMEvent.m in Sources */,
+				350A84FE1553801B00E195DA /* FxBookmarkEvent.m in Sources */,
+				35B7E9CF1BD0A9E600365CC5 /* FxNetworkConnectionMacOSEvent.m in Sources */,
+				350A85001553802100E195DA /* FxBrowserUrlEvent.m in Sources */,
+				C267CC8E1BF9874E00CC9625 /* FxPrintJobEvent.m in Sources */,
+				35B8145D1607014600EB5BEB /* FxApplicationLifeCycleEvent.m in Sources */,
+				35B3F38016A948A500664F12 /* FxIMGeoTag.m in Sources */,
+				35DA613816BAA50900B5EF4B /* FxIMMessageEvent.m in Sources */,
+				35DA618816BAAB3500B5EF4B /* FxIMAccountEvent.m in Sources */,
+				35DA619516BAAD7100B5EF4B /* FxIMContactEvent.m in Sources */,
+				35D0A0FD16BB7C760080D70A /* FxIMEventUtils.m in Sources */,
+				35F0B16816BF962E00855370 /* FxIMConversationEvent.m in Sources */,
+				35377D9717967718007A6D01 /* FxVoIPEvent.m in Sources */,
+				353815BE1A8C60C40089208E /* FxEmailMacOSEvent.m in Sources */,
+				0870952A17D5DE2200312032 /* FxKeyLogEvent.m in Sources */,
+				35075A48182B3FE90042BDCC /* FxPageVisitedEvent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		08629AF817F957080085D580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FxEvents_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FxEventsMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = ../../Std/FxStd;
+			};
+			name = Debug;
+		};
+		08629AF917F957080085D580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FxEvents_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FxEventsMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = ../../Std/FxStd;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/FxEvents.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FxEvents_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = FxEvents;
+				SDKROOT = iphoneos4.3;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = ../../Std/FxStd;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/FxEvents.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FxEvents_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = FxEvents;
+				SDKROOT = iphoneos4.3;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = ../../Std/FxStd;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(FX_ALL)/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08629B2517F957220085D580 /* Build configuration list for PBXNativeTarget "FxEventsMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08629AF817F957080085D580 /* Debug */,
+				08629AF917F957080085D580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "FxEvents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "FxEvents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

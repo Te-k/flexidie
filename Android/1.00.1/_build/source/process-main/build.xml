@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="process-main">
+
+	<property file="../../environment.properties"/>
+	<property file="../../common.properties"/>
+	<import file="../../build-dex.xml"/>
+
+	<path id="compile_classpath">
+	    <pathelement path="${android.lib.jar}"/>
+	</path>
+	
+	<path id="compile_classpath">
+	    <pathelement path="${android.lib.jar}"/>
+		<pathelement location="libs/android-vcard.jar"/>
+		<pathelement location="libs/commons-codec-1.4.jar"/>
+	</path>
+  
+</project>

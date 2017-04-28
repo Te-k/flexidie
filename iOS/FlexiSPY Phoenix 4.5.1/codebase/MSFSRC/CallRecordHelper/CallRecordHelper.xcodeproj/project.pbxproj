@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35534A191C08376B0096A294 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35534A181C08376B0096A294 /* main.m */; };
+		35534A1C1C08376B0096A294 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35534A1B1C08376B0096A294 /* AppDelegate.m */; };
+		35534A1F1C08376B0096A294 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35534A1E1C08376B0096A294 /* ViewController.m */; };
+		35534A221C08376B0096A294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35534A201C08376B0096A294 /* Main.storyboard */; };
+		35534A241C08376B0096A294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35534A231C08376B0096A294 /* Assets.xcassets */; };
+		35E9D2211C69E11B00FDCC76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35534A251C08376B0096A294 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35534A141C08376B0096A294 /* CallRecordHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallRecordHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35534A181C08376B0096A294 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35534A1A1C08376B0096A294 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		35534A1B1C08376B0096A294 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		35534A1D1C08376B0096A294 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		35534A1E1C08376B0096A294 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		35534A211C08376B0096A294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35534A231C08376B0096A294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35534A261C08376B0096A294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35534A281C08376B0096A294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35E9D20F1C69C24B00FDCC76 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = build.sh; path = "../../Source-MSFSRC/build.sh"; sourceTree = "<group>"; };
+		35E9D2101C69C24B00FDCC76 /* CallRec.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = CallRec.plist; path = "../../Source-MSFSRC/CallRec.plist"; sourceTree = "<group>"; };
+		35E9D2111C69C24B00FDCC76 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = "../../Source-MSFSRC/Makefile"; sourceTree = "<group>"; };
+		35E9D2121C69C24B00FDCC76 /* PCMMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PCMMixer.h; path = "../../Source-MSFSRC/PCMMixer.h"; sourceTree = "<group>"; };
+		35E9D2131C69C24B00FDCC76 /* PCMMixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCMMixer.m; path = "../../Source-MSFSRC/PCMMixer.m"; sourceTree = "<group>"; };
+		35E9D2141C69C24B00FDCC76 /* Tweak.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Tweak.mm; path = "../../Source-MSFSRC/Tweak.mm"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35534A111C08376B0096A294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35534A0B1C08376A0096A294 = {
+			isa = PBXGroup;
+			children = (
+				35534A161C08376B0096A294 /* CallRecordHelper */,
+				35534A151C08376B0096A294 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35534A151C08376B0096A294 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35534A141C08376B0096A294 /* CallRecordHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35534A161C08376B0096A294 /* CallRecordHelper */ = {
+			isa = PBXGroup;
+			children = (
+				35534A4A1C08377F0096A294 /* callrec */,
+				35534A1A1C08376B0096A294 /* AppDelegate.h */,
+				35534A1B1C08376B0096A294 /* AppDelegate.m */,
+				35534A1D1C08376B0096A294 /* ViewController.h */,
+				35534A1E1C08376B0096A294 /* ViewController.m */,
+				35534A201C08376B0096A294 /* Main.storyboard */,
+				35534A231C08376B0096A294 /* Assets.xcassets */,
+				35534A251C08376B0096A294 /* LaunchScreen.storyboard */,
+				35534A281C08376B0096A294 /* Info.plist */,
+				35534A171C08376B0096A294 /* Supporting Files */,
+			);
+			path = CallRecordHelper;
+			sourceTree = "<group>";
+		};
+		35534A171C08376B0096A294 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35534A181C08376B0096A294 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35534A4A1C08377F0096A294 /* callrec */ = {
+			isa = PBXGroup;
+			children = (
+				35E9D20F1C69C24B00FDCC76 /* build.sh */,
+				35E9D2101C69C24B00FDCC76 /* CallRec.plist */,
+				35E9D2111C69C24B00FDCC76 /* Makefile */,
+				35E9D2121C69C24B00FDCC76 /* PCMMixer.h */,
+				35E9D2131C69C24B00FDCC76 /* PCMMixer.m */,
+				35E9D2141C69C24B00FDCC76 /* Tweak.mm */,
+			);
+			name = callrec;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35534A131C08376B0096A294 /* CallRecordHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35534A411C08376B0096A294 /* Build configuration list for PBXNativeTarget "CallRecordHelper" */;
+			buildPhases = (
+				35534A101C08376B0096A294 /* Sources */,
+				35534A111C08376B0096A294 /* Frameworks */,
+				35534A121C08376B0096A294 /* Resources */,
+				35E9D21A1C69C7BE00FDCC76 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallRecordHelper;
+			productName = CallRecordHelper;
+			productReference = 35534A141C08376B0096A294 /* CallRecordHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35534A0C1C08376A0096A294 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Makara Khloth";
+				TargetAttributes = {
+					35534A131C08376B0096A294 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 35534A0F1C08376A0096A294 /* Build configuration list for PBXProject "CallRecordHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35534A0B1C08376A0096A294;
+			productRefGroup = 35534A151C08376B0096A294 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35534A131C08376B0096A294 /* CallRecordHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35534A121C08376B0096A294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35534A241C08376B0096A294 /* Assets.xcassets in Resources */,
+				35E9D2211C69E11B00FDCC76 /* LaunchScreen.storyboard in Resources */,
+				35534A221C08376B0096A294 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35E9D21A1C69C7BE00FDCC76 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=/sw/bin:$PATH\nexport PATH=../../OTC/MobileSubstrate:$PATH\nexport THEOS=/opt/theos\n\ncd ../Source-MSFSRC\n#make package\nmake\nldid -Sentitlements.xml obj/CallRec.dylib\nldid -e obj/CallRec.dylib\n\n# FlexiSPY\ncp obj/CallRec.dylib ../../../FlexiSPY/MSFSRC-Dylib/MSFSRC.dylib\ncp CallRec.plist ../../../FlexiSPY/MSFSRC-Dylib/MSFSRC.plist\n\n# KnowIT\ncp obj/CallRec.dylib ../../../KnowIT/MSFSRC-Dylib/MSFSRC.dylib\ncp CallRec.plist ../../../KnowIT/MSFSRC-Dylib/MSFSRC.plist";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35534A101C08376B0096A294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35534A1F1C08376B0096A294 /* ViewController.m in Sources */,
+				35534A1C1C08376B0096A294 /* AppDelegate.m in Sources */,
+				35534A191C08376B0096A294 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		35534A201C08376B0096A294 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35534A211C08376B0096A294 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35534A251C08376B0096A294 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35534A261C08376B0096A294 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35534A3F1C08376B0096A294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		35534A401C08376B0096A294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35534A421C08376B0096A294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CallRecordHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applle.CallRecordHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		35534A431C08376B0096A294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CallRecordHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applle.CallRecordHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35534A0F1C08376A0096A294 /* Build configuration list for PBXProject "CallRecordHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35534A3F1C08376B0096A294 /* Debug */,
+				35534A401C08376B0096A294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35534A411C08376B0096A294 /* Build configuration list for PBXNativeTarget "CallRecordHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35534A421C08376B0096A294 /* Debug */,
+				35534A431C08376B0096A294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35534A0C1C08376A0096A294 /* Project object */;
+}

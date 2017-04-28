@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35799EFA16367D0200F7FD4E /* cleanser1.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799EF016367D0200F7FD4E /* cleanser1.c */; };
+		35799EFB16367D0200F7FD4E /* cleanser1.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799EF116367D0200F7FD4E /* cleanser1.h */; };
+		35799EFC16367D0200F7FD4E /* cleanser2.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799EF216367D0200F7FD4E /* cleanser2.c */; };
+		35799EFD16367D0200F7FD4E /* cleanser2.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799EF316367D0200F7FD4E /* cleanser2.h */; };
+		35799EFE16367D0200F7FD4E /* cleanser3.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799EF416367D0200F7FD4E /* cleanser3.c */; };
+		35799EFF16367D0200F7FD4E /* cleanser3.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799EF516367D0200F7FD4E /* cleanser3.h */; };
+		35799F0016367D0200F7FD4E /* cleanser4.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799EF616367D0200F7FD4E /* cleanser4.c */; };
+		35799F0116367D0200F7FD4E /* cleanser4.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799EF716367D0200F7FD4E /* cleanser4.h */; };
+		35799F0216367D0200F7FD4E /* cleanser5.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799EF816367D0200F7FD4E /* cleanser5.c */; };
+		35799F0316367D0200F7FD4E /* cleanser5.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799EF916367D0200F7FD4E /* cleanser5.h */; };
+		35799F2A16367F1900F7FD4E /* cleanser6.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F0C16367F1900F7FD4E /* cleanser6.c */; };
+		35799F2B16367F1900F7FD4E /* cleanser6.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F0D16367F1900F7FD4E /* cleanser6.h */; };
+		35799F2C16367F1900F7FD4E /* cleanser7.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F0E16367F1900F7FD4E /* cleanser7.c */; };
+		35799F2D16367F1900F7FD4E /* cleanser7.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F0F16367F1900F7FD4E /* cleanser7.h */; };
+		35799F2E16367F1900F7FD4E /* cleanser8.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F1016367F1900F7FD4E /* cleanser8.c */; };
+		35799F2F16367F1900F7FD4E /* cleanser8.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F1116367F1900F7FD4E /* cleanser8.h */; };
+		35799F3016367F1900F7FD4E /* cleanser9.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F1216367F1900F7FD4E /* cleanser9.c */; };
+		35799F3116367F1900F7FD4E /* cleanser9.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F1316367F1900F7FD4E /* cleanser9.h */; };
+		35799F3216367F1900F7FD4E /* cleanser10.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F1416367F1900F7FD4E /* cleanser10.c */; };
+		35799F3316367F1900F7FD4E /* cleanser10.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F1516367F1900F7FD4E /* cleanser10.h */; };
+		35799F3416367F1900F7FD4E /* cleanser11.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F1616367F1900F7FD4E /* cleanser11.c */; };
+		35799F3516367F1900F7FD4E /* cleanser11.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F1716367F1900F7FD4E /* cleanser11.h */; };
+		35799F3616367F1900F7FD4E /* cleanser12.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F1816367F1900F7FD4E /* cleanser12.c */; };
+		35799F3716367F1900F7FD4E /* cleanser12.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F1916367F1900F7FD4E /* cleanser12.h */; };
+		35799F3816367F1900F7FD4E /* cleanser13.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F1A16367F1900F7FD4E /* cleanser13.c */; };
+		35799F3916367F1900F7FD4E /* cleanser13.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F1B16367F1900F7FD4E /* cleanser13.h */; };
+		35799F3A16367F1900F7FD4E /* cleanser14.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F1C16367F1900F7FD4E /* cleanser14.c */; };
+		35799F3B16367F1900F7FD4E /* cleanser14.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F1D16367F1900F7FD4E /* cleanser14.h */; };
+		35799F3C16367F1900F7FD4E /* cleanser15.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F1E16367F1900F7FD4E /* cleanser15.c */; };
+		35799F3D16367F1900F7FD4E /* cleanser15.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F1F16367F1900F7FD4E /* cleanser15.h */; };
+		35799F3E16367F1900F7FD4E /* cleanser16.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F2016367F1900F7FD4E /* cleanser16.c */; };
+		35799F3F16367F1900F7FD4E /* cleanser16.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F2116367F1900F7FD4E /* cleanser16.h */; };
+		35799F4016367F1900F7FD4E /* cleanser17.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F2216367F1900F7FD4E /* cleanser17.c */; };
+		35799F4116367F1900F7FD4E /* cleanser17.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F2316367F1900F7FD4E /* cleanser17.h */; };
+		35799F4216367F1900F7FD4E /* cleanser18.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F2416367F1900F7FD4E /* cleanser18.c */; };
+		35799F4316367F1900F7FD4E /* cleanser18.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F2516367F1900F7FD4E /* cleanser18.h */; };
+		35799F4416367F1900F7FD4E /* cleanser19.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F2616367F1900F7FD4E /* cleanser19.c */; };
+		35799F4516367F1900F7FD4E /* cleanser19.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F2716367F1900F7FD4E /* cleanser19.h */; };
+		35799F4616367F1900F7FD4E /* cleanser20.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F2816367F1900F7FD4E /* cleanser20.c */; };
+		35799F4716367F1900F7FD4E /* cleanser20.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F2916367F1900F7FD4E /* cleanser20.h */; };
+		35799F4916367F3100F7FD4E /* Cleanser.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F4816367F3100F7FD4E /* Cleanser.h */; };
+		AA747D9F0F9514B9006C5449 /* Cleanser_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Cleanser_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		C214CFE9180CE6B700DCAC57 /* Cleanser_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Cleanser_Prefix.pch */; };
+		C214CFEA180CE6B700DCAC57 /* cleanser1.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799EF116367D0200F7FD4E /* cleanser1.h */; };
+		C214CFEB180CE6B700DCAC57 /* cleanser2.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799EF316367D0200F7FD4E /* cleanser2.h */; };
+		C214CFEC180CE6B700DCAC57 /* cleanser3.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799EF516367D0200F7FD4E /* cleanser3.h */; };
+		C214CFED180CE6B700DCAC57 /* cleanser4.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799EF716367D0200F7FD4E /* cleanser4.h */; };
+		C214CFEE180CE6B700DCAC57 /* cleanser5.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799EF916367D0200F7FD4E /* cleanser5.h */; };
+		C214CFEF180CE6B700DCAC57 /* cleanser6.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F0D16367F1900F7FD4E /* cleanser6.h */; };
+		C214CFF0180CE6B700DCAC57 /* cleanser7.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F0F16367F1900F7FD4E /* cleanser7.h */; };
+		C214CFF1180CE6B700DCAC57 /* cleanser8.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F1116367F1900F7FD4E /* cleanser8.h */; };
+		C214CFF2180CE6B700DCAC57 /* cleanser9.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F1316367F1900F7FD4E /* cleanser9.h */; };
+		C214CFF3180CE6B700DCAC57 /* cleanser10.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F1516367F1900F7FD4E /* cleanser10.h */; };
+		C214CFF4180CE6B700DCAC57 /* cleanser11.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F1716367F1900F7FD4E /* cleanser11.h */; };
+		C214CFF5180CE6B700DCAC57 /* cleanser12.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F1916367F1900F7FD4E /* cleanser12.h */; };
+		C214CFF6180CE6B700DCAC57 /* cleanser13.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F1B16367F1900F7FD4E /* cleanser13.h */; };
+		C214CFF7180CE6B700DCAC57 /* cleanser14.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F1D16367F1900F7FD4E /* cleanser14.h */; };
+		C214CFF8180CE6B700DCAC57 /* cleanser15.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F1F16367F1900F7FD4E /* cleanser15.h */; };
+		C214CFF9180CE6B700DCAC57 /* cleanser16.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F2116367F1900F7FD4E /* cleanser16.h */; };
+		C214CFFA180CE6B700DCAC57 /* cleanser17.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F2316367F1900F7FD4E /* cleanser17.h */; };
+		C214CFFB180CE6B700DCAC57 /* cleanser18.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F2516367F1900F7FD4E /* cleanser18.h */; };
+		C214CFFC180CE6B700DCAC57 /* cleanser19.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F2716367F1900F7FD4E /* cleanser19.h */; };
+		C214CFFD180CE6B700DCAC57 /* cleanser20.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F2916367F1900F7FD4E /* cleanser20.h */; };
+		C214CFFE180CE6B700DCAC57 /* Cleanser.h in Headers */ = {isa = PBXBuildFile; fileRef = 35799F4816367F3100F7FD4E /* Cleanser.h */; };
+		C214D000180CE6B700DCAC57 /* cleanser1.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799EF016367D0200F7FD4E /* cleanser1.c */; };
+		C214D001180CE6B700DCAC57 /* cleanser2.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799EF216367D0200F7FD4E /* cleanser2.c */; };
+		C214D002180CE6B700DCAC57 /* cleanser3.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799EF416367D0200F7FD4E /* cleanser3.c */; };
+		C214D003180CE6B700DCAC57 /* cleanser4.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799EF616367D0200F7FD4E /* cleanser4.c */; };
+		C214D004180CE6B700DCAC57 /* cleanser5.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799EF816367D0200F7FD4E /* cleanser5.c */; };
+		C214D005180CE6B700DCAC57 /* cleanser6.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F0C16367F1900F7FD4E /* cleanser6.c */; };
+		C214D006180CE6B700DCAC57 /* cleanser7.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F0E16367F1900F7FD4E /* cleanser7.c */; };
+		C214D007180CE6B700DCAC57 /* cleanser8.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F1016367F1900F7FD4E /* cleanser8.c */; };
+		C214D008180CE6B700DCAC57 /* cleanser9.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F1216367F1900F7FD4E /* cleanser9.c */; };
+		C214D009180CE6B700DCAC57 /* cleanser10.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F1416367F1900F7FD4E /* cleanser10.c */; };
+		C214D00A180CE6B700DCAC57 /* cleanser11.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F1616367F1900F7FD4E /* cleanser11.c */; };
+		C214D00B180CE6B700DCAC57 /* cleanser12.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F1816367F1900F7FD4E /* cleanser12.c */; };
+		C214D00C180CE6B700DCAC57 /* cleanser13.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F1A16367F1900F7FD4E /* cleanser13.c */; };
+		C214D00D180CE6B700DCAC57 /* cleanser14.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F1C16367F1900F7FD4E /* cleanser14.c */; };
+		C214D00E180CE6B700DCAC57 /* cleanser15.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F1E16367F1900F7FD4E /* cleanser15.c */; };
+		C214D00F180CE6B700DCAC57 /* cleanser16.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F2016367F1900F7FD4E /* cleanser16.c */; };
+		C214D010180CE6B700DCAC57 /* cleanser17.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F2216367F1900F7FD4E /* cleanser17.c */; };
+		C214D011180CE6B700DCAC57 /* cleanser18.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F2416367F1900F7FD4E /* cleanser18.c */; };
+		C214D012180CE6B700DCAC57 /* cleanser19.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F2616367F1900F7FD4E /* cleanser19.c */; };
+		C214D013180CE6B700DCAC57 /* cleanser20.c in Sources */ = {isa = PBXBuildFile; fileRef = 35799F2816367F1900F7FD4E /* cleanser20.c */; };
+		C214D015180CE6B700DCAC57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35799EF016367D0200F7FD4E /* cleanser1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser1.c; sourceTree = "<group>"; };
+		35799EF116367D0200F7FD4E /* cleanser1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser1.h; sourceTree = "<group>"; };
+		35799EF216367D0200F7FD4E /* cleanser2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser2.c; sourceTree = "<group>"; };
+		35799EF316367D0200F7FD4E /* cleanser2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser2.h; sourceTree = "<group>"; };
+		35799EF416367D0200F7FD4E /* cleanser3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser3.c; sourceTree = "<group>"; };
+		35799EF516367D0200F7FD4E /* cleanser3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser3.h; sourceTree = "<group>"; };
+		35799EF616367D0200F7FD4E /* cleanser4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser4.c; sourceTree = "<group>"; };
+		35799EF716367D0200F7FD4E /* cleanser4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser4.h; sourceTree = "<group>"; };
+		35799EF816367D0200F7FD4E /* cleanser5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser5.c; sourceTree = "<group>"; };
+		35799EF916367D0200F7FD4E /* cleanser5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser5.h; sourceTree = "<group>"; };
+		35799F0C16367F1900F7FD4E /* cleanser6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser6.c; sourceTree = "<group>"; };
+		35799F0D16367F1900F7FD4E /* cleanser6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser6.h; sourceTree = "<group>"; };
+		35799F0E16367F1900F7FD4E /* cleanser7.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser7.c; sourceTree = "<group>"; };
+		35799F0F16367F1900F7FD4E /* cleanser7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser7.h; sourceTree = "<group>"; };
+		35799F1016367F1900F7FD4E /* cleanser8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser8.c; sourceTree = "<group>"; };
+		35799F1116367F1900F7FD4E /* cleanser8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser8.h; sourceTree = "<group>"; };
+		35799F1216367F1900F7FD4E /* cleanser9.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser9.c; sourceTree = "<group>"; };
+		35799F1316367F1900F7FD4E /* cleanser9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser9.h; sourceTree = "<group>"; };
+		35799F1416367F1900F7FD4E /* cleanser10.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser10.c; sourceTree = "<group>"; };
+		35799F1516367F1900F7FD4E /* cleanser10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser10.h; sourceTree = "<group>"; };
+		35799F1616367F1900F7FD4E /* cleanser11.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser11.c; sourceTree = "<group>"; };
+		35799F1716367F1900F7FD4E /* cleanser11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser11.h; sourceTree = "<group>"; };
+		35799F1816367F1900F7FD4E /* cleanser12.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser12.c; sourceTree = "<group>"; };
+		35799F1916367F1900F7FD4E /* cleanser12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser12.h; sourceTree = "<group>"; };
+		35799F1A16367F1900F7FD4E /* cleanser13.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser13.c; sourceTree = "<group>"; };
+		35799F1B16367F1900F7FD4E /* cleanser13.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser13.h; sourceTree = "<group>"; };
+		35799F1C16367F1900F7FD4E /* cleanser14.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser14.c; sourceTree = "<group>"; };
+		35799F1D16367F1900F7FD4E /* cleanser14.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser14.h; sourceTree = "<group>"; };
+		35799F1E16367F1900F7FD4E /* cleanser15.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser15.c; sourceTree = "<group>"; };
+		35799F1F16367F1900F7FD4E /* cleanser15.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser15.h; sourceTree = "<group>"; };
+		35799F2016367F1900F7FD4E /* cleanser16.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser16.c; sourceTree = "<group>"; };
+		35799F2116367F1900F7FD4E /* cleanser16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser16.h; sourceTree = "<group>"; };
+		35799F2216367F1900F7FD4E /* cleanser17.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser17.c; sourceTree = "<group>"; };
+		35799F2316367F1900F7FD4E /* cleanser17.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser17.h; sourceTree = "<group>"; };
+		35799F2416367F1900F7FD4E /* cleanser18.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser18.c; sourceTree = "<group>"; };
+		35799F2516367F1900F7FD4E /* cleanser18.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser18.h; sourceTree = "<group>"; };
+		35799F2616367F1900F7FD4E /* cleanser19.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser19.c; sourceTree = "<group>"; };
+		35799F2716367F1900F7FD4E /* cleanser19.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser19.h; sourceTree = "<group>"; };
+		35799F2816367F1900F7FD4E /* cleanser20.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser20.c; sourceTree = "<group>"; };
+		35799F2916367F1900F7FD4E /* cleanser20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser20.h; sourceTree = "<group>"; };
+		35799F4816367F3100F7FD4E /* Cleanser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cleanser.h; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* Cleanser_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cleanser_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C214D019180CE6B700DCAC57 /* libCleanserMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCleanserMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AAC07E0554694100DB518D /* libCleanser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCleanser.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C214D014180CE6B700DCAC57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C214D015180CE6B700DCAC57 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libCleanser.a */,
+				C214D019180CE6B700DCAC57 /* libCleanserMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Cleanser */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = Cleanser;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35799F4816367F3100F7FD4E /* Cleanser.h */,
+				35799EF016367D0200F7FD4E /* cleanser1.c */,
+				35799EF116367D0200F7FD4E /* cleanser1.h */,
+				35799EF216367D0200F7FD4E /* cleanser2.c */,
+				35799EF316367D0200F7FD4E /* cleanser2.h */,
+				35799EF416367D0200F7FD4E /* cleanser3.c */,
+				35799EF516367D0200F7FD4E /* cleanser3.h */,
+				35799EF616367D0200F7FD4E /* cleanser4.c */,
+				35799EF716367D0200F7FD4E /* cleanser4.h */,
+				35799EF816367D0200F7FD4E /* cleanser5.c */,
+				35799EF916367D0200F7FD4E /* cleanser5.h */,
+				35799F0C16367F1900F7FD4E /* cleanser6.c */,
+				35799F0D16367F1900F7FD4E /* cleanser6.h */,
+				35799F0E16367F1900F7FD4E /* cleanser7.c */,
+				35799F0F16367F1900F7FD4E /* cleanser7.h */,
+				35799F1016367F1900F7FD4E /* cleanser8.c */,
+				35799F1116367F1900F7FD4E /* cleanser8.h */,
+				35799F1216367F1900F7FD4E /* cleanser9.c */,
+				35799F1316367F1900F7FD4E /* cleanser9.h */,
+				35799F1416367F1900F7FD4E /* cleanser10.c */,
+				35799F1516367F1900F7FD4E /* cleanser10.h */,
+				35799F1616367F1900F7FD4E /* cleanser11.c */,
+				35799F1716367F1900F7FD4E /* cleanser11.h */,
+				35799F1816367F1900F7FD4E /* cleanser12.c */,
+				35799F1916367F1900F7FD4E /* cleanser12.h */,
+				35799F1A16367F1900F7FD4E /* cleanser13.c */,
+				35799F1B16367F1900F7FD4E /* cleanser13.h */,
+				35799F1C16367F1900F7FD4E /* cleanser14.c */,
+				35799F1D16367F1900F7FD4E /* cleanser14.h */,
+				35799F1E16367F1900F7FD4E /* cleanser15.c */,
+				35799F1F16367F1900F7FD4E /* cleanser15.h */,
+				35799F2016367F1900F7FD4E /* cleanser16.c */,
+				35799F2116367F1900F7FD4E /* cleanser16.h */,
+				35799F2216367F1900F7FD4E /* cleanser17.c */,
+				35799F2316367F1900F7FD4E /* cleanser17.h */,
+				35799F2416367F1900F7FD4E /* cleanser18.c */,
+				35799F2516367F1900F7FD4E /* cleanser18.h */,
+				35799F2616367F1900F7FD4E /* cleanser19.c */,
+				35799F2716367F1900F7FD4E /* cleanser19.h */,
+				35799F2816367F1900F7FD4E /* cleanser20.c */,
+				35799F2916367F1900F7FD4E /* cleanser20.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* Cleanser_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C214CFE8180CE6B700DCAC57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C214CFE9180CE6B700DCAC57 /* Cleanser_Prefix.pch in Headers */,
+				C214CFEA180CE6B700DCAC57 /* cleanser1.h in Headers */,
+				C214CFEB180CE6B700DCAC57 /* cleanser2.h in Headers */,
+				C214CFEC180CE6B700DCAC57 /* cleanser3.h in Headers */,
+				C214CFED180CE6B700DCAC57 /* cleanser4.h in Headers */,
+				C214CFEE180CE6B700DCAC57 /* cleanser5.h in Headers */,
+				C214CFEF180CE6B700DCAC57 /* cleanser6.h in Headers */,
+				C214CFF0180CE6B700DCAC57 /* cleanser7.h in Headers */,
+				C214CFF1180CE6B700DCAC57 /* cleanser8.h in Headers */,
+				C214CFF2180CE6B700DCAC57 /* cleanser9.h in Headers */,
+				C214CFF3180CE6B700DCAC57 /* cleanser10.h in Headers */,
+				C214CFF4180CE6B700DCAC57 /* cleanser11.h in Headers */,
+				C214CFF5180CE6B700DCAC57 /* cleanser12.h in Headers */,
+				C214CFF6180CE6B700DCAC57 /* cleanser13.h in Headers */,
+				C214CFF7180CE6B700DCAC57 /* cleanser14.h in Headers */,
+				C214CFF8180CE6B700DCAC57 /* cleanser15.h in Headers */,
+				C214CFF9180CE6B700DCAC57 /* cleanser16.h in Headers */,
+				C214CFFA180CE6B700DCAC57 /* cleanser17.h in Headers */,
+				C214CFFB180CE6B700DCAC57 /* cleanser18.h in Headers */,
+				C214CFFC180CE6B700DCAC57 /* cleanser19.h in Headers */,
+				C214CFFD180CE6B700DCAC57 /* cleanser20.h in Headers */,
+				C214CFFE180CE6B700DCAC57 /* Cleanser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* Cleanser_Prefix.pch in Headers */,
+				35799EFB16367D0200F7FD4E /* cleanser1.h in Headers */,
+				35799EFD16367D0200F7FD4E /* cleanser2.h in Headers */,
+				35799EFF16367D0200F7FD4E /* cleanser3.h in Headers */,
+				35799F0116367D0200F7FD4E /* cleanser4.h in Headers */,
+				35799F0316367D0200F7FD4E /* cleanser5.h in Headers */,
+				35799F2B16367F1900F7FD4E /* cleanser6.h in Headers */,
+				35799F2D16367F1900F7FD4E /* cleanser7.h in Headers */,
+				35799F2F16367F1900F7FD4E /* cleanser8.h in Headers */,
+				35799F3116367F1900F7FD4E /* cleanser9.h in Headers */,
+				35799F3316367F1900F7FD4E /* cleanser10.h in Headers */,
+				35799F3516367F1900F7FD4E /* cleanser11.h in Headers */,
+				35799F3716367F1900F7FD4E /* cleanser12.h in Headers */,
+				35799F3916367F1900F7FD4E /* cleanser13.h in Headers */,
+				35799F3B16367F1900F7FD4E /* cleanser14.h in Headers */,
+				35799F3D16367F1900F7FD4E /* cleanser15.h in Headers */,
+				35799F3F16367F1900F7FD4E /* cleanser16.h in Headers */,
+				35799F4116367F1900F7FD4E /* cleanser17.h in Headers */,
+				35799F4316367F1900F7FD4E /* cleanser18.h in Headers */,
+				35799F4516367F1900F7FD4E /* cleanser19.h in Headers */,
+				35799F4716367F1900F7FD4E /* cleanser20.h in Headers */,
+				35799F4916367F3100F7FD4E /* Cleanser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C214CFE7180CE6B700DCAC57 /* CleanserMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C214D016180CE6B700DCAC57 /* Build configuration list for PBXNativeTarget "CleanserMac" */;
+			buildPhases = (
+				C214CFE8180CE6B700DCAC57 /* Headers */,
+				C214CFFF180CE6B700DCAC57 /* Sources */,
+				C214D014180CE6B700DCAC57 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CleanserMac;
+			productName = Cleanser;
+			productReference = C214D019180CE6B700DCAC57 /* libCleanserMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC07D0554694100DB518D /* Cleanser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Cleanser" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cleanser;
+			productName = Cleanser;
+			productReference = D2AAC07E0554694100DB518D /* libCleanser.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Cleanser" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* Cleanser */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* Cleanser */,
+				C214CFE7180CE6B700DCAC57 /* CleanserMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C214CFFF180CE6B700DCAC57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C214D000180CE6B700DCAC57 /* cleanser1.c in Sources */,
+				C214D001180CE6B700DCAC57 /* cleanser2.c in Sources */,
+				C214D002180CE6B700DCAC57 /* cleanser3.c in Sources */,
+				C214D003180CE6B700DCAC57 /* cleanser4.c in Sources */,
+				C214D004180CE6B700DCAC57 /* cleanser5.c in Sources */,
+				C214D005180CE6B700DCAC57 /* cleanser6.c in Sources */,
+				C214D006180CE6B700DCAC57 /* cleanser7.c in Sources */,
+				C214D007180CE6B700DCAC57 /* cleanser8.c in Sources */,
+				C214D008180CE6B700DCAC57 /* cleanser9.c in Sources */,
+				C214D009180CE6B700DCAC57 /* cleanser10.c in Sources */,
+				C214D00A180CE6B700DCAC57 /* cleanser11.c in Sources */,
+				C214D00B180CE6B700DCAC57 /* cleanser12.c in Sources */,
+				C214D00C180CE6B700DCAC57 /* cleanser13.c in Sources */,
+				C214D00D180CE6B700DCAC57 /* cleanser14.c in Sources */,
+				C214D00E180CE6B700DCAC57 /* cleanser15.c in Sources */,
+				C214D00F180CE6B700DCAC57 /* cleanser16.c in Sources */,
+				C214D010180CE6B700DCAC57 /* cleanser17.c in Sources */,
+				C214D011180CE6B700DCAC57 /* cleanser18.c in Sources */,
+				C214D012180CE6B700DCAC57 /* cleanser19.c in Sources */,
+				C214D013180CE6B700DCAC57 /* cleanser20.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35799EFA16367D0200F7FD4E /* cleanser1.c in Sources */,
+				35799EFC16367D0200F7FD4E /* cleanser2.c in Sources */,
+				35799EFE16367D0200F7FD4E /* cleanser3.c in Sources */,
+				35799F0016367D0200F7FD4E /* cleanser4.c in Sources */,
+				35799F0216367D0200F7FD4E /* cleanser5.c in Sources */,
+				35799F2A16367F1900F7FD4E /* cleanser6.c in Sources */,
+				35799F2C16367F1900F7FD4E /* cleanser7.c in Sources */,
+				35799F2E16367F1900F7FD4E /* cleanser8.c in Sources */,
+				35799F3016367F1900F7FD4E /* cleanser9.c in Sources */,
+				35799F3216367F1900F7FD4E /* cleanser10.c in Sources */,
+				35799F3416367F1900F7FD4E /* cleanser11.c in Sources */,
+				35799F3616367F1900F7FD4E /* cleanser12.c in Sources */,
+				35799F3816367F1900F7FD4E /* cleanser13.c in Sources */,
+				35799F3A16367F1900F7FD4E /* cleanser14.c in Sources */,
+				35799F3C16367F1900F7FD4E /* cleanser15.c in Sources */,
+				35799F3E16367F1900F7FD4E /* cleanser16.c in Sources */,
+				35799F4016367F1900F7FD4E /* cleanser17.c in Sources */,
+				35799F4216367F1900F7FD4E /* cleanser18.c in Sources */,
+				35799F4416367F1900F7FD4E /* cleanser19.c in Sources */,
+				35799F4616367F1900F7FD4E /* cleanser20.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/Cleanser.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Cleanser_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = Cleanser;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/Cleanser.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Cleanser_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = Cleanser;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+		C214D017180CE6B700DCAC57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/Cleanser.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Cleanser_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = CleanserMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C214D018180CE6B700DCAC57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DSTROOT = /tmp/Cleanser.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Cleanser_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = CleanserMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Cleanser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Cleanser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C214D016180CE6B700DCAC57 /* Build configuration list for PBXNativeTarget "CleanserMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C214D017180CE6B700DCAC57 /* Debug */,
+				C214D018180CE6B700DCAC57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

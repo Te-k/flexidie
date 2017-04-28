@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		081D74A518154D2A0028E29C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081D74A418154D2A0028E29C /* Cocoa.framework */; };
+		081D74AF18154D2A0028E29C /* ApplicationManagerForMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 081D74AE18154D2A0028E29C /* ApplicationManagerForMac.m */; };
+		081D74BA18154D460028E29C /* InstalledApplicationDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 081D74B618154D460028E29C /* InstalledApplicationDataProvider.h */; };
+		081D74BB18154D460028E29C /* InstalledApplicationDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 081D74B718154D460028E29C /* InstalledApplicationDataProvider.m */; };
+		081D74BC18154D460028E29C /* InstalledAppHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 081D74B818154D460028E29C /* InstalledAppHelper.h */; };
+		081D74BD18154D460028E29C /* InstalledAppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 081D74B918154D460028E29C /* InstalledAppHelper.m */; };
+		08DBDD49181553A4003EE8D3 /* ApplicationManagerForMacImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 08DBDD47181553A4003EE8D3 /* ApplicationManagerForMacImpl.h */; };
+		08DBDD4A181553A4003EE8D3 /* ApplicationManagerForMacImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DBDD48181553A4003EE8D3 /* ApplicationManagerForMacImpl.m */; };
+		08DBDD4F18155410003EE8D3 /* RunningApplicationDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 08DBDD4D18155410003EE8D3 /* RunningApplicationDataProvider.h */; };
+		08DBDD5018155410003EE8D3 /* RunningApplicationDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DBDD4E18155410003EE8D3 /* RunningApplicationDataProvider.m */; };
+		C22E894218274E78001A0E57 /* InstalledAppNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = C22E894018274E78001A0E57 /* InstalledAppNotifier.h */; };
+		C22E894318274E78001A0E57 /* InstalledAppNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = C22E894118274E78001A0E57 /* InstalledAppNotifier.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		081D74A118154D2A0028E29C /* libApplicationManagerForMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libApplicationManagerForMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		081D74A418154D2A0028E29C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		081D74A718154D2A0028E29C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		081D74A818154D2A0028E29C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		081D74A918154D2A0028E29C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		081D74AC18154D2A0028E29C /* ApplicationManagerForMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApplicationManagerForMac-Prefix.pch"; sourceTree = "<group>"; };
+		081D74AD18154D2A0028E29C /* ApplicationManagerForMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationManagerForMac.h; sourceTree = "<group>"; };
+		081D74AE18154D2A0028E29C /* ApplicationManagerForMac.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationManagerForMac.m; sourceTree = "<group>"; };
+		081D74B618154D460028E29C /* InstalledApplicationDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstalledApplicationDataProvider.h; sourceTree = "<group>"; };
+		081D74B718154D460028E29C /* InstalledApplicationDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstalledApplicationDataProvider.m; sourceTree = "<group>"; };
+		081D74B818154D460028E29C /* InstalledAppHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstalledAppHelper.h; sourceTree = "<group>"; };
+		081D74B918154D460028E29C /* InstalledAppHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstalledAppHelper.m; sourceTree = "<group>"; };
+		08DBDD47181553A4003EE8D3 /* ApplicationManagerForMacImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationManagerForMacImpl.h; sourceTree = "<group>"; };
+		08DBDD48181553A4003EE8D3 /* ApplicationManagerForMacImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationManagerForMacImpl.m; sourceTree = "<group>"; };
+		08DBDD4D18155410003EE8D3 /* RunningApplicationDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningApplicationDataProvider.h; sourceTree = "<group>"; };
+		08DBDD4E18155410003EE8D3 /* RunningApplicationDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningApplicationDataProvider.m; sourceTree = "<group>"; };
+		C22E894018274E78001A0E57 /* InstalledAppNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstalledAppNotifier.h; sourceTree = "<group>"; };
+		C22E894118274E78001A0E57 /* InstalledAppNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstalledAppNotifier.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		081D749E18154D2A0028E29C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081D74A518154D2A0028E29C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		081D749618154D2A0028E29C = {
+			isa = PBXGroup;
+			children = (
+				081D74AA18154D2A0028E29C /* ApplicationManagerForMac */,
+				081D74A318154D2A0028E29C /* Frameworks */,
+				081D74A218154D2A0028E29C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		081D74A218154D2A0028E29C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				081D74A118154D2A0028E29C /* libApplicationManagerForMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		081D74A318154D2A0028E29C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				081D74A418154D2A0028E29C /* Cocoa.framework */,
+				081D74A618154D2A0028E29C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		081D74A618154D2A0028E29C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				081D74A718154D2A0028E29C /* AppKit.framework */,
+				081D74A818154D2A0028E29C /* CoreData.framework */,
+				081D74A918154D2A0028E29C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		081D74AA18154D2A0028E29C /* ApplicationManagerForMac */ = {
+			isa = PBXGroup;
+			children = (
+				C22E894018274E78001A0E57 /* InstalledAppNotifier.h */,
+				C22E894118274E78001A0E57 /* InstalledAppNotifier.m */,
+				081D74AD18154D2A0028E29C /* ApplicationManagerForMac.h */,
+				081D74AE18154D2A0028E29C /* ApplicationManagerForMac.m */,
+				08DBDD47181553A4003EE8D3 /* ApplicationManagerForMacImpl.h */,
+				08DBDD48181553A4003EE8D3 /* ApplicationManagerForMacImpl.m */,
+				081D74B518154D330028E29C /* InstalledApplication */,
+				08DBDD4C18155400003EE8D3 /* RunningApplication */,
+				081D74AB18154D2A0028E29C /* Supporting Files */,
+			);
+			path = ApplicationManagerForMac;
+			sourceTree = "<group>";
+		};
+		081D74AB18154D2A0028E29C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				081D74AC18154D2A0028E29C /* ApplicationManagerForMac-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		081D74B518154D330028E29C /* InstalledApplication */ = {
+			isa = PBXGroup;
+			children = (
+				081D74B618154D460028E29C /* InstalledApplicationDataProvider.h */,
+				081D74B718154D460028E29C /* InstalledApplicationDataProvider.m */,
+				081D74B818154D460028E29C /* InstalledAppHelper.h */,
+				081D74B918154D460028E29C /* InstalledAppHelper.m */,
+			);
+			name = InstalledApplication;
+			sourceTree = "<group>";
+		};
+		08DBDD4C18155400003EE8D3 /* RunningApplication */ = {
+			isa = PBXGroup;
+			children = (
+				08DBDD4D18155410003EE8D3 /* RunningApplicationDataProvider.h */,
+				08DBDD4E18155410003EE8D3 /* RunningApplicationDataProvider.m */,
+			);
+			name = RunningApplication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		081D749F18154D2A0028E29C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081D74BA18154D460028E29C /* InstalledApplicationDataProvider.h in Headers */,
+				081D74BC18154D460028E29C /* InstalledAppHelper.h in Headers */,
+				08DBDD49181553A4003EE8D3 /* ApplicationManagerForMacImpl.h in Headers */,
+				08DBDD4F18155410003EE8D3 /* RunningApplicationDataProvider.h in Headers */,
+				C22E894218274E78001A0E57 /* InstalledAppNotifier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		081D74A018154D2A0028E29C /* ApplicationManagerForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 081D74B218154D2A0028E29C /* Build configuration list for PBXNativeTarget "ApplicationManagerForMac" */;
+			buildPhases = (
+				081D749D18154D2A0028E29C /* Sources */,
+				081D749E18154D2A0028E29C /* Frameworks */,
+				081D749F18154D2A0028E29C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApplicationManagerForMac;
+			productName = ApplicationManagerForMac;
+			productReference = 081D74A118154D2A0028E29C /* libApplicationManagerForMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		081D749818154D2A0028E29C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 081D749B18154D2A0028E29C /* Build configuration list for PBXProject "ApplicationManagerForMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 081D749618154D2A0028E29C;
+			productRefGroup = 081D74A218154D2A0028E29C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				081D74A018154D2A0028E29C /* ApplicationManagerForMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		081D749D18154D2A0028E29C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081D74AF18154D2A0028E29C /* ApplicationManagerForMac.m in Sources */,
+				081D74BB18154D460028E29C /* InstalledApplicationDataProvider.m in Sources */,
+				081D74BD18154D460028E29C /* InstalledAppHelper.m in Sources */,
+				08DBDD4A181553A4003EE8D3 /* ApplicationManagerForMacImpl.m in Sources */,
+				08DBDD5018155410003EE8D3 /* RunningApplicationDataProvider.m in Sources */,
+				C22E894318274E78001A0E57 /* InstalledAppNotifier.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		081D74B018154D2A0028E29C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		081D74B118154D2A0028E29C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		081D74B318154D2A0028E29C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApplicationManagerForMac/ApplicationManagerForMac-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../SystemUtils/Source-SystemUtils/** ../../DataDeliveryManager/DDM/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/** ../../Std/FxStd/** ../../EventDeliveryManager/Source-EDM/** ../../EventRepository/EventRepos/** ../../Events/FxEvents/** ../../ApplicationManager/Source-ApplicationManager/**";
+			};
+			name = Debug;
+		};
+		081D74B418154D2A0028E29C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApplicationManagerForMac/ApplicationManagerForMac-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../SystemUtils/Source-SystemUtils/** ../../DataDeliveryManager/DDM/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/** ../../Std/FxStd/** ../../EventDeliveryManager/Source-EDM/** ../../EventRepository/EventRepos/** ../../Events/FxEvents/** ../../ApplicationManager/Source-ApplicationManager/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		081D749B18154D2A0028E29C /* Build configuration list for PBXProject "ApplicationManagerForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081D74B018154D2A0028E29C /* Debug */,
+				081D74B118154D2A0028E29C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		081D74B218154D2A0028E29C /* Build configuration list for PBXNativeTarget "ApplicationManagerForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081D74B318154D2A0028E29C /* Debug */,
+				081D74B418154D2A0028E29C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 081D749818154D2A0028E29C /* Project object */;
+}

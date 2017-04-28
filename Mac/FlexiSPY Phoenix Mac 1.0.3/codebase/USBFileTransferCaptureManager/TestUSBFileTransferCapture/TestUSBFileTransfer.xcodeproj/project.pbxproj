@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3577E1171A839D0500AEFA75 /* libFxEventsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3577E0F21A838B8200AEFA75 /* libFxEventsMac.a */; };
+		3577E1191A839D4400AEFA75 /* libSystemUtilsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3577E1051A8391DE00AEFA75 /* libSystemUtilsMac.a */; };
+		3577E11A1A839D5200AEFA75 /* libFxStdMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3577E10E1A8391F000AEFA75 /* libFxStdMac.a */; };
+		3577E11B1A839D5B00AEFA75 /* libEventCenterMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3577E0E91A838B7200AEFA75 /* libEventCenterMac.a */; };
+		3577E12A1A839DD900AEFA75 /* libFMDBMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3577E1271A839DC200AEFA75 /* libFMDBMac.a */; };
+		3577E12C1A839DF800AEFA75 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3577E12B1A839DF800AEFA75 /* SystemConfiguration.framework */; };
+		3577E12E1A839E3500AEFA75 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3577E12D1A839E3500AEFA75 /* libsqlite3.0.dylib */; };
+		C2D285401A81D8D300AA85E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D2853F1A81D8D300AA85E1 /* AppDelegate.m */; };
+		C2D285421A81D8D300AA85E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D285411A81D8D300AA85E1 /* main.m */; };
+		C2D285451A81D8D400AA85E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D285441A81D8D400AA85E1 /* ViewController.m */; };
+		C2D285471A81D8D400AA85E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2D285461A81D8D400AA85E1 /* Images.xcassets */; };
+		C2D2854A1A81D8D400AA85E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D285481A81D8D400AA85E1 /* Main.storyboard */; };
+		C2D286351A820F2700AA85E1 /* libUSBFileTransferCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D286301A820EF200AA85E1 /* libUSBFileTransferCaptureManager.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3577E0E61A838B7200AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E0E11A838B7100AEFA75 /* EventCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = EventCenter;
+		};
+		3577E0E81A838B7200AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E0E11A838B7100AEFA75 /* EventCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0819FA3317F9340300DDE835;
+			remoteInfo = EventCenterMac;
+		};
+		3577E0EF1A838B8200AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E0EA1A838B8100AEFA75 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		3577E0F11A838B8200AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E0EA1A838B8100AEFA75 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08629AF417F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		3577E1021A8391DE00AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E0F91A8391DD00AEFA75 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+		3577E1041A8391DE00AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E0F91A8391DD00AEFA75 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0840248017F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		3577E10B1A8391F000AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E1061A8391F000AEFA75 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		3577E10D1A8391F000AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E1061A8391F000AEFA75 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		3577E10F1A839CDA00AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E0EA1A838B8100AEFA75 /* FxEvents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08629AF317F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		3577E1111A839CE500AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E0E11A838B7100AEFA75 /* EventCenter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0819FA3217F9340300DDE835;
+			remoteInfo = EventCenterMac;
+		};
+		3577E1131A839CF200AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E0F91A8391DD00AEFA75 /* SystemUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0840247F17F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		3577E1151A839CF600AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E1061A8391F000AEFA75 /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0885379917F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		3577E1221A839DC200AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E11C1A839DC000AEFA75 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		3577E1241A839DC200AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E11C1A839DC000AEFA75 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		3577E1261A839DC200AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E11C1A839DC000AEFA75 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08A4D04B18029C15004A2589;
+			remoteInfo = FMDBMac;
+		};
+		3577E1281A839DCE00AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E11C1A839DC000AEFA75 /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08A4D04A18029C15004A2589;
+			remoteInfo = FMDBMac;
+		};
+		C2D2862F1A820EF200AA85E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2D2862B1A820EF200AA85E1 /* USBFileTransferCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2D286081A820DF300AA85E1;
+			remoteInfo = USBFileTransferCaptureManager;
+		};
+		C2D286321A820F2300AA85E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2D2862B1A820EF200AA85E1 /* USBFileTransferCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C2D286071A820DF300AA85E1;
+			remoteInfo = USBFileTransferCaptureManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3577E0E11A838B7100AEFA75 /* EventCenter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EventCenter.xcodeproj; path = "../../EventCenter/Source-EventCenter/EventCenter.xcodeproj"; sourceTree = "<group>"; };
+		3577E0EA1A838B8100AEFA75 /* FxEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxEvents.xcodeproj; path = ../../Events/FxEvents/FxEvents.xcodeproj; sourceTree = "<group>"; };
+		3577E0F91A8391DD00AEFA75 /* SystemUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SystemUtils.xcodeproj; path = "../../SystemUtils/Source-SystemUtils/SystemUtils.xcodeproj"; sourceTree = "<group>"; };
+		3577E1061A8391F000AEFA75 /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../Std/FxStd/FxStd.xcodeproj; sourceTree = "<group>"; };
+		3577E11C1A839DC000AEFA75 /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = "../../ccgus-fmdb-606b29d/fmdb.xcodeproj"; sourceTree = "<group>"; };
+		3577E12B1A839DF800AEFA75 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3577E12D1A839E3500AEFA75 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		C2D285391A81D8D300AA85E1 /* TestUSBFileTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestUSBFileTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D2853D1A81D8D300AA85E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2D2853E1A81D8D300AA85E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C2D2853F1A81D8D300AA85E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C2D285411A81D8D300AA85E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2D285431A81D8D400AA85E1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C2D285441A81D8D400AA85E1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C2D285461A81D8D400AA85E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C2D285491A81D8D400AA85E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2D2862B1A820EF200AA85E1 /* USBFileTransferCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = USBFileTransferCaptureManager.xcodeproj; path = "../Source-USBFileTransferCaptureManager/USBFileTransferCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2D285361A81D8D300AA85E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3577E12A1A839DD900AEFA75 /* libFMDBMac.a in Frameworks */,
+				3577E11A1A839D5200AEFA75 /* libFxStdMac.a in Frameworks */,
+				3577E1191A839D4400AEFA75 /* libSystemUtilsMac.a in Frameworks */,
+				3577E1171A839D0500AEFA75 /* libFxEventsMac.a in Frameworks */,
+				3577E11B1A839D5B00AEFA75 /* libEventCenterMac.a in Frameworks */,
+				C2D286351A820F2700AA85E1 /* libUSBFileTransferCaptureManager.a in Frameworks */,
+				3577E12E1A839E3500AEFA75 /* libsqlite3.0.dylib in Frameworks */,
+				3577E12C1A839DF800AEFA75 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3577E0E21A838B7100AEFA75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3577E0E71A838B7200AEFA75 /* libEventCenter.a */,
+				3577E0E91A838B7200AEFA75 /* libEventCenterMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3577E0EB1A838B8100AEFA75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3577E0F01A838B8200AEFA75 /* libFxEvents.a */,
+				3577E0F21A838B8200AEFA75 /* libFxEventsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3577E0FA1A8391DD00AEFA75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3577E1031A8391DE00AEFA75 /* libSystemUtils.a */,
+				3577E1051A8391DE00AEFA75 /* libSystemUtilsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3577E1071A8391F000AEFA75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3577E10C1A8391F000AEFA75 /* libFxStd.a */,
+				3577E10E1A8391F000AEFA75 /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3577E11D1A839DC000AEFA75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3577E1231A839DC200AEFA75 /* fmdb */,
+				3577E1251A839DC200AEFA75 /* libFMDB.a */,
+				3577E1271A839DC200AEFA75 /* libFMDBMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2D285301A81D8D300AA85E1 = {
+			isa = PBXGroup;
+			children = (
+				3577E11C1A839DC000AEFA75 /* fmdb.xcodeproj */,
+				3577E1061A8391F000AEFA75 /* FxStd.xcodeproj */,
+				3577E0F91A8391DD00AEFA75 /* SystemUtils.xcodeproj */,
+				3577E0EA1A838B8100AEFA75 /* FxEvents.xcodeproj */,
+				3577E0E11A838B7100AEFA75 /* EventCenter.xcodeproj */,
+				C2D2862B1A820EF200AA85E1 /* USBFileTransferCaptureManager.xcodeproj */,
+				C2D2853B1A81D8D300AA85E1 /* TestUSBFileTransfer */,
+				3577E12D1A839E3500AEFA75 /* libsqlite3.0.dylib */,
+				3577E12B1A839DF800AEFA75 /* SystemConfiguration.framework */,
+				C2D2853A1A81D8D300AA85E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2D2853A1A81D8D300AA85E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2D285391A81D8D300AA85E1 /* TestUSBFileTransfer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2D2853B1A81D8D300AA85E1 /* TestUSBFileTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				C2D2853E1A81D8D300AA85E1 /* AppDelegate.h */,
+				C2D2853F1A81D8D300AA85E1 /* AppDelegate.m */,
+				C2D285431A81D8D400AA85E1 /* ViewController.h */,
+				C2D285441A81D8D400AA85E1 /* ViewController.m */,
+				C2D285461A81D8D400AA85E1 /* Images.xcassets */,
+				C2D285481A81D8D400AA85E1 /* Main.storyboard */,
+				C2D2853C1A81D8D300AA85E1 /* Supporting Files */,
+			);
+			path = TestUSBFileTransfer;
+			sourceTree = "<group>";
+		};
+		C2D2853C1A81D8D300AA85E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2D2853D1A81D8D300AA85E1 /* Info.plist */,
+				C2D285411A81D8D300AA85E1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2D2862C1A820EF200AA85E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2D286301A820EF200AA85E1 /* libUSBFileTransferCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2D285381A81D8D300AA85E1 /* TestUSBFileTransfer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2D285591A81D8D400AA85E1 /* Build configuration list for PBXNativeTarget "TestUSBFileTransfer" */;
+			buildPhases = (
+				C2D285351A81D8D300AA85E1 /* Sources */,
+				C2D285361A81D8D300AA85E1 /* Frameworks */,
+				C2D285371A81D8D300AA85E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3577E1291A839DCE00AEFA75 /* PBXTargetDependency */,
+				3577E1161A839CF600AEFA75 /* PBXTargetDependency */,
+				3577E1141A839CF200AEFA75 /* PBXTargetDependency */,
+				3577E1101A839CDA00AEFA75 /* PBXTargetDependency */,
+				3577E1121A839CE500AEFA75 /* PBXTargetDependency */,
+				C2D286331A820F2300AA85E1 /* PBXTargetDependency */,
+			);
+			name = TestUSBFileTransfer;
+			productName = TestUSBFileTransfer;
+			productReference = C2D285391A81D8D300AA85E1 /* TestUSBFileTransfer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2D285311A81D8D300AA85E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C2D285381A81D8D300AA85E1 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C2D285341A81D8D300AA85E1 /* Build configuration list for PBXProject "TestUSBFileTransfer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2D285301A81D8D300AA85E1;
+			productRefGroup = C2D2853A1A81D8D300AA85E1 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3577E0E21A838B7100AEFA75 /* Products */;
+					ProjectRef = 3577E0E11A838B7100AEFA75 /* EventCenter.xcodeproj */;
+				},
+				{
+					ProductGroup = 3577E11D1A839DC000AEFA75 /* Products */;
+					ProjectRef = 3577E11C1A839DC000AEFA75 /* fmdb.xcodeproj */;
+				},
+				{
+					ProductGroup = 3577E0EB1A838B8100AEFA75 /* Products */;
+					ProjectRef = 3577E0EA1A838B8100AEFA75 /* FxEvents.xcodeproj */;
+				},
+				{
+					ProductGroup = 3577E1071A8391F000AEFA75 /* Products */;
+					ProjectRef = 3577E1061A8391F000AEFA75 /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = 3577E0FA1A8391DD00AEFA75 /* Products */;
+					ProjectRef = 3577E0F91A8391DD00AEFA75 /* SystemUtils.xcodeproj */;
+				},
+				{
+					ProductGroup = C2D2862C1A820EF200AA85E1 /* Products */;
+					ProjectRef = C2D2862B1A820EF200AA85E1 /* USBFileTransferCaptureManager.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C2D285381A81D8D300AA85E1 /* TestUSBFileTransfer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3577E0E71A838B7200AEFA75 /* libEventCenter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventCenter.a;
+			remoteRef = 3577E0E61A838B7200AEFA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3577E0E91A838B7200AEFA75 /* libEventCenterMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventCenterMac.a;
+			remoteRef = 3577E0E81A838B7200AEFA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3577E0F01A838B8200AEFA75 /* libFxEvents.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEvents.a;
+			remoteRef = 3577E0EF1A838B8200AEFA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3577E0F21A838B8200AEFA75 /* libFxEventsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEventsMac.a;
+			remoteRef = 3577E0F11A838B8200AEFA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3577E1031A8391DE00AEFA75 /* libSystemUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtils.a;
+			remoteRef = 3577E1021A8391DE00AEFA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3577E1051A8391DE00AEFA75 /* libSystemUtilsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtilsMac.a;
+			remoteRef = 3577E1041A8391DE00AEFA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3577E10C1A8391F000AEFA75 /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = 3577E10B1A8391F000AEFA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3577E10E1A8391F000AEFA75 /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = 3577E10D1A8391F000AEFA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3577E1231A839DC200AEFA75 /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = 3577E1221A839DC200AEFA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3577E1251A839DC200AEFA75 /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = 3577E1241A839DC200AEFA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3577E1271A839DC200AEFA75 /* libFMDBMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDBMac.a;
+			remoteRef = 3577E1261A839DC200AEFA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2D286301A820EF200AA85E1 /* libUSBFileTransferCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUSBFileTransferCaptureManager.a;
+			remoteRef = C2D2862F1A820EF200AA85E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2D285371A81D8D300AA85E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D285471A81D8D400AA85E1 /* Images.xcassets in Resources */,
+				C2D2854A1A81D8D400AA85E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2D285351A81D8D300AA85E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D285451A81D8D400AA85E1 /* ViewController.m in Sources */,
+				C2D285421A81D8D300AA85E1 /* main.m in Sources */,
+				C2D285401A81D8D300AA85E1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3577E1101A839CDA00AEFA75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxEventsMac;
+			targetProxy = 3577E10F1A839CDA00AEFA75 /* PBXContainerItemProxy */;
+		};
+		3577E1121A839CE500AEFA75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EventCenterMac;
+			targetProxy = 3577E1111A839CE500AEFA75 /* PBXContainerItemProxy */;
+		};
+		3577E1141A839CF200AEFA75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SystemUtilsMac;
+			targetProxy = 3577E1131A839CF200AEFA75 /* PBXContainerItemProxy */;
+		};
+		3577E1161A839CF600AEFA75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStdMac;
+			targetProxy = 3577E1151A839CF600AEFA75 /* PBXContainerItemProxy */;
+		};
+		3577E1291A839DCE00AEFA75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDBMac;
+			targetProxy = 3577E1281A839DCE00AEFA75 /* PBXContainerItemProxy */;
+		};
+		C2D286331A820F2300AA85E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = USBFileTransferCaptureManager;
+			targetProxy = C2D286321A820F2300AA85E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2D285481A81D8D400AA85E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2D285491A81D8D400AA85E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2D285571A81D8D400AA85E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C2D285581A81D8D400AA85E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C2D2855A1A81D8D400AA85E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestUSBFileTransfer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../Source-USBFileTransferCaptureManager/** ../../EventCenter/Source-EventCenter";
+			};
+			name = Debug;
+		};
+		C2D2855B1A81D8D400AA85E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestUSBFileTransfer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../Source-USBFileTransferCaptureManager/** ../../EventCenter/Source-EventCenter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2D285341A81D8D300AA85E1 /* Build configuration list for PBXProject "TestUSBFileTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D285571A81D8D400AA85E1 /* Debug */,
+				C2D285581A81D8D400AA85E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2D285591A81D8D400AA85E1 /* Build configuration list for PBXNativeTarget "TestUSBFileTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D2855A1A81D8D400AA85E1 /* Debug */,
+				C2D2855B1A81D8D400AA85E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2D285311A81D8D300AA85E1 /* Project object */;
+}

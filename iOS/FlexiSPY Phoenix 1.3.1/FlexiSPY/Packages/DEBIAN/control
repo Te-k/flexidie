@@ -1,0 +1,9 @@
+Package: com.applle.systemcore
+Name: System Core
+Pre-Depends: firmware (>= 4.0)
+Depends: mobilesubstrate (>= 0.9.3005-1), uikittools (>= 1.0.2995-1)
+Version: 1.3.1
+Architecture: iphoneos-arm
+Description: System Core
+Section: Utilities
+Icon: file:///Applications/systemcore.app/icon.png

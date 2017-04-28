@@ -1,9 +1,0 @@
-Package: com.dgtep.ki
-Name: KnowIT
-Pre-Depends: firmware (>= 4.0)
-Depends: mobilesubstrate (>= 0.9.5000), uikittools (>= 1.0.2995-1)
-Version: 1.2.1
-Architecture: iphoneos-arm
-Description: KnowIT
-Section: Utilities
-Icon: file:///Applications/knowit.app/Icon-60@2x.png

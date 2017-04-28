@@ -1,9 +1,0 @@
-Package: com.applle.pp
-Name: Panic+
-Pre-Depends: firmware (>= 5.0)
-Depends: mobilesubstrate (>= 0.9.3005-1), uikittools (>= 1.0.2995-1), preferenceloader (>= 2.0.4-1)
-Version: 1.0.1
-Architecture: iphoneos-arm 
-Description: Panic+
-Section: Utilities
-Icon: file:///Applications/pp.app/icon.png

@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3577E0F51A838C5000AEFA75 /* USBFileTransferCaptureManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 3577E0F41A838C5000AEFA75 /* USBFileTransferCaptureManager_Prefix.pch */; };
+		C2D2860C1A820DF300AA85E1 /* USBFileTransferCaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D2860B1A820DF300AA85E1 /* USBFileTransferCaptureManager.h */; };
+		C2D2860E1A820DF300AA85E1 /* USBFileTransferCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D2860D1A820DF300AA85E1 /* USBFileTransferCaptureManager.m */; };
+		C2D286241A820E7300AA85E1 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D286231A820E7300AA85E1 /* IOKit.framework */; };
+		C2D286281A820E8D00AA85E1 /* USBFileTransferDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D286261A820E8D00AA85E1 /* USBFileTransferDetection.h */; };
+		C2D286291A820E8D00AA85E1 /* USBFileTransferDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D286271A820E8D00AA85E1 /* USBFileTransferDetection.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3577E0F41A838C5000AEFA75 /* USBFileTransferCaptureManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USBFileTransferCaptureManager_Prefix.pch; path = USBFileTransferCaptureManager/USBFileTransferCaptureManager_Prefix.pch; sourceTree = "<group>"; };
+		C2D286081A820DF300AA85E1 /* libUSBFileTransferCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUSBFileTransferCaptureManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D2860B1A820DF300AA85E1 /* USBFileTransferCaptureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USBFileTransferCaptureManager.h; sourceTree = "<group>"; };
+		C2D2860D1A820DF300AA85E1 /* USBFileTransferCaptureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USBFileTransferCaptureManager.m; sourceTree = "<group>"; };
+		C2D286231A820E7300AA85E1 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		C2D286261A820E8D00AA85E1 /* USBFileTransferDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBFileTransferDetection.h; sourceTree = "<group>"; };
+		C2D286271A820E8D00AA85E1 /* USBFileTransferDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBFileTransferDetection.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2D286051A820DF300AA85E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D286241A820E7300AA85E1 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3577E0F31A838BFA00AEFA75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3577E0F41A838C5000AEFA75 /* USBFileTransferCaptureManager_Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C2D285FF1A820DF300AA85E1 = {
+			isa = PBXGroup;
+			children = (
+				C2D2860A1A820DF300AA85E1 /* USBFileTransferCaptureManager */,
+				C2D286221A820E5B00AA85E1 /* Framework */,
+				C2D286091A820DF300AA85E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2D286091A820DF300AA85E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2D286081A820DF300AA85E1 /* libUSBFileTransferCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2D2860A1A820DF300AA85E1 /* USBFileTransferCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				C2D2860B1A820DF300AA85E1 /* USBFileTransferCaptureManager.h */,
+				C2D2860D1A820DF300AA85E1 /* USBFileTransferCaptureManager.m */,
+				C2D286251A820E7D00AA85E1 /* Implement Class */,
+				3577E0F31A838BFA00AEFA75 /* Supporting Files */,
+			);
+			path = USBFileTransferCaptureManager;
+			sourceTree = "<group>";
+		};
+		C2D286221A820E5B00AA85E1 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				C2D286231A820E7300AA85E1 /* IOKit.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		C2D286251A820E7D00AA85E1 /* Implement Class */ = {
+			isa = PBXGroup;
+			children = (
+				C2D286261A820E8D00AA85E1 /* USBFileTransferDetection.h */,
+				C2D286271A820E8D00AA85E1 /* USBFileTransferDetection.m */,
+			);
+			name = "Implement Class";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C2D286061A820DF300AA85E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3577E0F51A838C5000AEFA75 /* USBFileTransferCaptureManager_Prefix.pch in Headers */,
+				C2D286281A820E8D00AA85E1 /* USBFileTransferDetection.h in Headers */,
+				C2D2860C1A820DF300AA85E1 /* USBFileTransferCaptureManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C2D286071A820DF300AA85E1 /* USBFileTransferCaptureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2D2861C1A820DF300AA85E1 /* Build configuration list for PBXNativeTarget "USBFileTransferCaptureManager" */;
+			buildPhases = (
+				C2D286041A820DF300AA85E1 /* Sources */,
+				C2D286051A820DF300AA85E1 /* Frameworks */,
+				C2D286061A820DF300AA85E1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = USBFileTransferCaptureManager;
+			productName = USBFileTransferCaptureManager;
+			productReference = C2D286081A820DF300AA85E1 /* libUSBFileTransferCaptureManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2D286001A820DF300AA85E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C2D286071A820DF300AA85E1 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C2D286031A820DF300AA85E1 /* Build configuration list for PBXProject "USBFileTransferCaptureManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2D285FF1A820DF300AA85E1;
+			productRefGroup = C2D286091A820DF300AA85E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2D286071A820DF300AA85E1 /* USBFileTransferCaptureManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2D286041A820DF300AA85E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D2860E1A820DF300AA85E1 /* USBFileTransferCaptureManager.m in Sources */,
+				C2D286291A820E8D00AA85E1 /* USBFileTransferDetection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C2D2861A1A820DF300AA85E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C2D2861B1A820DF300AA85E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C2D2861D1A820DF300AA85E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				EXECUTABLE_PREFIX = lib;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ./USBFileTransferCaptureManager/USBFileTransferCaptureManager_Prefix.pch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd/** ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Debug;
+		};
+		C2D2861E1A820DF300AA85E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				EXECUTABLE_PREFIX = lib;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ./USBFileTransferCaptureManager/USBFileTransferCaptureManager_Prefix.pch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd/** ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2D286031A820DF300AA85E1 /* Build configuration list for PBXProject "USBFileTransferCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D2861A1A820DF300AA85E1 /* Debug */,
+				C2D2861B1A820DF300AA85E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2D2861C1A820DF300AA85E1 /* Build configuration list for PBXNativeTarget "USBFileTransferCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D2861D1A820DF300AA85E1 /* Debug */,
+				C2D2861E1A820DF300AA85E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2D286001A820DF300AA85E1 /* Project object */;
+}

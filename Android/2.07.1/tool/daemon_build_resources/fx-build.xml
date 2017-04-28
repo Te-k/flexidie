@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="fx-build" default="">
+	
+	<import file="fx-taskdef.xml"/>
+    
+	<!-- 
+	The following parameters are required:-
+		ndk.build.option - yes or no
+		cygwin.dir - e.g. c:/android/cygwin
+		cygwin.ndk.dir - e.g. /cygdrive/c/android/android-ndk-r5c 
+	-->
+	<macrodef name="fx-ndk-build">
+		<attribute name="ndk.build.option" />
+		<attribute name="cygwin.dir" />
+		<attribute name="cygwin.ndk.dir" />
+		<attribute name="working.dir" />
+		<sequential>
+			<echo message="fx-ndk-build # ENTER ..." />
+			<if>
+				<equals arg1="@{ndk.build.option}" arg2="yes" casesensitive="false" />
+				<then>
+					<echo message="Perform NDK build..."/>
+					<exec executable="@{cygwin.dir}/bin/bash" failonerror="true" dir="@{working.dir}">
+						<arg value="@{cygwin.ndk.dir}/ndk-build"/>
+					</exec>
+				</then>
+				<else>
+					<echo message="Skip building NDK"/>
+				</else>
+			</if>
+			<echo message="fx-ndk-build # EXIT ..." />
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="fx-clean" description="Clean intermediate build files">
+		<attribute name="build.dir" />
+		<attribute name="ndk.build.option" />
+		<sequential>
+	        <delete dir="@{build.dir}"/>
+	    	<if>
+				<equals arg1="@{ndk.build.option}" arg2="yes"/>
+				<then>
+					<delete dir="libs/armeabi"/>
+			        <delete dir="obj"/>
+				</then>
+			</if>
+		</sequential>
+    </macrodef>
+	
+	<macrodef name="fx-customization-off">
+		<attribute name="target.dir" />
+		<attribute name="flag.name" />
+		<sequential>
+			<replaceregexp>
+	    		<fileset dir="@{target.dir}">
+	    			<include name="**/Customization.java"/>
+	    		</fileset>
+	    		<regexp pattern="public\s+static\s+[final]*boolean\s+@{flag.name}\s+=\s+true" />
+	    		<substitution expression="public static boolean @{flag.name} = false"/>
+	    	</replaceregexp>
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="fx-delete-log">
+		<attribute name="delete.log.option" />
+		<attribute name="target.dir" />
+		<sequential>
+			<if>
+				<equals arg1="@{delete.log.option}" arg2="yes" casesensitive="false" />
+				<then>
+					<echo message="Delete FxLog..."/>
+					<replaceregexp flags="g">
+			    		<fileset dir="@{target.dir}">
+			    			<include name="**/*.java"/>
+			    			<exclude name="**/FxLog.java"/>
+			    			<exclude name="**/Logger.java"/>
+			    		</fileset>
+			    		<!-- symbols !"#$%&'()*+,-./:<=>?@[]^_{|}\ -->
+						<regexp pattern="FxLog{1}[a-zA-Z0-9\s!\&quot;#$%\&amp;'\(\)\*\+,\-\./:&lt;=&gt;\?@\[\]\^_\{|\}\\]*\);"/>
+			    		<substitution expression="{}"/>
+			    	</replaceregexp>
+					<replaceregexp flags="g">
+			    		<fileset dir="@{target.dir}">
+			    			<include name="**/*.java"/>
+			    		</fileset>
+			    		<!-- symbols !"#$%&'()*+,-./:<=>?@[]^_{|}\ -->
+						<regexp pattern="System.out{1}[a-zA-Z0-9\s!\&quot;#$%\&amp;'\(\)\*\+,\-\./:&lt;=&gt;\?@\[\]\^_\{|\}\\]*\);"/>
+			    		<substitution expression="{}"/>
+			    	</replaceregexp>
+					
+					<fx-customization-off target.dir="@{target.dir}" flag.name="VERBOSE"/>
+					<fx-customization-off target.dir="@{target.dir}" flag.name="DEBUG"/>
+					<fx-customization-off target.dir="@{target.dir}" flag.name="INFO"/>
+					<fx-customization-off target.dir="@{target.dir}" flag.name="WARNING"/>
+					<fx-customization-off target.dir="@{target.dir}" flag.name="ERROR"/>
+				</then>
+			</if>
+		</sequential>
+	</macrodef>
+    
+    <macrodef name="fx-build-dex" description="Compile .java files to .class files">
+		<attribute name="src.dir" />
+		<attribute name="build.dir" />
+    	<attribute name="ext.lib.dir" />
+		<attribute name="classpathref" />
+    	<attribute name="obfuscate.option" />
+    	<attribute name="proguard.config.path"/>
+    	<attribute name="android.lib.jar" />
+    	<attribute name="dx.path"/>
+    	<attribute name="output.dex.zip.path"/>
+    	<attribute name="delete.log.option"/>
+    	
+		<sequential>
+			<echo message="fx-build-dex # ENTER ..." />
+			
+			<mkdir dir="@{build.dir}/classes"/>
+			<mkdir dir="@{build.dir}/jar"/>
+			
+			<!-- Precompile -->
+			<fx-delete-log
+				target.dir="@{src.dir}"
+				delete.log.option="@{delete.log.option}"
+			/>
+			
+			<!-- Compile source -->
+			<echo message="fx-build-dex # Compile source" />
+	        <javac includeAntRuntime="false" encoding="ascii" target="1.5" debug="true" extdirs="" destdir="@{build.dir}/classes">
+	            <src path="@{src.dir}" />
+	            <classpath refid="@{classpathref}"/>
+	        </javac>
+			
+			<!-- Create common JAR file -->
+			<echo message="fx-build-dex # Create common JAR file" />
+			<jar basedir="@{build.dir}/classes" destfile="@{build.dir}/jar/in.jar" />
+			
+			<!-- Obfuscate the source -->
+			<if>
+				<equals arg1="@{obfuscate.option}" arg2="yes"/>
+				<then>
+					<echo message="fx-build-dex # Obfuscate the source code" />
+					<proguard configuration="@{proguard.config.path}">
+		                <injar file="@{build.dir}/jar/in.jar" />
+		                <outjar file="@{build.dir}/jar/out.jar" />
+		                <libraryjar file="@{android.lib.jar}" />
+		            </proguard>
+				</then>
+				<else>
+					<echo message="fx-build-dex # Obfuscate is skipped!!" />
+					<copy file="@{build.dir}/jar/in.jar" tofile="@{build.dir}/jar/out.jar" />
+				</else>
+			</if>
+			
+			<!-- Generate dex zip file -->
+			<echo message="fx-build-dex # Generate dex zip file" />
+			<apply executable="@{dx.path}" failonerror="true" parallel="true">
+	            <arg value="--dex" />
+	            <arg value="--output=@{output.dex.zip.path}" />
+	            <arg path="@{build.dir}/jar/out.jar" />
+	        	<fileset dir="@{ext.lib.dir}" includes="*.jar" />
+	        </apply>
+			
+			<echo message="fx-build-dex # EXIT ..." />
+		</sequential>
+	</macrodef>
+	
+</project>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="prox" default="buildRIM" basedir=".">
+	<taskdef resource="bb-ant-defs.xml" classpath="lib/bb-ant-tools.jar" />
+
+	<property name="projecthomeBase" value="D:\Windy\Eclipse\svnworkspace\TestCompression" />
+	<property name="jdehome" value="D:\java\blackberry-jde4.5.0" />
+	<property name="javahome" value="D:\java\jdk1.6.0_10" />
+	<property name="title" value="TestCompression" />
+	<property name="simulator" value="D:\Windy\Eclipse\plugins\net.rim.ejde.componentpack5.0.0_5.0.0.14\components\simulator" />
+	<property name="bin" value="D:\Windy\Eclipse\svnworkspace\TestCompression\bin" />
+
+	<property name="output" value="${title}" />
+	<property name="vendor" value="System Application" />
+	<property name="version" value="5.0.0.29" />
+
+	<target name="buildRIM" description="Composes RIM" depends="clean">
+		<rapc jdehome="${jdehome}" jdkhome="${javahome}" output="${output}">
+			<jdp title="${title}" vendor="${vendor}" version="${version}" 
+				systemmodule="false" runonstartup="false" type="cldc" />
+			<src>
+				<fileset dir="${projecthomeBase}\src">
+					<include name="**/*.java" />
+				</fileset>
+			</src>
+		</rapc>
+		<copy todir="${projecthomeBase}\deliverables\5.0.0" overwrite="true">
+			<fileset dir=".">
+				<include name="*.cod" />
+				<include name="*.debug" />
+				<include name="*.cso" />
+				<include name="*.jad" />
+				<include name="*.csl" />
+			</fileset>
+		</copy>
+		<copy todir="${simulator}" overwrite="true">
+			<fileset dir=".">
+				<include name="*.cod" />
+				<include name="*.debug" />
+				<include name="*.cso" />
+				<include name="*.jad" />
+			</fileset>
+		</copy>
+		<delete>
+			<fileset dir=".">
+				<include name="*.cod" />
+				<include name="*.cso" />
+				<include name="*.debug" />
+				<include name="*.jad" />
+				<include name="*.jar" />
+				<include name="*.rapc" />
+				<include name="*.csl" />
+			</fileset>
+		</delete>
+	</target>
+
+	<target name="clean">
+		<delete>
+			<fileset dir="bin" includes="**/*.class" />
+			<fileset dir=".">
+				<include name="*.cod" />
+				<include name="*.cso" />
+				<include name="*.debug" />
+				<include name="*.jad" />
+				<include name="*.jar" />
+				<include name="*.rapc" />
+			</fileset>
+		</delete>
+	</target>
+</project>

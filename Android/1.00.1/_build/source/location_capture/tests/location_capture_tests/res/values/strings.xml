@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">NOTE : If you Choose Ondemand you do not need to press Stop Capture button</string>
+    <string name="app_name">Location_capture_tests</string>
+</resources>

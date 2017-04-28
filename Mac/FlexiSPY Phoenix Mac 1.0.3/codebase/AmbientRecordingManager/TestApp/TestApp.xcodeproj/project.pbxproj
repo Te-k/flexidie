@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08C08CD8166865D900000564 /* Recorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C08CD7166865D900000564 /* Recorder.m */; };
+		08C08DDB16686E8800000564 /* libAmbientRecordingManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C08DDA16686E7F00000564 /* libAmbientRecordingManager.a */; };
+		08C08E771668782800000564 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C08E761668782800000564 /* AVFoundation.framework */; };
+		08C08ECE1668783800000564 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C08ECD1668783800000564 /* AudioToolbox.framework */; };
+		08C08F2C16687CFB00000564 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C08F2B16687CFB00000564 /* CoreMedia.framework */; };
+		08C08F3916687D2100000564 /* libFxStd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C08F3416687D1800000564 /* libFxStd.a */; };
+		08C08F4616688D1C00000564 /* libFxEvents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C08F4516688D1A00000564 /* libFxEvents.a */; };
+		08C08FBB16688D7A00000564 /* libSystemUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C08FBA16688D7700000564 /* libSystemUtils.a */; };
+		08C08FD316688DF300000564 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C08FD216688DF300000564 /* CoreGraphics.framework */; };
+		08C08FF716688F2E00000564 /* libMediaThumbnail.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C08FF616688F2A00000564 /* libMediaThumbnail.a */; };
+		08C0902716688F8A00000564 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C0902616688F8A00000564 /* ImageIO.framework */; };
+		08C0906C166890CE00000564 /* libEventCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C0906B166890CB00000564 /* libEventCenter.a */; };
+		1D3623260D0F684500981E51 /* TestAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TestAppAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08C08DD916686E7F00000564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C08DD516686E7F00000564 /* AmbientRecordingManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = AmbientRecordingManager;
+		};
+		08C08DFE16686F5B00000564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C08DD516686E7F00000564 /* AmbientRecordingManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = AmbientRecordingManager;
+		};
+		08C08F3316687D1800000564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C08F2F16687D1800000564 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		08C08F3A16687D2A00000564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C08F2F16687D1800000564 /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		08C08F4416688D1A00000564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C08F4016688D1A00000564 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		08C08FB916688D7700000564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C08FB516688D7700000564 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+		08C08FD716688E2200000564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C08FB516688D7700000564 /* SystemUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+		08C08FD916688E2400000564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C08F4016688D1A00000564 /* FxEvents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		08C08FF516688F2A00000564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C08FF116688F2A00000564 /* MediaThumbnail.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = MediaThumbnail;
+		};
+		08C0906A166890CB00000564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C09066166890CB00000564 /* EventCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = EventCenter;
+		};
+		08C0906D166890D300000564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C09066166890CB00000564 /* EventCenter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = EventCenter;
+		};
+		08C0906F166890D600000564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C08FF116688F2A00000564 /* MediaThumbnail.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = MediaThumbnail;
+		};
+		08DF450F18693AE50025AFD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C09066166890CB00000564 /* EventCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0819FA3317F9340300DDE835;
+			remoteInfo = EventCenterMac;
+		};
+		08DF451218693AE50025AFD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C08F4016688D1A00000564 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08629AF417F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		08DF451518693AE50025AFD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C08F2F16687D1800000564 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		08DF451818693AE50025AFD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C08FB516688D7700000564 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0840248017F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08C08CD6166865D900000564 /* Recorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recorder.h; sourceTree = "<group>"; };
+		08C08CD7166865D900000564 /* Recorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recorder.m; sourceTree = "<group>"; };
+		08C08DD516686E7F00000564 /* AmbientRecordingManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AmbientRecordingManager.xcodeproj; path = "../Source-AmbientRecordingManager/AmbientRecordingManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		08C08E761668782800000564 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		08C08ECD1668783800000564 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		08C08F2B16687CFB00000564 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		08C08F2F16687D1800000564 /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../Std/FxStd/FxStd.xcodeproj; sourceTree = SOURCE_ROOT; };
+		08C08F4016688D1A00000564 /* FxEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxEvents.xcodeproj; path = ../../Events/FxEvents/FxEvents.xcodeproj; sourceTree = SOURCE_ROOT; };
+		08C08FB516688D7700000564 /* SystemUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SystemUtils.xcodeproj; path = "../../SystemUtils/Source-SystemUtils/SystemUtils.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		08C08FD216688DF300000564 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		08C08FF116688F2A00000564 /* MediaThumbnail.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MediaThumbnail.xcodeproj; path = "../../MediaThumbnail/Source-MediaThumbnail/MediaThumbnail.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		08C0902616688F8A00000564 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		08C09066166890CB00000564 /* EventCenter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EventCenter.xcodeproj; path = "../../EventCenter/Source-EventCenter/EventCenter.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* TestAppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAppAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* TestAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAppAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* TestApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestApp_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* TestApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TestApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C0906C166890CE00000564 /* libEventCenter.a in Frameworks */,
+				08C08FF716688F2E00000564 /* libMediaThumbnail.a in Frameworks */,
+				08C08FBB16688D7A00000564 /* libSystemUtils.a in Frameworks */,
+				08C08F4616688D1C00000564 /* libFxEvents.a in Frameworks */,
+				08C08F3916687D2100000564 /* libFxStd.a in Frameworks */,
+				08C08DDB16686E8800000564 /* libAmbientRecordingManager.a in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				08C08E771668782800000564 /* AVFoundation.framework in Frameworks */,
+				08C08ECE1668783800000564 /* AudioToolbox.framework in Frameworks */,
+				08C08F2C16687CFB00000564 /* CoreMedia.framework in Frameworks */,
+				08C08FD316688DF300000564 /* CoreGraphics.framework in Frameworks */,
+				08C0902716688F8A00000564 /* ImageIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* TestAppAppDelegate.h */,
+				1D3623250D0F684500981E51 /* TestAppAppDelegate.m */,
+				08C08CD6166865D900000564 /* Recorder.h */,
+				08C08CD7166865D900000564 /* Recorder.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		08C08DD616686E7F00000564 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08C08DDA16686E7F00000564 /* libAmbientRecordingManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08C08F3016687D1800000564 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08C08F3416687D1800000564 /* libFxStd.a */,
+				08DF451618693AE50025AFD0 /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08C08F4116688D1A00000564 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08C08F4516688D1A00000564 /* libFxEvents.a */,
+				08DF451318693AE50025AFD0 /* libFxEventsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08C08FB616688D7700000564 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08C08FBA16688D7700000564 /* libSystemUtils.a */,
+				08DF451918693AE50025AFD0 /* libSystemUtilsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08C08FF216688F2A00000564 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08C08FF616688F2A00000564 /* libMediaThumbnail.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08C09067166890CB00000564 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08C0906B166890CB00000564 /* libEventCenter.a */,
+				08DF451018693AE50025AFD0 /* libEventCenterMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* TestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				08C09066166890CB00000564 /* EventCenter.xcodeproj */,
+				08C08FF116688F2A00000564 /* MediaThumbnail.xcodeproj */,
+				08C08FB516688D7700000564 /* SystemUtils.xcodeproj */,
+				08C08F4016688D1A00000564 /* FxEvents.xcodeproj */,
+				08C08F2F16687D1800000564 /* FxStd.xcodeproj */,
+				08C08DD516686E7F00000564 /* AmbientRecordingManager.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* TestApp_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* TestApp-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				08C08E761668782800000564 /* AVFoundation.framework */,
+				08C08ECD1668783800000564 /* AudioToolbox.framework */,
+				08C08F2B16687CFB00000564 /* CoreMedia.framework */,
+				08C08FD216688DF300000564 /* CoreGraphics.framework */,
+				08C0902616688F8A00000564 /* ImageIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* TestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TestApp" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				08C08DDD16686E8F00000564 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08C08DFF16686F5B00000564 /* PBXTargetDependency */,
+				08C08F3B16687D2A00000564 /* PBXTargetDependency */,
+				08C08FD816688E2200000564 /* PBXTargetDependency */,
+				08C08FDA16688E2400000564 /* PBXTargetDependency */,
+				08C0906E166890D300000564 /* PBXTargetDependency */,
+				08C09070166890D600000564 /* PBXTargetDependency */,
+			);
+			name = TestApp;
+			productName = TestApp;
+			productReference = 1D6058910D05DD3D006BFB54 /* TestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TestApp" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 08C08DD616686E7F00000564 /* Products */;
+					ProjectRef = 08C08DD516686E7F00000564 /* AmbientRecordingManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 08C09067166890CB00000564 /* Products */;
+					ProjectRef = 08C09066166890CB00000564 /* EventCenter.xcodeproj */;
+				},
+				{
+					ProductGroup = 08C08F4116688D1A00000564 /* Products */;
+					ProjectRef = 08C08F4016688D1A00000564 /* FxEvents.xcodeproj */;
+				},
+				{
+					ProductGroup = 08C08F3016687D1800000564 /* Products */;
+					ProjectRef = 08C08F2F16687D1800000564 /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = 08C08FF216688F2A00000564 /* Products */;
+					ProjectRef = 08C08FF116688F2A00000564 /* MediaThumbnail.xcodeproj */;
+				},
+				{
+					ProductGroup = 08C08FB616688D7700000564 /* Products */;
+					ProjectRef = 08C08FB516688D7700000564 /* SystemUtils.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* TestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		08C08DDA16686E7F00000564 /* libAmbientRecordingManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAmbientRecordingManager.a;
+			remoteRef = 08C08DD916686E7F00000564 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08C08F3416687D1800000564 /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = 08C08F3316687D1800000564 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08C08F4516688D1A00000564 /* libFxEvents.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEvents.a;
+			remoteRef = 08C08F4416688D1A00000564 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08C08FBA16688D7700000564 /* libSystemUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtils.a;
+			remoteRef = 08C08FB916688D7700000564 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08C08FF616688F2A00000564 /* libMediaThumbnail.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMediaThumbnail.a;
+			remoteRef = 08C08FF516688F2A00000564 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08C0906B166890CB00000564 /* libEventCenter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventCenter.a;
+			remoteRef = 08C0906A166890CB00000564 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08DF451018693AE50025AFD0 /* libEventCenterMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventCenterMac.a;
+			remoteRef = 08DF450F18693AE50025AFD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08DF451318693AE50025AFD0 /* libFxEventsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEventsMac.a;
+			remoteRef = 08DF451218693AE50025AFD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08DF451618693AE50025AFD0 /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = 08DF451518693AE50025AFD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08DF451918693AE50025AFD0 /* libSystemUtilsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtilsMac.a;
+			remoteRef = 08DF451818693AE50025AFD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08C08DDD16686E8F00000564 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sign code with iPhone Developer certificate\nexport CODESIGN_ALLOCATE=${SDK_ROOT}/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n     ../../OTC/Entitlements/gen_entitlements.py \"com.yourcompany.${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PRODUCT_NAME}.xcent\";\n     codesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PRODUCT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi\n\nDEVICE_IP=192.168.20.81\nssh root@${DEVICE_IP} rm -rf /Applications/${WRAPPER_NAME}\nscp -r ${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME} root@${DEVICE_IP}:/Applications/\n#ssh root@${DEVICE_IP} respring";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* TestAppAppDelegate.m in Sources */,
+				08C08CD8166865D900000564 /* Recorder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08C08DFF16686F5B00000564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AmbientRecordingManager;
+			targetProxy = 08C08DFE16686F5B00000564 /* PBXContainerItemProxy */;
+		};
+		08C08F3B16687D2A00000564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStd;
+			targetProxy = 08C08F3A16687D2A00000564 /* PBXContainerItemProxy */;
+		};
+		08C08FD816688E2200000564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SystemUtils;
+			targetProxy = 08C08FD716688E2200000564 /* PBXContainerItemProxy */;
+		};
+		08C08FDA16688E2400000564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxEvents;
+			targetProxy = 08C08FD916688E2400000564 /* PBXContainerItemProxy */;
+		};
+		08C0906E166890D300000564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EventCenter;
+			targetProxy = 08C0906D166890D300000564 /* PBXContainerItemProxy */;
+		};
+		08C09070166890D600000564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MediaThumbnail;
+			targetProxy = 08C0906F166890D600000564 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TestApp_Prefix.pch;
+				INFOPLIST_FILE = "TestApp-Info.plist";
+				PRODUCT_NAME = TestApp;
+				USER_HEADER_SEARCH_PATHS = "../../EventCenter/Source-EventCenter/** ../../Std/FxStd/** ../../MediaThumbnail/Source-MediaThumbnail/** ../Source-AmbientRecordingManager/**";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TestApp_Prefix.pch;
+				INFOPLIST_FILE = "TestApp-Info.plist";
+				PRODUCT_NAME = TestApp;
+				USER_HEADER_SEARCH_PATHS = "../../EventCenter/Source-EventCenter/** ../../Std/FxStd/** ../../MediaThumbnail/Source-MediaThumbnail/** ../Source-AmbientRecordingManager/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

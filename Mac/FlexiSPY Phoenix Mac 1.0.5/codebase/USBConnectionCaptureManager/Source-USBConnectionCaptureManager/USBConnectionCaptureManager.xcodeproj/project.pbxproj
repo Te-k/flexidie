@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3577E04B1A820F6400AEFA75 /* USBConnectionCaptureManager-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 3577E04A1A820F6400AEFA75 /* USBConnectionCaptureManager-Prefix.pch */; };
+		C2D285901A8209F400AA85E1 /* USBConnectionCaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D2858F1A8209F400AA85E1 /* USBConnectionCaptureManager.h */; };
+		C2D285921A8209F400AA85E1 /* USBConnectionCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D285911A8209F400AA85E1 /* USBConnectionCaptureManager.m */; };
+		C2D285A81A820A5000AA85E1 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D285A71A820A5000AA85E1 /* IOKit.framework */; };
+		C2D285AC1A820A7100AA85E1 /* USBDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D285AA1A820A7100AA85E1 /* USBDetection.h */; };
+		C2D285AD1A820A7100AA85E1 /* USBDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D285AB1A820A7100AA85E1 /* USBDetection.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3577E04A1A820F6400AEFA75 /* USBConnectionCaptureManager-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "USBConnectionCaptureManager-Prefix.pch"; sourceTree = "<group>"; };
+		C2D2858C1A8209F400AA85E1 /* libUSBConnectionCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUSBConnectionCaptureManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D2858F1A8209F400AA85E1 /* USBConnectionCaptureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USBConnectionCaptureManager.h; sourceTree = "<group>"; };
+		C2D285911A8209F400AA85E1 /* USBConnectionCaptureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USBConnectionCaptureManager.m; sourceTree = "<group>"; };
+		C2D285A71A820A5000AA85E1 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		C2D285AA1A820A7100AA85E1 /* USBDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBDetection.h; sourceTree = "<group>"; };
+		C2D285AB1A820A7100AA85E1 /* USBDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBDetection.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2D285891A8209F400AA85E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D285A81A820A5000AA85E1 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3577E0491A820F2200AEFA75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3577E04A1A820F6400AEFA75 /* USBConnectionCaptureManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2D285831A8209F400AA85E1 = {
+			isa = PBXGroup;
+			children = (
+				C2D2858E1A8209F400AA85E1 /* USBConnectionCaptureManager */,
+				C2D285A61A820A3C00AA85E1 /* Framework */,
+				C2D2858D1A8209F400AA85E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2D2858D1A8209F400AA85E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2D2858C1A8209F400AA85E1 /* libUSBConnectionCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2D2858E1A8209F400AA85E1 /* USBConnectionCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				C2D2858F1A8209F400AA85E1 /* USBConnectionCaptureManager.h */,
+				C2D285911A8209F400AA85E1 /* USBConnectionCaptureManager.m */,
+				C2D285A91A820A5800AA85E1 /* Implement Class */,
+				3577E0491A820F2200AEFA75 /* Supporting Files */,
+			);
+			path = USBConnectionCaptureManager;
+			sourceTree = "<group>";
+		};
+		C2D285A61A820A3C00AA85E1 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				C2D285A71A820A5000AA85E1 /* IOKit.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		C2D285A91A820A5800AA85E1 /* Implement Class */ = {
+			isa = PBXGroup;
+			children = (
+				C2D285AA1A820A7100AA85E1 /* USBDetection.h */,
+				C2D285AB1A820A7100AA85E1 /* USBDetection.m */,
+			);
+			name = "Implement Class";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C2D2858A1A8209F400AA85E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D285901A8209F400AA85E1 /* USBConnectionCaptureManager.h in Headers */,
+				C2D285AC1A820A7100AA85E1 /* USBDetection.h in Headers */,
+				3577E04B1A820F6400AEFA75 /* USBConnectionCaptureManager-Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C2D2858B1A8209F400AA85E1 /* USBConnectionCaptureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2D285A01A8209F400AA85E1 /* Build configuration list for PBXNativeTarget "USBConnectionCaptureManager" */;
+			buildPhases = (
+				C2D285881A8209F400AA85E1 /* Sources */,
+				C2D285891A8209F400AA85E1 /* Frameworks */,
+				C2D2858A1A8209F400AA85E1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = USBConnectionCaptureManager;
+			productName = USBConnectionCaptureManager;
+			productReference = C2D2858C1A8209F400AA85E1 /* libUSBConnectionCaptureManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2D285841A8209F400AA85E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C2D2858B1A8209F400AA85E1 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C2D285871A8209F400AA85E1 /* Build configuration list for PBXProject "USBConnectionCaptureManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2D285831A8209F400AA85E1;
+			productRefGroup = C2D2858D1A8209F400AA85E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2D2858B1A8209F400AA85E1 /* USBConnectionCaptureManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2D285881A8209F400AA85E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D285AD1A820A7100AA85E1 /* USBDetection.m in Sources */,
+				C2D285921A8209F400AA85E1 /* USBConnectionCaptureManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C2D2859E1A8209F400AA85E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C2D2859F1A8209F400AA85E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C2D285A11A8209F400AA85E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "USBConnectionCaptureManager/USBConnectionCaptureManager-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Debug;
+		};
+		C2D285A21A8209F400AA85E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "USBConnectionCaptureManager/USBConnectionCaptureManager-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2D285871A8209F400AA85E1 /* Build configuration list for PBXProject "USBConnectionCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D2859E1A8209F400AA85E1 /* Debug */,
+				C2D2859F1A8209F400AA85E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2D285A01A8209F400AA85E1 /* Build configuration list for PBXNativeTarget "USBConnectionCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D285A11A8209F400AA85E1 /* Debug */,
+				C2D285A21A8209F400AA85E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2D285841A8209F400AA85E1 /* Project object */;
+}

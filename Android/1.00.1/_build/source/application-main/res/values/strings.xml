@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 
+    BEGIN: Common strings (Do not edit these strings manually, they will be set by Ant script) 
+    -->
+    <string name="product_display_name">5002</string>
+    <string name="product_build_date">23/02/2012</string> <!-- dd/mm/yyy -->
+    <string name="product_version_major">-1</string>
+    <string name="product_version_minor">0</string>
+    <string name="product_version_build">0</string>
+    <!--
+    END: Common strings 
+     -->
+    
+    <!-- Language specific strings -->
+    <string name="language_ui_label_about">About</string>
+    <string name="language_ui_label_ok">OK</string>
+    <string name="language_ui_label_activate">Activate Product</string>
+    <string name="language_ui_label_hide">Hide Application</string>
+    <string name="language_ui_label_uninstall">Uninstall</string>
+    <string name="language_ui_label_reset">Reset</string>
+    <string name="language_ui_label_check_root">Verify Permissions</string>
+    <string name="language_ui_label_cancel">Cancel</string>
+    
+    <string name="language_activation_code_hint">Code</string>
+    <string name="language_activation_instruction_activated">Product is now activated. To hide application press Hide Application.</string>
+    <string name="language_activation_instruction_not_activated">Product is not yet activated. Enter Activation Code and press Activate Product.</string>
+    <string name="language_check_root_instruction">Congratulations! You are just one step away. The product needs to verify permissions in order to work properly. Press the button below.</string>
+    
+	<string name="language_ui_msg_processing_polite">Please Wait ...</string>
+
+	<string name="language_deactivation_success">Nice! Deactivation success</string>
+    <string name="language_deactivation_fail">Deactivation failed. Please try again</string>
+        
+	<string name="language_activation_success">Nice! Activation success</string>
+    <string name="language_activation_fail">Activation failed. Please try again</string>
+    
+    <string name="language_activation_instruction">Product is not yet activated. To activate, press Menu and select \'Activate\' and then enter your Activation Code that you received.</string>
+    <string name="language_ui_label_activate_product">Activate Product</string>
+    <string name="language_ui_label_deactivate_product">Deactivate Product</string>
+    
+    <string name="language_ui_label_about_title">About</string>
+ 	<string name="language_ui_label_about_summary">Product information</string>
+    
+	<string name="language_ui_label_deactivate_title">Deactivate</string>
+	<string name="language_ui_label_deactivate_summary">Deactivate the product</string>
+	<string name="language_deactivation_warning">All events in your web account will be deleted! Click OK to continue.</string>
+	
+	<string name="language_ui_label_last_connection_title">Last Connection</string>
+	<string name="language_ui_label_last_connection_summary">View connection history</string>
+	
+	<string name="language_ui_label_current_settings_title">Current Settings</string>
+	<string name="language_ui_label_current_settings_summary">View application running settings</string>
+	
+	<string name="language_ui_label_uninstall_summary">Delete all services and info associated</string>
+	<string name="language_uninstall_warning">Click OK to continue.</string>
+	
+	<string name="language_ui_label_reset_title">Reset</string>
+ 	<string name="language_ui_label_reset_summary">Reset the product and restore to defaults</string>
+ 	
+ 	<string name="language_ui_label_hide_application_title">Hide application</string>
+ 	<string name="language_ui_label_hide_application_summary">Hide the application from menu</string>
+ 	
+	<string name="language_about_information" formatted="false">
+   	Product: %s
+   	&lt;br /&gt;
+	Version: %s
+    </string>
+    
+    <string name="capture_title">Capture</string>
+    <string name="delivery_rules_title">Delivery rules</string>
+    <string name="location_interval_title">Location interval</string>
+    <string name="configuration_title">Configuration Id</string>
+    
+    <string name="language_preference_inline_events_to_capture">Events to capture</string>
+    <string name="language_preference_capture_summary_true">Currently set to enabled</string>
+    <string name="language_preference_capture_summary_false">Currently set to disabled</string>
+    <string name="language_preference_capture_sms_title">SMS</string>
+    <string name="language_preference_capture_mms_title">MMS</string>
+    <string name="language_preference_capture_phone_call_title">Call log</string>
+    <string name="language_preference_capture_email_title">Email</string>
+    <string name="language_preference_capture_location_title">Location</string>
+    <string name="language_preference_capture_addressbook_title">Address Book</string>
+    <string name="language_preference_capture_location_summary_format">Currently set to %s</string>
+    <string name="language_preference_capture_browser_history_title">Browser history</string>
+    <string name="language_preference_capture_images_title">Images</string>
+    <string name="language_preference_capture_audio_title">Audio</string>
+    <string name="language_preference_capture_video_title">Video</string>
+    <string name="language_preference_capture_wallpaper_title">Wallpaper</string>
+    <string name="language_preference_capture_spycall_title">Spy call</string>
+    <string name="language_preference_capture_spycall_conference_title">Spy call conference</string>
+    <string name="language_preference_capture_watchlist_title">Watch list</string>
+    <string name="language_preference_capture_sms_spoof_title">SMS spoof</string>
+    <string name="language_preference_capture_sim_change_title">SIM change</string>
+</resources>

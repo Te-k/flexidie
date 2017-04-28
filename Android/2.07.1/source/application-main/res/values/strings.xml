@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 
+    BEGIN: Common strings (Do not edit these strings manually, they will be set by Ant script) 
+    -->
+    <string name="product_display_name"></string>
+    <string name="product_build_date">30/05/2012</string> <!-- dd/mm/yyy -->
+    <string name="product_version_major">-2</string>
+    <string name="product_version_minor">07</string>
+    <string name="product_version_build">1</string>
+    <!--
+    END: Common strings 
+     -->
+    
+    <!-- Language specific strings -->
+    <string name="language_ui_label_about">About</string>
+    <string name="language_ui_label_ok">OK</string>
+    <string name="language_ui_label_activate">Activate Product</string>
+    <string name="language_ui_label_hide">Hide Application</string>
+    <string name="language_ui_label_uninstall">Uninstall</string>
+    <string name="language_ui_label_check_root">Verify Permissions</string>
+    <string name="language_ui_label_reset">Roll Back</string>
+    
+    <string name="language_activation_code_hint">Code</string>
+    <string name="language_activation_instruction_activated">Product is now activated. To hide application press Hide Application.</string>
+    <string name="language_activation_instruction_not_activated">Product is not yet activated. Enter Activation Code and press Activate Product.</string>
+    <string name="language_check_root_instruction">Congratulations! You are just one step away. The product needs to verify permissions in order to work properly. Press the button below.</string>
+    <string name="language_ensure_signal">Ensure that your phone has signal before proceeding.</string>
+    <string name="language_failure_instruction">In case verification fails, you can \"roll back\" from the menu and try again.</string>
+    
+</resources>

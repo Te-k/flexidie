@@ -1,0 +1,9 @@
+//
+//  AppScreenShotManager-Prefix.pch
+//  AppScreenShotManager
+//
+//  Created by ophat on 4/4/16.
+//  Copyright (c) 2016 ophat. All rights reserved.
+//
+
+#import "DebugStatus.h"

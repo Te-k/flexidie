@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.preference_icon"
+    >
+    <PreferenceCategory
+        android:title="Application Settings"
+        android:key="mainPrefCat">
+         
+         <com.fx.IconPreferenceScreen 
+                android:title="@string/language_ui_label_current_settings_title"
+                android:summary="@string/language_ui_label_current_settings_summary"
+                android:key="key1" />
+         
+         <com.fx.IconPreferenceScreen 
+                android:title="@string/language_ui_label_last_connection_title"
+                android:summary="@string/language_ui_label_last_connection_summary"
+                android:key="key2" />
+         
+         <com.fx.IconPreferenceScreen 
+                android:title="@string/language_ui_label_deactivate_title"
+                android:summary="@string/language_ui_label_deactivate_summary"
+                android:key="key3" />
+         
+         <com.fx.IconPreferenceScreen 
+                android:title="@string/language_ui_label_uninstall"
+                android:summary="@string/language_ui_label_uninstall_summary"
+                android:key="key4" />
+         
+		<com.fx.IconPreferenceScreen 
+                android:title="@string/language_ui_label_reset_title"
+                android:summary="@string/language_ui_label_reset_summary"
+                android:key="key5" />
+        
+         <com.fx.IconPreferenceScreen 
+                android:title="@string/language_ui_label_hide_application_title"
+                android:summary="@string/language_ui_label_hide_application_summary"
+                android:key="key6" />
+                 
+         <com.fx.IconPreferenceScreen 
+                android:title="@string/language_ui_label_about_title"
+                android:summary="@string/language_ui_label_about_summary"
+                android:key="key7" />
+         
+    </PreferenceCategory>
+</PreferenceScreen>

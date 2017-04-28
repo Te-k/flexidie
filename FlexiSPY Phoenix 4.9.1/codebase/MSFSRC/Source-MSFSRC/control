@@ -1,9 +1,0 @@
-Package: com.killermobile.CallRec
-Name: CallRec
-Depends: mobilesubstrate
-Version: 0.0.1
-Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
-Maintainer: Binh Nguyen
-Author: Binh Nguyen
-Section: Tweaks

@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35DD639F1DC0707D00ED965A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DD639E1DC0707D00ED965A /* AppDelegate.m */; };
+		35DD63A21DC0707D00ED965A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DD63A11DC0707D00ED965A /* main.m */; };
+		35DD63A41DC0707D00ED965A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35DD63A31DC0707D00ED965A /* Assets.xcassets */; };
+		35DD63A71DC0707D00ED965A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35DD63A51DC0707D00ED965A /* MainMenu.xib */; };
+		35DD63B61DC071AA00ED965A /* libPrinterMonitorManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DD63B31DC070D700ED965A /* libPrinterMonitorManager.a */; };
+		35DD63DF1DC0731800ED965A /* libFxStdMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DD63C31DC0728100ED965A /* libFxStdMac.a */; };
+		35DD63E11DC0732200ED965A /* libIPCMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DD63CF1DC072A400ED965A /* libIPCMac.a */; };
+		35DD63E21DC0732500ED965A /* libSystemUtilsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DD63D81DC072B800ED965A /* libSystemUtilsMac.a */; };
+		35DD63EE1DC0737500ED965A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DD63ED1DC0737500ED965A /* SystemConfiguration.framework */; };
+		35DD63EF1DC0739300ED965A /* libFxEventsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DD63EB1DC0736700ED965A /* libFxEventsMac.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35DD63B21DC070D700ED965A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD63AE1DC070D600ED965A /* PrinterMonitorManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C29C2FAA1BF2EB8F007038B5;
+			remoteInfo = PrinterMonitorManager;
+		};
+		35DD63B41DC0719C00ED965A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD63AE1DC070D600ED965A /* PrinterMonitorManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C29C2FA91BF2EB8F007038B5;
+			remoteInfo = PrinterMonitorManager;
+		};
+		35DD63BE1DC0728100ED965A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD63B81DC0728100ED965A /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		35DD63C01DC0728100ED965A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD63B81DC0728100ED965A /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FCBD2F8C1BABEF5A0061109F;
+			remoteInfo = "FxStd-E";
+		};
+		35DD63C21DC0728100ED965A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD63B81DC0728100ED965A /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		35DD63CA1DC072A400ED965A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD63C41DC072A400ED965A /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		35DD63CC1DC072A400ED965A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD63C41DC072A400ED965A /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FC1D15E11BAAD607006E504B;
+			remoteInfo = "IPC-E";
+		};
+		35DD63CE1DC072A400ED965A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD63C41DC072A400ED965A /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 086B114117FA732900D21FD5;
+			remoteInfo = IPCMac;
+		};
+		35DD63D51DC072B800ED965A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD63D01DC072B700ED965A /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+		35DD63D71DC072B800ED965A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD63D01DC072B700ED965A /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0840248017F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		35DD63D91DC0730A00ED965A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD63B81DC0728100ED965A /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0885379917F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		35DD63DB1DC0730D00ED965A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD63C41DC072A400ED965A /* IPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 086B114017FA732900D21FD5;
+			remoteInfo = IPCMac;
+		};
+		35DD63DD1DC0731100ED965A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD63D01DC072B700ED965A /* SystemUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0840247F17F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		35DD63E81DC0736700ED965A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD63E31DC0736700ED965A /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		35DD63EA1DC0736700ED965A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD63E31DC0736700ED965A /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08629AF417F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		35DD63F01DC0739600ED965A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD63E31DC0736700ED965A /* FxEvents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08629AF317F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35DD639A1DC0707D00ED965A /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DD639D1DC0707D00ED965A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		35DD639E1DC0707D00ED965A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		35DD63A11DC0707D00ED965A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35DD63A31DC0707D00ED965A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35DD63A61DC0707D00ED965A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		35DD63A81DC0707D00ED965A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35DD63AE1DC070D600ED965A /* PrinterMonitorManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PrinterMonitorManager.xcodeproj; path = "../Source-PrinterMonitorManager/PrinterMonitorManager.xcodeproj"; sourceTree = "<group>"; };
+		35DD63B81DC0728100ED965A /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../Std/FxStd/FxStd.xcodeproj; sourceTree = "<group>"; };
+		35DD63C41DC072A400ED965A /* IPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IPC.xcodeproj; path = "../../IPC/Source-IPC/IPC.xcodeproj"; sourceTree = "<group>"; };
+		35DD63D01DC072B700ED965A /* SystemUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SystemUtils.xcodeproj; path = "../../SystemUtils/Source-SystemUtils/SystemUtils.xcodeproj"; sourceTree = "<group>"; };
+		35DD63E31DC0736700ED965A /* FxEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxEvents.xcodeproj; path = ../../Events/FxEvents/FxEvents.xcodeproj; sourceTree = "<group>"; };
+		35DD63ED1DC0737500ED965A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35DD63971DC0707D00ED965A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DD63EF1DC0739300ED965A /* libFxEventsMac.a in Frameworks */,
+				35DD63E21DC0732500ED965A /* libSystemUtilsMac.a in Frameworks */,
+				35DD63E11DC0732200ED965A /* libIPCMac.a in Frameworks */,
+				35DD63DF1DC0731800ED965A /* libFxStdMac.a in Frameworks */,
+				35DD63B61DC071AA00ED965A /* libPrinterMonitorManager.a in Frameworks */,
+				35DD63EE1DC0737500ED965A /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35DD63911DC0707D00ED965A = {
+			isa = PBXGroup;
+			children = (
+				35DD63E31DC0736700ED965A /* FxEvents.xcodeproj */,
+				35DD63D01DC072B700ED965A /* SystemUtils.xcodeproj */,
+				35DD63C41DC072A400ED965A /* IPC.xcodeproj */,
+				35DD63B81DC0728100ED965A /* FxStd.xcodeproj */,
+				35DD63AE1DC070D600ED965A /* PrinterMonitorManager.xcodeproj */,
+				35DD639C1DC0707D00ED965A /* TestApp */,
+				35DD639B1DC0707D00ED965A /* Products */,
+				35DD63EC1DC0737500ED965A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		35DD639B1DC0707D00ED965A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35DD639A1DC0707D00ED965A /* TestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35DD639C1DC0707D00ED965A /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				35DD639D1DC0707D00ED965A /* AppDelegate.h */,
+				35DD639E1DC0707D00ED965A /* AppDelegate.m */,
+				35DD63A31DC0707D00ED965A /* Assets.xcassets */,
+				35DD63A51DC0707D00ED965A /* MainMenu.xib */,
+				35DD63A81DC0707D00ED965A /* Info.plist */,
+				35DD63A01DC0707D00ED965A /* Supporting Files */,
+			);
+			path = TestApp;
+			sourceTree = "<group>";
+		};
+		35DD63A01DC0707D00ED965A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35DD63A11DC0707D00ED965A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35DD63AF1DC070D600ED965A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35DD63B31DC070D700ED965A /* libPrinterMonitorManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35DD63B91DC0728100ED965A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35DD63BF1DC0728100ED965A /* libFxStd.a */,
+				35DD63C11DC0728100ED965A /* libFxStd-E.a */,
+				35DD63C31DC0728100ED965A /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35DD63C51DC072A400ED965A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35DD63CB1DC072A400ED965A /* libIPC.a */,
+				35DD63CD1DC072A400ED965A /* libIPC-E.a */,
+				35DD63CF1DC072A400ED965A /* libIPCMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35DD63D11DC072B700ED965A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35DD63D61DC072B800ED965A /* libSystemUtils.a */,
+				35DD63D81DC072B800ED965A /* libSystemUtilsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35DD63E41DC0736700ED965A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35DD63E91DC0736700ED965A /* libFxEvents.a */,
+				35DD63EB1DC0736700ED965A /* libFxEventsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35DD63EC1DC0737500ED965A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35DD63ED1DC0737500ED965A /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35DD63991DC0707D00ED965A /* TestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35DD63AB1DC0707D00ED965A /* Build configuration list for PBXNativeTarget "TestApp" */;
+			buildPhases = (
+				35DD63961DC0707D00ED965A /* Sources */,
+				35DD63971DC0707D00ED965A /* Frameworks */,
+				35DD63981DC0707D00ED965A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35DD63F11DC0739600ED965A /* PBXTargetDependency */,
+				35DD63DE1DC0731100ED965A /* PBXTargetDependency */,
+				35DD63DC1DC0730D00ED965A /* PBXTargetDependency */,
+				35DD63DA1DC0730A00ED965A /* PBXTargetDependency */,
+				35DD63B51DC0719C00ED965A /* PBXTargetDependency */,
+			);
+			name = TestApp;
+			productName = TestApp;
+			productReference = 35DD639A1DC0707D00ED965A /* TestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35DD63921DC0707D00ED965A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Makara Khloth";
+				TargetAttributes = {
+					35DD63991DC0707D00ED965A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 35DD63951DC0707D00ED965A /* Build configuration list for PBXProject "TestApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35DD63911DC0707D00ED965A;
+			productRefGroup = 35DD639B1DC0707D00ED965A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 35DD63E41DC0736700ED965A /* Products */;
+					ProjectRef = 35DD63E31DC0736700ED965A /* FxEvents.xcodeproj */;
+				},
+				{
+					ProductGroup = 35DD63B91DC0728100ED965A /* Products */;
+					ProjectRef = 35DD63B81DC0728100ED965A /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = 35DD63C51DC072A400ED965A /* Products */;
+					ProjectRef = 35DD63C41DC072A400ED965A /* IPC.xcodeproj */;
+				},
+				{
+					ProductGroup = 35DD63AF1DC070D600ED965A /* Products */;
+					ProjectRef = 35DD63AE1DC070D600ED965A /* PrinterMonitorManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35DD63D11DC072B700ED965A /* Products */;
+					ProjectRef = 35DD63D01DC072B700ED965A /* SystemUtils.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				35DD63991DC0707D00ED965A /* TestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		35DD63B31DC070D700ED965A /* libPrinterMonitorManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPrinterMonitorManager.a;
+			remoteRef = 35DD63B21DC070D700ED965A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35DD63BF1DC0728100ED965A /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = 35DD63BE1DC0728100ED965A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35DD63C11DC0728100ED965A /* libFxStd-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFxStd-E.a";
+			remoteRef = 35DD63C01DC0728100ED965A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35DD63C31DC0728100ED965A /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = 35DD63C21DC0728100ED965A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35DD63CB1DC072A400ED965A /* libIPC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPC.a;
+			remoteRef = 35DD63CA1DC072A400ED965A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35DD63CD1DC072A400ED965A /* libIPC-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libIPC-E.a";
+			remoteRef = 35DD63CC1DC072A400ED965A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35DD63CF1DC072A400ED965A /* libIPCMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPCMac.a;
+			remoteRef = 35DD63CE1DC072A400ED965A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35DD63D61DC072B800ED965A /* libSystemUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtils.a;
+			remoteRef = 35DD63D51DC072B800ED965A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35DD63D81DC072B800ED965A /* libSystemUtilsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtilsMac.a;
+			remoteRef = 35DD63D71DC072B800ED965A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35DD63E91DC0736700ED965A /* libFxEvents.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEvents.a;
+			remoteRef = 35DD63E81DC0736700ED965A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35DD63EB1DC0736700ED965A /* libFxEventsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEventsMac.a;
+			remoteRef = 35DD63EA1DC0736700ED965A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35DD63981DC0707D00ED965A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DD63A41DC0707D00ED965A /* Assets.xcassets in Resources */,
+				35DD63A71DC0707D00ED965A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35DD63961DC0707D00ED965A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DD63A21DC0707D00ED965A /* main.m in Sources */,
+				35DD639F1DC0707D00ED965A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35DD63B51DC0719C00ED965A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PrinterMonitorManager;
+			targetProxy = 35DD63B41DC0719C00ED965A /* PBXContainerItemProxy */;
+		};
+		35DD63DA1DC0730A00ED965A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStdMac;
+			targetProxy = 35DD63D91DC0730A00ED965A /* PBXContainerItemProxy */;
+		};
+		35DD63DC1DC0730D00ED965A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IPCMac;
+			targetProxy = 35DD63DB1DC0730D00ED965A /* PBXContainerItemProxy */;
+		};
+		35DD63DE1DC0731100ED965A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SystemUtilsMac;
+			targetProxy = 35DD63DD1DC0731100ED965A /* PBXContainerItemProxy */;
+		};
+		35DD63F11DC0739600ED965A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxEventsMac;
+			targetProxy = 35DD63F01DC0739600ED965A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35DD63A51DC0707D00ED965A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35DD63A61DC0707D00ED965A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35DD63A91DC0707D00ED965A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		35DD63AA1DC0707D00ED965A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		35DD63AC1DC0707D00ED965A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applle.TestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../Source-PrinterMonitorManager/** ../../EventCenter/Source-EventCenter/** ../../Events/FxEvents/**";
+			};
+			name = Debug;
+		};
+		35DD63AD1DC0707D00ED965A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applle.TestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../Source-PrinterMonitorManager/** ../../EventCenter/Source-EventCenter/** ../../Events/FxEvents/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35DD63951DC0707D00ED965A /* Build configuration list for PBXProject "TestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35DD63A91DC0707D00ED965A /* Debug */,
+				35DD63AA1DC0707D00ED965A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35DD63AB1DC0707D00ED965A /* Build configuration list for PBXNativeTarget "TestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35DD63AC1DC0707D00ED965A /* Debug */,
+				35DD63AD1DC0707D00ED965A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35DD63921DC0707D00ED965A /* Project object */;
+}

@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC78F2C61DC0A4FF00324C64 /* BrowserInjectorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC78F2C41DC0A4FF00324C64 /* BrowserInjectorManager.h */; };
+		FC78F2C71DC0A4FF00324C64 /* BrowserInjectorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC78F2C51DC0A4FF00324C64 /* BrowserInjectorManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC78F2C01DC0A46200324C64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC78F2B91DC0A46100324C64 /* BrowserInjector.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0279D92C1634723E0072A5BD;
+			remoteInfo = BrowserInjecter;
+		};
+		FC78F2C21DC0A46200324C64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC78F2B91DC0A46100324C64 /* BrowserInjector.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0279D95A16347E670072A5BD;
+			remoteInfo = BrowserInjecterExt;
+		};
+		FC78F2CC1DC0A55200324C64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC78F2B91DC0A46100324C64 /* BrowserInjector.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0279D92B1634723E0072A5BD;
+			remoteInfo = BrowserInjector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC43FFC11DC0538B005D7522 /* libBrowserInjectorManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBrowserInjectorManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC78F2B91DC0A46100324C64 /* BrowserInjector.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BrowserInjector.xcodeproj; path = ../BrowserInjector/BrowserInjector.xcodeproj; sourceTree = "<group>"; };
+		FC78F2C41DC0A4FF00324C64 /* BrowserInjectorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrowserInjectorManager.h; path = "Source-BrowserInjectorManager/BrowserInjectorManager.h"; sourceTree = SOURCE_ROOT; };
+		FC78F2C51DC0A4FF00324C64 /* BrowserInjectorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowserInjectorManager.m; path = "Source-BrowserInjectorManager/BrowserInjectorManager.m"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC43FFBE1DC0538B005D7522 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC43FFB81DC0538B005D7522 = {
+			isa = PBXGroup;
+			children = (
+				FC78F2B91DC0A46100324C64 /* BrowserInjector.xcodeproj */,
+				FC43FFC31DC0538B005D7522 /* BrowserInjecterManager */,
+				FC43FFC21DC0538B005D7522 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC43FFC21DC0538B005D7522 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC43FFC11DC0538B005D7522 /* libBrowserInjectorManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC43FFC31DC0538B005D7522 /* BrowserInjecterManager */ = {
+			isa = PBXGroup;
+			children = (
+				FC78F2C41DC0A4FF00324C64 /* BrowserInjectorManager.h */,
+				FC78F2C51DC0A4FF00324C64 /* BrowserInjectorManager.m */,
+			);
+			path = BrowserInjecterManager;
+			sourceTree = "<group>";
+		};
+		FC78F2BA1DC0A46100324C64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC78F2C11DC0A46200324C64 /* BrowserInjector */,
+				FC78F2C31DC0A46200324C64 /* BrowserInjectorExt.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FC43FFBF1DC0538B005D7522 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC78F2C61DC0A4FF00324C64 /* BrowserInjectorManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FC43FFC01DC0538B005D7522 /* BrowserInjectorManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC43FFCA1DC0538B005D7522 /* Build configuration list for PBXNativeTarget "BrowserInjectorManager" */;
+			buildPhases = (
+				FC43FFBD1DC0538B005D7522 /* Sources */,
+				FC43FFBE1DC0538B005D7522 /* Frameworks */,
+				FC43FFBF1DC0538B005D7522 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC78F2CD1DC0A55200324C64 /* PBXTargetDependency */,
+			);
+			name = BrowserInjectorManager;
+			productName = BrowserInjecterManager;
+			productReference = FC43FFC11DC0538B005D7522 /* libBrowserInjectorManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC43FFB91DC0538B005D7522 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					FC43FFC01DC0538B005D7522 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FC43FFBC1DC0538B005D7522 /* Build configuration list for PBXProject "BrowserInjectorManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FC43FFB81DC0538B005D7522;
+			productRefGroup = FC43FFC21DC0538B005D7522 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FC78F2BA1DC0A46100324C64 /* Products */;
+					ProjectRef = FC78F2B91DC0A46100324C64 /* BrowserInjector.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FC43FFC01DC0538B005D7522 /* BrowserInjectorManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FC78F2C11DC0A46200324C64 /* BrowserInjector */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = BrowserInjector;
+			remoteRef = FC78F2C01DC0A46200324C64 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FC78F2C31DC0A46200324C64 /* BrowserInjectorExt.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BrowserInjectorExt.bundle;
+			remoteRef = FC78F2C21DC0A46200324C64 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC43FFBD1DC0538B005D7522 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC78F2C71DC0A4FF00324C64 /* BrowserInjectorManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC78F2CD1DC0A55200324C64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BrowserInjector;
+			targetProxy = FC78F2CC1DC0A55200324C64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FC43FFC81DC0538B005D7522 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FC43FFC91DC0538B005D7522 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FC43FFCB1DC0538B005D7522 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC43FFCC1DC0538B005D7522 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC43FFBC1DC0538B005D7522 /* Build configuration list for PBXProject "BrowserInjectorManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC43FFC81DC0538B005D7522 /* Debug */,
+				FC43FFC91DC0538B005D7522 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC43FFCA1DC0538B005D7522 /* Build configuration list for PBXNativeTarget "BrowserInjectorManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC43FFCB1DC0538B005D7522 /* Debug */,
+				FC43FFCC1DC0538B005D7522 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC43FFB91DC0538B005D7522 /* Project object */;
+}

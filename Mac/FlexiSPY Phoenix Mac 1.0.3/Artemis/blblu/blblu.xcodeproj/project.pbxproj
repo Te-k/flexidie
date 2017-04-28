@@ -1,0 +1,3936 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		350F045E1A6CF1580016D82B /* libApplicationManagerForMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2780D1A181FB3AE00AB6786 /* libApplicationManagerForMac.a */; };
+		350F04811A6CF1F00016D82B /* libFxEventsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBE9D181A544400E4C2AF /* libFxEventsMac.a */; };
+		350F04821A6CF1FB0016D82B /* libFxStdMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBE91181A543600E4C2AF /* libFxStdMac.a */; };
+		350F04851A6CF2B50016D82B /* libBrowserPrivacyManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C29A2C36183604AB008867AF /* libBrowserPrivacyManager.a */; };
+		350F04881A6CF3670016D82B /* libKeyboardEventHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C23820BE1822042A002ED182 /* libKeyboardEventHandler.a */; };
+		350F04891A6CF3AD0016D82B /* libKeySnapShotRuleManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B4C0A81827846600DF0A1D /* libKeySnapShotRuleManager.a */; };
+		350F048A1A6CF3ED0016D82B /* libSoftwareUpdateManagerMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C20009E11898F40300EB74B3 /* libSoftwareUpdateManagerMac.a */; };
+		352FE58A181E69C300493AB9 /* Install.sh in Resources */ = {isa = PBXBuildFile; fileRef = 352FE587181E69C300493AB9 /* Install.sh */; };
+		352FE58B181E69C300493AB9 /* Launch.sh in Resources */ = {isa = PBXBuildFile; fileRef = 352FE588181E69C300493AB9 /* Launch.sh */; };
+		354D85C41D15806E00EB0EFE /* kbls.app in Resources */ = {isa = PBXBuildFile; fileRef = 354D85C31D15806D00EB0EFE /* kbls.app */; };
+		3577E0DF1A83195800AEFA75 /* libUSBConnectionCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3577E0DC1A83160800AEFA75 /* libUSBConnectionCaptureManager.a */; };
+		3577E17F1A83A57E00AEFA75 /* libUSBFileTransferCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3577E17E1A83A38F00AEFA75 /* libUSBFileTransferCaptureManager.a */; };
+		357DE94118153A1A00E1DD11 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 357DE94018153A1A00E1DD11 /* libstdc++.6.0.9.dylib */; };
+		3581A48C1A920118001618CC /* libUserActivityCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3581A4891A9200E1001618CC /* libUserActivityCaptureManager.a */; };
+		3586AD6D1D93F25600C53383 /* extension2@mozila.xpi in Resources */ = {isa = PBXBuildFile; fileRef = 3586AD6C1D93F25600C53383 /* extension2@mozila.xpi */; };
+		359B442E181E7D9800E7862D /* version.xml in Resources */ = {isa = PBXBuildFile; fileRef = 359B442C181E7D9800E7862D /* version.xml */; };
+		359B443D181E80BD00E7862D /* blbla.app in Resources */ = {isa = PBXBuildFile; fileRef = 359B443B181E80BD00E7862D /* blbla.app */; };
+		359B443E181E80BD00E7862D /* blbld.app in Resources */ = {isa = PBXBuildFile; fileRef = 359B443C181E80BD00E7862D /* blbld.app */; };
+		35B60BA41B0DD17E001D7659 /* InstallAddon.sh in Resources */ = {isa = PBXBuildFile; fileRef = 35B60BA31B0DD17E001D7659 /* InstallAddon.sh */; };
+		35C184231A6CB05D00477E60 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C184221A6CB05D00477E60 /* libz.1.2.5.dylib */; };
+		35CEDF481A8E0B960044D1B2 /* libScreenshotCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CEDF0E1A8E05CF0044D1B2 /* libScreenshotCaptureManager.a */; };
+		35CFD55D1B20754F00913353 /* UserActivityMonitorAgentUI.app in Resources */ = {isa = PBXBuildFile; fileRef = 35CFD55C1B20754F00913353 /* UserActivityMonitorAgentUI.app */; };
+		35D7F7A81A8B20BF005664F6 /* libIMCaptureManagerForMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D7F79B1A8B207D005664F6 /* libIMCaptureManagerForMac.a */; };
+		35DAC4EE181A705200262D48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DAC4ED181A705200262D48 /* main.m */; };
+		35DAC4F3181A707F00262D48 /* Activate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DAC4F0181A707F00262D48 /* Activate.m */; };
+		35DAC4F4181A707F00262D48 /* blbluAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DAC4F2181A707F00262D48 /* blbluAppDelegate.m */; };
+		35DAC4F9181A71A300262D48 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 35DAC4F5181A71A300262D48 /* Credits.rtf */; };
+		35DAC4FA181A71A300262D48 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35DAC4F7181A71A300262D48 /* Localizable.strings */; };
+		35DAC4FD181A71C100262D48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35DAC4FB181A71C100262D48 /* InfoPlist.strings */; };
+		35DAC500181A71D400262D48 /* com.applle.blbla.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35DAC4FE181A71D400262D48 /* com.applle.blbla.plist */; };
+		35DAC501181A71D400262D48 /* com.applle.blbld.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35DAC4FF181A71D400262D48 /* com.applle.blbld.plist */; };
+		35DAC504181A71FE00262D48 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35DAC502181A71FE00262D48 /* MainMenu.xib */; };
+		35DAC506181A720500262D48 /* Activation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35DAC505181A720500262D48 /* Activation.xib */; };
+		35DC86341A7A3DBD00541D15 /* libDeviceSettingsManagerMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D132B1A7A217400CA0FE6 /* libDeviceSettingsManagerMac.a */; };
+		35DDF4501A8486AF00DDF069 /* libApplicationUsageCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DDF42E1A8483F300DDF069 /* libApplicationUsageCaptureManager.a */; };
+		35DDF4E61A84CA2A00DDF069 /* libKeyboardLoggerManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DDF4971A84C9B400DDF069 /* libKeyboardLoggerManager.a */; };
+		35EBBCB1181A4DB800E4C2AF /* libActivationMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBC9F181A4D3200E4C2AF /* libActivationMac.a */; };
+		35EBBCB2181A4DC300E4C2AF /* libLicenseManagerMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBCAC181A4D6A00E4C2AF /* libLicenseManagerMac.a */; };
+		35EBBD02181A4F3B00E4C2AF /* libServerAddressManagerMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBCBE181A4DE200E4C2AF /* libServerAddressManagerMac.a */; };
+		35EBBD03181A4F4100E4C2AF /* libSecurityManagerMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBCCA181A4DFA00E4C2AF /* libSecurityManagerMac.a */; };
+		35EBBD04181A4F4900E4C2AF /* libIPCMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBCD6181A4E0C00E4C2AF /* libIPCMac.a */; };
+		35EBBD05181A4F7F00E4C2AF /* libCryptographyMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBCE2181A4E2000E4C2AF /* libCryptographyMac.a */; };
+		35EBBD06181A4F9C00E4C2AF /* libCCryptography.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBCEB181A4E3000E4C2AF /* libCCryptography.a */; };
+		35EBBD07181A4FA900E4C2AF /* libCRC32Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBCF7181A4E3E00E4C2AF /* libCRC32Mac.a */; };
+		35EBBD4D181A506900E4C2AF /* libRCMMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBD15181A4FE900E4C2AF /* libRCMMac.a */; };
+		35EBBD4E181A507000E4C2AF /* libDDMMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBD21181A4FF700E4C2AF /* libDDMMac.a */; };
+		35EBBD4F181A507600E4C2AF /* libEDMMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBD2D181A500A00E4C2AF /* libEDMMac.a */; };
+		35EBBD50181A507D00E4C2AF /* libAppContextMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBD39181A502C00E4C2AF /* libAppContextMac.a */; };
+		35EBBD99181A512500E4C2AF /* libUnstructuredManagerLibMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBD61181A50C100E4C2AF /* libUnstructuredManagerLibMac.a */; };
+		35EBBD9A181A512B00E4C2AF /* libProtocolBuilderLibMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBD71181A50D000E4C2AF /* libProtocolBuilderLibMac.a */; };
+		35EBBD9B181A513200E4C2AF /* libHTTPLibMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBD80181A50DF00E4C2AF /* libHTTPLibMac.a */; };
+		35EBBE3D181A535300E4C2AF /* libCommandServiceManagerLibMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBE3A181A532900E4C2AF /* libCommandServiceManagerLibMac.a */; };
+		35EBBE81181A53F500E4C2AF /* libSystemUtilsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBE49181A536B00E4C2AF /* libSystemUtilsMac.a */; };
+		35EBBE82181A53FC00E4C2AF /* libPreferencesMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBE55181A537D00E4C2AF /* libPreferencesMac.a */; };
+		35EBBE83181A540900E4C2AF /* libMacInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBE5E181A538B00E4C2AF /* libMacInfo.a */; };
+		35EBBE84181A541000E4C2AF /* libConfigurationManagerMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBE6A181A539900E4C2AF /* libConfigurationManagerMac.a */; };
+		35EBBE85181A541600E4C2AF /* libConnectionHistoryManagerMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBE76181A53AC00E4C2AF /* libConnectionHistoryManagerMac.a */; };
+		35EBBEC0181A54C700E4C2AF /* libEventCenterMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBEA9181A545700E4C2AF /* libEventCenterMac.a */; };
+		35EBBEC1181A54CE00E4C2AF /* libEventReposMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBEB5181A546500E4C2AF /* libEventReposMac.a */; };
+		35EBBF12181A55E700E4C2AF /* libGZIPMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBECD181A54E200E4C2AF /* libGZIPMac.a */; };
+		35EBBF14181A55F200E4C2AF /* libCleanserMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBF0C181A55C300E4C2AF /* libCleanserMac.a */; };
+		35EBBF36181A566300E4C2AF /* libPageVisitedCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBF1D181A560900E4C2AF /* libPageVisitedCaptureManager.a */; };
+		35EBBF37181A567100E4C2AF /* libKeyboardCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBF26181A561E00E4C2AF /* libKeyboardCaptureManager.a */; };
+		35EBBF38181A567700E4C2AF /* libHotKeyCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBF2F181A563500E4C2AF /* libHotKeyCaptureManager.a */; };
+		35EBBF44181A57F500E4C2AF /* libAppEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBBF41181A57CA00E4C2AF /* libAppEngine.a */; };
+		35EFCD461A95E02B00A35D3B /* libWebmailCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EFCD451A95DE7E00A35D3B /* libWebmailCaptureManager.a */; };
+		35F079821AC1204B00945F4F /* libAppAgentMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F079611AC1202800945F4F /* libAppAgentMac.a */; };
+		35FEFC2C1AA9C8E5007E2032 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FEFC2B1AA9C8E5007E2032 /* ScriptingBridge.framework */; };
+		C203F67D18028E22007236EC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C203F67C18028E22007236EC /* SystemConfiguration.framework */; };
+		C203F67F18028E29007236EC /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C203F67E18028E29007236EC /* IOKit.framework */; };
+		C22779F318323B06003FBEFD /* UnInstall.sh in Resources */ = {isa = PBXBuildFile; fileRef = C22779F218323B06003FBEFD /* UnInstall.sh */; };
+		C231924D1C9BFFB3002E3973 /* libActivityMonitorManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C231924A1C9BFF8F002E3973 /* libActivityMonitorManager.a */; };
+		C23787121BB3F2750080DAD1 /* libFileActivityCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C23786F91BB3F2420080DAD1 /* libFileActivityCaptureManager.a */; };
+		C23C39721B58CB9800BFE385 /* libPushNotificationManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C23C39651B58CB6D00BFE385 /* libPushNotificationManager.a */; };
+		C23E9F051B1DBA2500C0B86E /* addonversion.plist in Resources */ = {isa = PBXBuildFile; fileRef = C23E9F041B1DBA2500C0B86E /* addonversion.plist */; };
+		C23FF2711C634EE2005BCCED /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C23FF1FD1C634AC4005BCCED /* libFMDB.a */; };
+		C24082991BAFEA1900A09DC7 /* libInternetFileTransferManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C24082871BAFE9E200A09DC7 /* libInternetFileTransferManager.a */; };
+		C24D63AF1B5CA2B700E9C763 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = C24D63AE1B5CA2B700E9C763 /* BG.png */; };
+		C24D63B51B5CA3B900E9C763 /* BAR.png in Resources */ = {isa = PBXBuildFile; fileRef = C24D63B41B5CA3B900E9C763 /* BAR.png */; };
+		C25300781B2A83F300DA53AD /* GlobalAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = C25300771B2A83F300DA53AD /* GlobalAlert.xib */; };
+		C25300A31B2A845B00DA53AD /* GlobalAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = C25300A21B2A845B00DA53AD /* GlobalAlert.m */; };
+		C25412601C7732730026DC9D /* PCF.xml in Resources */ = {isa = PBXBuildFile; fileRef = C254125F1C7732730026DC9D /* PCF.xml */; };
+		C25C44881C0455BC00580754 /* libNetworkConnectionCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C25C447A1C04557C00580754 /* libNetworkConnectionCaptureManager.a */; };
+		C26FF34D1C1034A10045115B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26FF34C1C1034A10045115B /* AVFoundation.framework */; };
+		C2700AFB1BCE6E1E007E5DEB /* libNetworkTrafficCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2700AEB1BCE6DDB007E5DEB /* libNetworkTrafficCaptureManager.a */; };
+		C2700AFF1BCE6F9B007E5DEB /* libpcap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2700AFE1BCE6F9B007E5DEB /* libpcap.dylib */; };
+		C271C56C1C3CBAF300BA4C99 /* libNetworkTrafficAlertManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C271C55C1C3CBAC500BA4C99 /* libNetworkTrafficAlertManager.a */; };
+		C272C4951B2941C900355A86 /* libUSBAutoActivationManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C272C4801B29414F00355A86 /* libUSBAutoActivationManager.a */; };
+		C28088AA1BF4AA6400ECF30F /* libPrinterMonitorManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C280889B1BF4AA3100ECF30F /* libPrinterMonitorManager.a */; };
+		C28D3F0817FE877500DC532C /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28D3F0717FE877500DC532C /* Carbon.framework */; };
+		C28FB9C017FC2B7E00A6DA61 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28FB9BF17FC2B7E00A6DA61 /* Cocoa.framework */; };
+		C2B60FE11B37C09B007C0B6D /* libTemporalControlManagerMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B60F111B37BECD007C0B6D /* libTemporalControlManagerMac.a */; };
+		C2B610C71B37D8EB007C0B6D /* libAmbientRecordingManagerForMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B6109E1B37D8C6007C0B6D /* libAmbientRecordingManagerForMac.a */; };
+		C2BEF23E1CAE8FA700FD5C5A /* libAppScreenShotManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BEF2141CAE8F8900FD5C5A /* libAppScreenShotManager.a */; };
+		C2F4E1A61802989500365F80 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F4E1A51802989500365F80 /* Security.framework */; };
+		C2F4E23C1802A68500365F80 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F4E23B1802A68500365F80 /* libsqlite3.0.dylib */; };
+		C2FB729D18A0EF0F00ED603C /* Update.sh in Resources */ = {isa = PBXBuildFile; fileRef = C2FB729C18A0EF0F00ED603C /* Update.sh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		354D865F1D15816800EB0EFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 354D86341D15816700EB0EFE /* kbls.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 354D822F1D15077E00EB0EFE;
+			remoteInfo = kbls;
+		};
+		354D866F1D1581A300EB0EFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 354D86341D15816700EB0EFE /* kbls.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 354D822E1D15077E00EB0EFE;
+			remoteInfo = kbls;
+		};
+		3577E0DB1A83160800AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E0B41A83160800AEFA75 /* USBConnectionCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2D2858C1A8209F400AA85E1;
+			remoteInfo = USBConnectionCaptureManager;
+		};
+		3577E0DD1A83194800AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E0B41A83160800AEFA75 /* USBConnectionCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C2D2858B1A8209F400AA85E1;
+			remoteInfo = USBConnectionCaptureManager;
+		};
+		3577E17D1A83A38F00AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E1561A83A38E00AEFA75 /* USBFileTransferCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2D286081A820DF300AA85E1;
+			remoteInfo = USBFileTransferCaptureManager;
+		};
+		3577E1801A83A58B00AEFA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3577E1561A83A38E00AEFA75 /* USBFileTransferCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C2D286071A820DF300AA85E1;
+			remoteInfo = USBFileTransferCaptureManager;
+		};
+		3581A4881A9200E1001618CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3581A4611A9200E1001618CC /* UserActivityCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 350D3E371A919C35001ED61E;
+			remoteInfo = UserActivityCaptureManager;
+		};
+		3581A48A1A920110001618CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3581A4611A9200E1001618CC /* UserActivityCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 350D3E361A919C35001ED61E;
+			remoteInfo = UserActivityCaptureManager;
+		};
+		358D131A1A7A20C800CA0FE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 358D13161A7A20C800CA0FE6 /* DeviceSettingsManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3536607B18C5CA71006AF699;
+			remoteInfo = DeviceSettingsManager;
+		};
+		358D132A1A7A217400CA0FE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 358D13161A7A20C800CA0FE6 /* DeviceSettingsManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 358D13281A7A20EF00CA0FE6;
+			remoteInfo = DeviceSettingsManagerMac;
+		};
+		358D132D1A7A218500CA0FE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 358D13161A7A20C800CA0FE6 /* DeviceSettingsManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 358D131C1A7A20EF00CA0FE6;
+			remoteInfo = DeviceSettingsManagerMac;
+		};
+		35CEDF0D1A8E05CF0044D1B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CEDEEC1A8E05CF0044D1B2 /* ScreenshotCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 35CEDE0F1A8DB3740044D1B2;
+			remoteInfo = ScreenshotCaptureManager;
+		};
+		35CEDF6C1A8E0BA00044D1B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CEDEEC1A8E05CF0044D1B2 /* ScreenshotCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 35CEDE0E1A8DB3740044D1B2;
+			remoteInfo = ScreenshotCaptureManager;
+		};
+		35CFD5861B20754F00913353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3581A4611A9200E1001618CC /* UserActivityCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 35CFD4B51B206EFD00913353;
+			remoteInfo = UserActivityMonitorAgentUI;
+		};
+		35D7F79A1A8B207D005664F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D7F77F1A8B207A005664F6 /* IMCaptureManagerForMac.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 359D58951A88621E004F1BD4;
+			remoteInfo = IMCaptureManagerForMac;
+		};
+		35D7F7A91A8B20D1005664F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D7F77F1A8B207A005664F6 /* IMCaptureManagerForMac.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 359D58941A88621E004F1BD4;
+			remoteInfo = IMCaptureManagerForMac;
+		};
+		35DDF42D1A8483F300DDF069 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DDF4251A8483F200DDF069 /* ApplicationUsageCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2DDB0FF1A832475001A9268;
+			remoteInfo = ApplicationUsageCaptureManager;
+		};
+		35DDF44E1A8486A700DDF069 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DDF4251A8483F200DDF069 /* ApplicationUsageCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C2DDB0FE1A832475001A9268;
+			remoteInfo = ApplicationUsageCaptureManager;
+		};
+		35DDF4961A84C9B400DDF069 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DDF4921A84C9B400DDF069 /* KeyboardLoggerManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 35DDF45A1A84A50E00DDF069;
+			remoteInfo = KeyboardLoggerManager;
+		};
+		35DDF4E71A84CA3300DDF069 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DDF4921A84C9B400DDF069 /* KeyboardLoggerManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 35DDF4591A84A50E00DDF069;
+			remoteInfo = KeyboardLoggerManager;
+		};
+		35EBBC98181A4D3200E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBC8C181A4D3200E4C2AF /* Activation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = ActivationTestApp;
+		};
+		35EBBC9A181A4D3200E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBC8C181A4D3200E4C2AF /* Activation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F10D812145FA8080033C747;
+			remoteInfo = Activation;
+		};
+		35EBBC9C181A4D3200E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBC8C181A4D3200E4C2AF /* Activation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F72F5A41463A25B00D7F303;
+			remoteInfo = UnitTest;
+		};
+		35EBBC9E181A4D3200E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBC8C181A4D3200E4C2AF /* Activation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C22CCF79180CF50B009F5883;
+			remoteInfo = ActivationMac;
+		};
+		35EBBCA9181A4D6A00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCA1181A4D6900E4C2AF /* LicenseManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = LicenseManager;
+		};
+		35EBBCAB181A4D6A00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCA1181A4D6900E4C2AF /* LicenseManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08FAB87617FEB95300CCBD73;
+			remoteInfo = LicenseManagerMac;
+		};
+		35EBBCAD181A4D8400E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBC8C181A4D3200E4C2AF /* Activation.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C22CCF6A180CF50B009F5883;
+			remoteInfo = ActivationMac;
+		};
+		35EBBCAF181A4D8800E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCA1181A4D6900E4C2AF /* LicenseManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08FAB87517FEB95300CCBD73;
+			remoteInfo = LicenseManagerMac;
+		};
+		35EBBCBB181A4DE200E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCB3181A4DE200E4C2AF /* ServerAddressManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ServerAddressManager;
+		};
+		35EBBCBD181A4DE200E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCB3181A4DE200E4C2AF /* ServerAddressManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08F31F6F17FAC5C000F9DAB7;
+			remoteInfo = ServerAddressManagerMac;
+		};
+		35EBBCC7181A4DFA00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCBF181A4DF900E4C2AF /* SecurityManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SecurityManager;
+		};
+		35EBBCC9181A4DFA00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCBF181A4DF900E4C2AF /* SecurityManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C233F6CA1807ACE000B294A8;
+			remoteInfo = SecurityManagerMac;
+		};
+		35EBBCD3181A4E0C00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCCB181A4E0B00E4C2AF /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		35EBBCD5181A4E0C00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCCB181A4E0B00E4C2AF /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 086B114117FA732900D21FD5;
+			remoteInfo = IPCMac;
+		};
+		35EBBCDF181A4E2000E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCD7181A4E1F00E4C2AF /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		35EBBCE1181A4E2000E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCD7181A4E1F00E4C2AF /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 088536E417F989BB00AB08F2;
+			remoteInfo = CryptographyMac;
+		};
+		35EBBCEA181A4E3000E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCE3181A4E2E00E4C2AF /* CCryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 357DE7CB181517FD00E1DD11;
+			remoteInfo = CCryptography;
+		};
+		35EBBCF4181A4E3E00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCEC181A4E3D00E4C2AF /* CRC32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CRC32;
+		};
+		35EBBCF6181A4E3E00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCEC181A4E3D00E4C2AF /* CRC32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885386F17F9A00D00AB08F2;
+			remoteInfo = CRC32Mac;
+		};
+		35EBBCF8181A4EE700E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCB3181A4DE200E4C2AF /* ServerAddressManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08F31F6E17FAC5C000F9DAB7;
+			remoteInfo = ServerAddressManagerMac;
+		};
+		35EBBCFA181A4EF100E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCBF181A4DF900E4C2AF /* SecurityManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C233F6B41807ACE000B294A8;
+			remoteInfo = SecurityManagerMac;
+		};
+		35EBBCFC181A4EF700E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCCB181A4E0B00E4C2AF /* IPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 086B114017FA732900D21FD5;
+			remoteInfo = IPCMac;
+		};
+		35EBBCFE181A4F2600E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCD7181A4E1F00E4C2AF /* Cryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 088536E317F989BB00AB08F2;
+			remoteInfo = CryptographyMac;
+		};
+		35EBBD00181A4F2C00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCEC181A4E3D00E4C2AF /* CRC32.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0885386E17F9A00D00AB08F2;
+			remoteInfo = CRC32Mac;
+		};
+		35EBBD08181A4FB700E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCE3181A4E2E00E4C2AF /* CCryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 357DE7CA181517FD00E1DD11;
+			remoteInfo = CCryptography;
+		};
+		35EBBD12181A4FE900E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD0A181A4FE800E4C2AF /* RCM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = RCM;
+		};
+		35EBBD14181A4FE900E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD0A181A4FE800E4C2AF /* RCM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08DE230C17FD50BB00C78115;
+			remoteInfo = RCMMac;
+		};
+		35EBBD1E181A4FF700E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD16181A4FF600E4C2AF /* DDM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = DDM;
+		};
+		35EBBD20181A4FF700E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD16181A4FF600E4C2AF /* DDM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08D41C1717FD553E003A0F1D;
+			remoteInfo = DDMMac;
+		};
+		35EBBD2A181A500A00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD22181A500900E4C2AF /* EDM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = EDM;
+		};
+		35EBBD2C181A500A00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD22181A500900E4C2AF /* EDM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0857BC5317FD58D8003FC0F2;
+			remoteInfo = EDMMac;
+		};
+		35EBBD36181A502C00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD2E181A502B00E4C2AF /* AppContext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = AppContext;
+		};
+		35EBBD38181A502C00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD2E181A502B00E4C2AF /* AppContext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 081152D317FBD2E100692D79;
+			remoteInfo = AppContextMac;
+		};
+		35EBBD43181A504900E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD0A181A4FE800E4C2AF /* RCM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08DE230B17FD50BB00C78115;
+			remoteInfo = RCMMac;
+		};
+		35EBBD45181A504D00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD16181A4FF600E4C2AF /* DDM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08D41C1617FD553E003A0F1D;
+			remoteInfo = DDMMac;
+		};
+		35EBBD47181A505200E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD22181A500900E4C2AF /* EDM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0857BC5217FD58D8003FC0F2;
+			remoteInfo = EDMMac;
+		};
+		35EBBD49181A505600E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD2E181A502B00E4C2AF /* AppContext.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 081152D217FBD2E100692D79;
+			remoteInfo = AppContextMac;
+		};
+		35EBBD5C181A50C100E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD52181A50C000E4C2AF /* UnstructuredManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = UnstructuredManagerDemo;
+		};
+		35EBBD5E181A50C100E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD52181A50C000E4C2AF /* UnstructuredManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FC8C25A13D6CE40002DC85B;
+			remoteInfo = UnstructuredManagerLib;
+		};
+		35EBBD60181A50C100E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD52181A50C000E4C2AF /* UnstructuredManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 35EAC13D180BD41B00927F54;
+			remoteInfo = UnstructuredManagerLibMac;
+		};
+		35EBBD6C181A50D000E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD62181A50CE00E4C2AF /* ProtocolBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = ProtocolBuilder;
+		};
+		35EBBD6E181A50D000E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD62181A50CE00E4C2AF /* ProtocolBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FD67C6F13DE6B4D00623ACC;
+			remoteInfo = ProtocolBuilderLib;
+		};
+		35EBBD70181A50D000E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD62181A50CE00E4C2AF /* ProtocolBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 082441B9180BA31500182EA1;
+			remoteInfo = ProtocolBuilderMac;
+		};
+		35EBBD7B181A50DF00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD72181A50DE00E4C2AF /* HTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = HTTP;
+		};
+		35EBBD7D181A50DF00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD72181A50DE00E4C2AF /* HTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F5E974213D9647700ACA74F;
+			remoteInfo = HTTPLib;
+		};
+		35EBBD7F181A50DF00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD72181A50DE00E4C2AF /* HTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C22D07A7180BA578002EAF17;
+			remoteInfo = HTTPLibMac;
+		};
+		35EBBD91181A50FA00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD52181A50C000E4C2AF /* UnstructuredManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 35EAC128180BD41B00927F54;
+			remoteInfo = UnstructuredManagerLibMac;
+		};
+		35EBBD93181A50FE00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD62181A50CE00E4C2AF /* ProtocolBuilder.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 082441B8180BA31500182EA1;
+			remoteInfo = ProtocolBuilderMac;
+		};
+		35EBBD95181A510700E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBD72181A50DE00E4C2AF /* HTTP.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C22D0783180BA578002EAF17;
+			remoteInfo = HTTPLibMac;
+		};
+		35EBBE35181A532900E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE2B181A532800E4C2AF /* CommandServiceManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = CommandServiceManager;
+		};
+		35EBBE37181A532900E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE2B181A532800E4C2AF /* CommandServiceManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FFBFBA813E28FE100BF374E;
+			remoteInfo = CommandServiceManagerLib;
+		};
+		35EBBE39181A532900E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE2B181A532800E4C2AF /* CommandServiceManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0857BD6F17FD7232003FC0F2;
+			remoteInfo = CommandServiceManagerLibMac;
+		};
+		35EBBE3B181A534D00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE2B181A532800E4C2AF /* CommandServiceManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0857BD6E17FD7232003FC0F2;
+			remoteInfo = CommandServiceManagerLibMac;
+		};
+		35EBBE46181A536B00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE3E181A536A00E4C2AF /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+		35EBBE48181A536B00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE3E181A536A00E4C2AF /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0840248017F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		35EBBE52181A537D00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE4A181A537C00E4C2AF /* Preferences.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Preferences;
+		};
+		35EBBE54181A537D00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE4A181A537C00E4C2AF /* Preferences.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08629C4017F9665A0085D580;
+			remoteInfo = PreferencesMac;
+		};
+		35EBBE5D181A538B00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE56181A538A00E4C2AF /* MacInfo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = MacInfo;
+		};
+		35EBBE67181A539900E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE5F181A539800E4C2AF /* ConfigurationManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ConfigurationManager;
+		};
+		35EBBE69181A539900E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE5F181A539800E4C2AF /* ConfigurationManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08FAB70F17FE6EA900CCBD73;
+			remoteInfo = ConfigurationManagerMac;
+		};
+		35EBBE73181A53AC00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE6B181A53AB00E4C2AF /* ConnectionHistoryManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ConnectionHistoryManager;
+		};
+		35EBBE75181A53AC00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE6B181A53AB00E4C2AF /* ConnectionHistoryManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08DE22A317FD4E2D00C78115;
+			remoteInfo = ConnectionHistoryManagerMac;
+		};
+		35EBBE77181A53C200E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE3E181A536A00E4C2AF /* SystemUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0840247F17F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		35EBBE79181A53D200E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE4A181A537C00E4C2AF /* Preferences.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08629C3F17F9665A0085D580;
+			remoteInfo = PreferencesMac;
+		};
+		35EBBE7B181A53DE00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE56181A538A00E4C2AF /* MacInfo.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = MacInfo;
+		};
+		35EBBE7D181A53E500E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE5F181A539800E4C2AF /* ConfigurationManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08FAB70E17FE6EA900CCBD73;
+			remoteInfo = ConfigurationManagerMac;
+		};
+		35EBBE7F181A53E900E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE6B181A53AB00E4C2AF /* ConnectionHistoryManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08DE22A217FD4E2D00C78115;
+			remoteInfo = ConnectionHistoryManagerMac;
+		};
+		35EBBE8E181A543600E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE86181A543500E4C2AF /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		35EBBE90181A543600E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE86181A543500E4C2AF /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		35EBBE9A181A544400E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE92181A544300E4C2AF /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		35EBBE9C181A544400E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE92181A544300E4C2AF /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08629AF417F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		35EBBEA6181A545700E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE9E181A545600E4C2AF /* EventCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = EventCenter;
+		};
+		35EBBEA8181A545700E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE9E181A545600E4C2AF /* EventCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0819FA3317F9340300DDE835;
+			remoteInfo = EventCenterMac;
+		};
+		35EBBEB2181A546500E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBEAA181A546500E4C2AF /* EventRepos.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = EventRepos;
+		};
+		35EBBEB4181A546500E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBEAA181A546500E4C2AF /* EventRepos.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08D41CE617FD5761003A0F1D;
+			remoteInfo = EventReposMac;
+		};
+		35EBBEB6181A548E00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE86181A543500E4C2AF /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0885379917F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		35EBBEB8181A549400E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE92181A544300E4C2AF /* FxEvents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08629AF317F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		35EBBEBA181A549700E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE9E181A545600E4C2AF /* EventCenter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0819FA3217F9340300DDE835;
+			remoteInfo = EventCenterMac;
+		};
+		35EBBEBC181A549F00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBEAA181A546500E4C2AF /* EventRepos.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08D41CE517FD5761003A0F1D;
+			remoteInfo = EventReposMac;
+		};
+		35EBBECA181A54E200E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBEC2181A54E100E4C2AF /* GZIP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = GZIP;
+		};
+		35EBBECC181A54E200E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBEC2181A54E100E4C2AF /* GZIP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 084926E017EAE67900AE874B;
+			remoteInfo = GZIPMac;
+		};
+		35EBBEE9181A550E00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBEC2181A54E100E4C2AF /* GZIP.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 084926DF17EAE67900AE874B;
+			remoteInfo = GZIPMac;
+		};
+		35EBBF09181A55C300E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBF01181A55C300E4C2AF /* Cleanser.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Cleanser;
+		};
+		35EBBF0B181A55C300E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBF01181A55C300E4C2AF /* Cleanser.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C214D019180CE6B700DCAC57;
+			remoteInfo = CleanserMac;
+		};
+		35EBBF0F181A55D300E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBF01181A55C300E4C2AF /* Cleanser.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C214CFE7180CE6B700DCAC57;
+			remoteInfo = CleanserMac;
+		};
+		35EBBF1C181A560900E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBF15181A560800E4C2AF /* PageVisitedCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C24A006C17FD5EF00073E7F6;
+			remoteInfo = PageVisitedCaptureManager;
+		};
+		35EBBF25181A561E00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBF1E181A561D00E4C2AF /* KeyboardCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C20514C517FD4F2200FC5489;
+			remoteInfo = KeyboardCaptureManager;
+		};
+		35EBBF2E181A563500E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBF27181A563500E4C2AF /* HotKeyCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C233CDD518167BCB00B9A774;
+			remoteInfo = HotKeyCaptureManager;
+		};
+		35EBBF30181A564E00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBF15181A560800E4C2AF /* PageVisitedCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C24A006B17FD5EF00073E7F6;
+			remoteInfo = PageVisitedCaptureManager;
+		};
+		35EBBF32181A565700E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBF1E181A561D00E4C2AF /* KeyboardCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C20514C417FD4F2200FC5489;
+			remoteInfo = KeyboardCaptureManager;
+		};
+		35EBBF34181A565B00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBF27181A563500E4C2AF /* HotKeyCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C233CDD418167BCB00B9A774;
+			remoteInfo = HotKeyCaptureManager;
+		};
+		35EBBF40181A57CA00E4C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBF39181A57C900E4C2AF /* AppEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C218182817FD7D7800D3084E;
+			remoteInfo = AppEngine;
+		};
+		35EBCC5C1B206AAB00463DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3581A4611A9200E1001618CC /* UserActivityCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 35282A2F1B205E52004EBDA4;
+			remoteInfo = UserActivityMonitorAgent;
+		};
+		35EFCD441A95DE7E00A35D3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EFCD1D1A95DE7E00A35D3B /* WebmailCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2D863E41A84BACE00D7D506;
+			remoteInfo = WebmailCaptureManager;
+		};
+		35EFCD471A95E03300A35D3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EFCD1D1A95DE7E00A35D3B /* WebmailCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C2D863E31A84BACE00D7D506;
+			remoteInfo = WebmailCaptureManager;
+		};
+		35F0795E1AC1202800945F4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35F079561AC1202800945F4F /* AppAgent.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = AppAgent;
+		};
+		35F079601AC1202800945F4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35F079561AC1202800945F4F /* AppAgent.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 356EEBED1AC0169E00A3A925;
+			remoteInfo = AppAgentMac;
+		};
+		35F079831AC1205D00945F4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35F079561AC1202800945F4F /* AppAgent.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 356EEBD61AC0169E00A3A925;
+			remoteInfo = AppAgentMac;
+		};
+		C20009DE1898F40300EB74B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C20009D61898F40200EB74B3 /* SoftwareUpdateManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SoftwareUpdateManager;
+		};
+		C20009E01898F40300EB74B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C20009D61898F40200EB74B3 /* SoftwareUpdateManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C20009D41898F32100EB74B3;
+			remoteInfo = SoftwareUpdateManagerMac;
+		};
+		C20009E21898F41600EB74B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C20009D61898F40200EB74B3 /* SoftwareUpdateManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C20009C51898F32100EB74B3;
+			remoteInfo = SoftwareUpdateManagerMac;
+		};
+		C23192491C9BFF8F002E3973 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23192421C9BFF8F002E3973 /* ActivityMonitorManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C24B3CE71C966485002D6E04;
+			remoteInfo = ActivityMonitorManager;
+		};
+		C231924B1C9BFFA6002E3973 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23192421C9BFF8F002E3973 /* ActivityMonitorManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C24B3CE61C966485002D6E04;
+			remoteInfo = ActivityMonitorManager;
+		};
+		C23786F81BB3F2420080DAD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23786E11BB3F2410080DAD1 /* FileActivityCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C28FFC151BB16B790064339F;
+			remoteInfo = FileActivityCaptureManager;
+		};
+		C23787101BB3F2640080DAD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23786E11BB3F2410080DAD1 /* FileActivityCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C28FFC141BB16B790064339F;
+			remoteInfo = FileActivityCaptureManager;
+		};
+		C23820BD1822042A002ED182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23820B618220429002ED182 /* KeyboardEventHandler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2381F351821FEC6002ED182;
+			remoteInfo = KeyboardEventHandler;
+		};
+		C23820C218220444002ED182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23820B618220429002ED182 /* KeyboardEventHandler.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C2381F341821FEC6002ED182;
+			remoteInfo = KeyboardEventHandler;
+		};
+		C23C39641B58CB6D00BFE385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23C39411B58CB6D00BFE385 /* PushNotificationManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C23C38481B58B32600BFE385;
+			remoteInfo = PushNotificationManager;
+		};
+		C23C39701B58CB8A00BFE385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23C39411B58CB6D00BFE385 /* PushNotificationManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C23C38471B58B32600BFE385;
+			remoteInfo = PushNotificationManager;
+		};
+		C23FF1F81C634AC4005BCCED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23FF1F01C634AC3005BCCED /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		C23FF1FA1C634AC4005BCCED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23FF1F01C634AC3005BCCED /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6290CBB5188FE836009790F8;
+			remoteInfo = FMDB;
+		};
+		C23FF1FC1C634AC4005BCCED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23FF1F01C634AC3005BCCED /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDBMac;
+		};
+		C23FF1FE1C634AC4005BCCED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23FF1F01C634AC3005BCCED /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83C73EFE1C326AB000FFC730;
+			remoteInfo = "FMDB iOS";
+		};
+		C23FF2001C634AC4005BCCED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23FF1F01C634AC3005BCCED /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83C73F0B1C326ADA00FFC730;
+			remoteInfo = "FMDB MacOS";
+		};
+		C23FF2411C634ED3005BCCED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23FF1F01C634AC3005BCCED /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE4290EE12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		C24082861BAFE9E200A09DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24082681BAFE9E200A09DC7 /* InternetFileTransferManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2E401F71BA97BC000B96455;
+			remoteInfo = InternetFileTransferManager;
+		};
+		C24082971BAFEA0C00A09DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24082681BAFE9E200A09DC7 /* InternetFileTransferManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C2E401F61BA97BC000B96455;
+			remoteInfo = InternetFileTransferManager;
+		};
+		C25C44791C04557C00580754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C25C44571C04557C00580754 /* NetworkConnectionCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C25C43FA1C04467100580754;
+			remoteInfo = NetworkConnectionCaptureManager;
+		};
+		C25C44891C0455DB00580754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C25C44571C04557C00580754 /* NetworkConnectionCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C25C43F91C04467100580754;
+			remoteInfo = NetworkConnectionCaptureManager;
+		};
+		C2700ADF1BCE6DDB007E5DEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBE86181A543500E4C2AF /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FCBD2F8C1BABEF5A0061109F;
+			remoteInfo = "FxStd-E";
+		};
+		C2700AE61BCE6DDB007E5DEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBBCCB181A4E0B00E4C2AF /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FC1D15E11BAAD607006E504B;
+			remoteInfo = "IPC-E";
+		};
+		C2700AEA1BCE6DDB007E5DEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2700AC41BCE6DDA007E5DEB /* NetworkTrafficCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C27AA07D1BC7C7150066622F;
+			remoteInfo = NetworkTrafficCaptureManager;
+		};
+		C2700AF91BCE6E15007E5DEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2700AC41BCE6DDA007E5DEB /* NetworkTrafficCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C27AA07C1BC7C7150066622F;
+			remoteInfo = NetworkTrafficCaptureManager;
+		};
+		C271C55B1C3CBAC500BA4C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C271C5391C3CBAC500BA4C99 /* NetworkTrafficAlertManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2816D841C2150050012B801;
+			remoteInfo = NetworkTrafficAlertManager;
+		};
+		C271C56A1C3CBAE500BA4C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C271C5391C3CBAC500BA4C99 /* NetworkTrafficAlertManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C2816D831C2150050012B801;
+			remoteInfo = NetworkTrafficAlertManager;
+		};
+		C272C47F1B29414F00355A86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C272C47A1B29414F00355A86 /* USBAutoActivationManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C272C3AD1B293C4300355A86;
+			remoteInfo = USBAutoActivationManager;
+		};
+		C272C4931B2941C000355A86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C272C47A1B29414F00355A86 /* USBAutoActivationManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C272C3AC1B293C4300355A86;
+			remoteInfo = USBAutoActivationManager;
+		};
+		C2780D19181FB3AE00AB6786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2780D12181FB3AE00AB6786 /* ApplicationManagerForMac.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 081D74A118154D2A0028E29C;
+			remoteInfo = ApplicationManagerForMac;
+		};
+		C2780D1B181FB3BD00AB6786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2780D12181FB3AE00AB6786 /* ApplicationManagerForMac.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 081D74A018154D2A0028E29C;
+			remoteInfo = ApplicationManagerForMac;
+		};
+		C280889A1BF4AA3100ECF30F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C28088771BF4AA3000ECF30F /* PrinterMonitorManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C29C2FAA1BF2EB8F007038B5;
+			remoteInfo = PrinterMonitorManager;
+		};
+		C28088A81BF4AA5B00ECF30F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C28088771BF4AA3000ECF30F /* PrinterMonitorManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C29C2FA91BF2EB8F007038B5;
+			remoteInfo = PrinterMonitorManager;
+		};
+		C29A2C35183604AB008867AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C29A2C2E183604AA008867AF /* BrowserPrivacyManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08FC52CF18337F48004FAB1B;
+			remoteInfo = BrowserPrivacyManager;
+		};
+		C2B4C0A71827846600DF0A1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2B4C0A01827846500DF0A1D /* KeySnapShotRuleManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 35D877B71818D5A500E4A5C4;
+			remoteInfo = KeySnapShotRuleManager;
+		};
+		C2B4C0AB182784A100DF0A1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2B4C0A01827846500DF0A1D /* KeySnapShotRuleManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 35D877B61818D5A500E4A5C4;
+			remoteInfo = KeySnapShotRuleManager;
+		};
+		C2B60EF51B37BE7C007C0B6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2B60ECD1B37BE7C007C0B6D /* TemporalControlManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 088CDCB01A9447BB00A15903;
+			remoteInfo = TemporalControlManager;
+		};
+		C2B60F101B37BECD007C0B6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2B60ECD1B37BE7C007C0B6D /* TemporalControlManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2B60F0C1B37BE8E007C0B6D;
+			remoteInfo = TemporalControlManagerMac;
+		};
+		C2B60FB51B37C093007C0B6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2B60ECD1B37BE7C007C0B6D /* TemporalControlManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C2B60EFB1B37BE8E007C0B6D;
+			remoteInfo = TemporalControlManagerMac;
+		};
+		C2B6109D1B37D8C6007C0B6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2B610961B37D8C4007C0B6D /* AmbientRecordingManagerForMac.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C23F77FA1B26E72B00A0D4A7;
+			remoteInfo = AmbientRecordingManagerForMac;
+		};
+		C2B610C51B37D8E1007C0B6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2B610961B37D8C4007C0B6D /* AmbientRecordingManagerForMac.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C23F77F91B26E72B00A0D4A7;
+			remoteInfo = AmbientRecordingManagerForMac;
+		};
+		C2BEF2131CAE8F8900FD5C5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2BEF2091CAE8F8900FD5C5A /* AppScreenShotManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C23AFBBC1CAE5B4D0049A4C1;
+			remoteInfo = AppScreenShotManager;
+		};
+		C2BEF23C1CAE8F9E00FD5C5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2BEF2091CAE8F8900FD5C5A /* AppScreenShotManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C23AFBBB1CAE5B4D0049A4C1;
+			remoteInfo = AppScreenShotManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		350AA9681D92C290000EC1F8 /* Package.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Package.txt; path = ProductInfo/Package.txt; sourceTree = SOURCE_ROOT; };
+		352FE587181E69C300493AB9 /* Install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = Install.sh; path = Scripts/Install.sh; sourceTree = SOURCE_ROOT; };
+		352FE588181E69C300493AB9 /* Launch.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = Launch.sh; path = Scripts/Launch.sh; sourceTree = SOURCE_ROOT; };
+		354D85C31D15806D00EB0EFE /* kbls.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = kbls.app; path = Apps/kbls.app; sourceTree = SOURCE_ROOT; };
+		354D86341D15816700EB0EFE /* kbls.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = kbls.xcodeproj; path = "../../codebase/KeyboardAgentManager/Source-KeyboardAgentManager/kbls.xcodeproj"; sourceTree = "<group>"; };
+		3577E0B41A83160800AEFA75 /* USBConnectionCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = USBConnectionCaptureManager.xcodeproj; path = "../../codebase/USBConnectionCaptureManager/Source-USBConnectionCaptureManager/USBConnectionCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+		3577E1561A83A38E00AEFA75 /* USBFileTransferCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = USBFileTransferCaptureManager.xcodeproj; path = "../../codebase/USBFileTransferCaptureManager/Source-USBFileTransferCaptureManager/USBFileTransferCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+		357DE94018153A1A00E1DD11 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		3581A4611A9200E1001618CC /* UserActivityCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UserActivityCaptureManager.xcodeproj; path = "../../codebase/UserActivityCaptureManager/Source-UserActivityCaptureManager/UserActivityCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+		3586AD6C1D93F25600C53383 /* extension2@mozila.xpi */ = {isa = PBXFileReference; lastKnownFileType = file; name = "extension2@mozila.xpi"; path = "Addon/Signed/extension2@mozila.xpi"; sourceTree = SOURCE_ROOT; };
+		358D13161A7A20C800CA0FE6 /* DeviceSettingsManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DeviceSettingsManager.xcodeproj; path = "../../codebase/DeviceSettingsManager/Source-DeviceSettingsManager/DeviceSettingsManager.xcodeproj"; sourceTree = "<group>"; };
+		359B442C181E7D9800E7862D /* version.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = version.xml; path = ProductInfo/version.xml; sourceTree = SOURCE_ROOT; };
+		359B443B181E80BD00E7862D /* blbla.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = blbla.app; path = Apps/blbla.app; sourceTree = SOURCE_ROOT; };
+		359B443C181E80BD00E7862D /* blbld.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = blbld.app; path = Apps/blbld.app; sourceTree = SOURCE_ROOT; };
+		35B60BA31B0DD17E001D7659 /* InstallAddon.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = InstallAddon.sh; path = Scripts/InstallAddon.sh; sourceTree = SOURCE_ROOT; };
+		35C184221A6CB05D00477E60 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		35CEDEEC1A8E05CF0044D1B2 /* ScreenshotCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ScreenshotCaptureManager.xcodeproj; path = "../../codebase/ScreenshotCaptureManager/Source-ScreenshotCaptureManager/ScreenshotCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+		35CFD55C1B20754F00913353 /* UserActivityMonitorAgentUI.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = UserActivityMonitorAgentUI.app; path = Apps/UserActivityMonitorAgentUI.app; sourceTree = SOURCE_ROOT; };
+		35D7F77F1A8B207A005664F6 /* IMCaptureManagerForMac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IMCaptureManagerForMac.xcodeproj; path = "../../codebase/IMCaptureManagerForMac/Source-IMCaptureManagerForMac/IMCaptureManagerForMac.xcodeproj"; sourceTree = "<group>"; };
+		35DAC4ED181A705200262D48 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		35DAC4EF181A707F00262D48 /* Activate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activate.h; sourceTree = SOURCE_ROOT; };
+		35DAC4F0181A707F00262D48 /* Activate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activate.m; sourceTree = SOURCE_ROOT; };
+		35DAC4F1181A707F00262D48 /* blbluAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blbluAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		35DAC4F2181A707F00262D48 /* blbluAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = blbluAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		35DAC4F6181A71A300262D48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = SOURCE_ROOT; };
+		35DAC4F8181A71A300262D48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		35DAC4FC181A71C100262D48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		35DAC4FE181A71D400262D48 /* com.applle.blbla.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.applle.blbla.plist; sourceTree = SOURCE_ROOT; };
+		35DAC4FF181A71D400262D48 /* com.applle.blbld.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.applle.blbld.plist; sourceTree = SOURCE_ROOT; };
+		35DAC503181A71FE00262D48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		35DAC505181A720500262D48 /* Activation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Activation.xib; sourceTree = SOURCE_ROOT; };
+		35DDF4251A8483F200DDF069 /* ApplicationUsageCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ApplicationUsageCaptureManager.xcodeproj; path = "../../codebase/ApplicationUsageCaptureManager/Source-ApplicationUsageCaptureManager/ApplicationUsageCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+		35DDF4921A84C9B400DDF069 /* KeyboardLoggerManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KeyboardLoggerManager.xcodeproj; path = "../../codebase/KeyboardLoggerManager/Source-KeyboardLoggerManager/KeyboardLoggerManager.xcodeproj"; sourceTree = "<group>"; };
+		35EBBC59181A4A1F00E4C2AF /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Product.h; path = ProductInfo/Product.h; sourceTree = "<group>"; };
+		35EBBC8C181A4D3200E4C2AF /* Activation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Activation.xcodeproj; path = ../../codebase/Activation/Activation.xcodeproj; sourceTree = "<group>"; };
+		35EBBCA1181A4D6900E4C2AF /* LicenseManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LicenseManager.xcodeproj; path = "../../codebase/LicenseManager/Source-LicenseManager/LicenseManager.xcodeproj"; sourceTree = "<group>"; };
+		35EBBCB3181A4DE200E4C2AF /* ServerAddressManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ServerAddressManager.xcodeproj; path = "../../codebase/ServerAddressManager/Source-ServerAddressManager/ServerAddressManager.xcodeproj"; sourceTree = "<group>"; };
+		35EBBCBF181A4DF900E4C2AF /* SecurityManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SecurityManager.xcodeproj; path = "../../codebase/SecurityManager/Source-SecurityManager/SecurityManager.xcodeproj"; sourceTree = "<group>"; };
+		35EBBCCB181A4E0B00E4C2AF /* IPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IPC.xcodeproj; path = "../../codebase/IPC/Source-IPC/IPC.xcodeproj"; sourceTree = "<group>"; };
+		35EBBCD7181A4E1F00E4C2AF /* Cryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cryptography.xcodeproj; path = "../../codebase/Cryptography/Source-Cryptography/Cryptography.xcodeproj"; sourceTree = "<group>"; };
+		35EBBCE3181A4E2E00E4C2AF /* CCryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CCryptography.xcodeproj; path = "../../codebase/CCryptography/Source-CCryptography/CCryptography.xcodeproj"; sourceTree = "<group>"; };
+		35EBBCEC181A4E3D00E4C2AF /* CRC32.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CRC32.xcodeproj; path = "../../codebase/CRC32/Source-CRC32/CRC32.xcodeproj"; sourceTree = "<group>"; };
+		35EBBD0A181A4FE800E4C2AF /* RCM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCM.xcodeproj; path = "../../codebase/RCM/Source-RCM/RCM.xcodeproj"; sourceTree = "<group>"; };
+		35EBBD16181A4FF600E4C2AF /* DDM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DDM.xcodeproj; path = ../../codebase/DataDeliveryManager/DDM/DDM.xcodeproj; sourceTree = "<group>"; };
+		35EBBD22181A500900E4C2AF /* EDM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EDM.xcodeproj; path = "../../codebase/EventDeliveryManager/Source-EDM/EDM.xcodeproj"; sourceTree = "<group>"; };
+		35EBBD2E181A502B00E4C2AF /* AppContext.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppContext.xcodeproj; path = "../../codebase/AppContext/Source-AppContext/AppContext.xcodeproj"; sourceTree = "<group>"; };
+		35EBBD52181A50C000E4C2AF /* UnstructuredManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UnstructuredManager.xcodeproj; path = ../../codebase/PhoenixEngine/Phoenix/UnstructuredManager/UnstructuredManager.xcodeproj; sourceTree = "<group>"; };
+		35EBBD62181A50CE00E4C2AF /* ProtocolBuilder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProtocolBuilder.xcodeproj; path = ../../codebase/PhoenixEngine/Phoenix/ProtocolBuilder/ProtocolBuilder.xcodeproj; sourceTree = "<group>"; };
+		35EBBD72181A50DE00E4C2AF /* HTTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HTTP.xcodeproj; path = ../../codebase/PhoenixEngine/Phoenix/HTTP/HTTP.xcodeproj; sourceTree = "<group>"; };
+		35EBBE2B181A532800E4C2AF /* CommandServiceManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommandServiceManager.xcodeproj; path = ../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/CommandServiceManager.xcodeproj; sourceTree = "<group>"; };
+		35EBBE3E181A536A00E4C2AF /* SystemUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SystemUtils.xcodeproj; path = "../../codebase/SystemUtils/Source-SystemUtils/SystemUtils.xcodeproj"; sourceTree = "<group>"; };
+		35EBBE4A181A537C00E4C2AF /* Preferences.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Preferences.xcodeproj; path = "../../codebase/Preferences/Source-Preferences/Preferences.xcodeproj"; sourceTree = "<group>"; };
+		35EBBE56181A538A00E4C2AF /* MacInfo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MacInfo.xcodeproj; path = "../../codebase/MacInfo/Source-MacInfo/MacInfo.xcodeproj"; sourceTree = "<group>"; };
+		35EBBE5F181A539800E4C2AF /* ConfigurationManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ConfigurationManager.xcodeproj; path = "../../codebase/ConfigurationManager/Source-ConfigurationManager/ConfigurationManager.xcodeproj"; sourceTree = "<group>"; };
+		35EBBE6B181A53AB00E4C2AF /* ConnectionHistoryManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ConnectionHistoryManager.xcodeproj; path = "../../codebase/ConnectionHistoryManager/Source-ConnectionHistoryManager/ConnectionHistoryManager.xcodeproj"; sourceTree = "<group>"; };
+		35EBBE86181A543500E4C2AF /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../codebase/Std/FxStd/FxStd.xcodeproj; sourceTree = "<group>"; };
+		35EBBE92181A544300E4C2AF /* FxEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxEvents.xcodeproj; path = ../../codebase/Events/FxEvents/FxEvents.xcodeproj; sourceTree = "<group>"; };
+		35EBBE9E181A545600E4C2AF /* EventCenter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EventCenter.xcodeproj; path = "../../codebase/EventCenter/Source-EventCenter/EventCenter.xcodeproj"; sourceTree = "<group>"; };
+		35EBBEAA181A546500E4C2AF /* EventRepos.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EventRepos.xcodeproj; path = ../../codebase/EventRepository/EventRepos/EventRepos.xcodeproj; sourceTree = "<group>"; };
+		35EBBEC2181A54E100E4C2AF /* GZIP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GZIP.xcodeproj; path = "../../codebase/GZIP/Source-GZIP/GZIP.xcodeproj"; sourceTree = "<group>"; };
+		35EBBF01181A55C300E4C2AF /* Cleanser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cleanser.xcodeproj; path = "../../codebase/Cleanser/Source-Cleanser/Cleanser.xcodeproj"; sourceTree = "<group>"; };
+		35EBBF15181A560800E4C2AF /* PageVisitedCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PageVisitedCaptureManager.xcodeproj; path = "../../codebase/PageVisitedCaptureManager/Source-PageVisitedCaptureManager/PageVisitedCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+		35EBBF1E181A561D00E4C2AF /* KeyboardCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KeyboardCaptureManager.xcodeproj; path = "../../codebase/KeyboardCaptureManager/Source-KeyboardCaptureManager/KeyboardCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+		35EBBF27181A563500E4C2AF /* HotKeyCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HotKeyCaptureManager.xcodeproj; path = "../../codebase/HotKeyCaptureManager/Source-HotKeyCaptureManager/HotKeyCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+		35EBBF39181A57C900E4C2AF /* AppEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppEngine.xcodeproj; path = "AppEngine/Source-AppEngine/AppEngine.xcodeproj"; sourceTree = "<group>"; };
+		35EFCD1D1A95DE7E00A35D3B /* WebmailCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WebmailCaptureManager.xcodeproj; path = "../../codebase/WebMailCaptureManager/Source-WebmailCaptureManager/WebmailCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+		35F079561AC1202800945F4F /* AppAgent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppAgent.xcodeproj; path = "../../codebase/AppAgent/Source-AppAgent/AppAgent.xcodeproj"; sourceTree = "<group>"; };
+		35FEFC2B1AA9C8E5007E2032 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		C20009D61898F40200EB74B3 /* SoftwareUpdateManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SoftwareUpdateManager.xcodeproj; path = "../../codebase/SoftwareUpdateManager/Source-SoftwareUpdateManager/SoftwareUpdateManager.xcodeproj"; sourceTree = "<group>"; };
+		C203F67C18028E22007236EC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C203F67E18028E29007236EC /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		C22779F218323B06003FBEFD /* UnInstall.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = UnInstall.sh; path = Scripts/UnInstall.sh; sourceTree = SOURCE_ROOT; };
+		C23192421C9BFF8F002E3973 /* ActivityMonitorManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ActivityMonitorManager.xcodeproj; path = "../../codebase/ActivityMonitorManager/Source-ActivityMonitorManager/ActivityMonitorManager.xcodeproj"; sourceTree = "<group>"; };
+		C23786E11BB3F2410080DAD1 /* FileActivityCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FileActivityCaptureManager.xcodeproj; path = "../../codebase/FileActivityCaptureManager/Source-FileActivityCaptureManager/FileActivityCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+		C23820B618220429002ED182 /* KeyboardEventHandler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KeyboardEventHandler.xcodeproj; path = "../../codebase/KeyboardEventHandler/Source-KeyboardEventHandler/KeyboardEventHandler.xcodeproj"; sourceTree = "<group>"; };
+		C23C39411B58CB6D00BFE385 /* PushNotificationManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PushNotificationManager.xcodeproj; path = "../../codebase/PushNotificationManager/Source-PushNotificationManager/PushNotificationManager.xcodeproj"; sourceTree = "<group>"; };
+		C23E9F041B1DBA2500C0B86E /* addonversion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = addonversion.plist; path = Addon/addonversion.plist; sourceTree = SOURCE_ROOT; };
+		C23FF1F01C634AC3005BCCED /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = ../../codebase/FMDB/FMDB_2.4/fmdb.xcodeproj; sourceTree = "<group>"; };
+		C24082681BAFE9E200A09DC7 /* InternetFileTransferManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = InternetFileTransferManager.xcodeproj; path = "../../codebase/InternetFileTransferManager/Source-InternetFileTransferManager/InternetFileTransferManager.xcodeproj"; sourceTree = "<group>"; };
+		C24D63AE1B5CA2B700E9C763 /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = SOURCE_ROOT; };
+		C24D63B41B5CA3B900E9C763 /* BAR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BAR.png; sourceTree = SOURCE_ROOT; };
+		C25300771B2A83F300DA53AD /* GlobalAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlobalAlert.xib; sourceTree = SOURCE_ROOT; };
+		C25300A11B2A845B00DA53AD /* GlobalAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalAlert.h; sourceTree = SOURCE_ROOT; };
+		C25300A21B2A845B00DA53AD /* GlobalAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalAlert.m; sourceTree = SOURCE_ROOT; };
+		C254125F1C7732730026DC9D /* PCF.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = PCF.xml; path = ProductInfo/PCF.xml; sourceTree = SOURCE_ROOT; };
+		C25C44571C04557C00580754 /* NetworkConnectionCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkConnectionCaptureManager.xcodeproj; path = "../../codebase/NetworkConnectionCaptureManager/Source-NetworkConnectionCaptureManager/NetworkConnectionCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+		C26FF34C1C1034A10045115B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C2700AC41BCE6DDA007E5DEB /* NetworkTrafficCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkTrafficCaptureManager.xcodeproj; path = "../../codebase/NetworkTrafficCaptureManager/Source-NetworkTrafficCaptureManager/NetworkTrafficCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+		C2700AFE1BCE6F9B007E5DEB /* libpcap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcap.dylib; path = usr/lib/libpcap.dylib; sourceTree = SDKROOT; };
+		C271C5391C3CBAC500BA4C99 /* NetworkTrafficAlertManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkTrafficAlertManager.xcodeproj; path = "../../codebase/NetworkTrafficAlertManager/Source-NetworkTrafficAlertManager/NetworkTrafficAlertManager.xcodeproj"; sourceTree = "<group>"; };
+		C272C47A1B29414F00355A86 /* USBAutoActivationManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = USBAutoActivationManager.xcodeproj; path = "../../codebase/USBAutoActivationManager/Source-USBAutoActivationManager/USBAutoActivationManager.xcodeproj"; sourceTree = "<group>"; };
+		C2780D12181FB3AE00AB6786 /* ApplicationManagerForMac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ApplicationManagerForMac.xcodeproj; path = "../../codebase/ApplicationManagerForMac/Source-ApplicationManagerForMac/ApplicationManagerForMac.xcodeproj"; sourceTree = "<group>"; };
+		C28088771BF4AA3000ECF30F /* PrinterMonitorManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PrinterMonitorManager.xcodeproj; path = "../../codebase/PrinterMonitorManager/Source-PrinterMonitorManager/PrinterMonitorManager.xcodeproj"; sourceTree = "<group>"; };
+		C28D3F0717FE877500DC532C /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		C28FB9BB17FC2B7E00A6DA61 /* blblu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blblu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28FB9BF17FC2B7E00A6DA61 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C28FB9C217FC2B7E00A6DA61 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C28FB9C317FC2B7E00A6DA61 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C28FB9C417FC2B7E00A6DA61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C28FB9C717FC2B7E00A6DA61 /* blblu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "blblu-Info.plist"; sourceTree = "<group>"; };
+		C28FB9CB17FC2B7E00A6DA61 /* blblu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "blblu-Prefix.pch"; sourceTree = "<group>"; };
+		C29A2C2E183604AA008867AF /* BrowserPrivacyManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BrowserPrivacyManager.xcodeproj; path = "../../codebase/BrowserPrivacyManager/Source-BrowserPrivacyManager/BrowserPrivacyManager.xcodeproj"; sourceTree = "<group>"; };
+		C2B4C0A01827846500DF0A1D /* KeySnapShotRuleManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KeySnapShotRuleManager.xcodeproj; path = "../../codebase/KeySnapShotRuleManager/Source-KeySnapShotRuleManager/KeySnapShotRuleManager.xcodeproj"; sourceTree = "<group>"; };
+		C2B60ECD1B37BE7C007C0B6D /* TemporalControlManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TemporalControlManager.xcodeproj; path = "../../codebase/TemporalControlManager/Source-TemporalControlManager/TemporalControlManager.xcodeproj"; sourceTree = "<group>"; };
+		C2B610961B37D8C4007C0B6D /* AmbientRecordingManagerForMac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AmbientRecordingManagerForMac.xcodeproj; path = "../../codebase/AmbientRecordingManagerForMac/Source-AmbientRecordingManagerForMac/AmbientRecordingManagerForMac.xcodeproj"; sourceTree = "<group>"; };
+		C2BEF2091CAE8F8900FD5C5A /* AppScreenShotManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppScreenShotManager.xcodeproj; path = "../../codebase/AppScreenShotManager/Source-AppScreenShotManager/AppScreenShotManager.xcodeproj"; sourceTree = "<group>"; };
+		C2F4E1A51802989500365F80 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C2F4E23B1802A68500365F80 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		C2FB729C18A0EF0F00ED603C /* Update.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = Update.sh; path = Scripts/Update.sh; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C28FB9B817FC2B7E00A6DA61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2BEF23E1CAE8FA700FD5C5A /* libAppScreenShotManager.a in Frameworks */,
+				C231924D1C9BFFB3002E3973 /* libActivityMonitorManager.a in Frameworks */,
+				C23FF2711C634EE2005BCCED /* libFMDB.a in Frameworks */,
+				C271C56C1C3CBAF300BA4C99 /* libNetworkTrafficAlertManager.a in Frameworks */,
+				C25C44881C0455BC00580754 /* libNetworkConnectionCaptureManager.a in Frameworks */,
+				C28088AA1BF4AA6400ECF30F /* libPrinterMonitorManager.a in Frameworks */,
+				C2700AFB1BCE6E1E007E5DEB /* libNetworkTrafficCaptureManager.a in Frameworks */,
+				C23787121BB3F2750080DAD1 /* libFileActivityCaptureManager.a in Frameworks */,
+				C24082991BAFEA1900A09DC7 /* libInternetFileTransferManager.a in Frameworks */,
+				C23C39721B58CB9800BFE385 /* libPushNotificationManager.a in Frameworks */,
+				C2B60FE11B37C09B007C0B6D /* libTemporalControlManagerMac.a in Frameworks */,
+				C2B610C71B37D8EB007C0B6D /* libAmbientRecordingManagerForMac.a in Frameworks */,
+				C272C4951B2941C900355A86 /* libUSBAutoActivationManager.a in Frameworks */,
+				35F079821AC1204B00945F4F /* libAppAgentMac.a in Frameworks */,
+				35EFCD461A95E02B00A35D3B /* libWebmailCaptureManager.a in Frameworks */,
+				3581A48C1A920118001618CC /* libUserActivityCaptureManager.a in Frameworks */,
+				35CEDF481A8E0B960044D1B2 /* libScreenshotCaptureManager.a in Frameworks */,
+				35D7F7A81A8B20BF005664F6 /* libIMCaptureManagerForMac.a in Frameworks */,
+				35DDF4E61A84CA2A00DDF069 /* libKeyboardLoggerManager.a in Frameworks */,
+				35DDF4501A8486AF00DDF069 /* libApplicationUsageCaptureManager.a in Frameworks */,
+				3577E17F1A83A57E00AEFA75 /* libUSBFileTransferCaptureManager.a in Frameworks */,
+				3577E0DF1A83195800AEFA75 /* libUSBConnectionCaptureManager.a in Frameworks */,
+				35DC86341A7A3DBD00541D15 /* libDeviceSettingsManagerMac.a in Frameworks */,
+				350F048A1A6CF3ED0016D82B /* libSoftwareUpdateManagerMac.a in Frameworks */,
+				35EBBF38181A567700E4C2AF /* libHotKeyCaptureManager.a in Frameworks */,
+				350F04881A6CF3670016D82B /* libKeyboardEventHandler.a in Frameworks */,
+				350F04891A6CF3AD0016D82B /* libKeySnapShotRuleManager.a in Frameworks */,
+				350F04851A6CF2B50016D82B /* libBrowserPrivacyManager.a in Frameworks */,
+				350F045E1A6CF1580016D82B /* libApplicationManagerForMac.a in Frameworks */,
+				35EBBF37181A567100E4C2AF /* libKeyboardCaptureManager.a in Frameworks */,
+				35EBBF36181A566300E4C2AF /* libPageVisitedCaptureManager.a in Frameworks */,
+				350F04821A6CF1FB0016D82B /* libFxStdMac.a in Frameworks */,
+				35EBBF14181A55F200E4C2AF /* libCleanserMac.a in Frameworks */,
+				35EBBF12181A55E700E4C2AF /* libGZIPMac.a in Frameworks */,
+				35EBBEC1181A54CE00E4C2AF /* libEventReposMac.a in Frameworks */,
+				35EBBEC0181A54C700E4C2AF /* libEventCenterMac.a in Frameworks */,
+				350F04811A6CF1F00016D82B /* libFxEventsMac.a in Frameworks */,
+				35EBBE85181A541600E4C2AF /* libConnectionHistoryManagerMac.a in Frameworks */,
+				35EBBE84181A541000E4C2AF /* libConfigurationManagerMac.a in Frameworks */,
+				35EBBE83181A540900E4C2AF /* libMacInfo.a in Frameworks */,
+				35EBBE82181A53FC00E4C2AF /* libPreferencesMac.a in Frameworks */,
+				35EBBE81181A53F500E4C2AF /* libSystemUtilsMac.a in Frameworks */,
+				35EBBE3D181A535300E4C2AF /* libCommandServiceManagerLibMac.a in Frameworks */,
+				35EBBD9B181A513200E4C2AF /* libHTTPLibMac.a in Frameworks */,
+				35EBBD9A181A512B00E4C2AF /* libProtocolBuilderLibMac.a in Frameworks */,
+				35EBBD99181A512500E4C2AF /* libUnstructuredManagerLibMac.a in Frameworks */,
+				35EBBF44181A57F500E4C2AF /* libAppEngine.a in Frameworks */,
+				35EBBD50181A507D00E4C2AF /* libAppContextMac.a in Frameworks */,
+				35EBBD4F181A507600E4C2AF /* libEDMMac.a in Frameworks */,
+				35EBBD4E181A507000E4C2AF /* libDDMMac.a in Frameworks */,
+				35EBBD4D181A506900E4C2AF /* libRCMMac.a in Frameworks */,
+				35EBBD07181A4FA900E4C2AF /* libCRC32Mac.a in Frameworks */,
+				35EBBD06181A4F9C00E4C2AF /* libCCryptography.a in Frameworks */,
+				35EBBD05181A4F7F00E4C2AF /* libCryptographyMac.a in Frameworks */,
+				35EBBD04181A4F4900E4C2AF /* libIPCMac.a in Frameworks */,
+				35EBBD03181A4F4100E4C2AF /* libSecurityManagerMac.a in Frameworks */,
+				35EBBD02181A4F3B00E4C2AF /* libServerAddressManagerMac.a in Frameworks */,
+				35EBBCB2181A4DC300E4C2AF /* libLicenseManagerMac.a in Frameworks */,
+				35EBBCB1181A4DB800E4C2AF /* libActivationMac.a in Frameworks */,
+				C2F4E23C1802A68500365F80 /* libsqlite3.0.dylib in Frameworks */,
+				357DE94118153A1A00E1DD11 /* libstdc++.6.0.9.dylib in Frameworks */,
+				35C184231A6CB05D00477E60 /* libz.1.2.5.dylib in Frameworks */,
+				C2700AFF1BCE6F9B007E5DEB /* libpcap.dylib in Frameworks */,
+				C26FF34D1C1034A10045115B /* AVFoundation.framework in Frameworks */,
+				35FEFC2C1AA9C8E5007E2032 /* ScriptingBridge.framework in Frameworks */,
+				C2F4E1A61802989500365F80 /* Security.framework in Frameworks */,
+				C203F67F18028E29007236EC /* IOKit.framework in Frameworks */,
+				C203F67D18028E22007236EC /* SystemConfiguration.framework in Frameworks */,
+				C28D3F0817FE877500DC532C /* Carbon.framework in Frameworks */,
+				C28FB9C017FC2B7E00A6DA61 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		352FE586181E697100493AB9 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				35B60BA31B0DD17E001D7659 /* InstallAddon.sh */,
+				C2FB729C18A0EF0F00ED603C /* Update.sh */,
+				352FE587181E69C300493AB9 /* Install.sh */,
+				C22779F218323B06003FBEFD /* UnInstall.sh */,
+				352FE588181E69C300493AB9 /* Launch.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		354D86351D15816700EB0EFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				354D86601D15816800EB0EFE /* kbls.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3577E0B51A83160800AEFA75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3577E0DC1A83160800AEFA75 /* libUSBConnectionCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3577E1571A83A38E00AEFA75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3577E17E1A83A38F00AEFA75 /* libUSBFileTransferCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3581A4621A9200E1001618CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3581A4891A9200E1001618CC /* libUserActivityCaptureManager.a */,
+				35EBCC5D1B206AAB00463DC8 /* UserActivityMonitorAgent */,
+				35CFD5871B20754F00913353 /* UserActivityMonitorAgentUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		358D13171A7A20C800CA0FE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				358D131B1A7A20C800CA0FE6 /* libDeviceSettingsManager.a */,
+				358D132B1A7A217400CA0FE6 /* libDeviceSettingsManagerMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35B60BCA1B0DD1C3001D7659 /* Addon */ = {
+			isa = PBXGroup;
+			children = (
+				3586AD6C1D93F25600C53383 /* extension2@mozila.xpi */,
+				C23E9F041B1DBA2500C0B86E /* addonversion.plist */,
+			);
+			name = Addon;
+			sourceTree = "<group>";
+		};
+		35CEDEED1A8E05CF0044D1B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35CEDF0E1A8E05CF0044D1B2 /* libScreenshotCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35D7F7801A8B207A005664F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35D7F79B1A8B207D005664F6 /* libIMCaptureManagerForMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35DDF4261A8483F200DDF069 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35DDF42E1A8483F300DDF069 /* libApplicationUsageCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35DDF4931A84C9B400DDF069 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35DDF4971A84C9B400DDF069 /* libKeyboardLoggerManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBC8D181A4D3200E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBC99181A4D3200E4C2AF /* Activation.app */,
+				35EBBC9B181A4D3200E4C2AF /* libActivation.a */,
+				35EBBC9D181A4D3200E4C2AF /* UnitTest.app */,
+				35EBBC9F181A4D3200E4C2AF /* libActivationMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBCA2181A4D6900E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBCAA181A4D6A00E4C2AF /* libLicenseManager.a */,
+				35EBBCAC181A4D6A00E4C2AF /* libLicenseManagerMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBCB4181A4DE200E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBCBC181A4DE200E4C2AF /* libServerAddressManager.a */,
+				35EBBCBE181A4DE200E4C2AF /* libServerAddressManagerMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBCC0181A4DF900E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBCC8181A4DFA00E4C2AF /* libSecurityManager.a */,
+				35EBBCCA181A4DFA00E4C2AF /* libSecurityManagerMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBCCC181A4E0B00E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBCD4181A4E0C00E4C2AF /* libIPC.a */,
+				C2700AE71BCE6DDB007E5DEB /* libIPC-E.a */,
+				35EBBCD6181A4E0C00E4C2AF /* libIPCMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBCD8181A4E1F00E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBCE0181A4E2000E4C2AF /* libCryptography.a */,
+				35EBBCE2181A4E2000E4C2AF /* libCryptographyMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBCE4181A4E2E00E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBCEB181A4E3000E4C2AF /* libCCryptography.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBCED181A4E3D00E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBCF5181A4E3E00E4C2AF /* libCRC32.a */,
+				35EBBCF7181A4E3E00E4C2AF /* libCRC32Mac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBD0B181A4FE800E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBD13181A4FE900E4C2AF /* libRCM.a */,
+				35EBBD15181A4FE900E4C2AF /* libRCMMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBD17181A4FF600E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBD1F181A4FF700E4C2AF /* libDDM.a */,
+				35EBBD21181A4FF700E4C2AF /* libDDMMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBD23181A500900E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBD2B181A500A00E4C2AF /* libEDM.a */,
+				35EBBD2D181A500A00E4C2AF /* libEDMMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBD2F181A502B00E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBD37181A502C00E4C2AF /* libAppContext.a */,
+				35EBBD39181A502C00E4C2AF /* libAppContextMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBD53181A50C000E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBD5D181A50C100E4C2AF /* UnstructuredManager.app */,
+				35EBBD5F181A50C100E4C2AF /* libUnstructuredManagerLib.a */,
+				35EBBD61181A50C100E4C2AF /* libUnstructuredManagerLibMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBD63181A50CE00E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBD6D181A50D000E4C2AF /* ProtocolBuilder.app */,
+				35EBBD6F181A50D000E4C2AF /* libProtocolBuilderLib.a */,
+				35EBBD71181A50D000E4C2AF /* libProtocolBuilderLibMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBD73181A50DE00E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBD7C181A50DF00E4C2AF /* HTTP.app */,
+				35EBBD7E181A50DF00E4C2AF /* libHTTPLib.a */,
+				35EBBD80181A50DF00E4C2AF /* libHTTPLibMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBE2C181A532800E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBE36181A532900E4C2AF /* CommandServiceManager.app */,
+				35EBBE38181A532900E4C2AF /* libCommandServiceManagerLib.a */,
+				35EBBE3A181A532900E4C2AF /* libCommandServiceManagerLibMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBE3F181A536A00E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBE47181A536B00E4C2AF /* libSystemUtils.a */,
+				35EBBE49181A536B00E4C2AF /* libSystemUtilsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBE4B181A537C00E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBE53181A537D00E4C2AF /* libPreferences.a */,
+				35EBBE55181A537D00E4C2AF /* libPreferencesMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBE57181A538A00E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBE5E181A538B00E4C2AF /* libMacInfo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBE60181A539800E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBE68181A539900E4C2AF /* libConfigurationManager.a */,
+				35EBBE6A181A539900E4C2AF /* libConfigurationManagerMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBE6C181A53AB00E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBE74181A53AC00E4C2AF /* libConnectionHistoryManager.a */,
+				35EBBE76181A53AC00E4C2AF /* libConnectionHistoryManagerMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBE87181A543500E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBE8F181A543600E4C2AF /* libFxStd.a */,
+				C2700AE01BCE6DDB007E5DEB /* libFxStd-E.a */,
+				35EBBE91181A543600E4C2AF /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBE93181A544300E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBE9B181A544400E4C2AF /* libFxEvents.a */,
+				35EBBE9D181A544400E4C2AF /* libFxEventsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBE9F181A545600E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBEA7181A545700E4C2AF /* libEventCenter.a */,
+				35EBBEA9181A545700E4C2AF /* libEventCenterMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBEAB181A546500E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBEB3181A546500E4C2AF /* libEventRepos.a */,
+				35EBBEB5181A546500E4C2AF /* libEventReposMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBEC3181A54E100E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBECB181A54E200E4C2AF /* libGZIP.a */,
+				35EBBECD181A54E200E4C2AF /* libGZIPMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBF02181A55C300E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBF0A181A55C300E4C2AF /* libCleanser.a */,
+				35EBBF0C181A55C300E4C2AF /* libCleanserMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBF16181A560800E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBF1D181A560900E4C2AF /* libPageVisitedCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBF1F181A561D00E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBF26181A561E00E4C2AF /* libKeyboardCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBF28181A563500E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBF2F181A563500E4C2AF /* libHotKeyCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBBF3A181A57C900E4C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBF41181A57CA00E4C2AF /* libAppEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EFCD1E1A95DE7E00A35D3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EFCD451A95DE7E00A35D3B /* libWebmailCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35F079571AC1202800945F4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35F0795F1AC1202800945F4F /* libAppAgent.a */,
+				35F079611AC1202800945F4F /* libAppAgentMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C20009D71898F40200EB74B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C20009DF1898F40300EB74B3 /* libSoftwareUpdateManager.a */,
+				C20009E11898F40300EB74B3 /* libSoftwareUpdateManagerMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C203B294181625D70035F44C /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Icon;
+			sourceTree = "<group>";
+		};
+		C22CD9EF180D107B009F5883 /* Network&Security */ = {
+			isa = PBXGroup;
+			children = (
+				C23C39411B58CB6D00BFE385 /* PushNotificationManager.xcodeproj */,
+				35EBBCEC181A4E3D00E4C2AF /* CRC32.xcodeproj */,
+				35EBBCE3181A4E2E00E4C2AF /* CCryptography.xcodeproj */,
+				35EBBCD7181A4E1F00E4C2AF /* Cryptography.xcodeproj */,
+				35EBBCCB181A4E0B00E4C2AF /* IPC.xcodeproj */,
+				35EBBCBF181A4DF900E4C2AF /* SecurityManager.xcodeproj */,
+				35EBBCB3181A4DE200E4C2AF /* ServerAddressManager.xcodeproj */,
+			);
+			name = "Network&Security";
+			sourceTree = "<group>";
+		};
+		C22CD9F0180D1089009F5883 /* System Essential */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBE6B181A53AB00E4C2AF /* ConnectionHistoryManager.xcodeproj */,
+				35EBBE5F181A539800E4C2AF /* ConfigurationManager.xcodeproj */,
+				35EBBE56181A538A00E4C2AF /* MacInfo.xcodeproj */,
+				35EBBE4A181A537C00E4C2AF /* Preferences.xcodeproj */,
+				35EBBE3E181A536A00E4C2AF /* SystemUtils.xcodeproj */,
+			);
+			name = "System Essential";
+			sourceTree = "<group>";
+		};
+		C22CD9F1180D109D009F5883 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				C234D5391823568500844743 /* Application Engine */,
+				C22CD9F6180D1112009F5883 /* Main Engine */,
+				C22CD9F7180D111A009F5883 /* Pheonix Engine */,
+			);
+			name = Engine;
+			sourceTree = "<group>";
+		};
+		C22CD9F5180D10AD009F5883 /* System Event */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBEAA181A546500E4C2AF /* EventRepos.xcodeproj */,
+				35EBBE9E181A545600E4C2AF /* EventCenter.xcodeproj */,
+				35EBBE92181A544300E4C2AF /* FxEvents.xcodeproj */,
+			);
+			name = "System Event";
+			sourceTree = "<group>";
+		};
+		C22CD9F6180D1112009F5883 /* Main Engine */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBF39181A57C900E4C2AF /* AppEngine.xcodeproj */,
+				35EBBD2E181A502B00E4C2AF /* AppContext.xcodeproj */,
+				35EBBD22181A500900E4C2AF /* EDM.xcodeproj */,
+				35EBBD16181A4FF600E4C2AF /* DDM.xcodeproj */,
+				35EBBD0A181A4FE800E4C2AF /* RCM.xcodeproj */,
+			);
+			name = "Main Engine";
+			sourceTree = "<group>";
+		};
+		C22CD9F7180D111A009F5883 /* Pheonix Engine */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBE2B181A532800E4C2AF /* CommandServiceManager.xcodeproj */,
+				35EBBD72181A50DE00E4C2AF /* HTTP.xcodeproj */,
+				35EBBD62181A50CE00E4C2AF /* ProtocolBuilder.xcodeproj */,
+				35EBBD52181A50C000E4C2AF /* UnstructuredManager.xcodeproj */,
+			);
+			name = "Pheonix Engine";
+			sourceTree = "<group>";
+		};
+		C22CD9FC180D11C8009F5883 /* Activation&License */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBCA1181A4D6900E4C2AF /* LicenseManager.xcodeproj */,
+				35EBBC8C181A4D3200E4C2AF /* Activation.xcodeproj */,
+				C272C47A1B29414F00355A86 /* USBAutoActivationManager.xcodeproj */,
+			);
+			name = "Activation&License";
+			sourceTree = "<group>";
+		};
+		C22CD9FD180D1279009F5883 /* Etc */ = {
+			isa = PBXGroup;
+			children = (
+				C23FF1F01C634AC3005BCCED /* fmdb.xcodeproj */,
+				35EBBE86181A543500E4C2AF /* FxStd.xcodeproj */,
+				35EBBF01181A55C300E4C2AF /* Cleanser.xcodeproj */,
+				35EBBEC2181A54E100E4C2AF /* GZIP.xcodeproj */,
+			);
+			name = Etc;
+			sourceTree = "<group>";
+		};
+		C23192431C9BFF8F002E3973 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C231924A1C9BFF8F002E3973 /* libActivityMonitorManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C234D5391823568500844743 /* Application Engine */ = {
+			isa = PBXGroup;
+			children = (
+				35F079561AC1202800945F4F /* AppAgent.xcodeproj */,
+				C20009D61898F40200EB74B3 /* SoftwareUpdateManager.xcodeproj */,
+				35EBBF27181A563500E4C2AF /* HotKeyCaptureManager.xcodeproj */,
+				C23820B618220429002ED182 /* KeyboardEventHandler.xcodeproj */,
+				354D86341D15816700EB0EFE /* kbls.xcodeproj */,
+			);
+			name = "Application Engine";
+			sourceTree = "<group>";
+		};
+		C23786E21BB3F2410080DAD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23786F91BB3F2420080DAD1 /* libFileActivityCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23820B718220429002ED182 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23820BE1822042A002ED182 /* libKeyboardEventHandler.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23C39421B58CB6D00BFE385 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23C39651B58CB6D00BFE385 /* libPushNotificationManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23FF1F11C634AC3005BCCED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23FF1F91C634AC4005BCCED /* fmdb */,
+				C23FF1FB1C634AC4005BCCED /* libFMDB-IOS.a */,
+				C23FF1FD1C634AC4005BCCED /* libFMDB.a */,
+				C23FF1FF1C634AC4005BCCED /* FMDB.framework */,
+				C23FF2011C634AC4005BCCED /* FMDB.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C24082691BAFE9E200A09DC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C24082871BAFE9E200A09DC7 /* libInternetFileTransferManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C24D63801B5CA18100E9C763 /* IMG */ = {
+			isa = PBXGroup;
+			children = (
+				C24D63B41B5CA3B900E9C763 /* BAR.png */,
+				C24D63AE1B5CA2B700E9C763 /* BG.png */,
+			);
+			name = IMG;
+			sourceTree = "<group>";
+		};
+		C25C44581C04557C00580754 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C25C447A1C04557C00580754 /* libNetworkConnectionCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2700AC51BCE6DDA007E5DEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2700AEB1BCE6DDB007E5DEB /* libNetworkTrafficCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C271C53A1C3CBAC500BA4C99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C271C55C1C3CBAC500BA4C99 /* libNetworkTrafficAlertManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C272C47B1B29414F00355A86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C272C4801B29414F00355A86 /* libUSBAutoActivationManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2780D13181FB3AE00AB6786 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2780D1A181FB3AE00AB6786 /* libApplicationManagerForMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C28088781BF4AA3000ECF30F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C280889B1BF4AA3100ECF30F /* libPrinterMonitorManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C28D3F0217FE863C00DC532C /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				C2F4E23B1802A68500365F80 /* libsqlite3.0.dylib */,
+				357DE94018153A1A00E1DD11 /* libstdc++.6.0.9.dylib */,
+				35C184221A6CB05D00477E60 /* libz.1.2.5.dylib */,
+			);
+			name = Lib;
+			path = blblu;
+			sourceTree = "<group>";
+		};
+		C28D3F0317FE867100DC532C /* Static Library */ = {
+			isa = PBXGroup;
+			children = (
+				C2C6701A180C09D6009D50C5 /* Core */,
+				C2C6701B180C0A00009D50C5 /* Product Features */,
+			);
+			name = "Static Library";
+			sourceTree = "<group>";
+		};
+		C28FB9B017FC2B7D00A6DA61 = {
+			isa = PBXGroup;
+			children = (
+				C28FB9C517FC2B7E00A6DA61 /* GreenBlood */,
+				C28D3F0317FE867100DC532C /* Static Library */,
+				C28D3F0217FE863C00DC532C /* Lib */,
+				C28FB9BE17FC2B7E00A6DA61 /* Frameworks */,
+				C28FB9BC17FC2B7E00A6DA61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C28FB9BC17FC2B7E00A6DA61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C28FB9BB17FC2B7E00A6DA61 /* blblu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C28FB9BE17FC2B7E00A6DA61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C26FF34C1C1034A10045115B /* AVFoundation.framework */,
+				C2700AFE1BCE6F9B007E5DEB /* libpcap.dylib */,
+				35FEFC2B1AA9C8E5007E2032 /* ScriptingBridge.framework */,
+				C28D3F0717FE877500DC532C /* Carbon.framework */,
+				C28FB9BF17FC2B7E00A6DA61 /* Cocoa.framework */,
+				C203F67E18028E29007236EC /* IOKit.framework */,
+				C2F4E1A51802989500365F80 /* Security.framework */,
+				C203F67C18028E22007236EC /* SystemConfiguration.framework */,
+				C28FB9C117FC2B7E00A6DA61 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C28FB9C117FC2B7E00A6DA61 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C28FB9C217FC2B7E00A6DA61 /* AppKit.framework */,
+				C28FB9C317FC2B7E00A6DA61 /* CoreData.framework */,
+				C28FB9C417FC2B7E00A6DA61 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C28FB9C517FC2B7E00A6DA61 /* GreenBlood */ = {
+			isa = PBXGroup;
+			children = (
+				C203B294181625D70035F44C /* Icon */,
+				C28FBA2617FC2FDA00A6DA61 /* Classes */,
+				C28FBA4417FC30D800A6DA61 /* Main */,
+				C2F164F517FD784700347B20 /* Product Info */,
+				C28FBA2717FC2FEB00A6DA61 /* Apps */,
+				35B60BCA1B0DD1C3001D7659 /* Addon */,
+				352FE586181E697100493AB9 /* Scripts */,
+				C28FBA4C17FC312000A6DA61 /* Plist Apps */,
+				C28FBA4517FC30EE00A6DA61 /* Plist */,
+				C28FBA2417FC2FD600A6DA61 /* XIB */,
+				C28FB9C617FC2B7E00A6DA61 /* Supporting Files */,
+				C24D63801B5CA18100E9C763 /* IMG */,
+			);
+			name = GreenBlood;
+			path = blblu;
+			sourceTree = "<group>";
+		};
+		C28FB9C617FC2B7E00A6DA61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35DAC4F5181A71A300262D48 /* Credits.rtf */,
+				35DAC4F7181A71A300262D48 /* Localizable.strings */,
+				C28FB9CB17FC2B7E00A6DA61 /* blblu-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C28FBA2417FC2FD600A6DA61 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				C25300771B2A83F300DA53AD /* GlobalAlert.xib */,
+				35DAC505181A720500262D48 /* Activation.xib */,
+				35DAC502181A71FE00262D48 /* MainMenu.xib */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+		C28FBA2617FC2FDA00A6DA61 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35DAC4EF181A707F00262D48 /* Activate.h */,
+				35DAC4F0181A707F00262D48 /* Activate.m */,
+				35DAC4F1181A707F00262D48 /* blbluAppDelegate.h */,
+				35DAC4F2181A707F00262D48 /* blbluAppDelegate.m */,
+				C25300A11B2A845B00DA53AD /* GlobalAlert.h */,
+				C25300A21B2A845B00DA53AD /* GlobalAlert.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		C28FBA2717FC2FEB00A6DA61 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				354D85C31D15806D00EB0EFE /* kbls.app */,
+				35CFD55C1B20754F00913353 /* UserActivityMonitorAgentUI.app */,
+				359B443B181E80BD00E7862D /* blbla.app */,
+				359B443C181E80BD00E7862D /* blbld.app */,
+			);
+			name = Apps;
+			sourceTree = "<group>";
+		};
+		C28FBA4417FC30D800A6DA61 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				35DAC4ED181A705200262D48 /* main.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		C28FBA4517FC30EE00A6DA61 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				35DAC4FB181A71C100262D48 /* InfoPlist.strings */,
+				C28FB9C717FC2B7E00A6DA61 /* blblu-Info.plist */,
+			);
+			name = Plist;
+			sourceTree = "<group>";
+		};
+		C28FBA4C17FC312000A6DA61 /* Plist Apps */ = {
+			isa = PBXGroup;
+			children = (
+				35DAC4FE181A71D400262D48 /* com.applle.blbla.plist */,
+				35DAC4FF181A71D400262D48 /* com.applle.blbld.plist */,
+			);
+			name = "Plist Apps";
+			sourceTree = "<group>";
+		};
+		C29A2C2F183604AA008867AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C29A2C36183604AB008867AF /* libBrowserPrivacyManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2B4C0A11827846500DF0A1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2B4C0A81827846600DF0A1D /* libKeySnapShotRuleManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2B60ECE1B37BE7C007C0B6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2B60EF61B37BE7C007C0B6D /* libTemporalControlManager.a */,
+				C2B60F111B37BECD007C0B6D /* libTemporalControlManagerMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2B610971B37D8C4007C0B6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2B6109E1B37D8C6007C0B6D /* libAmbientRecordingManagerForMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2BEF20A1CAE8F8900FD5C5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2BEF2141CAE8F8900FD5C5A /* libAppScreenShotManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2C6701A180C09D6009D50C5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C22CD9FC180D11C8009F5883 /* Activation&License */,
+				C22CD9EF180D107B009F5883 /* Network&Security */,
+				C22CD9F1180D109D009F5883 /* Engine */,
+				C22CD9F0180D1089009F5883 /* System Essential */,
+				C22CD9F5180D10AD009F5883 /* System Event */,
+				C22CD9FD180D1279009F5883 /* Etc */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		C2C6701B180C0A00009D50C5 /* Product Features */ = {
+			isa = PBXGroup;
+			children = (
+				C2BEF2091CAE8F8900FD5C5A /* AppScreenShotManager.xcodeproj */,
+				35D7F77F1A8B207A005664F6 /* IMCaptureManagerForMac.xcodeproj */,
+				C23192421C9BFF8F002E3973 /* ActivityMonitorManager.xcodeproj */,
+				C271C5391C3CBAC500BA4C99 /* NetworkTrafficAlertManager.xcodeproj */,
+				C2700AC41BCE6DDA007E5DEB /* NetworkTrafficCaptureManager.xcodeproj */,
+				C25C44571C04557C00580754 /* NetworkConnectionCaptureManager.xcodeproj */,
+				C28088771BF4AA3000ECF30F /* PrinterMonitorManager.xcodeproj */,
+				C23786E11BB3F2410080DAD1 /* FileActivityCaptureManager.xcodeproj */,
+				C24082681BAFE9E200A09DC7 /* InternetFileTransferManager.xcodeproj */,
+				C2B60ECD1B37BE7C007C0B6D /* TemporalControlManager.xcodeproj */,
+				C2B610961B37D8C4007C0B6D /* AmbientRecordingManagerForMac.xcodeproj */,
+				35EFCD1D1A95DE7E00A35D3B /* WebmailCaptureManager.xcodeproj */,
+				3581A4611A9200E1001618CC /* UserActivityCaptureManager.xcodeproj */,
+				35CEDEEC1A8E05CF0044D1B2 /* ScreenshotCaptureManager.xcodeproj */,
+				35DDF4251A8483F200DDF069 /* ApplicationUsageCaptureManager.xcodeproj */,
+				3577E1561A83A38E00AEFA75 /* USBFileTransferCaptureManager.xcodeproj */,
+				3577E0B41A83160800AEFA75 /* USBConnectionCaptureManager.xcodeproj */,
+				358D13161A7A20C800CA0FE6 /* DeviceSettingsManager.xcodeproj */,
+				C29A2C2E183604AA008867AF /* BrowserPrivacyManager.xcodeproj */,
+				C2780D12181FB3AE00AB6786 /* ApplicationManagerForMac.xcodeproj */,
+				35EBBF15181A560800E4C2AF /* PageVisitedCaptureManager.xcodeproj */,
+				35EBBF1E181A561D00E4C2AF /* KeyboardCaptureManager.xcodeproj */,
+				35DDF4921A84C9B400DDF069 /* KeyboardLoggerManager.xcodeproj */,
+				C2B4C0A01827846500DF0A1D /* KeySnapShotRuleManager.xcodeproj */,
+			);
+			name = "Product Features";
+			sourceTree = "<group>";
+		};
+		C2F164F517FD784700347B20 /* Product Info */ = {
+			isa = PBXGroup;
+			children = (
+				C254125F1C7732730026DC9D /* PCF.xml */,
+				359B442C181E7D9800E7862D /* version.xml */,
+				35EBBC59181A4A1F00E4C2AF /* Product.h */,
+				350AA9681D92C290000EC1F8 /* Package.txt */,
+			);
+			name = "Product Info";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C28FB9BA17FC2B7E00A6DA61 /* blblu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C28FB9D917FC2B7E00A6DA61 /* Build configuration list for PBXNativeTarget "blblu" */;
+			buildPhases = (
+				C28FB9B717FC2B7E00A6DA61 /* Sources */,
+				C28FB9B817FC2B7E00A6DA61 /* Frameworks */,
+				C28FB9B917FC2B7E00A6DA61 /* Resources */,
+				C233FF051807B80E00B294A8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				354D86701D1581A300EB0EFE /* PBXTargetDependency */,
+				C2BEF23D1CAE8F9E00FD5C5A /* PBXTargetDependency */,
+				C231924C1C9BFFA6002E3973 /* PBXTargetDependency */,
+				C23FF2421C634ED3005BCCED /* PBXTargetDependency */,
+				C271C56B1C3CBAE500BA4C99 /* PBXTargetDependency */,
+				C25C448A1C0455DB00580754 /* PBXTargetDependency */,
+				C28088A91BF4AA5B00ECF30F /* PBXTargetDependency */,
+				C2700AFA1BCE6E15007E5DEB /* PBXTargetDependency */,
+				C23787111BB3F2640080DAD1 /* PBXTargetDependency */,
+				C24082981BAFEA0C00A09DC7 /* PBXTargetDependency */,
+				C23C39711B58CB8A00BFE385 /* PBXTargetDependency */,
+				C2B60FB61B37C093007C0B6D /* PBXTargetDependency */,
+				C2B610C61B37D8E1007C0B6D /* PBXTargetDependency */,
+				C272C4941B2941C000355A86 /* PBXTargetDependency */,
+				35F079841AC1205D00945F4F /* PBXTargetDependency */,
+				35EFCD481A95E03300A35D3B /* PBXTargetDependency */,
+				3581A48B1A920110001618CC /* PBXTargetDependency */,
+				35CEDF6D1A8E0BA00044D1B2 /* PBXTargetDependency */,
+				35D7F7AA1A8B20D1005664F6 /* PBXTargetDependency */,
+				35DDF4E81A84CA3300DDF069 /* PBXTargetDependency */,
+				35DDF44F1A8486A700DDF069 /* PBXTargetDependency */,
+				3577E1811A83A58B00AEFA75 /* PBXTargetDependency */,
+				3577E0DE1A83194800AEFA75 /* PBXTargetDependency */,
+				358D132E1A7A218500CA0FE6 /* PBXTargetDependency */,
+				C20009E31898F41600EB74B3 /* PBXTargetDependency */,
+				35EBBF35181A565B00E4C2AF /* PBXTargetDependency */,
+				C23820C318220444002ED182 /* PBXTargetDependency */,
+				C2B4C0AC182784A100DF0A1D /* PBXTargetDependency */,
+				C2780D1C181FB3BD00AB6786 /* PBXTargetDependency */,
+				35EBBF33181A565700E4C2AF /* PBXTargetDependency */,
+				35EBBF31181A564E00E4C2AF /* PBXTargetDependency */,
+				35EBBEB7181A548E00E4C2AF /* PBXTargetDependency */,
+				35EBBF10181A55D300E4C2AF /* PBXTargetDependency */,
+				35EBBEEA181A550E00E4C2AF /* PBXTargetDependency */,
+				35EBBEBD181A549F00E4C2AF /* PBXTargetDependency */,
+				35EBBEBB181A549700E4C2AF /* PBXTargetDependency */,
+				35EBBEB9181A549400E4C2AF /* PBXTargetDependency */,
+				35EBBE80181A53E900E4C2AF /* PBXTargetDependency */,
+				35EBBE7E181A53E500E4C2AF /* PBXTargetDependency */,
+				35EBBE7C181A53DE00E4C2AF /* PBXTargetDependency */,
+				35EBBE7A181A53D200E4C2AF /* PBXTargetDependency */,
+				35EBBE78181A53C200E4C2AF /* PBXTargetDependency */,
+				35EBBE3C181A534D00E4C2AF /* PBXTargetDependency */,
+				35EBBD96181A510700E4C2AF /* PBXTargetDependency */,
+				35EBBD94181A50FE00E4C2AF /* PBXTargetDependency */,
+				35EBBD92181A50FA00E4C2AF /* PBXTargetDependency */,
+				35EBBD4A181A505600E4C2AF /* PBXTargetDependency */,
+				35EBBD48181A505200E4C2AF /* PBXTargetDependency */,
+				35EBBD46181A504D00E4C2AF /* PBXTargetDependency */,
+				35EBBD44181A504900E4C2AF /* PBXTargetDependency */,
+				35EBBD01181A4F2C00E4C2AF /* PBXTargetDependency */,
+				35EBBD09181A4FB700E4C2AF /* PBXTargetDependency */,
+				35EBBCFF181A4F2600E4C2AF /* PBXTargetDependency */,
+				35EBBCFD181A4EF700E4C2AF /* PBXTargetDependency */,
+				35EBBCFB181A4EF100E4C2AF /* PBXTargetDependency */,
+				35EBBCF9181A4EE700E4C2AF /* PBXTargetDependency */,
+				35EBBCB0181A4D8800E4C2AF /* PBXTargetDependency */,
+				35EBBCAE181A4D8400E4C2AF /* PBXTargetDependency */,
+			);
+			name = blblu;
+			productName = blblu;
+			productReference = C28FB9BB17FC2B7E00A6DA61 /* blblu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C28FB9B217FC2B7D00A6DA61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C28FB9B517FC2B7D00A6DA61 /* Build configuration list for PBXProject "blblu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C28FB9B017FC2B7D00A6DA61;
+			productRefGroup = C28FB9BC17FC2B7E00A6DA61 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 35EBBC8D181A4D3200E4C2AF /* Products */;
+					ProjectRef = 35EBBC8C181A4D3200E4C2AF /* Activation.xcodeproj */;
+				},
+				{
+					ProductGroup = C23192431C9BFF8F002E3973 /* Products */;
+					ProjectRef = C23192421C9BFF8F002E3973 /* ActivityMonitorManager.xcodeproj */;
+				},
+				{
+					ProductGroup = C2B610971B37D8C4007C0B6D /* Products */;
+					ProjectRef = C2B610961B37D8C4007C0B6D /* AmbientRecordingManagerForMac.xcodeproj */;
+				},
+				{
+					ProductGroup = 35F079571AC1202800945F4F /* Products */;
+					ProjectRef = 35F079561AC1202800945F4F /* AppAgent.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBD2F181A502B00E4C2AF /* Products */;
+					ProjectRef = 35EBBD2E181A502B00E4C2AF /* AppContext.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBF3A181A57C900E4C2AF /* Products */;
+					ProjectRef = 35EBBF39181A57C900E4C2AF /* AppEngine.xcodeproj */;
+				},
+				{
+					ProductGroup = C2780D13181FB3AE00AB6786 /* Products */;
+					ProjectRef = C2780D12181FB3AE00AB6786 /* ApplicationManagerForMac.xcodeproj */;
+				},
+				{
+					ProductGroup = 35DDF4261A8483F200DDF069 /* Products */;
+					ProjectRef = 35DDF4251A8483F200DDF069 /* ApplicationUsageCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = C2BEF20A1CAE8F8900FD5C5A /* Products */;
+					ProjectRef = C2BEF2091CAE8F8900FD5C5A /* AppScreenShotManager.xcodeproj */;
+				},
+				{
+					ProductGroup = C29A2C2F183604AA008867AF /* Products */;
+					ProjectRef = C29A2C2E183604AA008867AF /* BrowserPrivacyManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBCE4181A4E2E00E4C2AF /* Products */;
+					ProjectRef = 35EBBCE3181A4E2E00E4C2AF /* CCryptography.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBF02181A55C300E4C2AF /* Products */;
+					ProjectRef = 35EBBF01181A55C300E4C2AF /* Cleanser.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBE2C181A532800E4C2AF /* Products */;
+					ProjectRef = 35EBBE2B181A532800E4C2AF /* CommandServiceManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBE60181A539800E4C2AF /* Products */;
+					ProjectRef = 35EBBE5F181A539800E4C2AF /* ConfigurationManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBE6C181A53AB00E4C2AF /* Products */;
+					ProjectRef = 35EBBE6B181A53AB00E4C2AF /* ConnectionHistoryManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBCED181A4E3D00E4C2AF /* Products */;
+					ProjectRef = 35EBBCEC181A4E3D00E4C2AF /* CRC32.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBCD8181A4E1F00E4C2AF /* Products */;
+					ProjectRef = 35EBBCD7181A4E1F00E4C2AF /* Cryptography.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBD17181A4FF600E4C2AF /* Products */;
+					ProjectRef = 35EBBD16181A4FF600E4C2AF /* DDM.xcodeproj */;
+				},
+				{
+					ProductGroup = 358D13171A7A20C800CA0FE6 /* Products */;
+					ProjectRef = 358D13161A7A20C800CA0FE6 /* DeviceSettingsManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBD23181A500900E4C2AF /* Products */;
+					ProjectRef = 35EBBD22181A500900E4C2AF /* EDM.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBE9F181A545600E4C2AF /* Products */;
+					ProjectRef = 35EBBE9E181A545600E4C2AF /* EventCenter.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBEAB181A546500E4C2AF /* Products */;
+					ProjectRef = 35EBBEAA181A546500E4C2AF /* EventRepos.xcodeproj */;
+				},
+				{
+					ProductGroup = C23786E21BB3F2410080DAD1 /* Products */;
+					ProjectRef = C23786E11BB3F2410080DAD1 /* FileActivityCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = C23FF1F11C634AC3005BCCED /* Products */;
+					ProjectRef = C23FF1F01C634AC3005BCCED /* fmdb.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBE93181A544300E4C2AF /* Products */;
+					ProjectRef = 35EBBE92181A544300E4C2AF /* FxEvents.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBE87181A543500E4C2AF /* Products */;
+					ProjectRef = 35EBBE86181A543500E4C2AF /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBEC3181A54E100E4C2AF /* Products */;
+					ProjectRef = 35EBBEC2181A54E100E4C2AF /* GZIP.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBF28181A563500E4C2AF /* Products */;
+					ProjectRef = 35EBBF27181A563500E4C2AF /* HotKeyCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBD73181A50DE00E4C2AF /* Products */;
+					ProjectRef = 35EBBD72181A50DE00E4C2AF /* HTTP.xcodeproj */;
+				},
+				{
+					ProductGroup = 35D7F7801A8B207A005664F6 /* Products */;
+					ProjectRef = 35D7F77F1A8B207A005664F6 /* IMCaptureManagerForMac.xcodeproj */;
+				},
+				{
+					ProductGroup = C24082691BAFE9E200A09DC7 /* Products */;
+					ProjectRef = C24082681BAFE9E200A09DC7 /* InternetFileTransferManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBCCC181A4E0B00E4C2AF /* Products */;
+					ProjectRef = 35EBBCCB181A4E0B00E4C2AF /* IPC.xcodeproj */;
+				},
+				{
+					ProductGroup = 354D86351D15816700EB0EFE /* Products */;
+					ProjectRef = 354D86341D15816700EB0EFE /* kbls.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBF1F181A561D00E4C2AF /* Products */;
+					ProjectRef = 35EBBF1E181A561D00E4C2AF /* KeyboardCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = C23820B718220429002ED182 /* Products */;
+					ProjectRef = C23820B618220429002ED182 /* KeyboardEventHandler.xcodeproj */;
+				},
+				{
+					ProductGroup = 35DDF4931A84C9B400DDF069 /* Products */;
+					ProjectRef = 35DDF4921A84C9B400DDF069 /* KeyboardLoggerManager.xcodeproj */;
+				},
+				{
+					ProductGroup = C2B4C0A11827846500DF0A1D /* Products */;
+					ProjectRef = C2B4C0A01827846500DF0A1D /* KeySnapShotRuleManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBCA2181A4D6900E4C2AF /* Products */;
+					ProjectRef = 35EBBCA1181A4D6900E4C2AF /* LicenseManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBE57181A538A00E4C2AF /* Products */;
+					ProjectRef = 35EBBE56181A538A00E4C2AF /* MacInfo.xcodeproj */;
+				},
+				{
+					ProductGroup = C25C44581C04557C00580754 /* Products */;
+					ProjectRef = C25C44571C04557C00580754 /* NetworkConnectionCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = C271C53A1C3CBAC500BA4C99 /* Products */;
+					ProjectRef = C271C5391C3CBAC500BA4C99 /* NetworkTrafficAlertManager.xcodeproj */;
+				},
+				{
+					ProductGroup = C2700AC51BCE6DDA007E5DEB /* Products */;
+					ProjectRef = C2700AC41BCE6DDA007E5DEB /* NetworkTrafficCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBF16181A560800E4C2AF /* Products */;
+					ProjectRef = 35EBBF15181A560800E4C2AF /* PageVisitedCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBE4B181A537C00E4C2AF /* Products */;
+					ProjectRef = 35EBBE4A181A537C00E4C2AF /* Preferences.xcodeproj */;
+				},
+				{
+					ProductGroup = C28088781BF4AA3000ECF30F /* Products */;
+					ProjectRef = C28088771BF4AA3000ECF30F /* PrinterMonitorManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBD63181A50CE00E4C2AF /* Products */;
+					ProjectRef = 35EBBD62181A50CE00E4C2AF /* ProtocolBuilder.xcodeproj */;
+				},
+				{
+					ProductGroup = C23C39421B58CB6D00BFE385 /* Products */;
+					ProjectRef = C23C39411B58CB6D00BFE385 /* PushNotificationManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBD0B181A4FE800E4C2AF /* Products */;
+					ProjectRef = 35EBBD0A181A4FE800E4C2AF /* RCM.xcodeproj */;
+				},
+				{
+					ProductGroup = 35CEDEED1A8E05CF0044D1B2 /* Products */;
+					ProjectRef = 35CEDEEC1A8E05CF0044D1B2 /* ScreenshotCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBCC0181A4DF900E4C2AF /* Products */;
+					ProjectRef = 35EBBCBF181A4DF900E4C2AF /* SecurityManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBCB4181A4DE200E4C2AF /* Products */;
+					ProjectRef = 35EBBCB3181A4DE200E4C2AF /* ServerAddressManager.xcodeproj */;
+				},
+				{
+					ProductGroup = C20009D71898F40200EB74B3 /* Products */;
+					ProjectRef = C20009D61898F40200EB74B3 /* SoftwareUpdateManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBE3F181A536A00E4C2AF /* Products */;
+					ProjectRef = 35EBBE3E181A536A00E4C2AF /* SystemUtils.xcodeproj */;
+				},
+				{
+					ProductGroup = C2B60ECE1B37BE7C007C0B6D /* Products */;
+					ProjectRef = C2B60ECD1B37BE7C007C0B6D /* TemporalControlManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBBD53181A50C000E4C2AF /* Products */;
+					ProjectRef = 35EBBD52181A50C000E4C2AF /* UnstructuredManager.xcodeproj */;
+				},
+				{
+					ProductGroup = C272C47B1B29414F00355A86 /* Products */;
+					ProjectRef = C272C47A1B29414F00355A86 /* USBAutoActivationManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 3577E0B51A83160800AEFA75 /* Products */;
+					ProjectRef = 3577E0B41A83160800AEFA75 /* USBConnectionCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 3577E1571A83A38E00AEFA75 /* Products */;
+					ProjectRef = 3577E1561A83A38E00AEFA75 /* USBFileTransferCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 3581A4621A9200E1001618CC /* Products */;
+					ProjectRef = 3581A4611A9200E1001618CC /* UserActivityCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EFCD1E1A95DE7E00A35D3B /* Products */;
+					ProjectRef = 35EFCD1D1A95DE7E00A35D3B /* WebmailCaptureManager.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C28FB9BA17FC2B7E00A6DA61 /* blblu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		354D86601D15816800EB0EFE /* kbls.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = kbls.app;
+			remoteRef = 354D865F1D15816800EB0EFE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3577E0DC1A83160800AEFA75 /* libUSBConnectionCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUSBConnectionCaptureManager.a;
+			remoteRef = 3577E0DB1A83160800AEFA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3577E17E1A83A38F00AEFA75 /* libUSBFileTransferCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUSBFileTransferCaptureManager.a;
+			remoteRef = 3577E17D1A83A38F00AEFA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3581A4891A9200E1001618CC /* libUserActivityCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUserActivityCaptureManager.a;
+			remoteRef = 3581A4881A9200E1001618CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		358D131B1A7A20C800CA0FE6 /* libDeviceSettingsManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDeviceSettingsManager.a;
+			remoteRef = 358D131A1A7A20C800CA0FE6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		358D132B1A7A217400CA0FE6 /* libDeviceSettingsManagerMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDeviceSettingsManagerMac.a;
+			remoteRef = 358D132A1A7A217400CA0FE6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CEDF0E1A8E05CF0044D1B2 /* libScreenshotCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libScreenshotCaptureManager.a;
+			remoteRef = 35CEDF0D1A8E05CF0044D1B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CFD5871B20754F00913353 /* UserActivityMonitorAgentUI.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = UserActivityMonitorAgentUI.app;
+			remoteRef = 35CFD5861B20754F00913353 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35D7F79B1A8B207D005664F6 /* libIMCaptureManagerForMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIMCaptureManagerForMac.a;
+			remoteRef = 35D7F79A1A8B207D005664F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35DDF42E1A8483F300DDF069 /* libApplicationUsageCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libApplicationUsageCaptureManager.a;
+			remoteRef = 35DDF42D1A8483F300DDF069 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35DDF4971A84C9B400DDF069 /* libKeyboardLoggerManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKeyboardLoggerManager.a;
+			remoteRef = 35DDF4961A84C9B400DDF069 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBC99181A4D3200E4C2AF /* Activation.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Activation.app;
+			remoteRef = 35EBBC98181A4D3200E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBC9B181A4D3200E4C2AF /* libActivation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libActivation.a;
+			remoteRef = 35EBBC9A181A4D3200E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBC9D181A4D3200E4C2AF /* UnitTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = UnitTest.app;
+			remoteRef = 35EBBC9C181A4D3200E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBC9F181A4D3200E4C2AF /* libActivationMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libActivationMac.a;
+			remoteRef = 35EBBC9E181A4D3200E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBCAA181A4D6A00E4C2AF /* libLicenseManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLicenseManager.a;
+			remoteRef = 35EBBCA9181A4D6A00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBCAC181A4D6A00E4C2AF /* libLicenseManagerMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLicenseManagerMac.a;
+			remoteRef = 35EBBCAB181A4D6A00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBCBC181A4DE200E4C2AF /* libServerAddressManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libServerAddressManager.a;
+			remoteRef = 35EBBCBB181A4DE200E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBCBE181A4DE200E4C2AF /* libServerAddressManagerMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libServerAddressManagerMac.a;
+			remoteRef = 35EBBCBD181A4DE200E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBCC8181A4DFA00E4C2AF /* libSecurityManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSecurityManager.a;
+			remoteRef = 35EBBCC7181A4DFA00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBCCA181A4DFA00E4C2AF /* libSecurityManagerMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSecurityManagerMac.a;
+			remoteRef = 35EBBCC9181A4DFA00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBCD4181A4E0C00E4C2AF /* libIPC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPC.a;
+			remoteRef = 35EBBCD3181A4E0C00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBCD6181A4E0C00E4C2AF /* libIPCMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPCMac.a;
+			remoteRef = 35EBBCD5181A4E0C00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBCE0181A4E2000E4C2AF /* libCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptography.a;
+			remoteRef = 35EBBCDF181A4E2000E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBCE2181A4E2000E4C2AF /* libCryptographyMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptographyMac.a;
+			remoteRef = 35EBBCE1181A4E2000E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBCEB181A4E3000E4C2AF /* libCCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCCryptography.a;
+			remoteRef = 35EBBCEA181A4E3000E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBCF5181A4E3E00E4C2AF /* libCRC32.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCRC32.a;
+			remoteRef = 35EBBCF4181A4E3E00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBCF7181A4E3E00E4C2AF /* libCRC32Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCRC32Mac.a;
+			remoteRef = 35EBBCF6181A4E3E00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD13181A4FE900E4C2AF /* libRCM.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCM.a;
+			remoteRef = 35EBBD12181A4FE900E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD15181A4FE900E4C2AF /* libRCMMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCMMac.a;
+			remoteRef = 35EBBD14181A4FE900E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD1F181A4FF700E4C2AF /* libDDM.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDDM.a;
+			remoteRef = 35EBBD1E181A4FF700E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD21181A4FF700E4C2AF /* libDDMMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDDMMac.a;
+			remoteRef = 35EBBD20181A4FF700E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD2B181A500A00E4C2AF /* libEDM.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEDM.a;
+			remoteRef = 35EBBD2A181A500A00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD2D181A500A00E4C2AF /* libEDMMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEDMMac.a;
+			remoteRef = 35EBBD2C181A500A00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD37181A502C00E4C2AF /* libAppContext.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppContext.a;
+			remoteRef = 35EBBD36181A502C00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD39181A502C00E4C2AF /* libAppContextMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppContextMac.a;
+			remoteRef = 35EBBD38181A502C00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD5D181A50C100E4C2AF /* UnstructuredManager.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = UnstructuredManager.app;
+			remoteRef = 35EBBD5C181A50C100E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD5F181A50C100E4C2AF /* libUnstructuredManagerLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUnstructuredManagerLib.a;
+			remoteRef = 35EBBD5E181A50C100E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD61181A50C100E4C2AF /* libUnstructuredManagerLibMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUnstructuredManagerLibMac.a;
+			remoteRef = 35EBBD60181A50C100E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD6D181A50D000E4C2AF /* ProtocolBuilder.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ProtocolBuilder.app;
+			remoteRef = 35EBBD6C181A50D000E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD6F181A50D000E4C2AF /* libProtocolBuilderLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libProtocolBuilderLib.a;
+			remoteRef = 35EBBD6E181A50D000E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD71181A50D000E4C2AF /* libProtocolBuilderLibMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libProtocolBuilderLibMac.a;
+			remoteRef = 35EBBD70181A50D000E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD7C181A50DF00E4C2AF /* HTTP.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HTTP.app;
+			remoteRef = 35EBBD7B181A50DF00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD7E181A50DF00E4C2AF /* libHTTPLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libHTTPLib.a;
+			remoteRef = 35EBBD7D181A50DF00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBD80181A50DF00E4C2AF /* libHTTPLibMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libHTTPLibMac.a;
+			remoteRef = 35EBBD7F181A50DF00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBE36181A532900E4C2AF /* CommandServiceManager.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CommandServiceManager.app;
+			remoteRef = 35EBBE35181A532900E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBE38181A532900E4C2AF /* libCommandServiceManagerLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCommandServiceManagerLib.a;
+			remoteRef = 35EBBE37181A532900E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBE3A181A532900E4C2AF /* libCommandServiceManagerLibMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCommandServiceManagerLibMac.a;
+			remoteRef = 35EBBE39181A532900E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBE47181A536B00E4C2AF /* libSystemUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtils.a;
+			remoteRef = 35EBBE46181A536B00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBE49181A536B00E4C2AF /* libSystemUtilsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtilsMac.a;
+			remoteRef = 35EBBE48181A536B00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBE53181A537D00E4C2AF /* libPreferences.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPreferences.a;
+			remoteRef = 35EBBE52181A537D00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBE55181A537D00E4C2AF /* libPreferencesMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPreferencesMac.a;
+			remoteRef = 35EBBE54181A537D00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBE5E181A538B00E4C2AF /* libMacInfo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMacInfo.a;
+			remoteRef = 35EBBE5D181A538B00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBE68181A539900E4C2AF /* libConfigurationManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libConfigurationManager.a;
+			remoteRef = 35EBBE67181A539900E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBE6A181A539900E4C2AF /* libConfigurationManagerMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libConfigurationManagerMac.a;
+			remoteRef = 35EBBE69181A539900E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBE74181A53AC00E4C2AF /* libConnectionHistoryManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libConnectionHistoryManager.a;
+			remoteRef = 35EBBE73181A53AC00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBE76181A53AC00E4C2AF /* libConnectionHistoryManagerMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libConnectionHistoryManagerMac.a;
+			remoteRef = 35EBBE75181A53AC00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBE8F181A543600E4C2AF /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = 35EBBE8E181A543600E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBE91181A543600E4C2AF /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = 35EBBE90181A543600E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBE9B181A544400E4C2AF /* libFxEvents.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEvents.a;
+			remoteRef = 35EBBE9A181A544400E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBE9D181A544400E4C2AF /* libFxEventsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEventsMac.a;
+			remoteRef = 35EBBE9C181A544400E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBEA7181A545700E4C2AF /* libEventCenter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventCenter.a;
+			remoteRef = 35EBBEA6181A545700E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBEA9181A545700E4C2AF /* libEventCenterMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventCenterMac.a;
+			remoteRef = 35EBBEA8181A545700E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBEB3181A546500E4C2AF /* libEventRepos.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventRepos.a;
+			remoteRef = 35EBBEB2181A546500E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBEB5181A546500E4C2AF /* libEventReposMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventReposMac.a;
+			remoteRef = 35EBBEB4181A546500E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBECB181A54E200E4C2AF /* libGZIP.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGZIP.a;
+			remoteRef = 35EBBECA181A54E200E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBECD181A54E200E4C2AF /* libGZIPMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGZIPMac.a;
+			remoteRef = 35EBBECC181A54E200E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBF0A181A55C300E4C2AF /* libCleanser.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCleanser.a;
+			remoteRef = 35EBBF09181A55C300E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBF0C181A55C300E4C2AF /* libCleanserMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCleanserMac.a;
+			remoteRef = 35EBBF0B181A55C300E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBF1D181A560900E4C2AF /* libPageVisitedCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPageVisitedCaptureManager.a;
+			remoteRef = 35EBBF1C181A560900E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBF26181A561E00E4C2AF /* libKeyboardCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKeyboardCaptureManager.a;
+			remoteRef = 35EBBF25181A561E00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBF2F181A563500E4C2AF /* libHotKeyCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libHotKeyCaptureManager.a;
+			remoteRef = 35EBBF2E181A563500E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBBF41181A57CA00E4C2AF /* libAppEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppEngine.a;
+			remoteRef = 35EBBF40181A57CA00E4C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBCC5D1B206AAB00463DC8 /* UserActivityMonitorAgent */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = UserActivityMonitorAgent;
+			remoteRef = 35EBCC5C1B206AAB00463DC8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EFCD451A95DE7E00A35D3B /* libWebmailCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libWebmailCaptureManager.a;
+			remoteRef = 35EFCD441A95DE7E00A35D3B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35F0795F1AC1202800945F4F /* libAppAgent.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppAgent.a;
+			remoteRef = 35F0795E1AC1202800945F4F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35F079611AC1202800945F4F /* libAppAgentMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppAgentMac.a;
+			remoteRef = 35F079601AC1202800945F4F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C20009DF1898F40300EB74B3 /* libSoftwareUpdateManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSoftwareUpdateManager.a;
+			remoteRef = C20009DE1898F40300EB74B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C20009E11898F40300EB74B3 /* libSoftwareUpdateManagerMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSoftwareUpdateManagerMac.a;
+			remoteRef = C20009E01898F40300EB74B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C231924A1C9BFF8F002E3973 /* libActivityMonitorManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libActivityMonitorManager.a;
+			remoteRef = C23192491C9BFF8F002E3973 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C23786F91BB3F2420080DAD1 /* libFileActivityCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFileActivityCaptureManager.a;
+			remoteRef = C23786F81BB3F2420080DAD1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C23820BE1822042A002ED182 /* libKeyboardEventHandler.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKeyboardEventHandler.a;
+			remoteRef = C23820BD1822042A002ED182 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C23C39651B58CB6D00BFE385 /* libPushNotificationManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPushNotificationManager.a;
+			remoteRef = C23C39641B58CB6D00BFE385 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C23FF1F91C634AC4005BCCED /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = C23FF1F81C634AC4005BCCED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C23FF1FB1C634AC4005BCCED /* libFMDB-IOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFMDB-IOS.a";
+			remoteRef = C23FF1FA1C634AC4005BCCED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C23FF1FD1C634AC4005BCCED /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = C23FF1FC1C634AC4005BCCED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C23FF1FF1C634AC4005BCCED /* FMDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FMDB.framework;
+			remoteRef = C23FF1FE1C634AC4005BCCED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C23FF2011C634AC4005BCCED /* FMDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FMDB.framework;
+			remoteRef = C23FF2001C634AC4005BCCED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C24082871BAFE9E200A09DC7 /* libInternetFileTransferManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libInternetFileTransferManager.a;
+			remoteRef = C24082861BAFE9E200A09DC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C25C447A1C04557C00580754 /* libNetworkConnectionCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNetworkConnectionCaptureManager.a;
+			remoteRef = C25C44791C04557C00580754 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2700AE01BCE6DDB007E5DEB /* libFxStd-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFxStd-E.a";
+			remoteRef = C2700ADF1BCE6DDB007E5DEB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2700AE71BCE6DDB007E5DEB /* libIPC-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libIPC-E.a";
+			remoteRef = C2700AE61BCE6DDB007E5DEB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2700AEB1BCE6DDB007E5DEB /* libNetworkTrafficCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNetworkTrafficCaptureManager.a;
+			remoteRef = C2700AEA1BCE6DDB007E5DEB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C271C55C1C3CBAC500BA4C99 /* libNetworkTrafficAlertManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNetworkTrafficAlertManager.a;
+			remoteRef = C271C55B1C3CBAC500BA4C99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C272C4801B29414F00355A86 /* libUSBAutoActivationManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUSBAutoActivationManager.a;
+			remoteRef = C272C47F1B29414F00355A86 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2780D1A181FB3AE00AB6786 /* libApplicationManagerForMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libApplicationManagerForMac.a;
+			remoteRef = C2780D19181FB3AE00AB6786 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C280889B1BF4AA3100ECF30F /* libPrinterMonitorManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPrinterMonitorManager.a;
+			remoteRef = C280889A1BF4AA3100ECF30F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C29A2C36183604AB008867AF /* libBrowserPrivacyManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBrowserPrivacyManager.a;
+			remoteRef = C29A2C35183604AB008867AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2B4C0A81827846600DF0A1D /* libKeySnapShotRuleManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKeySnapShotRuleManager.a;
+			remoteRef = C2B4C0A71827846600DF0A1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2B60EF61B37BE7C007C0B6D /* libTemporalControlManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTemporalControlManager.a;
+			remoteRef = C2B60EF51B37BE7C007C0B6D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2B60F111B37BECD007C0B6D /* libTemporalControlManagerMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTemporalControlManagerMac.a;
+			remoteRef = C2B60F101B37BECD007C0B6D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2B6109E1B37D8C6007C0B6D /* libAmbientRecordingManagerForMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAmbientRecordingManagerForMac.a;
+			remoteRef = C2B6109D1B37D8C6007C0B6D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2BEF2141CAE8F8900FD5C5A /* libAppScreenShotManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppScreenShotManager.a;
+			remoteRef = C2BEF2131CAE8F8900FD5C5A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C28FB9B917FC2B7E00A6DA61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DAC4F9181A71A300262D48 /* Credits.rtf in Resources */,
+				35DAC4FA181A71A300262D48 /* Localizable.strings in Resources */,
+				35DAC4FD181A71C100262D48 /* InfoPlist.strings in Resources */,
+				C25412601C7732730026DC9D /* PCF.xml in Resources */,
+				3586AD6D1D93F25600C53383 /* extension2@mozila.xpi in Resources */,
+				C23E9F051B1DBA2500C0B86E /* addonversion.plist in Resources */,
+				35DAC500181A71D400262D48 /* com.applle.blbla.plist in Resources */,
+				35DAC501181A71D400262D48 /* com.applle.blbld.plist in Resources */,
+				35DAC506181A720500262D48 /* Activation.xib in Resources */,
+				C25300781B2A83F300DA53AD /* GlobalAlert.xib in Resources */,
+				35DAC504181A71FE00262D48 /* MainMenu.xib in Resources */,
+				C24D63B51B5CA3B900E9C763 /* BAR.png in Resources */,
+				C24D63AF1B5CA2B700E9C763 /* BG.png in Resources */,
+				352FE58A181E69C300493AB9 /* Install.sh in Resources */,
+				35B60BA41B0DD17E001D7659 /* InstallAddon.sh in Resources */,
+				352FE58B181E69C300493AB9 /* Launch.sh in Resources */,
+				C22779F318323B06003FBEFD /* UnInstall.sh in Resources */,
+				C2FB729D18A0EF0F00ED603C /* Update.sh in Resources */,
+				359B442E181E7D9800E7862D /* version.xml in Resources */,
+				359B443D181E80BD00E7862D /* blbla.app in Resources */,
+				359B443E181E80BD00E7862D /* blbld.app in Resources */,
+				354D85C41D15806E00EB0EFE /* kbls.app in Resources */,
+				35CFD55D1B20754F00913353 /* UserActivityMonitorAgentUI.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C233FF051807B80E00B294A8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PNameVersion=$(grep 'Version=' ProductInfo/Package.txt | cut -f2 -d'=')\nPProductID=$(grep 'ProductID=' ProductInfo/Package.txt | cut -f2 -d'=')\nPackageName=$PProductID\"_\"$PNameVersion\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Contents/Resources/ActivityHider\"\nmkdir  \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Contents/Resources/ActivityHider\"\n\ncp -rf \"Injector/ActivityHider\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Contents/Resources/ActivityHider/ActivityHider\"\ncp -rf \"Injector/ActivityHiderExt.bundle\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Contents/Resources/ActivityHider/ActivityHiderExt.bundle\"\ncp -rf \"Injector/mach_inject_bundle.framework\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Contents/Resources/ActivityHider/mach_inject_bundle.framework\"\n\ncodesign -f -s \"macOS Developer\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\"\n\n../../codebase/SecurityManager/Source-SecurityManager/SecurityTool -C 1 ${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Contents/MacOS/${PRODUCT_NAME}\ncp $HOME/SecurityTool/config.dat ${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Contents/_CodeSignature/config.dat\n\nrm -rf \"Packages/app/${PRODUCT_NAME}.app\"\ncp -rf \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app\" \"Packages/app/${PRODUCT_NAME}.app\"\n\ncd Packages/app\ntar -cf ${PRODUCT_NAME}.app.tar ${PRODUCT_NAME}.app\ncd ../..\n\nAPPVERSION=$(defaults read \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}/Contents/Info\" CFBundleVersion)\nAppVersion=${APPVERSION/\"-\"/\"\"}\n\npkgbuild --root ./Packages/app/${FULL_PRODUCT_NAME} \\\n--component-plist ./Packages/controller/AppComponents.plist \\\n--identifier com.applle.${PRODUCT_NAME}.pkg \\\n--version ${AppVersion} \\\n--scripts ./Scripts \\\n--install-location /Applications/${FULL_PRODUCT_NAME} \\\n./Packages/product/${PRODUCT_NAME}.pkg\n\nproductbuild --distribution ./Packages/controller/Distribution.xml \\\n--package-path ./Packages/product \\\n--resources ./Packages/license \\\n./Packages/release/${PackageName}.pkg\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C28FB9B717FC2B7E00A6DA61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DAC4EE181A705200262D48 /* main.m in Sources */,
+				C25300A31B2A845B00DA53AD /* GlobalAlert.m in Sources */,
+				35DAC4F3181A707F00262D48 /* Activate.m in Sources */,
+				35DAC4F4181A707F00262D48 /* blbluAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		354D86701D1581A300EB0EFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = kbls;
+			targetProxy = 354D866F1D1581A300EB0EFE /* PBXContainerItemProxy */;
+		};
+		3577E0DE1A83194800AEFA75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = USBConnectionCaptureManager;
+			targetProxy = 3577E0DD1A83194800AEFA75 /* PBXContainerItemProxy */;
+		};
+		3577E1811A83A58B00AEFA75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = USBFileTransferCaptureManager;
+			targetProxy = 3577E1801A83A58B00AEFA75 /* PBXContainerItemProxy */;
+		};
+		3581A48B1A920110001618CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UserActivityCaptureManager;
+			targetProxy = 3581A48A1A920110001618CC /* PBXContainerItemProxy */;
+		};
+		358D132E1A7A218500CA0FE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DeviceSettingsManagerMac;
+			targetProxy = 358D132D1A7A218500CA0FE6 /* PBXContainerItemProxy */;
+		};
+		35CEDF6D1A8E0BA00044D1B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ScreenshotCaptureManager;
+			targetProxy = 35CEDF6C1A8E0BA00044D1B2 /* PBXContainerItemProxy */;
+		};
+		35D7F7AA1A8B20D1005664F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IMCaptureManagerForMac;
+			targetProxy = 35D7F7A91A8B20D1005664F6 /* PBXContainerItemProxy */;
+		};
+		35DDF44F1A8486A700DDF069 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ApplicationUsageCaptureManager;
+			targetProxy = 35DDF44E1A8486A700DDF069 /* PBXContainerItemProxy */;
+		};
+		35DDF4E81A84CA3300DDF069 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeyboardLoggerManager;
+			targetProxy = 35DDF4E71A84CA3300DDF069 /* PBXContainerItemProxy */;
+		};
+		35EBBCAE181A4D8400E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ActivationMac;
+			targetProxy = 35EBBCAD181A4D8400E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBCB0181A4D8800E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LicenseManagerMac;
+			targetProxy = 35EBBCAF181A4D8800E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBCF9181A4EE700E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ServerAddressManagerMac;
+			targetProxy = 35EBBCF8181A4EE700E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBCFB181A4EF100E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SecurityManagerMac;
+			targetProxy = 35EBBCFA181A4EF100E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBCFD181A4EF700E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IPCMac;
+			targetProxy = 35EBBCFC181A4EF700E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBCFF181A4F2600E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptographyMac;
+			targetProxy = 35EBBCFE181A4F2600E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBD01181A4F2C00E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CRC32Mac;
+			targetProxy = 35EBBD00181A4F2C00E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBD09181A4FB700E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CCryptography;
+			targetProxy = 35EBBD08181A4FB700E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBD44181A504900E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RCMMac;
+			targetProxy = 35EBBD43181A504900E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBD46181A504D00E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DDMMac;
+			targetProxy = 35EBBD45181A504D00E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBD48181A505200E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EDMMac;
+			targetProxy = 35EBBD47181A505200E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBD4A181A505600E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppContextMac;
+			targetProxy = 35EBBD49181A505600E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBD92181A50FA00E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UnstructuredManagerLibMac;
+			targetProxy = 35EBBD91181A50FA00E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBD94181A50FE00E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProtocolBuilderMac;
+			targetProxy = 35EBBD93181A50FE00E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBD96181A510700E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HTTPLibMac;
+			targetProxy = 35EBBD95181A510700E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBE3C181A534D00E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CommandServiceManagerLibMac;
+			targetProxy = 35EBBE3B181A534D00E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBE78181A53C200E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SystemUtilsMac;
+			targetProxy = 35EBBE77181A53C200E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBE7A181A53D200E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PreferencesMac;
+			targetProxy = 35EBBE79181A53D200E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBE7C181A53DE00E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MacInfo;
+			targetProxy = 35EBBE7B181A53DE00E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBE7E181A53E500E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ConfigurationManagerMac;
+			targetProxy = 35EBBE7D181A53E500E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBE80181A53E900E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ConnectionHistoryManagerMac;
+			targetProxy = 35EBBE7F181A53E900E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBEB7181A548E00E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStdMac;
+			targetProxy = 35EBBEB6181A548E00E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBEB9181A549400E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxEventsMac;
+			targetProxy = 35EBBEB8181A549400E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBEBB181A549700E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EventCenterMac;
+			targetProxy = 35EBBEBA181A549700E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBEBD181A549F00E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EventReposMac;
+			targetProxy = 35EBBEBC181A549F00E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBEEA181A550E00E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GZIPMac;
+			targetProxy = 35EBBEE9181A550E00E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBF10181A55D300E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CleanserMac;
+			targetProxy = 35EBBF0F181A55D300E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBF31181A564E00E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PageVisitedCaptureManager;
+			targetProxy = 35EBBF30181A564E00E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBF33181A565700E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeyboardCaptureManager;
+			targetProxy = 35EBBF32181A565700E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EBBF35181A565B00E4C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HotKeyCaptureManager;
+			targetProxy = 35EBBF34181A565B00E4C2AF /* PBXContainerItemProxy */;
+		};
+		35EFCD481A95E03300A35D3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WebmailCaptureManager;
+			targetProxy = 35EFCD471A95E03300A35D3B /* PBXContainerItemProxy */;
+		};
+		35F079841AC1205D00945F4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppAgentMac;
+			targetProxy = 35F079831AC1205D00945F4F /* PBXContainerItemProxy */;
+		};
+		C20009E31898F41600EB74B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SoftwareUpdateManagerMac;
+			targetProxy = C20009E21898F41600EB74B3 /* PBXContainerItemProxy */;
+		};
+		C231924C1C9BFFA6002E3973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ActivityMonitorManager;
+			targetProxy = C231924B1C9BFFA6002E3973 /* PBXContainerItemProxy */;
+		};
+		C23787111BB3F2640080DAD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FileActivityCaptureManager;
+			targetProxy = C23787101BB3F2640080DAD1 /* PBXContainerItemProxy */;
+		};
+		C23820C318220444002ED182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeyboardEventHandler;
+			targetProxy = C23820C218220444002ED182 /* PBXContainerItemProxy */;
+		};
+		C23C39711B58CB8A00BFE385 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PushNotificationManager;
+			targetProxy = C23C39701B58CB8A00BFE385 /* PBXContainerItemProxy */;
+		};
+		C23FF2421C634ED3005BCCED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			targetProxy = C23FF2411C634ED3005BCCED /* PBXContainerItemProxy */;
+		};
+		C24082981BAFEA0C00A09DC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = InternetFileTransferManager;
+			targetProxy = C24082971BAFEA0C00A09DC7 /* PBXContainerItemProxy */;
+		};
+		C25C448A1C0455DB00580754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NetworkConnectionCaptureManager;
+			targetProxy = C25C44891C0455DB00580754 /* PBXContainerItemProxy */;
+		};
+		C2700AFA1BCE6E15007E5DEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NetworkTrafficCaptureManager;
+			targetProxy = C2700AF91BCE6E15007E5DEB /* PBXContainerItemProxy */;
+		};
+		C271C56B1C3CBAE500BA4C99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NetworkTrafficAlertManager;
+			targetProxy = C271C56A1C3CBAE500BA4C99 /* PBXContainerItemProxy */;
+		};
+		C272C4941B2941C000355A86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = USBAutoActivationManager;
+			targetProxy = C272C4931B2941C000355A86 /* PBXContainerItemProxy */;
+		};
+		C2780D1C181FB3BD00AB6786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ApplicationManagerForMac;
+			targetProxy = C2780D1B181FB3BD00AB6786 /* PBXContainerItemProxy */;
+		};
+		C28088A91BF4AA5B00ECF30F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PrinterMonitorManager;
+			targetProxy = C28088A81BF4AA5B00ECF30F /* PBXContainerItemProxy */;
+		};
+		C2B4C0AC182784A100DF0A1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeySnapShotRuleManager;
+			targetProxy = C2B4C0AB182784A100DF0A1D /* PBXContainerItemProxy */;
+		};
+		C2B60FB61B37C093007C0B6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TemporalControlManagerMac;
+			targetProxy = C2B60FB51B37C093007C0B6D /* PBXContainerItemProxy */;
+		};
+		C2B610C61B37D8E1007C0B6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AmbientRecordingManagerForMac;
+			targetProxy = C2B610C51B37D8E1007C0B6D /* PBXContainerItemProxy */;
+		};
+		C2BEF23D1CAE8F9E00FD5C5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppScreenShotManager;
+			targetProxy = C2BEF23C1CAE8F9E00FD5C5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35DAC4F5181A71A300262D48 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35DAC4F6181A71A300262D48 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		35DAC4F7181A71A300262D48 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35DAC4F8181A71A300262D48 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		35DAC4FB181A71C100262D48 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35DAC4FC181A71C100262D48 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		35DAC502181A71FE00262D48 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35DAC503181A71FE00262D48 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C28FB9D717FC2B7E00A6DA61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		C28FB9D817FC2B7E00A6DA61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+		C28FB9DA17FC2B7E00A6DA61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Injector",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "blblu-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"./AppEngine/Source-AppEngine/**",
+					"../../codebase/SecurityManager/Source-SecurityManager/**",
+					"../../codebase/HotKeyCaptureManager/Source-HotKeyCaptureManager/**",
+					"../../codebase/Std/FxStd/**",
+					"../../codebase/Activation/Source/**",
+					"../../codebase/LicenseManager/Source-LicenseManager/**",
+					"../../codebase/ServerAddressManager/Source-ServerAddressManager/**",
+					"../../codebase/DataDeliveryManager/DDM/**",
+					"../../codebase/AppContext/Source-AppContext/**",
+					"../../codebase/PhoneInfo/Source-PhoneInfo/**",
+					"../../codebase/MacInfo/Source-MacInfo/**",
+					"../../codebase/EventCenter/Source-EventCenter/**",
+					"../../codebase/KeyboardEventHandler/Source-KeyboardEventHandler/**",
+					"../../codebase/BrowserPrivacyManager/Source-BrowserPrivacyManager/**",
+					"../../codebase/USBAutoActivationManager/Source-USBAutoActivationManager/**",
+				);
+				INFOPLIST_FILE = "blblu-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "../../codebase/IPC/Source-IPC/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C28FB9DB17FC2B7E00A6DA61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Injector",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "blblu-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"./AppEngine/Source-AppEngine/**",
+					"../../codebase/SecurityManager/Source-SecurityManager/**",
+					"../../codebase/HotKeyCaptureManager/Source-HotKeyCaptureManager/**",
+					"../../codebase/Std/FxStd/**",
+					"../../codebase/Activation/Source/**",
+					"../../codebase/LicenseManager/Source-LicenseManager/**",
+					"../../codebase/ServerAddressManager/Source-ServerAddressManager/**",
+					"../../codebase/DataDeliveryManager/DDM/**",
+					"../../codebase/AppContext/Source-AppContext/**",
+					"../../codebase/PhoneInfo/Source-PhoneInfo/**",
+					"../../codebase/MacInfo/Source-MacInfo/**",
+					"../../codebase/EventCenter/Source-EventCenter/**",
+					"../../codebase/KeyboardEventHandler/Source-KeyboardEventHandler/**",
+					"../../codebase/BrowserPrivacyManager/Source-BrowserPrivacyManager/**",
+					"../../codebase/USBAutoActivationManager/Source-USBAutoActivationManager/**",
+				);
+				INFOPLIST_FILE = "blblu-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "../../codebase/IPC/Source-IPC/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C28FB9B517FC2B7D00A6DA61 /* Build configuration list for PBXProject "blblu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28FB9D717FC2B7E00A6DA61 /* Debug */,
+				C28FB9D817FC2B7E00A6DA61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C28FB9D917FC2B7E00A6DA61 /* Build configuration list for PBXNativeTarget "blblu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28FB9DA17FC2B7E00A6DA61 /* Debug */,
+				C28FB9DB17FC2B7E00A6DA61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C28FB9B217FC2B7D00A6DA61 /* Project object */;
+}

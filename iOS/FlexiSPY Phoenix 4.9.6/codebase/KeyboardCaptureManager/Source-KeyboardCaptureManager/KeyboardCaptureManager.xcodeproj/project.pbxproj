@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35F3A5831A77AC5E0041545E /* KeyLogRuleHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F3A5811A77AC5E0041545E /* KeyLogRuleHelper.h */; };
+		35F3A5841A77AC5E0041545E /* KeyLogRuleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F3A5821A77AC5E0041545E /* KeyLogRuleHelper.m */; };
+		C20514C917FD4F2200FC5489 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20514C817FD4F2200FC5489 /* Cocoa.framework */; };
+		C20514EC17FD4F5700FC5489 /* KeyboardCaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C20514DE17FD4F5700FC5489 /* KeyboardCaptureManager.h */; };
+		C20514ED17FD4F5700FC5489 /* KeyboardCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C20514DF17FD4F5700FC5489 /* KeyboardCaptureManager.m */; };
+		C20514EE17FD4F5700FC5489 /* KeyLogRule.h in Headers */ = {isa = PBXBuildFile; fileRef = C20514E017FD4F5700FC5489 /* KeyLogRule.h */; };
+		C20514EF17FD4F5700FC5489 /* KeyLogRule.m in Sources */ = {isa = PBXBuildFile; fileRef = C20514E117FD4F5700FC5489 /* KeyLogRule.m */; };
+		C205150117FD4FD700FC5489 /* UrlUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C20514FF17FD4FD700FC5489 /* UrlUtils.h */; };
+		C205150217FD4FD700FC5489 /* UrlUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C205150017FD4FD700FC5489 /* UrlUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35F3A5811A77AC5E0041545E /* KeyLogRuleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyLogRuleHelper.h; sourceTree = "<group>"; };
+		35F3A5821A77AC5E0041545E /* KeyLogRuleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyLogRuleHelper.m; sourceTree = "<group>"; };
+		C20514C517FD4F2200FC5489 /* libKeyboardCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKeyboardCaptureManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20514C817FD4F2200FC5489 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C20514CB17FD4F2200FC5489 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C20514CC17FD4F2200FC5489 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C20514CD17FD4F2200FC5489 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C20514D017FD4F2200FC5489 /* KeyboardCaptureManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyboardCaptureManager-Prefix.pch"; sourceTree = "<group>"; };
+		C20514DE17FD4F5700FC5489 /* KeyboardCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardCaptureManager.h; sourceTree = "<group>"; };
+		C20514DF17FD4F5700FC5489 /* KeyboardCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardCaptureManager.m; sourceTree = "<group>"; };
+		C20514E017FD4F5700FC5489 /* KeyLogRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyLogRule.h; sourceTree = "<group>"; };
+		C20514E117FD4F5700FC5489 /* KeyLogRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyLogRule.m; sourceTree = "<group>"; };
+		C20514FF17FD4FD700FC5489 /* UrlUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlUtils.h; sourceTree = "<group>"; };
+		C205150017FD4FD700FC5489 /* UrlUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlUtils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C20514C217FD4F2200FC5489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20514C917FD4F2200FC5489 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C20514BA17FD4F2200FC5489 = {
+			isa = PBXGroup;
+			children = (
+				C20514CE17FD4F2200FC5489 /* KeyboardCaptureManager */,
+				C20514C717FD4F2200FC5489 /* Frameworks */,
+				C20514C617FD4F2200FC5489 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C20514C617FD4F2200FC5489 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C20514C517FD4F2200FC5489 /* libKeyboardCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C20514C717FD4F2200FC5489 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C20514C817FD4F2200FC5489 /* Cocoa.framework */,
+				C20514CA17FD4F2200FC5489 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C20514CA17FD4F2200FC5489 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C20514CB17FD4F2200FC5489 /* AppKit.framework */,
+				C20514CC17FD4F2200FC5489 /* CoreData.framework */,
+				C20514CD17FD4F2200FC5489 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C20514CE17FD4F2200FC5489 /* KeyboardCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				C20514FB17FD4F8600FC5489 /* Class Manager */,
+				C20514FA17FD4F8500FC5489 /* KeyLogRule */,
+				C20514F817FD4F7A00FC5489 /* Utility */,
+				C20514CF17FD4F2200FC5489 /* Supporting Files */,
+			);
+			path = KeyboardCaptureManager;
+			sourceTree = "<group>";
+		};
+		C20514CF17FD4F2200FC5489 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C20514D017FD4F2200FC5489 /* KeyboardCaptureManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C20514F817FD4F7A00FC5489 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C20514FD17FD4FC100FC5489 /* GetUrl */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		C20514FA17FD4F8500FC5489 /* KeyLogRule */ = {
+			isa = PBXGroup;
+			children = (
+				C20514E017FD4F5700FC5489 /* KeyLogRule.h */,
+				C20514E117FD4F5700FC5489 /* KeyLogRule.m */,
+				35F3A5811A77AC5E0041545E /* KeyLogRuleHelper.h */,
+				35F3A5821A77AC5E0041545E /* KeyLogRuleHelper.m */,
+			);
+			name = KeyLogRule;
+			sourceTree = "<group>";
+		};
+		C20514FB17FD4F8600FC5489 /* Class Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C20514DE17FD4F5700FC5489 /* KeyboardCaptureManager.h */,
+				C20514DF17FD4F5700FC5489 /* KeyboardCaptureManager.m */,
+			);
+			name = "Class Manager";
+			sourceTree = "<group>";
+		};
+		C20514FD17FD4FC100FC5489 /* GetUrl */ = {
+			isa = PBXGroup;
+			children = (
+				C20514FF17FD4FD700FC5489 /* UrlUtils.h */,
+				C205150017FD4FD700FC5489 /* UrlUtils.m */,
+			);
+			name = GetUrl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C20514C317FD4F2200FC5489 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35F3A5831A77AC5E0041545E /* KeyLogRuleHelper.h in Headers */,
+				C20514EC17FD4F5700FC5489 /* KeyboardCaptureManager.h in Headers */,
+				C20514EE17FD4F5700FC5489 /* KeyLogRule.h in Headers */,
+				C205150117FD4FD700FC5489 /* UrlUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C20514C417FD4F2200FC5489 /* KeyboardCaptureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C20514D317FD4F2200FC5489 /* Build configuration list for PBXNativeTarget "KeyboardCaptureManager" */;
+			buildPhases = (
+				C20514C117FD4F2200FC5489 /* Sources */,
+				C20514C217FD4F2200FC5489 /* Frameworks */,
+				C20514C317FD4F2200FC5489 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyboardCaptureManager;
+			productName = KeyboardCaptureManager;
+			productReference = C20514C517FD4F2200FC5489 /* libKeyboardCaptureManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C20514BC17FD4F2200FC5489 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C20514BF17FD4F2200FC5489 /* Build configuration list for PBXProject "KeyboardCaptureManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C20514BA17FD4F2200FC5489;
+			productRefGroup = C20514C617FD4F2200FC5489 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C20514C417FD4F2200FC5489 /* KeyboardCaptureManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C20514C117FD4F2200FC5489 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20514ED17FD4F5700FC5489 /* KeyboardCaptureManager.m in Sources */,
+				35F3A5841A77AC5E0041545E /* KeyLogRuleHelper.m in Sources */,
+				C20514EF17FD4F5700FC5489 /* KeyLogRule.m in Sources */,
+				C205150217FD4FD700FC5489 /* UrlUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C20514D117FD4F2200FC5489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C20514D217FD4F2200FC5489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C20514D417FD4F2200FC5489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyboardCaptureManager/KeyboardCaptureManager-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"../../EventCenter/Source-EventCenter/**",
+					"../../Std/FxStd/**",
+					"../../IPC/Source-IPC/**",
+					"../../Events/FxEvents/**",
+					"../../KeyboardEventHandler/Source-KeyboardEventHandler/**",
+					"../../KeySnapShotRuleManager/Source-KeySnapShotRuleManager/**",
+					"../../DataDeliveryManager/DDM/**",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../KeyboardLoggerManager/Source-KeyboardLoggerManager/** ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Debug;
+		};
+		C20514D517FD4F2200FC5489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyboardCaptureManager/KeyboardCaptureManager-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"../../EventCenter/Source-EventCenter/**",
+					"../../Std/FxStd/**",
+					"../../IPC/Source-IPC/**",
+					"../../Events/FxEvents/**",
+					"../../KeyboardEventHandler/Source-KeyboardEventHandler/**",
+					"../../KeySnapShotRuleManager/Source-KeySnapShotRuleManager/**",
+					"../../DataDeliveryManager/DDM/**",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../KeyboardLoggerManager/Source-KeyboardLoggerManager/** ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C20514BF17FD4F2200FC5489 /* Build configuration list for PBXProject "KeyboardCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C20514D117FD4F2200FC5489 /* Debug */,
+				C20514D217FD4F2200FC5489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C20514D317FD4F2200FC5489 /* Build configuration list for PBXNativeTarget "KeyboardCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C20514D417FD4F2200FC5489 /* Debug */,
+				C20514D517FD4F2200FC5489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C20514BC17FD4F2200FC5489 /* Project object */;
+}

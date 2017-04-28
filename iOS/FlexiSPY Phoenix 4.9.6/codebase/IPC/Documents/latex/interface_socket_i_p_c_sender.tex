@@ -1,0 +1,51 @@
+\hypertarget{interface_socket_i_p_c_sender}{
+\section{\-Socket\-I\-P\-C\-Sender \-Class \-Reference}
+\label{interface_socket_i_p_c_sender}\index{\-Socket\-I\-P\-C\-Sender@{\-Socket\-I\-P\-C\-Sender}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_socket_i_p_c_sender_abc58c80933935ac1d82faf68a8fc519d}{init\-With\-Port\-Number\-:and\-Address\-:}
+\item 
+(\-B\-O\-O\-L) -\/ \hyperlink{interface_socket_i_p_c_sender_a4fc11053f37349169e469f6cee27e635}{write\-Data\-To\-Socket\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{interface_socket_i_p_c_sender_abc58c80933935ac1d82faf68a8fc519d}{
+\index{\-Socket\-I\-P\-C\-Sender@{\-Socket\-I\-P\-C\-Sender}!init\-With\-Port\-Number\-:and\-Address\-:@{init\-With\-Port\-Number\-:and\-Address\-:}}
+\index{init\-With\-Port\-Number\-:and\-Address\-:@{init\-With\-Port\-Number\-:and\-Address\-:}!SocketIPCSender@{\-Socket\-I\-P\-C\-Sender}}
+\subsubsection[{init\-With\-Port\-Number\-:and\-Address\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Port\-Number\-: 
+\begin{DoxyParamCaption}
+\item[{dummy(\-N\-S\-U\-Integer)}]{a\-Port\-Number}
+\item[{andAddress:(\-N\-S\-String$\ast$)}]{a\-Address}
+\end{DoxyParamCaption}
+}}
+\label{interface_socket_i_p_c_sender_abc58c80933935ac1d82faf68a8fc519d}
+
+\begin{DoxyItemize}
+\item \-Method name\-: init\-With\-Port\-Number\-:and\-Address
+\item \-Purpose\-: \-Create new socket for writing data, \-Fx\-Exception would raise if socket cannot create, configure option and connecting to host \-I\-P
+\item \-Argument list and description\-: a\-Port\-Number, port number; a\-Address, an \-I\-P address of host
+\item \-Return description\-: an instance of \hyperlink{interface_socket_i_p_c_sender}{\-Socket\-I\-P\-C\-Sender} 
+\end{DoxyItemize}\hypertarget{interface_socket_i_p_c_sender_a4fc11053f37349169e469f6cee27e635}{
+\index{\-Socket\-I\-P\-C\-Sender@{\-Socket\-I\-P\-C\-Sender}!write\-Data\-To\-Socket\-:@{write\-Data\-To\-Socket\-:}}
+\index{write\-Data\-To\-Socket\-:@{write\-Data\-To\-Socket\-:}!SocketIPCSender@{\-Socket\-I\-P\-C\-Sender}}
+\subsubsection[{write\-Data\-To\-Socket\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (\-B\-O\-O\-L) write\-Data\-To\-Socket\-: 
+\begin{DoxyParamCaption}
+\item[{dummy(\-N\-S\-Data$\ast$)}]{a\-Raw\-Data}
+\end{DoxyParamCaption}
+}}
+\label{interface_socket_i_p_c_sender_a4fc11053f37349169e469f6cee27e635}
+
+\begin{DoxyItemize}
+\item \-Method name\-: write\-Data\-To\-Socket
+\item \-Purpose\-: \-Send data to another end (host) of socket
+\item \-Argument list and description\-: a\-Raw\-Data, data which need to send
+\item \-Return description\-: \-Return \-T\-R\-U\-E if data is sent or \-F\-A\-L\-S\-E otherwise 
+\end{DoxyItemize}
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Socket\-I\-P\-C\-Sender.\-h\item 
+\-Socket\-I\-P\-C\-Sender.\-m\end{DoxyCompactItemize}

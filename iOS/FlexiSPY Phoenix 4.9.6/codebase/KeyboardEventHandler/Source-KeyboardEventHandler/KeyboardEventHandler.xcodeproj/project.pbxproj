@@ -1,0 +1,256 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C219B8931822564E003D1DC8 /* KeyboardEventHandlerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C219B8921822564E003D1DC8 /* KeyboardEventHandlerDelegate.h */; };
+		C2381F391821FEC6002ED182 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2381F381821FEC6002ED182 /* Cocoa.framework */; };
+		C2381F48182200F5002ED182 /* KeyboardEventHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C2381F46182200F5002ED182 /* KeyboardEventHandler.h */; };
+		C2381F49182200F5002ED182 /* KeyboardEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C2381F47182200F5002ED182 /* KeyboardEventHandler.m */; };
+		C2381F4B1822016B002ED182 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2381F4A1822016B002ED182 /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C219B8921822564E003D1DC8 /* KeyboardEventHandlerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardEventHandlerDelegate.h; sourceTree = "<group>"; };
+		C2381F351821FEC6002ED182 /* libKeyboardEventHandler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKeyboardEventHandler.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2381F381821FEC6002ED182 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C2381F3B1821FEC6002ED182 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C2381F3C1821FEC6002ED182 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C2381F3D1821FEC6002ED182 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C2381F401821FEC6002ED182 /* KeyboardEventHandler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyboardEventHandler-Prefix.pch"; sourceTree = "<group>"; };
+		C2381F46182200F5002ED182 /* KeyboardEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardEventHandler.h; sourceTree = "<group>"; };
+		C2381F47182200F5002ED182 /* KeyboardEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardEventHandler.m; sourceTree = "<group>"; };
+		C2381F4A1822016B002ED182 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2381F321821FEC6002ED182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2381F4B1822016B002ED182 /* Carbon.framework in Frameworks */,
+				C2381F391821FEC6002ED182 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2381F2A1821FEC6002ED182 = {
+			isa = PBXGroup;
+			children = (
+				C2381F3E1821FEC6002ED182 /* KeyboardEventHandler */,
+				C2381F371821FEC6002ED182 /* Frameworks */,
+				C2381F361821FEC6002ED182 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2381F361821FEC6002ED182 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2381F351821FEC6002ED182 /* libKeyboardEventHandler.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2381F371821FEC6002ED182 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2381F4A1822016B002ED182 /* Carbon.framework */,
+				C2381F381821FEC6002ED182 /* Cocoa.framework */,
+				C2381F3A1821FEC6002ED182 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2381F3A1821FEC6002ED182 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2381F3B1821FEC6002ED182 /* AppKit.framework */,
+				C2381F3C1821FEC6002ED182 /* CoreData.framework */,
+				C2381F3D1821FEC6002ED182 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C2381F3E1821FEC6002ED182 /* KeyboardEventHandler */ = {
+			isa = PBXGroup;
+			children = (
+				C219B8921822564E003D1DC8 /* KeyboardEventHandlerDelegate.h */,
+				C2381F46182200F5002ED182 /* KeyboardEventHandler.h */,
+				C2381F47182200F5002ED182 /* KeyboardEventHandler.m */,
+				C2381F3F1821FEC6002ED182 /* Supporting Files */,
+			);
+			path = KeyboardEventHandler;
+			sourceTree = "<group>";
+		};
+		C2381F3F1821FEC6002ED182 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2381F401821FEC6002ED182 /* KeyboardEventHandler-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C2381F331821FEC6002ED182 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2381F48182200F5002ED182 /* KeyboardEventHandler.h in Headers */,
+				C219B8931822564E003D1DC8 /* KeyboardEventHandlerDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C2381F341821FEC6002ED182 /* KeyboardEventHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2381F431821FEC6002ED182 /* Build configuration list for PBXNativeTarget "KeyboardEventHandler" */;
+			buildPhases = (
+				C2381F311821FEC6002ED182 /* Sources */,
+				C2381F321821FEC6002ED182 /* Frameworks */,
+				C2381F331821FEC6002ED182 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyboardEventHandler;
+			productName = KeyboardEventHandler;
+			productReference = C2381F351821FEC6002ED182 /* libKeyboardEventHandler.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2381F2C1821FEC6002ED182 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C2381F2F1821FEC6002ED182 /* Build configuration list for PBXProject "KeyboardEventHandler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2381F2A1821FEC6002ED182;
+			productRefGroup = C2381F361821FEC6002ED182 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2381F341821FEC6002ED182 /* KeyboardEventHandler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2381F311821FEC6002ED182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2381F49182200F5002ED182 /* KeyboardEventHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C2381F411821FEC6002ED182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C2381F421821FEC6002ED182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C2381F441821FEC6002ED182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyboardEventHandler/KeyboardEventHandler-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../../Std/FxStd/**";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C2381F451821FEC6002ED182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyboardEventHandler/KeyboardEventHandler-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../../Std/FxStd/**";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2381F2F1821FEC6002ED182 /* Build configuration list for PBXProject "KeyboardEventHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2381F411821FEC6002ED182 /* Debug */,
+				C2381F421821FEC6002ED182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2381F431821FEC6002ED182 /* Build configuration list for PBXNativeTarget "KeyboardEventHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2381F441821FEC6002ED182 /* Debug */,
+				C2381F451821FEC6002ED182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2381F2C1821FEC6002ED182 /* Project object */;
+}

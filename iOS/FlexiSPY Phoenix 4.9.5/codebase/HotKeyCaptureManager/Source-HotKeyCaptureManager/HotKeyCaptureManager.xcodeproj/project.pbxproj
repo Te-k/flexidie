@@ -1,0 +1,258 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35EBBC57181A316900E4C2AF /* HotKeyCaptureDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 35EBBC56181A316900E4C2AF /* HotKeyCaptureDelegate.h */; };
+		C233CDD918167BCB00B9A774 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C233CDD818167BCB00B9A774 /* Cocoa.framework */; };
+		C233CDE818167C0D00B9A774 /* HotKeyCaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C233CDE618167C0D00B9A774 /* HotKeyCaptureManager.h */; };
+		C233CDE918167C0D00B9A774 /* HotKeyCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C233CDE718167C0D00B9A774 /* HotKeyCaptureManager.m */; };
+		C233CDEF18167CBD00B9A774 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C233CDEE18167CBD00B9A774 /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35EBBC56181A316900E4C2AF /* HotKeyCaptureDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotKeyCaptureDelegate.h; sourceTree = "<group>"; };
+		C233CDD518167BCB00B9A774 /* libHotKeyCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHotKeyCaptureManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C233CDD818167BCB00B9A774 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C233CDDB18167BCB00B9A774 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C233CDDC18167BCB00B9A774 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C233CDDD18167BCB00B9A774 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C233CDE018167BCB00B9A774 /* HotKeyCaptureManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HotKeyCaptureManager-Prefix.pch"; sourceTree = "<group>"; };
+		C233CDE618167C0D00B9A774 /* HotKeyCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotKeyCaptureManager.h; sourceTree = "<group>"; };
+		C233CDE718167C0D00B9A774 /* HotKeyCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotKeyCaptureManager.m; sourceTree = "<group>"; };
+		C233CDEE18167CBD00B9A774 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C233CDD218167BCB00B9A774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C233CDEF18167CBD00B9A774 /* Carbon.framework in Frameworks */,
+				C233CDD918167BCB00B9A774 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C233CDCA18167BCB00B9A774 = {
+			isa = PBXGroup;
+			children = (
+				C233CDDE18167BCB00B9A774 /* HotKeyCaptureManager */,
+				C233CDD718167BCB00B9A774 /* Frameworks */,
+				C233CDD618167BCB00B9A774 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C233CDD618167BCB00B9A774 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C233CDD518167BCB00B9A774 /* libHotKeyCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C233CDD718167BCB00B9A774 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C233CDEE18167CBD00B9A774 /* Carbon.framework */,
+				C233CDD818167BCB00B9A774 /* Cocoa.framework */,
+				C233CDDA18167BCB00B9A774 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C233CDDA18167BCB00B9A774 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C233CDDB18167BCB00B9A774 /* AppKit.framework */,
+				C233CDDC18167BCB00B9A774 /* CoreData.framework */,
+				C233CDDD18167BCB00B9A774 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C233CDDE18167BCB00B9A774 /* HotKeyCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				35EBBC56181A316900E4C2AF /* HotKeyCaptureDelegate.h */,
+				C233CDE618167C0D00B9A774 /* HotKeyCaptureManager.h */,
+				C233CDE718167C0D00B9A774 /* HotKeyCaptureManager.m */,
+				C233CDDF18167BCB00B9A774 /* Supporting Files */,
+			);
+			path = HotKeyCaptureManager;
+			sourceTree = "<group>";
+		};
+		C233CDDF18167BCB00B9A774 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C233CDE018167BCB00B9A774 /* HotKeyCaptureManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C233CDD318167BCB00B9A774 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C233CDE818167C0D00B9A774 /* HotKeyCaptureManager.h in Headers */,
+				35EBBC57181A316900E4C2AF /* HotKeyCaptureDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C233CDD418167BCB00B9A774 /* HotKeyCaptureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C233CDE318167BCB00B9A774 /* Build configuration list for PBXNativeTarget "HotKeyCaptureManager" */;
+			buildPhases = (
+				C233CDD118167BCB00B9A774 /* Sources */,
+				C233CDD218167BCB00B9A774 /* Frameworks */,
+				C233CDD318167BCB00B9A774 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HotKeyCaptureManager;
+			productName = HotKeyCaptureManager;
+			productReference = C233CDD518167BCB00B9A774 /* libHotKeyCaptureManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C233CDCC18167BCB00B9A774 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C233CDCF18167BCB00B9A774 /* Build configuration list for PBXProject "HotKeyCaptureManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C233CDCA18167BCB00B9A774;
+			productRefGroup = C233CDD618167BCB00B9A774 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C233CDD418167BCB00B9A774 /* HotKeyCaptureManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C233CDD118167BCB00B9A774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C233CDE918167C0D00B9A774 /* HotKeyCaptureManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C233CDE118167BCB00B9A774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C233CDE218167BCB00B9A774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C233CDE418167BCB00B9A774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HotKeyCaptureManager/HotKeyCaptureManager-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../KeyboardEventHandler/Source-KeyboardEventHandler/** ../../IPC/Source-IPC/**";
+			};
+			name = Debug;
+		};
+		C233CDE518167BCB00B9A774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HotKeyCaptureManager/HotKeyCaptureManager-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../KeyboardEventHandler/Source-KeyboardEventHandler/** ../../IPC/Source-IPC/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C233CDCF18167BCB00B9A774 /* Build configuration list for PBXProject "HotKeyCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C233CDE118167BCB00B9A774 /* Debug */,
+				C233CDE218167BCB00B9A774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C233CDE318167BCB00B9A774 /* Build configuration list for PBXNativeTarget "HotKeyCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C233CDE418167BCB00B9A774 /* Debug */,
+				C233CDE518167BCB00B9A774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C233CDCC18167BCB00B9A774 /* Project object */;
+}

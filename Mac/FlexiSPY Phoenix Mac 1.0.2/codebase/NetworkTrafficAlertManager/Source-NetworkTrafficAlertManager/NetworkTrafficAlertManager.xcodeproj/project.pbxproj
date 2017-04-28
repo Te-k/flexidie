@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2653E6A1C4758610025980F /* ClientAlertNotify.h in Headers */ = {isa = PBXBuildFile; fileRef = C2653E681C4758610025980F /* ClientAlertNotify.h */; };
+		C2653E6B1C4758610025980F /* ClientAlertNotify.m in Sources */ = {isa = PBXBuildFile; fileRef = C2653E691C4758610025980F /* ClientAlertNotify.m */; };
+		C271C5781C3CC38100BA4C99 /* NTACritiriaStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = C271C5761C3CC38100BA4C99 /* NTACritiriaStorage.h */; };
+		C271C5791C3CC38100BA4C99 /* NTACritiriaStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = C271C5771C3CC38100BA4C99 /* NTACritiriaStorage.m */; };
+		C271C57C1C3CC39200BA4C99 /* NTADatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = C271C57A1C3CC39200BA4C99 /* NTADatabase.h */; };
+		C271C57D1C3CC39200BA4C99 /* NTADatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C271C57B1C3CC39200BA4C99 /* NTADatabase.m */; };
+		C2816D881C2150050012B801 /* NetworkTrafficAlertManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = C2816D871C2150050012B801 /* NetworkTrafficAlertManagerImpl.h */; };
+		C2816D8A1C2150050012B801 /* NetworkTrafficAlertManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = C2816D891C2150050012B801 /* NetworkTrafficAlertManagerImpl.m */; };
+		C2816E151C215A8E0012B801 /* NetworkTrafficCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = C2816E131C215A8E0012B801 /* NetworkTrafficCollector.h */; };
+		C2816E161C215A8E0012B801 /* NetworkTrafficCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = C2816E141C215A8E0012B801 /* NetworkTrafficCollector.m */; };
+		C2816E181C215CE60012B801 /* libpcap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2816E171C215CE60012B801 /* libpcap.dylib */; };
+		C2816E201C215FE20012B801 /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2816E1F1C215FE20012B801 /* CoreWLAN.framework */; };
+		C2816E221C21600A0012B801 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2816E211C21600A0012B801 /* SystemConfiguration.framework */; };
+		C2816E251C2163CF0012B801 /* NTRawPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = C2816E231C2163CF0012B801 /* NTRawPacket.h */; };
+		C2816E261C2163CF0012B801 /* NTRawPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = C2816E241C2163CF0012B801 /* NTRawPacket.m */; };
+		C2C8EFD61C2295F500909CA7 /* NetworkTrafficAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = C2C8EFD41C2295F500909CA7 /* NetworkTrafficAnalyzer.h */; };
+		C2C8EFD71C2295F500909CA7 /* NetworkTrafficAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C8EFD51C2295F500909CA7 /* NetworkTrafficAnalyzer.m */; };
+		C2C8EFE91C22AEFB00909CA7 /* NTDataStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = C2C8EFE71C22AEFB00909CA7 /* NTDataStorage.h */; };
+		C2C8EFEA1C22AEFB00909CA7 /* NTDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C8EFE81C22AEFB00909CA7 /* NTDataStorage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C2653E681C4758610025980F /* ClientAlertNotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientAlertNotify.h; sourceTree = "<group>"; };
+		C2653E691C4758610025980F /* ClientAlertNotify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientAlertNotify.m; sourceTree = "<group>"; };
+		C271C5761C3CC38100BA4C99 /* NTACritiriaStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTACritiriaStorage.h; sourceTree = "<group>"; };
+		C271C5771C3CC38100BA4C99 /* NTACritiriaStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTACritiriaStorage.m; sourceTree = "<group>"; };
+		C271C57A1C3CC39200BA4C99 /* NTADatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTADatabase.h; sourceTree = "<group>"; };
+		C271C57B1C3CC39200BA4C99 /* NTADatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTADatabase.m; sourceTree = "<group>"; };
+		C271C57F1C3CC47200BA4C99 /* NetworkTrafficAlertManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkTrafficAlertManager-Prefix.pch"; sourceTree = "<group>"; };
+		C2816D841C2150050012B801 /* libNetworkTrafficAlertManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNetworkTrafficAlertManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2816D871C2150050012B801 /* NetworkTrafficAlertManagerImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkTrafficAlertManagerImpl.h; sourceTree = "<group>"; };
+		C2816D891C2150050012B801 /* NetworkTrafficAlertManagerImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkTrafficAlertManagerImpl.m; sourceTree = "<group>"; };
+		C2816E131C215A8E0012B801 /* NetworkTrafficCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTrafficCollector.h; sourceTree = "<group>"; };
+		C2816E141C215A8E0012B801 /* NetworkTrafficCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTrafficCollector.m; sourceTree = "<group>"; };
+		C2816E171C215CE60012B801 /* libpcap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcap.dylib; path = usr/lib/libpcap.dylib; sourceTree = SDKROOT; };
+		C2816E1F1C215FE20012B801 /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreWLAN.framework; path = System/Library/Frameworks/CoreWLAN.framework; sourceTree = SDKROOT; };
+		C2816E211C21600A0012B801 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C2816E231C2163CF0012B801 /* NTRawPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTRawPacket.h; sourceTree = "<group>"; };
+		C2816E241C2163CF0012B801 /* NTRawPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTRawPacket.m; sourceTree = "<group>"; };
+		C2C8EFD31C22823600909CA7 /* NetworkTrafficAlertManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkTrafficAlertManager.h; sourceTree = "<group>"; };
+		C2C8EFD41C2295F500909CA7 /* NetworkTrafficAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTrafficAnalyzer.h; sourceTree = "<group>"; };
+		C2C8EFD51C2295F500909CA7 /* NetworkTrafficAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTrafficAnalyzer.m; sourceTree = "<group>"; };
+		C2C8EFE71C22AEFB00909CA7 /* NTDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTDataStorage.h; sourceTree = "<group>"; };
+		C2C8EFE81C22AEFB00909CA7 /* NTDataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTDataStorage.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2816D811C2150050012B801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2816E221C21600A0012B801 /* SystemConfiguration.framework in Frameworks */,
+				C2816E201C215FE20012B801 /* CoreWLAN.framework in Frameworks */,
+				C2816E181C215CE60012B801 /* libpcap.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2653E671C47581C0025980F /* Send */ = {
+			isa = PBXGroup;
+			children = (
+				C2653E681C4758610025980F /* ClientAlertNotify.h */,
+				C2653E691C4758610025980F /* ClientAlertNotify.m */,
+			);
+			name = Send;
+			sourceTree = "<group>";
+		};
+		C271C56D1C3CBFF300BA4C99 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				C271C5761C3CC38100BA4C99 /* NTACritiriaStorage.h */,
+				C271C5771C3CC38100BA4C99 /* NTACritiriaStorage.m */,
+				C271C57A1C3CC39200BA4C99 /* NTADatabase.h */,
+				C271C57B1C3CC39200BA4C99 /* NTADatabase.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		C271C57E1C3CC44A00BA4C99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C271C57F1C3CC47200BA4C99 /* NetworkTrafficAlertManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C2816D7B1C2150050012B801 = {
+			isa = PBXGroup;
+			children = (
+				C2816D861C2150050012B801 /* NetworkTrafficAlertManager */,
+				C2816D851C2150050012B801 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2816D851C2150050012B801 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2816D841C2150050012B801 /* libNetworkTrafficAlertManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2816D861C2150050012B801 /* NetworkTrafficAlertManager */ = {
+			isa = PBXGroup;
+			children = (
+				C2816E111C215A5F0012B801 /* Manager */,
+				C2816E121C215A6B0012B801 /* Implement */,
+				C271C56D1C3CBFF300BA4C99 /* Database */,
+				C2816E191C215CED0012B801 /* Framework */,
+				C271C57E1C3CC44A00BA4C99 /* Supporting Files */,
+			);
+			path = NetworkTrafficAlertManager;
+			sourceTree = "<group>";
+		};
+		C2816E111C215A5F0012B801 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C2C8EFD31C22823600909CA7 /* NetworkTrafficAlertManager.h */,
+				C2816D871C2150050012B801 /* NetworkTrafficAlertManagerImpl.h */,
+				C2816D891C2150050012B801 /* NetworkTrafficAlertManagerImpl.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		C2816E121C215A6B0012B801 /* Implement */ = {
+			isa = PBXGroup;
+			children = (
+				C2C8EFEC1C22B27200909CA7 /* Collector */,
+				C2C8EFEB1C22B26900909CA7 /* Analyzer */,
+				C2653E671C47581C0025980F /* Send */,
+			);
+			name = Implement;
+			sourceTree = "<group>";
+		};
+		C2816E191C215CED0012B801 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				C2816E211C21600A0012B801 /* SystemConfiguration.framework */,
+				C2816E1F1C215FE20012B801 /* CoreWLAN.framework */,
+				C2816E171C215CE60012B801 /* libpcap.dylib */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		C2816E1D1C215F680012B801 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				C2816E231C2163CF0012B801 /* NTRawPacket.h */,
+				C2816E241C2163CF0012B801 /* NTRawPacket.m */,
+			);
+			name = Additional;
+			sourceTree = "<group>";
+		};
+		C2C8EFEB1C22B26900909CA7 /* Analyzer */ = {
+			isa = PBXGroup;
+			children = (
+				C2C8EFED1C22B28B00909CA7 /* Controller */,
+				C2C8EFD41C2295F500909CA7 /* NetworkTrafficAnalyzer.h */,
+				C2C8EFD51C2295F500909CA7 /* NetworkTrafficAnalyzer.m */,
+			);
+			name = Analyzer;
+			sourceTree = "<group>";
+		};
+		C2C8EFEC1C22B27200909CA7 /* Collector */ = {
+			isa = PBXGroup;
+			children = (
+				C2816E1D1C215F680012B801 /* Additional */,
+				C2816E131C215A8E0012B801 /* NetworkTrafficCollector.h */,
+				C2816E141C215A8E0012B801 /* NetworkTrafficCollector.m */,
+			);
+			name = Collector;
+			sourceTree = "<group>";
+		};
+		C2C8EFED1C22B28B00909CA7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2C8EFE71C22AEFB00909CA7 /* NTDataStorage.h */,
+				C2C8EFE81C22AEFB00909CA7 /* NTDataStorage.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C2816D821C2150050012B801 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C271C5781C3CC38100BA4C99 /* NTACritiriaStorage.h in Headers */,
+				C2653E6A1C4758610025980F /* ClientAlertNotify.h in Headers */,
+				C2816E151C215A8E0012B801 /* NetworkTrafficCollector.h in Headers */,
+				C271C57C1C3CC39200BA4C99 /* NTADatabase.h in Headers */,
+				C2C8EFD61C2295F500909CA7 /* NetworkTrafficAnalyzer.h in Headers */,
+				C2816D881C2150050012B801 /* NetworkTrafficAlertManagerImpl.h in Headers */,
+				C2C8EFE91C22AEFB00909CA7 /* NTDataStorage.h in Headers */,
+				C2816E251C2163CF0012B801 /* NTRawPacket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C2816D831C2150050012B801 /* NetworkTrafficAlertManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2816D981C2150060012B801 /* Build configuration list for PBXNativeTarget "NetworkTrafficAlertManager" */;
+			buildPhases = (
+				C2816D801C2150050012B801 /* Sources */,
+				C2816D811C2150050012B801 /* Frameworks */,
+				C2816D821C2150050012B801 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkTrafficAlertManager;
+			productName = NetworkTrafficAlertManager;
+			productReference = C2816D841C2150050012B801 /* libNetworkTrafficAlertManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2816D7C1C2150050012B801 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C2816D831C2150050012B801 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C2816D7F1C2150050012B801 /* Build configuration list for PBXProject "NetworkTrafficAlertManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2816D7B1C2150050012B801;
+			productRefGroup = C2816D851C2150050012B801 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2816D831C2150050012B801 /* NetworkTrafficAlertManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2816D801C2150050012B801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C271C57D1C3CC39200BA4C99 /* NTADatabase.m in Sources */,
+				C2816E261C2163CF0012B801 /* NTRawPacket.m in Sources */,
+				C2816D8A1C2150050012B801 /* NetworkTrafficAlertManagerImpl.m in Sources */,
+				C2C8EFD71C2295F500909CA7 /* NetworkTrafficAnalyzer.m in Sources */,
+				C2816E161C215A8E0012B801 /* NetworkTrafficCollector.m in Sources */,
+				C271C5791C3CC38100BA4C99 /* NTACritiriaStorage.m in Sources */,
+				C2653E6B1C4758610025980F /* ClientAlertNotify.m in Sources */,
+				C2C8EFEA1C22AEFB00909CA7 /* NTDataStorage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C2816D961C2150060012B801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C2816D971C2150060012B801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C2816D991C2150060012B801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "NetworkTrafficAlertManager-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../DataDeliveryManager/DDM/** ../../FMDB/FMDB_2.4/src/** ../../Std/FxStd/** ../../EventCenter/Source-EventCenter ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../IPC/Source-IPC/**";
+			};
+			name = Debug;
+		};
+		C2816D9A1C2150060012B801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "NetworkTrafficAlertManager-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../DataDeliveryManager/DDM/** ../../FMDB/FMDB_2.4/src/** ../../Std/FxStd/** ../../EventCenter/Source-EventCenter ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../IPC/Source-IPC/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2816D7F1C2150050012B801 /* Build configuration list for PBXProject "NetworkTrafficAlertManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2816D961C2150060012B801 /* Debug */,
+				C2816D971C2150060012B801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2816D981C2150060012B801 /* Build configuration list for PBXNativeTarget "NetworkTrafficAlertManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2816D991C2150060012B801 /* Debug */,
+				C2816D9A1C2150060012B801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2816D7C1C2150050012B801 /* Project object */;
+}

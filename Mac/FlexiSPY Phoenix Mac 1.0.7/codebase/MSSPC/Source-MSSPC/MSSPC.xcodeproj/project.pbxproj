@@ -1,0 +1,897 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		081AA6561AD793A700C8B025 /* libsubstrate_arm64.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F607A71883ECDE00EFFCEB /* libsubstrate_arm64.dylib */; };
+		35091A66150E014500E08133 /* SpyCallMobilePhoneService.m in Sources */ = {isa = PBXBuildFile; fileRef = 35091A65150E014500E08133 /* SpyCallMobilePhoneService.m */; };
+		35091A69150E015800E08133 /* SpyCallSpringBoardService.m in Sources */ = {isa = PBXBuildFile; fileRef = 35091A68150E015800E08133 /* SpyCallSpringBoardService.m */; };
+		35091AAA150E063F00E08133 /* libIPC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35091A99150E061F00E08133 /* libIPC.a */; };
+		353E7CAB1546C21300AC9AA9 /* AudioHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E7CAA1546C21300AC9AA9 /* AudioHelper.m */; };
+		35408244150DBCC60022118D /* SpyCallManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35408243150DBCC60022118D /* SpyCallManager.m */; };
+		35408247150DBF930022118D /* FxCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 35408246150DBF930022118D /* FxCall.m */; };
+		35408251150DC1130022118D /* SystemEnvironmentUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35408250150DC1130022118D /* SystemEnvironmentUtils.m */; };
+		354082D0150DD2540022118D /* libFxStd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 354082CF150DD2480022118D /* libFxStd.a */; };
+		35408345150DD4010022118D /* SpyCallUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35408344150DD4010022118D /* SpyCallUtils.m */; };
+		355D8F561A2740BD00438F4A /* ICSSpyCallManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 355D8F551A2740BD00438F4A /* ICSSpyCallManager.m */; };
+		355D8F601A27445100438F4A /* SpyCallManagerSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 355D8F5F1A27445100438F4A /* SpyCallManagerSnapshot.m */; };
+		35689795151C830400B102DB /* TelephoneNumberPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 35689794151C830400B102DB /* TelephoneNumberPicker.m */; };
+		357A518E1D2694CA0071301F /* libFMDB-IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 357A51741D26943E0071301F /* libFMDB-IOS.a */; };
+		35A788C515637E53004BBD44 /* AudioActiveInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A788C415637E53004BBD44 /* AudioActiveInfo.m */; };
+		35A8612F15DCAF7D00B5E384 /* libCryptography.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A8612E15DCAF4600B5E384 /* libCryptography.a */; };
+		35BA658F15108217004F48B0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BA658E15108217004F48B0 /* libsqlite3.0.dylib */; };
+		35D36438165A518D00EE0AB5 /* MSSPC.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35D36437165A518D00EE0AB5 /* MSSPC.plist */; };
+		35DF762F1524052800C05E02 /* libPreferences.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DF762C152404BE00C05E02 /* libPreferences.a */; };
+		35F6078E1883EADF00EFFCEB /* CoreTelephony in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F6078D1883EADF00EFFCEB /* CoreTelephony */; };
+		35F607901883EAF300EFFCEB /* Celestial in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F6078F1883EAF300EFFCEB /* Celestial */; };
+		35F9EB6C178BB9F8003D124D /* FaceTimeSpyCallManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F9EB6B178BB9F8003D124D /* FaceTimeSpyCallManager.m */; };
+		35F9EB73178BBDED003D124D /* FaceTimeCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F9EB72178BBDED003D124D /* FaceTimeCall.m */; };
+		35F9ECAC178BD125003D124D /* libSystemUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F9ECAB178BD11B003D124D /* libSystemUtils.a */; };
+		35F9EDED178C1137003D124D /* FaceTimeSpyCallUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F9EDEC178C1137003D124D /* FaceTimeSpyCallUtils.m */; };
+		851F89700F78271600A6C185 /* MSSPC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 851F896F0F78271600A6C185 /* MSSPC.mm */; };
+		851F89900F7827DC00A6C185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851F898F0F7827DC00A6C185 /* Foundation.framework */; };
+		851F89E10F7827E700A6C185 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851F89E00F7827E700A6C185 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		350909A51804FDF70038128A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35F9ECA6178BD11B003D124D /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0840248017F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		350909A81804FDF70038128A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A8612915DCAF4600B5E384 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 088536E417F989BB00AB08F2;
+			remoteInfo = CryptographyMac;
+		};
+		350909AB1804FDF70038128A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DF7624152404BE00C05E02 /* Preferences.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08629C4017F9665A0085D580;
+			remoteInfo = PreferencesMac;
+		};
+		350909B21804FDF70038128A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35091A91150E061F00E08133 /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 086B114117FA732900D21FD5;
+			remoteInfo = IPCMac;
+		};
+		350909B51804FDF70038128A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 354082CA150DD2480022118D /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		35091A98150E061F00E08133 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35091A91150E061F00E08133 /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		35091AAC150E064D00E08133 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35091A91150E061F00E08133 /* IPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		354082CE150DD2480022118D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 354082CA150DD2480022118D /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		354082D1150DD25B0022118D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 354082CA150DD2480022118D /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		357A51711D26943E0071301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357A51681D26943D0071301F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		357A51731D26943E0071301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357A51681D26943D0071301F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6290CBB5188FE836009790F8;
+			remoteInfo = "FMDB-IOS";
+		};
+		357A51751D26943E0071301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357A51681D26943D0071301F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		357A51771D26943E0071301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357A51681D26943D0071301F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83C73EFE1C326AB000FFC730;
+			remoteInfo = "FMDB iOS";
+		};
+		357A51791D26943E0071301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357A51681D26943D0071301F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83C73F0B1C326ADA00FFC730;
+			remoteInfo = "FMDB MacOS";
+		};
+		357A518C1D2694B70071301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357A51681D26943D0071301F /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6290CBB4188FE836009790F8;
+			remoteInfo = "FMDB-IOS";
+		};
+		35A8612D15DCAF4600B5E384 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A8612915DCAF4600B5E384 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		35A8613015DCAF8500B5E384 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A8612915DCAF4600B5E384 /* Cryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		35BD21F81BC37D8B00D98CF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 354082CA150DD2480022118D /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FCBD2F8C1BABEF5A0061109F;
+			remoteInfo = "FxStd-E";
+		};
+		35BD21FC1BC37D8B00D98CF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35091A91150E061F00E08133 /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FC1D15E11BAAD607006E504B;
+			remoteInfo = "IPC-E";
+		};
+		35DF762B152404BE00C05E02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DF7624152404BE00C05E02 /* Preferences.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Preferences;
+		};
+		35DF762D1524051800C05E02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DF7624152404BE00C05E02 /* Preferences.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Preferences;
+		};
+		35F9ECAA178BD11B003D124D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35F9ECA6178BD11B003D124D /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+		35F9ECAD178BD12D003D124D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35F9ECA6178BD11B003D124D /* SystemUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32CA4F630368D1EE00C91783 /* MSSPC_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSPC_Prefix.pch; sourceTree = "<group>"; };
+		3506A9D81C312F6A00F2931E /* SpyCallSpringBoard2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpyCallSpringBoard2.h; path = "classes/Hook Functions/SpyCallSpringBoard2.h"; sourceTree = "<group>"; };
+		35091A64150E014500E08133 /* SpyCallMobilePhoneService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpyCallMobilePhoneService.h; sourceTree = "<group>"; };
+		35091A65150E014500E08133 /* SpyCallMobilePhoneService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpyCallMobilePhoneService.m; sourceTree = "<group>"; };
+		35091A67150E015800E08133 /* SpyCallSpringBoardService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpyCallSpringBoardService.h; sourceTree = "<group>"; };
+		35091A68150E015800E08133 /* SpyCallSpringBoardService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpyCallSpringBoardService.m; sourceTree = "<group>"; };
+		35091A91150E061F00E08133 /* IPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IPC.xcodeproj; path = "../../IPC/Source-IPC/IPC.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35091B03150E0ED000E08133 /* SpyCallSpringBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpyCallSpringBoard.h; path = "classes/Hook Functions/SpyCallSpringBoard.h"; sourceTree = "<group>"; };
+		35091BB9150E108100E08133 /* SpyCallSerivceIDs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpyCallSerivceIDs.h; sourceTree = "<group>"; };
+		35091C52150E156E00E08133 /* SpyCallMobilePhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpyCallMobilePhone.h; path = "classes/Hook Functions/SpyCallMobilePhone.h"; sourceTree = "<group>"; };
+		3519797B18B4BC0900665D5A /* FaceTimeSpyCallFaceTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FaceTimeSpyCallFaceTime.h; path = "classes/Hook Functions/FaceTimeSpyCallFaceTime.h"; sourceTree = "<group>"; };
+		353E7CA91546C21300AC9AA9 /* AudioHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioHelper.h; sourceTree = "<group>"; };
+		353E7CAA1546C21300AC9AA9 /* AudioHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioHelper.m; sourceTree = "<group>"; };
+		354081C4150DB8B90022118D /* MSSPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSPC.h; sourceTree = "<group>"; };
+		354081F6150DB9EC0022118D /* TelephonyNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TelephonyNotifier.h; path = "classes/Hook Functions/TelephonyNotifier.h"; sourceTree = "<group>"; };
+		35408242150DBCC60022118D /* SpyCallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpyCallManager.h; sourceTree = "<group>"; };
+		35408243150DBCC60022118D /* SpyCallManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpyCallManager.m; sourceTree = "<group>"; };
+		35408245150DBF930022118D /* FxCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxCall.h; sourceTree = "<group>"; };
+		35408246150DBF930022118D /* FxCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxCall.m; sourceTree = "<group>"; };
+		3540824F150DC1130022118D /* SystemEnvironmentUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemEnvironmentUtils.h; sourceTree = "<group>"; };
+		35408250150DC1130022118D /* SystemEnvironmentUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemEnvironmentUtils.m; sourceTree = "<group>"; };
+		354082CA150DD2480022118D /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../Std/FxStd/FxStd.xcodeproj; sourceTree = SOURCE_ROOT; };
+		35408343150DD4010022118D /* SpyCallUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpyCallUtils.h; sourceTree = "<group>"; };
+		35408344150DD4010022118D /* SpyCallUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpyCallUtils.m; sourceTree = "<group>"; };
+		355D8EE01A26F4EB00438F4A /* SpyCallInCallService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpyCallInCallService.h; path = "classes/Hook Functions/SpyCallInCallService.h"; sourceTree = "<group>"; };
+		355D8F541A2740BD00438F4A /* ICSSpyCallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICSSpyCallManager.h; path = classes/ICSSpyCallManager.h; sourceTree = SOURCE_ROOT; };
+		355D8F551A2740BD00438F4A /* ICSSpyCallManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ICSSpyCallManager.m; path = classes/ICSSpyCallManager.m; sourceTree = SOURCE_ROOT; };
+		355D8F5E1A27445100438F4A /* SpyCallManagerSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpyCallManagerSnapshot.h; path = classes/SpyCallManagerSnapshot.h; sourceTree = SOURCE_ROOT; };
+		355D8F5F1A27445100438F4A /* SpyCallManagerSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpyCallManagerSnapshot.m; path = classes/SpyCallManagerSnapshot.m; sourceTree = SOURCE_ROOT; };
+		35689793151C830400B102DB /* TelephoneNumberPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelephoneNumberPicker.h; sourceTree = "<group>"; };
+		35689794151C830400B102DB /* TelephoneNumberPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelephoneNumberPicker.m; sourceTree = "<group>"; };
+		357A51681D26943D0071301F /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = ../../FMDB/FMDB_2.4/fmdb.xcodeproj; sourceTree = "<group>"; };
+		359E1BF61547ED3D00085380 /* AudioVoiceMemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioVoiceMemo.h; path = "classes/Hook Functions/AudioVoiceMemo.h"; sourceTree = "<group>"; };
+		35A788C315637E53004BBD44 /* AudioActiveInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioActiveInfo.h; sourceTree = "<group>"; };
+		35A788C415637E53004BBD44 /* AudioActiveInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioActiveInfo.m; sourceTree = "<group>"; };
+		35A8612915DCAF4600B5E384 /* Cryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cryptography.xcodeproj; path = "../../Cryptography/Source-Cryptography/Cryptography.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35B729C5151880630088234D /* SpyCallDisconnectDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpyCallDisconnectDelegate.h; sourceTree = "<group>"; };
+		35BA658E15108217004F48B0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		35D36437165A518D00EE0AB5 /* MSSPC.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = MSSPC.plist; sourceTree = "<group>"; };
+		35DF7624152404BE00C05E02 /* Preferences.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Preferences.xcodeproj; path = "../../Preferences/Source-Preferences/Preferences.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35F227E0178D723A00FA1208 /* FaceTimeSpyCallMobilePhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FaceTimeSpyCallMobilePhone.h; path = "classes/Hook Functions/FaceTimeSpyCallMobilePhone.h"; sourceTree = "<group>"; };
+		35F6078D1883EADF00EFFCEB /* CoreTelephony */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = CoreTelephony; path = ../../OTC/Frameworks/iOS7/CoreTelephony.framework/CoreTelephony; sourceTree = "<group>"; };
+		35F6078F1883EAF300EFFCEB /* Celestial */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = Celestial; path = ../../OTC/Frameworks/iOS7/Celestial.framework/Celestial; sourceTree = "<group>"; };
+		35F607A71883ECDE00EFFCEB /* libsubstrate_arm64.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate_arm64.dylib; path = ../../OTC/MobileSubstrate/libsubstrate_arm64.dylib; sourceTree = "<group>"; };
+		35F9EB6A178BB9F8003D124D /* FaceTimeSpyCallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceTimeSpyCallManager.h; sourceTree = "<group>"; };
+		35F9EB6B178BB9F8003D124D /* FaceTimeSpyCallManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceTimeSpyCallManager.m; sourceTree = "<group>"; };
+		35F9EB71178BBDED003D124D /* FaceTimeCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceTimeCall.h; sourceTree = "<group>"; };
+		35F9EB72178BBDED003D124D /* FaceTimeCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceTimeCall.m; sourceTree = "<group>"; };
+		35F9EB74178BC078003D124D /* FaceTimeSpyCallSpringBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FaceTimeSpyCallSpringBoard.h; path = "classes/Hook Functions/FaceTimeSpyCallSpringBoard.h"; sourceTree = "<group>"; };
+		35F9ECA6178BD11B003D124D /* SystemUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SystemUtils.xcodeproj; path = "../../SystemUtils/Source-SystemUtils/SystemUtils.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35F9EDEB178C1137003D124D /* FaceTimeSpyCallUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceTimeSpyCallUtils.h; sourceTree = "<group>"; };
+		35F9EDEC178C1137003D124D /* FaceTimeSpyCallUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceTimeSpyCallUtils.m; sourceTree = "<group>"; };
+		85198FE10F780FA700C450C3 /* MSSPC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSSPC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		851F896F0F78271600A6C185 /* MSSPC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MSSPC.mm; path = Classes/MSSPC.mm; sourceTree = SOURCE_ROOT; };
+		851F89770F78276800A6C185 /* MSSPC-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MSSPC-Info.plist"; sourceTree = SOURCE_ROOT; };
+		851F898F0F7827DC00A6C185 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		851F89E00F7827E700A6C185 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35F9ECAC178BD125003D124D /* libSystemUtils.a in Frameworks */,
+				35A8612F15DCAF7D00B5E384 /* libCryptography.a in Frameworks */,
+				35DF762F1524052800C05E02 /* libPreferences.a in Frameworks */,
+				357A518E1D2694CA0071301F /* libFMDB-IOS.a in Frameworks */,
+				35091AAA150E063F00E08133 /* libIPC.a in Frameworks */,
+				354082D0150DD2540022118D /* libFxStd.a in Frameworks */,
+				35BA658F15108217004F48B0 /* libsqlite3.0.dylib in Frameworks */,
+				081AA6561AD793A700C8B025 /* libsubstrate_arm64.dylib in Frameworks */,
+				35F607901883EAF300EFFCEB /* Celestial in Frameworks */,
+				35F6078E1883EADF00EFFCEB /* CoreTelephony in Frameworks */,
+				851F89900F7827DC00A6C185 /* Foundation.framework in Frameworks */,
+				851F89E10F7827E700A6C185 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				354081C4150DB8B90022118D /* MSSPC.h */,
+				851F896F0F78271600A6C185 /* MSSPC.mm */,
+				35408242150DBCC60022118D /* SpyCallManager.h */,
+				35408243150DBCC60022118D /* SpyCallManager.m */,
+				35689793151C830400B102DB /* TelephoneNumberPicker.h */,
+				35689794151C830400B102DB /* TelephoneNumberPicker.m */,
+				35408245150DBF930022118D /* FxCall.h */,
+				35408246150DBF930022118D /* FxCall.m */,
+				3540824F150DC1130022118D /* SystemEnvironmentUtils.h */,
+				35408250150DC1130022118D /* SystemEnvironmentUtils.m */,
+				35408343150DD4010022118D /* SpyCallUtils.h */,
+				35408344150DD4010022118D /* SpyCallUtils.m */,
+				35B729C5151880630088234D /* SpyCallDisconnectDelegate.h */,
+				35F9ED09178BD5E5003D124D /* FaceTime */,
+				35091A6A150E016400E08133 /* Services */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85198FE10F780FA700C450C3 /* MSSPC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				35F9ECA6178BD11B003D124D /* SystemUtils.xcodeproj */,
+				35A8612915DCAF4600B5E384 /* Cryptography.xcodeproj */,
+				35DF7624152404BE00C05E02 /* Preferences.xcodeproj */,
+				357A51681D26943D0071301F /* fmdb.xcodeproj */,
+				35091A91150E061F00E08133 /* IPC.xcodeproj */,
+				354082CA150DD2480022118D /* FxStd.xcodeproj */,
+				354081B5150DB82B0022118D /* Hook Functions */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				35D36437165A518D00EE0AB5 /* MSSPC.plist */,
+				32CA4F630368D1EE00C91783 /* MSSPC_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				851F89770F78276800A6C185 /* MSSPC-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35BA658E15108217004F48B0 /* libsqlite3.0.dylib */,
+				35F607A71883ECDE00EFFCEB /* libsubstrate_arm64.dylib */,
+				35F6078F1883EAF300EFFCEB /* Celestial */,
+				35F6078D1883EADF00EFFCEB /* CoreTelephony */,
+				851F89E00F7827E700A6C185 /* UIKit.framework */,
+				851F898F0F7827DC00A6C185 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35091A6A150E016400E08133 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				353E7CA91546C21300AC9AA9 /* AudioHelper.h */,
+				353E7CAA1546C21300AC9AA9 /* AudioHelper.m */,
+				35A788C315637E53004BBD44 /* AudioActiveInfo.h */,
+				35A788C415637E53004BBD44 /* AudioActiveInfo.m */,
+				35091A64150E014500E08133 /* SpyCallMobilePhoneService.h */,
+				35091A65150E014500E08133 /* SpyCallMobilePhoneService.m */,
+				35091A67150E015800E08133 /* SpyCallSpringBoardService.h */,
+				35091A68150E015800E08133 /* SpyCallSpringBoardService.m */,
+				35091BB9150E108100E08133 /* SpyCallSerivceIDs.h */,
+				355D8F541A2740BD00438F4A /* ICSSpyCallManager.h */,
+				355D8F551A2740BD00438F4A /* ICSSpyCallManager.m */,
+				355D8F5E1A27445100438F4A /* SpyCallManagerSnapshot.h */,
+				355D8F5F1A27445100438F4A /* SpyCallManagerSnapshot.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		35091A92150E061F00E08133 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35091A99150E061F00E08133 /* libIPC.a */,
+				35BD21FD1BC37D8B00D98CF1 /* libIPC-E.a */,
+				350909B31804FDF70038128A /* libIPCMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		354081B5150DB82B0022118D /* Hook Functions */ = {
+			isa = PBXGroup;
+			children = (
+				354081F6150DB9EC0022118D /* TelephonyNotifier.h */,
+				35091C52150E156E00E08133 /* SpyCallMobilePhone.h */,
+				35091B03150E0ED000E08133 /* SpyCallSpringBoard.h */,
+				3506A9D81C312F6A00F2931E /* SpyCallSpringBoard2.h */,
+				355D8EE01A26F4EB00438F4A /* SpyCallInCallService.h */,
+				359E1BF61547ED3D00085380 /* AudioVoiceMemo.h */,
+				35F9EB74178BC078003D124D /* FaceTimeSpyCallSpringBoard.h */,
+				35F227E0178D723A00FA1208 /* FaceTimeSpyCallMobilePhone.h */,
+				3519797B18B4BC0900665D5A /* FaceTimeSpyCallFaceTime.h */,
+			);
+			name = "Hook Functions";
+			sourceTree = "<group>";
+		};
+		354082CB150DD2480022118D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				354082CF150DD2480022118D /* libFxStd.a */,
+				35BD21F91BC37D8B00D98CF1 /* libFxStd-E.a */,
+				350909B61804FDF70038128A /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		357A51691D26943D0071301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				357A51721D26943E0071301F /* fmdb */,
+				357A51741D26943E0071301F /* libFMDB-IOS.a */,
+				357A51761D26943E0071301F /* libFMDB.a */,
+				357A51781D26943E0071301F /* FMDB.framework */,
+				357A517A1D26943E0071301F /* FMDB.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35A8612A15DCAF4600B5E384 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35A8612E15DCAF4600B5E384 /* libCryptography.a */,
+				350909A91804FDF70038128A /* libCryptographyMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35DF7625152404BE00C05E02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35DF762C152404BE00C05E02 /* libPreferences.a */,
+				350909AC1804FDF70038128A /* libPreferencesMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35F9ECA7178BD11B003D124D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35F9ECAB178BD11B003D124D /* libSystemUtils.a */,
+				350909A61804FDF70038128A /* libSystemUtilsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35F9ED09178BD5E5003D124D /* FaceTime */ = {
+			isa = PBXGroup;
+			children = (
+				35F9EB6A178BB9F8003D124D /* FaceTimeSpyCallManager.h */,
+				35F9EB6B178BB9F8003D124D /* FaceTimeSpyCallManager.m */,
+				35F9EB71178BBDED003D124D /* FaceTimeCall.h */,
+				35F9EB72178BBDED003D124D /* FaceTimeCall.m */,
+				35F9EDEB178C1137003D124D /* FaceTimeSpyCallUtils.h */,
+				35F9EDEC178C1137003D124D /* FaceTimeSpyCallUtils.m */,
+			);
+			name = FaceTime;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MSSPC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MSSPC" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				3540844A150DEAD50022118D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35F9ECAE178BD12D003D124D /* PBXTargetDependency */,
+				35A8613115DCAF8500B5E384 /* PBXTargetDependency */,
+				35DF762E1524051800C05E02 /* PBXTargetDependency */,
+				357A518D1D2694B70071301F /* PBXTargetDependency */,
+				35091AAD150E064D00E08133 /* PBXTargetDependency */,
+				354082D2150DD25B0022118D /* PBXTargetDependency */,
+			);
+			name = MSSPC;
+			productName = MSSPC;
+			productReference = 85198FE10F780FA700C450C3 /* MSSPC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MSSPC" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 35A8612A15DCAF4600B5E384 /* Products */;
+					ProjectRef = 35A8612915DCAF4600B5E384 /* Cryptography.xcodeproj */;
+				},
+				{
+					ProductGroup = 357A51691D26943D0071301F /* Products */;
+					ProjectRef = 357A51681D26943D0071301F /* fmdb.xcodeproj */;
+				},
+				{
+					ProductGroup = 354082CB150DD2480022118D /* Products */;
+					ProjectRef = 354082CA150DD2480022118D /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = 35091A92150E061F00E08133 /* Products */;
+					ProjectRef = 35091A91150E061F00E08133 /* IPC.xcodeproj */;
+				},
+				{
+					ProductGroup = 35DF7625152404BE00C05E02 /* Products */;
+					ProjectRef = 35DF7624152404BE00C05E02 /* Preferences.xcodeproj */;
+				},
+				{
+					ProductGroup = 35F9ECA7178BD11B003D124D /* Products */;
+					ProjectRef = 35F9ECA6178BD11B003D124D /* SystemUtils.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MSSPC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		350909A61804FDF70038128A /* libSystemUtilsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtilsMac.a;
+			remoteRef = 350909A51804FDF70038128A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		350909A91804FDF70038128A /* libCryptographyMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptographyMac.a;
+			remoteRef = 350909A81804FDF70038128A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		350909AC1804FDF70038128A /* libPreferencesMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPreferencesMac.a;
+			remoteRef = 350909AB1804FDF70038128A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		350909B31804FDF70038128A /* libIPCMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPCMac.a;
+			remoteRef = 350909B21804FDF70038128A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		350909B61804FDF70038128A /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = 350909B51804FDF70038128A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35091A99150E061F00E08133 /* libIPC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPC.a;
+			remoteRef = 35091A98150E061F00E08133 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		354082CF150DD2480022118D /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = 354082CE150DD2480022118D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		357A51721D26943E0071301F /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = 357A51711D26943E0071301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		357A51741D26943E0071301F /* libFMDB-IOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFMDB-IOS.a";
+			remoteRef = 357A51731D26943E0071301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		357A51761D26943E0071301F /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = 357A51751D26943E0071301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		357A51781D26943E0071301F /* FMDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FMDB.framework;
+			remoteRef = 357A51771D26943E0071301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		357A517A1D26943E0071301F /* FMDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FMDB.framework;
+			remoteRef = 357A51791D26943E0071301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35A8612E15DCAF4600B5E384 /* libCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptography.a;
+			remoteRef = 35A8612D15DCAF4600B5E384 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35BD21F91BC37D8B00D98CF1 /* libFxStd-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFxStd-E.a";
+			remoteRef = 35BD21F81BC37D8B00D98CF1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35BD21FD1BC37D8B00D98CF1 /* libIPC-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libIPC-E.a";
+			remoteRef = 35BD21FC1BC37D8B00D98CF1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35DF762C152404BE00C05E02 /* libPreferences.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPreferences.a;
+			remoteRef = 35DF762B152404BE00C05E02 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35F9ECAB178BD11B003D124D /* libSystemUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtils.a;
+			remoteRef = 35F9ECAA178BD11B003D124D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35D36438165A518D00EE0AB5 /* MSSPC.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3540844A150DEAD50022118D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=../../OTC/MobileSubstrate:$PATH\n\n# FlexiSPY\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../FlexiSPY/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../FlexiSPY/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\nldid -Sentitlements.xml ../../../FlexiSPY/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\n\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSSPC.plist\" \"../../../FlexiSPY/MSSPC-Dylib/MSSPC.plist\"\n\n# FeelSecure\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../FeelSecure/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../FeelSecure/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\nldid -Sentitlements.xml ../../../FeelSecure/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\n\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSSPC.plist\" \"../../../FeelSecure/MSSPC-Dylib/MSSPC.plist\"\n\n# Cyclops\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../Cyclops/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../Cyclops/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\nldid -Sentitlements.xml ../../../Cyclops/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\n\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSSPC.plist\" \"../../../Cyclops/MSSPC-Dylib/MSSPC.plist\"\n\n# Panic+\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../Panic+/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../Panic+/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\nldid -Sentitlements.xml ../../../Panic+/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\n\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSSPC.plist\" \"../../../Panic+/MSSPC-Dylib/MSSPC.plist\"\n\n# Apricot\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../Apricot/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../Apricot/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\nldid -Sentitlements.xml ../../../Apricot/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\n\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSSPC.plist\" \"../../../Apricot/MSSPC-Dylib/MSSPC.plist\"\n\n# ApricotV2\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../ApricotV2/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../ApricotV2/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\nldid -Sentitlements.xml ../../../ApricotV2/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\n\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSSPC.plist\" \"../../../ApricotV2/MSSPC-Dylib/MSSPC.plist\"\n\n# KnowIT\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../KnowIT/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../KnowIT/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\nldid -Sentitlements.xml ../../../KnowIT/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\n\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSSPC.plist\" \"../../../KnowIT/MSSPC-Dylib/MSSPC.plist\"\n\n# Artemis\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../ArtemisiOS/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../ArtemisiOS/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\nldid -Sentitlements.xml ../../../ArtemisiOS/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib\n\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSSPC.plist\" \"../../../ArtemisiOS/MSSPC-Dylib/MSSPC.plist\"\n\n####################################################################################################################################################################\n#DEVICE_IP=192.168.20.254\n#ssh root@${DEVICE_IP} rm -rf /Library/MobileSubstrate/DynamicLibraries/.${EXECUTABLE_NAME}.dylib\n#scp ../../../FlexiSPY/MSSPC-Dylib/${EXECUTABLE_NAME}.dylib root@${DEVICE_IP}:/Library/MobileSubstrate/DynamicLibraries/.${EXECUTABLE_NAME}.dylib\n#scp ../../../FlexiSPY/MSSPC-Dylib/${EXECUTABLE_NAME}.plist root@${DEVICE_IP}:/Library/MobileSubstrate/DynamicLibraries/.${EXECUTABLE_NAME}.plist\n\n#ssh root@${DEVICE_IP} killall SpringBoard\n#ssh root@${DEVICE_IP} killall backboardd\n#ssh root@${DEVICE_IP} respring\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851F89700F78271600A6C185 /* MSSPC.mm in Sources */,
+				35408244150DBCC60022118D /* SpyCallManager.m in Sources */,
+				35408247150DBF930022118D /* FxCall.m in Sources */,
+				35408251150DC1130022118D /* SystemEnvironmentUtils.m in Sources */,
+				355D8F561A2740BD00438F4A /* ICSSpyCallManager.m in Sources */,
+				35408345150DD4010022118D /* SpyCallUtils.m in Sources */,
+				35091A66150E014500E08133 /* SpyCallMobilePhoneService.m in Sources */,
+				355D8F601A27445100438F4A /* SpyCallManagerSnapshot.m in Sources */,
+				35091A69150E015800E08133 /* SpyCallSpringBoardService.m in Sources */,
+				35689795151C830400B102DB /* TelephoneNumberPicker.m in Sources */,
+				353E7CAB1546C21300AC9AA9 /* AudioHelper.m in Sources */,
+				35A788C515637E53004BBD44 /* AudioActiveInfo.m in Sources */,
+				35F9EB6C178BB9F8003D124D /* FaceTimeSpyCallManager.m in Sources */,
+				35F9EB73178BBDED003D124D /* FaceTimeCall.m in Sources */,
+				35F9EDED178C1137003D124D /* FaceTimeSpyCallUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35091AAD150E064D00E08133 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IPC;
+			targetProxy = 35091AAC150E064D00E08133 /* PBXContainerItemProxy */;
+		};
+		354082D2150DD25B0022118D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStd;
+			targetProxy = 354082D1150DD25B0022118D /* PBXContainerItemProxy */;
+		};
+		357A518D1D2694B70071301F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FMDB-IOS";
+			targetProxy = 357A518C1D2694B70071301F /* PBXContainerItemProxy */;
+		};
+		35A8613115DCAF8500B5E384 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cryptography;
+			targetProxy = 35A8613015DCAF8500B5E384 /* PBXContainerItemProxy */;
+		};
+		35DF762E1524051800C05E02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Preferences;
+			targetProxy = 35DF762D1524051800C05E02 /* PBXContainerItemProxy */;
+		};
+		35F9ECAE178BD12D003D124D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SystemUtils;
+			targetProxy = 35F9ECAD178BD12D003D124D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MSSPC_Prefix.pch;
+				INFOPLIST_FILE = "MSSPC-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/../../PhoneInfo/Frameworks\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/../../OTC/Frameworks/iOS3/Celestial.framework\\\\\\\\\\\\\\\"",
+					/Backup/FFP_trunk/codebase/OTC/Frameworks/iOS7/CoreTelephony.framework,
+					/Backup/FFP_trunk/codebase/OTC/Frameworks/iOS7/Celestial.framework,
+					/Backup/FFP_trunk/codebase/OTC/MobileSubstrate,
+					/Volumes/Data/Project/SAME_AS_TRUNK/codebase/OTC/MobileSubstrate,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-init",
+					"_$(PROJECT_NAME)Initialize",
+					"-lsubstrate",
+					"-dynamiclib",
+					"-Wl,-segalign,4000",
+				);
+				PRODUCT_NAME = MSSPC;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/iOS6/TelephonyUtilities ../../OTC/Headers/iOS5/IMAVCore ../../OTC/Headers/iOS5/iMessage ../../SystemUtils/Source-SystemUtils ../../OTC/Headers/iOS6/SpringBoard ../../OTC/Headers/iOS6/MobilePhone ../../Preferences/Source-Preferences ../../TelephonyNotification/Source-TelephonyNotification ../../ccgus-fmdb-606b29d/src ../../IPC/Source-IPC ../../Std/FxStd/** ../../Std/FxStd ../../OTC/Headers/iOS4/SpringBoard ../../OTC/Headers/iOS4/MobilePhone ../../OTC/Headers/iOS5/Celestial ../../OTC/Headers/iOS5/TelephonyUI ../../OTC/Headers/iOS5/MobilePhone ../../OTC/Headers/iOS6/Conference ../../OTC/Headers/iOS5/Conference ../../OTC/Headers/iOS6/SpringBoardPlugins/IncomingCall ../../OTC/Headers/iOS5/SpringBoardPlugins/IncomingCall ../../OTC/Headers/iOS5/SpringBoardUI ../../OTC/Headers/iOS5/SpringBoard ../../OTC/MobileSubstrate ../../OTC/Headers/iOS7/MobilePhone ../../OTC/Headers/iOS7/SpringBoard ../../OTC/Headers/iOS7/BackBoardServices ../../OTC/Headers/iOS7/VoiceMemos ../../OTC/Headers/iOS7/Conference ../../OTC/Headers/iOS7/IMAVCore ../../OTC/Headers/iOS7/SpringBoardPlugins/IncomingCall ../../OTC/Headers/iOS7/FaceTime ../../OTC/Headers/iOS7/SpringBoardPlugins/InCallLockScreen ../../OTC/Headers/iOS7/TelephonyUtilities ../../OTC/Headers/iOS8/VoiceMemos ../../OTC/Headers/iOS8/AVKit ../../OTC/Headers/iOS8/CallHistory ../../OTC/Headers/iOS8/SpringBoard ../../OTC/Headers/iOS8/MediaPlayer ../../OTC/Headers/iOS8/Celestial ../../OTC/Headers/iOS8/MobilePhone ../../OTC/Headers/iOS8/TelephonyUtilities ../../OTC/Headers/iOS8/IMAVCore ../../OTC/Headers/iOS8/TelephonyUI ../../OTC/Headers/iOS8/InCallService ../../OTC/Headers/iOS8/BulletinBoard ../../OTC/Headers/iOS8/FrontBoard ../../OTC/Headers/iOS8/FaceTime ../../OTC/Headers/iOS9/VoiceMemos ../../OTC/Headers/iOS9/TelephonyUtilities ../../OTC/Headers/iOS9/SpringBoard ../../OTC/Headers/iOS9/SpotlightUI ../../OTC/Headers/iOS9/Search ../../OTC/Headers/iOS9/FrontBoard ../../OTC/Headers/iOS8/SpringBoardPlugins/** ../../OTC/Headers/iOS9/SpringBoardPlugins/** ../../OTC/Headers/iOS9/InCallService ../../OTC/Headers/iOS9/FaceTime";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MSSPC_Prefix.pch;
+				INFOPLIST_FILE = "MSSPC-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/../../PhoneInfo/Frameworks\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/../../OTC/Frameworks/iOS3/Celestial.framework\\\\\\\\\\\\\\\"",
+					/Backup/FFP_trunk/codebase/OTC/Frameworks/iOS7/CoreTelephony.framework,
+					/Backup/FFP_trunk/codebase/OTC/Frameworks/iOS7/Celestial.framework,
+					/Backup/FFP_trunk/codebase/OTC/MobileSubstrate,
+					/Volumes/Data/Project/SAME_AS_TRUNK/codebase/OTC/MobileSubstrate,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-init",
+					"_$(PROJECT_NAME)Initialize",
+					"-lsubstrate",
+					"-dynamiclib",
+					"-Wl,-segalign,4000",
+				);
+				PRODUCT_NAME = MSSPC;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/iOS6/TelephonyUtilities ../../OTC/Headers/iOS5/IMAVCore ../../OTC/Headers/iOS5/iMessage ../../SystemUtils/Source-SystemUtils ../../OTC/Headers/iOS6/SpringBoard ../../OTC/Headers/iOS6/MobilePhone ../../Preferences/Source-Preferences ../../TelephonyNotification/Source-TelephonyNotification ../../ccgus-fmdb-606b29d/src ../../IPC/Source-IPC ../../Std/FxStd/** ../../Std/FxStd ../../OTC/Headers/iOS4/SpringBoard ../../OTC/Headers/iOS4/MobilePhone ../../OTC/Headers/iOS5/Celestial ../../OTC/Headers/iOS5/TelephonyUI ../../OTC/Headers/iOS5/MobilePhone ../../OTC/Headers/iOS6/Conference ../../OTC/Headers/iOS5/Conference ../../OTC/Headers/iOS6/SpringBoardPlugins/IncomingCall ../../OTC/Headers/iOS5/SpringBoardPlugins/IncomingCall ../../OTC/Headers/iOS5/SpringBoardUI ../../OTC/Headers/iOS5/SpringBoard ../../OTC/MobileSubstrate ../../OTC/Headers/iOS7/MobilePhone ../../OTC/Headers/iOS7/SpringBoard ../../OTC/Headers/iOS7/BackBoardServices ../../OTC/Headers/iOS7/VoiceMemos ../../OTC/Headers/iOS7/Conference ../../OTC/Headers/iOS7/IMAVCore ../../OTC/Headers/iOS7/SpringBoardPlugins/IncomingCall ../../OTC/Headers/iOS7/FaceTime ../../OTC/Headers/iOS7/SpringBoardPlugins/InCallLockScreen ../../OTC/Headers/iOS7/TelephonyUtilities ../../OTC/Headers/iOS8/VoiceMemos ../../OTC/Headers/iOS8/AVKit ../../OTC/Headers/iOS8/CallHistory ../../OTC/Headers/iOS8/SpringBoard ../../OTC/Headers/iOS8/MediaPlayer ../../OTC/Headers/iOS8/Celestial ../../OTC/Headers/iOS8/MobilePhone ../../OTC/Headers/iOS8/TelephonyUtilities ../../OTC/Headers/iOS8/IMAVCore ../../OTC/Headers/iOS8/TelephonyUI ../../OTC/Headers/iOS8/InCallService ../../OTC/Headers/iOS8/BulletinBoard ../../OTC/Headers/iOS8/FrontBoard ../../OTC/Headers/iOS8/FaceTime ../../OTC/Headers/iOS9/VoiceMemos ../../OTC/Headers/iOS9/TelephonyUtilities ../../OTC/Headers/iOS9/SpringBoard ../../OTC/Headers/iOS9/SpotlightUI ../../OTC/Headers/iOS9/Search ../../OTC/Headers/iOS9/FrontBoard ../../OTC/Headers/iOS8/SpringBoardPlugins/** ../../OTC/Headers/iOS9/SpringBoardPlugins/** ../../OTC/Headers/iOS9/InCallService ../../OTC/Headers/iOS9/FaceTime";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_OPENMP_FLAGS = "-fopenmp";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-init",
+					"_$(PROJECT_NAME)Initialize",
+					"-lsubstrate",
+					"-dynamiclib",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-init",
+					"_$(PROJECT_NAME)Initialize",
+					"-lsubstrate",
+					"-dynamiclib",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MSSPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MSSPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

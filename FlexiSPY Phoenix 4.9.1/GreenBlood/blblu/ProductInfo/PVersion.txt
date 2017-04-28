@@ -1,5 +1,0 @@
-/* ======== productID should follow in Product.h ======== */
-/* Green = 5007 */
-
-ProductID=5007
-Version=1.0.1

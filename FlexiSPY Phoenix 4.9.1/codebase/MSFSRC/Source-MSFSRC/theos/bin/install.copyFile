@@ -1,6 +1,0 @@
-#!/bin/bash
-if [[ TARGET_REMOTE -eq 1 ]]; then
-	scp -P $THEOS_DEVICE_PORT $1 root@$THEOS_DEVICE_IP:$2
-else
-	cp $1 $2
-fi

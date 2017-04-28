@@ -1,8 +1,0 @@
-//
-// Prefix header for all source files of the 'UnitTestAppForMac' target in the 'UnitTestAppForMac' project
-//
-
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-    #import <sqlite3.h>
-#endif

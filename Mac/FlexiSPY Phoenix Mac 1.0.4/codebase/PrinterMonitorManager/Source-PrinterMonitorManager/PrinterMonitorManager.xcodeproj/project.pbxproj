@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C28088AF1BF4ACA500ECF30F /* PrinterMonitorNotify.h in Headers */ = {isa = PBXBuildFile; fileRef = C28088AD1BF4ACA500ECF30F /* PrinterMonitorNotify.h */; };
+		C28088B01BF4ACA500ECF30F /* PrinterMonitorNotify.m in Sources */ = {isa = PBXBuildFile; fileRef = C28088AE1BF4ACA500ECF30F /* PrinterMonitorNotify.m */; };
+		C28088B41BF4AED200ECF30F /* PrinterMonitorManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C28088B31BF4AED200ECF30F /* PrinterMonitorManager_Prefix.pch */; };
+		C29C2FAE1BF2EB8F007038B5 /* PrinterMonitorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C29C2FAD1BF2EB8F007038B5 /* PrinterMonitorManager.h */; };
+		C29C2FB01BF2EB8F007038B5 /* PrinterMonitorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C29C2FAF1BF2EB8F007038B5 /* PrinterMonitorManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C28088AD1BF4ACA500ECF30F /* PrinterMonitorNotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinterMonitorNotify.h; sourceTree = "<group>"; };
+		C28088AE1BF4ACA500ECF30F /* PrinterMonitorNotify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinterMonitorNotify.m; sourceTree = "<group>"; };
+		C28088B31BF4AED200ECF30F /* PrinterMonitorManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinterMonitorManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		C29C2FAA1BF2EB8F007038B5 /* libPrinterMonitorManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPrinterMonitorManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C29C2FAD1BF2EB8F007038B5 /* PrinterMonitorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrinterMonitorManager.h; sourceTree = "<group>"; };
+		C29C2FAF1BF2EB8F007038B5 /* PrinterMonitorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrinterMonitorManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C29C2FA71BF2EB8F007038B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C28088AB1BF4AB5900ECF30F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C29C2FAD1BF2EB8F007038B5 /* PrinterMonitorManager.h */,
+				C29C2FAF1BF2EB8F007038B5 /* PrinterMonitorManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		C28088AC1BF4AB6700ECF30F /* Implement */ = {
+			isa = PBXGroup;
+			children = (
+				C28088AD1BF4ACA500ECF30F /* PrinterMonitorNotify.h */,
+				C28088AE1BF4ACA500ECF30F /* PrinterMonitorNotify.m */,
+			);
+			name = Implement;
+			sourceTree = "<group>";
+		};
+		C28088B11BF4AE2F00ECF30F /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				C28088B31BF4AED200ECF30F /* PrinterMonitorManager_Prefix.pch */,
+			);
+			name = "Supporting File";
+			sourceTree = "<group>";
+		};
+		C29C2FA11BF2EB8F007038B5 = {
+			isa = PBXGroup;
+			children = (
+				C29C2FAC1BF2EB8F007038B5 /* PrinterMonitorManager */,
+				C29C2FAB1BF2EB8F007038B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C29C2FAB1BF2EB8F007038B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C29C2FAA1BF2EB8F007038B5 /* libPrinterMonitorManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C29C2FAC1BF2EB8F007038B5 /* PrinterMonitorManager */ = {
+			isa = PBXGroup;
+			children = (
+				C28088AB1BF4AB5900ECF30F /* Manager */,
+				C28088AC1BF4AB6700ECF30F /* Implement */,
+				C28088B11BF4AE2F00ECF30F /* Supporting File */,
+			);
+			path = PrinterMonitorManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C29C2FA81BF2EB8F007038B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C29C2FAE1BF2EB8F007038B5 /* PrinterMonitorManager.h in Headers */,
+				C28088B41BF4AED200ECF30F /* PrinterMonitorManager_Prefix.pch in Headers */,
+				C28088AF1BF4ACA500ECF30F /* PrinterMonitorNotify.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C29C2FA91BF2EB8F007038B5 /* PrinterMonitorManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C29C2FBE1BF2EB8F007038B5 /* Build configuration list for PBXNativeTarget "PrinterMonitorManager" */;
+			buildPhases = (
+				C29C2FA61BF2EB8F007038B5 /* Sources */,
+				C29C2FA71BF2EB8F007038B5 /* Frameworks */,
+				C29C2FA81BF2EB8F007038B5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrinterMonitorManager;
+			productName = PrinterMonitorManager;
+			productReference = C29C2FAA1BF2EB8F007038B5 /* libPrinterMonitorManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C29C2FA21BF2EB8F007038B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C29C2FA91BF2EB8F007038B5 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C29C2FA51BF2EB8F007038B5 /* Build configuration list for PBXProject "PrinterMonitorManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C29C2FA11BF2EB8F007038B5;
+			productRefGroup = C29C2FAB1BF2EB8F007038B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C29C2FA91BF2EB8F007038B5 /* PrinterMonitorManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C29C2FA61BF2EB8F007038B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28088B01BF4ACA500ECF30F /* PrinterMonitorNotify.m in Sources */,
+				C29C2FB01BF2EB8F007038B5 /* PrinterMonitorManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C29C2FBC1BF2EB8F007038B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C29C2FBD1BF2EB8F007038B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C29C2FBF1BF2EB8F007038B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = PrinterMonitorManager_Prefix.pch;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../FMDB/FMDB_2.4/src/** ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC";
+			};
+			name = Debug;
+		};
+		C29C2FC01BF2EB8F007038B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = PrinterMonitorManager_Prefix.pch;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../FMDB/FMDB_2.4/src/** ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C29C2FA51BF2EB8F007038B5 /* Build configuration list for PBXProject "PrinterMonitorManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C29C2FBC1BF2EB8F007038B5 /* Debug */,
+				C29C2FBD1BF2EB8F007038B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C29C2FBE1BF2EB8F007038B5 /* Build configuration list for PBXNativeTarget "PrinterMonitorManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C29C2FBF1BF2EB8F007038B5 /* Debug */,
+				C29C2FC01BF2EB8F007038B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C29C2FA21BF2EB8F007038B5 /* Project object */;
+}

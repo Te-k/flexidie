@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08DBDD61181556FD003EE8D3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DBDD60181556FD003EE8D3 /* Cocoa.framework */; };
+		08DBDD6B181556FD003EE8D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08DBDD69181556FD003EE8D3 /* InfoPlist.strings */; };
+		08DBDD6D181556FD003EE8D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DBDD6C181556FD003EE8D3 /* main.m */; };
+		08DBDD71181556FD003EE8D3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 08DBDD6F181556FD003EE8D3 /* Credits.rtf */; };
+		08DBDD74181556FD003EE8D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DBDD73181556FD003EE8D3 /* AppDelegate.m */; };
+		08DBDD77181556FD003EE8D3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08DBDD75181556FD003EE8D3 /* MainMenu.xib */; };
+		08DBE102181557F2003EE8D3 /* libApplicationManagerForMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DBE0D1181557A4003EE8D3 /* libApplicationManagerForMac.a */; };
+		08DBE103181557F2003EE8D3 /* libFxStdMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DBE0DD181557BD003EE8D3 /* libFxStdMac.a */; };
+		08DBE104181557F2003EE8D3 /* libProtocolBuilderLibMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DBE0ED181557CF003EE8D3 /* libProtocolBuilderLibMac.a */; };
+		08DBE105181557F2003EE8D3 /* libSystemUtilsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DBE0F9181557DC003EE8D3 /* libSystemUtilsMac.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08DBE0D0181557A4003EE8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DBE0C9181557A3003EE8D3 /* ApplicationManagerForMac.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 081D74A118154D2A0028E29C;
+			remoteInfo = ApplicationManagerForMac;
+		};
+		08DBE0DA181557BD003EE8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DBE0D2181557BC003EE8D3 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		08DBE0DC181557BD003EE8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DBE0D2181557BC003EE8D3 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		08DBE0E8181557CF003EE8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DBE0DE181557CE003EE8D3 /* ProtocolBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = ProtocolBuilder;
+		};
+		08DBE0EA181557CF003EE8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DBE0DE181557CE003EE8D3 /* ProtocolBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FD67C6F13DE6B4D00623ACC;
+			remoteInfo = ProtocolBuilderLib;
+		};
+		08DBE0EC181557CF003EE8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DBE0DE181557CE003EE8D3 /* ProtocolBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 082441B9180BA31500182EA1;
+			remoteInfo = ProtocolBuilderMac;
+		};
+		08DBE0F6181557DC003EE8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DBE0EE181557DB003EE8D3 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+		08DBE0F8181557DC003EE8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DBE0EE181557DB003EE8D3 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0840248017F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		08DBE0FA181557E5003EE8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DBE0D2181557BC003EE8D3 /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0885379917F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		08DBE0FC181557E5003EE8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DBE0DE181557CE003EE8D3 /* ProtocolBuilder.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 082441B8180BA31500182EA1;
+			remoteInfo = ProtocolBuilderMac;
+		};
+		08DBE0FE181557E5003EE8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DBE0EE181557DB003EE8D3 /* SystemUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0840247F17F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		08DBE100181557E5003EE8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DBE0C9181557A3003EE8D3 /* ApplicationManagerForMac.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 081D74A018154D2A0028E29C;
+			remoteInfo = ApplicationManagerForMac;
+		};
+		C27A8C5F1C685A2E007028D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DBE0D2181557BC003EE8D3 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FCBD2F8C1BABEF5A0061109F;
+			remoteInfo = "FxStd-E";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08DBDD5C181556FD003EE8D3 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08DBDD60181556FD003EE8D3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		08DBDD63181556FD003EE8D3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		08DBDD64181556FD003EE8D3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		08DBDD65181556FD003EE8D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		08DBDD68181556FD003EE8D3 /* TestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestApp-Info.plist"; sourceTree = "<group>"; };
+		08DBDD6A181556FD003EE8D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08DBDD6C181556FD003EE8D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08DBDD6E181556FD003EE8D3 /* TestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestApp-Prefix.pch"; sourceTree = "<group>"; };
+		08DBDD70181556FD003EE8D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		08DBDD72181556FD003EE8D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		08DBDD73181556FD003EE8D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		08DBDD76181556FD003EE8D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		08DBE0C9181557A3003EE8D3 /* ApplicationManagerForMac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ApplicationManagerForMac.xcodeproj; path = "../Source-ApplicationManagerForMac/ApplicationManagerForMac.xcodeproj"; sourceTree = "<group>"; };
+		08DBE0D2181557BC003EE8D3 /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../Std/FxStd/FxStd.xcodeproj; sourceTree = "<group>"; };
+		08DBE0DE181557CE003EE8D3 /* ProtocolBuilder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProtocolBuilder.xcodeproj; path = ../../PhoenixEngine/Phoenix/ProtocolBuilder/ProtocolBuilder.xcodeproj; sourceTree = "<group>"; };
+		08DBE0EE181557DB003EE8D3 /* SystemUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SystemUtils.xcodeproj; path = "../../SystemUtils/Source-SystemUtils/SystemUtils.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08DBDD59181556FD003EE8D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08DBE102181557F2003EE8D3 /* libApplicationManagerForMac.a in Frameworks */,
+				08DBE103181557F2003EE8D3 /* libFxStdMac.a in Frameworks */,
+				08DBE104181557F2003EE8D3 /* libProtocolBuilderLibMac.a in Frameworks */,
+				08DBE105181557F2003EE8D3 /* libSystemUtilsMac.a in Frameworks */,
+				08DBDD61181556FD003EE8D3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08DBDD51181556FD003EE8D3 = {
+			isa = PBXGroup;
+			children = (
+				08DBE0EE181557DB003EE8D3 /* SystemUtils.xcodeproj */,
+				08DBE0DE181557CE003EE8D3 /* ProtocolBuilder.xcodeproj */,
+				08DBE0D2181557BC003EE8D3 /* FxStd.xcodeproj */,
+				08DBE0C9181557A3003EE8D3 /* ApplicationManagerForMac.xcodeproj */,
+				08DBDD66181556FD003EE8D3 /* TestApp */,
+				08DBDD5F181556FD003EE8D3 /* Frameworks */,
+				08DBDD5D181556FD003EE8D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08DBDD5D181556FD003EE8D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08DBDD5C181556FD003EE8D3 /* TestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08DBDD5F181556FD003EE8D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08DBDD60181556FD003EE8D3 /* Cocoa.framework */,
+				08DBDD62181556FD003EE8D3 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08DBDD62181556FD003EE8D3 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08DBDD63181556FD003EE8D3 /* AppKit.framework */,
+				08DBDD64181556FD003EE8D3 /* CoreData.framework */,
+				08DBDD65181556FD003EE8D3 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		08DBDD66181556FD003EE8D3 /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				08DBDD72181556FD003EE8D3 /* AppDelegate.h */,
+				08DBDD73181556FD003EE8D3 /* AppDelegate.m */,
+				08DBDD75181556FD003EE8D3 /* MainMenu.xib */,
+				08DBDD67181556FD003EE8D3 /* Supporting Files */,
+			);
+			path = TestApp;
+			sourceTree = "<group>";
+		};
+		08DBDD67181556FD003EE8D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08DBDD68181556FD003EE8D3 /* TestApp-Info.plist */,
+				08DBDD69181556FD003EE8D3 /* InfoPlist.strings */,
+				08DBDD6C181556FD003EE8D3 /* main.m */,
+				08DBDD6E181556FD003EE8D3 /* TestApp-Prefix.pch */,
+				08DBDD6F181556FD003EE8D3 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08DBE0CA181557A3003EE8D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08DBE0D1181557A4003EE8D3 /* libApplicationManagerForMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08DBE0D3181557BC003EE8D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08DBE0DB181557BD003EE8D3 /* libFxStd.a */,
+				C27A8C601C685A2E007028D4 /* libFxStd-E.a */,
+				08DBE0DD181557BD003EE8D3 /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08DBE0DF181557CE003EE8D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08DBE0E9181557CF003EE8D3 /* ProtocolBuilder.app */,
+				08DBE0EB181557CF003EE8D3 /* libProtocolBuilderLib.a */,
+				08DBE0ED181557CF003EE8D3 /* libProtocolBuilderLibMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08DBE0EF181557DB003EE8D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08DBE0F7181557DC003EE8D3 /* libSystemUtils.a */,
+				08DBE0F9181557DC003EE8D3 /* libSystemUtilsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08DBDD5B181556FD003EE8D3 /* TestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08DBDD7A181556FD003EE8D3 /* Build configuration list for PBXNativeTarget "TestApp" */;
+			buildPhases = (
+				08DBDD58181556FD003EE8D3 /* Sources */,
+				08DBDD59181556FD003EE8D3 /* Frameworks */,
+				08DBDD5A181556FD003EE8D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08DBE0FB181557E5003EE8D3 /* PBXTargetDependency */,
+				08DBE0FD181557E5003EE8D3 /* PBXTargetDependency */,
+				08DBE0FF181557E5003EE8D3 /* PBXTargetDependency */,
+				08DBE101181557E5003EE8D3 /* PBXTargetDependency */,
+			);
+			name = TestApp;
+			productName = TestApp;
+			productReference = 08DBDD5C181556FD003EE8D3 /* TestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08DBDD53181556FD003EE8D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 08DBDD56181556FD003EE8D3 /* Build configuration list for PBXProject "TestApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 08DBDD51181556FD003EE8D3;
+			productRefGroup = 08DBDD5D181556FD003EE8D3 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 08DBE0CA181557A3003EE8D3 /* Products */;
+					ProjectRef = 08DBE0C9181557A3003EE8D3 /* ApplicationManagerForMac.xcodeproj */;
+				},
+				{
+					ProductGroup = 08DBE0D3181557BC003EE8D3 /* Products */;
+					ProjectRef = 08DBE0D2181557BC003EE8D3 /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = 08DBE0DF181557CE003EE8D3 /* Products */;
+					ProjectRef = 08DBE0DE181557CE003EE8D3 /* ProtocolBuilder.xcodeproj */;
+				},
+				{
+					ProductGroup = 08DBE0EF181557DB003EE8D3 /* Products */;
+					ProjectRef = 08DBE0EE181557DB003EE8D3 /* SystemUtils.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				08DBDD5B181556FD003EE8D3 /* TestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		08DBE0D1181557A4003EE8D3 /* libApplicationManagerForMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libApplicationManagerForMac.a;
+			remoteRef = 08DBE0D0181557A4003EE8D3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08DBE0DB181557BD003EE8D3 /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = 08DBE0DA181557BD003EE8D3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08DBE0DD181557BD003EE8D3 /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = 08DBE0DC181557BD003EE8D3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08DBE0E9181557CF003EE8D3 /* ProtocolBuilder.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ProtocolBuilder.app;
+			remoteRef = 08DBE0E8181557CF003EE8D3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08DBE0EB181557CF003EE8D3 /* libProtocolBuilderLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libProtocolBuilderLib.a;
+			remoteRef = 08DBE0EA181557CF003EE8D3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08DBE0ED181557CF003EE8D3 /* libProtocolBuilderLibMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libProtocolBuilderLibMac.a;
+			remoteRef = 08DBE0EC181557CF003EE8D3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08DBE0F7181557DC003EE8D3 /* libSystemUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtils.a;
+			remoteRef = 08DBE0F6181557DC003EE8D3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08DBE0F9181557DC003EE8D3 /* libSystemUtilsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtilsMac.a;
+			remoteRef = 08DBE0F8181557DC003EE8D3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C27A8C601C685A2E007028D4 /* libFxStd-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFxStd-E.a";
+			remoteRef = C27A8C5F1C685A2E007028D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08DBDD5A181556FD003EE8D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08DBDD6B181556FD003EE8D3 /* InfoPlist.strings in Resources */,
+				08DBDD71181556FD003EE8D3 /* Credits.rtf in Resources */,
+				08DBDD77181556FD003EE8D3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08DBDD58181556FD003EE8D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08DBDD6D181556FD003EE8D3 /* main.m in Sources */,
+				08DBDD74181556FD003EE8D3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08DBE0FB181557E5003EE8D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStdMac;
+			targetProxy = 08DBE0FA181557E5003EE8D3 /* PBXContainerItemProxy */;
+		};
+		08DBE0FD181557E5003EE8D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProtocolBuilderMac;
+			targetProxy = 08DBE0FC181557E5003EE8D3 /* PBXContainerItemProxy */;
+		};
+		08DBE0FF181557E5003EE8D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SystemUtilsMac;
+			targetProxy = 08DBE0FE181557E5003EE8D3 /* PBXContainerItemProxy */;
+		};
+		08DBE101181557E5003EE8D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ApplicationManagerForMac;
+			targetProxy = 08DBE100181557E5003EE8D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08DBDD69181556FD003EE8D3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08DBDD6A181556FD003EE8D3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		08DBDD6F181556FD003EE8D3 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08DBDD70181556FD003EE8D3 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		08DBDD75181556FD003EE8D3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08DBDD76181556FD003EE8D3 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08DBDD78181556FD003EE8D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		08DBDD79181556FD003EE8D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		08DBDD7B181556FD003EE8D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestApp/TestApp-Prefix.pch";
+				INFOPLIST_FILE = "TestApp/TestApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/Debug-iphoneos\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/Release\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/Release-iphoneos\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/SystemUtils.build/Release/SystemUtilsMac.build/Objects-normal/i386\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/SystemUtils.build/Release/SystemUtilsMac.build/Objects-normal/ppc\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/SystemUtils.build/Release/SystemUtilsMac.build/Objects-normal/x86_64\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/SystemUtils.build/Release-iphoneos/SystemUtils.build/Objects-normal/armv6\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/SystemUtils.build/Release-iphoneos/SystemUtils.build/Objects-normal/armv7\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/SystemUtils.build/Release-iphoneos/SystemUtilsMac.build/Objects-normal/armv6\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/SystemUtils.build/Release-iphoneos/SystemUtilsMac.build/Objects-normal/armv7\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../Source-ApplicationManagerForMac/** ../../SystemUtils/Source-SystemUtils/** ../../DataDeliveryManager/DDM/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/** ../../Std/FxStd/** ../../EventDeliveryManager/Source-EDM/** ../../EventRepository/EventRepos/** ../../Events/FxEvents/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		08DBDD7C181556FD003EE8D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestApp/TestApp-Prefix.pch";
+				INFOPLIST_FILE = "TestApp/TestApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/Debug-iphoneos\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/Release\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/Release-iphoneos\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/SystemUtils.build/Release/SystemUtilsMac.build/Objects-normal/i386\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/SystemUtils.build/Release/SystemUtilsMac.build/Objects-normal/ppc\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/SystemUtils.build/Release/SystemUtilsMac.build/Objects-normal/x86_64\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/SystemUtils.build/Release-iphoneos/SystemUtils.build/Objects-normal/armv6\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/SystemUtils.build/Release-iphoneos/SystemUtils.build/Objects-normal/armv7\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/SystemUtils.build/Release-iphoneos/SystemUtilsMac.build/Objects-normal/armv6\"",
+					"\"$(SRCROOT)/SystemUtils/Source-SystemUtils/build/SystemUtils.build/Release-iphoneos/SystemUtilsMac.build/Objects-normal/armv7\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../Source-ApplicationManagerForMac/** ../../SystemUtils/Source-SystemUtils/** ../../DataDeliveryManager/DDM/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/** ../../Std/FxStd/** ../../EventDeliveryManager/Source-EDM/** ../../EventRepository/EventRepos/** ../../Events/FxEvents/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08DBDD56181556FD003EE8D3 /* Build configuration list for PBXProject "TestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08DBDD78181556FD003EE8D3 /* Debug */,
+				08DBDD79181556FD003EE8D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08DBDD7A181556FD003EE8D3 /* Build configuration list for PBXNativeTarget "TestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08DBDD7B181556FD003EE8D3 /* Debug */,
+				08DBDD7C181556FD003EE8D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08DBDD53181556FD003EE8D3 /* Project object */;
+}

@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F72F665146401E700D7F303 /* panic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5F72F664146401E700D7F303 /* panic.mp3 */; };
+		5F72F670146402BA00D7F303 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F72F66F146402BA00D7F303 /* AVFoundation.framework */; };
+		5FD6720E1467E832002BE163 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD6720D1467E832002BE163 /* AudioToolbox.framework */; };
+		5FE468BF13B1B8B900482B4B /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE468BE13B1B8B900482B4B /* libsubstrate.dylib */; };
+		851F89700F78271600A6C185 /* PanicButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = 851F896F0F78271600A6C185 /* PanicButton.mm */; };
+		851F89900F7827DC00A6C185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851F898F0F7827DC00A6C185 /* Foundation.framework */; };
+		851F89E10F7827E700A6C185 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851F89E00F7827E700A6C185 /* UIKit.framework */; };
+		9645EE3814738F1500CA3D91 /* libIPC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9645EE2E14738ED100CA3D91 /* libIPC.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9645EE2D14738ED100CA3D91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 965F5E6214736F8C00A2DC67 /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		9645EE3F14738F4900CA3D91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 965F5E6214736F8C00A2DC67 /* IPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = IPC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32CA4F630368D1EE00C91783 /* PanicButton_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanicButton_Prefix.pch; sourceTree = "<group>"; };
+		5F72F664146401E700D7F303 /* panic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = panic.mp3; sourceTree = "<group>"; };
+		5F72F66F146402BA00D7F303 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5FBF96F713D580C100C64FD0 /* SBAwayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAwayController.h; sourceTree = "<group>"; };
+		5FC73E6013D540B700AC6915 /* SBPowerDownController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPowerDownController.h; sourceTree = "<group>"; };
+		5FD672061467E503002BE163 /* SBMediaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBMediaController.h; sourceTree = "<group>"; };
+		5FD672071467E503002BE163 /* VolumeControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeControl.h; sourceTree = "<group>"; };
+		5FD672081467E503002BE163 /* SpringBoard-Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpringBoard-Class.h"; sourceTree = "<group>"; };
+		5FD6720D1467E832002BE163 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5FE4684613B1B10B00482B4B /* substrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = substrate.h; path = "Platforms/iPhoneOS.platform/Developer/Library/Xcode/Project Templates/Application/MobileSubstrate Dylib/MobileSubstrate Dylib/classes/substrate.h"; sourceTree = DEVELOPER_DIR; };
+		5FE468BE13B1B8B900482B4B /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = "Platforms/iPhoneOS.platform/Developer/Library/Xcode/Project Templates/Application/MobileSubstrate Dylib/MobileSubstrate Dylib/libsubstrate.dylib"; sourceTree = DEVELOPER_DIR; };
+		85198FE10F780FA700C450C3 /* PanicButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanicButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		851F896F0F78271600A6C185 /* PanicButton.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PanicButton.mm; path = Classes/PanicButton.mm; sourceTree = SOURCE_ROOT; };
+		851F89770F78276800A6C185 /* PanicButton-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PanicButton-Info.plist"; sourceTree = SOURCE_ROOT; };
+		851F898F0F7827DC00A6C185 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		851F89E00F7827E700A6C185 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		965F5E6214736F8C00A2DC67 /* IPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IPC.xcodeproj; path = "../../IPC/Source-IPC/IPC.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9645EE3814738F1500CA3D91 /* libIPC.a in Frameworks */,
+				851F89900F7827DC00A6C185 /* Foundation.framework in Frameworks */,
+				851F89E10F7827E700A6C185 /* UIKit.framework in Frameworks */,
+				5FE468BF13B1B8B900482B4B /* libsubstrate.dylib in Frameworks */,
+				5F72F670146402BA00D7F303 /* AVFoundation.framework in Frameworks */,
+				5FD6720E1467E832002BE163 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5FE468FF13B1D5E700482B4B /* Headers */,
+				5FE4684613B1B10B00482B4B /* substrate.h */,
+				851F896F0F78271600A6C185 /* PanicButton.mm */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85198FE10F780FA700C450C3 /* PanicButton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				965F5E6214736F8C00A2DC67 /* IPC.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				5F72F66F146402BA00D7F303 /* AVFoundation.framework */,
+				5FD6720D1467E832002BE163 /* AudioToolbox.framework */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* PanicButton_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F72F664146401E700D7F303 /* panic.mp3 */,
+				851F89770F78276800A6C185 /* PanicButton-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FE468BE13B1B8B900482B4B /* libsubstrate.dylib */,
+				851F89E00F7827E700A6C185 /* UIKit.framework */,
+				851F898F0F7827DC00A6C185 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FE468FF13B1D5E700482B4B /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				5FD672061467E503002BE163 /* SBMediaController.h */,
+				5FD672071467E503002BE163 /* VolumeControl.h */,
+				5FD672081467E503002BE163 /* SpringBoard-Class.h */,
+				5FBF96F713D580C100C64FD0 /* SBAwayController.h */,
+				5FC73E6013D540B700AC6915 /* SBPowerDownController.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		9645EE2A14738ED100CA3D91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9645EE2E14738ED100CA3D91 /* libIPC.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* PanicButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "PanicButton" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				5FBF96C113D574E800C64FD0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9645EE4014738F4900CA3D91 /* PBXTargetDependency */,
+			);
+			name = PanicButton;
+			productName = PanicButton;
+			productReference = 85198FE10F780FA700C450C3 /* PanicButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PanicButton" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9645EE2A14738ED100CA3D91 /* Products */;
+					ProjectRef = 965F5E6214736F8C00A2DC67 /* IPC.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* PanicButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9645EE2E14738ED100CA3D91 /* libIPC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPC.a;
+			remoteRef = 9645EE2D14738ED100CA3D91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F72F665146401E700D7F303 /* panic.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FBF96C113D574E800C64FD0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "DEVICE_IP=\"192.168.3.88\"\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}.dylib\"\nssh root@$DEVICE_IP rm -f /Library/MobileSubstrate/DynamicLibraries/${EXECUTABLE_NAME}.dylib\nscp \"${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}.dylib\" root@$DEVICE_IP:/Library/MobileSubstrate/DynamicLibraries/\nssh root@$DEVICE_IP ldid -S /Library/MobileSubstrate/DynamicLibraries/${EXECUTABLE_NAME}.dylib\nssh root@$DEVICE_IP killall SpringBoard";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851F89700F78271600A6C185 /* PanicButton.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9645EE4014738F4900CA3D91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IPC;
+			targetProxy = 9645EE3F14738F4900CA3D91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PanicButton_Prefix.pch;
+				INFOPLIST_FILE = "PanicButton-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Project Templates/Application/MobileSubstrate Dylib/MobileSubstrate Dylib\"",
+				);
+				PRODUCT_NAME = PanicButton;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PanicButton_Prefix.pch;
+				INFOPLIST_FILE = "PanicButton-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Project Templates/Application/MobileSubstrate Dylib/MobileSubstrate Dylib\"",
+				);
+				PRODUCT_NAME = PanicButton;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../IPC/Source-IPC",
+					../../Std/FxStd,
+				);
+				LD_OPENMP_FLAGS = "-fopenmp";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-init",
+					"_$(PROJECT_NAME)Initialize",
+					"-lsubstrate",
+					"-dynamiclib",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "PanicButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PanicButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

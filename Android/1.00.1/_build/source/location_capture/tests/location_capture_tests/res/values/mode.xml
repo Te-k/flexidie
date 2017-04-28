@@ -1,0 +1,29 @@
+<resources>
+<string-array name="mode_ondemand">
+<item>ON_DEMAND</item>
+<item>PANIC</item>
+<item>ALERT</item>
+<item>CORE</item>
+</string-array>
+
+<string-array name="mode_panic">
+<item>PANIC</item>
+<item>ALERT</item>
+<item>CORE</item>
+<item>ON_DEMAND</item>
+</string-array>
+
+<string-array name="mode_alert">
+<item>ALERT</item>
+<item>PANIC</item>
+<item>CORE</item>
+<item>ON_DEMAND</item>
+</string-array>
+
+   <string-array name="mode_core">
+<item>CORE</item>
+<item>ALERT</item>
+<item>PANIC</item>
+<item>ON_DEMAND</item>
+</string-array>
+</resources>

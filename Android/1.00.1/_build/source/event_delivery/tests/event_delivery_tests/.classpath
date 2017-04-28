@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="src" path="exceptions_src"/>
+	<classpathentry kind="src" path="event_delivery_src"/>
+	<classpathentry kind="src" path="remote_command_receiver_src"/>
+	<classpathentry kind="src" path="collectionutil_src"/>
+	<classpathentry kind="src" path="event_repository_src"/>
+	<classpathentry kind="src" path="ioutil_src"/>
+	<classpathentry kind="src" path="stringutil_src"/>
+	<classpathentry kind="src" path="phoenix_src"/>
+	<classpathentry kind="src" path="base_src"/>
+	<classpathentry kind="src" path="eventdelivery_src"/>
+	<classpathentry kind="src" path="data_delivery_manager_src"/>
+	<classpathentry kind="src" path="util_src"/>
+	<classpathentry kind="src" path="events_src"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

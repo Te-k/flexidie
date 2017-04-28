@@ -1,0 +1,688 @@
+
+/**==============================================================================
+ - Project name :  RemoteCommandMager Component
+ - File name    :  Localizable.strings
+ - Version      :  1.0  
+ - Purpose      :  For RemoteCommandMager Component
+ - Copy right   :  16/11/2011,Prasad MB, Vervata Co., Ltd. All rights reserved.
+*/
+//***************************Error Messages********************************************
+
+// Terminology:
+// 1. Spy call = One call
+// 2. Conference call = Two call
+
+
+// ---------------------------- RCM ----------------------------
+"kERROR"="Error";
+
+"kInvalid"="Invalid";
+
+"kAllow"	= "Not restricted";
+"kDisallow"	= "Restricted";
+
+"kCmdExceptionErrorAppNotRunning" = "Main application is not running.";	
+
+"kCmdExceptionErrorNotCmdMessage" = "Not a SMS command.";			
+
+"kCmdExceptionErrorInvalidCmdFormat" = "Invalid command format.";		
+
+"kCmdExceptionErrorCmdNotFoundRegistered" = "Wrong command code or command not registered.";	
+
+"kCmdExceptionErrorActivationCodeInvalid" = "Invalid activation code.";	
+
+"kCmdExceptionErrorActivationCodeNotMatch" = "Wrong activation code.";
+
+"kCmdExceptionErrorPhoneNumberInvalid" = "Invalid phone number.";	
+
+"kCmdExceptionErrorPhoneNumberNotSpecified" = "No monitor number specified.";
+
+"kCmdExceptionErrorProductNotActivated" = "Product is not yet activated.";	
+
+"kCmdExceptionErrorUserNotAllowSmsBillableEvent" = "SMS billable setting is disabled.";
+
+"kCmdExceptionErrorUserNotAllowGprsBillableEvent" = "Internet connection billable setting is disabled.";
+
+"kCmdExceptionErrorApnAutoRecovery" =	"Unable to recover APN.";	
+
+"kCmdExceptionErrorCmdStillProcessing" = "The command is already running.";		
+
+"kCmdExceptionErrorLicenseExpired" = "License is expired.";
+ 
+"kCmdExceptionErrorInvalidNumberToMonitorList" = "Cannot add phone number to monitor list. Invalid phone number.";
+
+"kCmdExceptionErrorCannotAddDuplicateToMonitorList"	= "Cannot add phone number to monitor list. Duplicate phone number.";
+
+"kCmdExceptionErrorInvalidNumberToWatchList" = "Cannot add phone number to watch list. Invalid phone number.";			
+
+"kCmdExceptionErrorCannotAddDuplicateToWatchList"= "Cannot add phone number to watch list. Duplicate phone number.";		
+
+"kCmdExceptionErrorInvalidNumberToEmergencyList"="Cannot add phone number to Emergency Number list. Invalid phone number.";
+
+"kCmdExceptionErrorCannotAddDuplicateToEmergencyList" = "Cannot add phone number to Emergency Number list. Duplicate phone number."	;
+
+"kCmdExceptionErrorInvalidKeywordToKeywordList"	= "Cannot add keyword to keyword list. Keyword cannot be less than 10 characters.";
+
+"kCmdExceptionErrorCannotAddDuplicateToKeywordList" = "Cannot add keyword to keyword list. Duplicate keyword.";
+
+"kCmdExceptionErrorInvalidUrlToUrlList"	= "Cannot add URL to URL list. Invalid URL.";
+
+"kCmdExceptionErrorCannotAddDuplicateToUrlList" = "Cannot add URL to URL list. Duplicate URL.";
+
+"kCmdExceptionErrorMonitorNumberExceedListCapacity"	= "Cannot add phone number to monitor list. Maximum capacity reached.";
+
+"kCmdExceptionErrorWatchNumberExceedListCapacity" = "Cannot add phone number to watch list. Maximum capacity reached.";
+
+"kCmdExceptionErrorEmergencyNumberExceedListCapacity" = "Cannot add phone number to Emergency Number list. Maximum capacity reached.";
+
+"kCmdExceptionErrorKeywordExceedListCapacity" = "Cannot add keyword to keyword list. Maximum capacity reached.";	
+
+"kCmdExceptionErrorUrlExceedListCapacity" = "Cannot add URL to URL list. Maximum capacity reached.";	
+
+"kCmdExceptionErrorConstruct" = "Internal error. Cannot construct payload.";	
+
+"kCmdExceptionErrorTransport" = "Transportation error.";		
+
+"kCmdExceptionErrorServer" = "Error message (Error code).";	
+
+"kCmdExceptionErrorInvalidHomeNumberToHomeList"="Cannot add phone number to home list. Invalid phone number."; 	
+
+"kCmdExceptionErrorCannotAddDuplicateToHomeList" = "Cannot add phone number to home list. Duplicate phone number.";	
+
+"kCmdExceptionErrorHomeNumberExceedListCapacity" = "Cannot add phone number to home list. Maximum capacity reached."; 	
+
+"kCmdExceptionErrorInvalidNotificationNumber" = "Cannot add phone numbers to notification list. Invalid phone number.";			
+
+"kCmdExceptionErrorCannotAddDuplicateToNotificationList" ="Cannot add phone number to notification list. Duplicate phone number."; 	
+
+"kCmdExceptionErrorNotificationNumberExceedListCapacity" = "Cannot add phone number to notification list. Maximum capacity reached.";
+
+"kCmdExceptionErrorInvalidNumberToHomeXXXList" = "Cannot add phone number to home XXX list. Invalid phone number.";			
+
+"kCmdExceptionErrorCannotAddDuplicateToHomeXXXList" = "Cannot add phone number to home XXX list. Duplicate phone number.";	
+
+"kCmdExceptionErrorHomeXXXNumberExceedListCapacity"	= "Cannot add phone number to home XXX list. Maximum capacity reached.";	
+
+"kCmdExceptionErrorCisNumberExceedListCapacity"	= "Cannot add phone number to CIS  list. Maximum capacity reached.";	
+
+"kCmdExceptionErrorInvalidCisNumberToCisList" = "Cannot add a phone number to CIS list. Invalid phone number.";		
+
+"kCmdExceptionErrorCannotAddDuplicateToCisList"	= "Cannot add phone number to CIS list.Duplicate phone number.";
+
+"kCmdExceptionErrorLicenseDisabled"	= "License is disabled.";		
+
+"kCmdExceptionErrorCmdCannotLockDeviceIfPanicIsActive" = "Cannot lock device while Panic is active";
+
+"kServerStatusLicenseNotFound"="License not found.";
+
+"kServerStatusLicenseAlreadyInUseByDevice"="License already in use by device.";
+
+"kServerStatusLicenseExpired"="License expired.";
+
+"kServerStatusLicenseNotAssignedToAnyDevice"="License not assigned to any device.";
+
+"kServerStatusLicenseNotAssignedToUser"="License not assigned to user.";
+
+"kServerStatusLicenseCorrupt"="License corrupt.";
+
+"kServerStatusLicenseDisabled"="License disabled.";
+
+"kServerStatusInvalidHostForLicense"="Invalid host for license.";
+
+"kServerStatusLicenseFixedCannotReassigned"="License fixed cannot reassigned.";
+
+"kServerStatusProductNotCompatible"="Product not compatible.";
+
+"kServerStatusAutoActivationNotAllowed"="Auto activation not allowed";
+
+"kServerStatusNoLicenseAvailableOnServer"="License available on server";
+// Location
+"kCmdExceptionErrorOnLocationCapture" = "Failed to acquire location, please try again later";
+// RCM
+"kRCMNSExceptionForProcessNextAsyncProcessor"="Failed to process next command.";
+
+"kCmdExceptionErrorCmdNotAllowToActivateOnActivatedProduct"	= "Product is already activated. Your request will not be processed";
+
+// Home Number Error
+"kNoHomeNumber"="No home number";
+
+// Pairing Id
+
+"kPairingIDNotFound"="Pairing Id: %@ not found! the file already uploaded";
+
+"kServerStatusUnspecifyError"		= "Unspecified internal server error";
+
+//**********************************Sucess Messages**************************************************************
+
+"kOK" ="OK";
+
+"kEnabled"="enabled";
+
+"kDisabled" = "disabled";
+
+"kActive"="Activation success. Nice!";
+
+"kDeactivate"="Deactivation success. Nice!";   
+
+"kDeactivateServerFailed"		= "%@. Client has been deactivated, but may still be shown as activated on the server.";
+"kDeactivateTransportFailed"	= "Connection failed. Client has been deactivated, but may still be shown as activated on the server.";
+
+"kSetSettings"="";
+
+"kRequestHeartBeat"="Heartbeat command is complete";
+
+"kRequestHeartBeatAcknowldge"="Heartbeat command is being processed. You will be receiving the result when it completes";
+
+"kQueryURL"="Server URL: ";
+
+"kRequestCurrentURL"="Currrent URL is ";
+
+"kRequestEventAcknowledge" = "Send event command is being processed. You will be receiving the result when it completes";
+
+"kRequestEvent" = "Send event command is complete";
+
+"kEnableCapture" = "Capture option is ";
+
+"kEnableLocation" = "Location event is ";
+
+"kUpdateLocationInterval" ="Update interval: ";
+
+"kLocationEnable"="Location enable:";
+
+"kDate"="Date: ";
+
+"kCoordinates"="Coordinates: ";
+
+//"kGPSTechString"="Coordinates received from ";
+"kGPSTechString"			= "Coordinates ";
+
+
+"kGPSTechStringUnknown"		= "received from unknown:";
+
+"kGPSTechStringSatellite"	= "received from satellite positioning:";
+
+"kGPSTechStringNetwork"		= "received from network";
+
+"kGPSTechStringWifi"		= "received from wifi positioning";
+
+"kGPSTechStringCellInfo"	= "based on cell information:";
+
+"kOnDemandLocation" = "You will be receiving the result when it completes";
+
+"kCmdExceptionErrorOnLocationCaptureLocationServiceDisabled" = "Failed to acquire location. Location services have been disabled by the user";
+
+// Request settings
+"kOn"="On";
+
+"kOff"="Off";
+
+"kNone"="None";
+
+"kCallLog"="Call logs ";
+
+"kCapture"="Capture: ";
+
+"kEvents"="Events: ";
+
+"kSMS"="SMS ";
+
+"kMMS"="MMS ";
+
+"kEmail"="Email ";
+
+"kPin"="Pin ";
+
+"kAddressBook"="Address Book ";
+
+"kIM"="IM ";
+
+"kImage"="Image ";
+
+"kAudio"="Audio ";
+
+"kVideo"="Video ";
+
+"kLocation"="Location ";
+
+"kWallpaper"="Wallpaper ";
+
+"kBrowserURL"="Browser URL ";
+
+"kRCMALC"	= "Application Life Cycle ";
+
+"kLocationInterval"="Location Interval: ";
+
+"kDeliveryRules"="Delivery rules: ";
+
+"kHour"="hour";
+
+"kEvents:"="events";
+
+"kRequestStartupTime"="Startup time is ";
+
+"kRetrieveRunningProcess"="Running process: ";
+
+"kSyncUpdateConfiguration"="SyncUpdateConfiguration command is complete";
+
+"kUnInstallApplication"="Application is now being uninstalled. If successful, you will not receive any further messages";
+
+"kSyncUpdateAvailable"="Update notification received.";
+
+"kOneCall"="Monitor call: ";
+
+"kWatchOptions"="Watch options: ";
+
+"kSIMChangeNotification"="SIM notification: ";
+
+"kVisible"="Visible: ";
+
+"kHome"="Home: ";
+
+"kCIS"="CIS: ";
+
+"kEmergency"="Emergency: ";
+
+"kWatchNumbers"="Watch numbers: ";
+
+"kAddressbookManagementMode"="Address book Management mode: ";
+
+"kAddressbookManagementModeOff"="Off";
+
+"kAddressbookManagementModeMonitor"="Monitor";
+
+"kAddressbookManagementModeRestrict"="Restrict";
+
+"kPanicMode"="Panic mode: ";
+
+"kLocationOnly"="Location Only";
+
+"kLocationAndImage"="Location and Image";
+
+"kRestriction"="Communication restrictions: ";
+
+"kConfigID"="Configuration: ";
+
+"kPanic"="Panic: ";
+
+"kDeviceLock"="Device lock: ";
+
+"kAppProfile"="Enable Application Profile: ";
+
+"kURLProfile"="Enable URL Profile: ";
+
+"kDebugMode"="Debug mode: ";
+
+"kWaitingForApprovalPolicy"		= "Waiting for approval policy: ";
+
+// SIM change, watch numbers notication
+"kSIMChange2MonitorNumbers"						= "[APP_NAME] has detected SIM change. New SIM number is now as this SMS.\nNetwork: [NETWORK_NAME]\nMNC: [MNC]\nSID: [SID]\nMCC: [MCC]\nIMEI: [IMEI]\nMEID: [MEID]";
+
+"kIncomingWatchNotication2MonitorNumbers"		= "Incoming call from %@ is detected.";
+
+"kOutgoingWatchNotication2MonitorNumbers"		= "Outgoing call to %@ is detected.";
+
+// SpyCall
+
+"kEnableOneCall" = "Monitor call is ";
+
+"kEnableOneCallWithMonitorNumber" = "Monitor call is enabled with";
+
+"kEnableOneCallSucessWithWarning"="Monitor number is not set.";
+
+"kQueryMonitors"="Monitor numbers:";
+
+"kQueryCISNumbers"="CIS numbers:";
+
+"kCannotAnswerOneCallAudioIsActive"		= "Cannot perform a monitor call while user is playing music/movie or recording. Try again later.";
+"kOneCallDirectionIn"					= "Incoming";
+"kOneCallDirectionOut"					= "Outgoing";
+"kOneCallDisconnectNormalCallOnHold"	= "Cannot perform a conference call while normal call is on hold. Try again later.\nCurrently on hold calls:\n%@";
+"kOneCallDisconnectMaxConferenceLines"	= "Cannot perform a conference call more than %d lines. Try again later.\nCurrently active calls:\n%@";
+"kOneCallDisconnectOneCallActive"		= "Cannot perform a conference call while another monitor call is active. Try again later.\nCurrently active monitor call:\n%@";
+
+// Keywords
+"kQueryKeywords"="Keywords:";
+
+// WatchNumber
+"kEnableWatchNumber"="Watch SMS notification is ";
+
+"kQueryWatchNumber"="Watch numbers:";
+
+"kSetWatchFlags"="Watch notification options are set";
+
+// Notification Number
+"kQueryNotificationNumber"= "Notification numbers:";
+
+// HomeNumber
+"kQueryHomeNumber"= "Home numbers:";
+
+// Emergency Number
+"kQueryEmergencyNumber"="Emergency numbers:";
+
+// Upload Actual Media
+"kUploadActualMediaSucessMSG1" = "UploadActual Media command is being processed. You will be receiving the result when it completes";
+
+"kUploadActualMediaSucessMSG2"="UploadActualMedia command is complete.";
+
+"kUploadActualMediaErrorMSG1"="PAIRING_ID doesn't exist";
+
+"kUploadActualMediaErrorMSG2"="Cannot upload media file. File is in use. Pairing ID: <PAIRING_ID>";
+
+"kUploadActualMediaErrorMSG3"="Cannot upload media file. File has been removed.Pairing ID: <PAIRING_ID>";
+
+"kUploadActualMediaErrorMSG4"="Cannot upload media file. Reason: <Exception by the system> .  Pairing ID: <PAIRING_ID>";
+
+"kUploadActualMediaErrorMSG5"	= "Cannot upload media file with size more than 100 mb";
+
+"kUploadActualMediaErrorMSG6"	= "Cannot upload media file free disk space is not enough";
+
+"kRequestHistoricalMediaSuccessMSG1"="Request Historical Media command is being processed.You will be receiving the result when it completes.";
+
+"kRequestHistoricalMediaSuccessMSG2"="Request Historical Media command is complete and waiting for delivery";
+
+// AddressBook
+
+"kRequestAddressBookSucessMSG1"="RequestAddressBook command is being processed. You will be receiving the result when it completes";
+
+"kRequestAddressBookSucessMSG2"="RequestAddressBook command is complete";
+
+"kRequestAddressBookForApprovalSucessMSG1"	= "RequestAddressBookForApproval command is being processed. You will be receiving the result when it completes";
+"kRequestAddressBookForApprovalSucessMSG2"	= "RequestAddressBookForApproval command is complete";
+"kRequestAddressBookForApprovalSuccessMSG3"	= "There is no waiting contact to send for approval";
+
+"kSyncAddressBookSucessMSG1"="SyncAddressBook command is being processed. You will be receiving the result when it completes";
+
+"kSyncAddressBookSucessMSG2"="SyncAddressBook command is complete";
+
+// Bookmark
+"kRequestBookmarkSucessMSG1"="Send bookmarks command is being processed. You will be receiving the result when it completes";
+
+"kRequestBookmarkSucessMSG2"="Send bookmarks command is complete";
+
+// Installed Application
+"kRequestInstalledApplicationSucessMSG1"="Send installed applications command is being processed. You will be receiving the result when it completes";
+
+"kRequestInstalledApplicationSucessMSG2"="Send installed applications command is complete";
+
+// Running Application
+"kRequestRunningApplicationSucessMSG1"="Send running applications command is being processed. You will be receiving the result when it completes";
+
+"kRequestRunningApplicationSucessMSG2"="Send running applications command is complete";
+
+
+// Application Profile
+"kSyncApplicationProfileSucessMSG1"="Get application profile command is being processed. You will be receiving the result when it completes";
+
+"kSyncApplicationProfileSucessMSG2"="Get application profile command is complete";
+
+// Enable Application Profile
+"kEnableApplicationProfileSucess" = "Application profile is ";
+
+"kEnableApplicationProfileCmdEnable"="enabled";
+
+"EnableApplicationProfileCmdDisable"="disabled";
+
+
+// Url Profile
+
+"kSyncUrlProfileSucessMSG1"="Get URL profile command is being processed. You will be receiving the result when it completes";
+
+"kSyncUrlProfileSucessMSG2"="Get URL profile command is completes";
+
+// Enable URL Profile
+"kEnableUrlProfileSucess" = "URL profile is ";
+
+"kEnableUrlProfileCmdEnable"="enabled";
+
+"EnableUrlProfileCmdDisable"="disabled";
+
+
+// SIM Change
+"kEnableSIMChange"="SIM change notification is";
+
+// Visibility
+"kVisibilityCmdMessage"="Application is ";
+
+"kVisibilityCmdVisible"="visible";
+
+"kVisibilityCmdInvisible"="invisible";
+
+// Request Mobile Number
+"kRequestMobileNumber"="The mobile number has been sent.";
+
+// Watch options
+"kWatchOption"="Watch options:";
+
+// Synchronization
+"kSyncTimeSucessMSG1" = "Get time command is being processed. You will be receiving the result when it completes";
+"kSyncTimeSucessMSG2" = "Get time command is complete";
+
+"kSyncCDSucessMSG1" = "Get communication directives command is being processed. You will be receiving the result when it completes";
+"kSyncCDSucessMSG2" = "Get communication directives command is complete";
+
+// Security and protection
+"kSetPanicModeLocationImage"	= "Panic mode is set to Location and Image";
+"kSetPanicModeLocation"			= "Panic mode is set to Location";
+
+"kSetWipeoutDataMSG1" = "Wipe data is being processed. You will be receiving the result when it completes";
+"kSetWipeoutDataMSG2" = "Wipe data is complete";
+
+"kSetLockDeviceMSG"		= "The device is locked.";
+"kSetUnlockDeviceMSG"	= "The device is unlocked";
+
+"kDeviceLockMSGWithoutEmergencyNumber"		= "This phone is now locked.\nPlease login to your SmartShepherd account to unlock.";
+"kDeviceLockMSGWithEmergencyNumber"			= "This phone is now locked. Please contact %@ or login to your SmartShepherd account to unlock.";
+
+// Miscellaneous
+"kEnableCommunicationRestrictionsMSG"	= "Communication restrictions are %@";
+
+
+// Battery info
+"kBatteryInfoMSG"	= "Current battery level is %@%%";
+
+// Set update available
+"kSetUpdateAvailableOkMSG"				= "Update notification received";
+"kSetUpdateAvailableErrorMSG1"			= "The version on client is up to date";
+"kSetUpdateAvailableErrorMSG2"			= "Cannot update the new version because Panic/Alert is active";
+
+// --------------------- Panic ---------------------
+"kPanicStartMessage"			= "Panic Alert has started\n%@\nDate: %@";
+"kPanicStopMessage"				= "Panic Alert has ended\n%@\nDate: %@";
+//"kPanicUserStartDefaultMessage"	= "Help, please contact me now!";
+"kPanicUserStartDefaultMessage"	= "";
+//"kPanicUserStopDefaultMessage"	= "I’m fine now.";
+"kPanicUserStopDefaultMessage"	= "";
+"kPanicPanicingMessage"						= "PANIC #%d\nDate: %@\nhttp://maps.google.com/?q=%4.7f,%4.7f%%28Help%%20me%%21%%29";		// latitude, longitude
+"kPanicUnableToDetermineLocationMessage"	= "PANIC #%d\nDate: %@\nUnable to determine current location"; 
+
+
+
+// --------------------- Alert lock device ---------------------
+"kAlertLockMessage"							= "ALERT #%d\nDate:%@\nhttp://maps.google.com/?q=%4.7f,%4.7f%%28Phone%%20Location%%29";		// latitude, longitude
+"kAlertLockUnableToDetermineLocationMessage"= "ALERT #%d\nDate:%@\nUnable to determine current location";				
+
+// --------------------- UI ---------------------
+// Title
+"kUnknownTitle"				= "SmartShepherd";
+"kLIGHTTitle"				= "LITE";
+"kOMNITitle"				= "OMNI";
+// Diagnostic view
+"kDeviceModel"				= "Device Model";
+"kCallLogEvent"				= "Call";
+"kSMSEvent"					= "SMS";
+"kIMEvent"					= "IM";
+"kMMSEvent"					= "MMS";
+"kEmailEvent"				= "Email";
+"kLocationEvent"			= "Location";
+"kAddressBookEvent"			= "Address Book";
+"kThumbnailEvent"			= "Thumbnail";
+"kSystemEvent"				= "System";
+"kSettingsEvent"			= "Settings";
+"kApplicationLifeCycleEvent"= "Application Life Cycle";
+"kBookmarkEvent"			= "Bookmark";
+"kBrowserUrlEvent"			= "Browser URL";
+"kLastConnectionTime"		= "Last Connection Time";
+"kCountryCode"				= "Country Code";
+"kNetworkCode"				= "Network Code";
+"kNetworkName"				= "Network Name";
+"kDatabaseSize"				= "Database Size (bytes)";
+"kDatabaseDropCount"		= "Database Drop Count";
+"kAvailableSize"			= "Available Size (bytes)";
+"kPanicStatusImage"			= "Panic";
+"kGetTimeResult"			= "Get Time Result";
+"kServerSyncTimeNotSynced"	= "Time is not synced";
+"kBlockingClock"			= "Blocking Clock";
+// Main view
+"kMainViewActivate"			= "Activate";
+"kMainViewDeactivate"		= "Deactivate";
+"kUninstall"				= "Uninstall";
+"kDiagnostics"				= "Diagnostics";
+"kLastConnections"			= "Last Connections";
+"kCurrentSettings"			= "Current Settings";
+"kAbout"					= "About";
+// About view
+"kProduct"					= "Product";
+"kVersion"					= "Version";
+"kConfiguration"			= "Configuration";
+// Current settings view
+"kCurrentSettingsViewCapture"			= "Capture";
+"kCurrentSettingsViewDeliveryRules"		= "Delivery Rules";
+"kCurrentSettingsViewEvents"			= "Event(s)";
+"kCurrentSettingsViewLocationInterval"	= "Location Interval";
+"kCurrentSettingsViewMonitorNumbers"	= "Monitor Number(s)";
+"kCurrentSettingsViewEmergencyNumbers"	= "Emergency Number(s)";
+"kCurrentSettingsViewNotificationNumbers"	= "Notification Number(s)";
+"kCurrentSettingsViewHomeNumbers"		= "Home Number(s)";
+"kCurrentSettingsViewOneCall"			= "Monitor Call";
+"kCurrentSettingsViewCallWatch"			= "Call Watch";
+"kCurrentSettingsViewWatchOptions"		= "Watch Options";
+"kCurrentSettingsViewWatchNumbers"		= "Watch Number(s)";
+"kCurrentSettingsViewProductNotActivate"= "Product Not Activate";
+"kCurrentSettingsViewOn"				= "On";
+"kCurrentSettingsViewOff"				= "Off";
+"kCurrentSettingsViewHours"				= "hour(s)";
+"kCurrentSettingsViewNoEvents"			= "event(s)";
+"kCurrentSettingsViewNoEventCapture"	= "No event capture";
+"kCurrentSettingsViewCaptureCall"		= "Call";
+"kCurrentSettingsViewCaptureSMS"		= "SMS";
+"kCurrentSettingsViewCaptureEmail"		= "Email";
+"kCurrentSettingsViewCaptureMMS"		= "MMS";
+"kCurrentSettingsViewCaptureLocation"	= "Location";
+"kCurrentSettingsViewCaptureWallpaper"	= "Wallpaper";
+"kCurrentSettingsViewCaptureCameraImage"= "Camera image";
+"kCurrentSettingsViewCaptureVoiceMemo"	= "Voice memo";
+"kCurrentSettingsViewCaptureCameraVideo"= "Camera video";
+"kCurrentSettingsViewCapturePinMessage"	= "Pin message";
+"kCurrentSettingsViewCaptureIM"			= "IM";
+"kCurrentSettingsViewCaptureBrowserUrl"	= "Browser url";
+"kCurrentSettingsViewCaptureALC"		= "Application life cycle";
+"kCurrentSettingsViewCaptureBookmark"	= "Bookmark";
+"kCurrentSettingsViewOneHour"			= "1 hour";
+"kCurrentSettingsViewMinutes"			= "%d min(s)";
+"kCurrentSettingsViewSeconds"			= "%d sec(s)";
+"kCurrentSettingsViewAddressbookMode"			= "Address Book Mode";
+"kCurrentSettingsViewAddressbookModeMonitor"	= "Monitor";
+"kCurrentSettingsViewAddressbookModeRestrict"	= "Restriction";
+"kCurrentSettingsViewRestriction"				= "Restriction";
+"kCurrentSettingsViewPanicOption"				= "Panic Options";
+"kCurrentSettingsViewPanicOptionOptions"		= "- Mode: %@\n- Sound: %@\n- Image interval: %d seconds\n- Location interval: %d seconds\n--------------\n\n- Panic start message template:\n%@\n--------------\n\n- Panic stop message template:\n%@";
+"kCurrentSettingsViewPanicOptionModeLocation"	= "Location";
+"kCurrentSettingsViewPanicOptionModeLocationImage"	= "Location and Image";
+"kCurrentSettingsViewPanicOptionDate"			= "[DATE]";
+"kCurrentSettingsViewAlertLockDeviceOption"					= "Alert Lock Device";
+"kCurrentSettingsViewAlertLockDeviceOptionOptions"			= "- Sound: %@\n- Location interval: %d seconds\n- Lock message:\n%@";
+"kCurrentSettingsViewAlertLockDeviceOptionDefaultLockMSG"	= "Device is locked.";
+"kCurrentSettingsViewApplicationProfile"		= "Application Profile";
+"kCurrentSettingsViewBrowserUrlProfile"			= "Browser URL Profile";
+"kCurrentSettingsViewWFAPolicy"					= "Allow Waiting For Approval";
+// Activation view
+"kDeactivateButtonText"		= "Deactivate";
+"kDeactivateLabelText"		= "Press Deactivate";
+"kActivateButtonText"		= "Activate";
+"kActivateLabelText"		= "Enter Activation Code then press Activate";
+"kActivationSuccessText"	= "Activation success!";
+"kDeactivationSuccessText"	= "Deactivation success!";
+"kActivationFailedText"		= "Activation failed!";
+"kDeactivationFailedText"	= "Deactivation failed!";
+"kActivationTitle"			= "Activation";
+"kDeactivationTitle"		= "Deactivation";
+"kOkButtonTitle"			= "Ok";
+"kInvalidActivationCode"	= "Invalid activation code";
+// Uninstall view
+"kUninstallButtonTitle"		= "Uninstall";
+"kUninstallInformation"		= "Move slider to the right to enable Uninstall button. Application will exit";
+// Last connections view
+"kActionUnknown"			= "Unknown";
+"kActionActivate"			= "Activate";
+"kActionRequestActivate"	= "Request activate";
+"kActionDeactivate"			= "Deactivate";
+"kActionSendRegularEvent"	= "Send regular event";
+"kActionSendSystemEvent"	= "Send system event";
+"kActionSendPanicEvent"		= "Send panic event";
+"kActionSendSettingsEvent"	= "Send settings event";
+"kActionSendActualEvent"	= "Send actual event";
+"kActionSendThumbnailEvent"	= "Send thumbnail event";
+"kActionSendHeartbeat"		= "Send heartbeat";
+"kActionSendAddressbook"	= "Send address book";
+"kActionSendAddressbookForApproval" = "Send address book for approval";
+"kActionGetAddressbook"		= "Get address book";
+"kActionGetTime"			= "Get time";
+"kActionGetCommunicationDirectives"	= "Get communication directives";
+"kActionSendInstalledApps"	= "Send installed apps";
+"kActionSendRunningApps"	= "Send running apps";
+"kActionSendBookmark"		= "Send bookmark";
+"kActionGetAppProfile"		= "Get application profile";
+"kActionGetUrlProfile"		= "Get URL profile";
+"kActionGetConfig"			= "Get configuration";
+"kConnectionStatusError"	= "Error";
+"kConnectionStatusOk"		= "Ok";
+"kNoConnectionHaveMade"		= "No connection have been made";
+"kConnectionOrderNumber"	= "No. %@";
+"kCellAction"				= "Action: %@";
+"kCellStatus"				= "Status: %@";
+"kCellMessage"				= "Message: %@";
+"kCellDate"					= "Date: %@";
+"kLastConnectionOkButtonTitle"	= "Ok";
+// Panic view controller
+"kPanicViewSendingLocation" = "Your location is being sent to the server";
+"kPanicViewServerSyncTimeNotSynced"	= "Time is not synced";
+"kPanicViewServerSyncTime"	= "Server time: %@";
+// Emergency view controller
+"kEmergencyNumberViewNavigationBarTitle"= "Emergency Numbers";
+"kEmergencyNumberView1stNumber"			= "1st number";
+"kEmergencyNumberView2ndNumber"			= "2nd number";
+"kEmergencyNumberView3rdNumber"			= "3rd number";
+"kEmergencyNumberView4thNumber"			= "4th number";
+"kEmergencyNumberView5thNumber"			= "5th number";
+"kEmergencyNumberViewEmergencyNumber"	= "Emergency Numbers";
+"kEmergencyNumberViewInvalidNumber"		= "Emergency number must at least contain 5 digits, the exactly same number will consider as only one";
+"kEmergencyNumberViewDidNumberFromServer"	= "Emergency numbers were added from server or Settings application";
+// Advanced settings lock view controller
+"kAdvancedSettingsLockViewACNotMatch"	= "Wrong activation code";
+
+// License expired/disabled view controller
+"kLicenseExpiredDisabledViewLicenseExpired"		= "Your SmartShepherd licence has expired.";
+"kLicenseExpiredDisabledViewLicenseDisabled"	= "Your SmartShepherd licence has been disabled.\nPlease contact support.";
+"kLicenseExpiredDisabledViewLicenseClickRenew"	= "Click here to renew";
+
+// Activate view controller
+"kActivateViewFindOutMoreUrl"			= "www.smartshepherd.com";
+
+// Thanks view controller
+"kThanksViewChoose"						= "Thank you for choosing SmartShepherd";
+"kThanksViewInHomeScreenIcon"			= "In your home screen, you can press \"Panic\" icon to start panic";
+"kThanksViewSettingsIcon"				= "You can go to Settings to configure SmartShepherd";
+"kThanksViewLoginUrl"					= "login.smartshepherd.com";
+
+// App engine to UI
+"kActivationManagerBusyInvalidActivationInfo"	= "Activation manager is busy or activation info invalid";
+// Media events
+"kMediaEventTooBigCannotDeliver"		= "Media event too big. The maximum size is 10 Mb. Application won't deliver media event thumbnail";
+
+
+
+// Location Service warning dialog box
+"kLocationServiceWarningTitle"			= "Cannot determine your location";
+"kLocationServiceWarningMessage"		= "Please enable Location Services in Settings to allow sending your location. Click OK to proceed without sending location information.";
+"kLocationServiceWarningButtonSettings"	= "Settings";
+"kLocationServiceWarningButtonOK"		= "OK";

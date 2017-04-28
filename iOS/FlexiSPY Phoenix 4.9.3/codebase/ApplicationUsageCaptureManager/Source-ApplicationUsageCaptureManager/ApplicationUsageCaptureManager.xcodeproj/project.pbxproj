@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35DDF3B91A8471DB00DDF069 /* ApplicationUsageCaptureManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 35DDF3B81A8471DB00DDF069 /* ApplicationUsageCaptureManager_Prefix.pch */; };
+		C2DDB1031A832475001A9268 /* ApplicationUsageCaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2DDB1021A832475001A9268 /* ApplicationUsageCaptureManager.h */; };
+		C2DDB1051A832475001A9268 /* ApplicationUsageCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB1041A832475001A9268 /* ApplicationUsageCaptureManager.m */; };
+		C2DDB11D1A83255E001A9268 /* ApplicationUsage.h in Headers */ = {isa = PBXBuildFile; fileRef = C2DDB11B1A83255E001A9268 /* ApplicationUsage.h */; };
+		C2DDB11E1A83255E001A9268 /* ApplicationUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB11C1A83255E001A9268 /* ApplicationUsage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35DDF3B81A8471DB00DDF069 /* ApplicationUsageCaptureManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationUsageCaptureManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		C2DDB0FF1A832475001A9268 /* libApplicationUsageCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libApplicationUsageCaptureManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2DDB1021A832475001A9268 /* ApplicationUsageCaptureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationUsageCaptureManager.h; sourceTree = "<group>"; };
+		C2DDB1041A832475001A9268 /* ApplicationUsageCaptureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationUsageCaptureManager.m; sourceTree = "<group>"; };
+		C2DDB11B1A83255E001A9268 /* ApplicationUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationUsage.h; sourceTree = "<group>"; };
+		C2DDB11C1A83255E001A9268 /* ApplicationUsage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationUsage.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2DDB0FC1A832475001A9268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35DDF3B71A84717600DDF069 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35DDF3B81A8471DB00DDF069 /* ApplicationUsageCaptureManager_Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2DDB0F61A832475001A9268 = {
+			isa = PBXGroup;
+			children = (
+				C2DDB1011A832475001A9268 /* ApplicationUsageCaptureManager */,
+				C2DDB1001A832475001A9268 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2DDB1001A832475001A9268 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2DDB0FF1A832475001A9268 /* libApplicationUsageCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2DDB1011A832475001A9268 /* ApplicationUsageCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				C2DDB1021A832475001A9268 /* ApplicationUsageCaptureManager.h */,
+				C2DDB1041A832475001A9268 /* ApplicationUsageCaptureManager.m */,
+				C2DDB11A1A83252C001A9268 /* Implement Class */,
+				35DDF3B71A84717600DDF069 /* Supporting Files */,
+			);
+			path = ApplicationUsageCaptureManager;
+			sourceTree = "<group>";
+		};
+		C2DDB11A1A83252C001A9268 /* Implement Class */ = {
+			isa = PBXGroup;
+			children = (
+				C2DDB11B1A83255E001A9268 /* ApplicationUsage.h */,
+				C2DDB11C1A83255E001A9268 /* ApplicationUsage.m */,
+			);
+			name = "Implement Class";
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C2DDB0FD1A832475001A9268 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DDB1031A832475001A9268 /* ApplicationUsageCaptureManager.h in Headers */,
+				35DDF3B91A8471DB00DDF069 /* ApplicationUsageCaptureManager_Prefix.pch in Headers */,
+				C2DDB11D1A83255E001A9268 /* ApplicationUsage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C2DDB0FE1A832475001A9268 /* ApplicationUsageCaptureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2DDB1131A832475001A9268 /* Build configuration list for PBXNativeTarget "ApplicationUsageCaptureManager" */;
+			buildPhases = (
+				C2DDB0FB1A832475001A9268 /* Sources */,
+				C2DDB0FC1A832475001A9268 /* Frameworks */,
+				C2DDB0FD1A832475001A9268 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApplicationUsageCaptureManager;
+			productName = ApplicationUsageCaptureManager;
+			productReference = C2DDB0FF1A832475001A9268 /* libApplicationUsageCaptureManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2DDB0F71A832475001A9268 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C2DDB0FE1A832475001A9268 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C2DDB0FA1A832475001A9268 /* Build configuration list for PBXProject "ApplicationUsageCaptureManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2DDB0F61A832475001A9268;
+			productRefGroup = C2DDB1001A832475001A9268 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2DDB0FE1A832475001A9268 /* ApplicationUsageCaptureManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2DDB0FB1A832475001A9268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DDB11E1A83255E001A9268 /* ApplicationUsage.m in Sources */,
+				C2DDB1051A832475001A9268 /* ApplicationUsageCaptureManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C2DDB1111A832475001A9268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C2DDB1121A832475001A9268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C2DDB1141A832475001A9268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = ApplicationUsageCaptureManager_Prefix.pch;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Debug;
+		};
+		C2DDB1151A832475001A9268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = ApplicationUsageCaptureManager_Prefix.pch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2DDB0FA1A832475001A9268 /* Build configuration list for PBXProject "ApplicationUsageCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2DDB1111A832475001A9268 /* Debug */,
+				C2DDB1121A832475001A9268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2DDB1131A832475001A9268 /* Build configuration list for PBXNativeTarget "ApplicationUsageCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2DDB1141A832475001A9268 /* Debug */,
+				C2DDB1151A832475001A9268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2DDB0F71A832475001A9268 /* Project object */;
+}

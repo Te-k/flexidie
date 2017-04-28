@@ -1,0 +1,845 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		350D3E3B1A919C35001ED61E /* UserActivityCaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 350D3E3A1A919C35001ED61E /* UserActivityCaptureManager.h */; };
+		350D3E3D1A919C35001ED61E /* UserActivityCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 350D3E3C1A919C35001ED61E /* UserActivityCaptureManager.m */; };
+		350D3E531A919CC5001ED61E /* UserActivityCaptureManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 350D3E521A919CC5001ED61E /* UserActivityCaptureManager_Prefix.pch */; };
+		350D3E561A91A0C9001ED61E /* UserActivityMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 350D3E541A91A0C9001ED61E /* UserActivityMonitor.h */; };
+		350D3E571A91A0C9001ED61E /* UserActivityMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 350D3E551A91A0C9001ED61E /* UserActivityMonitor.m */; };
+		35282A321B205E52004EBDA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35282A311B205E52004EBDA4 /* main.m */; };
+		35282A381B206047004EBDA4 /* UAMAManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35282A371B206047004EBDA4 /* UAMAManager.m */; };
+		35CFD4BB1B206EFD00913353 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CFD4BA1B206EFD00913353 /* AppDelegate.m */; };
+		35CFD4BD1B206EFD00913353 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CFD4BC1B206EFD00913353 /* main.m */; };
+		35CFD4BF1B206EFD00913353 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CFD4BE1B206EFD00913353 /* Images.xcassets */; };
+		35CFD4C21B206EFE00913353 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35CFD4C01B206EFE00913353 /* MainMenu.xib */; };
+		35CFD4E51B20702D00913353 /* libFxStdMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBCBEA1B2068A100463DC8 /* libFxStdMac.a */; };
+		35CFD4E61B20703100913353 /* libFxEventsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBCBE41B2068A100463DC8 /* libFxEventsMac.a */; };
+		35CFD4E71B20703400913353 /* libSystemUtilsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBCBF91B20693600463DC8 /* libSystemUtilsMac.a */; };
+		35CFD4EA1B2071C100913353 /* UAMAManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35282A371B206047004EBDA4 /* UAMAManager.m */; };
+		35CFD4EB1B20720200913353 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBCBC71B20683600463DC8 /* AppKit.framework */; };
+		35CFD4EC1B20720900913353 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBCBC91B20684200463DC8 /* SystemConfiguration.framework */; };
+		35EBCBC81B20683600463DC8 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBCBC71B20683600463DC8 /* AppKit.framework */; };
+		35EBCBCA1B20684200463DC8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBCBC91B20684200463DC8 /* SystemConfiguration.framework */; };
+		35EBCBEB1B2068E900463DC8 /* libFxStdMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBCBEA1B2068A100463DC8 /* libFxStdMac.a */; };
+		35EBCBEC1B2068EF00463DC8 /* libFxEventsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBCBE41B2068A100463DC8 /* libFxEventsMac.a */; };
+		35EBCBFA1B20693A00463DC8 /* libSystemUtilsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBCBF91B20693600463DC8 /* libSystemUtilsMac.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35270C781D1A4603004BFF76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBCB9A1B20675500463DC8 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FCBD2F8C1BABEF5A0061109F;
+			remoteInfo = "FxStd-E";
+		};
+		35CFD4DF1B20701B00913353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBCB9A1B20675500463DC8 /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0885379917F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		35CFD4E11B20701E00913353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBCBA41B20678600463DC8 /* FxEvents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08629AF317F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		35CFD4E31B20702600913353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBCBF11B20693600463DC8 /* SystemUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0840247F17F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		35CFD51F1B2072FE00913353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 350D3E2F1A919C35001ED61E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35CFD4B41B206EFD00913353;
+			remoteInfo = UserActivityMonitorAgentUI;
+		};
+		35EBCBE11B2068A100463DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBCBA41B20678600463DC8 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		35EBCBE31B2068A100463DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBCBA41B20678600463DC8 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08629AF417F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		35EBCBE71B2068A100463DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBCB9A1B20675500463DC8 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		35EBCBE91B2068A100463DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBCB9A1B20675500463DC8 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		35EBCBF61B20693600463DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBCBF11B20693600463DC8 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+		35EBCBF81B20693600463DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBCBF11B20693600463DC8 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0840248017F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		35EBCBFB1B20694100463DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBCB9A1B20675500463DC8 /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0885379917F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		35EBCBFD1B20694500463DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBCBA41B20678600463DC8 /* FxEvents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08629AF317F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		35EBCBFF1B20694800463DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EBCBF11B20693600463DC8 /* SystemUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0840247F17F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35282A2D1B205E52004EBDA4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		350D3E371A919C35001ED61E /* libUserActivityCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUserActivityCaptureManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		350D3E3A1A919C35001ED61E /* UserActivityCaptureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserActivityCaptureManager.h; sourceTree = "<group>"; };
+		350D3E3C1A919C35001ED61E /* UserActivityCaptureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserActivityCaptureManager.m; sourceTree = "<group>"; };
+		350D3E521A919CC5001ED61E /* UserActivityCaptureManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserActivityCaptureManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		350D3E541A91A0C9001ED61E /* UserActivityMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserActivityMonitor.h; sourceTree = "<group>"; };
+		350D3E551A91A0C9001ED61E /* UserActivityMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserActivityMonitor.m; sourceTree = "<group>"; };
+		35282A2F1B205E52004EBDA4 /* UserActivityMonitorAgent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UserActivityMonitorAgent; sourceTree = BUILT_PRODUCTS_DIR; };
+		35282A311B205E52004EBDA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35282A361B206047004EBDA4 /* UAMAManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAMAManager.h; sourceTree = "<group>"; };
+		35282A371B206047004EBDA4 /* UAMAManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAMAManager.m; sourceTree = "<group>"; };
+		35CFD4B51B206EFD00913353 /* UserActivityMonitorAgentUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserActivityMonitorAgentUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35CFD4B81B206EFD00913353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35CFD4B91B206EFD00913353 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		35CFD4BA1B206EFD00913353 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		35CFD4BC1B206EFD00913353 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35CFD4BE1B206EFD00913353 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		35CFD4C11B206EFE00913353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		35EBCB9A1B20675500463DC8 /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../Std/FxStd/FxStd.xcodeproj; sourceTree = "<group>"; };
+		35EBCBA41B20678600463DC8 /* FxEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxEvents.xcodeproj; path = ../../Events/FxEvents/FxEvents.xcodeproj; sourceTree = "<group>"; };
+		35EBCBC71B20683600463DC8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		35EBCBC91B20684200463DC8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		35EBCBF11B20693600463DC8 /* SystemUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SystemUtils.xcodeproj; path = "../../SystemUtils/Source-SystemUtils/SystemUtils.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		350D3E341A919C35001ED61E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35282A2C1B205E52004EBDA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35EBCBFA1B20693A00463DC8 /* libSystemUtilsMac.a in Frameworks */,
+				35EBCBEC1B2068EF00463DC8 /* libFxEventsMac.a in Frameworks */,
+				35EBCBEB1B2068E900463DC8 /* libFxStdMac.a in Frameworks */,
+				35EBCBCA1B20684200463DC8 /* SystemConfiguration.framework in Frameworks */,
+				35EBCBC81B20683600463DC8 /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35CFD4B21B206EFD00913353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35CFD4EC1B20720900913353 /* SystemConfiguration.framework in Frameworks */,
+				35CFD4EB1B20720200913353 /* AppKit.framework in Frameworks */,
+				35CFD4E71B20703400913353 /* libSystemUtilsMac.a in Frameworks */,
+				35CFD4E61B20703100913353 /* libFxEventsMac.a in Frameworks */,
+				35CFD4E51B20702D00913353 /* libFxStdMac.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		350D3E2E1A919C35001ED61E = {
+			isa = PBXGroup;
+			children = (
+				35EBCBF11B20693600463DC8 /* SystemUtils.xcodeproj */,
+				35EBCBA41B20678600463DC8 /* FxEvents.xcodeproj */,
+				35EBCB9A1B20675500463DC8 /* FxStd.xcodeproj */,
+				350D3E391A919C35001ED61E /* UserActivityCaptureManager */,
+				35282A301B205E52004EBDA4 /* UserActivityMonitorAgent */,
+				35CFD4B61B206EFD00913353 /* UserActivityMonitorAgentUI */,
+				350D3E381A919C35001ED61E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		350D3E381A919C35001ED61E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				350D3E371A919C35001ED61E /* libUserActivityCaptureManager.a */,
+				35282A2F1B205E52004EBDA4 /* UserActivityMonitorAgent */,
+				35CFD4B51B206EFD00913353 /* UserActivityMonitorAgentUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		350D3E391A919C35001ED61E /* UserActivityCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				350D3E3A1A919C35001ED61E /* UserActivityCaptureManager.h */,
+				350D3E3C1A919C35001ED61E /* UserActivityCaptureManager.m */,
+				350D3E541A91A0C9001ED61E /* UserActivityMonitor.h */,
+				350D3E551A91A0C9001ED61E /* UserActivityMonitor.m */,
+				350D3E511A919C90001ED61E /* Supporting Files */,
+			);
+			path = UserActivityCaptureManager;
+			sourceTree = "<group>";
+		};
+		350D3E511A919C90001ED61E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				350D3E521A919CC5001ED61E /* UserActivityCaptureManager_Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35282A301B205E52004EBDA4 /* UserActivityMonitorAgent */ = {
+			isa = PBXGroup;
+			children = (
+				35282A311B205E52004EBDA4 /* main.m */,
+				35282A361B206047004EBDA4 /* UAMAManager.h */,
+				35282A371B206047004EBDA4 /* UAMAManager.m */,
+				35EBCBC91B20684200463DC8 /* SystemConfiguration.framework */,
+				35EBCBC71B20683600463DC8 /* AppKit.framework */,
+			);
+			path = UserActivityMonitorAgent;
+			sourceTree = "<group>";
+		};
+		35CFD4B61B206EFD00913353 /* UserActivityMonitorAgentUI */ = {
+			isa = PBXGroup;
+			children = (
+				35CFD4B91B206EFD00913353 /* AppDelegate.h */,
+				35CFD4BA1B206EFD00913353 /* AppDelegate.m */,
+				35CFD4BE1B206EFD00913353 /* Images.xcassets */,
+				35CFD4C01B206EFE00913353 /* MainMenu.xib */,
+				35CFD4B71B206EFD00913353 /* Supporting Files */,
+			);
+			path = UserActivityMonitorAgentUI;
+			sourceTree = "<group>";
+		};
+		35CFD4B71B206EFD00913353 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35CFD4B81B206EFD00913353 /* Info.plist */,
+				35CFD4BC1B206EFD00913353 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35EBCBDB1B2068A100463DC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBCBE81B2068A100463DC8 /* libFxStd.a */,
+				35270C791D1A4603004BFF76 /* libFxStd-E.a */,
+				35EBCBEA1B2068A100463DC8 /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBCBDD1B2068A100463DC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBCBE21B2068A100463DC8 /* libFxEvents.a */,
+				35EBCBE41B2068A100463DC8 /* libFxEventsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35EBCBF21B20693600463DC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EBCBF71B20693600463DC8 /* libSystemUtils.a */,
+				35EBCBF91B20693600463DC8 /* libSystemUtilsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		350D3E351A919C35001ED61E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350D3E531A919CC5001ED61E /* UserActivityCaptureManager_Prefix.pch in Headers */,
+				350D3E3B1A919C35001ED61E /* UserActivityCaptureManager.h in Headers */,
+				350D3E561A91A0C9001ED61E /* UserActivityMonitor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		350D3E361A919C35001ED61E /* UserActivityCaptureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 350D3E4B1A919C35001ED61E /* Build configuration list for PBXNativeTarget "UserActivityCaptureManager" */;
+			buildPhases = (
+				350D3E331A919C35001ED61E /* Sources */,
+				350D3E341A919C35001ED61E /* Frameworks */,
+				350D3E351A919C35001ED61E /* Headers */,
+				35282A3B1B2064A9004EBDA4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35CFD5201B2072FE00913353 /* PBXTargetDependency */,
+			);
+			name = UserActivityCaptureManager;
+			productName = UserActivityCaptureManager;
+			productReference = 350D3E371A919C35001ED61E /* libUserActivityCaptureManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		35282A2E1B205E52004EBDA4 /* UserActivityMonitorAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35282A351B205E52004EBDA4 /* Build configuration list for PBXNativeTarget "UserActivityMonitorAgent" */;
+			buildPhases = (
+				35282A2B1B205E52004EBDA4 /* Sources */,
+				35282A2C1B205E52004EBDA4 /* Frameworks */,
+				35282A2D1B205E52004EBDA4 /* CopyFiles */,
+				35282A3C1B2064DF004EBDA4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35EBCC001B20694800463DC8 /* PBXTargetDependency */,
+				35EBCBFE1B20694500463DC8 /* PBXTargetDependency */,
+				35EBCBFC1B20694100463DC8 /* PBXTargetDependency */,
+			);
+			name = UserActivityMonitorAgent;
+			productName = UserActivityMonitorAgent;
+			productReference = 35282A2F1B205E52004EBDA4 /* UserActivityMonitorAgent */;
+			productType = "com.apple.product-type.tool";
+		};
+		35CFD4B41B206EFD00913353 /* UserActivityMonitorAgentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35CFD4D61B206EFE00913353 /* Build configuration list for PBXNativeTarget "UserActivityMonitorAgentUI" */;
+			buildPhases = (
+				35CFD4B11B206EFD00913353 /* Sources */,
+				35CFD4B21B206EFD00913353 /* Frameworks */,
+				35CFD4B31B206EFD00913353 /* Resources */,
+				35CFD4D81B206FD400913353 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35CFD4E41B20702600913353 /* PBXTargetDependency */,
+				35CFD4E21B20701E00913353 /* PBXTargetDependency */,
+				35CFD4E01B20701B00913353 /* PBXTargetDependency */,
+			);
+			name = UserActivityMonitorAgentUI;
+			productName = UserActivityMonitorAgentUI;
+			productReference = 35CFD4B51B206EFD00913353 /* UserActivityMonitorAgentUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		350D3E2F1A919C35001ED61E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Makara Khloth";
+				TargetAttributes = {
+					350D3E361A919C35001ED61E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					35282A2E1B205E52004EBDA4 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					35CFD4B41B206EFD00913353 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 350D3E321A919C35001ED61E /* Build configuration list for PBXProject "UserActivityCaptureManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 350D3E2E1A919C35001ED61E;
+			productRefGroup = 350D3E381A919C35001ED61E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 35EBCBDD1B2068A100463DC8 /* Products */;
+					ProjectRef = 35EBCBA41B20678600463DC8 /* FxEvents.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBCBDB1B2068A100463DC8 /* Products */;
+					ProjectRef = 35EBCB9A1B20675500463DC8 /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = 35EBCBF21B20693600463DC8 /* Products */;
+					ProjectRef = 35EBCBF11B20693600463DC8 /* SystemUtils.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				350D3E361A919C35001ED61E /* UserActivityCaptureManager */,
+				35282A2E1B205E52004EBDA4 /* UserActivityMonitorAgent */,
+				35CFD4B41B206EFD00913353 /* UserActivityMonitorAgentUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		35270C791D1A4603004BFF76 /* libFxStd-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFxStd-E.a";
+			remoteRef = 35270C781D1A4603004BFF76 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBCBE21B2068A100463DC8 /* libFxEvents.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEvents.a;
+			remoteRef = 35EBCBE11B2068A100463DC8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBCBE41B2068A100463DC8 /* libFxEventsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEventsMac.a;
+			remoteRef = 35EBCBE31B2068A100463DC8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBCBE81B2068A100463DC8 /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = 35EBCBE71B2068A100463DC8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBCBEA1B2068A100463DC8 /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = 35EBCBE91B2068A100463DC8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBCBF71B20693600463DC8 /* libSystemUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtils.a;
+			remoteRef = 35EBCBF61B20693600463DC8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35EBCBF91B20693600463DC8 /* libSystemUtilsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtilsMac.a;
+			remoteRef = 35EBCBF81B20693600463DC8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35CFD4B31B206EFD00913353 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35CFD4BF1B206EFD00913353 /* Images.xcassets in Resources */,
+				35CFD4C21B206EFE00913353 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35282A3B1B2064A9004EBDA4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		35282A3C1B2064DF004EBDA4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -fr ../../../BlueBlood/blblu/Apps/${PRODUCT_NAME}\ncp -r ${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME} ../../../BlueBlood/blblu/Apps/";
+		};
+		35CFD4D81B206FD400913353 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# KnowIT\nrm -fr ../../../BlueBlood/blblu/Apps/${WRAPPER_NAME}\ncp -r ${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME} ../../../BlueBlood/blblu/Apps/\n\n# FlexiSPY Green\nrm -fr ../../../GreenBlood/blblu/Apps/${WRAPPER_NAME}\ncp -r ${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME} ../../../GreenBlood/blblu/Apps/";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		350D3E331A919C35001ED61E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350D3E571A91A0C9001ED61E /* UserActivityMonitor.m in Sources */,
+				350D3E3D1A919C35001ED61E /* UserActivityCaptureManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35282A2B1B205E52004EBDA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35282A321B205E52004EBDA4 /* main.m in Sources */,
+				35282A381B206047004EBDA4 /* UAMAManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35CFD4B11B206EFD00913353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35CFD4EA1B2071C100913353 /* UAMAManager.m in Sources */,
+				35CFD4BD1B206EFD00913353 /* main.m in Sources */,
+				35CFD4BB1B206EFD00913353 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35CFD4E01B20701B00913353 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStdMac;
+			targetProxy = 35CFD4DF1B20701B00913353 /* PBXContainerItemProxy */;
+		};
+		35CFD4E21B20701E00913353 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxEventsMac;
+			targetProxy = 35CFD4E11B20701E00913353 /* PBXContainerItemProxy */;
+		};
+		35CFD4E41B20702600913353 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SystemUtilsMac;
+			targetProxy = 35CFD4E31B20702600913353 /* PBXContainerItemProxy */;
+		};
+		35CFD5201B2072FE00913353 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35CFD4B41B206EFD00913353 /* UserActivityMonitorAgentUI */;
+			targetProxy = 35CFD51F1B2072FE00913353 /* PBXContainerItemProxy */;
+		};
+		35EBCBFC1B20694100463DC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStdMac;
+			targetProxy = 35EBCBFB1B20694100463DC8 /* PBXContainerItemProxy */;
+		};
+		35EBCBFE1B20694500463DC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxEventsMac;
+			targetProxy = 35EBCBFD1B20694500463DC8 /* PBXContainerItemProxy */;
+		};
+		35EBCC001B20694800463DC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SystemUtilsMac;
+			targetProxy = 35EBCBFF1B20694800463DC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35CFD4C01B206EFE00913353 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35CFD4C11B206EFE00913353 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		350D3E491A919C35001ED61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		350D3E4A1A919C35001ED61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		350D3E4C1A919C35001ED61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = UserActivityCaptureManager_Prefix.pch;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Debug;
+		};
+		350D3E4D1A919C35001ED61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = UserActivityCaptureManager_Prefix.pch;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Release;
+		};
+		35282A331B205E52004EBDA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Debug;
+		};
+		35282A341B205E52004EBDA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Release;
+		};
+		35CFD4CF1B206EFE00913353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UserActivityMonitorAgentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Debug;
+		};
+		35CFD4D01B206EFE00913353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = UserActivityMonitorAgentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		350D3E321A919C35001ED61E /* Build configuration list for PBXProject "UserActivityCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350D3E491A919C35001ED61E /* Debug */,
+				350D3E4A1A919C35001ED61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		350D3E4B1A919C35001ED61E /* Build configuration list for PBXNativeTarget "UserActivityCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350D3E4C1A919C35001ED61E /* Debug */,
+				350D3E4D1A919C35001ED61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35282A351B205E52004EBDA4 /* Build configuration list for PBXNativeTarget "UserActivityMonitorAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35282A331B205E52004EBDA4 /* Debug */,
+				35282A341B205E52004EBDA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35CFD4D61B206EFE00913353 /* Build configuration list for PBXNativeTarget "UserActivityMonitorAgentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35CFD4CF1B206EFE00913353 /* Debug */,
+				35CFD4D01B206EFE00913353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 350D3E2F1A919C35001ED61E /* Project object */;
+}

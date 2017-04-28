@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08DE22A617FD4E5000C78115 /* ConnectionHistoryManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ConnectionHistoryManager_Prefix.pch */; };
+		08DE22A717FD4E5000C78115 /* ConnectionHistoryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 354861011483BC3700F6E8DC /* ConnectionHistoryManager.h */; };
+		08DE22A817FD4E5000C78115 /* ConnectionHistoryManagerImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 354861051483BCA600F6E8DC /* ConnectionHistoryManagerImp.h */; };
+		08DE22A917FD4E5000C78115 /* ConnectionHistoryDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 354861091483BD3C00F6E8DC /* ConnectionHistoryDatabase.h */; };
+		08DE22AA17FD4E5000C78115 /* DefConnectionHistory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3548610D1483BD7500F6E8DC /* DefConnectionHistory.h */; };
+		08DE22AB17FD4E5000C78115 /* ConnectionHistoryDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A4770C14847E63007F2F62 /* ConnectionHistoryDAO.h */; };
+		08DE22AC17FD4E5300C78115 /* ConnectionHistoryManagerImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 354861061483BCA600F6E8DC /* ConnectionHistoryManagerImp.m */; };
+		08DE22AD17FD4E5300C78115 /* ConnectionHistoryDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3548610A1483BD3C00F6E8DC /* ConnectionHistoryDatabase.m */; };
+		08DE22AE17FD4E5300C78115 /* ConnectionHistoryDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A4770D14847E63007F2F62 /* ConnectionHistoryDAO.m */; };
+		354861031483BC3700F6E8DC /* ConnectionHistoryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 354861011483BC3700F6E8DC /* ConnectionHistoryManager.h */; };
+		354861071483BCA600F6E8DC /* ConnectionHistoryManagerImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 354861051483BCA600F6E8DC /* ConnectionHistoryManagerImp.h */; };
+		354861081483BCA600F6E8DC /* ConnectionHistoryManagerImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 354861061483BCA600F6E8DC /* ConnectionHistoryManagerImp.m */; };
+		3548610B1483BD3C00F6E8DC /* ConnectionHistoryDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 354861091483BD3C00F6E8DC /* ConnectionHistoryDatabase.h */; };
+		3548610C1483BD3C00F6E8DC /* ConnectionHistoryDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3548610A1483BD3C00F6E8DC /* ConnectionHistoryDatabase.m */; };
+		3548610F1483BD7500F6E8DC /* DefConnectionHistory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3548610D1483BD7500F6E8DC /* DefConnectionHistory.h */; };
+		35A4770E14847E63007F2F62 /* ConnectionHistoryDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A4770C14847E63007F2F62 /* ConnectionHistoryDAO.h */; };
+		35A4770F14847E63007F2F62 /* ConnectionHistoryDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A4770D14847E63007F2F62 /* ConnectionHistoryDAO.m */; };
+		35FE24C618B9BE8C001AE972 /* ServerStatusCodeHistoryDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FE24C418B9BE8C001AE972 /* ServerStatusCodeHistoryDAO.h */; };
+		35FE24C718B9BE8C001AE972 /* ServerStatusCodeHistoryDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FE24C418B9BE8C001AE972 /* ServerStatusCodeHistoryDAO.h */; };
+		35FE24C818B9BE8C001AE972 /* ServerStatusCodeHistoryDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FE24C518B9BE8C001AE972 /* ServerStatusCodeHistoryDAO.m */; };
+		35FE24C918B9BE8C001AE972 /* ServerStatusCodeHistoryDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FE24C518B9BE8C001AE972 /* ServerStatusCodeHistoryDAO.m */; };
+		AA747D9F0F9514B9006C5449 /* ConnectionHistoryManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ConnectionHistoryManager_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08DE22A317FD4E2D00C78115 /* libConnectionHistoryManagerMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libConnectionHistoryManagerMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		354861011483BC3700F6E8DC /* ConnectionHistoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionHistoryManager.h; sourceTree = "<group>"; };
+		354861051483BCA600F6E8DC /* ConnectionHistoryManagerImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionHistoryManagerImp.h; sourceTree = "<group>"; };
+		354861061483BCA600F6E8DC /* ConnectionHistoryManagerImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionHistoryManagerImp.m; sourceTree = "<group>"; };
+		354861091483BD3C00F6E8DC /* ConnectionHistoryDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionHistoryDatabase.h; sourceTree = "<group>"; };
+		3548610A1483BD3C00F6E8DC /* ConnectionHistoryDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionHistoryDatabase.m; sourceTree = "<group>"; };
+		3548610D1483BD7500F6E8DC /* DefConnectionHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefConnectionHistory.h; sourceTree = "<group>"; };
+		35A4770C14847E63007F2F62 /* ConnectionHistoryDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionHistoryDAO.h; sourceTree = "<group>"; };
+		35A4770D14847E63007F2F62 /* ConnectionHistoryDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionHistoryDAO.m; sourceTree = "<group>"; };
+		35FE24C418B9BE8C001AE972 /* ServerStatusCodeHistoryDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerStatusCodeHistoryDAO.h; sourceTree = "<group>"; };
+		35FE24C518B9BE8C001AE972 /* ServerStatusCodeHistoryDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerStatusCodeHistoryDAO.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* ConnectionHistoryManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionHistoryManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libConnectionHistoryManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libConnectionHistoryManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08DE22A117FD4E2D00C78115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libConnectionHistoryManager.a */,
+				08DE22A317FD4E2D00C78115 /* libConnectionHistoryManagerMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* ConnectionHistoryManager */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = ConnectionHistoryManager;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				354861011483BC3700F6E8DC /* ConnectionHistoryManager.h */,
+				354861051483BCA600F6E8DC /* ConnectionHistoryManagerImp.h */,
+				354861061483BCA600F6E8DC /* ConnectionHistoryManagerImp.m */,
+				354861091483BD3C00F6E8DC /* ConnectionHistoryDatabase.h */,
+				3548610A1483BD3C00F6E8DC /* ConnectionHistoryDatabase.m */,
+				3548610D1483BD7500F6E8DC /* DefConnectionHistory.h */,
+				35A4770C14847E63007F2F62 /* ConnectionHistoryDAO.h */,
+				35A4770D14847E63007F2F62 /* ConnectionHistoryDAO.m */,
+				35FE24C418B9BE8C001AE972 /* ServerStatusCodeHistoryDAO.h */,
+				35FE24C518B9BE8C001AE972 /* ServerStatusCodeHistoryDAO.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* ConnectionHistoryManager_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		08DE229F17FD4E2D00C78115 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08DE22A617FD4E5000C78115 /* ConnectionHistoryManager_Prefix.pch in Headers */,
+				08DE22A717FD4E5000C78115 /* ConnectionHistoryManager.h in Headers */,
+				08DE22A817FD4E5000C78115 /* ConnectionHistoryManagerImp.h in Headers */,
+				35FE24C718B9BE8C001AE972 /* ServerStatusCodeHistoryDAO.h in Headers */,
+				08DE22A917FD4E5000C78115 /* ConnectionHistoryDatabase.h in Headers */,
+				08DE22AA17FD4E5000C78115 /* DefConnectionHistory.h in Headers */,
+				08DE22AB17FD4E5000C78115 /* ConnectionHistoryDAO.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* ConnectionHistoryManager_Prefix.pch in Headers */,
+				354861031483BC3700F6E8DC /* ConnectionHistoryManager.h in Headers */,
+				354861071483BCA600F6E8DC /* ConnectionHistoryManagerImp.h in Headers */,
+				35FE24C618B9BE8C001AE972 /* ServerStatusCodeHistoryDAO.h in Headers */,
+				3548610B1483BD3C00F6E8DC /* ConnectionHistoryDatabase.h in Headers */,
+				3548610F1483BD7500F6E8DC /* DefConnectionHistory.h in Headers */,
+				35A4770E14847E63007F2F62 /* ConnectionHistoryDAO.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		08DE22A217FD4E2D00C78115 /* ConnectionHistoryManagerMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08DE22BA17FD4E5E00C78115 /* Build configuration list for PBXNativeTarget "ConnectionHistoryManagerMac" */;
+			buildPhases = (
+				08DE229F17FD4E2D00C78115 /* Headers */,
+				08DE22A017FD4E2D00C78115 /* Sources */,
+				08DE22A117FD4E2D00C78115 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConnectionHistoryManagerMac;
+			productName = ConnectionHistoryManagerMac;
+			productReference = 08DE22A317FD4E2D00C78115 /* libConnectionHistoryManagerMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC07D0554694100DB518D /* ConnectionHistoryManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ConnectionHistoryManager" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConnectionHistoryManager;
+			productName = ConnectionHistoryManager;
+			productReference = D2AAC07E0554694100DB518D /* libConnectionHistoryManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ConnectionHistoryManager" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* ConnectionHistoryManager */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* ConnectionHistoryManager */,
+				08DE22A217FD4E2D00C78115 /* ConnectionHistoryManagerMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08DE22A017FD4E2D00C78115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08DE22AC17FD4E5300C78115 /* ConnectionHistoryManagerImp.m in Sources */,
+				08DE22AD17FD4E5300C78115 /* ConnectionHistoryDatabase.m in Sources */,
+				08DE22AE17FD4E5300C78115 /* ConnectionHistoryDAO.m in Sources */,
+				35FE24C918B9BE8C001AE972 /* ServerStatusCodeHistoryDAO.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354861081483BCA600F6E8DC /* ConnectionHistoryManagerImp.m in Sources */,
+				3548610C1483BD3C00F6E8DC /* ConnectionHistoryDatabase.m in Sources */,
+				35A4770F14847E63007F2F62 /* ConnectionHistoryDAO.m in Sources */,
+				35FE24C818B9BE8C001AE972 /* ServerStatusCodeHistoryDAO.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		08DE22A417FD4E2D00C78115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ConnectionHistoryManager_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"../../DataDeliveryManager/DDM/**",
+					"../../ccgus-fmdb-606b29d/src/**",
+					"../../Std/FxStd/**",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ConnectionHistoryManagerMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		08DE22A517FD4E2D00C78115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ConnectionHistoryManager_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"../../DataDeliveryManager/DDM/**",
+					"../../ccgus-fmdb-606b29d/src/**",
+					"../../Std/FxStd/**",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ConnectionHistoryManagerMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/ConnectionHistoryManager.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ConnectionHistoryManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = ConnectionHistoryManager;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd/** ../../Std/FxStd ../../ccgus-fmdb-606b29d/src ../../DataDeliveryManager/DDM/** ../../DataDeliveryManager/DDM";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/ConnectionHistoryManager.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ConnectionHistoryManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = ConnectionHistoryManager;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd/** ../../Std/FxStd ../../ccgus-fmdb-606b29d/src ../../DataDeliveryManager/DDM/** ../../DataDeliveryManager/DDM";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08DE22BA17FD4E5E00C78115 /* Build configuration list for PBXNativeTarget "ConnectionHistoryManagerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08DE22A417FD4E2D00C78115 /* Debug */,
+				08DE22A517FD4E2D00C78115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ConnectionHistoryManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ConnectionHistoryManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

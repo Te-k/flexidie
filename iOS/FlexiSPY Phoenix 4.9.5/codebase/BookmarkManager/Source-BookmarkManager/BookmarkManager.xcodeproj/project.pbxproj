@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08FFBBAD15AADA8100D5F96B /* BookmarkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FFBBAB15AADA8100D5F96B /* BookmarkManager.h */; };
+		08FFBBB115AADACF00D5F96B /* BookmarkDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FFBBAF15AADACF00D5F96B /* BookmarkDelegate.h */; };
+		08FFBBBD15AADBAA00D5F96B /* BookmarkManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FFBBBB15AADBAA00D5F96B /* BookmarkManagerImpl.h */; };
+		08FFBBBE15AADBAA00D5F96B /* BookmarkManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FFBBBC15AADBAA00D5F96B /* BookmarkManagerImpl.m */; };
+		08FFBBD915AADCC500D5F96B /* PhoneBookmarkDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FFBBD715AADCC500D5F96B /* PhoneBookmarkDAO.h */; };
+		08FFBBDA15AADCC500D5F96B /* PhoneBookmarkDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FFBBD815AADCC500D5F96B /* PhoneBookmarkDAO.m */; };
+		08FFBBDD15AADCFE00D5F96B /* BookmarkDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FFBBDB15AADCFE00D5F96B /* BookmarkDataProvider.h */; };
+		08FFBBDE15AADCFE00D5F96B /* BookmarkDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FFBBDC15AADCFE00D5F96B /* BookmarkDataProvider.m */; };
+		AA747D9F0F9514B9006C5449 /* BookmarkManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* BookmarkManager_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		FCC8B9AF1B97EE2200193EFF /* BookmarkManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* BookmarkManager_Prefix.pch */; };
+		FCC8B9B01B97EE2200193EFF /* BookmarkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FFBBAB15AADA8100D5F96B /* BookmarkManager.h */; };
+		FCC8B9B11B97EE2200193EFF /* BookmarkDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FFBBAF15AADACF00D5F96B /* BookmarkDelegate.h */; };
+		FCC8B9B51B97EE2200193EFF /* BookmarkDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FFBBDB15AADCFE00D5F96B /* BookmarkDataProvider.h */; };
+		FCC8B9B91B97EE2200193EFF /* BookmarkDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FFBBDC15AADCFE00D5F96B /* BookmarkDataProvider.m */; };
+		FCC8B9BC1B97EE2200193EFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		FCC8B9C51B97FBC700193EFF /* PhoneBookmarkDAO-E.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC8B9C21B97FBA700193EFF /* PhoneBookmarkDAO-E.m */; };
+		FCC8B9C61B97FBCD00193EFF /* BookmarkManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FFBBBC15AADBAA00D5F96B /* BookmarkManagerImpl.m */; };
+		FCC8B9C71B97FBD300193EFF /* BookmarkManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FFBBBB15AADBAA00D5F96B /* BookmarkManagerImpl.h */; };
+		FCC8B9C81B97FBD700193EFF /* PhoneBookmarkDAO-E.h in Headers */ = {isa = PBXBuildFile; fileRef = FCC8B9C11B97FBA700193EFF /* PhoneBookmarkDAO-E.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08FFBBAB15AADA8100D5F96B /* BookmarkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkManager.h; sourceTree = "<group>"; };
+		08FFBBAF15AADACF00D5F96B /* BookmarkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkDelegate.h; sourceTree = "<group>"; };
+		08FFBBBB15AADBAA00D5F96B /* BookmarkManagerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkManagerImpl.h; sourceTree = "<group>"; };
+		08FFBBBC15AADBAA00D5F96B /* BookmarkManagerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkManagerImpl.m; sourceTree = "<group>"; };
+		08FFBBD715AADCC500D5F96B /* PhoneBookmarkDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneBookmarkDAO.h; sourceTree = "<group>"; };
+		08FFBBD815AADCC500D5F96B /* PhoneBookmarkDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneBookmarkDAO.m; sourceTree = "<group>"; };
+		08FFBBDB15AADCFE00D5F96B /* BookmarkDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkDataProvider.h; sourceTree = "<group>"; };
+		08FFBBDC15AADCFE00D5F96B /* BookmarkDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkDataProvider.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* BookmarkManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libBookmarkManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBookmarkManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC8B9C01B97EE2200193EFF /* libBookmarkManager-E.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libBookmarkManager-E.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC8B9C11B97FBA700193EFF /* PhoneBookmarkDAO-E.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PhoneBookmarkDAO-E.h"; sourceTree = "<group>"; };
+		FCC8B9C21B97FBA700193EFF /* PhoneBookmarkDAO-E.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PhoneBookmarkDAO-E.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC8B9BB1B97EE2200193EFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC8B9BC1B97EE2200193EFF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libBookmarkManager.a */,
+				FCC8B9C01B97EE2200193EFF /* libBookmarkManager-E.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* BookmarkManager */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = BookmarkManager;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FCC8B9A81B97EE0C00193EFF /* Class-E */,
+				08FFBBAB15AADA8100D5F96B /* BookmarkManager.h */,
+				08FFBBAF15AADACF00D5F96B /* BookmarkDelegate.h */,
+				08FFBBBB15AADBAA00D5F96B /* BookmarkManagerImpl.h */,
+				08FFBBBC15AADBAA00D5F96B /* BookmarkManagerImpl.m */,
+				08FFBBD715AADCC500D5F96B /* PhoneBookmarkDAO.h */,
+				08FFBBD815AADCC500D5F96B /* PhoneBookmarkDAO.m */,
+				08FFBBDB15AADCFE00D5F96B /* BookmarkDataProvider.h */,
+				08FFBBDC15AADCFE00D5F96B /* BookmarkDataProvider.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* BookmarkManager_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		FCC8B9A81B97EE0C00193EFF /* Class-E */ = {
+			isa = PBXGroup;
+			children = (
+				FCC8B9C11B97FBA700193EFF /* PhoneBookmarkDAO-E.h */,
+				FCC8B9C21B97FBA700193EFF /* PhoneBookmarkDAO-E.m */,
+			);
+			path = "Class-E";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* BookmarkManager_Prefix.pch in Headers */,
+				08FFBBAD15AADA8100D5F96B /* BookmarkManager.h in Headers */,
+				08FFBBB115AADACF00D5F96B /* BookmarkDelegate.h in Headers */,
+				08FFBBBD15AADBAA00D5F96B /* BookmarkManagerImpl.h in Headers */,
+				08FFBBD915AADCC500D5F96B /* PhoneBookmarkDAO.h in Headers */,
+				08FFBBDD15AADCFE00D5F96B /* BookmarkDataProvider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC8B9AE1B97EE2200193EFF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC8B9C81B97FBD700193EFF /* PhoneBookmarkDAO-E.h in Headers */,
+				FCC8B9C71B97FBD300193EFF /* BookmarkManagerImpl.h in Headers */,
+				FCC8B9AF1B97EE2200193EFF /* BookmarkManager_Prefix.pch in Headers */,
+				FCC8B9B01B97EE2200193EFF /* BookmarkManager.h in Headers */,
+				FCC8B9B11B97EE2200193EFF /* BookmarkDelegate.h in Headers */,
+				FCC8B9B51B97EE2200193EFF /* BookmarkDataProvider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* BookmarkManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "BookmarkManager" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookmarkManager;
+			productName = BookmarkManager;
+			productReference = D2AAC07E0554694100DB518D /* libBookmarkManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FCC8B9AD1B97EE2200193EFF /* BookmarkManager-E */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC8B9BD1B97EE2200193EFF /* Build configuration list for PBXNativeTarget "BookmarkManager-E" */;
+			buildPhases = (
+				FCC8B9AE1B97EE2200193EFF /* Headers */,
+				FCC8B9B61B97EE2200193EFF /* Sources */,
+				FCC8B9BB1B97EE2200193EFF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BookmarkManager-E";
+			productName = BookmarkManager;
+			productReference = FCC8B9C01B97EE2200193EFF /* libBookmarkManager-E.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "BookmarkManager" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* BookmarkManager */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* BookmarkManager */,
+				FCC8B9AD1B97EE2200193EFF /* BookmarkManager-E */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08FFBBBE15AADBAA00D5F96B /* BookmarkManagerImpl.m in Sources */,
+				08FFBBDA15AADCC500D5F96B /* PhoneBookmarkDAO.m in Sources */,
+				08FFBBDE15AADCFE00D5F96B /* BookmarkDataProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC8B9B61B97EE2200193EFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC8B9C61B97FBCD00193EFF /* BookmarkManagerImpl.m in Sources */,
+				FCC8B9C51B97FBC700193EFF /* PhoneBookmarkDAO-E.m in Sources */,
+				FCC8B9B91B97EE2200193EFF /* BookmarkDataProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/BookmarkManager.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BookmarkManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = BookmarkManager;
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents/** ../../EventRepository/EventRepos/** ../../EventDeliveryManager/Source-EDM/** ../../Std/FxStd/** ../../ccgus-fmdb-606b29d/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/** ../../DataDeliveryManager/DDM/**";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/BookmarkManager.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BookmarkManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = BookmarkManager;
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents/** ../../EventRepository/EventRepos/** ../../EventDeliveryManager/Source-EDM/** ../../Std/FxStd/** ../../ccgus-fmdb-606b29d/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/** ../../DataDeliveryManager/DDM/**";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FCC8B9BE1B97EE2200193EFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/BookmarkManager.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BookmarkManager_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "IOS_ENTERPRISE=1";
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "BookmarkManager-E";
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents/** ../../EventRepository/EventRepos/** ../../EventDeliveryManager/Source-EDM/** ../../Std/FxStd/** ../../ccgus-fmdb-606b29d/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/** ../../DataDeliveryManager/DDM/** ../../OTC/Headers/iOS8/WebBookmarks";
+			};
+			name = Debug;
+		};
+		FCC8B9BF1B97EE2200193EFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/BookmarkManager.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BookmarkManager_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "IOS_ENTERPRISE=1";
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "BookmarkManager-E";
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents/** ../../EventRepository/EventRepos/** ../../EventDeliveryManager/Source-EDM/** ../../Std/FxStd/** ../../ccgus-fmdb-606b29d/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/** ../../DataDeliveryManager/DDM/** ../../OTC/Headers/iOS8/WebBookmarks";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "BookmarkManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "BookmarkManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC8B9BD1B97EE2200193EFF /* Build configuration list for PBXNativeTarget "BookmarkManager-E" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC8B9BE1B97EE2200193EFF /* Debug */,
+				FCC8B9BF1B97EE2200193EFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'KeySnapShotRuleManager' target in the 'KeySnapShotRuleManager' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import "DebugStatus.h"
+#endif

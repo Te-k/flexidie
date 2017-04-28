@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35ECEDDF1E16672A00BD04AB /* MobileAppScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ECEDDE1E16672A00BD04AB /* MobileAppScreenShot.m */; };
+		35ECEDE01E16672A00BD04AB /* MobileAppScreenShot.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35ECEDDD1E16672A00BD04AB /* MobileAppScreenShot.h */; };
+		35ECEDE41E1667A000BD04AB /* AppScreenShotManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = C23AFBC11CAE5B4D0049A4C1 /* AppScreenShotManagerImpl.m */; };
+		35ECEDE51E1667A000BD04AB /* AppScreenShotRuleStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = C238AA891CB253DA00A45B23 /* AppScreenShotRuleStorage.m */; };
+		35ECEDE61E1667A000BD04AB /* ASSDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C238AA8D1CB2545400A45B23 /* ASSDatabase.m */; };
+		35FF854A1E1CD9A700A664D3 /* AppStateNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF85491E1CD9A700A664D3 /* AppStateNotifier.m */; };
+		35FF863E1E1DF64300A664D3 /* AppState.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF863D1E1DF64300A664D3 /* AppState.m */; };
+		35FF86411E1DF7A400A664D3 /* ScreenTouchNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF86401E1DF7A400A664D3 /* ScreenTouchNotifier.m */; };
+		C238AA781CB2185D00A45B23 /* AppScreenShotManager-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C238AA771CB2185D00A45B23 /* AppScreenShotManager-Prefix.pch */; };
+		C238AA8A1CB253DA00A45B23 /* AppScreenShotRuleStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = C238AA881CB253DA00A45B23 /* AppScreenShotRuleStorage.h */; };
+		C238AA8B1CB253DA00A45B23 /* AppScreenShotRuleStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = C238AA891CB253DA00A45B23 /* AppScreenShotRuleStorage.m */; };
+		C238AA8E1CB2545400A45B23 /* ASSDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = C238AA8C1CB2545400A45B23 /* ASSDatabase.h */; };
+		C238AA8F1CB2545400A45B23 /* ASSDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C238AA8D1CB2545400A45B23 /* ASSDatabase.m */; };
+		C23AFBC01CAE5B4D0049A4C1 /* AppScreenShotManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = C23AFBBF1CAE5B4D0049A4C1 /* AppScreenShotManagerImpl.h */; };
+		C23AFBC21CAE5B4D0049A4C1 /* AppScreenShotManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = C23AFBC11CAE5B4D0049A4C1 /* AppScreenShotManagerImpl.m */; };
+		C23AFC0D1CAE5DB30049A4C1 /* AppScreenShot.h in Headers */ = {isa = PBXBuildFile; fileRef = C23AFC0B1CAE5DB30049A4C1 /* AppScreenShot.h */; };
+		C23AFC0E1CAE5DB30049A4C1 /* AppScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = C23AFC0C1CAE5DB30049A4C1 /* AppScreenShot.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35ECEDD91E16672A00BD04AB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				35ECEDE01E16672A00BD04AB /* MobileAppScreenShot.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		35ECEDDB1E16672A00BD04AB /* libAppScreenShotManager-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAppScreenShotManager-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35ECEDDD1E16672A00BD04AB /* MobileAppScreenShot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileAppScreenShot.h; sourceTree = "<group>"; };
+		35ECEDDE1E16672A00BD04AB /* MobileAppScreenShot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileAppScreenShot.m; sourceTree = "<group>"; };
+		35FF85481E1CD9A700A664D3 /* AppStateNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStateNotifier.h; sourceTree = "<group>"; };
+		35FF85491E1CD9A700A664D3 /* AppStateNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStateNotifier.m; sourceTree = "<group>"; };
+		35FF863C1E1DF64300A664D3 /* AppState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppState.h; sourceTree = "<group>"; };
+		35FF863D1E1DF64300A664D3 /* AppState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppState.m; sourceTree = "<group>"; };
+		35FF863F1E1DF7A400A664D3 /* ScreenTouchNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTouchNotifier.h; sourceTree = "<group>"; };
+		35FF86401E1DF7A400A664D3 /* ScreenTouchNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTouchNotifier.m; sourceTree = "<group>"; };
+		C238AA741CB213BE00A45B23 /* AppScreenShotManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppScreenShotManager.h; sourceTree = "<group>"; };
+		C238AA771CB2185D00A45B23 /* AppScreenShotManager-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppScreenShotManager-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		C238AA881CB253DA00A45B23 /* AppScreenShotRuleStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppScreenShotRuleStorage.h; sourceTree = "<group>"; };
+		C238AA891CB253DA00A45B23 /* AppScreenShotRuleStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppScreenShotRuleStorage.m; sourceTree = "<group>"; };
+		C238AA8C1CB2545400A45B23 /* ASSDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSDatabase.h; sourceTree = "<group>"; };
+		C238AA8D1CB2545400A45B23 /* ASSDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSDatabase.m; sourceTree = "<group>"; };
+		C23AFBBC1CAE5B4D0049A4C1 /* libAppScreenShotManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppScreenShotManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23AFBBF1CAE5B4D0049A4C1 /* AppScreenShotManagerImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppScreenShotManagerImpl.h; sourceTree = "<group>"; };
+		C23AFBC11CAE5B4D0049A4C1 /* AppScreenShotManagerImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppScreenShotManagerImpl.m; sourceTree = "<group>"; };
+		C23AFC0B1CAE5DB30049A4C1 /* AppScreenShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppScreenShot.h; sourceTree = "<group>"; };
+		C23AFC0C1CAE5DB30049A4C1 /* AppScreenShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppScreenShot.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35ECEDD81E16672A00BD04AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23AFBB91CAE5B4D0049A4C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35ECEDDC1E16672A00BD04AB /* AppScreenShotManager-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				35ECEDDD1E16672A00BD04AB /* MobileAppScreenShot.h */,
+				35ECEDDE1E16672A00BD04AB /* MobileAppScreenShot.m */,
+				35FF863C1E1DF64300A664D3 /* AppState.h */,
+				35FF863D1E1DF64300A664D3 /* AppState.m */,
+				35FF85481E1CD9A700A664D3 /* AppStateNotifier.h */,
+				35FF85491E1CD9A700A664D3 /* AppStateNotifier.m */,
+				35FF863F1E1DF7A400A664D3 /* ScreenTouchNotifier.h */,
+				35FF86401E1DF7A400A664D3 /* ScreenTouchNotifier.m */,
+			);
+			path = "AppScreenShotManager-iOS";
+			sourceTree = "<group>";
+		};
+		C238AA751CB2180C00A45B23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C238AA771CB2185D00A45B23 /* AppScreenShotManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C238AA871CB253AE00A45B23 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				C238AA881CB253DA00A45B23 /* AppScreenShotRuleStorage.h */,
+				C238AA891CB253DA00A45B23 /* AppScreenShotRuleStorage.m */,
+				C238AA8C1CB2545400A45B23 /* ASSDatabase.h */,
+				C238AA8D1CB2545400A45B23 /* ASSDatabase.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		C23AFBB31CAE5B4D0049A4C1 = {
+			isa = PBXGroup;
+			children = (
+				C23AFBBE1CAE5B4D0049A4C1 /* AppScreenShotManager */,
+				35ECEDDC1E16672A00BD04AB /* AppScreenShotManager-iOS */,
+				C23AFBBD1CAE5B4D0049A4C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C23AFBBD1CAE5B4D0049A4C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23AFBBC1CAE5B4D0049A4C1 /* libAppScreenShotManager.a */,
+				35ECEDDB1E16672A00BD04AB /* libAppScreenShotManager-iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23AFBBE1CAE5B4D0049A4C1 /* AppScreenShotManager */ = {
+			isa = PBXGroup;
+			children = (
+				C23AFC0F1CAE5DB80049A4C1 /* Manager */,
+				C23AFC101CAE5DC10049A4C1 /* Implement */,
+				C238AA871CB253AE00A45B23 /* Database */,
+				C238AA751CB2180C00A45B23 /* Supporting Files */,
+			);
+			path = AppScreenShotManager;
+			sourceTree = "<group>";
+		};
+		C23AFC0F1CAE5DB80049A4C1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C238AA741CB213BE00A45B23 /* AppScreenShotManager.h */,
+				C23AFBBF1CAE5B4D0049A4C1 /* AppScreenShotManagerImpl.h */,
+				C23AFBC11CAE5B4D0049A4C1 /* AppScreenShotManagerImpl.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		C23AFC101CAE5DC10049A4C1 /* Implement */ = {
+			isa = PBXGroup;
+			children = (
+				C23AFC0B1CAE5DB30049A4C1 /* AppScreenShot.h */,
+				C23AFC0C1CAE5DB30049A4C1 /* AppScreenShot.m */,
+			);
+			name = Implement;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C23AFBBA1CAE5B4D0049A4C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C238AA8A1CB253DA00A45B23 /* AppScreenShotRuleStorage.h in Headers */,
+				C238AA781CB2185D00A45B23 /* AppScreenShotManager-Prefix.pch in Headers */,
+				C23AFC0D1CAE5DB30049A4C1 /* AppScreenShot.h in Headers */,
+				C23AFBC01CAE5B4D0049A4C1 /* AppScreenShotManagerImpl.h in Headers */,
+				C238AA8E1CB2545400A45B23 /* ASSDatabase.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		35ECEDDA1E16672A00BD04AB /* AppScreenShotManager-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35ECEDE31E16672A00BD04AB /* Build configuration list for PBXNativeTarget "AppScreenShotManager-iOS" */;
+			buildPhases = (
+				35ECEDD71E16672A00BD04AB /* Sources */,
+				35ECEDD81E16672A00BD04AB /* Frameworks */,
+				35ECEDD91E16672A00BD04AB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppScreenShotManager-iOS";
+			productName = "AppScreenShotManager-iOS";
+			productReference = 35ECEDDB1E16672A00BD04AB /* libAppScreenShotManager-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C23AFBBB1CAE5B4D0049A4C1 /* AppScreenShotManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23AFBD01CAE5B4E0049A4C1 /* Build configuration list for PBXNativeTarget "AppScreenShotManager" */;
+			buildPhases = (
+				C23AFBB81CAE5B4D0049A4C1 /* Sources */,
+				C23AFBB91CAE5B4D0049A4C1 /* Frameworks */,
+				C23AFBBA1CAE5B4D0049A4C1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppScreenShotManager;
+			productName = AppScreenShotManager;
+			productReference = C23AFBBC1CAE5B4D0049A4C1 /* libAppScreenShotManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C23AFBB41CAE5B4D0049A4C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					35ECEDDA1E16672A00BD04AB = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					C23AFBBB1CAE5B4D0049A4C1 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C23AFBB71CAE5B4D0049A4C1 /* Build configuration list for PBXProject "AppScreenShotManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C23AFBB31CAE5B4D0049A4C1;
+			productRefGroup = C23AFBBD1CAE5B4D0049A4C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C23AFBBB1CAE5B4D0049A4C1 /* AppScreenShotManager */,
+				35ECEDDA1E16672A00BD04AB /* AppScreenShotManager-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35ECEDD71E16672A00BD04AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35ECEDE41E1667A000BD04AB /* AppScreenShotManagerImpl.m in Sources */,
+				35FF863E1E1DF64300A664D3 /* AppState.m in Sources */,
+				35FF86411E1DF7A400A664D3 /* ScreenTouchNotifier.m in Sources */,
+				35ECEDE51E1667A000BD04AB /* AppScreenShotRuleStorage.m in Sources */,
+				35FF854A1E1CD9A700A664D3 /* AppStateNotifier.m in Sources */,
+				35ECEDE61E1667A000BD04AB /* ASSDatabase.m in Sources */,
+				35ECEDDF1E16672A00BD04AB /* MobileAppScreenShot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23AFBB81CAE5B4D0049A4C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C238AA8F1CB2545400A45B23 /* ASSDatabase.m in Sources */,
+				C23AFBC21CAE5B4D0049A4C1 /* AppScreenShotManagerImpl.m in Sources */,
+				C238AA8B1CB253DA00A45B23 /* AppScreenShotRuleStorage.m in Sources */,
+				C23AFC0E1CAE5DB30049A4C1 /* AppScreenShot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		35ECEDE11E16672A00BD04AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "AppScreenShotManager-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents/** ../../EventCenter/Source-EventCenter/** ../../Std/FxStd/** ../../SystemUtils/Source-SystemUtils/** ../../Preferences/Source-Preferences/** ../../DataDeliveryManager/DDM/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../FMDB/FMDB_2.4/src/** ../../OTC/Headers/iOS8/IOKit/** ../../OTC/Headers/iOS9/PersistentConnection ../../OTC/Headers/iOS10/MobileCoreServices ../../IPC/Source-IPC";
+			};
+			name = Debug;
+		};
+		35ECEDE21E16672A00BD04AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "AppScreenShotManager-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents/** ../../EventCenter/Source-EventCenter/** ../../Std/FxStd/** ../../SystemUtils/Source-SystemUtils/** ../../Preferences/Source-Preferences/** ../../DataDeliveryManager/DDM/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../FMDB/FMDB_2.4/src/** ../../OTC/Headers/iOS8/IOKit/** ../../OTC/Headers/iOS9/PersistentConnection ../../OTC/Headers/iOS10/MobileCoreServices ../../IPC/Source-IPC";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C23AFBCE1CAE5B4E0049A4C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C23AFBCF1CAE5B4E0049A4C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C23AFBD11CAE5B4E0049A4C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "AppScreenShotManager-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents/** ../../EventCenter/Source-EventCenter/** ../../Std/FxStd/** ../../SystemUtils/Source-SystemUtils/** ../../Preferences/Source-Preferences/** ../../DataDeliveryManager/DDM/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../FMDB/FMDB_2.4/src/** ../../PageVisitedCaptureManager/Source-PageVisitedCaptureManager/**";
+			};
+			name = Debug;
+		};
+		C23AFBD21CAE5B4E0049A4C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "AppScreenShotManager-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents/** ../../EventCenter/Source-EventCenter/** ../../Std/FxStd/** ../../SystemUtils/Source-SystemUtils/** ../../Preferences/Source-Preferences/** ../../DataDeliveryManager/DDM/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../FMDB/FMDB_2.4/src/** ../../PageVisitedCaptureManager/Source-PageVisitedCaptureManager/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35ECEDE31E16672A00BD04AB /* Build configuration list for PBXNativeTarget "AppScreenShotManager-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35ECEDE11E16672A00BD04AB /* Debug */,
+				35ECEDE21E16672A00BD04AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23AFBB71CAE5B4D0049A4C1 /* Build configuration list for PBXProject "AppScreenShotManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23AFBCE1CAE5B4E0049A4C1 /* Debug */,
+				C23AFBCF1CAE5B4E0049A4C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23AFBD01CAE5B4E0049A4C1 /* Build configuration list for PBXNativeTarget "AppScreenShotManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23AFBD11CAE5B4E0049A4C1 /* Debug */,
+				C23AFBD21CAE5B4E0049A4C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C23AFBB41CAE5B4D0049A4C1 /* Project object */;
+}

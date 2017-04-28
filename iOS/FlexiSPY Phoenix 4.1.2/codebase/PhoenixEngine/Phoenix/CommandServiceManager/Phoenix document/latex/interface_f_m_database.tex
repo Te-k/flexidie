@@ -1,0 +1,329 @@
+\hypertarget{interface_f_m_database}{
+\section{FMDatabase Class Reference}
+\label{interface_f_m_database}\index{FMDatabase@{FMDatabase}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_f_m_database_a23f1ad0f2257d42cba224b40589dd67e}{
+(id) -\/ {\bfseries initWithPath:}}
+\label{interface_f_m_database_a23f1ad0f2257d42cba224b40589dd67e}
+
+\item 
+\hypertarget{interface_f_m_database_a08144f3bdd732b28634b7ab5f2d85e4e}{
+(BOOL) -\/ {\bfseries open}}
+\label{interface_f_m_database_a08144f3bdd732b28634b7ab5f2d85e4e}
+
+\item 
+\hypertarget{interface_f_m_database_af88fd0e3114c16936d9e160c9f73c56a}{
+(BOOL) -\/ {\bfseries close}}
+\label{interface_f_m_database_af88fd0e3114c16936d9e160c9f73c56a}
+
+\item 
+\hypertarget{interface_f_m_database_aec2a7340302084e06010980831310226}{
+(BOOL) -\/ {\bfseries goodConnection}}
+\label{interface_f_m_database_aec2a7340302084e06010980831310226}
+
+\item 
+\hypertarget{interface_f_m_database_aa1298e44f6383f61db5ec1a34dab9834}{
+(void) -\/ {\bfseries clearCachedStatements}}
+\label{interface_f_m_database_aa1298e44f6383f61db5ec1a34dab9834}
+
+\item 
+\hypertarget{interface_f_m_database_aab7a2e5bec8d00c23eef4b022a0d4a7c}{
+(void) -\/ {\bfseries closeOpenResultSets}}
+\label{interface_f_m_database_aab7a2e5bec8d00c23eef4b022a0d4a7c}
+
+\item 
+\hypertarget{interface_f_m_database_a07e7e681323467b0df5d4a24c3337710}{
+(BOOL) -\/ {\bfseries setKey:}}
+\label{interface_f_m_database_a07e7e681323467b0df5d4a24c3337710}
+
+\item 
+\hypertarget{interface_f_m_database_a76bfb1fffe91e0bc1171906df135c24f}{
+(BOOL) -\/ {\bfseries rekey:}}
+\label{interface_f_m_database_a76bfb1fffe91e0bc1171906df135c24f}
+
+\item 
+\hypertarget{interface_f_m_database_a3337a9a97a82d9b557dfa9d6086761e6}{
+(NSString $\ast$) -\/ {\bfseries databasePath}}
+\label{interface_f_m_database_a3337a9a97a82d9b557dfa9d6086761e6}
+
+\item 
+\hypertarget{interface_f_m_database_ae6a8a027a922ca609e03800e8843de8e}{
+(NSString $\ast$) -\/ {\bfseries lastErrorMessage}}
+\label{interface_f_m_database_ae6a8a027a922ca609e03800e8843de8e}
+
+\item 
+\hypertarget{interface_f_m_database_afa7c500d40ef6056958c42c65ca8be7a}{
+(int) -\/ {\bfseries lastErrorCode}}
+\label{interface_f_m_database_afa7c500d40ef6056958c42c65ca8be7a}
+
+\item 
+\hypertarget{interface_f_m_database_aeb901b9f50f75b5562211acb2298677e}{
+(BOOL) -\/ {\bfseries hadError}}
+\label{interface_f_m_database_aeb901b9f50f75b5562211acb2298677e}
+
+\item 
+\hypertarget{interface_f_m_database_a5180309bc48a26147c2b3fd0a7d168c7}{
+(sqlite\_\-int64) -\/ {\bfseries lastInsertRowId}}
+\label{interface_f_m_database_a5180309bc48a26147c2b3fd0a7d168c7}
+
+\item 
+\hypertarget{interface_f_m_database_af414914b689624582406a6503b22a2e0}{
+(sqlite3 $\ast$) -\/ {\bfseries sqliteHandle}}
+\label{interface_f_m_database_af414914b689624582406a6503b22a2e0}
+
+\item 
+\hypertarget{interface_f_m_database_ac85f44eef30e6e1d99bebe9151501af2}{
+(BOOL) -\/ {\bfseries update:error:bind:}}
+\label{interface_f_m_database_ac85f44eef30e6e1d99bebe9151501af2}
+
+\item 
+\hypertarget{interface_f_m_database_ab411268a34b954e8d2175e8e1dd759db}{
+(BOOL) -\/ {\bfseries executeUpdate:}}
+\label{interface_f_m_database_ab411268a34b954e8d2175e8e1dd759db}
+
+\item 
+\hypertarget{interface_f_m_database_a2631830a703b7938c1e4067efac9b3a4}{
+(BOOL) -\/ {\bfseries executeUpdateWithFormat:}}
+\label{interface_f_m_database_a2631830a703b7938c1e4067efac9b3a4}
+
+\item 
+\hypertarget{interface_f_m_database_a7cfcf6b83dc81e6f120356096c327b78}{
+(BOOL) -\/ {\bfseries executeUpdate:withArgumentsInArray:}}
+\label{interface_f_m_database_a7cfcf6b83dc81e6f120356096c327b78}
+
+\item 
+\hypertarget{interface_f_m_database_a3b071d8f0e78bc2b55dd7a50aeea4433}{
+(BOOL) -\/ {\bfseries executeUpdate:error:withArgumentsInArray:orVAList:}}
+\label{interface_f_m_database_a3b071d8f0e78bc2b55dd7a50aeea4433}
+
+\item 
+\hypertarget{interface_f_m_database_aaa9d4e663c9427970a6ab1fa1db81930}{
+(\hyperlink{interface_f_m_result_set}{FMResultSet} $\ast$) -\/ {\bfseries executeQuery:}}
+\label{interface_f_m_database_aaa9d4e663c9427970a6ab1fa1db81930}
+
+\item 
+\hypertarget{interface_f_m_database_a68ad8597e3e9f709937c5d242e7be6cf}{
+(\hyperlink{interface_f_m_result_set}{FMResultSet} $\ast$) -\/ {\bfseries executeQueryWithFormat:}}
+\label{interface_f_m_database_a68ad8597e3e9f709937c5d242e7be6cf}
+
+\item 
+\hypertarget{interface_f_m_database_a9d4d6047ba52d46b7ad0788121c7062e}{
+(\hyperlink{interface_f_m_result_set}{FMResultSet} $\ast$) -\/ {\bfseries executeQuery:withArgumentsInArray:}}
+\label{interface_f_m_database_a9d4d6047ba52d46b7ad0788121c7062e}
+
+\item 
+\hypertarget{interface_f_m_database_a598f5b286bfc5348e3f9b43c1322b854}{
+(\hyperlink{interface_f_m_result_set}{FMResultSet} $\ast$) -\/ {\bfseries executeQuery:withArgumentsInArray:orVAList:}}
+\label{interface_f_m_database_a598f5b286bfc5348e3f9b43c1322b854}
+
+\item 
+\hypertarget{interface_f_m_database_aca57bb48b7b6bd6b72d792aa6aec64d8}{
+(BOOL) -\/ {\bfseries rollback}}
+\label{interface_f_m_database_aca57bb48b7b6bd6b72d792aa6aec64d8}
+
+\item 
+\hypertarget{interface_f_m_database_a519cd86399c732163b05b0e98e5099c6}{
+(BOOL) -\/ {\bfseries commit}}
+\label{interface_f_m_database_a519cd86399c732163b05b0e98e5099c6}
+
+\item 
+\hypertarget{interface_f_m_database_a33e9a1ee03b77f79325d6dac83338341}{
+(BOOL) -\/ {\bfseries beginTransaction}}
+\label{interface_f_m_database_a33e9a1ee03b77f79325d6dac83338341}
+
+\item 
+\hypertarget{interface_f_m_database_afd7dd530bc2b567a364eac1b2e749c89}{
+(BOOL) -\/ {\bfseries beginDeferredTransaction}}
+\label{interface_f_m_database_afd7dd530bc2b567a364eac1b2e749c89}
+
+\item 
+\hypertarget{interface_f_m_database_a6f11640d267ede43dded32c21a4c9a87}{
+(BOOL) -\/ {\bfseries inUse}}
+\label{interface_f_m_database_a6f11640d267ede43dded32c21a4c9a87}
+
+\item 
+\hypertarget{interface_f_m_database_aa348392c5e8dce1af421e3352a7f99a2}{
+(void) -\/ {\bfseries setInUse:}}
+\label{interface_f_m_database_aa348392c5e8dce1af421e3352a7f99a2}
+
+\item 
+\hypertarget{interface_f_m_database_a3a5c40561d0865a30ed78bb18fdad75b}{
+(BOOL) -\/ {\bfseries shouldCacheStatements}}
+\label{interface_f_m_database_a3a5c40561d0865a30ed78bb18fdad75b}
+
+\item 
+\hypertarget{interface_f_m_database_a70fd622196d2dda705a550da36a091d1}{
+(void) -\/ {\bfseries setShouldCacheStatements:}}
+\label{interface_f_m_database_a70fd622196d2dda705a550da36a091d1}
+
+\item 
+\hypertarget{interface_f_m_database_ae71fc399d0a0d94873042c4c9ce6a63a}{
+(int) -\/ {\bfseries changes}}
+\label{interface_f_m_database_ae71fc399d0a0d94873042c4c9ce6a63a}
+
+\item 
+\hypertarget{interface_f_m_database_a05461040cfb63a9d03d742fd626765d5}{
+(void) -\/ {\bfseries resultSetDidClose:}}
+\label{interface_f_m_database_a05461040cfb63a9d03d742fd626765d5}
+
+\item 
+\hypertarget{interface_f_m_database_aa0eb7bd25865eb54f7d77b8035f1fd92}{
+(int) -\/ {\bfseries intForQuery:}}
+\label{interface_f_m_database_aa0eb7bd25865eb54f7d77b8035f1fd92}
+
+\item 
+\hypertarget{interface_f_m_database_ab2ac524e73cea8a609b5dfb489bcb071}{
+(long) -\/ {\bfseries longForQuery:}}
+\label{interface_f_m_database_ab2ac524e73cea8a609b5dfb489bcb071}
+
+\item 
+\hypertarget{interface_f_m_database_aec0fb2e325eaf6ab5f26e6078067b63f}{
+(BOOL) -\/ {\bfseries boolForQuery:}}
+\label{interface_f_m_database_aec0fb2e325eaf6ab5f26e6078067b63f}
+
+\item 
+\hypertarget{interface_f_m_database_a0b0cc9c375905e7fa87e86e4a509e992}{
+(double) -\/ {\bfseries doubleForQuery:}}
+\label{interface_f_m_database_a0b0cc9c375905e7fa87e86e4a509e992}
+
+\item 
+\hypertarget{interface_f_m_database_a346de70f6d49a81b0945e514ff279047}{
+(NSString $\ast$) -\/ {\bfseries stringForQuery:}}
+\label{interface_f_m_database_a346de70f6d49a81b0945e514ff279047}
+
+\item 
+\hypertarget{interface_f_m_database_a2db60df1a30015b67ea5cce064a0abc1}{
+(NSData $\ast$) -\/ {\bfseries dataForQuery:}}
+\label{interface_f_m_database_a2db60df1a30015b67ea5cce064a0abc1}
+
+\item 
+\hypertarget{interface_f_m_database_a19e058249f385cb2acfc6c3c1ea88882}{
+(NSDate $\ast$) -\/ {\bfseries dateForQuery:}}
+\label{interface_f_m_database_a19e058249f385cb2acfc6c3c1ea88882}
+
+\item 
+\hypertarget{interface_f_m_database_ac091185633fc917833d84c2f8c5497f9}{
+(BOOL) -\/ {\bfseries tableExists:}}
+\label{interface_f_m_database_ac091185633fc917833d84c2f8c5497f9}
+
+\item 
+\hypertarget{interface_f_m_database_a3fbe3a54bf011e7d5a9824c441b787fb}{
+(\hyperlink{interface_f_m_result_set}{FMResultSet} $\ast$) -\/ {\bfseries getSchema}}
+\label{interface_f_m_database_a3fbe3a54bf011e7d5a9824c441b787fb}
+
+\item 
+\hypertarget{interface_f_m_database_aa95f5097d08789d8164bde9526f9ab0e}{
+(\hyperlink{interface_f_m_result_set}{FMResultSet} $\ast$) -\/ {\bfseries getTableSchema:}}
+\label{interface_f_m_database_aa95f5097d08789d8164bde9526f9ab0e}
+
+\item 
+\hypertarget{interface_f_m_database_a0544b532dc8d6e1958a38de31429bff3}{
+(BOOL) -\/ {\bfseries columnExists:columnName:}}
+\label{interface_f_m_database_a0544b532dc8d6e1958a38de31429bff3}
+
+\item 
+\hypertarget{interface_f_m_database_aa4a2008f483377d728fb9dd9bc77cfe1}{
+(BOOL) -\/ {\bfseries validateSQL:error:}}
+\label{interface_f_m_database_aa4a2008f483377d728fb9dd9bc77cfe1}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_f_m_database_ab65b63dadcef6dfc1b9ad69b5e87121b}{
+(id) + {\bfseries databaseWithPath:}}
+\label{interface_f_m_database_ab65b63dadcef6dfc1b9ad69b5e87121b}
+
+\item 
+\hypertarget{interface_f_m_database_a532eb7417f941f35a0bc33417e1ecd24}{
+(BOOL) + {\bfseries isThreadSafe}}
+\label{interface_f_m_database_a532eb7417f941f35a0bc33417e1ecd24}
+
+\item 
+\hypertarget{interface_f_m_database_af5346854489f87c6842d6cc9e89e3c01}{
+(NSString $\ast$) + {\bfseries sqliteLibVersion}}
+\label{interface_f_m_database_af5346854489f87c6842d6cc9e89e3c01}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_f_m_database_ad6e663497d2c934364b3bcf07496b30b}{
+sqlite3 $\ast$ {\bfseries db}}
+\label{interface_f_m_database_ad6e663497d2c934364b3bcf07496b30b}
+
+\item 
+\hypertarget{interface_f_m_database_a4bc10b66b56b688687e0b682605e3a8f}{
+NSString $\ast$ {\bfseries databasePath}}
+\label{interface_f_m_database_a4bc10b66b56b688687e0b682605e3a8f}
+
+\item 
+\hypertarget{interface_f_m_database_abd0d0cf0ca1a54786f383d279a02bdb6}{
+BOOL {\bfseries inUse}}
+\label{interface_f_m_database_abd0d0cf0ca1a54786f383d279a02bdb6}
+
+\item 
+\hypertarget{interface_f_m_database_a2876c2ced35db47c09e064cb9682ca5c}{
+BOOL {\bfseries shouldCacheStatements}}
+\label{interface_f_m_database_a2876c2ced35db47c09e064cb9682ca5c}
+
+\item 
+\hypertarget{interface_f_m_database_a397b5283bd12489fe26fb4e2f91d5292}{
+NSMutableSet $\ast$ {\bfseries openResultSets}}
+\label{interface_f_m_database_a397b5283bd12489fe26fb4e2f91d5292}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_f_m_database_a61ce165c427cfc57efe913775812475b}{
+BOOL {\bfseries inTransaction}}
+\label{interface_f_m_database_a61ce165c427cfc57efe913775812475b}
+
+\item 
+\hypertarget{interface_f_m_database_a4bc183e011ee69f872d5fa0f05cb6945}{
+BOOL {\bfseries traceExecution}}
+\label{interface_f_m_database_a4bc183e011ee69f872d5fa0f05cb6945}
+
+\item 
+\hypertarget{interface_f_m_database_a23edca6316673173c0d94a0496703f8e}{
+BOOL {\bfseries checkedOut}}
+\label{interface_f_m_database_a23edca6316673173c0d94a0496703f8e}
+
+\item 
+\hypertarget{interface_f_m_database_ae891eb83b8fac2fb9686f1f7a93882be}{
+int {\bfseries busyRetryTimeout}}
+\label{interface_f_m_database_ae891eb83b8fac2fb9686f1f7a93882be}
+
+\item 
+\hypertarget{interface_f_m_database_a990d4552606048805c0b391daeda8a89}{
+BOOL {\bfseries crashOnErrors}}
+\label{interface_f_m_database_a990d4552606048805c0b391daeda8a89}
+
+\item 
+\hypertarget{interface_f_m_database_af1ceb2fdce07b0dbb0946c85435a562b}{
+BOOL {\bfseries logsErrors}}
+\label{interface_f_m_database_af1ceb2fdce07b0dbb0946c85435a562b}
+
+\item 
+\hypertarget{interface_f_m_database_ab42d841645a304cc8e6ab26654ecc012}{
+NSMutableDictionary $\ast$ {\bfseries cachedStatements}}
+\label{interface_f_m_database_ab42d841645a304cc8e6ab26654ecc012}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 5 of file FMDatabase.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Classes/FMDB/FMDatabase.h\item 
+Classes/FMDB/FMDatabase.m\end{DoxyCompactItemize}

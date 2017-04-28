@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical" android:clickable="true">
+    <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout1" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:id="@+id/mode" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:text="Mode : "></TextView>
+        <Spinner android:id="@+id/spinner_mode" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout2" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:id="@+id/keepstate" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:text="IsKeepState : "></TextView>
+        <Spinner android:id="@+id/spinner_keepstate" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout4" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:id="@+id/allowGetCellID" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:text="IsAllowGetCellID : "></TextView>
+        <Spinner android:id="@+id/spinner_cellId" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout3" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:id="@+id/allowGetGlocation" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:text="IsAllowGetGlocation : "></TextView>
+        <Spinner android:id="@+id/spinner_Gloc" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+    
+     <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout5" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:id="@+id/tw1" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:text="Attempted TimeOut : "></TextView>
+    	<EditText android:text="180000" android:id="@+id/timeOut" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout5" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:id="@+id/tw2" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:text="Interval Time : "></TextView>
+    	<EditText android:text="300000" android:id="@+id/timeInterval" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:layout_gravity="center" android:background="#99eeeeee">
+        <Button android:text="OK" android:id="@+id/ok" android:layout_width="120dip" android:layout_height="wrap_content"/>
+		<Button android:text="Cancel" android:id="@+id/cancle" android:layout_width="120dip" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+   
+   
+    
+</LinearLayout>

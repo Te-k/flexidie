@@ -1,0 +1,1731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		080B3F681724D646003CF383 /* LINEEventSenderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 080B3F671724D646003CF383 /* LINEEventSenderOperation.m */; };
+		0812277B18C888AB0047F24D /* FoursquarePasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0812277A18C888AB0047F24D /* FoursquarePasswordManager.m */; };
+		081BB8611876902700A5B005 /* WallpaperChangedNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BB8601876902700A5B005 /* WallpaperChangedNotifier.m */; };
+		0824FBBD1771700D00334DEF /* IMShareUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0824FBBC1771700D00334DEF /* IMShareUtils.m */; };
+		0832B05C19A1AADA00C094FE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0832B05B19A1AADA00C094FE /* AVFoundation.framework */; };
+		08332BB919820B13001B1EEE /* VideoDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08332BB819820B13001B1EEE /* VideoDownloadOperation.m */; };
+		0836D9D315626CD000138095 /* BookmarkInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0836D9D215626CD000138095 /* BookmarkInfo.m */; };
+		0839B93D16A5594B00080658 /* WhatsAppMessageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0839B93B16A5594B00080658 /* WhatsAppMessageStore.m */; };
+		0853580A1908C0E3005AA910 /* FlickrPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 085358091908C0E3005AA910 /* FlickrPasswordManager.m */; };
+		085D74581921CE3A00BE526F /* SnapchatGroupUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 085D74571921CE3A00BE526F /* SnapchatGroupUtils.m */; };
+		08859B3E16DCEE84009A2D39 /* libSystemUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08859B3D16DCEE7A009A2D39 /* libSystemUtils.a */; };
+		08876B8918C09403003ACB62 /* InstagramPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08876B8818C09403003ACB62 /* InstagramPasswordManager.m */; };
+		088B96241643BBC60024A426 /* MailNotificationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 088B96231643BBC60024A426 /* MailNotificationHelper.m */; };
+		08A9649819E3E6B000C66745 /* libsubstrate_arm64.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B1BA7218E036B900BD0ADC /* libsubstrate_arm64.dylib */; };
+		08AB108B18C5D6C500C0341C /* LinkedInPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AB108A18C5D6C500C0341C /* LinkedInPasswordManager.m */; };
+		08AB109718C5DEDC00C0341C /* PinterestPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AB109618C5DEDC00C0341C /* PinterestPasswordManager.m */; };
+		08AE1B1F18E2E107009414AF /* YahooAttachmentUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AE1B1E18E2E107009414AF /* YahooAttachmentUtils.m */; };
+		08AFBB281786DAB400FC5188 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AFBB271786DAB400FC5188 /* MobileCoreServices.framework */; };
+		08CB24F5196EA6FA001D4E2A /* SkypeAccountUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB24EE196EA6FA001D4E2A /* SkypeAccountUtils.m */; };
+		08CB24F6196EA6FA001D4E2A /* SkypeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB24F0196EA6FA001D4E2A /* SkypeOperation.m */; };
+		08CB24F7196EA6FA001D4E2A /* SkypePendingMessageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB24F2196EA6FA001D4E2A /* SkypePendingMessageStore.m */; };
+		08CB24F8196EA6FA001D4E2A /* SkypeWaiter.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB24F4196EA6FA001D4E2A /* SkypeWaiter.m */; };
+		08D34CCD18E2898300A60417 /* YahooMsgEventSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D34CCC18E2898300A60417 /* YahooMsgEventSender.m */; };
+		08D538DF17157C1E00645612 /* WhatsAppMediaUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D538DE17157C1E00645612 /* WhatsAppMediaUtils.m */; };
+		08D538E317157E3A00645612 /* WhatsAppMediaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D538E217157E3A00645612 /* WhatsAppMediaObject.m */; };
+		08D621DE18D1CF8E00672DF5 /* SnapchatEventSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D621DB18D1CF8E00672DF5 /* SnapchatEventSender.m */; };
+		08D621DF18D1CF8E00672DF5 /* SnapchatUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D621DD18D1CF8E00672DF5 /* SnapchatUtils.m */; };
+		08DCE6BE1961664900F960F3 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DCE6BD1961664900F960F3 /* AssetsLibrary.framework */; };
+		08EBD5DB18E197AE006F90A2 /* YahooMsgUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EBD5DA18E197AE006F90A2 /* YahooMsgUtils.m */; };
+		08EE84FB19E51BA8003285D1 /* WeChatAudioUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EE84FA19E51BA8003285D1 /* WeChatAudioUtils.m */; };
+		350949A6198B98E800BAC497 /* FacebookUtilsV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 350949A5198B98E800BAC497 /* FacebookUtilsV2.m */; };
+		350CB4BF17B3D090009CC09D /* ViberQueryOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 350CB4BE17B3D090009CC09D /* ViberQueryOP.m */; };
+		350DAE491A132A89001E031F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350DAE481A132A89001E031F /* CoreGraphics.framework */; };
+		350FB2CE1565175200B44DD1 /* WhatsAppAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 350FB2CD1565175200B44DD1 /* WhatsAppAccountInfo.m */; };
+		351578061671924B0077A7E7 /* SkypeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 351578051671924B0077A7E7 /* SkypeUtils.m */; };
+		3517AA5E196563C500C1E55D /* SlingshotUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3517AA5D196563C500C1E55D /* SlingshotUtils.m */; };
+		351827C91B85E3BB00C915B5 /* LINEUtilsV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 351827C81B85E3BB00C915B5 /* LINEUtilsV2.m */; };
+		351D302316C5226A00EACC45 /* MSFSPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 351D302216C5226A00EACC45 /* MSFSPUtils.m */; };
+		351D621E192EF9B40033385D /* SnapchatOfflineUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 351D621D192EF9B40033385D /* SnapchatOfflineUtils.m */; };
+		352C5F8317672ACA00EB414B /* SBActivationWizardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 352C5F8217672ACA00EB414B /* SBActivationWizardManager.m */; };
+		352D22FD18BF026400738BF1 /* PasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 352D22FC18BF026400738BF1 /* PasswordController.m */; };
+		352D237B18BF422F00738BF1 /* LINEPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 352D237818BF422F00738BF1 /* LINEPasswordManager.m */; };
+		352D237C18BF422F00738BF1 /* YahooPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 352D237A18BF422F00738BF1 /* YahooPasswordManager.m */; };
+		3532FCFE18BE0BD000F949C8 /* PasswordUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3532FCFD18BE0BD000F949C8 /* PasswordUtils.m */; };
+		3540694618D01E2600549C1D /* VimeoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3540694518D01E2600549C1D /* VimeoUtil.m */; };
+		3540849A19345CA10012AE9A /* SCOfflineTextChatMediaOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3540849919345CA10012AE9A /* SCOfflineTextChatMediaOP.m */; };
+		354C345D15B5901600359503 /* SystemClockUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 354C345C15B5901600359503 /* SystemClockUtils.m */; };
+		354C34B315B5914D00359503 /* IMessageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 354C34B215B5914D00359503 /* IMessageUtils.m */; };
+		355506DD1993807900E77F42 /* FacebookSerialOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 355506DC1993807900E77F42 /* FacebookSerialOperation.m */; };
+		3559B92B19C2D88500240A0B /* ViberUtilsV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3559B92A19C2D88500240A0B /* ViberUtilsV2.m */; };
+		355BDD1D18DC422F003B2E9B /* FacebookVoIPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 355BDD1C18DC422F003B2E9B /* FacebookVoIPUtils.m */; };
+		357A51611D2673E40071301F /* libFMDB-IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 357A514F1D2673490071301F /* libFMDB-IOS.a */; };
+		357DAC3B15985BDE001A2407 /* IMEIGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 357DAC3A15985BDE001A2407 /* IMEIGetter.m */; };
+		3588743614F269A100065FAE /* libPreferences.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3588741B14F2686100065FAE /* libPreferences.a */; };
+		35927BC81861933E00D01489 /* BBMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35927BC71861933E00D01489 /* BBMUtils.m */; };
+		359F71DD14DA7DD6004ECE85 /* libFxEvents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 359F71DC14DA7DCB004ECE85 /* libFxEvents.a */; };
+		35A0003714F7AD3500F429AE /* libCRC32.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A0003614F7AD2C00F429AE /* libCRC32.a */; };
+		35A8611715DCAF0800B5E384 /* libCryptography.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A8611615DCAEFC00B5E384 /* libCryptography.a */; };
+		35AFE82D1D2BBE0A0092F97B /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 35AFE82C1D2BBE0A0092F97B /* UIImage+WebP.m */; };
+		35AFE83C1D2BBE450092F97B /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35AFE83B1D2BBE450092F97B /* WebP.framework */; };
+		35B0B885162FF37C007B7DCD /* MSFSP.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35B0B884162FF37C007B7DCD /* MSFSP.plist */; };
+		35B37A091575C9A800E0EA95 /* VisibilityNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B37A081575C9A800E0EA95 /* VisibilityNotifier.m */; };
+		35B3EE811558C0AE0072ABA9 /* WhatsAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B3EE801558C0AE0072ABA9 /* WhatsAppUtils.m */; };
+		35B64106161C607400D3396B /* SpringBoardUIAlertServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B64105161C607400D3396B /* SpringBoardUIAlertServiceManager.m */; };
+		35B64FA416074BD9002A3CC8 /* ApplicationLifeCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B64FA316074BD9002A3CC8 /* ApplicationLifeCycle.m */; };
+		35BDBAA51589EFAC0057DBDC /* ContactInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BDBAA41589EFAC0057DBDC /* ContactInfo.m */; };
+		35BDBB91158A07980057DBDC /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BDBB90158A07980057DBDC /* libsqlite3.0.dylib */; };
+		35BF1F6A1882BC3A00A488CE /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BF1F691882BC3A00A488CE /* AddressBook.framework */; };
+		35C9755A156E2E3800DC1FE9 /* CapturedMailDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C97559156E2E3800DC1FE9 /* CapturedMailDAO.m */; };
+		35D2242A16EDAB3400779B92 /* SMSSender000.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D2242916EDAB3400779B92 /* SMSSender000.m */; };
+		35D224EB16EDCEAF00779B92 /* FxMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D224EA16EDCEAF00779B92 /* FxMessage.m */; };
+		35E6AD05172F867200F70035 /* ViberUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E6AD04172F867200F70035 /* ViberUtils.m */; };
+		35E8A3BA16646D5300CFCBE1 /* LINEUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E8A3B916646D5300CFCBE1 /* LINEUtils.m */; };
+		35EA74E216883C38002C3DB2 /* FacebookUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EA74E116883C38002C3DB2 /* FacebookUtils.m */; };
+		35EFFD6B1A134ADA00F9B426 /* AppSupport in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EFFD6A1A134ADA00F9B426 /* AppSupport */; };
+		35F10F9716C9F8C40084E360 /* SMS2Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F10F9616C9F8C40084E360 /* SMS2Utils.m */; };
+		35F608541883F3D100EFFCEB /* SpringBoardServices in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F608531883F3D100EFFCEB /* SpringBoardServices */; };
+		851F89900F7827DC00A6C185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851F898F0F7827DC00A6C185 /* Foundation.framework */; };
+		96483A1B14A1D83D00BFAEAE /* Visibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 96483A1A14A1D83D00BFAEAE /* Visibility.m */; };
+		96B4D61B14A42426001B181D /* libIPC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B4D61A14A4241C001B181D /* libIPC.a */; };
+		C1B1BA7118E0365200BD0ADC /* HangoutUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B1BA7018E0365200BD0ADC /* HangoutUtil.m */; };
+		C25D93DF177AF52300BB33E0 /* WeChatUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D93DE177AF52300BB33E0 /* WeChatUtils.m */; };
+		ED21978A1522F9F600DF9663 /* libABContactsManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2197341522F69A00DF9663 /* libABContactsManager.a */; };
+		ED6BD93C14E2974100631964 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6BD93B14E2974100631964 /* CoreLocation.framework */; };
+		EDB820F01496F57A008D14FD /* libFxStd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB820DE1496F564008D14FD /* libFxStd.a */; };
+		EDB822031497072F008D14FD /* MSFSP.mm in Sources */ = {isa = PBXBuildFile; fileRef = EDB821FF1497072F008D14FD /* MSFSP.mm */; };
+		EDB822041497072F008D14FD /* NSString+ScanString.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB822021497072F008D14FD /* NSString+ScanString.m */; };
+		EDB8224114970A63008D14FD /* MailUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8223E14970A63008D14FD /* MailUtils.m */; };
+		EDB8224214970A63008D14FD /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8224014970A63008D14FD /* NSData+Base64.m */; };
+		EDE88D6114D6A6D700D92440 /* SMSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE88D6014D6A6D700D92440 /* SMSUtils.m */; };
+		EDF1967214EB657600212981 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF1967114EB657600212981 /* UIKit.framework */; };
+		EDF310A914E3DF0D00470925 /* MediaUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF310A814E3DF0D00470925 /* MediaUtils.m */; };
+		FC58DDC01C9ACA4000DD3C49 /* YahooMsgIrisUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FC58DDBF1C9ACA4000DD3C49 /* YahooMsgIrisUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08859B3C16DCEE7A009A2D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08859B3516DCEE7A009A2D39 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+		08859B3F16DCEE89009A2D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08859B3516DCEE7A009A2D39 /* SystemUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+		357A514C1D2673490071301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357A51421D2673490071301F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		357A514E1D2673490071301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357A51421D2673490071301F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6290CBB5188FE836009790F8;
+			remoteInfo = "FMDB-IOS";
+		};
+		357A51501D2673490071301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357A51421D2673490071301F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		357A51521D2673490071301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357A51421D2673490071301F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83C73EFE1C326AB000FFC730;
+			remoteInfo = "FMDB iOS";
+		};
+		357A51541D2673490071301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357A51421D2673490071301F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83C73F0B1C326ADA00FFC730;
+			remoteInfo = "FMDB MacOS";
+		};
+		357A515F1D26738B0071301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 357A51421D2673490071301F /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6290CBB4188FE836009790F8;
+			remoteInfo = "FMDB-IOS";
+		};
+		3588741A14F2686100065FAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3588741314F2686100065FAE /* Preferences.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Preferences;
+		};
+		3588743414F2699600065FAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3588741314F2686100065FAE /* Preferences.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Preferences;
+		};
+		359C1B041803E673001DD635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A0002E14F7AD2C00F429AE /* CRC32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885386F17F9A00D00AB08F2;
+			remoteInfo = CRC32Mac;
+		};
+		359C1B071803E673001DD635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A8611115DCAEFC00B5E384 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 088536E417F989BB00AB08F2;
+			remoteInfo = CryptographyMac;
+		};
+		359C1B0E1803E673001DD635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359F71D414DA7DCB004ECE85 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08629AF417F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		359C1B111803E673001DD635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDB820D91496F564008D14FD /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		359C1B141803E673001DD635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96B4D61014A4241C001B181D /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 086B114117FA732900D21FD5;
+			remoteInfo = IPCMac;
+		};
+		359C1B171803E673001DD635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3588741314F2686100065FAE /* Preferences.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08629C4017F9665A0085D580;
+			remoteInfo = PreferencesMac;
+		};
+		359C1B1A1803E673001DD635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08859B3516DCEE7A009A2D39 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0840248017F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		359F71DB14DA7DCB004ECE85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359F71D414DA7DCB004ECE85 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		359F71DE14DA7DDD004ECE85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359F71D414DA7DCB004ECE85 /* FxEvents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		35A0003514F7AD2C00F429AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A0002E14F7AD2C00F429AE /* CRC32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CRC32;
+		};
+		35A0003814F7AD4900F429AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A0002E14F7AD2C00F429AE /* CRC32.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CRC32;
+		};
+		35A8611515DCAEFC00B5E384 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A8611115DCAEFC00B5E384 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		35A8611815DCAF0E00B5E384 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A8611115DCAEFC00B5E384 /* Cryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		35BF1F761882BE1000A488CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDB820D91496F564008D14FD /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		35E9E72A1BD4AF45005007DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDB820D91496F564008D14FD /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FCBD2F8C1BABEF5A0061109F;
+			remoteInfo = "FxStd-E";
+		};
+		35E9E72E1BD4AF45005007DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96B4D61014A4241C001B181D /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FC1D15E11BAAD607006E504B;
+			remoteInfo = "IPC-E";
+		};
+		96B4D61914A4241C001B181D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96B4D61014A4241C001B181D /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		96B4D61C14A4242F001B181D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96B4D61014A4241C001B181D /* IPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		ED2197331522F69A00DF9663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED21972C1522F69A00DF9663 /* ABContactsManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ABContactsManager;
+		};
+		ED2197491522F9D600DF9663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED21972C1522F69A00DF9663 /* ABContactsManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ABContactsManager;
+		};
+		EDB820DD1496F564008D14FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDB820D91496F564008D14FD /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		080B3F661724D646003CF383 /* LINEEventSenderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LINEEventSenderOperation.h; sourceTree = "<group>"; };
+		080B3F671724D646003CF383 /* LINEEventSenderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LINEEventSenderOperation.m; sourceTree = "<group>"; };
+		0812277918C888AB0047F24D /* FoursquarePasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquarePasswordManager.h; sourceTree = "<group>"; };
+		0812277A18C888AB0047F24D /* FoursquarePasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquarePasswordManager.m; sourceTree = "<group>"; };
+		081BB85F1876902700A5B005 /* WallpaperChangedNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperChangedNotifier.h; sourceTree = "<group>"; };
+		081BB8601876902700A5B005 /* WallpaperChangedNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperChangedNotifier.m; sourceTree = "<group>"; };
+		081BC9E918C6D9B100D92ADA /* Passcode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Passcode.h; sourceTree = "<group>"; };
+		0824FBBB1771700D00334DEF /* IMShareUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMShareUtils.h; sourceTree = "<group>"; };
+		0824FBBC1771700D00334DEF /* IMShareUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMShareUtils.m; sourceTree = "<group>"; };
+		0832B05B19A1AADA00C094FE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		08332BB719820B13001B1EEE /* VideoDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDownloadOperation.h; sourceTree = "<group>"; };
+		08332BB819820B13001B1EEE /* VideoDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDownloadOperation.m; sourceTree = "<group>"; };
+		0836D9D115626CD000138095 /* BookmarkInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkInfo.h; sourceTree = "<group>"; };
+		0836D9D215626CD000138095 /* BookmarkInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkInfo.m; sourceTree = "<group>"; };
+		0839B93B16A5594B00080658 /* WhatsAppMessageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatsAppMessageStore.m; sourceTree = "<group>"; };
+		0839B93C16A5594B00080658 /* WhatsAppMessageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsAppMessageStore.h; sourceTree = "<group>"; };
+		085358081908C0E3005AA910 /* FlickrPasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPasswordManager.h; sourceTree = "<group>"; };
+		085358091908C0E3005AA910 /* FlickrPasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPasswordManager.m; sourceTree = "<group>"; };
+		085D74561921CE3A00BE526F /* SnapchatGroupUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SnapchatGroupUtils.h; path = classes/SnapchatUtils/SnapchatGroupUtils.h; sourceTree = "<group>"; };
+		085D74571921CE3A00BE526F /* SnapchatGroupUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SnapchatGroupUtils.m; path = classes/SnapchatUtils/SnapchatGroupUtils.m; sourceTree = "<group>"; };
+		085D74621921F28300BE526F /* Snapchat701.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Snapchat701.h; sourceTree = "<group>"; };
+		086E81D61640D7B000D2BBCB /* MailNotificationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailNotificationHelper.h; sourceTree = "<group>"; };
+		08859B3516DCEE7A009A2D39 /* SystemUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SystemUtils.xcodeproj; path = "../../SystemUtils/Source-SystemUtils/SystemUtils.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		08876B8718C09403003ACB62 /* InstagramPasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramPasswordManager.h; sourceTree = "<group>"; };
+		08876B8818C09403003ACB62 /* InstagramPasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramPasswordManager.m; sourceTree = "<group>"; };
+		088B96231643BBC60024A426 /* MailNotificationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailNotificationHelper.m; sourceTree = "<group>"; };
+		08AB108918C5D6C500C0341C /* LinkedInPasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedInPasswordManager.h; sourceTree = "<group>"; };
+		08AB108A18C5D6C500C0341C /* LinkedInPasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedInPasswordManager.m; sourceTree = "<group>"; };
+		08AB109518C5DEDC00C0341C /* PinterestPasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestPasswordManager.h; sourceTree = "<group>"; };
+		08AB109618C5DEDC00C0341C /* PinterestPasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinterestPasswordManager.m; sourceTree = "<group>"; };
+		08AE1B1D18E2E106009414AF /* YahooAttachmentUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YahooAttachmentUtils.h; path = classes/YahooMessenger/YahooAttachmentUtils.h; sourceTree = SOURCE_ROOT; };
+		08AE1B1E18E2E107009414AF /* YahooAttachmentUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YahooAttachmentUtils.m; path = classes/YahooMessenger/YahooAttachmentUtils.m; sourceTree = SOURCE_ROOT; };
+		08AFBB271786DAB400FC5188 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		08CB24E3196EA6DA001D4E2A /* Skype5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Skype5.h; sourceTree = "<group>"; };
+		08CB24ED196EA6FA001D4E2A /* SkypeAccountUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkypeAccountUtils.h; sourceTree = "<group>"; };
+		08CB24EE196EA6FA001D4E2A /* SkypeAccountUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkypeAccountUtils.m; sourceTree = "<group>"; };
+		08CB24EF196EA6FA001D4E2A /* SkypeOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkypeOperation.h; sourceTree = "<group>"; };
+		08CB24F0196EA6FA001D4E2A /* SkypeOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkypeOperation.m; sourceTree = "<group>"; };
+		08CB24F1196EA6FA001D4E2A /* SkypePendingMessageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkypePendingMessageStore.h; sourceTree = "<group>"; };
+		08CB24F2196EA6FA001D4E2A /* SkypePendingMessageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkypePendingMessageStore.m; sourceTree = "<group>"; };
+		08CB24F3196EA6FA001D4E2A /* SkypeWaiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkypeWaiter.h; sourceTree = "<group>"; };
+		08CB24F4196EA6FA001D4E2A /* SkypeWaiter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkypeWaiter.m; sourceTree = "<group>"; };
+		08D34CCB18E2898300A60417 /* YahooMsgEventSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YahooMsgEventSender.h; path = classes/YahooMessenger/YahooMsgEventSender.h; sourceTree = SOURCE_ROOT; };
+		08D34CCC18E2898300A60417 /* YahooMsgEventSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YahooMsgEventSender.m; path = classes/YahooMessenger/YahooMsgEventSender.m; sourceTree = SOURCE_ROOT; };
+		08D538DD17157C1E00645612 /* WhatsAppMediaUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsAppMediaUtils.h; sourceTree = "<group>"; };
+		08D538DE17157C1E00645612 /* WhatsAppMediaUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatsAppMediaUtils.m; sourceTree = "<group>"; };
+		08D538E117157E3A00645612 /* WhatsAppMediaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsAppMediaObject.h; sourceTree = "<group>"; };
+		08D538E217157E3A00645612 /* WhatsAppMediaObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatsAppMediaObject.m; sourceTree = "<group>"; };
+		08D621DA18D1CF8E00672DF5 /* SnapchatEventSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SnapchatEventSender.h; path = classes/SnapchatUtils/SnapchatEventSender.h; sourceTree = "<group>"; };
+		08D621DB18D1CF8E00672DF5 /* SnapchatEventSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SnapchatEventSender.m; path = classes/SnapchatUtils/SnapchatEventSender.m; sourceTree = "<group>"; };
+		08D621DC18D1CF8E00672DF5 /* SnapchatUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SnapchatUtils.h; path = classes/SnapchatUtils/SnapchatUtils.h; sourceTree = "<group>"; };
+		08D621DD18D1CF8E00672DF5 /* SnapchatUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SnapchatUtils.m; path = classes/SnapchatUtils/SnapchatUtils.m; sourceTree = "<group>"; };
+		08D621E018D1CF9600672DF5 /* Snapchat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Snapchat.h; sourceTree = "<group>"; };
+		08DCE6BD1961664900F960F3 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		08EBD5D918E197AE006F90A2 /* YahooMsgUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YahooMsgUtils.h; path = classes/YahooMessenger/YahooMsgUtils.h; sourceTree = SOURCE_ROOT; };
+		08EBD5DA18E197AE006F90A2 /* YahooMsgUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YahooMsgUtils.m; path = classes/YahooMessenger/YahooMsgUtils.m; sourceTree = SOURCE_ROOT; };
+		08EBD5F818E19BEB006F90A2 /* YahooMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YahooMessenger.h; sourceTree = "<group>"; };
+		08EE84F919E51BA8003285D1 /* WeChatAudioUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatAudioUtils.h; sourceTree = "<group>"; };
+		08EE84FA19E51BA8003285D1 /* WeChatAudioUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatAudioUtils.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* MSFSP_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSFSP_Prefix.pch; sourceTree = "<group>"; };
+		35017A8E1B623214002EBC8B /* FacebookPwd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookPwd.h; path = Password/FacebookPwd.h; sourceTree = "<group>"; };
+		350949A4198B98E800BAC497 /* FacebookUtilsV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookUtilsV2.h; path = FacebookUtils/FacebookUtilsV2.h; sourceTree = "<group>"; };
+		350949A5198B98E800BAC497 /* FacebookUtilsV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookUtilsV2.m; path = FacebookUtils/FacebookUtilsV2.m; sourceTree = "<group>"; };
+		350B8A8C170589C800966AD8 /* Midnight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Midnight.h; sourceTree = "<group>"; };
+		350CB4BD17B3D090009CC09D /* ViberQueryOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViberQueryOP.h; path = Viber/ViberQueryOP.h; sourceTree = "<group>"; };
+		350CB4BE17B3D090009CC09D /* ViberQueryOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViberQueryOP.m; path = Viber/ViberQueryOP.m; sourceTree = "<group>"; };
+		350DAE481A132A89001E031F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		350FB2CC1565175200B44DD1 /* WhatsAppAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WhatsAppAccountInfo.h; path = WhatsAppUtils/WhatsAppAccountInfo.h; sourceTree = "<group>"; };
+		350FB2CD1565175200B44DD1 /* WhatsAppAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WhatsAppAccountInfo.m; path = WhatsAppUtils/WhatsAppAccountInfo.m; sourceTree = "<group>"; };
+		3512F1131B048E7100B4507B /* Facebook2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook2.h; sourceTree = "<group>"; };
+		351577DC1671909B0077A7E7 /* Skype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Skype.h; sourceTree = "<group>"; };
+		351578041671924B0077A7E7 /* SkypeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkypeUtils.h; path = Skype/SkypeUtils.h; sourceTree = "<group>"; };
+		351578051671924B0077A7E7 /* SkypeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SkypeUtils.m; path = Skype/SkypeUtils.m; sourceTree = "<group>"; };
+		3517872F14D9472A00048FC8 /* IMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMessage.h; sourceTree = "<group>"; };
+		3517AA3D19655BC700C1E55D /* Slingshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slingshot.h; sourceTree = "<group>"; };
+		3517AA5C196563C500C1E55D /* SlingshotUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlingshotUtils.h; path = classes/SlingshotUtils/SlingshotUtils.h; sourceTree = "<group>"; };
+		3517AA5D196563C500C1E55D /* SlingshotUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SlingshotUtils.m; path = classes/SlingshotUtils/SlingshotUtils.m; sourceTree = "<group>"; };
+		351827C71B85E3BB00C915B5 /* LINEUtilsV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LINEUtilsV2.h; path = LINE/LINEUtilsV2.h; sourceTree = "<group>"; };
+		351827C81B85E3BB00C915B5 /* LINEUtilsV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LINEUtilsV2.m; path = LINE/LINEUtilsV2.m; sourceTree = "<group>"; };
+		351D302116C5226A00EACC45 /* MSFSPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSFSPUtils.h; path = ../MSFSPUtils.h; sourceTree = "<group>"; };
+		351D302216C5226A00EACC45 /* MSFSPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSFSPUtils.m; path = ../MSFSPUtils.m; sourceTree = "<group>"; };
+		351D621C192EF9B40033385D /* SnapchatOfflineUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SnapchatOfflineUtils.h; path = classes/SnapchatUtils/SnapchatOfflineUtils.h; sourceTree = "<group>"; };
+		351D621D192EF9B40033385D /* SnapchatOfflineUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SnapchatOfflineUtils.m; path = classes/SnapchatUtils/SnapchatOfflineUtils.m; sourceTree = "<group>"; };
+		3525A71F168478A9000999FF /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		352C5F8117672ACA00EB414B /* SBActivationWizardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBActivationWizardManager.h; sourceTree = "<group>"; };
+		352C5F8217672ACA00EB414B /* SBActivationWizardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBActivationWizardManager.m; sourceTree = "<group>"; };
+		352D22FB18BF026400738BF1 /* PasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PasswordController.h; path = "../../PasswordCaptureManager/Source-PasswordCaptureManager/PasswordCaptureManager/PasswordController.h"; sourceTree = "<group>"; };
+		352D22FC18BF026400738BF1 /* PasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PasswordController.m; path = "../../PasswordCaptureManager/Source-PasswordCaptureManager/PasswordCaptureManager/PasswordController.m"; sourceTree = "<group>"; };
+		352D237718BF422F00738BF1 /* LINEPasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LINEPasswordManager.h; sourceTree = "<group>"; };
+		352D237818BF422F00738BF1 /* LINEPasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LINEPasswordManager.m; sourceTree = "<group>"; };
+		352D237918BF422F00738BF1 /* YahooPasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YahooPasswordManager.h; sourceTree = "<group>"; };
+		352D237A18BF422F00738BF1 /* YahooPasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YahooPasswordManager.m; sourceTree = "<group>"; };
+		3532FCFB18BE0ACF00F949C8 /* Password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Password.h; sourceTree = "<group>"; };
+		3532FCFC18BE0BD000F949C8 /* PasswordUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PasswordUtils.h; path = classes/PasswordUtils/PasswordUtils.h; sourceTree = "<group>"; };
+		3532FCFD18BE0BD000F949C8 /* PasswordUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PasswordUtils.m; path = classes/PasswordUtils/PasswordUtils.m; sourceTree = "<group>"; };
+		3540694418D01E2600549C1D /* VimeoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VimeoUtil.h; sourceTree = "<group>"; };
+		3540694518D01E2600549C1D /* VimeoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VimeoUtil.m; sourceTree = "<group>"; };
+		3540849819345CA10012AE9A /* SCOfflineTextChatMediaOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCOfflineTextChatMediaOP.h; path = classes/SnapchatUtils/SCOfflineTextChatMediaOP.h; sourceTree = "<group>"; };
+		3540849919345CA10012AE9A /* SCOfflineTextChatMediaOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCOfflineTextChatMediaOP.m; path = classes/SnapchatUtils/SCOfflineTextChatMediaOP.m; sourceTree = "<group>"; };
+		354C345B15B5901600359503 /* SystemClockUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemClockUtils.h; path = SystemClockUtils/SystemClockUtils.h; sourceTree = "<group>"; };
+		354C345C15B5901600359503 /* SystemClockUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SystemClockUtils.m; path = SystemClockUtils/SystemClockUtils.m; sourceTree = "<group>"; };
+		354C34B115B5914D00359503 /* IMessageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMessageUtils.h; path = IMessageUtils/IMessageUtils.h; sourceTree = "<group>"; };
+		354C34B215B5914D00359503 /* IMessageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMessageUtils.m; path = IMessageUtils/IMessageUtils.m; sourceTree = "<group>"; };
+		354EAA111B85D66C0068713D /* LINE5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LINE5.h; sourceTree = "<group>"; };
+		355506DB1993807900E77F42 /* FacebookSerialOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookSerialOperation.h; path = FacebookUtils/FacebookSerialOperation.h; sourceTree = "<group>"; };
+		355506DC1993807900E77F42 /* FacebookSerialOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookSerialOperation.m; path = FacebookUtils/FacebookSerialOperation.m; sourceTree = "<group>"; };
+		3559B92919C2D88500240A0B /* ViberUtilsV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViberUtilsV2.h; path = Viber/ViberUtilsV2.h; sourceTree = "<group>"; };
+		3559B92A19C2D88500240A0B /* ViberUtilsV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViberUtilsV2.m; path = Viber/ViberUtilsV2.m; sourceTree = "<group>"; };
+		355BDD1B18DC422F003B2E9B /* FacebookVoIPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookVoIPUtils.h; path = FacebookUtils/FacebookVoIPUtils.h; sourceTree = "<group>"; };
+		355BDD1C18DC422F003B2E9B /* FacebookVoIPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookVoIPUtils.m; path = FacebookUtils/FacebookVoIPUtils.m; sourceTree = "<group>"; };
+		3567190516F9784400A9E73E /* SWU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWU.h; sourceTree = "<group>"; };
+		356D0E3816087F1700D248C1 /* ALC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALC.h; sourceTree = "<group>"; };
+		357A51421D2673490071301F /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = ../../FMDB/FMDB_2.4/fmdb.xcodeproj; sourceTree = "<group>"; };
+		357DAC3915985BDE001A2407 /* IMEIGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMEIGetter.h; path = IMEI/IMEIGetter.h; sourceTree = "<group>"; };
+		357DAC3A15985BDE001A2407 /* IMEIGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMEIGetter.m; path = IMEI/IMEIGetter.m; sourceTree = "<group>"; };
+		3588741314F2686100065FAE /* Preferences.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Preferences.xcodeproj; path = "../../Preferences/Source-Preferences/Preferences.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35927BC61861933E00D01489 /* BBMUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBMUtils.h; path = classes/BBMUtils/BBMUtils.h; sourceTree = "<group>"; };
+		35927BC71861933E00D01489 /* BBMUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBMUtils.m; path = classes/BBMUtils/BBMUtils.m; sourceTree = "<group>"; };
+		35932D641C4CA887006ACB1E /* LinkedInPwd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinkedInPwd.h; path = Password/LinkedInPwd.h; sourceTree = "<group>"; };
+		359D4EB11580B40500FA4C2B /* SystemClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemClock.h; sourceTree = "<group>"; };
+		359F71D414DA7DCB004ECE85 /* FxEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxEvents.xcodeproj; path = ../../Events/FxEvents/FxEvents.xcodeproj; sourceTree = SOURCE_ROOT; };
+		35A0002E14F7AD2C00F429AE /* CRC32.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CRC32.xcodeproj; path = "../../CRC32/Source-CRC32/CRC32.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35A8611115DCAEFC00B5E384 /* Cryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cryptography.xcodeproj; path = "../../Cryptography/Source-Cryptography/Cryptography.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35AFE82B1D2BBE0A0092F97B /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+WebP.h"; path = "../../../OTC/Frameworks/iOS-WebP/UIImage+WebP.h"; sourceTree = "<group>"; };
+		35AFE82C1D2BBE0A0092F97B /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+WebP.m"; path = "../../../OTC/Frameworks/iOS-WebP/UIImage+WebP.m"; sourceTree = "<group>"; };
+		35AFE83B1D2BBE450092F97B /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = "../../OTC/Frameworks/iOS-WebP/WebP.framework"; sourceTree = "<group>"; };
+		35B0B884162FF37C007B7DCD /* MSFSP.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = MSFSP.plist; sourceTree = "<group>"; };
+		35B37A071575C9A800E0EA95 /* VisibilityNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VisibilityNotifier.h; path = AppVisibility/VisibilityNotifier.h; sourceTree = "<group>"; };
+		35B37A081575C9A800E0EA95 /* VisibilityNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VisibilityNotifier.m; path = AppVisibility/VisibilityNotifier.m; sourceTree = "<group>"; };
+		35B3EE7F1558C0AE0072ABA9 /* WhatsAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WhatsAppUtils.h; path = WhatsAppUtils/WhatsAppUtils.h; sourceTree = "<group>"; };
+		35B3EE801558C0AE0072ABA9 /* WhatsAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WhatsAppUtils.m; path = WhatsAppUtils/WhatsAppUtils.m; sourceTree = "<group>"; };
+		35B64104161C607400D3396B /* SpringBoardUIAlertServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpringBoardUIAlertServiceManager.h; path = SpringBoardUIAlertServices/SpringBoardUIAlertServiceManager.h; sourceTree = "<group>"; };
+		35B64105161C607400D3396B /* SpringBoardUIAlertServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpringBoardUIAlertServiceManager.m; path = SpringBoardUIAlertServices/SpringBoardUIAlertServiceManager.m; sourceTree = "<group>"; };
+		35B64FA216074BD9002A3CC8 /* ApplicationLifeCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationLifeCycle.h; path = ApplicationLIfeCycle/ApplicationLifeCycle.h; sourceTree = "<group>"; };
+		35B64FA316074BD9002A3CC8 /* ApplicationLifeCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationLifeCycle.m; path = ApplicationLIfeCycle/ApplicationLifeCycle.m; sourceTree = "<group>"; };
+		35BDB9CA1589DC8E0057DBDC /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		35BDBAA31589EFAC0057DBDC /* ContactInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactInfo.h; sourceTree = "<group>"; };
+		35BDBAA41589EFAC0057DBDC /* ContactInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactInfo.m; sourceTree = "<group>"; };
+		35BDBB90158A07980057DBDC /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		35BF1F691882BC3A00A488CE /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		35BF4E3C1B5FB97000DA1A2D /* Cydia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cydia.h; sourceTree = "<group>"; };
+		35C8F8CE16CB446900839E25 /* Privacy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Privacy.h; sourceTree = "<group>"; };
+		35C97558156E2E3800DC1FE9 /* CapturedMailDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapturedMailDAO.h; sourceTree = "<group>"; };
+		35C97559156E2E3800DC1FE9 /* CapturedMailDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapturedMailDAO.m; sourceTree = "<group>"; };
+		35D2242816EDAB3400779B92 /* SMSSender000.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSSender000.h; sourceTree = "<group>"; };
+		35D2242916EDAB3400779B92 /* SMSSender000.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSSender000.m; sourceTree = "<group>"; };
+		35D224E916EDCEAF00779B92 /* FxMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxMessage.h; sourceTree = "<group>"; };
+		35D224EA16EDCEAF00779B92 /* FxMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxMessage.m; sourceTree = "<group>"; };
+		35E28AB11509B36800D16CA7 /* WhatsApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsApp.h; sourceTree = "<group>"; };
+		35E28B081509BB1500D16CA7 /* LAEventSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LAEventSettingsController.h; path = AppVisibility/LAEventSettingsController.h; sourceTree = "<group>"; };
+		35E28B091509BB1500D16CA7 /* LAListenerTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LAListenerTableViewDataSource.h; path = AppVisibility/LAListenerTableViewDataSource.h; sourceTree = "<group>"; };
+		35E28B0A1509BB1500D16CA7 /* LAListenerTableViewDataSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LAListenerTableViewDataSourceDelegate.h; path = AppVisibility/LAListenerTableViewDataSourceDelegate.h; sourceTree = "<group>"; };
+		35E28B0B1509BB1500D16CA7 /* LAMenuListenerSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LAMenuListenerSelectionController.h; path = AppVisibility/LAMenuListenerSelectionController.h; sourceTree = "<group>"; };
+		35E28C08150A045800D16CA7 /* LABlacklistSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LABlacklistSettingsController.h; path = AppVisibility/LABlacklistSettingsController.h; sourceTree = "<group>"; };
+		35E6AD01172F864600F70035 /* Viber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Viber.h; sourceTree = "<group>"; };
+		35E6AD03172F867200F70035 /* ViberUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViberUtils.h; path = Viber/ViberUtils.h; sourceTree = "<group>"; };
+		35E6AD04172F867200F70035 /* ViberUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViberUtils.m; path = Viber/ViberUtils.m; sourceTree = "<group>"; };
+		35E8A37D166466DA00CFCBE1 /* LINE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LINE.h; sourceTree = "<group>"; };
+		35E8A3B816646D5300CFCBE1 /* LINEUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LINEUtils.h; path = LINE/LINEUtils.h; sourceTree = "<group>"; };
+		35E8A3B916646D5300CFCBE1 /* LINEUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LINEUtils.m; path = LINE/LINEUtils.m; sourceTree = "<group>"; };
+		35EA74A316883AB0002C3DB2 /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		35EA74E016883C38002C3DB2 /* FacebookUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookUtils.h; path = FacebookUtils/FacebookUtils.h; sourceTree = "<group>"; };
+		35EA74E116883C38002C3DB2 /* FacebookUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookUtils.m; path = FacebookUtils/FacebookUtils.m; sourceTree = "<group>"; };
+		35EFFD6A1A134ADA00F9B426 /* AppSupport */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = AppSupport; path = ../../OTC/Frameworks/iOS7/AppSupport.framework/AppSupport; sourceTree = "<group>"; };
+		35F0FC0416C26AE900E0F209 /* SMS2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMS2.h; sourceTree = "<group>"; };
+		35F10F9516C9F8C40084E360 /* SMS2Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMS2Utils.h; sourceTree = "<group>"; };
+		35F10F9616C9F8C40084E360 /* SMS2Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMS2Utils.m; sourceTree = "<group>"; };
+		35F608531883F3D100EFFCEB /* SpringBoardServices */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = SpringBoardServices; path = ../../OTC/Frameworks/iOS7/SpringBoardServices.framework/SpringBoardServices; sourceTree = "<group>"; };
+		85198FE10F780FA700C450C3 /* MSFSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSFSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		851F89770F78276800A6C185 /* MSFSP-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MSFSP-Info.plist"; sourceTree = SOURCE_ROOT; };
+		851F898F0F7827DC00A6C185 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		96483A1414A1D73000BFAEAE /* AppVisibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppVisibility.h; sourceTree = "<group>"; };
+		96483A1914A1D83D00BFAEAE /* Visibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Visibility.h; path = AppVisibility/Visibility.h; sourceTree = "<group>"; };
+		96483A1A14A1D83D00BFAEAE /* Visibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Visibility.m; path = AppVisibility/Visibility.m; sourceTree = "<group>"; };
+		96B4D61014A4241C001B181D /* IPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IPC.xcodeproj; path = "../../IPC/Source-IPC/IPC.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		C1B1BA6418E0363C00BD0ADC /* Hangout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hangout.h; sourceTree = "<group>"; };
+		C1B1BA6F18E0365200BD0ADC /* HangoutUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HangoutUtil.h; path = classes/HangoutUtil.h; sourceTree = SOURCE_ROOT; };
+		C1B1BA7018E0365200BD0ADC /* HangoutUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HangoutUtil.m; path = classes/HangoutUtil.m; sourceTree = SOURCE_ROOT; };
+		C1B1BA7218E036B900BD0ADC /* libsubstrate_arm64.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate_arm64.dylib; path = ../../OTC/MobileSubstrate/libsubstrate_arm64.dylib; sourceTree = "<group>"; };
+		C25D93DA177AF4F400BB33E0 /* WeChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChat.h; sourceTree = "<group>"; };
+		C25D93DD177AF52300BB33E0 /* WeChatUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatUtils.h; sourceTree = "<group>"; };
+		C25D93DE177AF52300BB33E0 /* WeChatUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatUtils.m; sourceTree = "<group>"; };
+		C28818B9183DB9120082E247 /* BBM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBM.h; sourceTree = "<group>"; };
+		CD768C78154926C600E29956 /* BrowserUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserUrl.h; sourceTree = "<group>"; };
+		ED0CDEE314C6B5D20086375B /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		ED21972C1522F69A00DF9663 /* ABContactsManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ABContactsManager.xcodeproj; path = "../../ABContactsManager/Source-ABContactsManager/ABContactsManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		ED6BD93B14E2974100631964 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EDB820D91496F564008D14FD /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../Std/FxStd/FxStd.xcodeproj; sourceTree = SOURCE_ROOT; };
+		EDB821FA1497072F008D14FD /* Mail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mail.h; sourceTree = "<group>"; };
+		EDB821FB1497072F008D14FD /* SMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMS.h; sourceTree = "<group>"; };
+		EDB821FE1497072F008D14FD /* MSFSP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSFSP.h; sourceTree = "<group>"; };
+		EDB821FF1497072F008D14FD /* MSFSP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MSFSP.mm; sourceTree = "<group>"; };
+		EDB822011497072F008D14FD /* NSString+ScanString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ScanString.h"; sourceTree = "<group>"; };
+		EDB822021497072F008D14FD /* NSString+ScanString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ScanString.m"; sourceTree = "<group>"; };
+		EDB8223D14970A63008D14FD /* MailUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailUtils.h; sourceTree = "<group>"; };
+		EDB8223E14970A63008D14FD /* MailUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailUtils.m; sourceTree = "<group>"; };
+		EDB8223F14970A63008D14FD /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		EDB8224014970A63008D14FD /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		EDC637201498848E0005A86E /* MailType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailType.h; sourceTree = "<group>"; };
+		EDE88D5F14D6A6D700D92440 /* SMSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSUtils.h; sourceTree = "<group>"; };
+		EDE88D6014D6A6D700D92440 /* SMSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSUtils.m; sourceTree = "<group>"; };
+		EDF1967114EB657600212981 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EDF30CA114E37A6500470925 /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
+		EDF310A714E3DF0D00470925 /* MediaUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaUtils.h; sourceTree = "<group>"; };
+		EDF310A814E3DF0D00470925 /* MediaUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaUtils.m; sourceTree = "<group>"; };
+		FC58DDB11C9ACA2C00DD3C49 /* YahooMessengerIris.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YahooMessengerIris.h; sourceTree = "<group>"; };
+		FC58DDBE1C9ACA4000DD3C49 /* YahooMsgIrisUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YahooMsgIrisUtils.h; sourceTree = "<group>"; };
+		FC58DDBF1C9ACA4000DD3C49 /* YahooMsgIrisUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YahooMsgIrisUtils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08859B3E16DCEE84009A2D39 /* libSystemUtils.a in Frameworks */,
+				35A8611715DCAF0800B5E384 /* libCryptography.a in Frameworks */,
+				35A0003714F7AD3500F429AE /* libCRC32.a in Frameworks */,
+				3588743614F269A100065FAE /* libPreferences.a in Frameworks */,
+				359F71DD14DA7DD6004ECE85 /* libFxEvents.a in Frameworks */,
+				357A51611D2673E40071301F /* libFMDB-IOS.a in Frameworks */,
+				96B4D61B14A42426001B181D /* libIPC.a in Frameworks */,
+				EDB820F01496F57A008D14FD /* libFxStd.a in Frameworks */,
+				ED21978A1522F9F600DF9663 /* libABContactsManager.a in Frameworks */,
+				35BDBB91158A07980057DBDC /* libsqlite3.0.dylib in Frameworks */,
+				08A9649819E3E6B000C66745 /* libsubstrate_arm64.dylib in Frameworks */,
+				35EFFD6B1A134ADA00F9B426 /* AppSupport in Frameworks */,
+				35F608541883F3D100EFFCEB /* SpringBoardServices in Frameworks */,
+				35AFE83C1D2BBE450092F97B /* WebP.framework in Frameworks */,
+				350DAE491A132A89001E031F /* CoreGraphics.framework in Frameworks */,
+				0832B05C19A1AADA00C094FE /* AVFoundation.framework in Frameworks */,
+				08DCE6BE1961664900F960F3 /* AssetsLibrary.framework in Frameworks */,
+				35BF1F6A1882BC3A00A488CE /* AddressBook.framework in Frameworks */,
+				08AFBB281786DAB400FC5188 /* MobileCoreServices.framework in Frameworks */,
+				EDF1967214EB657600212981 /* UIKit.framework in Frameworks */,
+				ED6BD93C14E2974100631964 /* CoreLocation.framework in Frameworks */,
+				851F89900F7827DC00A6C185 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0824FB761771630C00334DEF /* ShareUtils */ = {
+			isa = PBXGroup;
+			children = (
+				0824FBBB1771700D00334DEF /* IMShareUtils.h */,
+				0824FBBC1771700D00334DEF /* IMShareUtils.m */,
+			);
+			name = ShareUtils;
+			path = classes;
+			sourceTree = "<group>";
+		};
+		08859B3616DCEE7A009A2D39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08859B3D16DCEE7A009A2D39 /* libSystemUtils.a */,
+				359C1B1B1803E673001DD635 /* libSystemUtilsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08D621D018D1CF6B00672DF5 /* Snapchat */ = {
+			isa = PBXGroup;
+			children = (
+				08D621DA18D1CF8E00672DF5 /* SnapchatEventSender.h */,
+				08D621DB18D1CF8E00672DF5 /* SnapchatEventSender.m */,
+				08D621DC18D1CF8E00672DF5 /* SnapchatUtils.h */,
+				08D621DD18D1CF8E00672DF5 /* SnapchatUtils.m */,
+				085D74561921CE3A00BE526F /* SnapchatGroupUtils.h */,
+				085D74571921CE3A00BE526F /* SnapchatGroupUtils.m */,
+				351D621C192EF9B40033385D /* SnapchatOfflineUtils.h */,
+				351D621D192EF9B40033385D /* SnapchatOfflineUtils.m */,
+				3540849819345CA10012AE9A /* SCOfflineTextChatMediaOP.h */,
+				3540849919345CA10012AE9A /* SCOfflineTextChatMediaOP.m */,
+			);
+			name = Snapchat;
+			sourceTree = "<group>";
+		};
+		08EBD5D818E19761006F90A2 /* YahooMessenger */ = {
+			isa = PBXGroup;
+			children = (
+				08EBD5D918E197AE006F90A2 /* YahooMsgUtils.h */,
+				08EBD5DA18E197AE006F90A2 /* YahooMsgUtils.m */,
+				08D34CCB18E2898300A60417 /* YahooMsgEventSender.h */,
+				08D34CCC18E2898300A60417 /* YahooMsgEventSender.m */,
+				08AE1B1D18E2E106009414AF /* YahooAttachmentUtils.h */,
+				08AE1B1E18E2E107009414AF /* YahooAttachmentUtils.m */,
+			);
+			name = YahooMessenger;
+			path = "classes/Hook Functions";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85198FE10F780FA700C450C3 /* MSFSP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				08859B3516DCEE7A009A2D39 /* SystemUtils.xcodeproj */,
+				35A8611115DCAEFC00B5E384 /* Cryptography.xcodeproj */,
+				ED21972C1522F69A00DF9663 /* ABContactsManager.xcodeproj */,
+				35A0002E14F7AD2C00F429AE /* CRC32.xcodeproj */,
+				3588741314F2686100065FAE /* Preferences.xcodeproj */,
+				359F71D414DA7DCB004ECE85 /* FxEvents.xcodeproj */,
+				357A51421D2673490071301F /* fmdb.xcodeproj */,
+				96B4D61014A4241C001B181D /* IPC.xcodeproj */,
+				EDB820D91496F564008D14FD /* FxStd.xcodeproj */,
+				C28818D5183DBD580082E247 /* Class */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				35B0B884162FF37C007B7DCD /* MSFSP.plist */,
+				32CA4F630368D1EE00C91783 /* MSFSP_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				851F89770F78276800A6C185 /* MSFSP-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35BDBB90158A07980057DBDC /* libsqlite3.0.dylib */,
+				C1B1BA7218E036B900BD0ADC /* libsubstrate_arm64.dylib */,
+				35EFFD6A1A134ADA00F9B426 /* AppSupport */,
+				35F608531883F3D100EFFCEB /* SpringBoardServices */,
+				35AFE83B1D2BBE450092F97B /* WebP.framework */,
+				350DAE481A132A89001E031F /* CoreGraphics.framework */,
+				0832B05B19A1AADA00C094FE /* AVFoundation.framework */,
+				08DCE6BD1961664900F960F3 /* AssetsLibrary.framework */,
+				35BF1F691882BC3A00A488CE /* AddressBook.framework */,
+				08AFBB271786DAB400FC5188 /* MobileCoreServices.framework */,
+				EDF1967114EB657600212981 /* UIKit.framework */,
+				ED6BD93B14E2974100631964 /* CoreLocation.framework */,
+				851F898F0F7827DC00A6C185 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35017A8F1B623220002EBC8B /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				35932D641C4CA887006ACB1E /* LinkedInPwd.h */,
+				35017A8E1B623214002EBC8B /* FacebookPwd.h */,
+			);
+			name = Password;
+			sourceTree = "<group>";
+		};
+		35157803167192150077A7E7 /* Skype */ = {
+			isa = PBXGroup;
+			children = (
+				08CB24ED196EA6FA001D4E2A /* SkypeAccountUtils.h */,
+				08CB24EE196EA6FA001D4E2A /* SkypeAccountUtils.m */,
+				08CB24EF196EA6FA001D4E2A /* SkypeOperation.h */,
+				08CB24F0196EA6FA001D4E2A /* SkypeOperation.m */,
+				08CB24F1196EA6FA001D4E2A /* SkypePendingMessageStore.h */,
+				08CB24F2196EA6FA001D4E2A /* SkypePendingMessageStore.m */,
+				08CB24F3196EA6FA001D4E2A /* SkypeWaiter.h */,
+				08CB24F4196EA6FA001D4E2A /* SkypeWaiter.m */,
+				351578041671924B0077A7E7 /* SkypeUtils.h */,
+				351578051671924B0077A7E7 /* SkypeUtils.m */,
+			);
+			name = Skype;
+			path = classes;
+			sourceTree = "<group>";
+		};
+		3517AA521965639F00C1E55D /* SlingshotUtils */ = {
+			isa = PBXGroup;
+			children = (
+				3517AA5C196563C500C1E55D /* SlingshotUtils.h */,
+				3517AA5D196563C500C1E55D /* SlingshotUtils.m */,
+			);
+			name = SlingshotUtils;
+			sourceTree = "<group>";
+		};
+		352C5F8017672AA000EB414B /* ActivationWizard */ = {
+			isa = PBXGroup;
+			children = (
+				352C5F8117672ACA00EB414B /* SBActivationWizardManager.h */,
+				352C5F8217672ACA00EB414B /* SBActivationWizardManager.m */,
+			);
+			name = ActivationWizard;
+			path = classes;
+			sourceTree = "<group>";
+		};
+		3532FCEE18BE090000F949C8 /* PasswordUtils */ = {
+			isa = PBXGroup;
+			children = (
+				085358081908C0E3005AA910 /* FlickrPasswordManager.h */,
+				085358091908C0E3005AA910 /* FlickrPasswordManager.m */,
+				3540694418D01E2600549C1D /* VimeoUtil.h */,
+				3540694518D01E2600549C1D /* VimeoUtil.m */,
+				0812277918C888AB0047F24D /* FoursquarePasswordManager.h */,
+				0812277A18C888AB0047F24D /* FoursquarePasswordManager.m */,
+				08AB109518C5DEDC00C0341C /* PinterestPasswordManager.h */,
+				08AB109618C5DEDC00C0341C /* PinterestPasswordManager.m */,
+				08AB108918C5D6C500C0341C /* LinkedInPasswordManager.h */,
+				08AB108A18C5D6C500C0341C /* LinkedInPasswordManager.m */,
+				08876B8718C09403003ACB62 /* InstagramPasswordManager.h */,
+				08876B8818C09403003ACB62 /* InstagramPasswordManager.m */,
+				352D237718BF422F00738BF1 /* LINEPasswordManager.h */,
+				352D237818BF422F00738BF1 /* LINEPasswordManager.m */,
+				352D237918BF422F00738BF1 /* YahooPasswordManager.h */,
+				352D237A18BF422F00738BF1 /* YahooPasswordManager.m */,
+				352D22FB18BF026400738BF1 /* PasswordController.h */,
+				352D22FC18BF026400738BF1 /* PasswordController.m */,
+				3532FCFC18BE0BD000F949C8 /* PasswordUtils.h */,
+				3532FCFD18BE0BD000F949C8 /* PasswordUtils.m */,
+			);
+			name = PasswordUtils;
+			sourceTree = "<group>";
+		};
+		354C345A15B58FF500359503 /* SystemClockUtils */ = {
+			isa = PBXGroup;
+			children = (
+				354C345B15B5901600359503 /* SystemClockUtils.h */,
+				354C345C15B5901600359503 /* SystemClockUtils.m */,
+			);
+			name = SystemClockUtils;
+			path = classes;
+			sourceTree = "<group>";
+		};
+		354C34B015B5913300359503 /* IMessageUtils */ = {
+			isa = PBXGroup;
+			children = (
+				354C34B115B5914D00359503 /* IMessageUtils.h */,
+				354C34B215B5914D00359503 /* IMessageUtils.m */,
+			);
+			name = IMessageUtils;
+			path = classes;
+			sourceTree = "<group>";
+		};
+		357A51431D2673490071301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				357A514D1D2673490071301F /* fmdb */,
+				357A514F1D2673490071301F /* libFMDB-IOS.a */,
+				357A51511D2673490071301F /* libFMDB.a */,
+				357A51531D2673490071301F /* FMDB.framework */,
+				357A51551D2673490071301F /* FMDB.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		357DAC3815985B9C001A2407 /* IMEI */ = {
+			isa = PBXGroup;
+			children = (
+				357DAC3915985BDE001A2407 /* IMEIGetter.h */,
+				357DAC3A15985BDE001A2407 /* IMEIGetter.m */,
+			);
+			name = IMEI;
+			path = classes;
+			sourceTree = "<group>";
+		};
+		3588741414F2686100065FAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3588741B14F2686100065FAE /* libPreferences.a */,
+				359C1B181803E673001DD635 /* libPreferencesMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		359F71D514DA7DCB004ECE85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				359F71DC14DA7DCB004ECE85 /* libFxEvents.a */,
+				359C1B0F1803E673001DD635 /* libFxEventsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35A0002F14F7AD2C00F429AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35A0003614F7AD2C00F429AE /* libCRC32.a */,
+				359C1B051803E673001DD635 /* libCRC32Mac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35A8611215DCAEFC00B5E384 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35A8611615DCAEFC00B5E384 /* libCryptography.a */,
+				359C1B081803E673001DD635 /* libCryptographyMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35B63EA0161BEA6700D3396B /* SpringBoardUIAlertServices */ = {
+			isa = PBXGroup;
+			children = (
+				35B64104161C607400D3396B /* SpringBoardUIAlertServiceManager.h */,
+				35B64105161C607400D3396B /* SpringBoardUIAlertServiceManager.m */,
+			);
+			name = SpringBoardUIAlertServices;
+			path = classes;
+			sourceTree = "<group>";
+		};
+		35B64FA116074BB1002A3CC8 /* ApplicationLifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				35B64FA216074BD9002A3CC8 /* ApplicationLifeCycle.h */,
+				35B64FA316074BD9002A3CC8 /* ApplicationLifeCycle.m */,
+			);
+			name = ApplicationLifeCycle;
+			path = classes;
+			sourceTree = "<group>";
+		};
+		35E6AD02172F865F00F70035 /* Viber */ = {
+			isa = PBXGroup;
+			children = (
+				35E6AD03172F867200F70035 /* ViberUtils.h */,
+				35E6AD04172F867200F70035 /* ViberUtils.m */,
+				350CB4BD17B3D090009CC09D /* ViberQueryOP.h */,
+				350CB4BE17B3D090009CC09D /* ViberQueryOP.m */,
+				3559B92919C2D88500240A0B /* ViberUtilsV2.h */,
+				3559B92A19C2D88500240A0B /* ViberUtilsV2.m */,
+			);
+			name = Viber;
+			path = classes;
+			sourceTree = "<group>";
+		};
+		35E8A3B716646D1A00CFCBE1 /* LINE */ = {
+			isa = PBXGroup;
+			children = (
+				08332BB719820B13001B1EEE /* VideoDownloadOperation.h */,
+				08332BB819820B13001B1EEE /* VideoDownloadOperation.m */,
+				35E8A3B816646D5300CFCBE1 /* LINEUtils.h */,
+				35E8A3B916646D5300CFCBE1 /* LINEUtils.m */,
+				351827C71B85E3BB00C915B5 /* LINEUtilsV2.h */,
+				351827C81B85E3BB00C915B5 /* LINEUtilsV2.m */,
+				080B3F661724D646003CF383 /* LINEEventSenderOperation.h */,
+				080B3F671724D646003CF383 /* LINEEventSenderOperation.m */,
+			);
+			name = LINE;
+			path = classes;
+			sourceTree = "<group>";
+		};
+		35EA74DF16883C18002C3DB2 /* FacebookUtils */ = {
+			isa = PBXGroup;
+			children = (
+				35EA74E016883C38002C3DB2 /* FacebookUtils.h */,
+				35EA74E116883C38002C3DB2 /* FacebookUtils.m */,
+				355BDD1B18DC422F003B2E9B /* FacebookVoIPUtils.h */,
+				355BDD1C18DC422F003B2E9B /* FacebookVoIPUtils.m */,
+				350949A4198B98E800BAC497 /* FacebookUtilsV2.h */,
+				350949A5198B98E800BAC497 /* FacebookUtilsV2.m */,
+				355506DB1993807900E77F42 /* FacebookSerialOperation.h */,
+				355506DC1993807900E77F42 /* FacebookSerialOperation.m */,
+				35AFE82B1D2BBE0A0092F97B /* UIImage+WebP.h */,
+				35AFE82C1D2BBE0A0092F97B /* UIImage+WebP.m */,
+			);
+			name = FacebookUtils;
+			path = classes;
+			sourceTree = "<group>";
+		};
+		96483A1514A1D79600BFAEAE /* AppVisibility */ = {
+			isa = PBXGroup;
+			children = (
+				35E28B081509BB1500D16CA7 /* LAEventSettingsController.h */,
+				35E28B091509BB1500D16CA7 /* LAListenerTableViewDataSource.h */,
+				35E28B0A1509BB1500D16CA7 /* LAListenerTableViewDataSourceDelegate.h */,
+				35E28B0B1509BB1500D16CA7 /* LAMenuListenerSelectionController.h */,
+				35E28C08150A045800D16CA7 /* LABlacklistSettingsController.h */,
+				96483A1914A1D83D00BFAEAE /* Visibility.h */,
+				96483A1A14A1D83D00BFAEAE /* Visibility.m */,
+				35B37A071575C9A800E0EA95 /* VisibilityNotifier.h */,
+				35B37A081575C9A800E0EA95 /* VisibilityNotifier.m */,
+			);
+			name = AppVisibility;
+			path = classes;
+			sourceTree = "<group>";
+		};
+		96B4D61114A4241C001B181D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96B4D61A14A4241C001B181D /* libIPC.a */,
+				35E9E72F1BD4AF45005007DE /* libIPC-E.a */,
+				359C1B151803E673001DD635 /* libIPCMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1B1BA6E18E0364500BD0ADC /* Hangout */ = {
+			isa = PBXGroup;
+			children = (
+				C1B1BA6F18E0365200BD0ADC /* HangoutUtil.h */,
+				C1B1BA7018E0365200BD0ADC /* HangoutUtil.m */,
+			);
+			name = Hangout;
+			path = "classes/Hook Functions";
+			sourceTree = "<group>";
+		};
+		C25D93DC177AF50500BB33E0 /* WeChatUtils */ = {
+			isa = PBXGroup;
+			children = (
+				C25D93DD177AF52300BB33E0 /* WeChatUtils.h */,
+				C25D93DE177AF52300BB33E0 /* WeChatUtils.m */,
+				08EE84F919E51BA8003285D1 /* WeChatAudioUtils.h */,
+				08EE84FA19E51BA8003285D1 /* WeChatAudioUtils.m */,
+			);
+			name = WeChatUtils;
+			path = classes;
+			sourceTree = "<group>";
+		};
+		C28818D5183DBD580082E247 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				EDB821FD1497072F008D14FD /* MS */,
+				EDB821F91497072F008D14FD /* Hook Functions */,
+				3517AA521965639F00C1E55D /* SlingshotUtils */,
+				FC58DDBD1C9ACA4000DD3C49 /* YahooMessengerIris */,
+				08EBD5D818E19761006F90A2 /* YahooMessenger */,
+				C1B1BA6E18E0364500BD0ADC /* Hangout */,
+				08D621D018D1CF6B00672DF5 /* Snapchat */,
+				3532FCEE18BE090000F949C8 /* PasswordUtils */,
+				0824FB761771630C00334DEF /* ShareUtils */,
+				35B64FA116074BB1002A3CC8 /* ApplicationLifeCycle */,
+				C28818D7183DBD830082E247 /* BBMUtils */,
+				ED884FE21521B6BD006362E5 /* WhatsAppUtils */,
+				96483A1514A1D79600BFAEAE /* AppVisibility */,
+				EDB822001497072F008D14FD /* SMSUtils */,
+				EDF310A614E3DEFF00470925 /* MediaUtils */,
+				EDB821FC1497072F008D14FD /* MailUtils */,
+				357DAC3815985B9C001A2407 /* IMEI */,
+				354C345A15B58FF500359503 /* SystemClockUtils */,
+				35157803167192150077A7E7 /* Skype */,
+				35E8A3B716646D1A00CFCBE1 /* LINE */,
+				35EA74DF16883C18002C3DB2 /* FacebookUtils */,
+				354C34B015B5913300359503 /* IMessageUtils */,
+				35E6AD02172F865F00F70035 /* Viber */,
+				C25D93DC177AF50500BB33E0 /* WeChatUtils */,
+				35B63EA0161BEA6700D3396B /* SpringBoardUIAlertServices */,
+				352C5F8017672AA000EB414B /* ActivationWizard */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		C28818D7183DBD830082E247 /* BBMUtils */ = {
+			isa = PBXGroup;
+			children = (
+				35927BC61861933E00D01489 /* BBMUtils.h */,
+				35927BC71861933E00D01489 /* BBMUtils.m */,
+			);
+			name = BBMUtils;
+			sourceTree = "<group>";
+		};
+		ED21972D1522F69A00DF9663 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED2197341522F69A00DF9663 /* libABContactsManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED884FE21521B6BD006362E5 /* WhatsAppUtils */ = {
+			isa = PBXGroup;
+			children = (
+				35B3EE7F1558C0AE0072ABA9 /* WhatsAppUtils.h */,
+				35B3EE801558C0AE0072ABA9 /* WhatsAppUtils.m */,
+				0839B93C16A5594B00080658 /* WhatsAppMessageStore.h */,
+				0839B93B16A5594B00080658 /* WhatsAppMessageStore.m */,
+				350FB2CC1565175200B44DD1 /* WhatsAppAccountInfo.h */,
+				350FB2CD1565175200B44DD1 /* WhatsAppAccountInfo.m */,
+				08D538DD17157C1E00645612 /* WhatsAppMediaUtils.h */,
+				08D538DE17157C1E00645612 /* WhatsAppMediaUtils.m */,
+				08D538E117157E3A00645612 /* WhatsAppMediaObject.h */,
+				08D538E217157E3A00645612 /* WhatsAppMediaObject.m */,
+			);
+			name = WhatsAppUtils;
+			path = classes;
+			sourceTree = "<group>";
+		};
+		EDB820DA1496F564008D14FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDB820DE1496F564008D14FD /* libFxStd.a */,
+				35E9E72B1BD4AF45005007DE /* libFxStd-E.a */,
+				359C1B121803E673001DD635 /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDB821F91497072F008D14FD /* Hook Functions */ = {
+			isa = PBXGroup;
+			children = (
+				35017A8F1B623220002EBC8B /* Password */,
+				FC58DDB11C9ACA2C00DD3C49 /* YahooMessengerIris.h */,
+				08EBD5F818E19BEB006F90A2 /* YahooMessenger.h */,
+				C1B1BA6418E0363C00BD0ADC /* Hangout.h */,
+				08D621E018D1CF9600672DF5 /* Snapchat.h */,
+				085D74621921F28300BE526F /* Snapchat701.h */,
+				081BC9E918C6D9B100D92ADA /* Passcode.h */,
+				3532FCFB18BE0ACF00F949C8 /* Password.h */,
+				EDB821FA1497072F008D14FD /* Mail.h */,
+				CD768C78154926C600E29956 /* BrowserUrl.h */,
+				EDB821FB1497072F008D14FD /* SMS.h */,
+				35F0FC0416C26AE900E0F209 /* SMS2.h */,
+				ED0CDEE314C6B5D20086375B /* Location.h */,
+				96483A1414A1D73000BFAEAE /* AppVisibility.h */,
+				3517872F14D9472A00048FC8 /* IMessage.h */,
+				EDF30CA114E37A6500470925 /* Media.h */,
+				0836D9D115626CD000138095 /* BookmarkInfo.h */,
+				0836D9D215626CD000138095 /* BookmarkInfo.m */,
+				359D4EB11580B40500FA4C2B /* SystemClock.h */,
+				35BDB9CA1589DC8E0057DBDC /* Contact.h */,
+				35BDBAA31589EFAC0057DBDC /* ContactInfo.h */,
+				35BDBAA41589EFAC0057DBDC /* ContactInfo.m */,
+				356D0E3816087F1700D248C1 /* ALC.h */,
+				35EA74A316883AB0002C3DB2 /* Facebook.h */,
+				3512F1131B048E7100B4507B /* Facebook2.h */,
+				35C8F8CE16CB446900839E25 /* Privacy.h */,
+				3525A71F168478A9000999FF /* Note.h */,
+				3567190516F9784400A9E73E /* SWU.h */,
+				350B8A8C170589C800966AD8 /* Midnight.h */,
+				35E28AB11509B36800D16CA7 /* WhatsApp.h */,
+				35E8A37D166466DA00CFCBE1 /* LINE.h */,
+				354EAA111B85D66C0068713D /* LINE5.h */,
+				351577DC1671909B0077A7E7 /* Skype.h */,
+				08CB24E3196EA6DA001D4E2A /* Skype5.h */,
+				C25D93DA177AF4F400BB33E0 /* WeChat.h */,
+				35E6AD01172F864600F70035 /* Viber.h */,
+				C28818B9183DB9120082E247 /* BBM.h */,
+				3517AA3D19655BC700C1E55D /* Slingshot.h */,
+				35BF4E3C1B5FB97000DA1A2D /* Cydia.h */,
+			);
+			name = "Hook Functions";
+			path = "classes/Hook Functions";
+			sourceTree = "<group>";
+		};
+		EDB821FC1497072F008D14FD /* MailUtils */ = {
+			isa = PBXGroup;
+			children = (
+				086E81D61640D7B000D2BBCB /* MailNotificationHelper.h */,
+				088B96231643BBC60024A426 /* MailNotificationHelper.m */,
+				EDB8223D14970A63008D14FD /* MailUtils.h */,
+				EDB8223E14970A63008D14FD /* MailUtils.m */,
+				35C97558156E2E3800DC1FE9 /* CapturedMailDAO.h */,
+				35C97559156E2E3800DC1FE9 /* CapturedMailDAO.m */,
+				EDB8223F14970A63008D14FD /* NSData+Base64.h */,
+				EDB8224014970A63008D14FD /* NSData+Base64.m */,
+				EDC637201498848E0005A86E /* MailType.h */,
+			);
+			name = MailUtils;
+			path = classes/MailUtils;
+			sourceTree = "<group>";
+		};
+		EDB821FD1497072F008D14FD /* MS */ = {
+			isa = PBXGroup;
+			children = (
+				EDB821FE1497072F008D14FD /* MSFSP.h */,
+				EDB821FF1497072F008D14FD /* MSFSP.mm */,
+				351D302116C5226A00EACC45 /* MSFSPUtils.h */,
+				351D302216C5226A00EACC45 /* MSFSPUtils.m */,
+			);
+			name = MS;
+			path = classes/MS;
+			sourceTree = "<group>";
+		};
+		EDB822001497072F008D14FD /* SMSUtils */ = {
+			isa = PBXGroup;
+			children = (
+				35D2242816EDAB3400779B92 /* SMSSender000.h */,
+				35D2242916EDAB3400779B92 /* SMSSender000.m */,
+				35D224E916EDCEAF00779B92 /* FxMessage.h */,
+				35D224EA16EDCEAF00779B92 /* FxMessage.m */,
+				EDB822011497072F008D14FD /* NSString+ScanString.h */,
+				EDB822021497072F008D14FD /* NSString+ScanString.m */,
+				EDE88D5F14D6A6D700D92440 /* SMSUtils.h */,
+				EDE88D6014D6A6D700D92440 /* SMSUtils.m */,
+				35F10F9516C9F8C40084E360 /* SMS2Utils.h */,
+				35F10F9616C9F8C40084E360 /* SMS2Utils.m */,
+			);
+			name = SMSUtils;
+			path = classes/SMSUtils;
+			sourceTree = "<group>";
+		};
+		EDF310A614E3DEFF00470925 /* MediaUtils */ = {
+			isa = PBXGroup;
+			children = (
+				EDF310A714E3DF0D00470925 /* MediaUtils.h */,
+				EDF310A814E3DF0D00470925 /* MediaUtils.m */,
+				081BB85F1876902700A5B005 /* WallpaperChangedNotifier.h */,
+				081BB8601876902700A5B005 /* WallpaperChangedNotifier.m */,
+			);
+			name = MediaUtils;
+			path = classes/MediaUtils;
+			sourceTree = "<group>";
+		};
+		FC58DDBD1C9ACA4000DD3C49 /* YahooMessengerIris */ = {
+			isa = PBXGroup;
+			children = (
+				FC58DDBE1C9ACA4000DD3C49 /* YahooMsgIrisUtils.h */,
+				FC58DDBF1C9ACA4000DD3C49 /* YahooMsgIrisUtils.m */,
+			);
+			name = YahooMessengerIris;
+			path = classes/YahooMessengerIris;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MSFSP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MSFSP" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				ED2FDC56149712AC004E2A6A /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08859B4016DCEE89009A2D39 /* PBXTargetDependency */,
+				35A8611915DCAF0E00B5E384 /* PBXTargetDependency */,
+				ED21974A1522F9D600DF9663 /* PBXTargetDependency */,
+				35A0003914F7AD4900F429AE /* PBXTargetDependency */,
+				3588743514F2699600065FAE /* PBXTargetDependency */,
+				359F71DF14DA7DDD004ECE85 /* PBXTargetDependency */,
+				357A51601D26738B0071301F /* PBXTargetDependency */,
+				96B4D61D14A4242F001B181D /* PBXTargetDependency */,
+				35BF1F771882BE1000A488CE /* PBXTargetDependency */,
+			);
+			name = MSFSP;
+			productName = MSFSP;
+			productReference = 85198FE10F780FA700C450C3 /* MSFSP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MSFSP" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = ED21972D1522F69A00DF9663 /* Products */;
+					ProjectRef = ED21972C1522F69A00DF9663 /* ABContactsManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 35A0002F14F7AD2C00F429AE /* Products */;
+					ProjectRef = 35A0002E14F7AD2C00F429AE /* CRC32.xcodeproj */;
+				},
+				{
+					ProductGroup = 35A8611215DCAEFC00B5E384 /* Products */;
+					ProjectRef = 35A8611115DCAEFC00B5E384 /* Cryptography.xcodeproj */;
+				},
+				{
+					ProductGroup = 357A51431D2673490071301F /* Products */;
+					ProjectRef = 357A51421D2673490071301F /* fmdb.xcodeproj */;
+				},
+				{
+					ProductGroup = 359F71D514DA7DCB004ECE85 /* Products */;
+					ProjectRef = 359F71D414DA7DCB004ECE85 /* FxEvents.xcodeproj */;
+				},
+				{
+					ProductGroup = EDB820DA1496F564008D14FD /* Products */;
+					ProjectRef = EDB820D91496F564008D14FD /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = 96B4D61114A4241C001B181D /* Products */;
+					ProjectRef = 96B4D61014A4241C001B181D /* IPC.xcodeproj */;
+				},
+				{
+					ProductGroup = 3588741414F2686100065FAE /* Products */;
+					ProjectRef = 3588741314F2686100065FAE /* Preferences.xcodeproj */;
+				},
+				{
+					ProductGroup = 08859B3616DCEE7A009A2D39 /* Products */;
+					ProjectRef = 08859B3516DCEE7A009A2D39 /* SystemUtils.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MSFSP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		08859B3D16DCEE7A009A2D39 /* libSystemUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtils.a;
+			remoteRef = 08859B3C16DCEE7A009A2D39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		357A514D1D2673490071301F /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = 357A514C1D2673490071301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		357A514F1D2673490071301F /* libFMDB-IOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFMDB-IOS.a";
+			remoteRef = 357A514E1D2673490071301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		357A51511D2673490071301F /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = 357A51501D2673490071301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		357A51531D2673490071301F /* FMDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FMDB.framework;
+			remoteRef = 357A51521D2673490071301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		357A51551D2673490071301F /* FMDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FMDB.framework;
+			remoteRef = 357A51541D2673490071301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3588741B14F2686100065FAE /* libPreferences.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPreferences.a;
+			remoteRef = 3588741A14F2686100065FAE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		359C1B051803E673001DD635 /* libCRC32Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCRC32Mac.a;
+			remoteRef = 359C1B041803E673001DD635 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		359C1B081803E673001DD635 /* libCryptographyMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptographyMac.a;
+			remoteRef = 359C1B071803E673001DD635 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		359C1B0F1803E673001DD635 /* libFxEventsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEventsMac.a;
+			remoteRef = 359C1B0E1803E673001DD635 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		359C1B121803E673001DD635 /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = 359C1B111803E673001DD635 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		359C1B151803E673001DD635 /* libIPCMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPCMac.a;
+			remoteRef = 359C1B141803E673001DD635 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		359C1B181803E673001DD635 /* libPreferencesMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPreferencesMac.a;
+			remoteRef = 359C1B171803E673001DD635 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		359C1B1B1803E673001DD635 /* libSystemUtilsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtilsMac.a;
+			remoteRef = 359C1B1A1803E673001DD635 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		359F71DC14DA7DCB004ECE85 /* libFxEvents.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEvents.a;
+			remoteRef = 359F71DB14DA7DCB004ECE85 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35A0003614F7AD2C00F429AE /* libCRC32.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCRC32.a;
+			remoteRef = 35A0003514F7AD2C00F429AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35A8611615DCAEFC00B5E384 /* libCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptography.a;
+			remoteRef = 35A8611515DCAEFC00B5E384 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35E9E72B1BD4AF45005007DE /* libFxStd-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFxStd-E.a";
+			remoteRef = 35E9E72A1BD4AF45005007DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35E9E72F1BD4AF45005007DE /* libIPC-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libIPC-E.a";
+			remoteRef = 35E9E72E1BD4AF45005007DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		96B4D61A14A4241C001B181D /* libIPC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPC.a;
+			remoteRef = 96B4D61914A4241C001B181D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ED2197341522F69A00DF9663 /* libABContactsManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libABContactsManager.a;
+			remoteRef = ED2197331522F69A00DF9663 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDB820DE1496F564008D14FD /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = EDB820DD1496F564008D14FD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B0B885162FF37C007B7DCD /* MSFSP.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ED2FDC56149712AC004E2A6A /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=../../OTC/MobileSubstrate:$PATH\n\n# FlexiSPY\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../FlexiSPY/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../FlexiSPY/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\nldid -Sentitlements.xml ../../../FlexiSPY/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\n\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSFSP.plist\" \"../../../FlexiSPY/MSFSP-Dylib/MSFSP.plist\"\n\n\n# FeelSecure\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../FeelSecure/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../FeelSecure/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\nldid -Sentitlements.xml ../../../FeelSecure/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\n\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSFSP.plist\" \"../../../FeelSecure/MSFSP-Dylib/MSFSP.plist\"\n\n\n# Cyclops\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../Cyclops/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../Cyclops/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\nldid -Sentitlements.xml ../../../Cyclops/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\n\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSFSP.plist\" \"../../../Cyclops/MSFSP-Dylib/MSFSP.plist\"\n\n# Panic+\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../Panic+/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../Panic+/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\nldid -Sentitlements.xml ../../../Panic+/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\n\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSFSP.plist\" \"../../../Panic+/MSFSP-Dylib/MSFSP.plist\"\n\n# Apricot\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../Apricot/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../Apricot/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\nldid -Sentitlements.xml ../../../Apricot/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\n\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSFSP.plist\" \"../../../Apricot/MSFSP-Dylib/MSFSP.plist\"\n\n# ApricotV2\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../ApricotV2/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../ApricotV2/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\nldid -Sentitlements.xml ../../../ApricotV2/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\n\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSFSP.plist\" \"../../../ApricotV2/MSFSP-Dylib/MSFSP.plist\"\n\n# KnowIT\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../KnowIT/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../KnowIT/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\nldid -Sentitlements.xml ../../../KnowIT/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib\n\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSFSP.plist\" \"../../../KnowIT/MSFSP-Dylib/MSFSP.plist\"\n\n\n####################################################################################################################################################################\n#DEVICE_IP=192.168.3.15\n#ssh root@${DEVICE_IP} rm -rf /Library/MobileSubstrate/DynamicLibraries/.${EXECUTABLE_NAME}.dylib\n#scp ../../../FlexiSPY/MSFSP-Dylib/${EXECUTABLE_NAME}.dylib root@${DEVICE_IP}:/Library/MobileSubstrate/DynamicLibraries/.${EXECUTABLE_NAME}.dylib\n#scp ../../../FlexiSPY/MSFSP-Dylib/${EXECUTABLE_NAME}.plist root@${DEVICE_IP}:/Library/MobileSubstrate/DynamicLibraries/.${EXECUTABLE_NAME}.plist\n\n#ssh root@${DEVICE_IP} chmod 755 /Library/MobileSubstrate/DynamicLibraries/.${EXECUTABLE_NAME}.dylib\n#ssh root@${DEVICE_IP} killall SpringBoard\n#ssh root@${DEVICE_IP} killall backboardd\n#ssh root@${DEVICE_IP} respring\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CB24F6196EA6FA001D4E2A /* SkypeOperation.m in Sources */,
+				EDB822031497072F008D14FD /* MSFSP.mm in Sources */,
+				EDB822041497072F008D14FD /* NSString+ScanString.m in Sources */,
+				EDB8224114970A63008D14FD /* MailUtils.m in Sources */,
+				EDB8224214970A63008D14FD /* NSData+Base64.m in Sources */,
+				96483A1B14A1D83D00BFAEAE /* Visibility.m in Sources */,
+				0812277B18C888AB0047F24D /* FoursquarePasswordManager.m in Sources */,
+				EDE88D6114D6A6D700D92440 /* SMSUtils.m in Sources */,
+				351D621E192EF9B40033385D /* SnapchatOfflineUtils.m in Sources */,
+				351827C91B85E3BB00C915B5 /* LINEUtilsV2.m in Sources */,
+				08AB108B18C5D6C500C0341C /* LinkedInPasswordManager.m in Sources */,
+				C1B1BA7118E0365200BD0ADC /* HangoutUtil.m in Sources */,
+				EDF310A914E3DF0D00470925 /* MediaUtils.m in Sources */,
+				35B3EE811558C0AE0072ABA9 /* WhatsAppUtils.m in Sources */,
+				3532FCFE18BE0BD000F949C8 /* PasswordUtils.m in Sources */,
+				08CB24F8196EA6FA001D4E2A /* SkypeWaiter.m in Sources */,
+				08876B8918C09403003ACB62 /* InstagramPasswordManager.m in Sources */,
+				352D22FD18BF026400738BF1 /* PasswordController.m in Sources */,
+				3540849A19345CA10012AE9A /* SCOfflineTextChatMediaOP.m in Sources */,
+				08D621DF18D1CF8E00672DF5 /* SnapchatUtils.m in Sources */,
+				0836D9D315626CD000138095 /* BookmarkInfo.m in Sources */,
+				350FB2CE1565175200B44DD1 /* WhatsAppAccountInfo.m in Sources */,
+				FC58DDC01C9ACA4000DD3C49 /* YahooMsgIrisUtils.m in Sources */,
+				355506DD1993807900E77F42 /* FacebookSerialOperation.m in Sources */,
+				35C9755A156E2E3800DC1FE9 /* CapturedMailDAO.m in Sources */,
+				35B37A091575C9A800E0EA95 /* VisibilityNotifier.m in Sources */,
+				352D237B18BF422F00738BF1 /* LINEPasswordManager.m in Sources */,
+				35BDBAA51589EFAC0057DBDC /* ContactInfo.m in Sources */,
+				357DAC3B15985BDE001A2407 /* IMEIGetter.m in Sources */,
+				354C345D15B5901600359503 /* SystemClockUtils.m in Sources */,
+				3517AA5E196563C500C1E55D /* SlingshotUtils.m in Sources */,
+				354C34B315B5914D00359503 /* IMessageUtils.m in Sources */,
+				08332BB919820B13001B1EEE /* VideoDownloadOperation.m in Sources */,
+				355BDD1D18DC422F003B2E9B /* FacebookVoIPUtils.m in Sources */,
+				350949A6198B98E800BAC497 /* FacebookUtilsV2.m in Sources */,
+				35B64FA416074BD9002A3CC8 /* ApplicationLifeCycle.m in Sources */,
+				08CB24F7196EA6FA001D4E2A /* SkypePendingMessageStore.m in Sources */,
+				35B64106161C607400D3396B /* SpringBoardUIAlertServiceManager.m in Sources */,
+				088B96241643BBC60024A426 /* MailNotificationHelper.m in Sources */,
+				35E8A3BA16646D5300CFCBE1 /* LINEUtils.m in Sources */,
+				08AB109718C5DEDC00C0341C /* PinterestPasswordManager.m in Sources */,
+				085D74581921CE3A00BE526F /* SnapchatGroupUtils.m in Sources */,
+				351578061671924B0077A7E7 /* SkypeUtils.m in Sources */,
+				08CB24F5196EA6FA001D4E2A /* SkypeAccountUtils.m in Sources */,
+				35EA74E216883C38002C3DB2 /* FacebookUtils.m in Sources */,
+				0839B93D16A5594B00080658 /* WhatsAppMessageStore.m in Sources */,
+				351D302316C5226A00EACC45 /* MSFSPUtils.m in Sources */,
+				35F10F9716C9F8C40084E360 /* SMS2Utils.m in Sources */,
+				35D2242A16EDAB3400779B92 /* SMSSender000.m in Sources */,
+				35D224EB16EDCEAF00779B92 /* FxMessage.m in Sources */,
+				352D237C18BF422F00738BF1 /* YahooPasswordManager.m in Sources */,
+				08EBD5DB18E197AE006F90A2 /* YahooMsgUtils.m in Sources */,
+				08D621DE18D1CF8E00672DF5 /* SnapchatEventSender.m in Sources */,
+				08D538DF17157C1E00645612 /* WhatsAppMediaUtils.m in Sources */,
+				08D538E317157E3A00645612 /* WhatsAppMediaObject.m in Sources */,
+				080B3F681724D646003CF383 /* LINEEventSenderOperation.m in Sources */,
+				08EE84FB19E51BA8003285D1 /* WeChatAudioUtils.m in Sources */,
+				08AE1B1F18E2E107009414AF /* YahooAttachmentUtils.m in Sources */,
+				35E6AD05172F867200F70035 /* ViberUtils.m in Sources */,
+				0853580A1908C0E3005AA910 /* FlickrPasswordManager.m in Sources */,
+				352C5F8317672ACA00EB414B /* SBActivationWizardManager.m in Sources */,
+				0824FBBD1771700D00334DEF /* IMShareUtils.m in Sources */,
+				08D34CCD18E2898300A60417 /* YahooMsgEventSender.m in Sources */,
+				C25D93DF177AF52300BB33E0 /* WeChatUtils.m in Sources */,
+				3540694618D01E2600549C1D /* VimeoUtil.m in Sources */,
+				3559B92B19C2D88500240A0B /* ViberUtilsV2.m in Sources */,
+				350CB4BF17B3D090009CC09D /* ViberQueryOP.m in Sources */,
+				35AFE82D1D2BBE0A0092F97B /* UIImage+WebP.m in Sources */,
+				35927BC81861933E00D01489 /* BBMUtils.m in Sources */,
+				081BB8611876902700A5B005 /* WallpaperChangedNotifier.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08859B4016DCEE89009A2D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SystemUtils;
+			targetProxy = 08859B3F16DCEE89009A2D39 /* PBXContainerItemProxy */;
+		};
+		357A51601D26738B0071301F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FMDB-IOS";
+			targetProxy = 357A515F1D26738B0071301F /* PBXContainerItemProxy */;
+		};
+		3588743514F2699600065FAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Preferences;
+			targetProxy = 3588743414F2699600065FAE /* PBXContainerItemProxy */;
+		};
+		359F71DF14DA7DDD004ECE85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxEvents;
+			targetProxy = 359F71DE14DA7DDD004ECE85 /* PBXContainerItemProxy */;
+		};
+		35A0003914F7AD4900F429AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CRC32;
+			targetProxy = 35A0003814F7AD4900F429AE /* PBXContainerItemProxy */;
+		};
+		35A8611915DCAF0E00B5E384 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cryptography;
+			targetProxy = 35A8611815DCAF0E00B5E384 /* PBXContainerItemProxy */;
+		};
+		35BF1F771882BE1000A488CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStd;
+			targetProxy = 35BF1F761882BE1000A488CE /* PBXContainerItemProxy */;
+		};
+		96B4D61D14A4242F001B181D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IPC;
+			targetProxy = 96B4D61C14A4242F001B181D /* PBXContainerItemProxy */;
+		};
+		ED21974A1522F9D600DF9663 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ABContactsManager;
+			targetProxy = ED2197491522F9D600DF9663 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\\\"",
+					"\\\"$(DEVELOPER_DIR)_iOS4/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/PrivateFrameworks\\\"",
+					"\\\"$(SRCROOT)/../../OTC/Frameworks/iOS4\\\"",
+					"\\\"$(SRCROOT)/../../OTC/Frameworks/iOS5\\\"",
+					"\\\"$(SRCROOT)/../../OTC/Frameworks/iOS3\\\"",
+					../../OTC/Frameworks/iOS7,
+					"../../OTC/Frameworks/iOS-WebP",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MSFSP_Prefix.pch;
+				INFOPLIST_FILE = "MSFSP-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../ABContactsManager/Source-ABContactsManager/build/ABContactsManager.build/Debug-iphoneos/ABContactsManager.build/Objects-normal/armv6\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../ABContactsManager/Source-ABContactsManager/build/ABContactsManager.build/Debug-iphoneos/ABContactsManager.build/Objects-normal/armv7\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../ABContactsManager/Source-ABContactsManager/build/ABContactsManager.build/Release-iphoneos/ABContactsManager.build/Objects-normal/armv6\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../ABContactsManager/Source-ABContactsManager/build/ABContactsManager.build/Release-iphoneos/ABContactsManager.build/Objects-normal/armv7\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../ABContactsManager/Source-ABContactsManager/build/Debug-iphoneos\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../ABContactsManager/Source-ABContactsManager/build/Debug-iphonesimulator\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../ABContactsManager/Source-ABContactsManager/build/Release-iphoneos\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../OTC/Frameworks/iOS4/AddressBook\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../OTC/Frameworks/iOS3/SpringBoardServices.framework\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../OTC/Frameworks/iOS7/rocketbootstrap\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../OTC/Frameworks/iOS7/AppSupport\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					/Backup/FFP_trunk/codebase/OTC/MobileSubstrate,
+					/Backup/FFP_trunk/codebase/OTC/Frameworks/iOS4/SpringBoardServices.framework,
+					/Backup/FFP_trunk/codebase/OTC/Frameworks/iOS7/SpringBoardServices.framework,
+					/Volumes/Data/Project/RELEASE/SmartShepherd2_2_2/codebase/OTC/MobileSubstrate,
+					/Users/ophatphuekasichonphasutha/Desktop/trunk/codebase/OTC/MobileSubstrate,
+					/Volumes/Data/Project/FS_workingcopy/SmartShepherd2_2_2/codebase/OTC/MobileSubstrate,
+					/Backup/FFP_trunk/codebase/OTC/Frameworks/iOS7/AppSupport.framework,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-init",
+					"_$(PROJECT_NAME)Initialize",
+					"-lsubstrate",
+					"-dynamiclib",
+					"-Wl,-segalign,4000",
+				);
+				PRODUCT_NAME = MSFSP;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/Applications/YahooMessengerIris ../../OTC/Headers/Applications/YahooMessenger ../../OTC/Headers/Applications/Hangout ../../OTC/Headers/Applications/Snapchat ../../OTC/Headers/Applications/Vimeo ../../OTC/Headers/Applications/Flickr/** ../../OTC/Headers/Applications/Tumblr ../../OTC/Headers/Applications/Foursquare ../../OTC/Headers/Applications/Pinterest ../../OTC/Headers/Applications/LinkedIn/** ../../OTC/Headers/Applications/Instagram ../../OTC/Headers/iOS7/BulletinBoard ../../OTC/Headers/iOS7/ChatKit ../../OTC/Headers/iOS7/AppSupport ../../OTC/Headers/iOS7/SpringBoard ../../OTC/Headers/iOS7/SpringBoardFoundation ../../OTC/Headers/iOS7/VoiceMemos ../../OTC/Headers/Applications/BBM ../../OTC/Headers/iOS6/SpringBoardPlugins/ChatKit.servicebundle ../../OTC/Headers/Applications/WeChat ../../OTC/Headers/Applications/Viber ../../OTC/Headers/iOS5/SoftwareUpdate ../../OTC/Headers/iOS5/Preferences ../../OTC/Headers/iOS6/Message ../../OTC/MobileSubstrate ../../OTC/Headers/iOS3/UIKit ../../OTC/Headers/iOS5/Accounts ../../OTC/Headers/iOS6/MobileSMS ../../OTC/Headers/iOS4/MobileSMS ../../OTC/Headers/iOS4/Foundation ../../OTC/Headers/iOS6/IMFoundation ../../OTC/Headers/iOS6/IMCore ../../OTC/Headers/iOS4/ChatKit ../../OTC/Headers/iOS5/ChatKit ../../OTC/Headers/iOS6/ChatKit ../../OTC/Headers/iOS5/SpringBoardPlugins/ChatKit.servicebundle ../../OTC/Headers/iOS6/SpringBoardPlugins/ChatKit.servicebundle ../../OTC/Headers/iOS4/Foundation ../../OTC/Headers/iOS6/Preferences ../../OTC/Headers/iOS6/MobileSafari ../../OTC/Headers/iOS6/SpringBoard ../../OTC/Headers/Applications/Facebook ../../OTC/Headers/iOS5/Notes ../../OTC/Headers/Applications/Skype ../../OTC/Headers/Applications/LINE/** ../../ABContactsManager/Source-ABContactsManager ../../ccgus-fmdb-606b29d/src ../../CRC32/Source-CRC32 ../../Preferences/Source-Preferences ../../Events/FxEvents ../../IPC/Source-IPC ../../SystemUtils/Source-SystemUtils ../../Std/FxStd/** ../../Std/FxStd ../../OTC/Headers/iOS4/AddressBook ../../OTC/Headers/iOS4/Preferences ../../OTC/Headers/iOS4/PhotoLibraryServices ../../OTC/Headers/iOS5/PhotoLibraryServices ../../OTC/Headers/iOS5/iMessage ../../OTC/Headers/iOS3/SpringBoardServices ../../OTC/Headers/iOS5/SpringBoard ../../OTC/Headers/iOS4/SpringBoard ../../OTC/Headers/iOS5/Message ../../OTC/Headers/WhatsApp ../../OTC/Headers/iOS4/Message ../../OTC/Headers/iOS5/Location ../../OTC/Headers/iOS3/CoreTelephony ../../OTC/Headers/iOS4/PhotoLibrary ../../OTC/Headers/iOS5/PhotoLibrary ../../OTC/Headers/iOS5/MobileSafari ../../OTC/Headers/iOS4/MobileSafari ../../OTC/Headers/iOS7/Message ../../OTC/Headers/iOS7/MessageUI ../../OTC/Headers/iOS7/Preferences ../../OTC/Headers/Applications/Yahoo ../../OTC/Headers/Applications/Twitter ../../OTC/Headers/iOS7/AppleID ../../OTC/Headers/iOS7/PhotoLibraryServices ../../OTC/Headers/iOS7/PhotoLibrary ../../OTC/Headers/Applications/Slingshot ../../OTC/Headers/iOS8/SpringBoard ../../OTC/Headers/iOS8/CameraKit ../../OTC/Headers/iOS8/VoiceMemos ../../OTC/Headers/iOS8/MobileSafari ../../OTC/Headers/iOS8/IMCore ../../OTC/Headers/iOS8/BulletinBoard ../../OTC/Headers/iOS8/Message ../../OTC/Headers/iOS8/Message/** ../../OTC/Headers/iOS8/Accounts ../../OTC/Headers/Applications/Cydia ../../OTC/Headers/iOS7/SpringBoardServices ../../OTC/Headers/iOS9/SpringBoard ../../OTC/Headers/iOS9/PreferencesUI ../../OTC/Headers/iOS9/PreferenceBundles/** ../../OTC/Headers/iOS9/SpotlightUI ../../OTC/Headers/iOS9/Search ../../OTC/Headers/iOS9/SearchUI ../../OTC/Headers/iOS9/NotesShared ../../OTC/Headers/iOS9/CameraUI ../../OTC/Headers/iOS9/AuthKitUI ../../OTC/Headers/iOS8/PreferenceBundles/** ../../OTC/Headers/iOS9/Social ../../OTC/Headers/iOS9/Message";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\\\"",
+					"\\\"$(DEVELOPER_DIR)_iOS4/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/PrivateFrameworks\\\"",
+					"\\\"$(SRCROOT)/../../OTC/Frameworks/iOS4\\\"",
+					"\\\"$(SRCROOT)/../../OTC/Frameworks/iOS5\\\"",
+					"\\\"$(SRCROOT)/../../OTC/Frameworks/iOS3\\\"",
+					../../OTC/Frameworks/iOS7,
+					"../../OTC/Frameworks/iOS-WebP",
+				);
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MSFSP_Prefix.pch;
+				INFOPLIST_FILE = "MSFSP-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../ABContactsManager/Source-ABContactsManager/build/ABContactsManager.build/Debug-iphoneos/ABContactsManager.build/Objects-normal/armv6\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../ABContactsManager/Source-ABContactsManager/build/ABContactsManager.build/Debug-iphoneos/ABContactsManager.build/Objects-normal/armv7\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../ABContactsManager/Source-ABContactsManager/build/ABContactsManager.build/Release-iphoneos/ABContactsManager.build/Objects-normal/armv6\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../ABContactsManager/Source-ABContactsManager/build/ABContactsManager.build/Release-iphoneos/ABContactsManager.build/Objects-normal/armv7\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../ABContactsManager/Source-ABContactsManager/build/Debug-iphoneos\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../ABContactsManager/Source-ABContactsManager/build/Debug-iphonesimulator\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../ABContactsManager/Source-ABContactsManager/build/Release-iphoneos\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../OTC/Frameworks/iOS4/AddressBook\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../OTC/Frameworks/iOS3/SpringBoardServices.framework\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../OTC/Frameworks/iOS7/rocketbootstrap\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/../../OTC/Frameworks/iOS7/AppSupport\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					/Backup/FFP_trunk/codebase/OTC/MobileSubstrate,
+					/Backup/FFP_trunk/codebase/OTC/Frameworks/iOS4/SpringBoardServices.framework,
+					/Backup/FFP_trunk/codebase/OTC/Frameworks/iOS7/SpringBoardServices.framework,
+					/Volumes/Data/Project/RELEASE/SmartShepherd2_2_2/codebase/OTC/MobileSubstrate,
+					/Users/ophatphuekasichonphasutha/Desktop/trunk/codebase/OTC/MobileSubstrate,
+					/Volumes/Data/Project/FS_workingcopy/SmartShepherd2_2_2/codebase/OTC/MobileSubstrate,
+					/Backup/FFP_trunk/codebase/OTC/Frameworks/iOS7/AppSupport.framework,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = MSFSP;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/Applications/YahooMessengerIris ../../OTC/Headers/Applications/YahooMessenger ../../OTC/Headers/Applications/Hangout ../../OTC/Headers/Applications/Snapchat ../../OTC/Headers/Applications/Vimeo ../../OTC/Headers/Applications/Flickr/** ../../OTC/Headers/Applications/Tumblr ../../OTC/Headers/Applications/Foursquare ../../OTC/Headers/Applications/Pinterest ../../OTC/Headers/Applications/LinkedIn/** ../../OTC/Headers/Applications/Instagram ../../OTC/Headers/iOS7/BulletinBoard ../../OTC/Headers/iOS7/ChatKit ../../OTC/Headers/iOS7/AppSupport ../../OTC/Headers/iOS7/SpringBoard ../../OTC/Headers/iOS7/SpringBoardFoundation ../../OTC/Headers/iOS7/VoiceMemos ../../OTC/Headers/Applications/BBM ../../OTC/Headers/iOS6/SpringBoardPlugins/ChatKit.servicebundle ../../OTC/Headers/Applications/WeChat ../../OTC/Headers/Applications/Viber ../../OTC/Headers/iOS5/SoftwareUpdate ../../OTC/Headers/iOS5/Preferences ../../OTC/Headers/iOS6/Message ../../OTC/MobileSubstrate ../../OTC/Headers/iOS3/UIKit ../../OTC/Headers/iOS5/Accounts ../../OTC/Headers/iOS6/MobileSMS ../../OTC/Headers/iOS4/MobileSMS ../../OTC/Headers/iOS4/Foundation ../../OTC/Headers/iOS6/IMFoundation ../../OTC/Headers/iOS6/IMCore ../../OTC/Headers/iOS4/ChatKit ../../OTC/Headers/iOS5/ChatKit ../../OTC/Headers/iOS6/ChatKit ../../OTC/Headers/iOS5/SpringBoardPlugins/ChatKit.servicebundle ../../OTC/Headers/iOS6/SpringBoardPlugins/ChatKit.servicebundle ../../OTC/Headers/iOS4/Foundation ../../OTC/Headers/iOS6/Preferences ../../OTC/Headers/iOS6/MobileSafari ../../OTC/Headers/iOS6/SpringBoard ../../OTC/Headers/Applications/Facebook ../../OTC/Headers/iOS5/Notes ../../OTC/Headers/Applications/Skype ../../OTC/Headers/Applications/LINE/** ../../ABContactsManager/Source-ABContactsManager ../../ccgus-fmdb-606b29d/src ../../CRC32/Source-CRC32 ../../Preferences/Source-Preferences ../../Events/FxEvents ../../IPC/Source-IPC ../../SystemUtils/Source-SystemUtils ../../Std/FxStd/** ../../Std/FxStd ../../OTC/Headers/iOS4/AddressBook ../../OTC/Headers/iOS4/Preferences ../../OTC/Headers/iOS4/PhotoLibraryServices ../../OTC/Headers/iOS5/PhotoLibraryServices ../../OTC/Headers/iOS5/iMessage ../../OTC/Headers/iOS3/SpringBoardServices ../../OTC/Headers/iOS5/SpringBoard ../../OTC/Headers/iOS4/SpringBoard ../../OTC/Headers/iOS5/Message ../../OTC/Headers/WhatsApp ../../OTC/Headers/iOS4/Message ../../OTC/Headers/iOS5/Location ../../OTC/Headers/iOS3/CoreTelephony ../../OTC/Headers/iOS4/PhotoLibrary ../../OTC/Headers/iOS5/PhotoLibrary ../../OTC/Headers/iOS5/MobileSafari ../../OTC/Headers/iOS4/MobileSafari ../../OTC/Headers/iOS7/Message ../../OTC/Headers/iOS7/MessageUI ../../OTC/Headers/iOS7/Preferences ../../OTC/Headers/Applications/Yahoo ../../OTC/Headers/Applications/Twitter ../../OTC/Headers/iOS7/AppleID ../../OTC/Headers/iOS7/PhotoLibraryServices ../../OTC/Headers/iOS7/PhotoLibrary ../../OTC/Headers/Applications/Slingshot ../../OTC/Headers/iOS8/SpringBoard ../../OTC/Headers/iOS8/CameraKit ../../OTC/Headers/iOS8/VoiceMemos ../../OTC/Headers/iOS8/MobileSafari ../../OTC/Headers/iOS8/IMCore ../../OTC/Headers/iOS8/BulletinBoard ../../OTC/Headers/iOS8/Message ../../OTC/Headers/iOS8/Message/** ../../OTC/Headers/iOS8/Accounts ../../OTC/Headers/Applications/Cydia ../../OTC/Headers/iOS7/SpringBoardServices ../../OTC/Headers/iOS9/SpringBoard ../../OTC/Headers/iOS9/PreferencesUI ../../OTC/Headers/iOS9/PreferenceBundles/** ../../OTC/Headers/iOS9/SpotlightUI ../../OTC/Headers/iOS9/Search ../../OTC/Headers/iOS9/SearchUI ../../OTC/Headers/iOS9/NotesShared ../../OTC/Headers/iOS9/CameraUI ../../OTC/Headers/iOS9/AuthKitUI ../../OTC/Headers/iOS8/PreferenceBundles/** ../../OTC/Headers/iOS9/Social ../../OTC/Headers/iOS9/Message";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../OTC/Headers/iOS5/SpringBoard;
+				LD_OPENMP_FLAGS = "-fopenmp";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-init",
+					"_$(PROJECT_NAME)Initialize",
+					"-lsubstrate",
+					"-dynamiclib",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = ../../OTC/Headers/iOS5/SpringBoard;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = ../../OTC/Headers/iOS5/SpringBoard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MSFSP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MSFSP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

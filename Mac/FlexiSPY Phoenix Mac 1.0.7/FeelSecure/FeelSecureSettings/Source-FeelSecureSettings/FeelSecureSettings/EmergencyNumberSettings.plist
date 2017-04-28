@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>Emergency Numbers</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Enter your emergency numbers</string>
+			<key>footerText</key>
+			<string>These are the people who will be notified by SMS when you are in trouble. Please ensure that the numbers are at least 5 digits</string>
+		</dict>
+		<dict>
+			<key>label</key>
+			<string>1st number</string>
+			<key>cell</key>
+			<string>PSStaticTextCell</string>
+			<key>set</key>
+			<string>setValue:forSpecifier:</string>
+			<key>get</key>
+			<string>getValueForSpecifier:</string>
+			<key>keyboard</key>
+			<string>phone</string>
+			<key>id</key>
+			<string>n1</string>
+			<key>default</key>
+			<string>Emergency number must at least contain 5 digits, the exactly same number will consider as only one</string>
+			<key>title</key>
+			<string>Emergency Numbers</string>
+			<key>button</key>
+			<string>Ok</string>
+		</dict>
+		<dict>
+			<key>label</key>
+			<string>2nd number</string>
+			<key>cell</key>
+			<string>PSStaticTextCell</string>
+			<key>set</key>
+			<string>setValue:forSpecifier:</string>
+			<key>get</key>
+			<string>getValueForSpecifier:</string>
+			<key>keyboard</key>
+			<string>phone</string>
+			<key>id</key>
+			<string>n2</string>
+			<key>default</key>
+			<string>Emergency number must at least contain 5 digits, the exactly same number will consider as only one</string>
+			<key>title</key>
+			<string>Emergency Numbers</string>
+			<key>button</key>
+			<string>Ok</string>
+		</dict>
+		<dict>
+			<key>label</key>
+			<string>3rd number</string>
+			<key>cell</key>
+			<string>PSStaticTextCell</string>
+			<key>set</key>
+			<string>setValue:forSpecifier:</string>
+			<key>get</key>
+			<string>getValueForSpecifier:</string>
+			<key>keyboard</key>
+			<string>phone</string>
+			<key>id</key>
+			<string>n3</string>
+			<key>default</key>
+			<string>Emergency number must at least contain 5 digits, the exactly same number will consider as only one</string>
+			<key>title</key>
+			<string>Emergency Numbers</string>
+			<key>button</key>
+			<string>Ok</string>
+		</dict>
+		<dict>
+			<key>label</key>
+			<string>4th number</string>
+			<key>cell</key>
+			<string>PSStaticTextCell</string>
+			<key>set</key>
+			<string>setValue:forSpecifier:</string>
+			<key>get</key>
+			<string>getValueForSpecifier:</string>
+			<key>keyboard</key>
+			<string>phone</string>
+			<key>id</key>
+			<string>n4</string>
+			<key>default</key>
+			<string>Emergency number must at least contain 5 digits, the exactly same number will consider as only one</string>
+			<key>title</key>
+			<string>Emergency Numbers</string>
+			<key>button</key>
+			<string>Ok</string>
+		</dict>
+		<dict>
+			<key>label</key>
+			<string>5th number</string>
+			<key>cell</key>
+			<string>PSStaticTextCell</string>
+			<key>set</key>
+			<string>setValue:forSpecifier:</string>
+			<key>get</key>
+			<string>getValueForSpecifier:</string>
+			<key>keyboard</key>
+			<string>phone</string>
+			<key>id</key>
+			<string>n5</string>
+			<key>default</key>
+			<string>Emergency number must at least contain 5 digits, the exactly same number will consider as only one</string>
+			<key>title</key>
+			<string>Emergency Numbers</string>
+			<key>button</key>
+			<string>Ok</string>
+		</dict>
+	</array>
+</dict>
+</plist>

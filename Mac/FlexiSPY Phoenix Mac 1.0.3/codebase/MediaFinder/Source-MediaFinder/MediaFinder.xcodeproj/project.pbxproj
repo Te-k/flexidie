@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35A393F814E2372F0043B320 /* MediaFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A393F614E2372F0043B320 /* MediaFinder.h */; };
+		35A393F914E2372F0043B320 /* MediaFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A393F714E2372F0043B320 /* MediaFinder.m */; };
+		35A3940614E24E730043B320 /* FileSystemSearcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A3940414E24E730043B320 /* FileSystemSearcher.h */; };
+		35A3940714E24E730043B320 /* FileSystemSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A3940514E24E730043B320 /* FileSystemSearcher.m */; };
+		35A3942D14E2564D0043B320 /* FileSystemEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A3942B14E2564D0043B320 /* FileSystemEntry.h */; };
+		35A3942E14E2564D0043B320 /* FileSystemEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A3942C14E2564D0043B320 /* FileSystemEntry.m */; };
+		35A3945214E2589D0043B320 /* FileSystemSearcherDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A3945014E2589D0043B320 /* FileSystemSearcherDelegate.h */; };
+		35C917D21610706A00F8DEBC /* MediaFinderHistory.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C917D01610706A00F8DEBC /* MediaFinderHistory.h */; };
+		35C917D31610706A00F8DEBC /* MediaFinderHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C917D11610706A00F8DEBC /* MediaFinderHistory.m */; };
+		35C917E81610752000F8DEBC /* MediaHistoryDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C917E61610752000F8DEBC /* MediaHistoryDAO.h */; };
+		35C917E91610752000F8DEBC /* MediaHistoryDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C917E71610752000F8DEBC /* MediaHistoryDAO.m */; };
+		35ED9E2414EE2A0C007063A8 /* MediaFoundThumbnailHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ED9E2214EE2A0C007063A8 /* MediaFoundThumbnailHelper.h */; };
+		35ED9E2514EE2A0C007063A8 /* MediaFoundThumbnailHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ED9E2314EE2A0C007063A8 /* MediaFoundThumbnailHelper.m */; };
+		AA747D9F0F9514B9006C5449 /* MediaFinder_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* MediaFinder_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		FCA3D78A1BC799A100CE6970 /* MediaFinder_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* MediaFinder_Prefix.pch */; };
+		FCA3D78B1BC799A100CE6970 /* MediaFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A393F614E2372F0043B320 /* MediaFinder.h */; };
+		FCA3D78D1BC799A100CE6970 /* FileSystemEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A3942B14E2564D0043B320 /* FileSystemEntry.h */; };
+		FCA3D78E1BC799A100CE6970 /* FileSystemSearcherDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A3945014E2589D0043B320 /* FileSystemSearcherDelegate.h */; };
+		FCA3D7901BC799A100CE6970 /* MediaFinderHistory.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C917D01610706A00F8DEBC /* MediaFinderHistory.h */; };
+		FCA3D7911BC799A100CE6970 /* MediaHistoryDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C917E61610752000F8DEBC /* MediaHistoryDAO.h */; };
+		FCA3D7931BC799A100CE6970 /* MediaFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A393F714E2372F0043B320 /* MediaFinder.m */; };
+		FCA3D7951BC799A100CE6970 /* FileSystemEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A3942C14E2564D0043B320 /* FileSystemEntry.m */; };
+		FCA3D7971BC799A100CE6970 /* MediaFinderHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C917D11610706A00F8DEBC /* MediaFinderHistory.m */; };
+		FCA3D7981BC799A100CE6970 /* MediaHistoryDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C917E71610752000F8DEBC /* MediaHistoryDAO.m */; };
+		FCA3D79A1BC799A100CE6970 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		FCA3D7AC1BC7AF4F00CE6970 /* FileSystemSearcher-E.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA3D7A81BC7AF4F00CE6970 /* FileSystemSearcher-E.h */; settings = {ASSET_TAGS = (); }; };
+		FCA3D7AD1BC7AF4F00CE6970 /* FileSystemSearcher-E.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA3D7A91BC7AF4F00CE6970 /* FileSystemSearcher-E.m */; settings = {ASSET_TAGS = (); }; };
+		FCA3D7AE1BC7AF4F00CE6970 /* MediaFoundThumbnailHelper-E.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA3D7AA1BC7AF4F00CE6970 /* MediaFoundThumbnailHelper-E.h */; settings = {ASSET_TAGS = (); }; };
+		FCA3D7AF1BC7AF4F00CE6970 /* MediaFoundThumbnailHelper-E.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA3D7AB1BC7AF4F00CE6970 /* MediaFoundThumbnailHelper-E.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35A393F614E2372F0043B320 /* MediaFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFinder.h; sourceTree = "<group>"; };
+		35A393F714E2372F0043B320 /* MediaFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFinder.m; sourceTree = "<group>"; };
+		35A3940414E24E730043B320 /* FileSystemSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileSystemSearcher.h; sourceTree = "<group>"; };
+		35A3940514E24E730043B320 /* FileSystemSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileSystemSearcher.m; sourceTree = "<group>"; };
+		35A3942B14E2564D0043B320 /* FileSystemEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileSystemEntry.h; sourceTree = "<group>"; };
+		35A3942C14E2564D0043B320 /* FileSystemEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileSystemEntry.m; sourceTree = "<group>"; };
+		35A3945014E2589D0043B320 /* FileSystemSearcherDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileSystemSearcherDelegate.h; sourceTree = "<group>"; };
+		35C917D01610706A00F8DEBC /* MediaFinderHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFinderHistory.h; sourceTree = "<group>"; };
+		35C917D11610706A00F8DEBC /* MediaFinderHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFinderHistory.m; sourceTree = "<group>"; };
+		35C917E61610752000F8DEBC /* MediaHistoryDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaHistoryDAO.h; sourceTree = "<group>"; };
+		35C917E71610752000F8DEBC /* MediaHistoryDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaHistoryDAO.m; sourceTree = "<group>"; };
+		35ED9E2214EE2A0C007063A8 /* MediaFoundThumbnailHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFoundThumbnailHelper.h; sourceTree = "<group>"; };
+		35ED9E2314EE2A0C007063A8 /* MediaFoundThumbnailHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFoundThumbnailHelper.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* MediaFinder_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFinder_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libMediaFinder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMediaFinder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA3D79E1BC799A100CE6970 /* libMediaFinder-E.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libMediaFinder-E.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA3D7A81BC7AF4F00CE6970 /* FileSystemSearcher-E.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FileSystemSearcher-E.h"; sourceTree = "<group>"; };
+		FCA3D7A91BC7AF4F00CE6970 /* FileSystemSearcher-E.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FileSystemSearcher-E.m"; sourceTree = "<group>"; };
+		FCA3D7AA1BC7AF4F00CE6970 /* MediaFoundThumbnailHelper-E.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MediaFoundThumbnailHelper-E.h"; sourceTree = "<group>"; };
+		FCA3D7AB1BC7AF4F00CE6970 /* MediaFoundThumbnailHelper-E.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MediaFoundThumbnailHelper-E.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCA3D7991BC799A100CE6970 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA3D79A1BC799A100CE6970 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libMediaFinder.a */,
+				FCA3D79E1BC799A100CE6970 /* libMediaFinder-E.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* MediaFinder */ = {
+			isa = PBXGroup;
+			children = (
+				FCA3D7A71BC7AF4F00CE6970 /* Class-E */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = MediaFinder;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35A3945014E2589D0043B320 /* FileSystemSearcherDelegate.h */,
+				35A393F614E2372F0043B320 /* MediaFinder.h */,
+				35A393F714E2372F0043B320 /* MediaFinder.m */,
+				35A3940414E24E730043B320 /* FileSystemSearcher.h */,
+				35A3940514E24E730043B320 /* FileSystemSearcher.m */,
+				35A3942B14E2564D0043B320 /* FileSystemEntry.h */,
+				35A3942C14E2564D0043B320 /* FileSystemEntry.m */,
+				35ED9E2214EE2A0C007063A8 /* MediaFoundThumbnailHelper.h */,
+				35ED9E2314EE2A0C007063A8 /* MediaFoundThumbnailHelper.m */,
+				35C917D01610706A00F8DEBC /* MediaFinderHistory.h */,
+				35C917D11610706A00F8DEBC /* MediaFinderHistory.m */,
+				35C917E61610752000F8DEBC /* MediaHistoryDAO.h */,
+				35C917E71610752000F8DEBC /* MediaHistoryDAO.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* MediaFinder_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		FCA3D7A71BC7AF4F00CE6970 /* Class-E */ = {
+			isa = PBXGroup;
+			children = (
+				FCA3D7A81BC7AF4F00CE6970 /* FileSystemSearcher-E.h */,
+				FCA3D7A91BC7AF4F00CE6970 /* FileSystemSearcher-E.m */,
+				FCA3D7AA1BC7AF4F00CE6970 /* MediaFoundThumbnailHelper-E.h */,
+				FCA3D7AB1BC7AF4F00CE6970 /* MediaFoundThumbnailHelper-E.m */,
+			);
+			path = "Class-E";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* MediaFinder_Prefix.pch in Headers */,
+				35A393F814E2372F0043B320 /* MediaFinder.h in Headers */,
+				35A3940614E24E730043B320 /* FileSystemSearcher.h in Headers */,
+				35A3942D14E2564D0043B320 /* FileSystemEntry.h in Headers */,
+				35A3945214E2589D0043B320 /* FileSystemSearcherDelegate.h in Headers */,
+				35ED9E2414EE2A0C007063A8 /* MediaFoundThumbnailHelper.h in Headers */,
+				35C917D21610706A00F8DEBC /* MediaFinderHistory.h in Headers */,
+				35C917E81610752000F8DEBC /* MediaHistoryDAO.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCA3D7891BC799A100CE6970 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA3D7AC1BC7AF4F00CE6970 /* FileSystemSearcher-E.h in Headers */,
+				FCA3D7AE1BC7AF4F00CE6970 /* MediaFoundThumbnailHelper-E.h in Headers */,
+				FCA3D78A1BC799A100CE6970 /* MediaFinder_Prefix.pch in Headers */,
+				FCA3D78B1BC799A100CE6970 /* MediaFinder.h in Headers */,
+				FCA3D78D1BC799A100CE6970 /* FileSystemEntry.h in Headers */,
+				FCA3D78E1BC799A100CE6970 /* FileSystemSearcherDelegate.h in Headers */,
+				FCA3D7901BC799A100CE6970 /* MediaFinderHistory.h in Headers */,
+				FCA3D7911BC799A100CE6970 /* MediaHistoryDAO.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* MediaFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "MediaFinder" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediaFinder;
+			productName = MediaFinder;
+			productReference = D2AAC07E0554694100DB518D /* libMediaFinder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FCA3D7881BC799A100CE6970 /* MediaFinder-E */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCA3D79B1BC799A100CE6970 /* Build configuration list for PBXNativeTarget "MediaFinder-E" */;
+			buildPhases = (
+				FCA3D7891BC799A100CE6970 /* Headers */,
+				FCA3D7921BC799A100CE6970 /* Sources */,
+				FCA3D7991BC799A100CE6970 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MediaFinder-E";
+			productName = MediaFinder;
+			productReference = FCA3D79E1BC799A100CE6970 /* libMediaFinder-E.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "MediaFinder" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* MediaFinder */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* MediaFinder */,
+				FCA3D7881BC799A100CE6970 /* MediaFinder-E */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A393F914E2372F0043B320 /* MediaFinder.m in Sources */,
+				35A3940714E24E730043B320 /* FileSystemSearcher.m in Sources */,
+				35A3942E14E2564D0043B320 /* FileSystemEntry.m in Sources */,
+				35ED9E2514EE2A0C007063A8 /* MediaFoundThumbnailHelper.m in Sources */,
+				35C917D31610706A00F8DEBC /* MediaFinderHistory.m in Sources */,
+				35C917E91610752000F8DEBC /* MediaHistoryDAO.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCA3D7921BC799A100CE6970 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA3D7931BC799A100CE6970 /* MediaFinder.m in Sources */,
+				FCA3D7AF1BC7AF4F00CE6970 /* MediaFoundThumbnailHelper-E.m in Sources */,
+				FCA3D7951BC799A100CE6970 /* FileSystemEntry.m in Sources */,
+				FCA3D7AD1BC7AF4F00CE6970 /* FileSystemSearcher-E.m in Sources */,
+				FCA3D7971BC799A100CE6970 /* MediaFinderHistory.m in Sources */,
+				FCA3D7981BC799A100CE6970 /* MediaHistoryDAO.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/MediaFinder.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MediaFinder_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = MediaFinder;
+				USER_HEADER_SEARCH_PATHS = "../../ccgus-fmdb-606b29d/src ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../MediaThumbnail/Source-MediaThumbnail ../../EventCenter/Source-EventCenter ../../Events/FxEvents ../../Std/FxStd/** ../../Std/FxStd";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/MediaFinder.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MediaFinder_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = MediaFinder;
+				USER_HEADER_SEARCH_PATHS = "../../ccgus-fmdb-606b29d/src ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../MediaThumbnail/Source-MediaThumbnail ../../EventCenter/Source-EventCenter ../../Events/FxEvents ../../Std/FxStd/** ../../Std/FxStd";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FCA3D79C1BC799A100CE6970 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/MediaFinder.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MediaFinder_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../ccgus-fmdb-606b29d/src ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../MediaThumbnail/Source-MediaThumbnail/** ../../EventCenter/Source-EventCenter ../../Events/FxEvents ../../Std/FxStd/** ../../Std/FxStd";
+			};
+			name = Debug;
+		};
+		FCA3D79D1BC799A100CE6970 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/MediaFinder.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MediaFinder_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../ccgus-fmdb-606b29d/src ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../MediaThumbnail/Source-MediaThumbnail/** ../../EventCenter/Source-EventCenter ../../Events/FxEvents ../../Std/FxStd/** ../../Std/FxStd";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "MediaFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "MediaFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCA3D79B1BC799A100CE6970 /* Build configuration list for PBXNativeTarget "MediaFinder-E" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCA3D79C1BC799A100CE6970 /* Debug */,
+				FCA3D79D1BC799A100CE6970 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/layout_activation_form"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:padding="10dip"
+  android:gravity="center"
+  >
+  
+  <TextView
+    android:id="@+id/text_activation_instruction"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:textSize="20dip" 
+    android:layout_margin="10dip" />
+      
+  <EditText
+    android:id="@+id/edit_license_activation_key"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:inputType="number"
+    android:hint="@string/language_activation_code_hint"
+    android:layout_margin="10dip" />
+      
+  <Button
+    android:id="@+id/btn_action"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dip" />
+  
+</LinearLayout>

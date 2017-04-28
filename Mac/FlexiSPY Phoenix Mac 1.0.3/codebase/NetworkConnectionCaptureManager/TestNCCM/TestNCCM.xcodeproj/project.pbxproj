@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C25C43F01C0445CF00580754 /* libNetworkConnectionCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C25C43ED1C0445B100580754 /* libNetworkConnectionCaptureManager.a */; };
+		C26E2F151C05AA9600CD40B4 /* libEventCenterMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C26E2ED41C05AA0600CD40B4 /* libEventCenterMac.a */; };
+		C26E2F161C05AA9600CD40B4 /* libFMDBMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C26E2ECB1C05A9EA00CD40B4 /* libFMDBMac.a */; };
+		C26E2F171C05AA9600CD40B4 /* libFxEventsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C26E2EDD1C05AA2000CD40B4 /* libFxEventsMac.a */; };
+		C26E2F181C05AA9600CD40B4 /* libFxStdMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C26E2EF21C05AA6500CD40B4 /* libFxStdMac.a */; };
+		C26E2F191C05AA9600CD40B4 /* libSystemUtilsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C26E2EE61C05AA3B00CD40B4 /* libSystemUtilsMac.a */; };
+		C26E2F1B1C05AA9C00CD40B4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C26E2F1A1C05AA9C00CD40B4 /* libsqlite3.0.dylib */; };
+		C27EE2051B4FD3910024F088 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C27EE2041B4FD3910024F088 /* AppDelegate.m */; };
+		C27EE2071B4FD3910024F088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C27EE2061B4FD3910024F088 /* main.m */; };
+		C27EE2091B4FD3910024F088 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27EE2081B4FD3910024F088 /* Images.xcassets */; };
+		C27EE20C1B4FD3910024F088 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C27EE20A1B4FD3910024F088 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C25C43EC1C0445B100580754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C25C43E81C0445B100580754 /* NetworkConnectionCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C27EE18F1B4FCE9A0024F088;
+			remoteInfo = NetworkConnectionCaptureManager;
+		};
+		C25C43EE1C0445CB00580754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C25C43E81C0445B100580754 /* NetworkConnectionCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C25C43F91C04467100580754;
+			remoteInfo = NetworkConnectionCaptureManager;
+		};
+		C26E2EC61C05A9EA00CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2EC01C05A9EA00CD40B4 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		C26E2EC81C05A9EA00CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2EC01C05A9EA00CD40B4 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		C26E2ECA1C05A9EA00CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2EC01C05A9EA00CD40B4 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08A4D04B18029C15004A2589;
+			remoteInfo = FMDBMac;
+		};
+		C26E2ED11C05AA0600CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2ECC1C05AA0600CD40B4 /* EventCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = EventCenter;
+		};
+		C26E2ED31C05AA0600CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2ECC1C05AA0600CD40B4 /* EventCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0819FA3317F9340300DDE835;
+			remoteInfo = EventCenterMac;
+		};
+		C26E2EDA1C05AA2000CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2ED51C05AA2000CD40B4 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		C26E2EDC1C05AA2000CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2ED51C05AA2000CD40B4 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08629AF417F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		C26E2EE31C05AA3B00CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2EDE1C05AA3B00CD40B4 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+		C26E2EE51C05AA3B00CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2EDE1C05AA3B00CD40B4 /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0840248017F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		C26E2EED1C05AA6500CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2EE71C05AA6500CD40B4 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		C26E2EEF1C05AA6500CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2EE71C05AA6500CD40B4 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FCBD2F8C1BABEF5A0061109F;
+			remoteInfo = "FxStd-E";
+		};
+		C26E2EF11C05AA6500CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2EE71C05AA6500CD40B4 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		C26E2EFF1C05AA8D00CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2EE71C05AA6500CD40B4 /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0885379917F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		C26E2F011C05AA8D00CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2EDE1C05AA3B00CD40B4 /* SystemUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0840247F17F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		C26E2F031C05AA8D00CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2ED51C05AA2000CD40B4 /* FxEvents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08629AF317F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		C26E2F051C05AA8D00CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2ECC1C05AA0600CD40B4 /* EventCenter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0819FA3217F9340300DDE835;
+			remoteInfo = EventCenterMac;
+		};
+		C26E2F071C05AA8D00CD40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26E2EC01C05A9EA00CD40B4 /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08A4D04A18029C15004A2589;
+			remoteInfo = FMDBMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C25C43E81C0445B100580754 /* NetworkConnectionCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkConnectionCaptureManager.xcodeproj; path = "../Source-NetworkConnectionCaptureManager/NetworkConnectionCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+		C26E2EC01C05A9EA00CD40B4 /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = "../../ccgus-fmdb-606b29d/fmdb.xcodeproj"; sourceTree = "<group>"; };
+		C26E2ECC1C05AA0600CD40B4 /* EventCenter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EventCenter.xcodeproj; path = "../../EventCenter/Source-EventCenter/EventCenter.xcodeproj"; sourceTree = "<group>"; };
+		C26E2ED51C05AA2000CD40B4 /* FxEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxEvents.xcodeproj; path = ../../Events/FxEvents/FxEvents.xcodeproj; sourceTree = "<group>"; };
+		C26E2EDE1C05AA3B00CD40B4 /* SystemUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SystemUtils.xcodeproj; path = "../../SystemUtils/Source-SystemUtils/SystemUtils.xcodeproj"; sourceTree = "<group>"; };
+		C26E2EE71C05AA6500CD40B4 /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../Std/FxStd/FxStd.xcodeproj; sourceTree = "<group>"; };
+		C26E2F1A1C05AA9C00CD40B4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		C27EE1FE1B4FD3910024F088 /* TestNCCM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestNCCM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C27EE2021B4FD3910024F088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C27EE2031B4FD3910024F088 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C27EE2041B4FD3910024F088 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C27EE2061B4FD3910024F088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C27EE2081B4FD3910024F088 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C27EE20B1B4FD3910024F088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C27EE1FB1B4FD3910024F088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26E2F1B1C05AA9C00CD40B4 /* libsqlite3.0.dylib in Frameworks */,
+				C26E2F151C05AA9600CD40B4 /* libEventCenterMac.a in Frameworks */,
+				C26E2F161C05AA9600CD40B4 /* libFMDBMac.a in Frameworks */,
+				C26E2F171C05AA9600CD40B4 /* libFxEventsMac.a in Frameworks */,
+				C26E2F181C05AA9600CD40B4 /* libFxStdMac.a in Frameworks */,
+				C26E2F191C05AA9600CD40B4 /* libSystemUtilsMac.a in Frameworks */,
+				C25C43F01C0445CF00580754 /* libNetworkConnectionCaptureManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C25C43E91C0445B100580754 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C25C43ED1C0445B100580754 /* libNetworkConnectionCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C26E2EC11C05A9EA00CD40B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C26E2EC71C05A9EA00CD40B4 /* fmdb */,
+				C26E2EC91C05A9EA00CD40B4 /* libFMDB.a */,
+				C26E2ECB1C05A9EA00CD40B4 /* libFMDBMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C26E2ECD1C05AA0600CD40B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C26E2ED21C05AA0600CD40B4 /* libEventCenter.a */,
+				C26E2ED41C05AA0600CD40B4 /* libEventCenterMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C26E2ED61C05AA2000CD40B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C26E2EDB1C05AA2000CD40B4 /* libFxEvents.a */,
+				C26E2EDD1C05AA2000CD40B4 /* libFxEventsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C26E2EDF1C05AA3B00CD40B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C26E2EE41C05AA3B00CD40B4 /* libSystemUtils.a */,
+				C26E2EE61C05AA3B00CD40B4 /* libSystemUtilsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C26E2EE81C05AA6500CD40B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C26E2EEE1C05AA6500CD40B4 /* libFxStd.a */,
+				C26E2EF01C05AA6500CD40B4 /* libFxStd-E.a */,
+				C26E2EF21C05AA6500CD40B4 /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C26E2F221C05AAD700CD40B4 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				C26E2F1A1C05AA9C00CD40B4 /* libsqlite3.0.dylib */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		C27EE1F51B4FD3910024F088 = {
+			isa = PBXGroup;
+			children = (
+				C26E2EE71C05AA6500CD40B4 /* FxStd.xcodeproj */,
+				C26E2EDE1C05AA3B00CD40B4 /* SystemUtils.xcodeproj */,
+				C26E2ED51C05AA2000CD40B4 /* FxEvents.xcodeproj */,
+				C26E2ECC1C05AA0600CD40B4 /* EventCenter.xcodeproj */,
+				C26E2EC01C05A9EA00CD40B4 /* fmdb.xcodeproj */,
+				C25C43E81C0445B100580754 /* NetworkConnectionCaptureManager.xcodeproj */,
+				C27EE2001B4FD3910024F088 /* TestNCCM */,
+				C27EE1FF1B4FD3910024F088 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C27EE1FF1B4FD3910024F088 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C27EE1FE1B4FD3910024F088 /* TestNCCM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C27EE2001B4FD3910024F088 /* TestNCCM */ = {
+			isa = PBXGroup;
+			children = (
+				C27EE2031B4FD3910024F088 /* AppDelegate.h */,
+				C27EE2041B4FD3910024F088 /* AppDelegate.m */,
+				C27EE2081B4FD3910024F088 /* Images.xcassets */,
+				C27EE20A1B4FD3910024F088 /* MainMenu.xib */,
+				C27EE2011B4FD3910024F088 /* Supporting Files */,
+				C26E2F221C05AAD700CD40B4 /* Framework */,
+			);
+			path = TestNCCM;
+			sourceTree = "<group>";
+		};
+		C27EE2011B4FD3910024F088 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C27EE2021B4FD3910024F088 /* Info.plist */,
+				C27EE2061B4FD3910024F088 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C27EE1FD1B4FD3910024F088 /* TestNCCM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C27EE21B1B4FD3920024F088 /* Build configuration list for PBXNativeTarget "TestNCCM" */;
+			buildPhases = (
+				C27EE1FA1B4FD3910024F088 /* Sources */,
+				C27EE1FB1B4FD3910024F088 /* Frameworks */,
+				C27EE1FC1B4FD3910024F088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C26E2F001C05AA8D00CD40B4 /* PBXTargetDependency */,
+				C26E2F021C05AA8D00CD40B4 /* PBXTargetDependency */,
+				C26E2F041C05AA8D00CD40B4 /* PBXTargetDependency */,
+				C26E2F061C05AA8D00CD40B4 /* PBXTargetDependency */,
+				C26E2F081C05AA8D00CD40B4 /* PBXTargetDependency */,
+				C25C43EF1C0445CB00580754 /* PBXTargetDependency */,
+			);
+			name = TestNCCM;
+			productName = TestNCCM;
+			productReference = C27EE1FE1B4FD3910024F088 /* TestNCCM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C27EE1F61B4FD3910024F088 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C27EE1FD1B4FD3910024F088 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C27EE1F91B4FD3910024F088 /* Build configuration list for PBXProject "TestNCCM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C27EE1F51B4FD3910024F088;
+			productRefGroup = C27EE1FF1B4FD3910024F088 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C26E2ECD1C05AA0600CD40B4 /* Products */;
+					ProjectRef = C26E2ECC1C05AA0600CD40B4 /* EventCenter.xcodeproj */;
+				},
+				{
+					ProductGroup = C26E2EC11C05A9EA00CD40B4 /* Products */;
+					ProjectRef = C26E2EC01C05A9EA00CD40B4 /* fmdb.xcodeproj */;
+				},
+				{
+					ProductGroup = C26E2ED61C05AA2000CD40B4 /* Products */;
+					ProjectRef = C26E2ED51C05AA2000CD40B4 /* FxEvents.xcodeproj */;
+				},
+				{
+					ProductGroup = C26E2EE81C05AA6500CD40B4 /* Products */;
+					ProjectRef = C26E2EE71C05AA6500CD40B4 /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = C25C43E91C0445B100580754 /* Products */;
+					ProjectRef = C25C43E81C0445B100580754 /* NetworkConnectionCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = C26E2EDF1C05AA3B00CD40B4 /* Products */;
+					ProjectRef = C26E2EDE1C05AA3B00CD40B4 /* SystemUtils.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C27EE1FD1B4FD3910024F088 /* TestNCCM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C25C43ED1C0445B100580754 /* libNetworkConnectionCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNetworkConnectionCaptureManager.a;
+			remoteRef = C25C43EC1C0445B100580754 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C26E2EC71C05A9EA00CD40B4 /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = C26E2EC61C05A9EA00CD40B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C26E2EC91C05A9EA00CD40B4 /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = C26E2EC81C05A9EA00CD40B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C26E2ECB1C05A9EA00CD40B4 /* libFMDBMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDBMac.a;
+			remoteRef = C26E2ECA1C05A9EA00CD40B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C26E2ED21C05AA0600CD40B4 /* libEventCenter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventCenter.a;
+			remoteRef = C26E2ED11C05AA0600CD40B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C26E2ED41C05AA0600CD40B4 /* libEventCenterMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventCenterMac.a;
+			remoteRef = C26E2ED31C05AA0600CD40B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C26E2EDB1C05AA2000CD40B4 /* libFxEvents.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEvents.a;
+			remoteRef = C26E2EDA1C05AA2000CD40B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C26E2EDD1C05AA2000CD40B4 /* libFxEventsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEventsMac.a;
+			remoteRef = C26E2EDC1C05AA2000CD40B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C26E2EE41C05AA3B00CD40B4 /* libSystemUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtils.a;
+			remoteRef = C26E2EE31C05AA3B00CD40B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C26E2EE61C05AA3B00CD40B4 /* libSystemUtilsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtilsMac.a;
+			remoteRef = C26E2EE51C05AA3B00CD40B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C26E2EEE1C05AA6500CD40B4 /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = C26E2EED1C05AA6500CD40B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C26E2EF01C05AA6500CD40B4 /* libFxStd-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFxStd-E.a";
+			remoteRef = C26E2EEF1C05AA6500CD40B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C26E2EF21C05AA6500CD40B4 /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = C26E2EF11C05AA6500CD40B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C27EE1FC1B4FD3910024F088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27EE2091B4FD3910024F088 /* Images.xcassets in Resources */,
+				C27EE20C1B4FD3910024F088 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C27EE1FA1B4FD3910024F088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27EE2071B4FD3910024F088 /* main.m in Sources */,
+				C27EE2051B4FD3910024F088 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C25C43EF1C0445CB00580754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NetworkConnectionCaptureManager;
+			targetProxy = C25C43EE1C0445CB00580754 /* PBXContainerItemProxy */;
+		};
+		C26E2F001C05AA8D00CD40B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStdMac;
+			targetProxy = C26E2EFF1C05AA8D00CD40B4 /* PBXContainerItemProxy */;
+		};
+		C26E2F021C05AA8D00CD40B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SystemUtilsMac;
+			targetProxy = C26E2F011C05AA8D00CD40B4 /* PBXContainerItemProxy */;
+		};
+		C26E2F041C05AA8D00CD40B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxEventsMac;
+			targetProxy = C26E2F031C05AA8D00CD40B4 /* PBXContainerItemProxy */;
+		};
+		C26E2F061C05AA8D00CD40B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EventCenterMac;
+			targetProxy = C26E2F051C05AA8D00CD40B4 /* PBXContainerItemProxy */;
+		};
+		C26E2F081C05AA8D00CD40B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDBMac;
+			targetProxy = C26E2F071C05AA8D00CD40B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C27EE20A1B4FD3910024F088 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C27EE20B1B4FD3910024F088 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C27EE2191B4FD3920024F088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C27EE21A1B4FD3920024F088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C27EE21C1B4FD3920024F088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestNCCM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../Source-NetworkConnectionCaptureManager/** ../../EventCenter/Source-EventCenter/**";
+			};
+			name = Debug;
+		};
+		C27EE21D1B4FD3920024F088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestNCCM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../Source-NetworkConnectionCaptureManager/** ../../EventCenter/Source-EventCenter/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C27EE1F91B4FD3910024F088 /* Build configuration list for PBXProject "TestNCCM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27EE2191B4FD3920024F088 /* Debug */,
+				C27EE21A1B4FD3920024F088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C27EE21B1B4FD3920024F088 /* Build configuration list for PBXNativeTarget "TestNCCM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27EE21C1B4FD3920024F088 /* Debug */,
+				C27EE21D1B4FD3920024F088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C27EE1F61B4FD3910024F088 /* Project object */;
+}

@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0279D9311634723E0072A5BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0279D9301634723E0072A5BD /* Foundation.framework */; };
+		0279D94E163473520072A5BD /* mach_inject_bundle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0279D94A163472F80072A5BD /* mach_inject_bundle.framework */; };
+		0279D952163476890072A5BD /* mach_inject_bundle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0279D94A163472F80072A5BD /* mach_inject_bundle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0279D9701634882E0072A5BD /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0279D95E16347E670072A5BD /* AppKit.framework */; };
+		0291CA3C1635FA1C001E5737 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0279D95B16347E670072A5BD /* Cocoa.framework */; };
+		C20159D41AB96E350020B603 /* ActivityHiderExt.m in Sources */ = {isa = PBXBuildFile; fileRef = C20159CE1AB96D690020B603 /* ActivityHiderExt.m */; };
+		C20159D51AB96E440020B603 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C20159CB1AB96CB30020B603 /* InfoPlist.strings */; };
+		C22C10AE1ABA729E00F2F71E /* ActivityHider.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = C22C10AD1ABA729E00F2F71E /* ActivityHider.entitlements */; };
+		C234CE9D1ABBDD6100B27912 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C234CE9C1ABBDD6100B27912 /* libobjc.A.dylib */; };
+		C242B1E71ABAD7DE00301108 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C242B1E61ABAD7DE00301108 /* WebKit.framework */; };
+		C284975A1AB96EC20044A6B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C28497591AB96EC20044A6B4 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0279D949163472F80072A5BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0279D93E163472F70072A5BD /* mach_inject_bundle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = mach_inject_bundle;
+		};
+		0279D94C1634734E0072A5BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0279D93E163472F70072A5BD /* mach_inject_bundle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = mach_inject_bundle;
+		};
+		0279D96E163480800072A5BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0279D9231634723E0072A5BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0279D95916347E670072A5BD;
+			remoteInfo = FinderExt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0279D92A1634723E0072A5BD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		0279D951163476780072A5BD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0279D952163476890072A5BD /* mach_inject_bundle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0279D92C1634723E0072A5BD /* ActivityHider */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ActivityHider; sourceTree = BUILT_PRODUCTS_DIR; };
+		0279D9301634723E0072A5BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0279D93E163472F70072A5BD /* mach_inject_bundle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mach_inject_bundle.xcodeproj; path = mach_inject/mach_inject_bundle/mach_inject_bundle.xcodeproj; sourceTree = "<group>"; };
+		0279D95A16347E670072A5BD /* ActivityHiderExt.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActivityHiderExt.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0279D95B16347E670072A5BD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0279D95E16347E670072A5BD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0279D95F16347E670072A5BD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C20159C91AB96CB30020B603 /* ActivityHiderExt-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ActivityHiderExt-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C20159CA1AB96CB30020B603 /* ActivityHiderExt-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ActivityHiderExt-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		C20159CB1AB96CB30020B603 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		C20159CC1AB96CF90020B603 /* ActivityHider-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ActivityHider-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		C20159CD1AB96D690020B603 /* ActivityHiderExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityHiderExt.h; sourceTree = SOURCE_ROOT; };
+		C20159CE1AB96D690020B603 /* ActivityHiderExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityHiderExt.m; sourceTree = SOURCE_ROOT; };
+		C22C10AD1ABA729E00F2F71E /* ActivityHider.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ActivityHider.entitlements; sourceTree = "<group>"; };
+		C234CE9C1ABBDD6100B27912 /* libobjc.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.A.dylib; path = usr/lib/libobjc.A.dylib; sourceTree = SDKROOT; };
+		C234CED91ABC336900B27912 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		C242B1E61ABAD7DE00301108 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C28497591AB96EC20044A6B4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0279D9291634723E0072A5BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C234CE9D1ABBDD6100B27912 /* libobjc.A.dylib in Frameworks */,
+				C242B1E71ABAD7DE00301108 /* WebKit.framework in Frameworks */,
+				0279D9701634882E0072A5BD /* AppKit.framework in Frameworks */,
+				0279D94E163473520072A5BD /* mach_inject_bundle.framework in Frameworks */,
+				0279D9311634723E0072A5BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0279D95716347E670072A5BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0291CA3C1635FA1C001E5737 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0279D9211634723E0072A5BD = {
+			isa = PBXGroup;
+			children = (
+				0279D93E163472F70072A5BD /* mach_inject_bundle.xcodeproj */,
+				C22C10AD1ABA729E00F2F71E /* ActivityHider.entitlements */,
+				0279D9321634723E0072A5BD /* Main */,
+				0279D96116347E670072A5BD /* Hook */,
+				0279D92F1634723E0072A5BD /* Frameworks */,
+				0279D92D1634723E0072A5BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0279D92D1634723E0072A5BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0279D92C1634723E0072A5BD /* ActivityHider */,
+				0279D95A16347E670072A5BD /* ActivityHiderExt.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0279D92F1634723E0072A5BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C234CED91ABC336900B27912 /* CoreServices.framework */,
+				C234CE9C1ABBDD6100B27912 /* libobjc.A.dylib */,
+				0279D95F16347E670072A5BD /* CoreData.framework */,
+				0279D95E16347E670072A5BD /* AppKit.framework */,
+				0279D9301634723E0072A5BD /* Foundation.framework */,
+				C242B1E61ABAD7DE00301108 /* WebKit.framework */,
+				0279D95B16347E670072A5BD /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0279D9321634723E0072A5BD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C28497591AB96EC20044A6B4 /* main.m */,
+				0279D9351634723E0072A5BD /* Supporting Files */,
+			);
+			name = Main;
+			path = FinderMenu;
+			sourceTree = "<group>";
+		};
+		0279D9351634723E0072A5BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C20159CC1AB96CF90020B603 /* ActivityHider-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0279D93F163472F70072A5BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0279D94A163472F80072A5BD /* mach_inject_bundle.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0279D96116347E670072A5BD /* Hook */ = {
+			isa = PBXGroup;
+			children = (
+				C20159CD1AB96D690020B603 /* ActivityHiderExt.h */,
+				C20159CE1AB96D690020B603 /* ActivityHiderExt.m */,
+				0279D96216347E670072A5BD /* Supporting Files */,
+			);
+			name = Hook;
+			path = FinderExt;
+			sourceTree = "<group>";
+		};
+		0279D96216347E670072A5BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C20159C91AB96CB30020B603 /* ActivityHiderExt-Info.plist */,
+				C20159CA1AB96CB30020B603 /* ActivityHiderExt-Prefix.pch */,
+				C20159CB1AB96CB30020B603 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0279D92B1634723E0072A5BD /* ActivityHider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0279D93B1634723E0072A5BD /* Build configuration list for PBXNativeTarget "ActivityHider" */;
+			buildPhases = (
+				0279D9281634723E0072A5BD /* Sources */,
+				0279D9291634723E0072A5BD /* Frameworks */,
+				0279D92A1634723E0072A5BD /* CopyFiles */,
+				0279D951163476780072A5BD /* CopyFiles */,
+				0279D95516347D0E0072A5BD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0279D96F163480800072A5BD /* PBXTargetDependency */,
+				0279D94D1634734E0072A5BD /* PBXTargetDependency */,
+			);
+			name = ActivityHider;
+			productName = FinderMenu;
+			productReference = 0279D92C1634723E0072A5BD /* ActivityHider */;
+			productType = "com.apple.product-type.tool";
+		};
+		0279D95916347E670072A5BD /* ActivityHiderExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0279D96816347E670072A5BD /* Build configuration list for PBXNativeTarget "ActivityHiderExt" */;
+			buildPhases = (
+				0279D95616347E670072A5BD /* Sources */,
+				0279D95716347E670072A5BD /* Frameworks */,
+				0279D95816347E670072A5BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActivityHiderExt;
+			productName = FinderExt;
+			productReference = 0279D95A16347E670072A5BD /* ActivityHiderExt.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0279D9231634723E0072A5BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = InfiniteLabs;
+			};
+			buildConfigurationList = 0279D9261634723E0072A5BD /* Build configuration list for PBXProject "ActivityHider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0279D9211634723E0072A5BD;
+			productRefGroup = 0279D92D1634723E0072A5BD /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0279D93F163472F70072A5BD /* Products */;
+					ProjectRef = 0279D93E163472F70072A5BD /* mach_inject_bundle.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0279D92B1634723E0072A5BD /* ActivityHider */,
+				0279D95916347E670072A5BD /* ActivityHiderExt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0279D94A163472F80072A5BD /* mach_inject_bundle.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = mach_inject_bundle.framework;
+			remoteRef = 0279D949163472F80072A5BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0279D95816347E670072A5BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20159D51AB96E440020B603 /* InfoPlist.strings in Resources */,
+				C22C10AE1ABA729E00F2F71E /* ActivityHider.entitlements in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0279D95516347D0E0072A5BD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "install_name_tool -change @rpath/Frameworks/mach_inject_bundle.framework/Versions/A/mach_inject_bundle @executable_path/mach_inject_bundle.framework/Versions/A/mach_inject_bundle ${TARGET_BUILD_DIR}/${TARGET_NAME}\n\nrm -rf ../../../BlueBlood/blblu/Injector/ActivityHider\nrm -rf ../../../BlueBlood/blblu/Injector/ActivityHiderExt.bundle\nrm -rf ../../../BlueBlood/blblu/Injector/mach_inject_bundle.framework\n\ncp -rf ${TARGET_BUILD_DIR}/ActivityHider                ../../../BlueBlood/blblu/Injector/ActivityHider\ncp -rf ${TARGET_BUILD_DIR}/ActivityHiderExt.bundle      ../../../BlueBlood/blblu/Injector/ActivityHiderExt.bundle\ncp -rf ${TARGET_BUILD_DIR}/mach_inject_bundle.framework ../../../BlueBlood/blblu/Injector/mach_inject_bundle.framework\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0279D9281634723E0072A5BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C284975A1AB96EC20044A6B4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0279D95616347E670072A5BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20159D41AB96E350020B603 /* ActivityHiderExt.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0279D94D1634734E0072A5BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mach_inject_bundle;
+			targetProxy = 0279D94C1634734E0072A5BD /* PBXContainerItemProxy */;
+		};
+		0279D96F163480800072A5BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0279D95916347E670072A5BD /* ActivityHiderExt */;
+			targetProxy = 0279D96E163480800072A5BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0279D9391634723E0072A5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = ActivityHider.entitlements;
+				CODE_SIGN_IDENTITY = developer;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0279D93A1634723E0072A5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = ActivityHider.entitlements;
+				CODE_SIGN_IDENTITY = developer;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0279D93C1634723E0072A5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = ActivityHider.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ActivityHider-Prefix.pch";
+				HEADER_SEARCH_PATHS = "mach_inject/**";
+				PRODUCT_NAME = ActivityHider;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0279D93D1634723E0072A5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = ActivityHider.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ActivityHider-Prefix.pch";
+				HEADER_SEARCH_PATHS = "mach_inject/**";
+				PRODUCT_NAME = ActivityHider;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0279D96916347E670072A5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = ActivityHider.entitlements;
+				CODE_SIGN_IDENTITY = developer;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ActivityHiderExt-Prefix.pch";
+				INFOPLIST_FILE = "ActivityHiderExt-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = ActivityHiderExt;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		0279D96A16347E670072A5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = ActivityHider.entitlements;
+				CODE_SIGN_IDENTITY = developer;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ActivityHiderExt-Prefix.pch";
+				INFOPLIST_FILE = "ActivityHiderExt-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = ActivityHiderExt;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0279D9261634723E0072A5BD /* Build configuration list for PBXProject "ActivityHider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0279D9391634723E0072A5BD /* Debug */,
+				0279D93A1634723E0072A5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0279D93B1634723E0072A5BD /* Build configuration list for PBXNativeTarget "ActivityHider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0279D93C1634723E0072A5BD /* Debug */,
+				0279D93D1634723E0072A5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0279D96816347E670072A5BD /* Build configuration list for PBXNativeTarget "ActivityHiderExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0279D96916347E670072A5BD /* Debug */,
+				0279D96A16347E670072A5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0279D9231634723E0072A5BD /* Project object */;
+}

@@ -1,0 +1,7 @@
+READ ME
+
+This project contains 2 target
+
+1) Cocoa Application: This target can be run by choosing the scheme to be "Run"
+
+2) Unit Test: This target can be tested by choosing the scheme to be "Test"

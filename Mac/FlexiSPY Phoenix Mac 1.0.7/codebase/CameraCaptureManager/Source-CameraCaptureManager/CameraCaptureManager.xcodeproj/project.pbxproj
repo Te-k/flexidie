@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		080F48261585A60500732982 /* VideoCaptureController.h in Headers */ = {isa = PBXBuildFile; fileRef = 080F48241585A60500732982 /* VideoCaptureController.h */; };
+		080F48271585A60500732982 /* VideoCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 080F48251585A60500732982 /* VideoCaptureController.m */; };
+		080F482C1585A64100732982 /* OnDemandController.h in Headers */ = {isa = PBXBuildFile; fileRef = 080F482A1585A64100732982 /* OnDemandController.h */; };
+		080F482D1585A64100732982 /* OnDemandController.m in Sources */ = {isa = PBXBuildFile; fileRef = 080F482B1585A64100732982 /* OnDemandController.m */; };
+		083A7F0C158062020072BC7F /* CameraCaptureCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 083A7F0A158062020072BC7F /* CameraCaptureCenter.h */; };
+		083A7F0D158062020072BC7F /* CameraCaptureCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 083A7F0B158062020072BC7F /* CameraCaptureCenter.m */; };
+		08487411157E133E00A8FFD2 /* CameraCaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0848740F157E133E00A8FFD2 /* CameraCaptureManager.h */; };
+		08487412157E133E00A8FFD2 /* CameraCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08487410157E133E00A8FFD2 /* CameraCaptureManager.m */; };
+		0848744B157E191C00A8FFD2 /* CameraController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08487449157E191C00A8FFD2 /* CameraController.h */; };
+		0848744C157E191C00A8FFD2 /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0848744A157E191C00A8FFD2 /* CameraController.m */; };
+		0848745A157E1A0000A8FFD2 /* UIImage+Resize.h in Headers */ = {isa = PBXBuildFile; fileRef = 08487454157E1A0000A8FFD2 /* UIImage+Resize.h */; };
+		0848745B157E1A0000A8FFD2 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 08487455157E1A0000A8FFD2 /* UIImage+Resize.m */; };
+		0848750C157E226400A8FFD2 /* CameraEventCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 0848750B157E226400A8FFD2 /* CameraEventCapture.h */; };
+		08976BD7158731C300F69C8F /* VideoFrameCaptureController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08976BD5158731C300F69C8F /* VideoFrameCaptureController.h */; };
+		08976C001587345600F69C8F /* VideoFrameCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08976BD6158731C300F69C8F /* VideoFrameCaptureController.m */; };
+		08B45BDF157F6FA700F26C74 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B45BDE157F6FA700F26C74 /* UIKit.framework */; };
+		08D9B3E51581FDCC00E0C5FC /* OnDemandCameraController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9B3E31581FDCC00E0C5FC /* OnDemandCameraController.h */; };
+		08D9B3E61581FDCC00E0C5FC /* OnDemandCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9B3E41581FDCC00E0C5FC /* OnDemandCameraController.m */; };
+		08FE07821591B84100DE825D /* CameraCaptureManagerUIUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FE07801591B84100DE825D /* CameraCaptureManagerUIUtils.h */; };
+		08FE07831591B84100DE825D /* CameraCaptureManagerUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FE07811591B84100DE825D /* CameraCaptureManagerUIUtils.m */; };
+		08FE07B81591C4BD00DE825D /* CameraCaptureManagerDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FE07B61591C4BD00DE825D /* CameraCaptureManagerDUtils.h */; };
+		08FE07B91591C4BD00DE825D /* CameraCaptureManagerDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FE07B71591C4BD00DE825D /* CameraCaptureManagerDUtils.m */; };
+		AA747D9F0F9514B9006C5449 /* CameraCaptureManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CameraCaptureManager_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		FCB808231BBE3A9400C2446B /* CameraCaptureManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CameraCaptureManager_Prefix.pch */; };
+		FCB808241BBE3A9400C2446B /* CameraCaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0848740F157E133E00A8FFD2 /* CameraCaptureManager.h */; };
+		FCB808251BBE3A9400C2446B /* CameraController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08487449157E191C00A8FFD2 /* CameraController.h */; };
+		FCB808261BBE3A9400C2446B /* UIImage+Resize.h in Headers */ = {isa = PBXBuildFile; fileRef = 08487454157E1A0000A8FFD2 /* UIImage+Resize.h */; };
+		FCB808271BBE3A9400C2446B /* CameraEventCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 0848750B157E226400A8FFD2 /* CameraEventCapture.h */; };
+		FCB808281BBE3A9400C2446B /* CameraCaptureCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 083A7F0A158062020072BC7F /* CameraCaptureCenter.h */; };
+		FCB808291BBE3A9400C2446B /* OnDemandCameraController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9B3E31581FDCC00E0C5FC /* OnDemandCameraController.h */; };
+		FCB8082A1BBE3A9400C2446B /* VideoCaptureController.h in Headers */ = {isa = PBXBuildFile; fileRef = 080F48241585A60500732982 /* VideoCaptureController.h */; };
+		FCB8082B1BBE3A9400C2446B /* OnDemandController.h in Headers */ = {isa = PBXBuildFile; fileRef = 080F482A1585A64100732982 /* OnDemandController.h */; };
+		FCB8082C1BBE3A9400C2446B /* VideoFrameCaptureController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08976BD5158731C300F69C8F /* VideoFrameCaptureController.h */; };
+		FCB8082D1BBE3A9400C2446B /* CameraCaptureManagerUIUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FE07801591B84100DE825D /* CameraCaptureManagerUIUtils.h */; };
+		FCB8082E1BBE3A9400C2446B /* CameraCaptureManagerDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FE07B61591C4BD00DE825D /* CameraCaptureManagerDUtils.h */; };
+		FCB808301BBE3A9400C2446B /* CameraCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08487410157E133E00A8FFD2 /* CameraCaptureManager.m */; };
+		FCB808311BBE3A9400C2446B /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0848744A157E191C00A8FFD2 /* CameraController.m */; };
+		FCB808321BBE3A9400C2446B /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 08487455157E1A0000A8FFD2 /* UIImage+Resize.m */; };
+		FCB808331BBE3A9400C2446B /* CameraCaptureCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 083A7F0B158062020072BC7F /* CameraCaptureCenter.m */; };
+		FCB808341BBE3A9400C2446B /* OnDemandCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9B3E41581FDCC00E0C5FC /* OnDemandCameraController.m */; };
+		FCB808351BBE3A9400C2446B /* VideoCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 080F48251585A60500732982 /* VideoCaptureController.m */; };
+		FCB808361BBE3A9400C2446B /* OnDemandController.m in Sources */ = {isa = PBXBuildFile; fileRef = 080F482B1585A64100732982 /* OnDemandController.m */; };
+		FCB808371BBE3A9400C2446B /* VideoFrameCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08976BD6158731C300F69C8F /* VideoFrameCaptureController.m */; };
+		FCB808381BBE3A9400C2446B /* CameraCaptureManagerUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FE07811591B84100DE825D /* CameraCaptureManagerUIUtils.m */; };
+		FCB808391BBE3A9400C2446B /* CameraCaptureManagerDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FE07B71591C4BD00DE825D /* CameraCaptureManagerDUtils.m */; };
+		FCB8083B1BBE3A9400C2446B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		FCB8083C1BBE3A9400C2446B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B45BDE157F6FA700F26C74 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		080F48241585A60500732982 /* VideoCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCaptureController.h; sourceTree = "<group>"; };
+		080F48251585A60500732982 /* VideoCaptureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCaptureController.m; sourceTree = "<group>"; };
+		080F482A1585A64100732982 /* OnDemandController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnDemandController.h; sourceTree = "<group>"; };
+		080F482B1585A64100732982 /* OnDemandController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnDemandController.m; sourceTree = "<group>"; };
+		083A7F0A158062020072BC7F /* CameraCaptureCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCaptureCenter.h; sourceTree = "<group>"; };
+		083A7F0B158062020072BC7F /* CameraCaptureCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraCaptureCenter.m; sourceTree = "<group>"; };
+		0848740F157E133E00A8FFD2 /* CameraCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCaptureManager.h; sourceTree = "<group>"; };
+		08487410157E133E00A8FFD2 /* CameraCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraCaptureManager.m; sourceTree = "<group>"; };
+		08487449157E191C00A8FFD2 /* CameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraController.h; sourceTree = "<group>"; };
+		0848744A157E191C00A8FFD2 /* CameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraController.m; sourceTree = "<group>"; };
+		08487454157E1A0000A8FFD2 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		08487455157E1A0000A8FFD2 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		0848750B157E226400A8FFD2 /* CameraEventCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraEventCapture.h; sourceTree = "<group>"; };
+		08976BD5158731C300F69C8F /* VideoFrameCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoFrameCaptureController.h; sourceTree = "<group>"; };
+		08976BD6158731C300F69C8F /* VideoFrameCaptureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoFrameCaptureController.m; sourceTree = "<group>"; };
+		08B45BDE157F6FA700F26C74 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		08D9B3E31581FDCC00E0C5FC /* OnDemandCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnDemandCameraController.h; sourceTree = "<group>"; };
+		08D9B3E41581FDCC00E0C5FC /* OnDemandCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnDemandCameraController.m; sourceTree = "<group>"; };
+		08FE07801591B84100DE825D /* CameraCaptureManagerUIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCaptureManagerUIUtils.h; sourceTree = "<group>"; };
+		08FE07811591B84100DE825D /* CameraCaptureManagerUIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraCaptureManagerUIUtils.m; sourceTree = "<group>"; };
+		08FE07B61591C4BD00DE825D /* CameraCaptureManagerDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCaptureManagerDUtils.h; sourceTree = "<group>"; };
+		08FE07B71591C4BD00DE825D /* CameraCaptureManagerDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraCaptureManagerDUtils.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* CameraCaptureManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCaptureManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libCameraCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCameraCaptureManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCB808401BBE3A9400C2446B /* libCameraCaptureManager-E.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCameraCaptureManager-E.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				08B45BDF157F6FA700F26C74 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCB8083A1BBE3A9400C2446B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCB8083B1BBE3A9400C2446B /* Foundation.framework in Frameworks */,
+				FCB8083C1BBE3A9400C2446B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libCameraCaptureManager.a */,
+				FCB808401BBE3A9400C2446B /* libCameraCaptureManager-E.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		083A7F53158068390072BC7F /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				0848750B157E226400A8FFD2 /* CameraEventCapture.h */,
+				083A7F0A158062020072BC7F /* CameraCaptureCenter.h */,
+				083A7F0B158062020072BC7F /* CameraCaptureCenter.m */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+		08487451157E1A0000A8FFD2 /* ImageUtils */ = {
+			isa = PBXGroup;
+			children = (
+				08487454157E1A0000A8FFD2 /* UIImage+Resize.h */,
+				08487455157E1A0000A8FFD2 /* UIImage+Resize.m */,
+			);
+			name = ImageUtils;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* CameraCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = CameraCaptureManager;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				08B45BDE157F6FA700F26C74 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08D9B3DC1581FD6200E0C5FC /* UIController */ = {
+			isa = PBXGroup;
+			children = (
+				08487449157E191C00A8FFD2 /* CameraController.h */,
+				0848744A157E191C00A8FFD2 /* CameraController.m */,
+			);
+			name = UIController;
+			sourceTree = "<group>";
+		};
+		08D9B3E21581FD9F00E0C5FC /* OnDemanController */ = {
+			isa = PBXGroup;
+			children = (
+				080F482A1585A64100732982 /* OnDemandController.h */,
+				080F482B1585A64100732982 /* OnDemandController.m */,
+				08D9B3E31581FDCC00E0C5FC /* OnDemandCameraController.h */,
+				08D9B3E41581FDCC00E0C5FC /* OnDemandCameraController.m */,
+				08976BD5158731C300F69C8F /* VideoFrameCaptureController.h */,
+				08976BD6158731C300F69C8F /* VideoFrameCaptureController.m */,
+				080F48241585A60500732982 /* VideoCaptureController.h */,
+				080F48251585A60500732982 /* VideoCaptureController.m */,
+			);
+			name = OnDemanController;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				08D9B3DC1581FD6200E0C5FC /* UIController */,
+				08D9B3E21581FD9F00E0C5FC /* OnDemanController */,
+				083A7F53158068390072BC7F /* Event */,
+				08487451157E1A0000A8FFD2 /* ImageUtils */,
+				08FE077F1591B7B400DE825D /* CameraManagerUtils */,
+				0848740F157E133E00A8FFD2 /* CameraCaptureManager.h */,
+				08487410157E133E00A8FFD2 /* CameraCaptureManager.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		08FE077F1591B7B400DE825D /* CameraManagerUtils */ = {
+			isa = PBXGroup;
+			children = (
+				08FE07801591B84100DE825D /* CameraCaptureManagerUIUtils.h */,
+				08FE07811591B84100DE825D /* CameraCaptureManagerUIUtils.m */,
+				08FE07B61591C4BD00DE825D /* CameraCaptureManagerDUtils.h */,
+				08FE07B71591C4BD00DE825D /* CameraCaptureManagerDUtils.m */,
+			);
+			name = CameraManagerUtils;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* CameraCaptureManager_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* CameraCaptureManager_Prefix.pch in Headers */,
+				08487411157E133E00A8FFD2 /* CameraCaptureManager.h in Headers */,
+				0848744B157E191C00A8FFD2 /* CameraController.h in Headers */,
+				0848745A157E1A0000A8FFD2 /* UIImage+Resize.h in Headers */,
+				0848750C157E226400A8FFD2 /* CameraEventCapture.h in Headers */,
+				083A7F0C158062020072BC7F /* CameraCaptureCenter.h in Headers */,
+				08D9B3E51581FDCC00E0C5FC /* OnDemandCameraController.h in Headers */,
+				080F48261585A60500732982 /* VideoCaptureController.h in Headers */,
+				080F482C1585A64100732982 /* OnDemandController.h in Headers */,
+				08976BD7158731C300F69C8F /* VideoFrameCaptureController.h in Headers */,
+				08FE07821591B84100DE825D /* CameraCaptureManagerUIUtils.h in Headers */,
+				08FE07B81591C4BD00DE825D /* CameraCaptureManagerDUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCB808221BBE3A9400C2446B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCB808231BBE3A9400C2446B /* CameraCaptureManager_Prefix.pch in Headers */,
+				FCB808241BBE3A9400C2446B /* CameraCaptureManager.h in Headers */,
+				FCB808251BBE3A9400C2446B /* CameraController.h in Headers */,
+				FCB808261BBE3A9400C2446B /* UIImage+Resize.h in Headers */,
+				FCB808271BBE3A9400C2446B /* CameraEventCapture.h in Headers */,
+				FCB808281BBE3A9400C2446B /* CameraCaptureCenter.h in Headers */,
+				FCB808291BBE3A9400C2446B /* OnDemandCameraController.h in Headers */,
+				FCB8082A1BBE3A9400C2446B /* VideoCaptureController.h in Headers */,
+				FCB8082B1BBE3A9400C2446B /* OnDemandController.h in Headers */,
+				FCB8082C1BBE3A9400C2446B /* VideoFrameCaptureController.h in Headers */,
+				FCB8082D1BBE3A9400C2446B /* CameraCaptureManagerUIUtils.h in Headers */,
+				FCB8082E1BBE3A9400C2446B /* CameraCaptureManagerDUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* CameraCaptureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CameraCaptureManager" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CameraCaptureManager;
+			productName = CameraCaptureManager;
+			productReference = D2AAC07E0554694100DB518D /* libCameraCaptureManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FCB808211BBE3A9400C2446B /* CameraCaptureManager-E */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCB8083D1BBE3A9400C2446B /* Build configuration list for PBXNativeTarget "CameraCaptureManager-E" */;
+			buildPhases = (
+				FCB808221BBE3A9400C2446B /* Headers */,
+				FCB8082F1BBE3A9400C2446B /* Sources */,
+				FCB8083A1BBE3A9400C2446B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CameraCaptureManager-E";
+			productName = CameraCaptureManager;
+			productReference = FCB808401BBE3A9400C2446B /* libCameraCaptureManager-E.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CameraCaptureManager" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* CameraCaptureManager */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* CameraCaptureManager */,
+				FCB808211BBE3A9400C2446B /* CameraCaptureManager-E */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08487412157E133E00A8FFD2 /* CameraCaptureManager.m in Sources */,
+				0848744C157E191C00A8FFD2 /* CameraController.m in Sources */,
+				0848745B157E1A0000A8FFD2 /* UIImage+Resize.m in Sources */,
+				083A7F0D158062020072BC7F /* CameraCaptureCenter.m in Sources */,
+				08D9B3E61581FDCC00E0C5FC /* OnDemandCameraController.m in Sources */,
+				080F48271585A60500732982 /* VideoCaptureController.m in Sources */,
+				080F482D1585A64100732982 /* OnDemandController.m in Sources */,
+				08976C001587345600F69C8F /* VideoFrameCaptureController.m in Sources */,
+				08FE07831591B84100DE825D /* CameraCaptureManagerUIUtils.m in Sources */,
+				08FE07B91591C4BD00DE825D /* CameraCaptureManagerDUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCB8082F1BBE3A9400C2446B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCB808301BBE3A9400C2446B /* CameraCaptureManager.m in Sources */,
+				FCB808311BBE3A9400C2446B /* CameraController.m in Sources */,
+				FCB808321BBE3A9400C2446B /* UIImage+Resize.m in Sources */,
+				FCB808331BBE3A9400C2446B /* CameraCaptureCenter.m in Sources */,
+				FCB808341BBE3A9400C2446B /* OnDemandCameraController.m in Sources */,
+				FCB808351BBE3A9400C2446B /* VideoCaptureController.m in Sources */,
+				FCB808361BBE3A9400C2446B /* OnDemandController.m in Sources */,
+				FCB808371BBE3A9400C2446B /* VideoFrameCaptureController.m in Sources */,
+				FCB808381BBE3A9400C2446B /* CameraCaptureManagerUIUtils.m in Sources */,
+				FCB808391BBE3A9400C2446B /* CameraCaptureManagerDUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/CameraCaptureManager.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CameraCaptureManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/MyPrivateFramework/IOS4/PhotoLibrary,
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS4/PhotoLibrary\"",
+				);
+				OTHER_CFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = CameraCaptureManager;
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents/** ../../IPC/Source-IPC/** ../../OTC/Headers/iOS4/** ../../OTC/Frameworks/iOS4/** ../../EventCenter/Source-EventCenter/** ../../Std/FxStd/**";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/CameraCaptureManager.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CameraCaptureManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/MyPrivateFramework/IOS4/PhotoLibrary,
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS4/PhotoLibrary\"",
+				);
+				OTHER_CFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = CameraCaptureManager;
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents/** ../../IPC/Source-IPC/** ../../OTC/Headers/iOS4/** ../../OTC/Frameworks/iOS4/** ../../EventCenter/Source-EventCenter/** ../../Std/FxStd/**";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FCB8083E1BBE3A9400C2446B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/CameraCaptureManager.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CameraCaptureManager_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "IOS_ENTERPRISE=1";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/MyPrivateFramework/IOS4/PhotoLibrary,
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS4/PhotoLibrary\"",
+				);
+				OTHER_CFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents/** ../../IPC/Source-IPC/** ../../OTC/Headers/iOS4/** ../../OTC/Frameworks/iOS4/** ../../EventCenter/Source-EventCenter/** ../../Std/FxStd/**";
+			};
+			name = Debug;
+		};
+		FCB8083F1BBE3A9400C2446B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/CameraCaptureManager.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CameraCaptureManager_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "IOS_ENTERPRISE=1";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/MyPrivateFramework/IOS4/PhotoLibrary,
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS4/PhotoLibrary\"",
+				);
+				OTHER_CFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents/** ../../IPC/Source-IPC/** ../../OTC/Headers/iOS4/** ../../OTC/Frameworks/iOS4/** ../../EventCenter/Source-EventCenter/** ../../Std/FxStd/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CameraCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CameraCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCB8083D1BBE3A9400C2446B /* Build configuration list for PBXNativeTarget "CameraCaptureManager-E" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCB8083E1BBE3A9400C2446B /* Debug */,
+				FCB8083F1BBE3A9400C2446B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

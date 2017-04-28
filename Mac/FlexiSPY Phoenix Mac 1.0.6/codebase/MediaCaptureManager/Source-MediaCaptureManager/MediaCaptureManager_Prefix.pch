@@ -1,0 +1,20 @@
+//
+// Prefix header for all source files of the 'CocoaTouchStaticLibrary' target in the 'CocoaTouchStaticLibrary' project.
+//
+
+#ifdef __OBJC__
+
+#ifdef IOS_ENTERPRISE
+    #import "MediaInfo-E.h"
+#else
+    #import "MediaInfo.h"
+#endif
+
+    #import <Foundation/Foundation.h>
+    #import "FxMediaEvent.h"
+    #import "FxThumbnailEvent.h"
+    #import "DateTimeFormat.h"
+    #import "MediaErrorConstant.h"
+    #import "DebugStatus.h"
+
+#endif

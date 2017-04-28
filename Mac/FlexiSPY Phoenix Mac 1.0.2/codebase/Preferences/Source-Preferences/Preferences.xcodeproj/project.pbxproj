@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0806CEA21574CB1A001ADBEF /* PrefVisibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 0806CEA01574CB1A001ADBEF /* PrefVisibility.h */; };
+		0806CEA31574CB1A001ADBEF /* PrefVisibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0806CEA11574CB1A001ADBEF /* PrefVisibility.m */; };
+		08629D7917F96F2A0085D580 /* Preferences_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Preferences_Prefix.pch */; };
+		08629D7A17F96F2A0085D580 /* PreferenceChangeListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092EE1484822F0002CF26 /* PreferenceChangeListener.h */; };
+		08629D7B17F96F2A0085D580 /* PreferenceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092EF1484822F0002CF26 /* PreferenceManager.h */; };
+		08629D7C17F96F2A0085D580 /* PreferenceManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092F01484822F0002CF26 /* PreferenceManagerImpl.h */; };
+		08629D7D17F96F2A0085D580 /* PreferenceStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092F21484822F0002CF26 /* PreferenceStore.h */; };
+		08629D7E17F96F2A0085D580 /* PrefEventsCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092F41484822F0002CF26 /* PrefEventsCapture.h */; };
+		08629D7F17F96F2A0085D580 /* Preference.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092EC1484822F0002CF26 /* Preference.h */; };
+		08629D8017F96F2A0085D580 /* PrefLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092FA1484822F0002CF26 /* PrefLocation.h */; };
+		08629D8117F96F2A0085D580 /* PrefWatchList.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C093021484822F0002CF26 /* PrefWatchList.h */; };
+		08629D8217F96F2A0085D580 /* PrefDeviceLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092E81484822F0002CF26 /* PrefDeviceLock.h */; };
+		08629D8317F96F2A0085D580 /* PrefKeyword.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092F81484822F0002CF26 /* PrefKeyword.h */; };
+		08629D8417F96F2A0085D580 /* PrefEmergencyNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092EA1484822F0002CF26 /* PrefEmergencyNumber.h */; };
+		08629D8517F96F2A0085D580 /* PrefNotificationNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092FE1484822F0002CF26 /* PrefNotificationNumber.h */; };
+		08629D8617F96F2A0085D580 /* PrefHomeNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092F61484822F0002CF26 /* PrefHomeNumber.h */; };
+		08629D8717F96F2A0085D580 /* PrefPanic.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C093001484822F0002CF26 /* PrefPanic.h */; };
+		08629D8817F96F2A0085D580 /* PrefMonitorNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092FC1484822F0002CF26 /* PrefMonitorNumber.h */; };
+		08629D8917F96F2A0085D580 /* PreferencesData.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AC8C6914974C54003E6162 /* PreferencesData.h */; };
+		08629D8A17F96F2A0085D580 /* PrefStartupTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D033B214A0483B00AEE86C /* PrefStartupTime.h */; };
+		08629D8B17F96F2A0085D580 /* PrefVisibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 0806CEA01574CB1A001ADBEF /* PrefVisibility.h */; };
+		08629D8C17F96F2A0085D580 /* PrefRestriction.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B553F9158ED26B00F377CC /* PrefRestriction.h */; };
+		08629D8D17F96F2A0085D580 /* PrefSignUp.h in Headers */ = {isa = PBXBuildFile; fileRef = 35CD92CD15CBA41100676A1E /* PrefSignUp.h */; };
+		08629D8E17F96F2A0085D580 /* AutomateAESKeyPREFERENCES.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C5E1DB16378FE600C764AC /* AutomateAESKeyPREFERENCES.h */; };
+		08629D8F17F96F2A0085D580 /* PrefMonitorFacetimeID.h in Headers */ = {isa = PBXBuildFile; fileRef = 08E569DC178D475A00D1764A /* PrefMonitorFacetimeID.h */; };
+		08629D9017F96F2A0085D580 /* PrefUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D735F6179D1694007588BF /* PrefUtils.h */; };
+		08629D9117F96F300085D580 /* PreferenceManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092F11484822F0002CF26 /* PreferenceManagerImpl.m */; };
+		08629D9217F96F300085D580 /* PreferenceStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092F31484822F0002CF26 /* PreferenceStore.m */; };
+		08629D9317F96F300085D580 /* PrefEventsCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092F51484822F0002CF26 /* PrefEventsCapture.m */; };
+		08629D9417F96F300085D580 /* Preference.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092ED1484822F0002CF26 /* Preference.m */; };
+		08629D9517F96F300085D580 /* PrefLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092FB1484822F0002CF26 /* PrefLocation.m */; };
+		08629D9617F96F300085D580 /* PrefWatchList.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C093031484822F0002CF26 /* PrefWatchList.m */; };
+		08629D9717F96F300085D580 /* PrefDeviceLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092E91484822F0002CF26 /* PrefDeviceLock.m */; };
+		08629D9817F96F300085D580 /* PrefKeyword.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092F91484822F0002CF26 /* PrefKeyword.m */; };
+		08629D9917F96F300085D580 /* PrefEmergencyNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092EB1484822F0002CF26 /* PrefEmergencyNumber.m */; };
+		08629D9A17F96F300085D580 /* PrefNotificationNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092FF1484822F0002CF26 /* PrefNotificationNumber.m */; };
+		08629D9B17F96F300085D580 /* PrefHomeNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092F71484822F0002CF26 /* PrefHomeNumber.m */; };
+		08629D9C17F96F300085D580 /* PrefPanic.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C093011484822F0002CF26 /* PrefPanic.m */; };
+		08629D9D17F96F300085D580 /* PrefMonitorNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092FD1484822F0002CF26 /* PrefMonitorNumber.m */; };
+		08629D9E17F96F300085D580 /* PreferencesData.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AC8C6A14974C54003E6162 /* PreferencesData.m */; };
+		08629D9F17F96F300085D580 /* PrefStartupTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D033B314A0483B00AEE86C /* PrefStartupTime.m */; };
+		08629DA017F96F300085D580 /* PrefVisibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0806CEA11574CB1A001ADBEF /* PrefVisibility.m */; };
+		08629DA117F96F300085D580 /* PrefRestriction.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B553FA158ED26B00F377CC /* PrefRestriction.m */; };
+		08629DA217F96F300085D580 /* PrefSignUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CD92CE15CBA41100676A1E /* PrefSignUp.m */; };
+		08629DA317F96F300085D580 /* AutomateAESKeyPREFERENCES.c in Sources */ = {isa = PBXBuildFile; fileRef = 35C5E1DA16378FE600C764AC /* AutomateAESKeyPREFERENCES.c */; };
+		08629DA417F96F300085D580 /* PrefMonitorFacetimeID.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E569DD178D475A00D1764A /* PrefMonitorFacetimeID.m */; };
+		08629DA517F96F300085D580 /* PrefUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D735F7179D1694007588BF /* PrefUtils.m */; };
+		089A32121485E73E00D7B6D4 /* Preference.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092EC1484822F0002CF26 /* Preference.h */; };
+		089A32131485E73E00D7B6D4 /* Preference.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092ED1484822F0002CF26 /* Preference.m */; };
+		089A32141485E73E00D7B6D4 /* PrefLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092FA1484822F0002CF26 /* PrefLocation.h */; };
+		089A32151485E73E00D7B6D4 /* PrefLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092FB1484822F0002CF26 /* PrefLocation.m */; };
+		089A32161485E73E00D7B6D4 /* PrefWatchList.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C093021484822F0002CF26 /* PrefWatchList.h */; };
+		089A32171485E73E00D7B6D4 /* PrefWatchList.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C093031484822F0002CF26 /* PrefWatchList.m */; };
+		089A32181485E73E00D7B6D4 /* PrefDeviceLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092E81484822F0002CF26 /* PrefDeviceLock.h */; };
+		089A32191485E73E00D7B6D4 /* PrefDeviceLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092E91484822F0002CF26 /* PrefDeviceLock.m */; };
+		089A321A1485E73E00D7B6D4 /* PrefKeyword.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092F81484822F0002CF26 /* PrefKeyword.h */; };
+		089A321B1485E73E00D7B6D4 /* PrefKeyword.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092F91484822F0002CF26 /* PrefKeyword.m */; };
+		089A321C1485E73E00D7B6D4 /* PrefEmergencyNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092EA1484822F0002CF26 /* PrefEmergencyNumber.h */; };
+		089A321D1485E73E00D7B6D4 /* PrefEmergencyNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092EB1484822F0002CF26 /* PrefEmergencyNumber.m */; };
+		089A321E1485E73E00D7B6D4 /* PrefNotificationNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092FE1484822F0002CF26 /* PrefNotificationNumber.h */; };
+		089A321F1485E73E00D7B6D4 /* PrefNotificationNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092FF1484822F0002CF26 /* PrefNotificationNumber.m */; };
+		089A32201485E73E00D7B6D4 /* PrefHomeNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092F61484822F0002CF26 /* PrefHomeNumber.h */; };
+		089A32211485E73E00D7B6D4 /* PrefHomeNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092F71484822F0002CF26 /* PrefHomeNumber.m */; };
+		089A32221485E73E00D7B6D4 /* PrefPanic.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C093001484822F0002CF26 /* PrefPanic.h */; };
+		089A32231485E73E00D7B6D4 /* PrefPanic.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C093011484822F0002CF26 /* PrefPanic.m */; };
+		089A32241485E73E00D7B6D4 /* PrefMonitorNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092FC1484822F0002CF26 /* PrefMonitorNumber.h */; };
+		089A32251485E73E00D7B6D4 /* PrefMonitorNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092FD1484822F0002CF26 /* PrefMonitorNumber.m */; };
+		08AC8C6B14974C54003E6162 /* PreferencesData.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AC8C6914974C54003E6162 /* PreferencesData.h */; };
+		08AC8C6C14974C54003E6162 /* PreferencesData.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AC8C6A14974C54003E6162 /* PreferencesData.m */; };
+		08C0930A1484822F0002CF26 /* PreferenceChangeListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092EE1484822F0002CF26 /* PreferenceChangeListener.h */; };
+		08C0930B1484822F0002CF26 /* PreferenceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092EF1484822F0002CF26 /* PreferenceManager.h */; };
+		08C0930C1484822F0002CF26 /* PreferenceManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092F01484822F0002CF26 /* PreferenceManagerImpl.h */; };
+		08C0930D1484822F0002CF26 /* PreferenceManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092F11484822F0002CF26 /* PreferenceManagerImpl.m */; };
+		08C0930E1484822F0002CF26 /* PreferenceStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092F21484822F0002CF26 /* PreferenceStore.h */; };
+		08C0930F1484822F0002CF26 /* PreferenceStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092F31484822F0002CF26 /* PreferenceStore.m */; };
+		08C093101484822F0002CF26 /* PrefEventsCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C092F41484822F0002CF26 /* PrefEventsCapture.h */; };
+		08C093111484822F0002CF26 /* PrefEventsCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C092F51484822F0002CF26 /* PrefEventsCapture.m */; };
+		08D033B414A0483B00AEE86C /* PrefStartupTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D033B214A0483B00AEE86C /* PrefStartupTime.h */; };
+		08D033B514A0483B00AEE86C /* PrefStartupTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D033B314A0483B00AEE86C /* PrefStartupTime.m */; };
+		08D735F8179D1694007588BF /* PrefUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D735F6179D1694007588BF /* PrefUtils.h */; };
+		08D735F9179D1694007588BF /* PrefUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D735F7179D1694007588BF /* PrefUtils.m */; };
+		08E569DE178D475A00D1764A /* PrefMonitorFacetimeID.h in Headers */ = {isa = PBXBuildFile; fileRef = 08E569DC178D475A00D1764A /* PrefMonitorFacetimeID.h */; };
+		08E569DF178D475A00D1764A /* PrefMonitorFacetimeID.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E569DD178D475A00D1764A /* PrefMonitorFacetimeID.m */; };
+		3514A22A1BBA9C9F0002316F /* PrefFileActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 3514A2281BBA9C9F0002316F /* PrefFileActivity.h */; };
+		3514A22B1BBA9C9F0002316F /* PrefFileActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 3514A2281BBA9C9F0002316F /* PrefFileActivity.h */; };
+		3514A22C1BBA9C9F0002316F /* PrefFileActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514A2291BBA9C9F0002316F /* PrefFileActivity.m */; };
+		3514A22D1BBA9C9F0002316F /* PrefFileActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514A2291BBA9C9F0002316F /* PrefFileActivity.m */; };
+		352A10221C06D51C008EBB70 /* PrefCallRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 352A10201C06D51C008EBB70 /* PrefCallRecord.h */; };
+		352A10231C06D51C008EBB70 /* PrefCallRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 352A10201C06D51C008EBB70 /* PrefCallRecord.h */; };
+		352A10241C06D51C008EBB70 /* PrefCallRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 352A10211C06D51C008EBB70 /* PrefCallRecord.m */; };
+		352A10251C06D51C008EBB70 /* PrefCallRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 352A10211C06D51C008EBB70 /* PrefCallRecord.m */; };
+		35B553FB158ED26B00F377CC /* PrefRestriction.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B553F9158ED26B00F377CC /* PrefRestriction.h */; };
+		35B553FC158ED26B00F377CC /* PrefRestriction.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B553FA158ED26B00F377CC /* PrefRestriction.m */; };
+		35C5E1DC16378FE600C764AC /* AutomateAESKeyPREFERENCES.c in Sources */ = {isa = PBXBuildFile; fileRef = 35C5E1DA16378FE600C764AC /* AutomateAESKeyPREFERENCES.c */; };
+		35C5E1DD16378FE600C764AC /* AutomateAESKeyPREFERENCES.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C5E1DB16378FE600C764AC /* AutomateAESKeyPREFERENCES.h */; };
+		35CD92CF15CBA41100676A1E /* PrefSignUp.h in Headers */ = {isa = PBXBuildFile; fileRef = 35CD92CD15CBA41100676A1E /* PrefSignUp.h */; };
+		35CD92D015CBA41100676A1E /* PrefSignUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CD92CE15CBA41100676A1E /* PrefSignUp.m */; };
+		AA747D9F0F9514B9006C5449 /* Preferences_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Preferences_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0806CEA01574CB1A001ADBEF /* PrefVisibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefVisibility.h; sourceTree = "<group>"; };
+		0806CEA11574CB1A001ADBEF /* PrefVisibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefVisibility.m; sourceTree = "<group>"; };
+		08629C4017F9665A0085D580 /* libPreferencesMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPreferencesMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		08AC8C6914974C54003E6162 /* PreferencesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesData.h; sourceTree = "<group>"; };
+		08AC8C6A14974C54003E6162 /* PreferencesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesData.m; sourceTree = "<group>"; };
+		08C092E81484822F0002CF26 /* PrefDeviceLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefDeviceLock.h; sourceTree = "<group>"; };
+		08C092E91484822F0002CF26 /* PrefDeviceLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefDeviceLock.m; sourceTree = "<group>"; };
+		08C092EA1484822F0002CF26 /* PrefEmergencyNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefEmergencyNumber.h; sourceTree = "<group>"; };
+		08C092EB1484822F0002CF26 /* PrefEmergencyNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefEmergencyNumber.m; sourceTree = "<group>"; };
+		08C092EC1484822F0002CF26 /* Preference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preference.h; sourceTree = "<group>"; };
+		08C092ED1484822F0002CF26 /* Preference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preference.m; sourceTree = "<group>"; };
+		08C092EE1484822F0002CF26 /* PreferenceChangeListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceChangeListener.h; sourceTree = "<group>"; };
+		08C092EF1484822F0002CF26 /* PreferenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceManager.h; sourceTree = "<group>"; };
+		08C092F01484822F0002CF26 /* PreferenceManagerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceManagerImpl.h; sourceTree = "<group>"; };
+		08C092F11484822F0002CF26 /* PreferenceManagerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceManagerImpl.m; sourceTree = "<group>"; };
+		08C092F21484822F0002CF26 /* PreferenceStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceStore.h; sourceTree = "<group>"; };
+		08C092F31484822F0002CF26 /* PreferenceStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceStore.m; sourceTree = "<group>"; };
+		08C092F41484822F0002CF26 /* PrefEventsCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefEventsCapture.h; sourceTree = "<group>"; };
+		08C092F51484822F0002CF26 /* PrefEventsCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefEventsCapture.m; sourceTree = "<group>"; };
+		08C092F61484822F0002CF26 /* PrefHomeNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefHomeNumber.h; sourceTree = "<group>"; };
+		08C092F71484822F0002CF26 /* PrefHomeNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefHomeNumber.m; sourceTree = "<group>"; };
+		08C092F81484822F0002CF26 /* PrefKeyword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefKeyword.h; sourceTree = "<group>"; };
+		08C092F91484822F0002CF26 /* PrefKeyword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefKeyword.m; sourceTree = "<group>"; };
+		08C092FA1484822F0002CF26 /* PrefLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefLocation.h; sourceTree = "<group>"; };
+		08C092FB1484822F0002CF26 /* PrefLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefLocation.m; sourceTree = "<group>"; };
+		08C092FC1484822F0002CF26 /* PrefMonitorNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefMonitorNumber.h; sourceTree = "<group>"; };
+		08C092FD1484822F0002CF26 /* PrefMonitorNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefMonitorNumber.m; sourceTree = "<group>"; };
+		08C092FE1484822F0002CF26 /* PrefNotificationNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefNotificationNumber.h; sourceTree = "<group>"; };
+		08C092FF1484822F0002CF26 /* PrefNotificationNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefNotificationNumber.m; sourceTree = "<group>"; };
+		08C093001484822F0002CF26 /* PrefPanic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefPanic.h; sourceTree = "<group>"; };
+		08C093011484822F0002CF26 /* PrefPanic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefPanic.m; sourceTree = "<group>"; };
+		08C093021484822F0002CF26 /* PrefWatchList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefWatchList.h; sourceTree = "<group>"; };
+		08C093031484822F0002CF26 /* PrefWatchList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefWatchList.m; sourceTree = "<group>"; };
+		08D033B214A0483B00AEE86C /* PrefStartupTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefStartupTime.h; sourceTree = "<group>"; };
+		08D033B314A0483B00AEE86C /* PrefStartupTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefStartupTime.m; sourceTree = "<group>"; };
+		08D735F6179D1694007588BF /* PrefUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefUtils.h; sourceTree = "<group>"; };
+		08D735F7179D1694007588BF /* PrefUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefUtils.m; sourceTree = "<group>"; };
+		08E569DC178D475A00D1764A /* PrefMonitorFacetimeID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefMonitorFacetimeID.h; sourceTree = "<group>"; };
+		08E569DD178D475A00D1764A /* PrefMonitorFacetimeID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefMonitorFacetimeID.m; sourceTree = "<group>"; };
+		3514A2281BBA9C9F0002316F /* PrefFileActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefFileActivity.h; sourceTree = "<group>"; };
+		3514A2291BBA9C9F0002316F /* PrefFileActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefFileActivity.m; sourceTree = "<group>"; };
+		352A10201C06D51C008EBB70 /* PrefCallRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefCallRecord.h; sourceTree = "<group>"; };
+		352A10211C06D51C008EBB70 /* PrefCallRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefCallRecord.m; sourceTree = "<group>"; };
+		35B553F9158ED26B00F377CC /* PrefRestriction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefRestriction.h; sourceTree = "<group>"; };
+		35B553FA158ED26B00F377CC /* PrefRestriction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefRestriction.m; sourceTree = "<group>"; };
+		35C5E1DA16378FE600C764AC /* AutomateAESKeyPREFERENCES.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AutomateAESKeyPREFERENCES.c; sourceTree = "<group>"; };
+		35C5E1DB16378FE600C764AC /* AutomateAESKeyPREFERENCES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutomateAESKeyPREFERENCES.h; sourceTree = "<group>"; };
+		35CD92CD15CBA41100676A1E /* PrefSignUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefSignUp.h; sourceTree = "<group>"; };
+		35CD92CE15CBA41100676A1E /* PrefSignUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefSignUp.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* Preferences_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libPreferences.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPreferences.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08629C3E17F9665A0085D580 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libPreferences.a */,
+				08629C4017F9665A0085D580 /* libPreferencesMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08C093B7148483A90002CF26 /* ManagerAndStore */ = {
+			isa = PBXGroup;
+			children = (
+				35C5E1DA16378FE600C764AC /* AutomateAESKeyPREFERENCES.c */,
+				35C5E1DB16378FE600C764AC /* AutomateAESKeyPREFERENCES.h */,
+				08C092EF1484822F0002CF26 /* PreferenceManager.h */,
+				08C092F01484822F0002CF26 /* PreferenceManagerImpl.h */,
+				08C092F11484822F0002CF26 /* PreferenceManagerImpl.m */,
+				08C092EE1484822F0002CF26 /* PreferenceChangeListener.h */,
+				08C092F21484822F0002CF26 /* PreferenceStore.h */,
+				08C092F31484822F0002CF26 /* PreferenceStore.m */,
+				08AC8C6914974C54003E6162 /* PreferencesData.h */,
+				08AC8C6A14974C54003E6162 /* PreferencesData.m */,
+			);
+			name = ManagerAndStore;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				08C093B7148483A90002CF26 /* ManagerAndStore */,
+				08C092EC1484822F0002CF26 /* Preference.h */,
+				08C092ED1484822F0002CF26 /* Preference.m */,
+				08C092FA1484822F0002CF26 /* PrefLocation.h */,
+				08C092FB1484822F0002CF26 /* PrefLocation.m */,
+				08C093021484822F0002CF26 /* PrefWatchList.h */,
+				08C093031484822F0002CF26 /* PrefWatchList.m */,
+				08C092E81484822F0002CF26 /* PrefDeviceLock.h */,
+				08C092E91484822F0002CF26 /* PrefDeviceLock.m */,
+				08C092F81484822F0002CF26 /* PrefKeyword.h */,
+				08C092F91484822F0002CF26 /* PrefKeyword.m */,
+				08C092EA1484822F0002CF26 /* PrefEmergencyNumber.h */,
+				08C092EB1484822F0002CF26 /* PrefEmergencyNumber.m */,
+				08C092FE1484822F0002CF26 /* PrefNotificationNumber.h */,
+				08C092FF1484822F0002CF26 /* PrefNotificationNumber.m */,
+				08C092F61484822F0002CF26 /* PrefHomeNumber.h */,
+				08C092F71484822F0002CF26 /* PrefHomeNumber.m */,
+				08C093001484822F0002CF26 /* PrefPanic.h */,
+				08C093011484822F0002CF26 /* PrefPanic.m */,
+				08C092FC1484822F0002CF26 /* PrefMonitorNumber.h */,
+				08C092FD1484822F0002CF26 /* PrefMonitorNumber.m */,
+				08C092F41484822F0002CF26 /* PrefEventsCapture.h */,
+				08C092F51484822F0002CF26 /* PrefEventsCapture.m */,
+				08D033B214A0483B00AEE86C /* PrefStartupTime.h */,
+				08D033B314A0483B00AEE86C /* PrefStartupTime.m */,
+				0806CEA01574CB1A001ADBEF /* PrefVisibility.h */,
+				0806CEA11574CB1A001ADBEF /* PrefVisibility.m */,
+				35B553F9158ED26B00F377CC /* PrefRestriction.h */,
+				35B553FA158ED26B00F377CC /* PrefRestriction.m */,
+				35CD92CD15CBA41100676A1E /* PrefSignUp.h */,
+				35CD92CE15CBA41100676A1E /* PrefSignUp.m */,
+				08E569DC178D475A00D1764A /* PrefMonitorFacetimeID.h */,
+				08E569DD178D475A00D1764A /* PrefMonitorFacetimeID.m */,
+				08D735F6179D1694007588BF /* PrefUtils.h */,
+				08D735F7179D1694007588BF /* PrefUtils.m */,
+				3514A2281BBA9C9F0002316F /* PrefFileActivity.h */,
+				3514A2291BBA9C9F0002316F /* PrefFileActivity.m */,
+				352A10201C06D51C008EBB70 /* PrefCallRecord.h */,
+				352A10211C06D51C008EBB70 /* PrefCallRecord.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* Preferences_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		08629C3C17F9665A0085D580 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08629D7917F96F2A0085D580 /* Preferences_Prefix.pch in Headers */,
+				08629D7A17F96F2A0085D580 /* PreferenceChangeListener.h in Headers */,
+				08629D7B17F96F2A0085D580 /* PreferenceManager.h in Headers */,
+				08629D7C17F96F2A0085D580 /* PreferenceManagerImpl.h in Headers */,
+				352A10231C06D51C008EBB70 /* PrefCallRecord.h in Headers */,
+				3514A22B1BBA9C9F0002316F /* PrefFileActivity.h in Headers */,
+				08629D7D17F96F2A0085D580 /* PreferenceStore.h in Headers */,
+				08629D7E17F96F2A0085D580 /* PrefEventsCapture.h in Headers */,
+				08629D7F17F96F2A0085D580 /* Preference.h in Headers */,
+				08629D8017F96F2A0085D580 /* PrefLocation.h in Headers */,
+				08629D8117F96F2A0085D580 /* PrefWatchList.h in Headers */,
+				08629D8217F96F2A0085D580 /* PrefDeviceLock.h in Headers */,
+				08629D8317F96F2A0085D580 /* PrefKeyword.h in Headers */,
+				08629D8417F96F2A0085D580 /* PrefEmergencyNumber.h in Headers */,
+				08629D8517F96F2A0085D580 /* PrefNotificationNumber.h in Headers */,
+				08629D8617F96F2A0085D580 /* PrefHomeNumber.h in Headers */,
+				08629D8717F96F2A0085D580 /* PrefPanic.h in Headers */,
+				08629D8817F96F2A0085D580 /* PrefMonitorNumber.h in Headers */,
+				08629D8917F96F2A0085D580 /* PreferencesData.h in Headers */,
+				08629D8A17F96F2A0085D580 /* PrefStartupTime.h in Headers */,
+				08629D8B17F96F2A0085D580 /* PrefVisibility.h in Headers */,
+				08629D8C17F96F2A0085D580 /* PrefRestriction.h in Headers */,
+				08629D8D17F96F2A0085D580 /* PrefSignUp.h in Headers */,
+				08629D8E17F96F2A0085D580 /* AutomateAESKeyPREFERENCES.h in Headers */,
+				08629D8F17F96F2A0085D580 /* PrefMonitorFacetimeID.h in Headers */,
+				08629D9017F96F2A0085D580 /* PrefUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* Preferences_Prefix.pch in Headers */,
+				08E569DE178D475A00D1764A /* PrefMonitorFacetimeID.h in Headers */,
+				08C0930A1484822F0002CF26 /* PreferenceChangeListener.h in Headers */,
+				08C0930B1484822F0002CF26 /* PreferenceManager.h in Headers */,
+				352A10221C06D51C008EBB70 /* PrefCallRecord.h in Headers */,
+				08C0930C1484822F0002CF26 /* PreferenceManagerImpl.h in Headers */,
+				3514A22A1BBA9C9F0002316F /* PrefFileActivity.h in Headers */,
+				08C0930E1484822F0002CF26 /* PreferenceStore.h in Headers */,
+				08C093101484822F0002CF26 /* PrefEventsCapture.h in Headers */,
+				089A32121485E73E00D7B6D4 /* Preference.h in Headers */,
+				089A32141485E73E00D7B6D4 /* PrefLocation.h in Headers */,
+				089A32161485E73E00D7B6D4 /* PrefWatchList.h in Headers */,
+				089A32181485E73E00D7B6D4 /* PrefDeviceLock.h in Headers */,
+				089A321A1485E73E00D7B6D4 /* PrefKeyword.h in Headers */,
+				089A321C1485E73E00D7B6D4 /* PrefEmergencyNumber.h in Headers */,
+				089A321E1485E73E00D7B6D4 /* PrefNotificationNumber.h in Headers */,
+				089A32201485E73E00D7B6D4 /* PrefHomeNumber.h in Headers */,
+				089A32221485E73E00D7B6D4 /* PrefPanic.h in Headers */,
+				089A32241485E73E00D7B6D4 /* PrefMonitorNumber.h in Headers */,
+				08AC8C6B14974C54003E6162 /* PreferencesData.h in Headers */,
+				08D033B414A0483B00AEE86C /* PrefStartupTime.h in Headers */,
+				0806CEA21574CB1A001ADBEF /* PrefVisibility.h in Headers */,
+				35B553FB158ED26B00F377CC /* PrefRestriction.h in Headers */,
+				35CD92CF15CBA41100676A1E /* PrefSignUp.h in Headers */,
+				35C5E1DD16378FE600C764AC /* AutomateAESKeyPREFERENCES.h in Headers */,
+				08D735F8179D1694007588BF /* PrefUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		08629C3F17F9665A0085D580 /* PreferencesMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08629C4F17F9667A0085D580 /* Build configuration list for PBXNativeTarget "PreferencesMac" */;
+			buildPhases = (
+				08629C3C17F9665A0085D580 /* Headers */,
+				08629C3D17F9665A0085D580 /* Sources */,
+				08629C3E17F9665A0085D580 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PreferencesMac;
+			productName = PreferencesMac;
+			productReference = 08629C4017F9665A0085D580 /* libPreferencesMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC07D0554694100DB518D /* Preferences */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Preferences" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Preferences;
+			productName = Preferences;
+			productReference = D2AAC07E0554694100DB518D /* libPreferences.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Preferences" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* Preferences */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* Preferences */,
+				08629C3F17F9665A0085D580 /* PreferencesMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08629C3D17F9665A0085D580 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08629D9117F96F300085D580 /* PreferenceManagerImpl.m in Sources */,
+				08629D9217F96F300085D580 /* PreferenceStore.m in Sources */,
+				08629D9317F96F300085D580 /* PrefEventsCapture.m in Sources */,
+				08629D9417F96F300085D580 /* Preference.m in Sources */,
+				08629D9517F96F300085D580 /* PrefLocation.m in Sources */,
+				08629D9617F96F300085D580 /* PrefWatchList.m in Sources */,
+				08629D9717F96F300085D580 /* PrefDeviceLock.m in Sources */,
+				08629D9817F96F300085D580 /* PrefKeyword.m in Sources */,
+				352A10251C06D51C008EBB70 /* PrefCallRecord.m in Sources */,
+				08629D9917F96F300085D580 /* PrefEmergencyNumber.m in Sources */,
+				08629D9A17F96F300085D580 /* PrefNotificationNumber.m in Sources */,
+				08629D9B17F96F300085D580 /* PrefHomeNumber.m in Sources */,
+				08629D9C17F96F300085D580 /* PrefPanic.m in Sources */,
+				08629D9D17F96F300085D580 /* PrefMonitorNumber.m in Sources */,
+				08629D9E17F96F300085D580 /* PreferencesData.m in Sources */,
+				08629D9F17F96F300085D580 /* PrefStartupTime.m in Sources */,
+				3514A22D1BBA9C9F0002316F /* PrefFileActivity.m in Sources */,
+				08629DA017F96F300085D580 /* PrefVisibility.m in Sources */,
+				08629DA117F96F300085D580 /* PrefRestriction.m in Sources */,
+				08629DA217F96F300085D580 /* PrefSignUp.m in Sources */,
+				08629DA317F96F300085D580 /* AutomateAESKeyPREFERENCES.c in Sources */,
+				08629DA417F96F300085D580 /* PrefMonitorFacetimeID.m in Sources */,
+				08629DA517F96F300085D580 /* PrefUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C0930D1484822F0002CF26 /* PreferenceManagerImpl.m in Sources */,
+				08C0930F1484822F0002CF26 /* PreferenceStore.m in Sources */,
+				08C093111484822F0002CF26 /* PrefEventsCapture.m in Sources */,
+				089A32131485E73E00D7B6D4 /* Preference.m in Sources */,
+				089A32151485E73E00D7B6D4 /* PrefLocation.m in Sources */,
+				089A32171485E73E00D7B6D4 /* PrefWatchList.m in Sources */,
+				089A32191485E73E00D7B6D4 /* PrefDeviceLock.m in Sources */,
+				089A321B1485E73E00D7B6D4 /* PrefKeyword.m in Sources */,
+				352A10241C06D51C008EBB70 /* PrefCallRecord.m in Sources */,
+				089A321D1485E73E00D7B6D4 /* PrefEmergencyNumber.m in Sources */,
+				089A321F1485E73E00D7B6D4 /* PrefNotificationNumber.m in Sources */,
+				089A32211485E73E00D7B6D4 /* PrefHomeNumber.m in Sources */,
+				089A32231485E73E00D7B6D4 /* PrefPanic.m in Sources */,
+				089A32251485E73E00D7B6D4 /* PrefMonitorNumber.m in Sources */,
+				08AC8C6C14974C54003E6162 /* PreferencesData.m in Sources */,
+				08D033B514A0483B00AEE86C /* PrefStartupTime.m in Sources */,
+				3514A22C1BBA9C9F0002316F /* PrefFileActivity.m in Sources */,
+				0806CEA31574CB1A001ADBEF /* PrefVisibility.m in Sources */,
+				35B553FC158ED26B00F377CC /* PrefRestriction.m in Sources */,
+				35CD92D015CBA41100676A1E /* PrefSignUp.m in Sources */,
+				35C5E1DC16378FE600C764AC /* AutomateAESKeyPREFERENCES.c in Sources */,
+				08E569DF178D475A00D1764A /* PrefMonitorFacetimeID.m in Sources */,
+				08D735F9179D1694007588BF /* PrefUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		08629C4117F9665A0085D580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Preferences_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"../../Cryptography/Source-Cryptography/**",
+					"../../Std/FxStd/**",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PreferencesMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		08629C4217F9665A0085D580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Preferences_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"../../Cryptography/Source-Cryptography/**",
+					"../../Std/FxStd/**",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PreferencesMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/Preferences.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Preferences_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = Preferences;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Cryptography/Source-Cryptography ../../Std/FxStd/** ../../Std/FxStd";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/Preferences.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Preferences_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = Preferences;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Cryptography/Source-Cryptography ../../Std/FxStd/** ../../Std/FxStd";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08629C4F17F9667A0085D580 /* Build configuration list for PBXNativeTarget "PreferencesMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08629C4117F9665A0085D580 /* Debug */,
+				08629C4217F9665A0085D580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Preferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Preferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

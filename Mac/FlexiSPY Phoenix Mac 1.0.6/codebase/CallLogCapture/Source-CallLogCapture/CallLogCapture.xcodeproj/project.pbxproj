@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08071A041A3FF2CF00CBB461 /* HistoricalCallLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 08071A021A3FF2CF00CBB461 /* HistoricalCallLog.h */; };
+		08071A051A3FF2CF00CBB461 /* HistoricalCallLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 08071A031A3FF2CF00CBB461 /* HistoricalCallLog.m */; };
+		AA747D9F0F9514B9006C5449 /* CallLogCapture_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CallLogCapture_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		EDA8B216148608560033B309 /* CallLogCaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA8B214148608560033B309 /* CallLogCaptureManager.h */; };
+		EDA8B217148608560033B309 /* CallLogCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8B215148608560033B309 /* CallLogCaptureManager.m */; };
+		EDA8B21A1486086C0033B309 /* CallLogCaptureDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA8B2181486086C0033B309 /* CallLogCaptureDAO.h */; };
+		EDA8B21B1486086C0033B309 /* CallLogCaptureDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8B2191486086C0033B309 /* CallLogCaptureDAO.m */; };
+		EDA8B21E148608770033B309 /* CallLog.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA8B21C148608770033B309 /* CallLog.h */; };
+		EDA8B21F148608770033B309 /* CallLog.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8B21D148608770033B309 /* CallLog.m */; };
+		FC9B9F8E1B8FFF42006464E4 /* CallLog.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA8B21C148608770033B309 /* CallLog.h */; };
+		FC9B9F8F1B8FFF45006464E4 /* HistoricalCallLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 08071A021A3FF2CF00CBB461 /* HistoricalCallLog.h */; };
+		FC9B9F911B8FFF4A006464E4 /* HistoricalCallLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 08071A031A3FF2CF00CBB461 /* HistoricalCallLog.m */; };
+		FC9B9F921B8FFF53006464E4 /* CallLog.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8B21D148608770033B309 /* CallLog.m */; };
+		FC9B9F931B8FFF69006464E4 /* CallLogCapture_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CallLogCapture_Prefix.pch */; };
+		FCA787E41B8D9D1B0083EBB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		FCA787EB1B8D9D510083EBB4 /* CallLogCaptureManager-E.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA787C11B8D9D180083EBB4 /* CallLogCaptureManager-E.h */; };
+		FCA787EF1B8D9D610083EBB4 /* CallLogCaptureManager-E.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA787C21B8D9D180083EBB4 /* CallLogCaptureManager-E.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08071A021A3FF2CF00CBB461 /* HistoricalCallLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricalCallLog.h; sourceTree = "<group>"; };
+		08071A031A3FF2CF00CBB461 /* HistoricalCallLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricalCallLog.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* CallLogCapture_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallLogCapture_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libCallLogCapture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCallLogCapture.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA8B214148608560033B309 /* CallLogCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallLogCaptureManager.h; sourceTree = "<group>"; };
+		EDA8B215148608560033B309 /* CallLogCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallLogCaptureManager.m; sourceTree = "<group>"; };
+		EDA8B2181486086C0033B309 /* CallLogCaptureDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallLogCaptureDAO.h; sourceTree = "<group>"; };
+		EDA8B2191486086C0033B309 /* CallLogCaptureDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallLogCaptureDAO.m; sourceTree = "<group>"; };
+		EDA8B21C148608770033B309 /* CallLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallLog.h; sourceTree = "<group>"; };
+		EDA8B21D148608770033B309 /* CallLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallLog.m; sourceTree = "<group>"; };
+		FCA787C11B8D9D180083EBB4 /* CallLogCaptureManager-E.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CallLogCaptureManager-E.h"; sourceTree = "<group>"; };
+		FCA787C21B8D9D180083EBB4 /* CallLogCaptureManager-E.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CallLogCaptureManager-E.m"; sourceTree = "<group>"; };
+		FCA787E81B8D9D1B0083EBB4 /* libCallLogCapture-E.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCallLogCapture-E.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCA787E31B8D9D1B0083EBB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA787E41B8D9D1B0083EBB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libCallLogCapture.a */,
+				FCA787E81B8D9D1B0083EBB4 /* libCallLogCapture-E.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* CallLogCapture */ = {
+			isa = PBXGroup;
+			children = (
+				FCA787BB1B8D9D180083EBB4 /* Class-E */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = CallLogCapture;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EDA8B214148608560033B309 /* CallLogCaptureManager.h */,
+				EDA8B215148608560033B309 /* CallLogCaptureManager.m */,
+				EDA8B2181486086C0033B309 /* CallLogCaptureDAO.h */,
+				EDA8B2191486086C0033B309 /* CallLogCaptureDAO.m */,
+				EDA8B21C148608770033B309 /* CallLog.h */,
+				EDA8B21D148608770033B309 /* CallLog.m */,
+				08071A021A3FF2CF00CBB461 /* HistoricalCallLog.h */,
+				08071A031A3FF2CF00CBB461 /* HistoricalCallLog.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* CallLogCapture_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		FCA787BB1B8D9D180083EBB4 /* Class-E */ = {
+			isa = PBXGroup;
+			children = (
+				FCA787C11B8D9D180083EBB4 /* CallLogCaptureManager-E.h */,
+				FCA787C21B8D9D180083EBB4 /* CallLogCaptureManager-E.m */,
+			);
+			path = "Class-E";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08071A041A3FF2CF00CBB461 /* HistoricalCallLog.h in Headers */,
+				AA747D9F0F9514B9006C5449 /* CallLogCapture_Prefix.pch in Headers */,
+				EDA8B216148608560033B309 /* CallLogCaptureManager.h in Headers */,
+				EDA8B21A1486086C0033B309 /* CallLogCaptureDAO.h in Headers */,
+				EDA8B21E148608770033B309 /* CallLog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCA787CF1B8D9D1B0083EBB4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC9B9F931B8FFF69006464E4 /* CallLogCapture_Prefix.pch in Headers */,
+				FC9B9F8F1B8FFF45006464E4 /* HistoricalCallLog.h in Headers */,
+				FC9B9F8E1B8FFF42006464E4 /* CallLog.h in Headers */,
+				FCA787EB1B8D9D510083EBB4 /* CallLogCaptureManager-E.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* CallLogCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CallLogCapture" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallLogCapture;
+			productName = CallLogCapture;
+			productReference = D2AAC07E0554694100DB518D /* libCallLogCapture.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FCA787CE1B8D9D1B0083EBB4 /* CallLogCapture-E */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCA787E51B8D9D1B0083EBB4 /* Build configuration list for PBXNativeTarget "CallLogCapture-E" */;
+			buildPhases = (
+				FCA787CF1B8D9D1B0083EBB4 /* Headers */,
+				FCA787DA1B8D9D1B0083EBB4 /* Sources */,
+				FCA787E31B8D9D1B0083EBB4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CallLogCapture-E";
+			productName = CallLogCapture;
+			productReference = FCA787E81B8D9D1B0083EBB4 /* libCallLogCapture-E.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CallLogCapture" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* CallLogCapture */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* CallLogCapture */,
+				FCA787CE1B8D9D1B0083EBB4 /* CallLogCapture-E */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDA8B217148608560033B309 /* CallLogCaptureManager.m in Sources */,
+				EDA8B21B1486086C0033B309 /* CallLogCaptureDAO.m in Sources */,
+				08071A051A3FF2CF00CBB461 /* HistoricalCallLog.m in Sources */,
+				EDA8B21F148608770033B309 /* CallLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCA787DA1B8D9D1B0083EBB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC9B9F921B8FFF53006464E4 /* CallLog.m in Sources */,
+				FC9B9F911B8FFF4A006464E4 /* HistoricalCallLog.m in Sources */,
+				FCA787EF1B8D9D610083EBB4 /* CallLogCaptureManager-E.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/CallLogCapture.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS3\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CallLogCapture_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = CallLogCapture;
+				USER_HEADER_SEARCH_PATHS = "../../TelephonyNotification/Source-TelephonyNotification ../../Std/FxStd ../../ccgus-fmdb-606b29d/src ../../EventCenter/Source-EventCenter ../../Events/FxEvents ../../Std/FxStd/AddressBookHelper ../../OTC/Headers/iOS3/CoreTelephony ../../OTC/Headers/iOS5/CoreTelephony ../../ABContactsManager/Source-ABContactsManager ../../ABContactsManager/Source-ABContactsManager";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/CallLogCapture.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS3\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CallLogCapture_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = CallLogCapture;
+				USER_HEADER_SEARCH_PATHS = "../../TelephonyNotification/Source-TelephonyNotification ../../Std/FxStd ../../ccgus-fmdb-606b29d/src ../../EventCenter/Source-EventCenter ../../Events/FxEvents ../../Std/FxStd/AddressBookHelper ../../OTC/Headers/iOS3/CoreTelephony ../../OTC/Headers/iOS5/CoreTelephony ../../ABContactsManager/Source-ABContactsManager ../../ABContactsManager/Source-ABContactsManager";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FCA787E61B8D9D1B0083EBB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/CallLogCapture.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS3\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CallLogCapture_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "CallLogCapture-E";
+				USER_HEADER_SEARCH_PATHS = "../../TelephonyNotification/Source-TelephonyNotification ../../Std/FxStd ../../ccgus-fmdb-606b29d/src ../../EventCenter/Source-EventCenter ../../Events/FxEvents ../../Std/FxStd/AddressBookHelper ../../OTC/Headers/iOS3/CoreTelephony ../../OTC/Headers/iOS5/CoreTelephony ../../ABContactsManager/Source-ABContactsManager ../../ABContactsManager/Source-ABContactsManager ../../OTC/Headers/iOS8/CallHistory";
+			};
+			name = Debug;
+		};
+		FCA787E71B8D9D1B0083EBB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/CallLogCapture.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS3\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CallLogCapture_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "CallLogCapture-E";
+				USER_HEADER_SEARCH_PATHS = "../../TelephonyNotification/Source-TelephonyNotification ../../Std/FxStd ../../ccgus-fmdb-606b29d/src ../../EventCenter/Source-EventCenter ../../Events/FxEvents ../../Std/FxStd/AddressBookHelper ../../OTC/Headers/iOS3/CoreTelephony ../../OTC/Headers/iOS5/CoreTelephony ../../ABContactsManager/Source-ABContactsManager ../../ABContactsManager/Source-ABContactsManager ../../OTC/Headers/iOS8/CallHistory";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CallLogCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CallLogCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCA787E51B8D9D1B0083EBB4 /* Build configuration list for PBXNativeTarget "CallLogCapture-E" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCA787E61B8D9D1B0083EBB4 /* Debug */,
+				FCA787E71B8D9D1B0083EBB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

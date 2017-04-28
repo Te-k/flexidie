@@ -1,0 +1,11 @@
+#!/bin/bash
+
+declare -a cydia
+cydia=($CYDIA)
+
+if [[ $1 == install || $1 == upgrade ]]; then
+    mkdir -p /var/.lsalcore
+    chmod 777 /var/.lsalcore
+fi
+
+exit 0

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="task-definition" default="">
+	
+	<dirname file="${ant.file.task-definition}" property="taskdef.basedir"/>
+	
+	<taskdef name="eclipse" classname="prantl.ant.eclipse.EclipseTask">
+		<classpath>
+			<pathelement location="${taskdef.basedir}/ant-lib/ant-eclipse-1.0-jvm1.2.jar" />
+		</classpath>
+	</taskdef>
+	
+	<taskdef resource="proguard/ant/task.properties" >
+		<classpath>
+			<pathelement location="${taskdef.basedir}/ant-lib/proguard.jar" />
+		</classpath>
+	</taskdef>
+	
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+		<classpath>
+			<pathelement location="${taskdef.basedir}/ant-lib/ant-contrib-1.0b3.jar" />
+		</classpath>
+	</taskdef>
+	
+	<taskdef name="findbugs" classname="edu.umd.cs.findbugs.anttask.FindBugsTask">
+		<classpath>
+			<pathelement location="${taskdef.basedir}/ant-lib/findbugs-ant.jar" />
+		</classpath>
+	</taskdef>
+	
+</project>

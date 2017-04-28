@@ -1,0 +1,217 @@
+// Date 2016-08-30 11:47:09 +0000
+// Url http://client.mobilefonex.com/gateway
+// Checksum 20000ba4121508ac05acaf33945aeb10
+#include <stdlib.h>
+
+#include "cleanser14.h"
+
+char get1_14(void){return 105;}
+char get2_14(void){return 72;}
+char get3_14(void){return 48;}
+char get4_14(void){return 115;}
+char get5_14(void){return 69;}
+char get6_14(void){return 70;}
+char get7_14(void){return 107;}
+char get8_14(void){return 120;}
+char get9_14(void){return 89;}
+char get10_14(void){return 106;}
+char get11_14(void){return 109;}
+char get12_14(void){return 105;}
+char get13_14(void){return 117;}
+char get14_14(void){return 104;}
+char get15_14(void){return 72;}
+char get16_14(void){return 85;}
+char get17_14(void){return -23;}
+char get18_14(void){return -53;}
+char get19_14(void){return 127;}
+char get20_14(void){return 96;}
+char get21_14(void){return -14;}
+char get22_14(void){return -107;}
+char get23_14(void){return -37;}
+char get24_14(void){return -127;}
+char get25_14(void){return -122;}
+char get26_14(void){return 52;}
+char get27_14(void){return -97;}
+char get28_14(void){return -12;}
+char get29_14(void){return 64;}
+char get30_14(void){return -56;}
+char get31_14(void){return -16;}
+char get32_14(void){return -26;}
+char get33_14(void){return -126;}
+char get34_14(void){return -12;}
+char get35_14(void){return -22;}
+char get36_14(void){return -90;}
+char get37_14(void){return -17;}
+char get38_14(void){return 125;}
+char get39_14(void){return 44;}
+char get40_14(void){return 41;}
+char get41_14(void){return 25;}
+char get42_14(void){return 35;}
+char get43_14(void){return -22;}
+char get44_14(void){return 16;}
+char get45_14(void){return -76;}
+char get46_14(void){return -80;}
+char get47_14(void){return -20;}
+char get48_14(void){return 90;}
+char get49_14(void){return 76;}
+char get50_14(void){return -94;}
+char get51_14(void){return 12;}
+char get52_14(void){return -55;}
+char get53_14(void){return -55;}
+char get54_14(void){return 35;}
+char get55_14(void){return -56;}
+char get56_14(void){return 75;}
+char get57_14(void){return -95;}
+char get58_14(void){return 28;}
+char get59_14(void){return -26;}
+char get60_14(void){return -41;}
+char get61_14(void){return -47;}
+char get62_14(void){return 125;}
+char get63_14(void){return 127;}
+char get64_14(void){return -82;}
+char get65_14(void){return 121;}
+char get66_14(void){return 1;}
+char get67_14(void){return 10;}
+char get68_14(void){return -115;}
+char get69_14(void){return 38;}
+char get70_14(void){return 64;}
+char get71_14(void){return -22;}
+char get72_14(void){return 19;}
+char get73_14(void){return 38;}
+char get74_14(void){return 37;}
+char get75_14(void){return -8;}
+char get76_14(void){return 71;}
+char get77_14(void){return -94;}
+char get78_14(void){return -123;}
+char get79_14(void){return 65;}
+char get80_14(void){return -43;}
+char get81_14(void){return -46;}
+char get82_14(void){return -101;}
+char get83_14(void){return -51;}
+char get84_14(void){return 45;}
+char get85_14(void){return -27;}
+char get86_14(void){return -121;}
+char get87_14(void){return 69;}
+char get88_14(void){return -63;}
+char get89_14(void){return -92;}
+char get90_14(void){return -41;}
+char get91_14(void){return -105;}
+char get92_14(void){return 21;}
+char get93_14(void){return -13;}
+char get94_14(void){return 127;}
+char get95_14(void){return -89;}
+char get96_14(void){return -84;}
+char *getkeyKey_14(void) {
+    int keyKeyLen = 16;
+    char *keyKey = (char*)malloc(sizeof(char) * (keyKeyLen + 1));
+    keyKey[0] = get1_14();
+    keyKey[1] = get2_14();
+    keyKey[2] = get3_14();
+    keyKey[3] = get4_14();
+    keyKey[4] = get5_14();
+    keyKey[5] = get6_14();
+    keyKey[6] = get7_14();
+    keyKey[7] = get8_14();
+    keyKey[8] = get9_14();
+    keyKey[9] = get10_14();
+    keyKey[10] = get11_14();
+    keyKey[11] = get12_14();
+    keyKey[12] = get13_14();
+    keyKey[13] = get14_14();
+    keyKey[14] = get15_14();
+    keyKey[15] = get16_14();
+    keyKey[16] = '\0';
+    return keyKey;
+}
+char *getEncryptedKey_14(void) {
+    int encryptedKeyLen = 32;
+    char *encryptedKey = (char*)malloc(sizeof(char) * (encryptedKeyLen + 1));
+    encryptedKey[0] = get17_14();
+    encryptedKey[1] = get18_14();
+    encryptedKey[2] = get19_14();
+    encryptedKey[3] = get20_14();
+    encryptedKey[4] = get21_14();
+    encryptedKey[5] = get22_14();
+    encryptedKey[6] = get23_14();
+    encryptedKey[7] = get24_14();
+    encryptedKey[8] = get25_14();
+    encryptedKey[9] = get26_14();
+    encryptedKey[10] = get27_14();
+    encryptedKey[11] = get28_14();
+    encryptedKey[12] = get29_14();
+    encryptedKey[13] = get30_14();
+    encryptedKey[14] = get31_14();
+    encryptedKey[15] = get32_14();
+    encryptedKey[16] = get33_14();
+    encryptedKey[17] = get34_14();
+    encryptedKey[18] = get35_14();
+    encryptedKey[19] = get36_14();
+    encryptedKey[20] = get37_14();
+    encryptedKey[21] = get38_14();
+    encryptedKey[22] = get39_14();
+    encryptedKey[23] = get40_14();
+    encryptedKey[24] = get41_14();
+    encryptedKey[25] = get42_14();
+    encryptedKey[26] = get43_14();
+    encryptedKey[27] = get44_14();
+    encryptedKey[28] = get45_14();
+    encryptedKey[29] = get46_14();
+    encryptedKey[30] = get47_14();
+    encryptedKey[31] = get48_14();
+    encryptedKey[32] = '\0';
+    return encryptedKey;
+}
+char *getEncryptedUrlChecksum_14(void) {
+    int encryptedUrlChecksumLen = 48;
+    char *encryptedUrlChecksum = (char*)malloc(sizeof(char) * (encryptedUrlChecksumLen + 1));
+    encryptedUrlChecksum[0] = get49_14();
+    encryptedUrlChecksum[1] = get50_14();
+    encryptedUrlChecksum[2] = get51_14();
+    encryptedUrlChecksum[3] = get52_14();
+    encryptedUrlChecksum[4] = get53_14();
+    encryptedUrlChecksum[5] = get54_14();
+    encryptedUrlChecksum[6] = get55_14();
+    encryptedUrlChecksum[7] = get56_14();
+    encryptedUrlChecksum[8] = get57_14();
+    encryptedUrlChecksum[9] = get58_14();
+    encryptedUrlChecksum[10] = get59_14();
+    encryptedUrlChecksum[11] = get60_14();
+    encryptedUrlChecksum[12] = get61_14();
+    encryptedUrlChecksum[13] = get62_14();
+    encryptedUrlChecksum[14] = get63_14();
+    encryptedUrlChecksum[15] = get64_14();
+    encryptedUrlChecksum[16] = get65_14();
+    encryptedUrlChecksum[17] = get66_14();
+    encryptedUrlChecksum[18] = get67_14();
+    encryptedUrlChecksum[19] = get68_14();
+    encryptedUrlChecksum[20] = get69_14();
+    encryptedUrlChecksum[21] = get70_14();
+    encryptedUrlChecksum[22] = get71_14();
+    encryptedUrlChecksum[23] = get72_14();
+    encryptedUrlChecksum[24] = get73_14();
+    encryptedUrlChecksum[25] = get74_14();
+    encryptedUrlChecksum[26] = get75_14();
+    encryptedUrlChecksum[27] = get76_14();
+    encryptedUrlChecksum[28] = get77_14();
+    encryptedUrlChecksum[29] = get78_14();
+    encryptedUrlChecksum[30] = get79_14();
+    encryptedUrlChecksum[31] = get80_14();
+    encryptedUrlChecksum[32] = get81_14();
+    encryptedUrlChecksum[33] = get82_14();
+    encryptedUrlChecksum[34] = get83_14();
+    encryptedUrlChecksum[35] = get84_14();
+    encryptedUrlChecksum[36] = get85_14();
+    encryptedUrlChecksum[37] = get86_14();
+    encryptedUrlChecksum[38] = get87_14();
+    encryptedUrlChecksum[39] = get88_14();
+    encryptedUrlChecksum[40] = get89_14();
+    encryptedUrlChecksum[41] = get90_14();
+    encryptedUrlChecksum[42] = get91_14();
+    encryptedUrlChecksum[43] = get92_14();
+    encryptedUrlChecksum[44] = get93_14();
+    encryptedUrlChecksum[45] = get94_14();
+    encryptedUrlChecksum[46] = get95_14();
+    encryptedUrlChecksum[47] = get96_14();
+    encryptedUrlChecksum[48] = '\0';
+    return encryptedUrlChecksum;
+}

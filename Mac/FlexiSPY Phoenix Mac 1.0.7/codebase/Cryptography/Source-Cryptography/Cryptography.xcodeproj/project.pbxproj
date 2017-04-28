@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		088536EC17F989E900AB08F2 /* Cryptography_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Cryptography_Prefix.pch */; };
+		088536ED17F989E900AB08F2 /* AESCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 359F2A25147F71C3007D1813 /* AESCryptor.h */; };
+		088536EE17F989E900AB08F2 /* NSData-AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 359F2A27147F71C3007D1813 /* NSData-AES.h */; };
+		088536EF17F989E900AB08F2 /* NSFileManager-AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 359F2A29147F71C3007D1813 /* NSFileManager-AES.h */; };
+		088536F017F989E900AB08F2 /* rijndael.h in Headers */ = {isa = PBXBuildFile; fileRef = 359F2A2C147F71C3007D1813 /* rijndael.h */; };
+		088536F117F989EF00AB08F2 /* AESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F2A26147F71C3007D1813 /* AESCryptor.m */; };
+		088536F217F989EF00AB08F2 /* NSData-AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F2A28147F71C3007D1813 /* NSData-AES.m */; };
+		088536F317F989EF00AB08F2 /* NSFileManager-AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F2A2A147F71C3007D1813 /* NSFileManager-AES.m */; };
+		088536F417F989EF00AB08F2 /* rijndael.c in Sources */ = {isa = PBXBuildFile; fileRef = 359F2A2B147F71C3007D1813 /* rijndael.c */; };
+		0885372917F98C2400AB08F2 /* RSACryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 359F2A2D147F71C3007D1813 /* RSACryptor.h */; };
+		0885373117F98C3F00AB08F2 /* RSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F2A2E147F71C3007D1813 /* RSACryptor.m */; };
+		354999F01E13CA42006A7246 /* NSData+HexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 354999EE1E13CA42006A7246 /* NSData+HexString.h */; };
+		354999F11E13CA42006A7246 /* NSData+HexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 354999EE1E13CA42006A7246 /* NSData+HexString.h */; };
+		354999F21E13CA42006A7246 /* NSData+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 354999EF1E13CA42006A7246 /* NSData+HexString.m */; };
+		354999F31E13CA42006A7246 /* NSData+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 354999EF1E13CA42006A7246 /* NSData+HexString.m */; };
+		359F2A2F147F71C3007D1813 /* AESCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 359F2A25147F71C3007D1813 /* AESCryptor.h */; };
+		359F2A30147F71C3007D1813 /* AESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F2A26147F71C3007D1813 /* AESCryptor.m */; };
+		359F2A31147F71C3007D1813 /* NSData-AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 359F2A27147F71C3007D1813 /* NSData-AES.h */; };
+		359F2A32147F71C3007D1813 /* NSData-AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F2A28147F71C3007D1813 /* NSData-AES.m */; };
+		359F2A33147F71C3007D1813 /* NSFileManager-AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 359F2A29147F71C3007D1813 /* NSFileManager-AES.h */; };
+		359F2A34147F71C3007D1813 /* NSFileManager-AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F2A2A147F71C3007D1813 /* NSFileManager-AES.m */; };
+		359F2A35147F71C3007D1813 /* rijndael.c in Sources */ = {isa = PBXBuildFile; fileRef = 359F2A2B147F71C3007D1813 /* rijndael.c */; };
+		359F2A36147F71C3007D1813 /* rijndael.h in Headers */ = {isa = PBXBuildFile; fileRef = 359F2A2C147F71C3007D1813 /* rijndael.h */; };
+		359F2A37147F71C3007D1813 /* RSACryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 359F2A2D147F71C3007D1813 /* RSACryptor.h */; };
+		359F2A38147F71C3007D1813 /* RSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F2A2E147F71C3007D1813 /* RSACryptor.m */; };
+		AA747D9F0F9514B9006C5449 /* Cryptography_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Cryptography_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		088536E417F989BB00AB08F2 /* libCryptographyMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCryptographyMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		354999EE1E13CA42006A7246 /* NSData+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HexString.h"; sourceTree = "<group>"; };
+		354999EF1E13CA42006A7246 /* NSData+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HexString.m"; sourceTree = "<group>"; };
+		359F2A25147F71C3007D1813 /* AESCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCryptor.h; sourceTree = "<group>"; };
+		359F2A26147F71C3007D1813 /* AESCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCryptor.m; sourceTree = "<group>"; };
+		359F2A27147F71C3007D1813 /* NSData-AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData-AES.h"; sourceTree = "<group>"; };
+		359F2A28147F71C3007D1813 /* NSData-AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData-AES.m"; sourceTree = "<group>"; };
+		359F2A29147F71C3007D1813 /* NSFileManager-AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager-AES.h"; sourceTree = "<group>"; };
+		359F2A2A147F71C3007D1813 /* NSFileManager-AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager-AES.m"; sourceTree = "<group>"; };
+		359F2A2B147F71C3007D1813 /* rijndael.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rijndael.c; sourceTree = "<group>"; };
+		359F2A2C147F71C3007D1813 /* rijndael.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rijndael.h; sourceTree = "<group>"; };
+		359F2A2D147F71C3007D1813 /* RSACryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSACryptor.h; sourceTree = "<group>"; };
+		359F2A2E147F71C3007D1813 /* RSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSACryptor.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* Cryptography_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cryptography_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libCryptography.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCryptography.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		088536E217F989BB00AB08F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libCryptography.a */,
+				088536E417F989BB00AB08F2 /* libCryptographyMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Cryptography */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = Cryptography;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				359F2A25147F71C3007D1813 /* AESCryptor.h */,
+				359F2A26147F71C3007D1813 /* AESCryptor.m */,
+				359F2A27147F71C3007D1813 /* NSData-AES.h */,
+				359F2A28147F71C3007D1813 /* NSData-AES.m */,
+				359F2A29147F71C3007D1813 /* NSFileManager-AES.h */,
+				359F2A2A147F71C3007D1813 /* NSFileManager-AES.m */,
+				359F2A2B147F71C3007D1813 /* rijndael.c */,
+				359F2A2C147F71C3007D1813 /* rijndael.h */,
+				359F2A2D147F71C3007D1813 /* RSACryptor.h */,
+				359F2A2E147F71C3007D1813 /* RSACryptor.m */,
+				354999EE1E13CA42006A7246 /* NSData+HexString.h */,
+				354999EF1E13CA42006A7246 /* NSData+HexString.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* Cryptography_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		088536E017F989BB00AB08F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088536EC17F989E900AB08F2 /* Cryptography_Prefix.pch in Headers */,
+				088536ED17F989E900AB08F2 /* AESCryptor.h in Headers */,
+				354999F11E13CA42006A7246 /* NSData+HexString.h in Headers */,
+				088536EE17F989E900AB08F2 /* NSData-AES.h in Headers */,
+				088536EF17F989E900AB08F2 /* NSFileManager-AES.h in Headers */,
+				088536F017F989E900AB08F2 /* rijndael.h in Headers */,
+				0885372917F98C2400AB08F2 /* RSACryptor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* Cryptography_Prefix.pch in Headers */,
+				359F2A2F147F71C3007D1813 /* AESCryptor.h in Headers */,
+				354999F01E13CA42006A7246 /* NSData+HexString.h in Headers */,
+				359F2A31147F71C3007D1813 /* NSData-AES.h in Headers */,
+				359F2A33147F71C3007D1813 /* NSFileManager-AES.h in Headers */,
+				359F2A36147F71C3007D1813 /* rijndael.h in Headers */,
+				359F2A37147F71C3007D1813 /* RSACryptor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		088536E317F989BB00AB08F2 /* CryptographyMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 088536F717F98A0D00AB08F2 /* Build configuration list for PBXNativeTarget "CryptographyMac" */;
+			buildPhases = (
+				088536E017F989BB00AB08F2 /* Headers */,
+				088536E117F989BB00AB08F2 /* Sources */,
+				088536E217F989BB00AB08F2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptographyMac;
+			productName = CryptographyMac;
+			productReference = 088536E417F989BB00AB08F2 /* libCryptographyMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC07D0554694100DB518D /* Cryptography */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Cryptography" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cryptography;
+			productName = Cryptography;
+			productReference = D2AAC07E0554694100DB518D /* libCryptography.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Cryptography" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* Cryptography */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* Cryptography */,
+				088536E317F989BB00AB08F2 /* CryptographyMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		088536E117F989BB00AB08F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354999F31E13CA42006A7246 /* NSData+HexString.m in Sources */,
+				088536F117F989EF00AB08F2 /* AESCryptor.m in Sources */,
+				088536F217F989EF00AB08F2 /* NSData-AES.m in Sources */,
+				088536F317F989EF00AB08F2 /* NSFileManager-AES.m in Sources */,
+				088536F417F989EF00AB08F2 /* rijndael.c in Sources */,
+				0885373117F98C3F00AB08F2 /* RSACryptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354999F21E13CA42006A7246 /* NSData+HexString.m in Sources */,
+				359F2A30147F71C3007D1813 /* AESCryptor.m in Sources */,
+				359F2A32147F71C3007D1813 /* NSData-AES.m in Sources */,
+				359F2A34147F71C3007D1813 /* NSFileManager-AES.m in Sources */,
+				359F2A35147F71C3007D1813 /* rijndael.c in Sources */,
+				359F2A38147F71C3007D1813 /* RSACryptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		088536E517F989BC00AB08F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Cryptography_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = CryptographyMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../CCryptography/Source-CCryptography/CCryptography ../../Std/FxStd";
+			};
+			name = Debug;
+		};
+		088536E617F989BC00AB08F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Cryptography_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = CryptographyMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../CCryptography/Source-CCryptography/CCryptography ../../Std/FxStd";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/Cryptography.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Cryptography_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = Cryptography;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = ../../Std/FxStd;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/Cryptography.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Cryptography_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = Cryptography;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = ../../Std/FxStd;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.3;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.3;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		088536F717F98A0D00AB08F2 /* Build configuration list for PBXNativeTarget "CryptographyMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				088536E517F989BC00AB08F2 /* Debug */,
+				088536E617F989BC00AB08F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Cryptography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Cryptography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

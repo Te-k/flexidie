@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C24B3CEB1C966485002D6E04 /* ActivityMonitorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C24B3CEA1C966485002D6E04 /* ActivityMonitorManager.h */; };
+		C24B3CED1C966485002D6E04 /* ActivityMonitorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C24B3CEC1C966485002D6E04 /* ActivityMonitorManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C24B3D081C9665F5002D6E04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24B3D011C9665F4002D6E04 /* ActivityHider.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0279D92C1634723E0072A5BD;
+			remoteInfo = ActivityHider;
+		};
+		C24B3D0A1C9665F5002D6E04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24B3D011C9665F4002D6E04 /* ActivityHider.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0279D95A16347E670072A5BD;
+			remoteInfo = ActivityHiderExt;
+		};
+		C24B3D0C1C9665F8002D6E04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24B3D011C9665F4002D6E04 /* ActivityHider.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0279D95916347E670072A5BD;
+			remoteInfo = ActivityHiderExt;
+		};
+		C24B3D0E1C9665FC002D6E04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24B3D011C9665F4002D6E04 /* ActivityHider.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0279D92B1634723E0072A5BD;
+			remoteInfo = ActivityHider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C24B3CE71C966485002D6E04 /* libActivityMonitorManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libActivityMonitorManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C24B3CEA1C966485002D6E04 /* ActivityMonitorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityMonitorManager.h; sourceTree = "<group>"; };
+		C24B3CEC1C966485002D6E04 /* ActivityMonitorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityMonitorManager.m; sourceTree = "<group>"; };
+		C24B3D011C9665F4002D6E04 /* ActivityHider.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ActivityHider.xcodeproj; path = ../ActivityHider/ActivityHider.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C24B3CE41C966485002D6E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C24B3CDE1C966485002D6E04 = {
+			isa = PBXGroup;
+			children = (
+				C24B3D011C9665F4002D6E04 /* ActivityHider.xcodeproj */,
+				C24B3CE91C966485002D6E04 /* ActivityMonitorManager */,
+				C24B3CE81C966485002D6E04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C24B3CE81C966485002D6E04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C24B3CE71C966485002D6E04 /* libActivityMonitorManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C24B3CE91C966485002D6E04 /* ActivityMonitorManager */ = {
+			isa = PBXGroup;
+			children = (
+				C24B3CEA1C966485002D6E04 /* ActivityMonitorManager.h */,
+				C24B3CEC1C966485002D6E04 /* ActivityMonitorManager.m */,
+			);
+			path = ActivityMonitorManager;
+			sourceTree = "<group>";
+		};
+		C24B3D021C9665F4002D6E04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C24B3D091C9665F5002D6E04 /* ActivityHider */,
+				C24B3D0B1C9665F5002D6E04 /* ActivityHiderExt.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C24B3CE51C966485002D6E04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24B3CEB1C966485002D6E04 /* ActivityMonitorManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C24B3CE61C966485002D6E04 /* ActivityMonitorManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C24B3CFB1C966485002D6E04 /* Build configuration list for PBXNativeTarget "ActivityMonitorManager" */;
+			buildPhases = (
+				C24B3CE31C966485002D6E04 /* Sources */,
+				C24B3CE41C966485002D6E04 /* Frameworks */,
+				C24B3CE51C966485002D6E04 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C24B3D0F1C9665FC002D6E04 /* PBXTargetDependency */,
+				C24B3D0D1C9665F8002D6E04 /* PBXTargetDependency */,
+			);
+			name = ActivityMonitorManager;
+			productName = ActivityMonitorManager;
+			productReference = C24B3CE71C966485002D6E04 /* libActivityMonitorManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C24B3CDF1C966485002D6E04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C24B3CE61C966485002D6E04 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C24B3CE21C966485002D6E04 /* Build configuration list for PBXProject "ActivityMonitorManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C24B3CDE1C966485002D6E04;
+			productRefGroup = C24B3CE81C966485002D6E04 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C24B3D021C9665F4002D6E04 /* Products */;
+					ProjectRef = C24B3D011C9665F4002D6E04 /* ActivityHider.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C24B3CE61C966485002D6E04 /* ActivityMonitorManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C24B3D091C9665F5002D6E04 /* ActivityHider */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = ActivityHider;
+			remoteRef = C24B3D081C9665F5002D6E04 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C24B3D0B1C9665F5002D6E04 /* ActivityHiderExt.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ActivityHiderExt.bundle;
+			remoteRef = C24B3D0A1C9665F5002D6E04 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C24B3CE31C966485002D6E04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24B3CED1C966485002D6E04 /* ActivityMonitorManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C24B3D0D1C9665F8002D6E04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ActivityHiderExt;
+			targetProxy = C24B3D0C1C9665F8002D6E04 /* PBXContainerItemProxy */;
+		};
+		C24B3D0F1C9665FC002D6E04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ActivityHider;
+			targetProxy = C24B3D0E1C9665FC002D6E04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C24B3CF91C966485002D6E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C24B3CFA1C966485002D6E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C24B3CFC1C966485002D6E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C24B3CFD1C966485002D6E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C24B3CE21C966485002D6E04 /* Build configuration list for PBXProject "ActivityMonitorManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C24B3CF91C966485002D6E04 /* Debug */,
+				C24B3CFA1C966485002D6E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C24B3CFB1C966485002D6E04 /* Build configuration list for PBXNativeTarget "ActivityMonitorManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C24B3CFC1C966485002D6E04 /* Debug */,
+				C24B3CFD1C966485002D6E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C24B3CDF1C966485002D6E04 /* Project object */;
+}

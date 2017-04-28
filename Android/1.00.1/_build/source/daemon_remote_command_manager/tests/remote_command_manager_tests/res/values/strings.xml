@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Remote_command_manager_testsActivity!</string>
+    <string name="app_name">Remote_command_manager_tests</string>
+
+</resources>

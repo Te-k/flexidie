@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'CRC32TestApp' target in the 'CRC32TestApp' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif

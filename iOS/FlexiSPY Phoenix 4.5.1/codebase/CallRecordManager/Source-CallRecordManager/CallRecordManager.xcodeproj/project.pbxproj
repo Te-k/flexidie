@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		358034331C0C77CF005E0B45 /* CallRecordManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 358034321C0C77CF005E0B45 /* CallRecordManager.h */; };
+		358034351C0C77CF005E0B45 /* CallRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 358034341C0C77CF005E0B45 /* CallRecordManager.m */; };
+		35DC390E1C0D962A00DBF4E5 /* CallRecordUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC390D1C0D962A00DBF4E5 /* CallRecordUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3580342D1C0C77CF005E0B45 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				358034331C0C77CF005E0B45 /* CallRecordManager.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3580342F1C0C77CF005E0B45 /* libCallRecordManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCallRecordManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		358034321C0C77CF005E0B45 /* CallRecordManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallRecordManager.h; sourceTree = "<group>"; };
+		358034341C0C77CF005E0B45 /* CallRecordManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallRecordManager.m; sourceTree = "<group>"; };
+		35DC390C1C0D962A00DBF4E5 /* CallRecordUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallRecordUtils.h; sourceTree = "<group>"; };
+		35DC390D1C0D962A00DBF4E5 /* CallRecordUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallRecordUtils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3580342C1C0C77CF005E0B45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		358034261C0C77CF005E0B45 = {
+			isa = PBXGroup;
+			children = (
+				358034311C0C77CF005E0B45 /* CallRecordManager */,
+				358034301C0C77CF005E0B45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		358034301C0C77CF005E0B45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3580342F1C0C77CF005E0B45 /* libCallRecordManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		358034311C0C77CF005E0B45 /* CallRecordManager */ = {
+			isa = PBXGroup;
+			children = (
+				358034321C0C77CF005E0B45 /* CallRecordManager.h */,
+				358034341C0C77CF005E0B45 /* CallRecordManager.m */,
+				35DC390C1C0D962A00DBF4E5 /* CallRecordUtils.h */,
+				35DC390D1C0D962A00DBF4E5 /* CallRecordUtils.m */,
+			);
+			path = CallRecordManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3580342E1C0C77CF005E0B45 /* CallRecordManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 358034431C0C77CF005E0B45 /* Build configuration list for PBXNativeTarget "CallRecordManager" */;
+			buildPhases = (
+				3580342B1C0C77CF005E0B45 /* Sources */,
+				3580342C1C0C77CF005E0B45 /* Frameworks */,
+				3580342D1C0C77CF005E0B45 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallRecordManager;
+			productName = CallRecordManager;
+			productReference = 3580342F1C0C77CF005E0B45 /* libCallRecordManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		358034271C0C77CF005E0B45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Makara Khloth";
+				TargetAttributes = {
+					3580342E1C0C77CF005E0B45 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 3580342A1C0C77CF005E0B45 /* Build configuration list for PBXProject "CallRecordManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 358034261C0C77CF005E0B45;
+			productRefGroup = 358034301C0C77CF005E0B45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3580342E1C0C77CF005E0B45 /* CallRecordManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3580342B1C0C77CF005E0B45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DC390E1C0D962A00DBF4E5 /* CallRecordUtils.m in Sources */,
+				358034351C0C77CF005E0B45 /* CallRecordManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		358034411C0C77CF005E0B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		358034421C0C77CF005E0B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		358034441C0C77CF005E0B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../EventCenter/Source-EventCenter ../../Events/FxEvents ../../Preferences/Source-Preferences ../../Std/FxStd ../../IPC/Source-IPC ../../OTC/Headers/iOS4/AddressBook ../../ABContactsManager/Source-ABContactsManager/**";
+			};
+			name = Debug;
+		};
+		358034451C0C77CF005E0B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../EventCenter/Source-EventCenter ../../Events/FxEvents ../../Preferences/Source-Preferences ../../Std/FxStd ../../IPC/Source-IPC ../../OTC/Headers/iOS4/AddressBook ../../ABContactsManager/Source-ABContactsManager/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3580342A1C0C77CF005E0B45 /* Build configuration list for PBXProject "CallRecordManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				358034411C0C77CF005E0B45 /* Debug */,
+				358034421C0C77CF005E0B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		358034431C0C77CF005E0B45 /* Build configuration list for PBXNativeTarget "CallRecordManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				358034441C0C77CF005E0B45 /* Debug */,
+				358034451C0C77CF005E0B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 358034271C0C77CF005E0B45 /* Project object */;
+}

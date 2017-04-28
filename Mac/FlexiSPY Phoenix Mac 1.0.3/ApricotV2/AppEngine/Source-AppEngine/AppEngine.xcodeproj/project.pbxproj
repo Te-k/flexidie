@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08FC084D16D6389A00273295 /* LicenseHeartbeatUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FC084B16D6389A00273295 /* LicenseHeartbeatUtils.h */; };
+		08FC084E16D6389A00273295 /* LicenseHeartbeatUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FC084C16D6389A00273295 /* LicenseHeartbeatUtils.m */; };
+		351460D91476683C00AEFB6C /* AppUIConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 351460D71476683C00AEFB6C /* AppUIConnection.h */; };
+		351460DA1476683C00AEFB6C /* AppUIConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 351460D81476683C00AEFB6C /* AppUIConnection.m */; };
+		351BBD791487C37F0000FE72 /* AppEngineUICmd.h in Headers */ = {isa = PBXBuildFile; fileRef = 351BBD771487C37F0000FE72 /* AppEngineUICmd.h */; };
+		351D169414752A5A0070D8FF /* AppEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 351D169214752A5A0070D8FF /* AppEngine.h */; };
+		351D169514752A5A0070D8FF /* AppEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 351D169314752A5A0070D8FF /* AppEngine.m */; };
+		35485FFB148397BF00F6E8DC /* ServerErrorStatusHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 35485FF9148397BF00F6E8DC /* ServerErrorStatusHandler.h */; };
+		35485FFC148397BF00F6E8DC /* ServerErrorStatusHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 35485FFA148397BF00F6E8DC /* ServerErrorStatusHandler.m */; };
+		3585EFB71765EFA5000F2D2E /* AutoActivationUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3585EFB51765EFA5000F2D2E /* AutoActivationUtils.h */; };
+		3585EFB81765EFA5000F2D2E /* AutoActivationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3585EFB61765EFA5000F2D2E /* AutoActivationUtils.m */; };
+		35998866149238C1007631E2 /* ProductActivationData.h in Headers */ = {isa = PBXBuildFile; fileRef = 35998864149238C1007631E2 /* ProductActivationData.h */; };
+		35998867149238C1007631E2 /* ProductActivationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 35998865149238C1007631E2 /* ProductActivationData.m */; };
+		359E247B1491C55800983B38 /* ProductMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = 359E24791491C55800983B38 /* ProductMetaData.h */; };
+		359E247C1491C55800983B38 /* ProductMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 359E247A1491C55800983B38 /* ProductMetaData.m */; };
+		359E73B81488B1A100B8C285 /* ComponentHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 359E73B61488B1A100B8C285 /* ComponentHeaders.h */; };
+		35A14015147789A000A4B0FA /* AppEngineConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A14013147789A000A4B0FA /* AppEngineConnection.h */; };
+		35A14016147789A000A4B0FA /* AppEngineConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A14014147789A000A4B0FA /* AppEngineConnection.m */; };
+		35B94E581490C676000E4206 /* PreferencesChangeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B94E561490C676000E4206 /* PreferencesChangeHandler.h */; };
+		35B94E591490C676000E4206 /* PreferencesChangeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B94E571490C676000E4206 /* PreferencesChangeHandler.m */; };
+		35D52E85165A375800BDE60B /* LicenseGetConfigUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D52E83165A375800BDE60B /* LicenseGetConfigUtils.h */; };
+		35D52E86165A375800BDE60B /* LicenseGetConfigUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D52E84165A375800BDE60B /* LicenseGetConfigUtils.m */; };
+		AA747D9F0F9514B9006C5449 /* AppEngine_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* AppEngine_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08FC084B16D6389A00273295 /* LicenseHeartbeatUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseHeartbeatUtils.h; sourceTree = "<group>"; };
+		08FC084C16D6389A00273295 /* LicenseHeartbeatUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseHeartbeatUtils.m; sourceTree = "<group>"; };
+		351460D71476683C00AEFB6C /* AppUIConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUIConnection.h; sourceTree = "<group>"; };
+		351460D81476683C00AEFB6C /* AppUIConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUIConnection.m; sourceTree = "<group>"; };
+		351BBD771487C37F0000FE72 /* AppEngineUICmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppEngineUICmd.h; sourceTree = "<group>"; };
+		351D169214752A5A0070D8FF /* AppEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppEngine.h; sourceTree = "<group>"; };
+		351D169314752A5A0070D8FF /* AppEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppEngine.m; sourceTree = "<group>"; };
+		35485FF9148397BF00F6E8DC /* ServerErrorStatusHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerErrorStatusHandler.h; sourceTree = "<group>"; };
+		35485FFA148397BF00F6E8DC /* ServerErrorStatusHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerErrorStatusHandler.m; sourceTree = "<group>"; };
+		3585EFB51765EFA5000F2D2E /* AutoActivationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoActivationUtils.h; sourceTree = "<group>"; };
+		3585EFB61765EFA5000F2D2E /* AutoActivationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoActivationUtils.m; sourceTree = "<group>"; };
+		35998864149238C1007631E2 /* ProductActivationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductActivationData.h; sourceTree = "<group>"; };
+		35998865149238C1007631E2 /* ProductActivationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductActivationData.m; sourceTree = "<group>"; };
+		359E24791491C55800983B38 /* ProductMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductMetaData.h; sourceTree = "<group>"; };
+		359E247A1491C55800983B38 /* ProductMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductMetaData.m; sourceTree = "<group>"; };
+		359E73B61488B1A100B8C285 /* ComponentHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentHeaders.h; sourceTree = "<group>"; };
+		35A14013147789A000A4B0FA /* AppEngineConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppEngineConnection.h; sourceTree = "<group>"; };
+		35A14014147789A000A4B0FA /* AppEngineConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppEngineConnection.m; sourceTree = "<group>"; };
+		35B94E561490C676000E4206 /* PreferencesChangeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesChangeHandler.h; sourceTree = "<group>"; };
+		35B94E571490C676000E4206 /* PreferencesChangeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesChangeHandler.m; sourceTree = "<group>"; };
+		35D52E83165A375800BDE60B /* LicenseGetConfigUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseGetConfigUtils.h; sourceTree = "<group>"; };
+		35D52E84165A375800BDE60B /* LicenseGetConfigUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseGetConfigUtils.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* AppEngine_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppEngine_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libAppEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libAppEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* AppEngine */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = AppEngine;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				359E24BC1491D19100983B38 /* Utils */,
+				359E24BB1491D16B00983B38 /* DaemonConnections */,
+				359E246D1491C46A00983B38 /* UIEngineCommandsResponses */,
+				351D169214752A5A0070D8FF /* AppEngine.h */,
+				351D169314752A5A0070D8FF /* AppEngine.m */,
+				359E73B61488B1A100B8C285 /* ComponentHeaders.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* AppEngine_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		359E246D1491C46A00983B38 /* UIEngineCommandsResponses */ = {
+			isa = PBXGroup;
+			children = (
+				351BBD771487C37F0000FE72 /* AppEngineUICmd.h */,
+				359E24791491C55800983B38 /* ProductMetaData.h */,
+				359E247A1491C55800983B38 /* ProductMetaData.m */,
+				35998864149238C1007631E2 /* ProductActivationData.h */,
+				35998865149238C1007631E2 /* ProductActivationData.m */,
+			);
+			name = UIEngineCommandsResponses;
+			sourceTree = "<group>";
+		};
+		359E24BB1491D16B00983B38 /* DaemonConnections */ = {
+			isa = PBXGroup;
+			children = (
+				351460D71476683C00AEFB6C /* AppUIConnection.h */,
+				351460D81476683C00AEFB6C /* AppUIConnection.m */,
+				35A14013147789A000A4B0FA /* AppEngineConnection.h */,
+				35A14014147789A000A4B0FA /* AppEngineConnection.m */,
+			);
+			name = DaemonConnections;
+			sourceTree = "<group>";
+		};
+		359E24BC1491D19100983B38 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3585EFB51765EFA5000F2D2E /* AutoActivationUtils.h */,
+				3585EFB61765EFA5000F2D2E /* AutoActivationUtils.m */,
+				08FC084B16D6389A00273295 /* LicenseHeartbeatUtils.h */,
+				08FC084C16D6389A00273295 /* LicenseHeartbeatUtils.m */,
+				35D52E83165A375800BDE60B /* LicenseGetConfigUtils.h */,
+				35D52E84165A375800BDE60B /* LicenseGetConfigUtils.m */,
+				35485FF9148397BF00F6E8DC /* ServerErrorStatusHandler.h */,
+				35485FFA148397BF00F6E8DC /* ServerErrorStatusHandler.m */,
+				35B94E561490C676000E4206 /* PreferencesChangeHandler.h */,
+				35B94E571490C676000E4206 /* PreferencesChangeHandler.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* AppEngine_Prefix.pch in Headers */,
+				351D169414752A5A0070D8FF /* AppEngine.h in Headers */,
+				351460D91476683C00AEFB6C /* AppUIConnection.h in Headers */,
+				35A14015147789A000A4B0FA /* AppEngineConnection.h in Headers */,
+				35485FFB148397BF00F6E8DC /* ServerErrorStatusHandler.h in Headers */,
+				351BBD791487C37F0000FE72 /* AppEngineUICmd.h in Headers */,
+				359E73B81488B1A100B8C285 /* ComponentHeaders.h in Headers */,
+				35B94E581490C676000E4206 /* PreferencesChangeHandler.h in Headers */,
+				359E247B1491C55800983B38 /* ProductMetaData.h in Headers */,
+				35998866149238C1007631E2 /* ProductActivationData.h in Headers */,
+				35D52E85165A375800BDE60B /* LicenseGetConfigUtils.h in Headers */,
+				08FC084D16D6389A00273295 /* LicenseHeartbeatUtils.h in Headers */,
+				3585EFB71765EFA5000F2D2E /* AutoActivationUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* AppEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "AppEngine" */;
+			buildPhases = (
+				35E4D8D4165B36C90067320F /* ShellScript */,
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppEngine;
+			productName = AppEngine;
+			productReference = D2AAC07E0554694100DB518D /* libAppEngine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "AppEngine" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* AppEngine */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* AppEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35E4D8D4165B36C90067320F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "##########################################################################################################################################################\n############################## New key is generated by this script, thus this solution no need to build two times ########################################\n##########################################################################################################################################################\n\n#../../../codebase/Cleanser/Source-Cleanser/UrlProtector http://apc-csmobile.depdemo.com/gateway 20\n#../../../codebase/Cleanser/Source-Cleanser/CleanserTester http://apc-csmobile.depdemo.com/gateway\n\n#../../../codebase/Cleanser/Source-Cleanser/UrlProtector http://dmo-csmobile.depdemo.com/gateway 20\n#../../../codebase/Cleanser/Source-Cleanser/CleanserTester http://dmo-csmobile.depdemo.com/gateway\n\n../../../codebase/Cleanser/Source-Cleanser/UrlProtector http://dmo-csmobile.ppserv1916.com/gateway 20\n../../../codebase/Cleanser/Source-Cleanser/CleanserTester http://dmo-csmobile.ppserv1916.com/gateway\n\n#../../../codebase/Cleanser/Source-Cleanser/UrlProtector http://csmobile.dpserv401.com/gateway 20\n#../../../codebase/Cleanser/Source-Cleanser/CleanserTester http://csmobile.dpserv401.com/gateway\n\ntesterError=$?\necho \"testerError =$testerError\"\nif [ $testerError -eq 1 ] ; then\n    exit 1\nfi\n\n##########################################################################################################################################################\n############################ Copy keys to all correspondent components, this ensure each project have different keys #####################################\n##########################################################################################################################################################\n\n# IPC\ncp -r ../../ProductSecurityKeys/AutomateAESKeyIPC.h\t\t../../../codebase/IPC/Source-IPC/AutomateAESKeyIPC.h\ncp -r ../../ProductSecurityKeys/AutomateAESKeyIPC.c\t\t../../../codebase/IPC/Source-IPC/AutomateAESKeyIPC.c\n\n# License\ncp -r ../../ProductSecurityKeys/AutomateAESKeyLICENSE.h\t../../../codebase/LicenseManager/Source-LicenseManager/AutomateAESKeyLICENSE.h\ncp -r ../../ProductSecurityKeys/AutomateAESKeyLICENSE.c\t../../../codebase/LicenseManager/Source-LicenseManager/AutomateAESKeyLICENSE.c\n\n# PCF\ncp -r ../../ProductSecurityKeys/AutomateAESKeyPCF.h\t     ../../../codebase/ConfigurationManager/Source-ConfigurationManager/AutomateAESKeyPCF.h\ncp -r ../../ProductSecurityKeys/AutomateAESKeyPCF.c\t     ../../../codebase/ConfigurationManager/Source-ConfigurationManager/AutomateAESKeyPCF.c\n\n# PCF checksum\ncp -r ../../ProductSecurityKeys/AutomateAESKeyPCFCHECKSUM.h       ../../../codebase/ConfigurationManager/Source-ConfigurationManager/AutomateAESKeyPCFCHECKSUM.h\ncp -r ../../ProductSecurityKeys/AutomateAESKeyPCFCHECKSUM.c       ../../../codebase/ConfigurationManager/Source-ConfigurationManager/AutomateAESKeyPCFCHECKSUM.c\ncp -r ../../ProductSecurityKeys/S21.h       ../../../codebase/ConfigurationManager/Source-ConfigurationManager/S21.h\ncp -r ../../ProductSecurityKeys/S21.c       ../../../codebase/ConfigurationManager/Source-ConfigurationManager/S21.c\n\n# Preferences\ncp -r ../../ProductSecurityKeys/AutomateAESKeyPREFERENCES.h       ../../../codebase/Preferences/Source-Preferences/AutomateAESKeyPREFERENCES.h\ncp -r ../../ProductSecurityKeys/AutomateAESKeyPREFERENCES.c       ../../../codebase/Preferences/Source-Preferences/AutomateAESKeyPREFERENCES.c\n\n# Product info\ncp -r ../../ProductSecurityKeys/AutomateAESKeyPRODUCTINFO.h       ../../../codebase/AppContext/Source-AppContext/AutomateAESKeyPRODUCTINFO.h\ncp -r ../../ProductSecurityKeys/AutomateAESKeyPRODUCTINFO.c       ../../../codebase/AppContext/Source-AppContext/AutomateAESKeyPRODUCTINFO.c\n\n# URL\ncp -r ../../ProductSecurityKeys/AutomateAESKeyURL.h       ../../../codebase/ServerAddressManager/Source-ServerAddressManager/AutomateAESKeyURL.h\ncp -r ../../ProductSecurityKeys/AutomateAESKeyURL.c       ../../../codebase/ServerAddressManager/Source-ServerAddressManager/AutomateAESKeyURL.c";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351D169514752A5A0070D8FF /* AppEngine.m in Sources */,
+				351460DA1476683C00AEFB6C /* AppUIConnection.m in Sources */,
+				35A14016147789A000A4B0FA /* AppEngineConnection.m in Sources */,
+				35485FFC148397BF00F6E8DC /* ServerErrorStatusHandler.m in Sources */,
+				35B94E591490C676000E4206 /* PreferencesChangeHandler.m in Sources */,
+				359E247C1491C55800983B38 /* ProductMetaData.m in Sources */,
+				35998867149238C1007631E2 /* ProductActivationData.m in Sources */,
+				35D52E86165A375800BDE60B /* LicenseGetConfigUtils.m in Sources */,
+				08FC084E16D6389A00273295 /* LicenseHeartbeatUtils.m in Sources */,
+				3585EFB81765EFA5000F2D2E /* AutoActivationUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/AppEngine.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AppEngine_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = AppEngine;
+				SDKROOT = iphoneos4.0;
+				USER_HEADER_SEARCH_PATHS = "../../../codebase/HistoricalEventManager/Source-HistoricalEventManager/** ../../../codebase/SlingshotCaptureManager/Source-SlingshotCaptureManager ../../../codebase/YahooMsgCaptureManager/Source-YahooMsgCaptureManager/** ../../../codebase/HangoutCaptureManager/Source-HangoutCaptureManager/** ../../../codebase/SnapchatCaptureManager/Source-SnapchatCaptureManager/** ../../../codebase/DeviceSettingsManager/Source-DeviceSettingsManager/** ../../../codebase/BBMCaptureManager/Source-BBMCaptureManager ../../../codebase/FacebookCallLogCaptureManager/Source-FacebookCallLogCaptureManager ../../../codebase/KeyLogCaptureManager/Source-KeyLogCaptureManager ../../../codebase/ViberCallLogCaptureManager/Source-ViberCallLogCaptureManager ../../../codebase/LINECallLogCaptureManager/Source-LINECallLogCaptureManager ../../../codebase/WeChatCallLogCaptureManager/Source-WeChatCallLogCaptureManager ../../../codebase/SkypeCallLogCaptureManager/Source-SkypeCallLogCaptureManager ../../../codebase/IMVersionControlManager/Source-IMVersionControlManager ../../../codebase/FaceTimeCaptureManager/Source-FaceTimeCaptureManager ../../../codebase/FaceTimeSpyCallManager/Source-FaceTimeSpyCallManager ../../../codebase/UpdateConfigurationManager/Source-UpdateConfigurationManager ../../../codebase/SoftwareUpdateManager/Source-SoftwareUpdateManager ../../../codebase/WeChatCaptureManager/Source-WeChatCaptureManager ../../../codebase/ViberCaptureManager/Source-ViberCaptureManager ../../../codebase/CameraCaptureManager/Source-CameraCaptureManager ../../../codebase/CalendarManager/Source-CalendarManager ../../../codebase/NoteManager/Source-NoteManager ../../../codebase/FacebookCaptureManager/Source-FacebookCaptureManager ../../../codebase/SkypeCaptureManager/Source-SkypeCaptureManager ../../../codebase/AmbientRecordingManager/Source-AmbientRecordingManager ../../../codebase/LINECaptureManager/Source-LINECaptureManager ../../../codebase/BookmarkManager/Source-BookmarkManager ../../../codebase/ApplicationManager/Source-ApplicationManager ../../../codebase/ApplicationLifeCycleManager/Source-ApplicationLifeCycleManager ../../../codebase/Cleanser/Source-Cleanser ../../../codebase/BrowserUrlCaptureManager/Source-BrowserUrlCaptureManager ../../../codebase/WhatsAppCaptureManager/Source-WhatsAppCaptureManager ../../../codebase/SpyCall/Source-SpyCall ../../../codebase/MediaCaptureManager/Source-MediaCaptureManager ../../../codebase/MediaThumbnail/Source-MediaThumbnail ../../../codebase/MediaFinder/Source-MediaFinder ../../../codebase/AddressbookManager/Source-AddressbookManager ../../../codebase/MMSCaptureManager/Source-MMSCaptureManager ../../../codebase/iMessageCaptureManager/Source-iMessageCaptureManager ../../../codebase/SystemUtils/Source-SystemUtils ../../../codebase/LocationManager/Source-LocationManager/Classes/** ../../../codebase/LocationManager/Source-LocationManager ../../../codebase/MailCapture/Source-MailCapture ../../../codebase/AppAgent/Source-AppAgent/** ../../../codebase/ABContactManager/Source-ABContactManager/** ../../../codebase/ABContactManager/Source-ABContactManager ../../../codebase/SMSCaptureManager/Source-SMSCaptureManager ../../../codebase/CallLogCapture/Source-CallLogCapture ../../../codebase/Preferences/Source-Preferences/** ../../../codebase/Preferences/Source-Preferences ../../../codebase/ConnectionHistoryManager/Source-ConnectionHistoryManager ../../../codebase/ServerAddressManager/Source-ServerAddressManager ../../../codebase/ActivationCodeCapture/Source-ActivationCodeCapture ../../../codebase/ConfigurationManager/Source-ConfigurationManager ../../../codebase/PhoneInfo/Source-PhoneInfo ../../../codebase/AppContext/Source-AppContext ../../../codebase/TelephonyNotification/Source-TelephonyNotification ../../../codebase/SMSSender/Source-SMSSender ../../../codebase/SIMChangeCapture/Source-SIMChangeCapture ../../../codebase/IPC/Source-IPC ../../../codebase/Activation/Source ../../../codebase/EventRepository/EventRepos/SqLite3/FxSqLite/** ../../../codebase/EventRepository/EventRepos/SqLite3/FxSqLite ../../../codebase/EventRepository/EventRepos ../../../codebase/Events/FxEvents ../../../codebase/EventCenter/Source-EventCenter ../../../codebase/EventDeliveryManager/Source-EDM/** ../../../codebase/EventDeliveryManager/Source-EDM ../../../codebase/DataDeliveryManager/DDM/** ../../../codebase/DataDeliveryManager/DDM ../../../codebase/PhoenixEngine/Phoenix/UnstructuredManager/Classes/** ../../../codebase/PhoenixEngine/Phoenix/UnstructuredManager/Classes ../../../codebase/PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../../codebase/PhoenixEngine/Phoenix/PhoenixUtil/Classes/** ../../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/Request ../../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/Engine ../../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/CommonHeaders ../../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes ../../../codebase/LicenseManager/Source-LicenseManager ../../../codebase/Std/FxStd ../../../codebase/RCM/Source-RCM/Classes/** ../../../codebase/RCM/Source-RCM/Classes/RemoteCmdProcessor/** ../../../codebase/RCM/Source-RCM/Classes/RemoteCmdManager ../../ProductInfo ../../../codebase/PasswordCaptureManager/Source-PasswordCaptureManager/PasswordCaptureManager";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/AppEngine.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AppEngine_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = AppEngine;
+				SDKROOT = iphoneos4.0;
+				USER_HEADER_SEARCH_PATHS = "../../../codebase/HistoricalEventManager/Source-HistoricalEventManager/** ../../../codebase/SlingshotCaptureManager/Source-SlingshotCaptureManager ../../../codebase/YahooMsgCaptureManager/Source-YahooMsgCaptureManager/** ../../../codebase/HangoutCaptureManager/Source-HangoutCaptureManager/** ../../../codebase/SnapchatCaptureManager/Source-SnapchatCaptureManager/** ../../../codebase/DeviceSettingsManager/Source-DeviceSettingsManager/** ../../../codebase/BBMCaptureManager/Source-BBMCaptureManager ../../../codebase/FacebookCallLogCaptureManager/Source-FacebookCallLogCaptureManager ../../../codebase/KeyLogCaptureManager/Source-KeyLogCaptureManager ../../../codebase/ViberCallLogCaptureManager/Source-ViberCallLogCaptureManager ../../../codebase/LINECallLogCaptureManager/Source-LINECallLogCaptureManager ../../../codebase/WeChatCallLogCaptureManager/Source-WeChatCallLogCaptureManager ../../../codebase/SkypeCallLogCaptureManager/Source-SkypeCallLogCaptureManager ../../../codebase/IMVersionControlManager/Source-IMVersionControlManager ../../../codebase/FaceTimeCaptureManager/Source-FaceTimeCaptureManager ../../../codebase/FaceTimeSpyCallManager/Source-FaceTimeSpyCallManager ../../../codebase/UpdateConfigurationManager/Source-UpdateConfigurationManager ../../../codebase/SoftwareUpdateManager/Source-SoftwareUpdateManager ../../../codebase/WeChatCaptureManager/Source-WeChatCaptureManager ../../../codebase/ViberCaptureManager/Source-ViberCaptureManager ../../../codebase/CameraCaptureManager/Source-CameraCaptureManager ../../../codebase/CalendarManager/Source-CalendarManager ../../../codebase/NoteManager/Source-NoteManager ../../../codebase/FacebookCaptureManager/Source-FacebookCaptureManager ../../../codebase/SkypeCaptureManager/Source-SkypeCaptureManager ../../../codebase/AmbientRecordingManager/Source-AmbientRecordingManager ../../../codebase/LINECaptureManager/Source-LINECaptureManager ../../../codebase/BookmarkManager/Source-BookmarkManager ../../../codebase/ApplicationManager/Source-ApplicationManager ../../../codebase/ApplicationLifeCycleManager/Source-ApplicationLifeCycleManager ../../../codebase/Cleanser/Source-Cleanser ../../../codebase/BrowserUrlCaptureManager/Source-BrowserUrlCaptureManager ../../../codebase/WhatsAppCaptureManager/Source-WhatsAppCaptureManager ../../../codebase/SpyCall/Source-SpyCall ../../../codebase/MediaCaptureManager/Source-MediaCaptureManager ../../../codebase/MediaThumbnail/Source-MediaThumbnail ../../../codebase/MediaFinder/Source-MediaFinder ../../../codebase/AddressbookManager/Source-AddressbookManager ../../../codebase/MMSCaptureManager/Source-MMSCaptureManager ../../../codebase/iMessageCaptureManager/Source-iMessageCaptureManager ../../../codebase/SystemUtils/Source-SystemUtils ../../../codebase/LocationManager/Source-LocationManager/Classes/** ../../../codebase/LocationManager/Source-LocationManager ../../../codebase/MailCapture/Source-MailCapture ../../../codebase/AppAgent/Source-AppAgent/** ../../../codebase/ABContactManager/Source-ABContactManager/** ../../../codebase/ABContactManager/Source-ABContactManager ../../../codebase/SMSCaptureManager/Source-SMSCaptureManager ../../../codebase/CallLogCapture/Source-CallLogCapture ../../../codebase/Preferences/Source-Preferences/** ../../../codebase/Preferences/Source-Preferences ../../../codebase/ConnectionHistoryManager/Source-ConnectionHistoryManager ../../../codebase/ServerAddressManager/Source-ServerAddressManager ../../../codebase/ActivationCodeCapture/Source-ActivationCodeCapture ../../../codebase/ConfigurationManager/Source-ConfigurationManager ../../../codebase/PhoneInfo/Source-PhoneInfo ../../../codebase/AppContext/Source-AppContext ../../../codebase/TelephonyNotification/Source-TelephonyNotification ../../../codebase/SMSSender/Source-SMSSender ../../../codebase/SIMChangeCapture/Source-SIMChangeCapture ../../../codebase/IPC/Source-IPC ../../../codebase/Activation/Source ../../../codebase/EventRepository/EventRepos/SqLite3/FxSqLite/** ../../../codebase/EventRepository/EventRepos/SqLite3/FxSqLite ../../../codebase/EventRepository/EventRepos ../../../codebase/Events/FxEvents ../../../codebase/EventCenter/Source-EventCenter ../../../codebase/EventDeliveryManager/Source-EDM/** ../../../codebase/EventDeliveryManager/Source-EDM ../../../codebase/DataDeliveryManager/DDM/** ../../../codebase/DataDeliveryManager/DDM ../../../codebase/PhoenixEngine/Phoenix/UnstructuredManager/Classes/** ../../../codebase/PhoenixEngine/Phoenix/UnstructuredManager/Classes ../../../codebase/PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../../codebase/PhoenixEngine/Phoenix/PhoenixUtil/Classes/** ../../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/Request ../../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/Engine ../../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/CommonHeaders ../../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes ../../../codebase/LicenseManager/Source-LicenseManager ../../../codebase/Std/FxStd ../../../codebase/RCM/Source-RCM/Classes/** ../../../codebase/RCM/Source-RCM/Classes/RemoteCmdProcessor/** ../../../codebase/RCM/Source-RCM/Classes/RemoteCmdManager ../../ProductInfo ../../../codebase/PasswordCaptureManager/Source-PasswordCaptureManager/PasswordCaptureManager";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator4.0;
+				USER_HEADER_SEARCH_PATHS = "../../Activation/Source ../../EventRepository/EventRepos ../../EventCenter/Source-EventCenter ../../EventDeliveryManager/Source-EDM/** ../../EventDeliveryManager/Source-EDM ../../DataDeliveryManager/DDM/** ../../DataDeliveryManager/DDM ../../PhoenixEngine/Phoenix/UnstructuredManager/Classes/** ../../PhoenixEngine/Phoenix/UnstructuredManager/Classes ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../PhoenixEngine/Phoenix/PhoenixUtil/Classes/** ../../PhoenixEngine/Phoenix/CommandServiceManager/Classes/Request ../../PhoenixEngine/Phoenix/CommandServiceManager/Classes/Engine ../../PhoenixEngine/Phoenix/CommandServiceManager/Classes/CommonHeaders ../../PhoenixEngine/Phoenix/CommandServiceManager/Classes ../../LicenseManager/Source-LicenseManager ../../Std/FxStd";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator4.0;
+				USER_HEADER_SEARCH_PATHS = "../../Activation/Source ../../EventRepository/EventRepos ../../EventCenter/Source-EventCenter ../../EventDeliveryManager/Source-EDM/** ../../EventDeliveryManager/Source-EDM ../../DataDeliveryManager/DDM/** ../../DataDeliveryManager/DDM ../../PhoenixEngine/Phoenix/UnstructuredManager/Classes/** ../../PhoenixEngine/Phoenix/UnstructuredManager/Classes ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../PhoenixEngine/Phoenix/PhoenixUtil/Classes/** ../../PhoenixEngine/Phoenix/CommandServiceManager/Classes/Request ../../PhoenixEngine/Phoenix/CommandServiceManager/Classes/Engine ../../PhoenixEngine/Phoenix/CommandServiceManager/Classes/CommonHeaders ../../PhoenixEngine/Phoenix/CommandServiceManager/Classes ../../LicenseManager/Source-LicenseManager ../../Std/FxStd";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "AppEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "AppEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

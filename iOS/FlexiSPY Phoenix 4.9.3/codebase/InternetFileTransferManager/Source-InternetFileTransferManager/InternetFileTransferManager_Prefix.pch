@@ -1,0 +1,9 @@
+//
+//  Header.h
+//  InternetFileTransferManager
+//
+//  Created by ophat on 9/21/15.
+//  Copyright (c) 2015 ophat. All rights reserved.
+//
+
+#import "DebugStatus.h"

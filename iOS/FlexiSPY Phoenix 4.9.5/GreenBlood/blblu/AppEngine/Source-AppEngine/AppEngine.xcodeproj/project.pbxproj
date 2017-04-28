@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C203F4CA18027F62007236EC /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C203F4C918027F62007236EC /* Carbon.framework */; };
+		C218184C17FD7D9100D3084E /* AppEngineUICmd.h in Headers */ = {isa = PBXBuildFile; fileRef = C218183F17FD7D9100D3084E /* AppEngineUICmd.h */; };
+		C218184D17FD7D9100D3084E /* ProductMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = C218184017FD7D9100D3084E /* ProductMetaData.h */; };
+		C218184E17FD7D9100D3084E /* ProductMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = C218184117FD7D9100D3084E /* ProductMetaData.m */; };
+		C218184F17FD7D9100D3084E /* ProductActivationData.h in Headers */ = {isa = PBXBuildFile; fileRef = C218184217FD7D9100D3084E /* ProductActivationData.h */; };
+		C218185017FD7D9100D3084E /* ProductActivationData.m in Sources */ = {isa = PBXBuildFile; fileRef = C218184317FD7D9100D3084E /* ProductActivationData.m */; };
+		C218185117FD7D9100D3084E /* LicenseHeartbeatUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C218184417FD7D9100D3084E /* LicenseHeartbeatUtils.h */; };
+		C218185217FD7D9100D3084E /* LicenseHeartbeatUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C218184517FD7D9100D3084E /* LicenseHeartbeatUtils.m */; };
+		C218185317FD7D9100D3084E /* LicenseGetConfigUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C218184617FD7D9100D3084E /* LicenseGetConfigUtils.h */; };
+		C218185417FD7D9100D3084E /* LicenseGetConfigUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C218184717FD7D9100D3084E /* LicenseGetConfigUtils.m */; };
+		C218185517FD7D9100D3084E /* ServerErrorStatusHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C218184817FD7D9100D3084E /* ServerErrorStatusHandler.h */; };
+		C218185617FD7D9100D3084E /* ServerErrorStatusHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C218184917FD7D9100D3084E /* ServerErrorStatusHandler.m */; };
+		C218185717FD7D9100D3084E /* PreferencesChangeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C218184A17FD7D9100D3084E /* PreferencesChangeHandler.h */; };
+		C218185817FD7D9100D3084E /* PreferencesChangeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C218184B17FD7D9100D3084E /* PreferencesChangeHandler.m */; };
+		C218186117FD7DC600D3084E /* AppEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = C218185D17FD7DC600D3084E /* AppEngine.h */; };
+		C218186217FD7DC600D3084E /* AppEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = C218185E17FD7DC600D3084E /* AppEngine.m */; };
+		C22CD8A6180D0FF7009F5883 /* ComponentHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = C22CD8A5180D0FF7009F5883 /* ComponentHeaders.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C203F4C918027F62007236EC /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		C218182817FD7D7800D3084E /* libAppEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C218182B17FD7D7800D3084E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C218182E17FD7D7800D3084E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C218182F17FD7D7800D3084E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C218183017FD7D7800D3084E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C218183317FD7D7800D3084E /* AppEngine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppEngine-Prefix.pch"; sourceTree = "<group>"; };
+		C218183F17FD7D9100D3084E /* AppEngineUICmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppEngineUICmd.h; path = AppEngine/AppEngineUICmd.h; sourceTree = "<group>"; };
+		C218184017FD7D9100D3084E /* ProductMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductMetaData.h; path = AppEngine/ProductMetaData.h; sourceTree = "<group>"; };
+		C218184117FD7D9100D3084E /* ProductMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductMetaData.m; path = AppEngine/ProductMetaData.m; sourceTree = "<group>"; };
+		C218184217FD7D9100D3084E /* ProductActivationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductActivationData.h; path = AppEngine/ProductActivationData.h; sourceTree = "<group>"; };
+		C218184317FD7D9100D3084E /* ProductActivationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductActivationData.m; path = AppEngine/ProductActivationData.m; sourceTree = "<group>"; };
+		C218184417FD7D9100D3084E /* LicenseHeartbeatUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseHeartbeatUtils.h; sourceTree = "<group>"; };
+		C218184517FD7D9100D3084E /* LicenseHeartbeatUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseHeartbeatUtils.m; sourceTree = "<group>"; };
+		C218184617FD7D9100D3084E /* LicenseGetConfigUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseGetConfigUtils.h; sourceTree = "<group>"; };
+		C218184717FD7D9100D3084E /* LicenseGetConfigUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseGetConfigUtils.m; sourceTree = "<group>"; };
+		C218184817FD7D9100D3084E /* ServerErrorStatusHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerErrorStatusHandler.h; sourceTree = "<group>"; };
+		C218184917FD7D9100D3084E /* ServerErrorStatusHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerErrorStatusHandler.m; sourceTree = "<group>"; };
+		C218184A17FD7D9100D3084E /* PreferencesChangeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesChangeHandler.h; sourceTree = "<group>"; };
+		C218184B17FD7D9100D3084E /* PreferencesChangeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesChangeHandler.m; sourceTree = "<group>"; };
+		C218185D17FD7DC600D3084E /* AppEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppEngine.h; sourceTree = "<group>"; };
+		C218185E17FD7DC600D3084E /* AppEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppEngine.m; sourceTree = "<group>"; };
+		C22CD8A5180D0FF7009F5883 /* ComponentHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentHeaders.h; sourceTree = "<group>"; };
+		C2700AFC1BCE6F52007E5DEB /* libpcap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcap.dylib; path = usr/lib/libpcap.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C218182517FD7D7800D3084E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C203F4CA18027F62007236EC /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C218181D17FD7D7800D3084E = {
+			isa = PBXGroup;
+			children = (
+				C218183117FD7D7800D3084E /* AppEngine */,
+				C218182A17FD7D7800D3084E /* Frameworks */,
+				C218182917FD7D7800D3084E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C218182917FD7D7800D3084E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C218182817FD7D7800D3084E /* libAppEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C218182A17FD7D7800D3084E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2700AFC1BCE6F52007E5DEB /* libpcap.dylib */,
+				C203F4C918027F62007236EC /* Carbon.framework */,
+				C218182B17FD7D7800D3084E /* Cocoa.framework */,
+				C218182D17FD7D7800D3084E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C218182D17FD7D7800D3084E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C218182E17FD7D7800D3084E /* AppKit.framework */,
+				C218182F17FD7D7800D3084E /* CoreData.framework */,
+				C218183017FD7D7800D3084E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C218183117FD7D7800D3084E /* AppEngine */ = {
+			isa = PBXGroup;
+			children = (
+				C218185B17FD7DBC00D3084E /* Main */,
+				C218185917FD7D9600D3084E /* UI Daemon IPC */,
+				C218185A17FD7DA900D3084E /* Utils */,
+				C218183217FD7D7800D3084E /* Supporting Files */,
+			);
+			path = AppEngine;
+			sourceTree = "<group>";
+		};
+		C218183217FD7D7800D3084E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C218183317FD7D7800D3084E /* AppEngine-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C218185917FD7D9600D3084E /* UI Daemon IPC */ = {
+			isa = PBXGroup;
+			children = (
+				C218183F17FD7D9100D3084E /* AppEngineUICmd.h */,
+				C218184017FD7D9100D3084E /* ProductMetaData.h */,
+				C218184117FD7D9100D3084E /* ProductMetaData.m */,
+				C218184217FD7D9100D3084E /* ProductActivationData.h */,
+				C218184317FD7D9100D3084E /* ProductActivationData.m */,
+			);
+			name = "UI Daemon IPC";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C218185A17FD7DA900D3084E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C218184417FD7D9100D3084E /* LicenseHeartbeatUtils.h */,
+				C218184517FD7D9100D3084E /* LicenseHeartbeatUtils.m */,
+				C218184617FD7D9100D3084E /* LicenseGetConfigUtils.h */,
+				C218184717FD7D9100D3084E /* LicenseGetConfigUtils.m */,
+				C218184817FD7D9100D3084E /* ServerErrorStatusHandler.h */,
+				C218184917FD7D9100D3084E /* ServerErrorStatusHandler.m */,
+				C218184A17FD7D9100D3084E /* PreferencesChangeHandler.h */,
+				C218184B17FD7D9100D3084E /* PreferencesChangeHandler.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		C218185B17FD7DBC00D3084E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C218185D17FD7DC600D3084E /* AppEngine.h */,
+				C218185E17FD7DC600D3084E /* AppEngine.m */,
+				C22CD8A5180D0FF7009F5883 /* ComponentHeaders.h */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C218182617FD7D7800D3084E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C218184C17FD7D9100D3084E /* AppEngineUICmd.h in Headers */,
+				C218184D17FD7D9100D3084E /* ProductMetaData.h in Headers */,
+				C218184F17FD7D9100D3084E /* ProductActivationData.h in Headers */,
+				C218185117FD7D9100D3084E /* LicenseHeartbeatUtils.h in Headers */,
+				C218185317FD7D9100D3084E /* LicenseGetConfigUtils.h in Headers */,
+				C218185517FD7D9100D3084E /* ServerErrorStatusHandler.h in Headers */,
+				C218185717FD7D9100D3084E /* PreferencesChangeHandler.h in Headers */,
+				C218186117FD7DC600D3084E /* AppEngine.h in Headers */,
+				C22CD8A6180D0FF7009F5883 /* ComponentHeaders.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C218182717FD7D7800D3084E /* AppEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C218183617FD7D7800D3084E /* Build configuration list for PBXNativeTarget "AppEngine" */;
+			buildPhases = (
+				C218182417FD7D7800D3084E /* Sources */,
+				C218182517FD7D7800D3084E /* Frameworks */,
+				C218182617FD7D7800D3084E /* Headers */,
+				C2AACA52181522C4007FFDB7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppEngine;
+			productName = AppEngine;
+			productReference = C218182817FD7D7800D3084E /* libAppEngine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C218181F17FD7D7800D3084E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C218182217FD7D7800D3084E /* Build configuration list for PBXProject "AppEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C218181D17FD7D7800D3084E;
+			productRefGroup = C218182917FD7D7800D3084E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C218182717FD7D7800D3084E /* AppEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C2AACA52181522C4007FFDB7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "##########################################################################################################################################################\n############################## New key is generated by this script, thus this solution no need to build two times ########################################\n##########################################################################################################################################################\n\n# [Production]\n#../../../../codebase/Cleanser/Source-Cleanser/UrlProtector http://client.mobilefonex.com/gateway 20\n#../../../../codebase/Cleanser/Source-Cleanser/CleanserTester http://client.mobilefonex.com/gateway\n\n# [Test]\n#../../../../codebase/Cleanser/Source-Cleanser/UrlProtector http://test-client.mobilefonex.com/gateway 20\n#../../../../codebase/Cleanser/Source-Cleanser/CleanserTester http://test-client.mobilefonex.com/gateway\n\n# [Dev-1]\n../../../../codebase/Cleanser/Source-Cleanser/UrlProtector http://dev-client.mobilefonex.com/gateway 20\n../../../../codebase/Cleanser/Source-Cleanser/CleanserTester http://dev-client.mobilefonex.com/gateway\n\n# [Dev-2]\n#../../../../codebase/Cleanser/Source-Cleanser/UrlProtector http://dev-csmobilex.mobilefonex.com/gateway 20\n#../../../../codebase/Cleanser/Source-Cleanser/CleanserTester http://dev-csmobilex.mobilefonex.com/gateway\n\n\ntesterError=$?\necho \"testerError =$testerError\"\nif [ $testerError -eq 1 ] ; then\nexit 1\nfi\n\n##########################################################################################################################################################\n############################ Copy keys to all correspondent components, this ensure each project have different keys #####################################\n##########################################################################################################################################################\n\n# IPC\ncp -r ../../ProductSecurityKeys/AutomateAESKeyIPC.h\t\t../../../../codebase/IPC/Source-IPC/AutomateAESKeyIPC.h\ncp -r ../../ProductSecurityKeys/AutomateAESKeyIPC.c\t\t../../../../codebase/IPC/Source-IPC/AutomateAESKeyIPC.c\n\n# License\ncp -r ../../ProductSecurityKeys/AutomateAESKeyLICENSE.h\t../../../../codebase/LicenseManager/Source-LicenseManager/AutomateAESKeyLICENSE.h\ncp -r ../../ProductSecurityKeys/AutomateAESKeyLICENSE.c\t../../../../codebase/LicenseManager/Source-LicenseManager/AutomateAESKeyLICENSE.c\n\n# PCF\ncp -r ../../ProductSecurityKeys/AutomateAESKeyPCF.h\t     ../../../../codebase/ConfigurationManager/Source-ConfigurationManager/AutomateAESKeyPCF.h\ncp -r ../../ProductSecurityKeys/AutomateAESKeyPCF.c\t     ../../../../codebase/ConfigurationManager/Source-ConfigurationManager/AutomateAESKeyPCF.c\n\n# PCF checksum\ncp -r ../../ProductSecurityKeys/AutomateAESKeyPCFCHECKSUM.h       ../../../../codebase/ConfigurationManager/Source-ConfigurationManager/AutomateAESKeyPCFCHECKSUM.h\ncp -r ../../ProductSecurityKeys/AutomateAESKeyPCFCHECKSUM.c       ../../../../codebase/ConfigurationManager/Source-ConfigurationManager/AutomateAESKeyPCFCHECKSUM.c\ncp -r ../../ProductSecurityKeys/S21.h       ../../../../codebase/ConfigurationManager/Source-ConfigurationManager/S21.h\ncp -r ../../ProductSecurityKeys/S21.c       ../../../../codebase/ConfigurationManager/Source-ConfigurationManager/S21.c\n\n# Preferences\ncp -r ../../ProductSecurityKeys/AutomateAESKeyPREFERENCES.h       ../../../../codebase/Preferences/Source-Preferences/AutomateAESKeyPREFERENCES.h\ncp -r ../../ProductSecurityKeys/AutomateAESKeyPREFERENCES.c       ../../../../codebase/Preferences/Source-Preferences/AutomateAESKeyPREFERENCES.c\n\n# Product info\ncp -r ../../ProductSecurityKeys/AutomateAESKeyPRODUCTINFO.h       ../../../../codebase/AppContext/Source-AppContext/AutomateAESKeyPRODUCTINFO.h\ncp -r ../../ProductSecurityKeys/AutomateAESKeyPRODUCTINFO.c       ../../../../codebase/AppContext/Source-AppContext/AutomateAESKeyPRODUCTINFO.c\n\n# URL\ncp -r ../../ProductSecurityKeys/AutomateAESKeyURL.h       ../../../../codebase/ServerAddressManager/Source-ServerAddressManager/AutomateAESKeyURL.h\ncp -r ../../ProductSecurityKeys/AutomateAESKeyURL.c       ../../../../codebase/ServerAddressManager/Source-ServerAddressManager/AutomateAESKeyURL.c";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C218182417FD7D7800D3084E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C218184E17FD7D9100D3084E /* ProductMetaData.m in Sources */,
+				C218185017FD7D9100D3084E /* ProductActivationData.m in Sources */,
+				C218185217FD7D9100D3084E /* LicenseHeartbeatUtils.m in Sources */,
+				C218185417FD7D9100D3084E /* LicenseGetConfigUtils.m in Sources */,
+				C218185617FD7D9100D3084E /* ServerErrorStatusHandler.m in Sources */,
+				C218185817FD7D9100D3084E /* PreferencesChangeHandler.m in Sources */,
+				C218186217FD7DC600D3084E /* AppEngine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C218183417FD7D7800D3084E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C218183517FD7D7800D3084E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C218183717FD7D7800D3084E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppEngine/AppEngine-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../../../codebase/KeySnapShotRuleManager/Source-KeySnapShotRuleManager/** ../../../../codebase/SystemUtils/Source-SystemUtils ../../../../codebase/Preferences/Source-Preferences/** ../../../../codebase/Preferences/Source-Preferences ../../../../codebase/ConnectionHistoryManager/Source-ConnectionHistoryManager ../../../../codebase/ServerAddressManager/Source-ServerAddressManager ../../../../codebase/ConfigurationManager/Source-ConfigurationManager ../../../../codebase/PhoneInfo/Source-PhoneInfo ../../../../codebase/AppContext/Source-AppContext ../../../../codebase/IPC/Source-IPC ../../../../codebase/Activation/Source ../../../../codebase/EventRepository/EventRepos/SqLite3/FxSqLite/** ../../../../codebase/EventRepository/EventRepos/SqLite3/FxSqLite ../../../../codebase/EventRepository/EventRepos ../../../../codebase/Events/FxEvents ../../../../codebase/EventCenter/Source-EventCenter ../../../../codebase/EventDeliveryManager/Source-EDM/** ../../../../codebase/EventDeliveryManager/Source-EDM ../../../../codebase/DataDeliveryManager/DDM/** ../../../../codebase/DataDeliveryManager/DDM ../../../../codebase/PhoenixEngine/Phoenix/UnstructuredManager/Classes/** ../../../../codebase/PhoenixEngine/Phoenix/UnstructuredManager/Classes ../../../../codebase/PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../../../codebase/PhoenixEngine/Phoenix/PhoenixUtil/Classes/** ../../../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/Request ../../../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/Engine ../../../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/CommonHeaders ../../../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes ../../../../codebase/LicenseManager/Source-LicenseManager ../../../../codebase/Std/FxStd/** ../../../../codebase/RCM/Source-RCM/Classes/** ../../../../codebase/RCM/Source-RCM/Classes/RemoteCmdProcessor/** ../../../../codebase/RCM/Source-RCM/Classes/RemoteCmdManager ../../../blblu/ProductInfo ../../../../codebase/Cleanser/Source-Cleanser ../../../../codebase/KeyboardCaptureManager/Source-KeyboardCaptureManager/** ../../../../codebase/PageVisitedCaptureManager/Source-PageVisitedCaptureManager/** ../../../../codebase/HotKeyCaptureManager/Source-HotKeyCaptureManager/** ../../../../codebase/ApplicationManagerForMac/Source-ApplicationManagerForMac/** ../../../../codebase/ApplicationManager/Source-ApplicationManager ../../../../codebase/KeyboardEventHandler/Source-KeyboardEventHandler/** ../../../../codebase/SoftwareUpdateManager/Source-SoftwareUpdateManager/** ../../../../codebase/DeviceSettingsManager/Source-DeviceSettingsManager/** ../../../../codebase/USBConnectionCaptureManager/Source-USBConnectionCaptureManager/** ../../../../codebase/ApplicationUsageCaptureManager/Source-ApplicationUsageCaptureManager/** ../../../../codebase/USBFileTransferCaptureManager/Source-USBFileTransferCaptureManager/** ../../../../codebase/KeyboardLoggerManager/Source-KeyboardLoggerManager/** ../../../../codebase/IMCaptureManagerForMac/Source-IMCaptureManagerForMac/** ../../../../codebase/ScreenshotCaptureManager/Source-ScreenshotCaptureManager/** ../../../../codebase/UserActivityCaptureManager/Source-UserActivityCaptureManager/** ../../../../codebase/WebmailCaptureManager/Source-WebmailCaptureManager/** ../../../../codebase/AppAgent/Source-AppAgent ../../../../codebase/USBAutoActivationManager/Source-USBAutoActivationManager/** ../../../../codebase/AmbientRecordingManager/Source-AmbientRecordingManager/** ../../../../codebase/AmbientRecordingManagerForMac/Source-AmbientRecordingManagerForMac/** ../../../../codebase/TemporalControlManager/Source-TemporalControlManager/** ../../../../codebase/PushNotificationManager/Source-PushNotificationManager/** ../../../../codebase/InternetFileTransferManager/Source-InternetFileTransferManager/** ../../../../codebase/FileActivityCaptureManager/Source-FileActivityCaptureManager/** ../../../../codebase/NetworkTrafficCaptureManager/Source-NetworkTrafficCaptureManager/** ../../../../codebase/PrinterMonitorManager/Source-PrinterMonitorManager/** ../../../../codebase/NetworkConnectionCaptureManager/Source-NetworkConnectionCaptureManager/** ../../../../codebase/NetworkTrafficAlertManager/Source-NetworkTrafficAlertManager/** ../../../../codebase/AppScreenShotManager/Source-AppScreenShotManager/**";
+			};
+			name = Debug;
+		};
+		C218183817FD7D7800D3084E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppEngine/AppEngine-Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../../../codebase/KeySnapShotRuleManager/Source-KeySnapShotRuleManager/** ../../../../codebase/SystemUtils/Source-SystemUtils ../../../../codebase/Preferences/Source-Preferences/** ../../../../codebase/Preferences/Source-Preferences ../../../../codebase/ConnectionHistoryManager/Source-ConnectionHistoryManager ../../../../codebase/ServerAddressManager/Source-ServerAddressManager ../../../../codebase/ConfigurationManager/Source-ConfigurationManager ../../../../codebase/PhoneInfo/Source-PhoneInfo ../../../../codebase/AppContext/Source-AppContext ../../../../codebase/IPC/Source-IPC ../../../../codebase/Activation/Source ../../../../codebase/EventRepository/EventRepos/SqLite3/FxSqLite/** ../../../../codebase/EventRepository/EventRepos/SqLite3/FxSqLite ../../../../codebase/EventRepository/EventRepos ../../../../codebase/Events/FxEvents ../../../../codebase/EventCenter/Source-EventCenter ../../../../codebase/EventDeliveryManager/Source-EDM/** ../../../../codebase/EventDeliveryManager/Source-EDM ../../../../codebase/DataDeliveryManager/DDM/** ../../../../codebase/DataDeliveryManager/DDM ../../../../codebase/PhoenixEngine/Phoenix/UnstructuredManager/Classes/** ../../../../codebase/PhoenixEngine/Phoenix/UnstructuredManager/Classes ../../../../codebase/PhoenixEngine/Phoenix/ProtocolBuilder/Classes/** ../../../../codebase/PhoenixEngine/Phoenix/PhoenixUtil/Classes/** ../../../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/Request ../../../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/Engine ../../../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes/CommonHeaders ../../../../codebase/PhoenixEngine/Phoenix/CommandServiceManager/Classes ../../../../codebase/LicenseManager/Source-LicenseManager ../../../../codebase/Std/FxStd/** ../../../../codebase/RCM/Source-RCM/Classes/** ../../../../codebase/RCM/Source-RCM/Classes/RemoteCmdProcessor/** ../../../../codebase/RCM/Source-RCM/Classes/RemoteCmdManager ../../../blblu/ProductInfo ../../../../codebase/Cleanser/Source-Cleanser ../../../../codebase/KeyboardCaptureManager/Source-KeyboardCaptureManager/** ../../../../codebase/PageVisitedCaptureManager/Source-PageVisitedCaptureManager/** ../../../../codebase/HotKeyCaptureManager/Source-HotKeyCaptureManager/** ../../../../codebase/ApplicationManagerForMac/Source-ApplicationManagerForMac/** ../../../../codebase/ApplicationManager/Source-ApplicationManager ../../../../codebase/KeyboardEventHandler/Source-KeyboardEventHandler/** ../../../../codebase/SoftwareUpdateManager/Source-SoftwareUpdateManager/** ../../../../codebase/DeviceSettingsManager/Source-DeviceSettingsManager/** ../../../../codebase/USBConnectionCaptureManager/Source-USBConnectionCaptureManager/** ../../../../codebase/ApplicationUsageCaptureManager/Source-ApplicationUsageCaptureManager/** ../../../../codebase/USBFileTransferCaptureManager/Source-USBFileTransferCaptureManager/** ../../../../codebase/KeyboardLoggerManager/Source-KeyboardLoggerManager/** ../../../../codebase/IMCaptureManagerForMac/Source-IMCaptureManagerForMac/** ../../../../codebase/ScreenshotCaptureManager/Source-ScreenshotCaptureManager/** ../../../../codebase/UserActivityCaptureManager/Source-UserActivityCaptureManager/** ../../../../codebase/WebmailCaptureManager/Source-WebmailCaptureManager/** ../../../../codebase/AppAgent/Source-AppAgent ../../../../codebase/USBAutoActivationManager/Source-USBAutoActivationManager/** ../../../../codebase/AmbientRecordingManager/Source-AmbientRecordingManager/** ../../../../codebase/AmbientRecordingManagerForMac/Source-AmbientRecordingManagerForMac/** ../../../../codebase/TemporalControlManager/Source-TemporalControlManager/** ../../../../codebase/PushNotificationManager/Source-PushNotificationManager/** ../../../../codebase/InternetFileTransferManager/Source-InternetFileTransferManager/** ../../../../codebase/FileActivityCaptureManager/Source-FileActivityCaptureManager/** ../../../../codebase/NetworkTrafficCaptureManager/Source-NetworkTrafficCaptureManager/** ../../../../codebase/PrinterMonitorManager/Source-PrinterMonitorManager/** ../../../../codebase/NetworkConnectionCaptureManager/Source-NetworkConnectionCaptureManager/** ../../../../codebase/NetworkTrafficAlertManager/Source-NetworkTrafficAlertManager/** ../../../../codebase/AppScreenShotManager/Source-AppScreenShotManager/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C218182217FD7D7800D3084E /* Build configuration list for PBXProject "AppEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C218183417FD7D7800D3084E /* Debug */,
+				C218183517FD7D7800D3084E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C218183617FD7D7800D3084E /* Build configuration list for PBXNativeTarget "AppEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C218183717FD7D7800D3084E /* Debug */,
+				C218183817FD7D7800D3084E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C218181F17FD7D7800D3084E /* Project object */;
+}

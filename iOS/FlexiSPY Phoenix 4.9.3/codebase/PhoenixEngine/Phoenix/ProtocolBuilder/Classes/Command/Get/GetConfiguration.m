@@ -1,0 +1,18 @@
+//
+//  GetConfiguaration.m
+//  ProtocolBuilder
+//
+//  Created by Pichaya Srifar on 9/1/11.
+//  Copyright 2011 Vervata. All rights reserved.
+//
+
+#import "GetConfiguration.h"
+
+
+@implementation GetConfiguration
+
+- (CommandCode)getCommand {
+	return GET_CONFIGURATION;
+}
+
+@end

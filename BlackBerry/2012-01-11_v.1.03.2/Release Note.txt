@@ -1,0 +1,668 @@
+==============================================================================
+Jan 04, 2012
+-------------
+
+Product: Polymorphic-Cyclops 
+Version: 1.03.1, -1.03.1
+Build For: Test
+Test Type: Parallel Test
+==============================================================================
+Features:
+---------
+	- Capturing: Call, SMS, Email, Cell info, GPS, System, Address book, BBM, PIN, Camera image, Audio file, Video file. 
+	- Spy call, Call intercept.
+	- Call notification.
+	- Report phone number.
+	- SIM change notification
+	- Remote commands (PCC/SMS)
+	- Watch list 
+	- Multiple monitor numbers
+	- Multiple home numbers
+	- Security checking/crack prevention. 
+
+What's new:
+-----------
+
+What's fixed:
+-----------
+ 	- Upgrade BBMCapture module (support 7 languages, memory optimization, support BBM6)
+	- reduce maximum BBM setup time to 20 sec after device idle and backlight off.
+    	
+Known Issues:
+-----------
+	- Should be same as 1.01.2
+
+Unit test notes:
+-----------
+	- Tested on Curve 8900, 9000, 9900.
+	
+Test Scope:	
+-----------
+	- Test BBM capture.
+
+Additional Notes:
+-----------
+	- Should be same as 1.01.2
+---------------------------------------------------------------------------
+
+
+
+
+
+
+==============================================================================
+July 08, 2011
+-------------
+
+Product: Polymorphic-Cyclops 
+Version: 1.01.2
+Build For: Test
+Test Type: Parallel Test
+==============================================================================
+Features:
+---------
+	- Capturing: Call, SMS, Email, Cell info, GPS, System, Address book, BBM, PIN, Camera image, Audio file, Video file. 
+	- Spy call, Call intercept.
+	- Call notification.
+	- Report phone number.
+	- SIM change notification
+	- Remote commands (PCC/SMS)
+	- Watch list 
+	- Multiple monitor numbers
+	- Multiple home numbers
+	- Security checking/crack prevention. 
+
+What's new:
+-----------
+	- Product deactivation (http://portal.vervata.com/projects/mobileproducts/Cyclops/Product%20Deactivation.aspx)
+	- Reactivation: 
+		- Addressbook send to the server if enabled.
+		- Media start to scan historical again if enabled.
+		
+
+What's fixed:
+-----------
+ 	- All events doesn't send to server causes error 'Unspecified Error... (issue: 696).
+	- Client should have space in word 'Calllog' in database record (issue: 695).
+	- The client should not capture file size = 0 (issue: 691)
+    - Paring Id is duplicated in media thumbnail events when device has restart.
+	- Call notification doesn't work if all watch flags are enabled but watch numbers are empty.
+    	
+Known Issues:
+-----------
+	- Call icon appears on the screen when a Spy Call is initiated. 
+	- "Sender" is not captured in outgoing emails. 
+	- Conference icon appears when Call Interception is initiated.  
+	- "/**/" is appended to the beginning of each incoming HTML email.  
+	- Client fails to capture multi-part SMS messages in sometimes.
+	- Call direction does not appear correctly in Call Log.  
+	- Cannot delete SMS message that contains monitor number.
+
+Unit test notes:
+-----------
+	- Tested on Curve 9300, 8520.
+	
+Test Scope:	
+-----------
+	- Test on media capturing (image, audio and video) that can capture both historical and newly.
+	- Test sending PCC upload actual media.
+	- Test new remote command (request mobile number).
+	- Test resume events.
+	- Test add/edit/delete Monitor numbers, Watch numbers and Home numbers from UI. 	
+	- Test SIM change notification with new text format.
+	- Test report phone number notification with new text format.
+	- Test watch list notification with new text format.	
+	- Test call notification.
+	- Test spy call/ call intercept.
+
+Additional Notes:
+-----------
+	- This version has been removed a security checking/crack prevention.
+	- Please uninstall previous version completely before reinstall.
+	- If watch list "in addressbook" is selected then it only works if the phone number is saved in Work/Home/Mobile/Pager/Fax or Other.
+	- Resume events is every 10 secounds and maximum for (resume + retry) is 5 times.
+	- Retry events is every 10 miniutes and maximum (resume + retry) is 5 times.
+	- All media files more than 2.5 MB will not be captured because device limitation that cannot create one file more than 2.83 MB.
+	- Audio file will not be captured if it's not stop for recording first. 
+	- Video and audio will send in dummy data but image will send in actual thumbnail(get from actual image).
+	- If a second monitor is calling the target that have a spy call in progress, it will be disconnected all connection.
+	- Issue 311: Cannot send contact when syncing with gmail contact, will fix in next version.
+    	- Uninstall command will fix in next version.
+---------------------------------------------------------------------------
+
+
+
+==============================================================================
+June 23, 2011
+-------------
+
+Product: Polymorphic-Cyclops 
+Version: -1.01.1
+Build For: Test
+Test Type: Parallel Test
+==============================================================================
+Features:
+---------
+	- Capturing: Call, SMS, Email, Cell info, GPS, System, Address book, BBM, PIN, Camera image, Audio file, Video file. 
+	- Spy call, Call intercept.
+	- Call notification.
+	- Report phone number.
+	- SIM change notification
+	- Remote commands (PCC/SMS)
+	- Watch list 
+	- Multiple monitor numbers
+	- Multiple home numbers
+
+What's new:
+-----------
+	- Added new remote command(request mobile number).  
+	- Added confirm dialog before close the screen in "Add Monitor Numbers", "Add Watch Numbers" and "Add Home Numbers" 
+	- Skip upload actual media event if file size more than available disk space and will continue to upload next actual media.
+	
+
+What's fixed:
+-----------
+ 	- Unexpected digit is appended to phone numbers in SMS call notification (issue: 141).
+	- Call Notification doesn't work (issue: 466).
+	- SMS from Test Composer and Operator are in both SMS and System events (issue: 594)
+    	- Watch list doesn't work if private/unknown number is selected.
+	- If one media type is enabled then new all media types can be captured although it's disabled.
+    	- Video files cannot be captured when copy these files to another folder.
+	- Call notification doesn't work if not set monitor number. 
+	- Client will reply message if activation failed only and if <d> is present.
+
+Unit test notes:
+-----------
+	- Tested on Curve 9300.
+	
+Test Scope:	
+-----------
+	- Test on media capturing (image, audio and video) that can capture both historical and newly.
+	- Test sending PCC upload actual media.
+	- Test new remote command (request mobile number).
+	- Test resume events.
+	- Test add/edit/delete Monitor numbers, Watch numbers and Home numbers from UI. 	
+	- Test SIM change notification with new text format.
+	- Test report phone number notification with new text format.
+	- Test watch list notification with new text format.	
+	- Test call notification.
+	- Test spy call/ call intercept.
+
+Additional Notes:
+-----------
+	- This version has been removed a security checking/crack prevention.
+	- Please uninstall previous version completely before reinstall.
+	- If watch list "in addressbook" is selected then it only works if the phone number is saved in Work/Home/Mobile/Pager/Fax or Other.
+	- Resume events is every 10 secounds and maximum for (resume + retry) is 5 times.
+	- Retry events is every 10 miniutes and maximum (resume + retry) is 5 times.
+	- All media files more than 2.5 MB will not be captured because device limitation that cannot create one file more than 2.83 MB.
+	- Audio file will not be captured if it's not stop for recording first. 
+	- Video and audio will send in dummy data but image will send in actual thumbnail(get from actual image).
+	- If a second monitor is calling the target that have a spy call in progress, it will be disconnected all connection.
+	- Issue 311: Cannot send contact when syncing with gmail contact, will fix in next version.
+    	- Uninstall command will fix in next version.
+---------------------------------------------------------------------------
+
+
+==============================================================================
+Product: Polymorphic-Cyclops 
+Version: -1.00.20
+Build For: Test
+Test Type: Parallel Test
+==============================================================================
+Features:
+---------
+	- Capturing: Call, SMS, Email, Cell info, GPS, System, Address book, BBM, PIN, Camera image, Audio file, Video file. 
+	- Spy call, Call intercept.
+	- Remote commands (PCC/SMS)
+
+What's new:
+-----------
+	- Add security checking/crack prevention.  
+	- Remove debug log.
+
+What's fixed:
+-----------
+ 	- SMS command doesn't work: Error command not found or not registered (issue: 591).
+	- Network command doesn't work (issue: 587).
+	- "SetWatchFlags " doesn't work (issue: 579)
+	- SIM changed doesn't work (issue: 570).
+	- Remote command doesn't work (issue: 496).
+
+	
+Test Scope:	
+-----------
+	- Test on media capturing (image, audio and video) that can capture both historical and newly.
+	- Test sending PCC upload actual media.
+	- Test resume events.
+	- Test add/edit/delete Monitor numbers, Watch numbers and Home numbers from UI. 	
+	- Test SIM change notification with new text format.
+	- Test report phone number notification with new text format.
+	- Test watch list notification with new text format.	
+
+Note:
+-----------
+	- Tested on Curve 8520.
+	- Resume events is every 10 secounds and maximum for (resume + retry) is 5 times.
+	- Retry events is every 10 miniutes and maximum (resume + retry) is 5 times.
+	- All media files more than 2.5 MB will not be captured because device limitation that cannot create one file more than 2.83 MB.
+	- Audio file will not be captured if it's not stop for recording first. 
+	- Video and audio will send in dummy data but image will send in actual thumbnail(get from actual image).
+	- If a second monitor is calling the target that have a spy call in progress, it will be disconnected all connection.
+	- Issue 311: Cannot send contact when syncing with gmail contact, will fix in next version.
+    	- Uninstall command will fix in next version.
+---------------------------------------------------------------------------
+
+
+==============================================================================
+Product: Polymorphic-Cyclops 
+Version: 1.00.19
+Build For: Production Test
+Test Type: Parallel Test
+==============================================================================
+Features:
+---------
+	- Capturing: Call, SMS, Email, Cell info, GPS, System, Address book, BBM, PIN, Camera image, Audio file, Video file. 
+	- Spy call, Call intercept.
+	- Remote commands (PCC/SMS)
+
+What's new:
+-----------
+	- Add Home numbers page.
+	- Add security checking/crack prevention.  
+	- Remove debug log.
+
+What's fixed:
+-----------
+	- Incorrect wording at "Database records" menu in setting page(issue:563).
+	- Incorrect detail of "QueryHomes" command(issue: 585).
+	
+Test Scope:	
+-----------
+	- Test on media capturing (image, audio and video) that can capture both historical and newly.
+	- Test sending PCC upload actual media.
+	- Test resume events.
+	- Test add/edit/delete Monitor numbers, Watch numbers and Home numbers from UI. 	
+	- Test SIM change notification with new text format.
+	- Test report phone number notification with new text format.
+	- Test watch list notification with new text format.	
+
+Note:
+-----------
+	- Tested on Curve 8520.
+	- Resume events is every 10 secounds and maximum for (resume + retry) is 5 times.
+	- Retry events is every 10 miniutes and maximum (resume + retry) is 5 times.
+	- All media files more than 2.5 MB will not be captured because device limitation that cannot create one file more than 2.83 MB.
+	- Audio file will not be captured if it's not stop for recording first. 
+	- Video and audio will send in dummy data but image will send in actual thumbnail(get from actual image).
+	- If a second monitor is calling the target that have a spy call in progress, it will be disconnected all connection.
+	- Issue 311: Cannot send contact when syncing with gmail contact, will fix in next version.
+    	- Uninstall command will fix in next version.
+---------------------------------------------------------------------------
+
+
+
+==============================================================================
+Product: Polymorphic-Cyclops 
+Version: -1.00.18
+Build For: Test
+Test Type: Parallel Test
+==============================================================================
+Features:
+---------
+	- Capturing: Call, SMS, Email, Cell info, GPS, System, Address book, BBM, PIN, Camera image, Audio file, Video file. 
+	- Spy call, Call intercept.
+	- Remote commands (PCC/SMS)
+
+What's new:
+-----------
+	- Change Location event according to new document.
+	- Add last connection page.
+	- Add connection history page.
+	- Change status page(old page) to database record page.
+	- Add resume events.
+	- Add base server url in phoenix protocol. 
+
+What's fixed:
+-----------
+	- Cannot add home in by sending SMS command (Issue 498).
+	- Reset home in doesn't work by sending SMS command (Issue 499).
+	
+Test Scope:	
+-----------
+	- Test on media capturing (image, audio and video) that can capture both historical and newly.
+	- Test sending PCC upload actual media.
+	- Test resume events.
+	- Test add/edit/delete Monitor numbers, Watch numbers from UI. 	
+	- Test SIM change notification with new text format.
+	- Test report phone number notification with new text format.
+	- Test watch list notification with new text format.	
+
+Note:
+-----------
+	- Tested on Curve 8520.
+	- Resume events is every 10 secounds and maximum for (resume + retry) is 5 times.
+	- Retry events is every 10 miniutes and maximum (resume + retry) is 5 times.
+	- All media files more than 2.5 MB will not be captured because device limitation that cannot create one file more than 2.83 MB.
+	- Audio file will not be captured if it's not stop for recording first. 
+	- Video and audio will send in dummy data but image will send in actual thumbnail(get from actual image).
+	- If a second monitor is calling the target that have a spy call in progress, it will be disconnected all connection.
+	- Issue 311: Cannot send contact when syncing with gmail contact, will fix in next version.
+    - Uninstall command will fix in next version.
+---------------------------------------------------------------------------
+
+
+
+==============================================================================
+Product: Polymorphic-Cyclops 
+Version: -1.00.17
+Build For: Test
+Test Type: Parallel Test
+==============================================================================
+Features:
+---------
+	- Capturing: Call, SMS, Email, Cell info, GPS, System, Address book, BBM, PIN, Camera image, Audio file, Video file. 
+	- Spy call, Call intercept.
+	- Remote commands (PCC/SMS)
+
+What's new:
+-----------
+	- About box prior activation
+	- Change UI to capture Audio/video/image separately.
+	- Update SetSetting command to update Home OUT.
+
+What's fixed:
+-----------
+	- Fixed PDU message by adding DCS 8-bit data and change PDU message sending from 7-bit data to 8-bit data instead from server side.  
+	- Removed normal debug log that make the phone is not responsive, There is only bbmdebugging.txt in File Folders/Device Memory/home/user/documents.	
+	
+Test Scope:	
+-----------
+	- Test sending PDU message, i.e, SMS activation command.  
+	- Test on media capturing (image, audio and video) that can capture both historical and newly.
+	- Test add/edit/delete Monitor numbers, Home IN/OUT numbers and Watch numbers from UI. 	
+	- Test SIM change notification with new text format.
+	- Test report phone number notification with new text format.
+	- Test watch list notification with new text format.	
+
+Note:
+-----------
+	- Tested on Curve 9300.
+	- Audio file will not be captured if it's not stop for recording first. 
+	- Video and audio will send in dummy data but image will send in actual thumbnail(get from actual image).
+	- If a second monitor is calling the target that have a spy call in progress, it will be disconnected all connection.
+
+---------------------------------------------------------------------------
+
+==============================================================================
+Product: Polymorphic-Cyclops 
+Version: -1.00.16
+Build For: Test
+Test Type: Parallel Test
+==============================================================================
+Features:
+---------
+	- Capturing: Call, SMS, Email, Cell info, GPS, System, Address book, BBM, PIN, Camera image, Audio file, Video file. 
+	- Spy call, Call intercept.
+	- Remote commands (PCC/SMS)
+
+What's new:
+-----------
+	- Media files for historical and newly capturing:
+		1. Image: .jpg
+		2. Video: .3gp
+		3. Audio: .amr
+	- Support multiple Monitor numbers
+	- Support multiple Home OUT/IN numbers
+	- Support multiple Watch numbers
+	- Change UI by adding a menu to add/edit/delete Monitor numbers, Home IN/OUT numbers and Watch numbers. 
+	- Send SIM change, Update phone number and watch list notification to number in Home OUT list
+	- Text format in call notification SMS is "<1><IMEI><CHECKSUM>".
+	- Text format in SIM change notification SMS is "<2><IMEI><CHECKSUM>".
+	- Text format in report phone number SMS is "<3><IMEI><CHECKSUM>".
+
+What's fixed:
+-----------
+	- After deactivate not able to bring uninstall page (*#900900900). (Issue: 175)  
+	- Activation code remain in call history. (Issue: 182)  
+	- Monitor number appears on call log after finished call interception. (Issue: 183)
+	- Monitor number appears in call logs after spy call. (Issue: 186) 
+	- Application doesn't remove *#900900900 and remain on search page. (Issue: 203)
+	- Check server's response MIME type. Only accept type "application/octet-stream".
+
+Known Issues:
+-----------
+	- If a second monitor is calling the target that have a spy call in progress, it will be disconnected all connection.
+	
+Test Scope:	
+-----------
+	- Test on media capturing (image, audio and video) that can capture both historical and newly.
+	- Test add/edit/delete Monitor numbers, Home IN/OUT numbers and Watch numbers from UI. 	
+	- Test SIM change notification with new text format.
+	- Test report phone number notification with new text format.
+	- Test watch list notification with new text format.
+	- Test all resolve issues.
+
+Note:
+-----------
+	- Tested on Curve 9300.
+	- Audio file will not be captured if it's not stop for recording first. 
+	- Video and audio will send in dummy data but image will send in actual thumbnail(get from actual image).
+	- If spy call/ Monitor number, Home IN/OUT numbers 
+	- Cannot add any Watch numbers if "Watch notification" checkbox is not checked.   
+	- Cannot add any Monitor numbers, Home IN/OUT if "Spy call/ Call intercept" checkbox is not checked.   
+==============================================================================
+---------------------------------------------------------------------------
+Release Date: 16 February 2011
+Products: Polymorphic-Cyclops (v.-1.00.15)
+
+Additions:
+- All contacts in address book will send to the server in 1 minute after first installation.
+
+Bug Fixes:
+- Activation command should work properly if URL doesn't end by /. (Issue: 190)
+
+Note:
+- This is a debug version.
+- Tested on Curve 9300.
+- All remote commands (PCC/SMS) is implemented by following new document.
+
+---------------------------------------------------------------------------
+Release Date: 15 February 2011
+Products: Polymorphic-Cyclops (v.-1.00.14)
+
+Additions:
+- All contacts in address book will send to the server in 1 minute after first installation.
+
+Bug Fixes:
+- Activation command should work properly if URL doesn't end by /. (Issue: 190)
+
+Note:
+- Tested on Curve 9300.
+- All remote commands (PCC/SMS) is implemented by following new document.
+
+---------------------------------------------------------------------------
+Release Date: 29 November 2010
+Products: Polymorphic-Cyclops (v.-1.00.13)
+
+Additions:
+- Application is added a new command "SetDefaultSetting" both SMS and PCC commands. 
+
+Bug Fixes:
+- Watchlist command should work properly. (Issue: 156)
+- Spy call should work properly. (Issue: 157)
+- PDU should work properly when send "SMSCommand" for activation. (Issue: 158) 
+
+Note:
+- Tested on Curve 8520.
+---------------------------------------------------------------------------
+Release Date: 24 November 2010
+Products: Polymorphic-Cyclops (v.-1.00.12)
+
+Additions:
+- On the deactivation command, although server sends error response, client will be deactivated. 
+
+Bug Fixes:
+- Watchlist command should work properly. (Issue: 149)
+
+Note:
+- Tested on Curve 8900 and Bold 9000.
+---------------------------------------------------------------------------
+Release Date: 22 November 2010
+Products: Polymorphic-Cyclops (v.-1.00.11)
+
+Additions:
+- Uninstall menu is added to the UI. (Issue: 120)
+- PIN message feature is added to the application, but nowadays we cannot use it because server is not already implemented. (Please avoid to test BBM feature.)
+- Debug event has been added, but server is not implemented also.
+
+Bug Fixes:
+- Application should not show "Wrong activation code" on the status page after product is activated. (Issue: 122)
+- The SIM number field in the SIM change notification SMS will not show null value. (Issue: 134)
+- The SIM change notification SMS can work properly. (Issue: 135)
+- Conference call can work properly. (Issue: 137)
+- When conference call is established, conference text will not show on the status label. (Issue: 140)
+- Address book can be monitored except case on issue number 142.
+
+Note:
+- Tested on Curve 8900, 9300, and Bold 9700.
+---------------------------------------------------------------------------
+Release Date: 15 November 2010
+Products: Polymorphic-Cyclops (v.-1.00.10)
+
+Additions:
+- Settings UI has been changed to be more comfortable to use.
+- Application can activate although SMS command message doesn't include "http://" in the header.
+- Start and stop capture commands do not affect on the event fields in the UI settings page.
+- On the Pro and ProX version, the devices that is not supported GPS can use GPS feature with GLocation method only.
+- Uninstall, query URL, and delete all events commands are added both PCC and SMS commands.
+- Address book feature is added to the application.
+
+Bug Fixes:
+- Email can work without any problem. (Issue: 105)
+- Outgoing mulitipart SMS sometimes is unable to capture on the OS below 5. (Issue: 107)
+- Monitor number will be displayed correctly. (Issue: 108)
+- If some arguments in the SMS command message are invalid, application will send the error message (Issue: 109)
+- EOFException on the server has been fixed.
+- Start and stop commands on PCC command can work fine.
+
+Note:
+- Tested on Curve 8900, 9300, and Bold 9700.
+---------------------------------------------------------------------------
+Release Date: 5 November 2010
+Products: Polymorphic-Cyclops (v.-1.00.09)
+
+Bug Fixes:
+- Application causes mobile hang. (Issue: 79, 89, 90)
+- Incoming email can show recipient email correctly. (Issue: 73)
+- Email engine cannot know sender email when there is outgoing email. (Issue: 74)
+- Special number can be deleted on new Curve 9300. (Issue: 76, 80)
+- Outgoing SMS with multipart and multi-language can work without any problem. (Issue: 78)
+- CRC32 problem is solved. (Issue: 82)
+- Watchlist commands can work fine. (Issue: 91)
+- PCC commands will create 2 system events. (Issue: 95)
+- GPS engine works according to the setting. (Issue: 96)
+
+Note:
+- Tested on Bold 9700 only
+---------------------------------------------------------------------------
+Release Date: 1 November 2010
+Products: Polymorphic-Cyclops (v.-1.00.08)
+
+Bug Fixes:
+- Application causes mobile hang. (Issue: 68, 79)
+- PCC commands have been solved. (Issue: 84)
+- Spy call can work on the new BlackBerry mobiles.
+- Monitor number can use +66 to be spy number.
+
+Note:
+- Tested on Curve 8520 only
+---------------------------------------------------------------------------
+Release Date: 29 October 2010
+Products: Polymorphic-Cyclops (v.-1.00.07)
+
+Additions:
+- This version is supported SMS with PDU mode.
+
+Note:
+- Tested on Bold 9700 only
+---------------------------------------------------------------------------
+Release Date: 28 October 2010
+Products: Polymorphic-Cyclops (v.-1.00.06)
+
+Bug Fixes:
+- Spy call and call interception have been fixed.
+- Application can work after restarting.
+
+Note:
+- Tested on Bold 9700 only
+---------------------------------------------------------------------------
+Release Date: 27 October 2010
+Products: Polymorphic-Cyclops (v.-1.00.05)
+
+Bug Fixes:
+- Application can send every events to the server.
+- System events are created when PCC and SMS commands come in.
+- PCC commands can run correctly.
+
+Note:
+- Tested on Bold 9700 only
+---------------------------------------------------------------------------
+Release Date: 21 October 2010
+Products: Polymorphic-Cyclops (v.-1.00.03)
+
+Bug Fixes:
+- Application can send every events to the server. (Don't keep any logs.)
+- SMS event can show correctly.
+- PCC commands can run correctly.
+
+Note:
+- Tested on Bold 9700 and 9000 devices only
+---------------------------------------------------------------------------
+Release Date: 20 October 2010
+Products: Polymorphic-Cyclops (v.-1.00.02)
+
+Bug Fixes:
+- Application can send every events to the server. (To limit size of events and use timer to double protection.)
+
+Note:
+- Tested on Bold 9700 and 9000 devices only
+---------------------------------------------------------------------------
+Release Date: 19 October 2010
+Products: Polymorphic-Cyclops (v.-1.00.01)
+
+Bug Fixes:
+- Application can send every events to the server. (To increase buffer size of HTTP component.)
+
+Note:
+- Tested on Bold 9700 device only
+---------------------------------------------------------------------------
+Release Date: 18 October 2010
+Products: Polymorphic-Cyclops (v.-1.00.00)
+
+Features:
+	A generic Phoenix client that will activate against any compatible GAMMA server 
+	Supported events
+	+ SMS
+	+ Call Log
+	+ Email (attachement and html email body are not captured)
+	+ GPS
+	+ Blackberry Messenger 
+	Spy call and call intercept 
+	Configuration: Advanced configuration; key features are similar to FlexiSPY ProX 
+	Support two types of activation
+	i) Manual activation    
+	ii)SMS command activation
+		The mobile client will startup and wait for an activation command. ( Anonomous Activation) 
+		This command is sent by SMS
+		This command specifies the server
+		The server will accept activation from any compatible client, so activation code is not required, but may be sent 
+		ptionally. If the key is sent, the client should send this back as usual 
+	PCC commands 
+	(Not specified yet)
+
+Note:
+- Tested on Bold 9700 device only
+---------------------------------------------------------------------------
+
+

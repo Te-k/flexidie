@@ -1,0 +1,71 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf250
+{\fonttbl\f0\fnil\fcharset0 LucidaGrande;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;}
+\vieww19140\viewh15820\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b\fs26 \cf0 Overview
+\b0 \
+SonOfGrab demonstrates the new CGWindow API introduced with Mac OS X 10.5 to grab the contents of arbitrary sets of windows.\
+\
+The core of this sample are 5 methods on the Controller class, described below.\
+\
+
+\f1\fs24 -updateWindowList\
+
+\f0\fs26 This method gets the current list of windows from the window server. Options in the GUI allow you to exclude offscreen windows and desktop elements. The list returned from the window server is further processed (via the 
+\f1\fs24 WindowListApplierFunction
+\f0\fs26  callback) to produce the list that is presented in the GUI.\
+\
+
+\f1\fs24 -createSingleWindowShot\
+
+\f0\fs26 Creates a screen shot relative to the single 
+\fs24 CGWindowID
+\fs26  that is passed in. Depending on the "Single Window Options" specified in the GUI, the screen shot may include any number of other windows and may or may not include the window actually passed to this method.\
+\
+
+\f1\fs24 -createMultiWindowShot\
+
+\f0\fs26 Creates a screen shot with exactly those windows passed in. Uses the 
+\f1\fs24 -createWindowListFromSelection
+\f0\fs26  method to create a compatible 
+\f1\fs24 CFArrayRef
+\f0\fs26  that specifies the windows to create an image from.\
+\
+
+\f1\fs24 -createScreenShot\
+
+\f0\fs26 Creates a screen shot from all of the windows that are currently onscreen and readable.\
+\
+
+\f1\fs24 -createWindowListFromSelection\
+
+\f0\fs26 Transforms the GUI selection of windows into a 
+\f1\fs24 CFArrayRef
+\f0\fs26  that specifies the exact list of windows to render and the order to render them in.\
+\
+
+\b Important
+\b0 \
+The CGWindow API is capable of dealing with common issues that you may come across in practice, generally returning NULL if it is not possible to contact the Window Server, or a full transparent image when it is not possible to compose an image from the list given. The comments in 
+\f1\fs24 CGWindow.h
+\f0\fs26  go into great detail on the corner cases and other issues that you may find in using this API and is invaluable in understanding what will happen in many common use cases.\
+\
+
+\b Performance\
+
+\b0 The CGWindow API provides CGImageRef's that whose backing data is created on demand by the window server when first rendered, and as such you can request a large number of images without taking a performance hit until the image is rendered. If you are capturing a large number of images, you will see the time required to create those images spent in the WindowServer process, and you should be aware that while CGWindowListCreateImage will return quickly. Drawing the image for the first time is likely to consume more time than you might expect for an image from other sources.\
+\
+The sample code can be configured to time its operations by setting the 
+\f1\fs24 PROFILE_WINDOW_GRAB
+\f0\fs26  to 1. This macro's definition is defaulted to 0 in the 
+\f1\fs24 Controller.m
+\f0\fs26  source file.\
+\
+
+\b See Also
+\b0 \
+If you need to support Mac OS X 10.4, then you may wish use the techniques demonstrated in one of the samples below:\
+	OpenGLScreenSnapshot <{\field{\*\fldinst{HYPERLINK "http://developer.apple.com/samplecode/OpenGLScreenSnapshot/index.html"}}{\fldrslt http://developer.apple.com/samplecode/OpenGLScreenSnapshot/index.html}}>\
+	OpenGLScreenCapture <{\field{\*\fldinst{HYPERLINK "http://developer.apple.com/samplecode/OpenGLScreenCapture/index.html"}}{\fldrslt http://developer.apple.com/samplecode/OpenGLScreenCapture/index.html}}>}

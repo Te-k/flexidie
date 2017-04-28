@@ -1,3 +1,0 @@
-Product: 4103
-Version: 1.03.2 
-Date: 11/01/2012

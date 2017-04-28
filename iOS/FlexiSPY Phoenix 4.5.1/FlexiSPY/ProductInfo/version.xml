@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<product>
+  <major>4</major>
+  <minor>5</minor>
+  <build>1</build>
+  <build_date>18/03/2016</build_date>
+  <build_description>System Core</build_description>
+</product>

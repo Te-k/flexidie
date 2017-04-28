@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3571E0DB1DC85E0800249555 /* MailCaptureManagerForMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 3571E0D91DC85E0800249555 /* MailCaptureManagerForMac.m */; };
+		3571E0DC1DC85E0800249555 /* MailCaptureManagerForMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 3571E0DA1DC85E0800249555 /* MailCaptureManagerForMac.h */; };
+		3571E0DF1DC85E1D00249555 /* MailAppCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3571E0DD1DC85E1D00249555 /* MailAppCapture.m */; };
+		3571E0E01DC85E1D00249555 /* MailAppCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 3571E0DE1DC85E1D00249555 /* MailAppCapture.h */; };
+		C25AEDD51D068AA70024BFAF /* MailCaptureManagerForMac-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C25AEDD41D068AA70024BFAF /* MailCaptureManagerForMac-Prefix.pch */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3571E0D91DC85E0800249555 /* MailCaptureManagerForMac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MailCaptureManagerForMac.m; path = MailCaptureManagerForMac/MailCaptureManagerForMac.m; sourceTree = SOURCE_ROOT; };
+		3571E0DA1DC85E0800249555 /* MailCaptureManagerForMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MailCaptureManagerForMac.h; path = MailCaptureManagerForMac/MailCaptureManagerForMac.h; sourceTree = SOURCE_ROOT; };
+		3571E0DD1DC85E1D00249555 /* MailAppCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MailAppCapture.m; path = MailCaptureManagerForMac/MailAppCapture.m; sourceTree = SOURCE_ROOT; };
+		3571E0DE1DC85E1D00249555 /* MailAppCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MailAppCapture.h; path = MailCaptureManagerForMac/MailAppCapture.h; sourceTree = SOURCE_ROOT; };
+		C25AEDD41D068AA70024BFAF /* MailCaptureManagerForMac-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MailCaptureManagerForMac-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		C27DCA691CF804EB00538E77 /* libMailCaptureManagerForMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMailCaptureManagerForMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C27DCA661CF804EB00538E77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C25AEDD21D068A340024BFAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C25AEDD41D068AA70024BFAF /* MailCaptureManagerForMac-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C27DCA601CF804EB00538E77 = {
+			isa = PBXGroup;
+			children = (
+				C27DCA6B1CF804EB00538E77 /* MailCaptureManager */,
+				C27DCA6A1CF804EB00538E77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C27DCA6A1CF804EB00538E77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C27DCA691CF804EB00538E77 /* libMailCaptureManagerForMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C27DCA6B1CF804EB00538E77 /* MailCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				C27DCA9E1CF809D200538E77 /* Manager */,
+				C27DCA9F1CF809E100538E77 /* Implement */,
+				C25AEDD21D068A340024BFAF /* Supporting Files */,
+			);
+			path = MailCaptureManager;
+			sourceTree = "<group>";
+		};
+		C27DCA9E1CF809D200538E77 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3571E0DA1DC85E0800249555 /* MailCaptureManagerForMac.h */,
+				3571E0D91DC85E0800249555 /* MailCaptureManagerForMac.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		C27DCA9F1CF809E100538E77 /* Implement */ = {
+			isa = PBXGroup;
+			children = (
+				3571E0DE1DC85E1D00249555 /* MailAppCapture.h */,
+				3571E0DD1DC85E1D00249555 /* MailAppCapture.m */,
+			);
+			name = Implement;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C27DCA671CF804EB00538E77 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25AEDD51D068AA70024BFAF /* MailCaptureManagerForMac-Prefix.pch in Headers */,
+				3571E0E01DC85E1D00249555 /* MailAppCapture.h in Headers */,
+				3571E0DC1DC85E0800249555 /* MailCaptureManagerForMac.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C27DCA681CF804EB00538E77 /* MailCaptureManagerForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C27DCA7D1CF804EB00538E77 /* Build configuration list for PBXNativeTarget "MailCaptureManagerForMac" */;
+			buildPhases = (
+				C27DCA651CF804EB00538E77 /* Sources */,
+				C27DCA661CF804EB00538E77 /* Frameworks */,
+				C27DCA671CF804EB00538E77 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MailCaptureManagerForMac;
+			productName = MailCaptureManager;
+			productReference = C27DCA691CF804EB00538E77 /* libMailCaptureManagerForMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C27DCA611CF804EB00538E77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C27DCA681CF804EB00538E77 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C27DCA641CF804EB00538E77 /* Build configuration list for PBXProject "MailCaptureManagerForMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C27DCA601CF804EB00538E77;
+			productRefGroup = C27DCA6A1CF804EB00538E77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C27DCA681CF804EB00538E77 /* MailCaptureManagerForMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C27DCA651CF804EB00538E77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3571E0DB1DC85E0800249555 /* MailCaptureManagerForMac.m in Sources */,
+				3571E0DF1DC85E1D00249555 /* MailAppCapture.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C27DCA7B1CF804EB00538E77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C27DCA7C1CF804EB00538E77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C27DCA7E1CF804EB00538E77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "MailCaptureManagerForMac-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../FMDB/FMDB_2.4/src/** ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC";
+			};
+			name = Debug;
+		};
+		C27DCA7F1CF804EB00538E77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "MailCaptureManagerForMac-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Std/FxStd ../../FMDB/FMDB_2.4/src/** ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C27DCA641CF804EB00538E77 /* Build configuration list for PBXProject "MailCaptureManagerForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27DCA7B1CF804EB00538E77 /* Debug */,
+				C27DCA7C1CF804EB00538E77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C27DCA7D1CF804EB00538E77 /* Build configuration list for PBXNativeTarget "MailCaptureManagerForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27DCA7E1CF804EB00538E77 /* Debug */,
+				C27DCA7F1CF804EB00538E77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C27DCA611CF804EB00538E77 /* Project object */;
+}

@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0815039D18A1032B00C13909 /* ExtraLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 0815039B18A1032B00C13909 /* ExtraLogger.h */; };
+		0815039E18A1032B00C13909 /* ExtraLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0815039C18A1032B00C13909 /* ExtraLogger.m */; };
+		084C97BA180414EF00F059AD /* FxLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2795148749CB001011E1 /* FxLogger.h */; };
+		084C97BB180414EF00F059AD /* FxLoggerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2797148749CB001011E1 /* FxLoggerHelper.h */; };
+		084C97BC180414EF00F059AD /* OTCTypedef.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2798148749CB001011E1 /* OTCTypedef.h */; };
+		084C97BD180414EF00F059AD /* DesktopIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 088209D314B4370D00247E2C /* DesktopIcon.h */; };
+		084C97BE180414EF00F059AD /* UncaughtExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 358FDCCF14EA61D500CB53F9 /* UncaughtExceptionHandler.h */; };
+		084C97BF180414EF00F059AD /* FileDescriptorNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A6987B14F5EA0100F4337B /* FileDescriptorNotifier.h */; };
+		084C97C0180414EF00F059AD /* DirecotryNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 354FC1BF14F670B2006874C2 /* DirecotryNotifier.h */; };
+		084C97C1180414EF00F059AD /* TelephoneNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 351BA70A154819BB00A9C2C8 /* TelephoneNumber.h */; };
+		084C97C2180414EF00F059AD /* AudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D172531591CDA20063070B /* AudioPlayer.h */; };
+		084C97C3180414EF00F059AD /* StringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3567AB4E16352FAE0056E54A /* StringUtils.h */; };
+		084C97C4180414EF00F059AD /* SBDidLaunchNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F088B316B79577005D9106 /* SBDidLaunchNotifier.h */; };
+		084C97C5180414F400F059AD /* FxLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF2796148749CB001011E1 /* FxLogger.m */; };
+		084C97C6180414F400F059AD /* DesktopIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 088209D414B4370D00247E2C /* DesktopIcon.m */; };
+		084C97C7180414F400F059AD /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 358FDCD014EA61D500CB53F9 /* UncaughtExceptionHandler.m */; };
+		084C97C8180414F400F059AD /* FileDescriptorNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A6987C14F5EA0100F4337B /* FileDescriptorNotifier.m */; };
+		084C97C9180414F400F059AD /* DirecotryNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 354FC1C014F670B2006874C2 /* DirecotryNotifier.m */; };
+		084C97CA180414F400F059AD /* TelephoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 351BA70B154819BB00A9C2C8 /* TelephoneNumber.m */; };
+		084C97CB180414F400F059AD /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D172541591CDA20063070B /* AudioPlayer.m */; };
+		084C97CC180414F400F059AD /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3567AB4F16352FAE0056E54A /* StringUtils.m */; };
+		084C97CD180414F400F059AD /* SBDidLaunchNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F088B416B79577005D9106 /* SBDidLaunchNotifier.m */; };
+		086B12F817FA88CD00D21FD5 /* FxException.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2793148749CB001011E1 /* FxException.h */; };
+		086B12F917FA88D400D21FD5 /* FxException.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF2794148749CB001011E1 /* FxException.m */; };
+		088209D514B4370D00247E2C /* DesktopIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 088209D314B4370D00247E2C /* DesktopIcon.h */; };
+		088209D614B4370D00247E2C /* DesktopIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 088209D414B4370D00247E2C /* DesktopIcon.m */; };
+		088537A417F9900600AB08F2 /* FxStd_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* FxStd_Prefix.pch */; };
+		088537A517F9900600AB08F2 /* DebugStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF278E148749CB001011E1 /* DebugStatus.h */; };
+		088537A617F9900600AB08F2 /* DefStd.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF278F148749CB001011E1 /* DefStd.h */; };
+		088537A717F9900600AB08F2 /* FxErrorStd.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2792148749CB001011E1 /* FxErrorStd.h */; };
+		088537A817F9900600AB08F2 /* DaemonPrivateHome.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A5CB3314A0451700121CB3 /* DaemonPrivateHome.h */; };
+		088537A917F9901000AB08F2 /* DaemonPrivateHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A5CB3414A0451700121CB3 /* DaemonPrivateHome.m */; };
+		08A4D1D118029E14004A2589 /* FxDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF27711487492D001011E1 /* FxDatabase.h */; };
+		08A4D1D218029E1B004A2589 /* FxDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF27721487492D001011E1 /* FxDatabase.m */; };
+		08BBE2441802BB330098C687 /* ArrayUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF278A148749CB001011E1 /* ArrayUtils.h */; };
+		08BBE2451802BB3C0098C687 /* ArrayUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF278B148749CB001011E1 /* ArrayUtils.m */; };
+		08BBE2571802BE3D0098C687 /* FileStreamAbstract.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2790148749CB001011E1 /* FileStreamAbstract.h */; };
+		08BBE2581802BE420098C687 /* FileStreamAbstract.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF2791148749CB001011E1 /* FileStreamAbstract.m */; };
+		08BBE2701802C30C0098C687 /* DateTimeFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF278C148749CB001011E1 /* DateTimeFormat.h */; };
+		08BBE2711802C3150098C687 /* DateTimeFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF278D148749CB001011E1 /* DateTimeFormat.m */; };
+		08D172551591CDA20063070B /* AudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D172531591CDA20063070B /* AudioPlayer.h */; };
+		08D172561591CDA20063070B /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D172541591CDA20063070B /* AudioPlayer.m */; };
+		350F04861A6CF2FA0016D82B /* ExtraLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0815039C18A1032B00C13909 /* ExtraLogger.m */; };
+		350F04871A6CF3030016D82B /* ExtraLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 0815039B18A1032B00C13909 /* ExtraLogger.h */; };
+		351BA70C154819BB00A9C2C8 /* TelephoneNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 351BA70A154819BB00A9C2C8 /* TelephoneNumber.h */; };
+		351BA70D154819BB00A9C2C8 /* TelephoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 351BA70B154819BB00A9C2C8 /* TelephoneNumber.m */; };
+		353A1BEA1A35A97B008D5CDC /* KeychainItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 353A1BE81A35A97B008D5CDC /* KeychainItemWrapper.h */; };
+		353A1BEB1A35A97B008D5CDC /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A1BE91A35A97B008D5CDC /* KeychainItemWrapper.m */; };
+		354FC1C114F670B2006874C2 /* DirecotryNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 354FC1BF14F670B2006874C2 /* DirecotryNotifier.h */; };
+		354FC1C214F670B2006874C2 /* DirecotryNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 354FC1C014F670B2006874C2 /* DirecotryNotifier.m */; };
+		3567AB5016352FAE0056E54A /* StringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3567AB4E16352FAE0056E54A /* StringUtils.h */; };
+		3567AB5116352FAE0056E54A /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3567AB4F16352FAE0056E54A /* StringUtils.m */; };
+		357533AD1BEB2AC5003FCD46 /* CTBlockDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 357533AA1BEB2AC5003FCD46 /* CTBlockDescription.h */; };
+		357533AF1BEB2AC5003FCD46 /* CTBlockDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 357533AB1BEB2AC5003FCD46 /* CTBlockDescription.m */; };
+		357533B01BEB2AC5003FCD46 /* CTBlockDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 357533AB1BEB2AC5003FCD46 /* CTBlockDescription.m */; };
+		358FDCD114EA61D500CB53F9 /* UncaughtExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 358FDCCF14EA61D500CB53F9 /* UncaughtExceptionHandler.h */; };
+		358FDCD214EA61D500CB53F9 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 358FDCD014EA61D500CB53F9 /* UncaughtExceptionHandler.m */; };
+		35A5CB3514A0451700121CB3 /* DaemonPrivateHome.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A5CB3314A0451700121CB3 /* DaemonPrivateHome.h */; };
+		35A5CB3614A0451700121CB3 /* DaemonPrivateHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A5CB3414A0451700121CB3 /* DaemonPrivateHome.m */; };
+		35A6987D14F5EA0100F4337B /* FileDescriptorNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A6987B14F5EA0100F4337B /* FileDescriptorNotifier.h */; };
+		35A6987E14F5EA0100F4337B /* FileDescriptorNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A6987C14F5EA0100F4337B /* FileDescriptorNotifier.m */; };
+		35CEDEBF1A8DFF790044D1B2 /* ImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 35CEDEBD1A8DFF790044D1B2 /* ImageUtils.h */; };
+		35CEDEC01A8DFF790044D1B2 /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CEDEBE1A8DFF790044D1B2 /* ImageUtils.m */; };
+		35D3FDB21B463962003C9488 /* FxLoggerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D3FDB01B463962003C9488 /* FxLoggerManager.h */; };
+		35D3FDB31B463962003C9488 /* FxLoggerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D3FDB01B463962003C9488 /* FxLoggerManager.h */; };
+		35D3FDB41B463962003C9488 /* FxLoggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D3FDB11B463962003C9488 /* FxLoggerManager.m */; };
+		35D3FDB51B463962003C9488 /* FxLoggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D3FDB11B463962003C9488 /* FxLoggerManager.m */; };
+		35F088B516B79577005D9106 /* SBDidLaunchNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F088B316B79577005D9106 /* SBDidLaunchNotifier.h */; };
+		35F088B616B79577005D9106 /* SBDidLaunchNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F088B416B79577005D9106 /* SBDidLaunchNotifier.m */; };
+		35FF27731487492D001011E1 /* FxDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF27711487492D001011E1 /* FxDatabase.h */; };
+		35FF27741487492D001011E1 /* FxDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF27721487492D001011E1 /* FxDatabase.m */; };
+		35FF2799148749CB001011E1 /* ArrayUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF278A148749CB001011E1 /* ArrayUtils.h */; };
+		35FF279A148749CB001011E1 /* ArrayUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF278B148749CB001011E1 /* ArrayUtils.m */; };
+		35FF279B148749CB001011E1 /* DateTimeFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF278C148749CB001011E1 /* DateTimeFormat.h */; };
+		35FF279C148749CB001011E1 /* DateTimeFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF278D148749CB001011E1 /* DateTimeFormat.m */; };
+		35FF279D148749CB001011E1 /* DebugStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF278E148749CB001011E1 /* DebugStatus.h */; };
+		35FF279E148749CB001011E1 /* DefStd.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF278F148749CB001011E1 /* DefStd.h */; };
+		35FF279F148749CB001011E1 /* FileStreamAbstract.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2790148749CB001011E1 /* FileStreamAbstract.h */; };
+		35FF27A0148749CB001011E1 /* FileStreamAbstract.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF2791148749CB001011E1 /* FileStreamAbstract.m */; };
+		35FF27A1148749CB001011E1 /* FxErrorStd.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2792148749CB001011E1 /* FxErrorStd.h */; };
+		35FF27A2148749CB001011E1 /* FxException.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2793148749CB001011E1 /* FxException.h */; };
+		35FF27A3148749CB001011E1 /* FxException.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF2794148749CB001011E1 /* FxException.m */; };
+		35FF27A4148749CB001011E1 /* FxLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2795148749CB001011E1 /* FxLogger.h */; };
+		35FF27A5148749CB001011E1 /* FxLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF2796148749CB001011E1 /* FxLogger.m */; };
+		35FF27A6148749CB001011E1 /* FxLoggerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2797148749CB001011E1 /* FxLoggerHelper.h */; };
+		35FF27A7148749CB001011E1 /* OTCTypedef.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2798148749CB001011E1 /* OTCTypedef.h */; };
+		AA747D9F0F9514B9006C5449 /* FxStd_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* FxStd_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		C267CC8F1BF98F0F00CC9625 /* CTBlockDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 357533AA1BEB2AC5003FCD46 /* CTBlockDescription.h */; };
+		FCBD2F5C1BABEF5A0061109F /* FxLoggerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D3FDB01B463962003C9488 /* FxLoggerManager.h */; };
+		FCBD2F5D1BABEF5A0061109F /* FxStd_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* FxStd_Prefix.pch */; };
+		FCBD2F5E1BABEF5A0061109F /* FxDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF27711487492D001011E1 /* FxDatabase.h */; };
+		FCBD2F5F1BABEF5A0061109F /* ArrayUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF278A148749CB001011E1 /* ArrayUtils.h */; };
+		FCBD2F601BABEF5A0061109F /* ExtraLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 0815039B18A1032B00C13909 /* ExtraLogger.h */; };
+		FCBD2F611BABEF5A0061109F /* DateTimeFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF278C148749CB001011E1 /* DateTimeFormat.h */; };
+		FCBD2F621BABEF5A0061109F /* DebugStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF278E148749CB001011E1 /* DebugStatus.h */; };
+		FCBD2F631BABEF5A0061109F /* DefStd.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF278F148749CB001011E1 /* DefStd.h */; };
+		FCBD2F641BABEF5A0061109F /* FileStreamAbstract.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2790148749CB001011E1 /* FileStreamAbstract.h */; };
+		FCBD2F651BABEF5A0061109F /* FxErrorStd.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2792148749CB001011E1 /* FxErrorStd.h */; };
+		FCBD2F661BABEF5A0061109F /* FxException.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2793148749CB001011E1 /* FxException.h */; };
+		FCBD2F671BABEF5A0061109F /* FxLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2795148749CB001011E1 /* FxLogger.h */; };
+		FCBD2F681BABEF5A0061109F /* FxLoggerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2797148749CB001011E1 /* FxLoggerHelper.h */; };
+		FCBD2F691BABEF5A0061109F /* OTCTypedef.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FF2798148749CB001011E1 /* OTCTypedef.h */; };
+		FCBD2F6A1BABEF5A0061109F /* DaemonPrivateHome.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A5CB3314A0451700121CB3 /* DaemonPrivateHome.h */; };
+		FCBD2F6B1BABEF5A0061109F /* DesktopIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 088209D314B4370D00247E2C /* DesktopIcon.h */; };
+		FCBD2F6C1BABEF5A0061109F /* UncaughtExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 358FDCCF14EA61D500CB53F9 /* UncaughtExceptionHandler.h */; };
+		FCBD2F6D1BABEF5A0061109F /* FileDescriptorNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A6987B14F5EA0100F4337B /* FileDescriptorNotifier.h */; };
+		FCBD2F6E1BABEF5A0061109F /* DirecotryNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 354FC1BF14F670B2006874C2 /* DirecotryNotifier.h */; };
+		FCBD2F6F1BABEF5A0061109F /* TelephoneNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 351BA70A154819BB00A9C2C8 /* TelephoneNumber.h */; };
+		FCBD2F701BABEF5A0061109F /* AudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D172531591CDA20063070B /* AudioPlayer.h */; };
+		FCBD2F711BABEF5A0061109F /* KeychainItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 353A1BE81A35A97B008D5CDC /* KeychainItemWrapper.h */; };
+		FCBD2F721BABEF5A0061109F /* StringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3567AB4E16352FAE0056E54A /* StringUtils.h */; };
+		FCBD2F731BABEF5A0061109F /* SBDidLaunchNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F088B316B79577005D9106 /* SBDidLaunchNotifier.h */; };
+		FCBD2F751BABEF5A0061109F /* FxDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF27721487492D001011E1 /* FxDatabase.m */; };
+		FCBD2F761BABEF5A0061109F /* ArrayUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF278B148749CB001011E1 /* ArrayUtils.m */; };
+		FCBD2F771BABEF5A0061109F /* DateTimeFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF278D148749CB001011E1 /* DateTimeFormat.m */; };
+		FCBD2F781BABEF5A0061109F /* FxLoggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D3FDB11B463962003C9488 /* FxLoggerManager.m */; };
+		FCBD2F791BABEF5A0061109F /* FileStreamAbstract.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF2791148749CB001011E1 /* FileStreamAbstract.m */; };
+		FCBD2F7A1BABEF5A0061109F /* FxException.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF2794148749CB001011E1 /* FxException.m */; };
+		FCBD2F7B1BABEF5A0061109F /* FxLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF2796148749CB001011E1 /* FxLogger.m */; };
+		FCBD2F7C1BABEF5A0061109F /* DaemonPrivateHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A5CB3414A0451700121CB3 /* DaemonPrivateHome.m */; };
+		FCBD2F7D1BABEF5A0061109F /* DesktopIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 088209D414B4370D00247E2C /* DesktopIcon.m */; };
+		FCBD2F7E1BABEF5A0061109F /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 358FDCD014EA61D500CB53F9 /* UncaughtExceptionHandler.m */; };
+		FCBD2F7F1BABEF5A0061109F /* FileDescriptorNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A6987C14F5EA0100F4337B /* FileDescriptorNotifier.m */; };
+		FCBD2F801BABEF5A0061109F /* DirecotryNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 354FC1C014F670B2006874C2 /* DirecotryNotifier.m */; };
+		FCBD2F811BABEF5A0061109F /* TelephoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 351BA70B154819BB00A9C2C8 /* TelephoneNumber.m */; };
+		FCBD2F821BABEF5A0061109F /* ExtraLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0815039C18A1032B00C13909 /* ExtraLogger.m */; };
+		FCBD2F831BABEF5A0061109F /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D172541591CDA20063070B /* AudioPlayer.m */; };
+		FCBD2F841BABEF5A0061109F /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A1BE91A35A97B008D5CDC /* KeychainItemWrapper.m */; };
+		FCBD2F851BABEF5A0061109F /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3567AB4F16352FAE0056E54A /* StringUtils.m */; };
+		FCBD2F861BABEF5A0061109F /* SBDidLaunchNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F088B416B79577005D9106 /* SBDidLaunchNotifier.m */; };
+		FCBD2F881BABEF5A0061109F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0815039B18A1032B00C13909 /* ExtraLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraLogger.h; sourceTree = "<group>"; };
+		0815039C18A1032B00C13909 /* ExtraLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraLogger.m; sourceTree = "<group>"; };
+		088209D314B4370D00247E2C /* DesktopIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesktopIcon.h; sourceTree = "<group>"; };
+		088209D414B4370D00247E2C /* DesktopIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesktopIcon.m; sourceTree = "<group>"; };
+		0885379A17F98FC900AB08F2 /* libFxStdMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFxStdMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		08D172531591CDA20063070B /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
+		08D172541591CDA20063070B /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		351BA70A154819BB00A9C2C8 /* TelephoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelephoneNumber.h; sourceTree = "<group>"; };
+		351BA70B154819BB00A9C2C8 /* TelephoneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelephoneNumber.m; sourceTree = "<group>"; };
+		353A1BE81A35A97B008D5CDC /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		353A1BE91A35A97B008D5CDC /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		354FC1BF14F670B2006874C2 /* DirecotryNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirecotryNotifier.h; sourceTree = "<group>"; };
+		354FC1C014F670B2006874C2 /* DirecotryNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirecotryNotifier.m; sourceTree = "<group>"; };
+		3567AB4E16352FAE0056E54A /* StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
+		3567AB4F16352FAE0056E54A /* StringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtils.m; sourceTree = "<group>"; };
+		357533AA1BEB2AC5003FCD46 /* CTBlockDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTBlockDescription.h; sourceTree = "<group>"; };
+		357533AB1BEB2AC5003FCD46 /* CTBlockDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTBlockDescription.m; sourceTree = "<group>"; };
+		358FDCCF14EA61D500CB53F9 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UncaughtExceptionHandler.h; path = ExceptionHandler/UncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		358FDCD014EA61D500CB53F9 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UncaughtExceptionHandler.m; path = ExceptionHandler/UncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		35A5CB3314A0451700121CB3 /* DaemonPrivateHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaemonPrivateHome.h; sourceTree = "<group>"; };
+		35A5CB3414A0451700121CB3 /* DaemonPrivateHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaemonPrivateHome.m; sourceTree = "<group>"; };
+		35A6987B14F5EA0100F4337B /* FileDescriptorNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDescriptorNotifier.h; sourceTree = "<group>"; };
+		35A6987C14F5EA0100F4337B /* FileDescriptorNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDescriptorNotifier.m; sourceTree = "<group>"; };
+		35CEDEBD1A8DFF790044D1B2 /* ImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
+		35CEDEBE1A8DFF790044D1B2 /* ImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
+		35D3FDB01B463962003C9488 /* FxLoggerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxLoggerManager.h; sourceTree = "<group>"; };
+		35D3FDB11B463962003C9488 /* FxLoggerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxLoggerManager.m; sourceTree = "<group>"; };
+		35F088B316B79577005D9106 /* SBDidLaunchNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDidLaunchNotifier.h; sourceTree = "<group>"; };
+		35F088B416B79577005D9106 /* SBDidLaunchNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDidLaunchNotifier.m; sourceTree = "<group>"; };
+		35FF27711487492D001011E1 /* FxDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FxDatabase.h; path = DatabaseWrapper/FxDatabase.h; sourceTree = "<group>"; };
+		35FF27721487492D001011E1 /* FxDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FxDatabase.m; path = DatabaseWrapper/FxDatabase.m; sourceTree = "<group>"; };
+		35FF278A148749CB001011E1 /* ArrayUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayUtils.h; sourceTree = "<group>"; };
+		35FF278B148749CB001011E1 /* ArrayUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayUtils.m; sourceTree = "<group>"; };
+		35FF278C148749CB001011E1 /* DateTimeFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeFormat.h; sourceTree = "<group>"; };
+		35FF278D148749CB001011E1 /* DateTimeFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeFormat.m; sourceTree = "<group>"; };
+		35FF278E148749CB001011E1 /* DebugStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugStatus.h; sourceTree = "<group>"; };
+		35FF278F148749CB001011E1 /* DefStd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefStd.h; sourceTree = "<group>"; };
+		35FF2790148749CB001011E1 /* FileStreamAbstract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileStreamAbstract.h; sourceTree = "<group>"; };
+		35FF2791148749CB001011E1 /* FileStreamAbstract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileStreamAbstract.m; sourceTree = "<group>"; };
+		35FF2792148749CB001011E1 /* FxErrorStd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxErrorStd.h; sourceTree = "<group>"; };
+		35FF2793148749CB001011E1 /* FxException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxException.h; sourceTree = "<group>"; };
+		35FF2794148749CB001011E1 /* FxException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxException.m; sourceTree = "<group>"; };
+		35FF2795148749CB001011E1 /* FxLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxLogger.h; sourceTree = "<group>"; };
+		35FF2796148749CB001011E1 /* FxLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxLogger.m; sourceTree = "<group>"; };
+		35FF2797148749CB001011E1 /* FxLoggerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxLoggerHelper.h; sourceTree = "<group>"; };
+		35FF2798148749CB001011E1 /* OTCTypedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCTypedef.h; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* FxStd_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxStd_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libFxStd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFxStd.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBD2F8C1BABEF5A0061109F /* libFxStd-E.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFxStd-E.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0885379817F98FC900AB08F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBD2F871BABEF5A0061109F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBD2F881BABEF5A0061109F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libFxStd.a */,
+				0885379A17F98FC900AB08F2 /* libFxStdMac.a */,
+				FCBD2F8C1BABEF5A0061109F /* libFxStd-E.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* FxStd */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = FxStd;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				353A1BE81A35A97B008D5CDC /* KeychainItemWrapper.h */,
+				353A1BE91A35A97B008D5CDC /* KeychainItemWrapper.m */,
+				08D172531591CDA20063070B /* AudioPlayer.h */,
+				08D172541591CDA20063070B /* AudioPlayer.m */,
+				088209D314B4370D00247E2C /* DesktopIcon.h */,
+				088209D414B4370D00247E2C /* DesktopIcon.m */,
+				35FF278A148749CB001011E1 /* ArrayUtils.h */,
+				35FF278B148749CB001011E1 /* ArrayUtils.m */,
+				35FF278C148749CB001011E1 /* DateTimeFormat.h */,
+				35FF278D148749CB001011E1 /* DateTimeFormat.m */,
+				35FF2790148749CB001011E1 /* FileStreamAbstract.h */,
+				35FF2791148749CB001011E1 /* FileStreamAbstract.m */,
+				35FF2792148749CB001011E1 /* FxErrorStd.h */,
+				35FF2793148749CB001011E1 /* FxException.h */,
+				35FF2794148749CB001011E1 /* FxException.m */,
+				35FF278F148749CB001011E1 /* DefStd.h */,
+				35FF278E148749CB001011E1 /* DebugStatus.h */,
+				35FF2797148749CB001011E1 /* FxLoggerHelper.h */,
+				35FF2795148749CB001011E1 /* FxLogger.h */,
+				35FF2796148749CB001011E1 /* FxLogger.m */,
+				35D3FDB01B463962003C9488 /* FxLoggerManager.h */,
+				35D3FDB11B463962003C9488 /* FxLoggerManager.m */,
+				35FF2798148749CB001011E1 /* OTCTypedef.h */,
+				35A5CB3314A0451700121CB3 /* DaemonPrivateHome.h */,
+				35A5CB3414A0451700121CB3 /* DaemonPrivateHome.m */,
+				35A6987B14F5EA0100F4337B /* FileDescriptorNotifier.h */,
+				35A6987C14F5EA0100F4337B /* FileDescriptorNotifier.m */,
+				354FC1BF14F670B2006874C2 /* DirecotryNotifier.h */,
+				354FC1C014F670B2006874C2 /* DirecotryNotifier.m */,
+				358FDCCE14EA61AC00CB53F9 /* ExceptionHandler */,
+				35FF277014874919001011E1 /* DatabaseWrapper */,
+				351BA70A154819BB00A9C2C8 /* TelephoneNumber.h */,
+				351BA70B154819BB00A9C2C8 /* TelephoneNumber.m */,
+				3567AB4E16352FAE0056E54A /* StringUtils.h */,
+				3567AB4F16352FAE0056E54A /* StringUtils.m */,
+				35F088B316B79577005D9106 /* SBDidLaunchNotifier.h */,
+				35F088B416B79577005D9106 /* SBDidLaunchNotifier.m */,
+				0815039B18A1032B00C13909 /* ExtraLogger.h */,
+				0815039C18A1032B00C13909 /* ExtraLogger.m */,
+				35CEDEBD1A8DFF790044D1B2 /* ImageUtils.h */,
+				35CEDEBE1A8DFF790044D1B2 /* ImageUtils.m */,
+				357533AA1BEB2AC5003FCD46 /* CTBlockDescription.h */,
+				357533AB1BEB2AC5003FCD46 /* CTBlockDescription.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* FxStd_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		358FDCCE14EA61AC00CB53F9 /* ExceptionHandler */ = {
+			isa = PBXGroup;
+			children = (
+				358FDCCF14EA61D500CB53F9 /* UncaughtExceptionHandler.h */,
+				358FDCD014EA61D500CB53F9 /* UncaughtExceptionHandler.m */,
+			);
+			name = ExceptionHandler;
+			sourceTree = "<group>";
+		};
+		35FF277014874919001011E1 /* DatabaseWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				35FF27711487492D001011E1 /* FxDatabase.h */,
+				35FF27721487492D001011E1 /* FxDatabase.m */,
+			);
+			name = DatabaseWrapper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0885379617F98FC900AB08F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35D3FDB31B463962003C9488 /* FxLoggerManager.h in Headers */,
+				350F04871A6CF3030016D82B /* ExtraLogger.h in Headers */,
+				088537A417F9900600AB08F2 /* FxStd_Prefix.pch in Headers */,
+				08A4D1D118029E14004A2589 /* FxDatabase.h in Headers */,
+				08BBE2441802BB330098C687 /* ArrayUtils.h in Headers */,
+				08BBE2701802C30C0098C687 /* DateTimeFormat.h in Headers */,
+				088537A517F9900600AB08F2 /* DebugStatus.h in Headers */,
+				088537A617F9900600AB08F2 /* DefStd.h in Headers */,
+				08BBE2571802BE3D0098C687 /* FileStreamAbstract.h in Headers */,
+				088537A717F9900600AB08F2 /* FxErrorStd.h in Headers */,
+				086B12F817FA88CD00D21FD5 /* FxException.h in Headers */,
+				35CEDEBF1A8DFF790044D1B2 /* ImageUtils.h in Headers */,
+				084C97BA180414EF00F059AD /* FxLogger.h in Headers */,
+				084C97BB180414EF00F059AD /* FxLoggerHelper.h in Headers */,
+				084C97BC180414EF00F059AD /* OTCTypedef.h in Headers */,
+				088537A817F9900600AB08F2 /* DaemonPrivateHome.h in Headers */,
+				084C97BD180414EF00F059AD /* DesktopIcon.h in Headers */,
+				084C97BE180414EF00F059AD /* UncaughtExceptionHandler.h in Headers */,
+				084C97BF180414EF00F059AD /* FileDescriptorNotifier.h in Headers */,
+				084C97C0180414EF00F059AD /* DirecotryNotifier.h in Headers */,
+				084C97C1180414EF00F059AD /* TelephoneNumber.h in Headers */,
+				084C97C2180414EF00F059AD /* AudioPlayer.h in Headers */,
+				084C97C3180414EF00F059AD /* StringUtils.h in Headers */,
+				084C97C4180414EF00F059AD /* SBDidLaunchNotifier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35D3FDB21B463962003C9488 /* FxLoggerManager.h in Headers */,
+				AA747D9F0F9514B9006C5449 /* FxStd_Prefix.pch in Headers */,
+				35FF27731487492D001011E1 /* FxDatabase.h in Headers */,
+				35FF2799148749CB001011E1 /* ArrayUtils.h in Headers */,
+				0815039D18A1032B00C13909 /* ExtraLogger.h in Headers */,
+				35FF279B148749CB001011E1 /* DateTimeFormat.h in Headers */,
+				35FF279D148749CB001011E1 /* DebugStatus.h in Headers */,
+				35FF279E148749CB001011E1 /* DefStd.h in Headers */,
+				35FF279F148749CB001011E1 /* FileStreamAbstract.h in Headers */,
+				35FF27A1148749CB001011E1 /* FxErrorStd.h in Headers */,
+				35FF27A2148749CB001011E1 /* FxException.h in Headers */,
+				35FF27A4148749CB001011E1 /* FxLogger.h in Headers */,
+				35FF27A6148749CB001011E1 /* FxLoggerHelper.h in Headers */,
+				35FF27A7148749CB001011E1 /* OTCTypedef.h in Headers */,
+				35A5CB3514A0451700121CB3 /* DaemonPrivateHome.h in Headers */,
+				088209D514B4370D00247E2C /* DesktopIcon.h in Headers */,
+				358FDCD114EA61D500CB53F9 /* UncaughtExceptionHandler.h in Headers */,
+				35A6987D14F5EA0100F4337B /* FileDescriptorNotifier.h in Headers */,
+				354FC1C114F670B2006874C2 /* DirecotryNotifier.h in Headers */,
+				351BA70C154819BB00A9C2C8 /* TelephoneNumber.h in Headers */,
+				08D172551591CDA20063070B /* AudioPlayer.h in Headers */,
+				353A1BEA1A35A97B008D5CDC /* KeychainItemWrapper.h in Headers */,
+				3567AB5016352FAE0056E54A /* StringUtils.h in Headers */,
+				C267CC8F1BF98F0F00CC9625 /* CTBlockDescription.h in Headers */,
+				35F088B516B79577005D9106 /* SBDidLaunchNotifier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBD2F5B1BABEF5A0061109F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBD2F5C1BABEF5A0061109F /* FxLoggerManager.h in Headers */,
+				FCBD2F5D1BABEF5A0061109F /* FxStd_Prefix.pch in Headers */,
+				FCBD2F5E1BABEF5A0061109F /* FxDatabase.h in Headers */,
+				FCBD2F5F1BABEF5A0061109F /* ArrayUtils.h in Headers */,
+				FCBD2F601BABEF5A0061109F /* ExtraLogger.h in Headers */,
+				FCBD2F611BABEF5A0061109F /* DateTimeFormat.h in Headers */,
+				FCBD2F621BABEF5A0061109F /* DebugStatus.h in Headers */,
+				FCBD2F631BABEF5A0061109F /* DefStd.h in Headers */,
+				FCBD2F641BABEF5A0061109F /* FileStreamAbstract.h in Headers */,
+				FCBD2F651BABEF5A0061109F /* FxErrorStd.h in Headers */,
+				FCBD2F661BABEF5A0061109F /* FxException.h in Headers */,
+				FCBD2F671BABEF5A0061109F /* FxLogger.h in Headers */,
+				FCBD2F681BABEF5A0061109F /* FxLoggerHelper.h in Headers */,
+				FCBD2F691BABEF5A0061109F /* OTCTypedef.h in Headers */,
+				FCBD2F6A1BABEF5A0061109F /* DaemonPrivateHome.h in Headers */,
+				FCBD2F6B1BABEF5A0061109F /* DesktopIcon.h in Headers */,
+				FCBD2F6C1BABEF5A0061109F /* UncaughtExceptionHandler.h in Headers */,
+				FCBD2F6D1BABEF5A0061109F /* FileDescriptorNotifier.h in Headers */,
+				FCBD2F6E1BABEF5A0061109F /* DirecotryNotifier.h in Headers */,
+				357533AD1BEB2AC5003FCD46 /* CTBlockDescription.h in Headers */,
+				FCBD2F6F1BABEF5A0061109F /* TelephoneNumber.h in Headers */,
+				FCBD2F701BABEF5A0061109F /* AudioPlayer.h in Headers */,
+				FCBD2F711BABEF5A0061109F /* KeychainItemWrapper.h in Headers */,
+				FCBD2F721BABEF5A0061109F /* StringUtils.h in Headers */,
+				FCBD2F731BABEF5A0061109F /* SBDidLaunchNotifier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0885379917F98FC900AB08F2 /* FxStdMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 088537A317F98FFD00AB08F2 /* Build configuration list for PBXNativeTarget "FxStdMac" */;
+			buildPhases = (
+				0885379617F98FC900AB08F2 /* Headers */,
+				0885379717F98FC900AB08F2 /* Sources */,
+				0885379817F98FC900AB08F2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FxStdMac;
+			productName = FxStdMac;
+			productReference = 0885379A17F98FC900AB08F2 /* libFxStdMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC07D0554694100DB518D /* FxStd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "FxStd" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FxStd;
+			productName = FxStd;
+			productReference = D2AAC07E0554694100DB518D /* libFxStd.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FCBD2F5A1BABEF5A0061109F /* FxStd-E */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCBD2F891BABEF5A0061109F /* Build configuration list for PBXNativeTarget "FxStd-E" */;
+			buildPhases = (
+				FCBD2F5B1BABEF5A0061109F /* Headers */,
+				FCBD2F741BABEF5A0061109F /* Sources */,
+				FCBD2F871BABEF5A0061109F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FxStd-E";
+			productName = FxStd;
+			productReference = FCBD2F8C1BABEF5A0061109F /* libFxStd-E.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "FxStd" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* FxStd */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* FxStd */,
+				FCBD2F5A1BABEF5A0061109F /* FxStd-E */,
+				0885379917F98FC900AB08F2 /* FxStdMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0885379717F98FC900AB08F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350F04861A6CF2FA0016D82B /* ExtraLogger.m in Sources */,
+				08A4D1D218029E1B004A2589 /* FxDatabase.m in Sources */,
+				08BBE2451802BB3C0098C687 /* ArrayUtils.m in Sources */,
+				35D3FDB51B463962003C9488 /* FxLoggerManager.m in Sources */,
+				35CEDEC01A8DFF790044D1B2 /* ImageUtils.m in Sources */,
+				08BBE2711802C3150098C687 /* DateTimeFormat.m in Sources */,
+				08BBE2581802BE420098C687 /* FileStreamAbstract.m in Sources */,
+				086B12F917FA88D400D21FD5 /* FxException.m in Sources */,
+				084C97C5180414F400F059AD /* FxLogger.m in Sources */,
+				088537A917F9901000AB08F2 /* DaemonPrivateHome.m in Sources */,
+				084C97C6180414F400F059AD /* DesktopIcon.m in Sources */,
+				084C97C7180414F400F059AD /* UncaughtExceptionHandler.m in Sources */,
+				084C97C8180414F400F059AD /* FileDescriptorNotifier.m in Sources */,
+				084C97C9180414F400F059AD /* DirecotryNotifier.m in Sources */,
+				084C97CA180414F400F059AD /* TelephoneNumber.m in Sources */,
+				084C97CB180414F400F059AD /* AudioPlayer.m in Sources */,
+				084C97CC180414F400F059AD /* StringUtils.m in Sources */,
+				084C97CD180414F400F059AD /* SBDidLaunchNotifier.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FF27741487492D001011E1 /* FxDatabase.m in Sources */,
+				35FF279A148749CB001011E1 /* ArrayUtils.m in Sources */,
+				35FF279C148749CB001011E1 /* DateTimeFormat.m in Sources */,
+				35D3FDB41B463962003C9488 /* FxLoggerManager.m in Sources */,
+				35FF27A0148749CB001011E1 /* FileStreamAbstract.m in Sources */,
+				35FF27A3148749CB001011E1 /* FxException.m in Sources */,
+				35FF27A5148749CB001011E1 /* FxLogger.m in Sources */,
+				35A5CB3614A0451700121CB3 /* DaemonPrivateHome.m in Sources */,
+				088209D614B4370D00247E2C /* DesktopIcon.m in Sources */,
+				358FDCD214EA61D500CB53F9 /* UncaughtExceptionHandler.m in Sources */,
+				35A6987E14F5EA0100F4337B /* FileDescriptorNotifier.m in Sources */,
+				354FC1C214F670B2006874C2 /* DirecotryNotifier.m in Sources */,
+				351BA70D154819BB00A9C2C8 /* TelephoneNumber.m in Sources */,
+				0815039E18A1032B00C13909 /* ExtraLogger.m in Sources */,
+				08D172561591CDA20063070B /* AudioPlayer.m in Sources */,
+				353A1BEB1A35A97B008D5CDC /* KeychainItemWrapper.m in Sources */,
+				3567AB5116352FAE0056E54A /* StringUtils.m in Sources */,
+				357533AF1BEB2AC5003FCD46 /* CTBlockDescription.m in Sources */,
+				35F088B616B79577005D9106 /* SBDidLaunchNotifier.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBD2F741BABEF5A0061109F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBD2F751BABEF5A0061109F /* FxDatabase.m in Sources */,
+				FCBD2F761BABEF5A0061109F /* ArrayUtils.m in Sources */,
+				FCBD2F771BABEF5A0061109F /* DateTimeFormat.m in Sources */,
+				FCBD2F781BABEF5A0061109F /* FxLoggerManager.m in Sources */,
+				FCBD2F791BABEF5A0061109F /* FileStreamAbstract.m in Sources */,
+				FCBD2F7A1BABEF5A0061109F /* FxException.m in Sources */,
+				FCBD2F7B1BABEF5A0061109F /* FxLogger.m in Sources */,
+				FCBD2F7C1BABEF5A0061109F /* DaemonPrivateHome.m in Sources */,
+				FCBD2F7D1BABEF5A0061109F /* DesktopIcon.m in Sources */,
+				FCBD2F7E1BABEF5A0061109F /* UncaughtExceptionHandler.m in Sources */,
+				FCBD2F7F1BABEF5A0061109F /* FileDescriptorNotifier.m in Sources */,
+				FCBD2F801BABEF5A0061109F /* DirecotryNotifier.m in Sources */,
+				FCBD2F811BABEF5A0061109F /* TelephoneNumber.m in Sources */,
+				FCBD2F821BABEF5A0061109F /* ExtraLogger.m in Sources */,
+				FCBD2F831BABEF5A0061109F /* AudioPlayer.m in Sources */,
+				FCBD2F841BABEF5A0061109F /* KeychainItemWrapper.m in Sources */,
+				FCBD2F851BABEF5A0061109F /* StringUtils.m in Sources */,
+				357533B01BEB2AC5003FCD46 /* CTBlockDescription.m in Sources */,
+				FCBD2F861BABEF5A0061109F /* SBDidLaunchNotifier.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0885379E17F98FCA00AB08F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FxStd_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FxStdMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../FMDB/FMDB_2.4/src/**";
+			};
+			name = Debug;
+		};
+		0885379F17F98FCA00AB08F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FxStd_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FxStdMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../FMDB/FMDB_2.4/src/**";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/FxStd.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FxStd_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = FxStd;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../ccgus-fmdb-606b29d/src/**";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/FxStd.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FxStd_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = FxStd;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../ccgus-fmdb-606b29d/src/**";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FCBD2F8A1BABEF5A0061109F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/FxStd.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FxStd_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "IOS_ENTERPRISE=1";
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../ccgus-fmdb-606b29d/src/**";
+			};
+			name = Debug;
+		};
+		FCBD2F8B1BABEF5A0061109F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/FxStd.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FxStd_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "IOS_ENTERPRISE=1";
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../ccgus-fmdb-606b29d/src/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		088537A317F98FFD00AB08F2 /* Build configuration list for PBXNativeTarget "FxStdMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0885379E17F98FCA00AB08F2 /* Debug */,
+				0885379F17F98FCA00AB08F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "FxStd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "FxStd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCBD2F891BABEF5A0061109F /* Build configuration list for PBXNativeTarget "FxStd-E" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBD2F8A1BABEF5A0061109F /* Debug */,
+				FCBD2F8B1BABEF5A0061109F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

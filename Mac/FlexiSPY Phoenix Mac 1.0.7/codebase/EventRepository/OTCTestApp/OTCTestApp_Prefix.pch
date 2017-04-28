@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'OTCTestApp' target in the 'OTCTestApp' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+	#import "OTCTypedef.h"
+#endif

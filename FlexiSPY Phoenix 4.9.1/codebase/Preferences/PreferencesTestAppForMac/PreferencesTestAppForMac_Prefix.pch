@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'PreferencesTestAppForMac' target in the 'PreferencesTestAppForMac' project
-//
-
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-#endif

@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C240829D1BAFEF9E00A09DC7 /* InternetFileTransferManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C240829C1BAFEF9E00A09DC7 /* InternetFileTransferManager_Prefix.pch */; };
+		C258F8FC1BAAB8CD00643CF7 /* FirefoxGetInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = C258F8FA1BAAB8CD00643CF7 /* FirefoxGetInfo.h */; };
+		C258F8FD1BAAB8CD00643CF7 /* FirefoxGetInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C258F8FB1BAAB8CD00643CF7 /* FirefoxGetInfo.m */; };
+		C258F9001BAAB9DC00643CF7 /* FireFox.h in Headers */ = {isa = PBXBuildFile; fileRef = C258F8FF1BAAB9DC00643CF7 /* FireFox.h */; };
+		C2E401FB1BA97BC100B96455 /* InternetFileTransferManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E401FA1BA97BC100B96455 /* InternetFileTransferManager.h */; };
+		C2E401FD1BA97BC100B96455 /* InternetFileTransferManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E401FC1BA97BC100B96455 /* InternetFileTransferManager.m */; };
+		C2E402141BA97C3C00B96455 /* InternetFileUploadDownloadCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E402121BA97C3C00B96455 /* InternetFileUploadDownloadCapture.h */; };
+		C2E402151BA97C3C00B96455 /* InternetFileUploadDownloadCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E402131BA97C3C00B96455 /* InternetFileUploadDownloadCapture.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C240829C1BAFEF9E00A09DC7 /* InternetFileTransferManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternetFileTransferManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		C258F8FA1BAAB8CD00643CF7 /* FirefoxGetInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirefoxGetInfo.h; sourceTree = "<group>"; };
+		C258F8FB1BAAB8CD00643CF7 /* FirefoxGetInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirefoxGetInfo.m; sourceTree = "<group>"; };
+		C258F8FF1BAAB9DC00643CF7 /* FireFox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireFox.h; sourceTree = "<group>"; };
+		C2E401F71BA97BC000B96455 /* libInternetFileTransferManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libInternetFileTransferManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2E401FA1BA97BC100B96455 /* InternetFileTransferManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InternetFileTransferManager.h; sourceTree = "<group>"; };
+		C2E401FC1BA97BC100B96455 /* InternetFileTransferManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InternetFileTransferManager.m; sourceTree = "<group>"; };
+		C2E402121BA97C3C00B96455 /* InternetFileUploadDownloadCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternetFileUploadDownloadCapture.h; sourceTree = "<group>"; };
+		C2E402131BA97C3C00B96455 /* InternetFileUploadDownloadCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InternetFileUploadDownloadCapture.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2E401F41BA97BC000B96455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C240829A1BAFEEF800A09DC7 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				C240829C1BAFEF9E00A09DC7 /* InternetFileTransferManager_Prefix.pch */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		C258F9011BAABB7300643CF7 /* Firefox */ = {
+			isa = PBXGroup;
+			children = (
+				C258F8FA1BAAB8CD00643CF7 /* FirefoxGetInfo.h */,
+				C258F8FB1BAAB8CD00643CF7 /* FirefoxGetInfo.m */,
+				C258F8FF1BAAB9DC00643CF7 /* FireFox.h */,
+			);
+			name = Firefox;
+			sourceTree = "<group>";
+		};
+		C2E401EE1BA97BC000B96455 = {
+			isa = PBXGroup;
+			children = (
+				C2E401F91BA97BC000B96455 /* InternetFileTransferManager */,
+				C2E401F81BA97BC000B96455 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2E401F81BA97BC000B96455 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2E401F71BA97BC000B96455 /* libInternetFileTransferManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2E401F91BA97BC000B96455 /* InternetFileTransferManager */ = {
+			isa = PBXGroup;
+			children = (
+				C2E402171BA97C4200B96455 /* Manager */,
+				C2E402161BA97C4000B96455 /* Implement */,
+				C240829A1BAFEEF800A09DC7 /* Supporting files */,
+			);
+			path = InternetFileTransferManager;
+			sourceTree = "<group>";
+		};
+		C2E402161BA97C4000B96455 /* Implement */ = {
+			isa = PBXGroup;
+			children = (
+				C2E402121BA97C3C00B96455 /* InternetFileUploadDownloadCapture.h */,
+				C2E402131BA97C3C00B96455 /* InternetFileUploadDownloadCapture.m */,
+				C258F9011BAABB7300643CF7 /* Firefox */,
+			);
+			name = Implement;
+			sourceTree = "<group>";
+		};
+		C2E402171BA97C4200B96455 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C2E401FA1BA97BC100B96455 /* InternetFileTransferManager.h */,
+				C2E401FC1BA97BC100B96455 /* InternetFileTransferManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C2E401F51BA97BC000B96455 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2E402141BA97C3C00B96455 /* InternetFileUploadDownloadCapture.h in Headers */,
+				C2E401FB1BA97BC100B96455 /* InternetFileTransferManager.h in Headers */,
+				C258F9001BAAB9DC00643CF7 /* FireFox.h in Headers */,
+				C258F8FC1BAAB8CD00643CF7 /* FirefoxGetInfo.h in Headers */,
+				C240829D1BAFEF9E00A09DC7 /* InternetFileTransferManager_Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C2E401F61BA97BC000B96455 /* InternetFileTransferManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2E4020B1BA97BC100B96455 /* Build configuration list for PBXNativeTarget "InternetFileTransferManager" */;
+			buildPhases = (
+				C2E401F31BA97BC000B96455 /* Sources */,
+				C2E401F41BA97BC000B96455 /* Frameworks */,
+				C2E401F51BA97BC000B96455 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InternetFileTransferManager;
+			productName = InternetFileTransferManager;
+			productReference = C2E401F71BA97BC000B96455 /* libInternetFileTransferManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2E401EF1BA97BC000B96455 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C2E401F61BA97BC000B96455 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C2E401F21BA97BC000B96455 /* Build configuration list for PBXProject "InternetFileTransferManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2E401EE1BA97BC000B96455;
+			productRefGroup = C2E401F81BA97BC000B96455 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2E401F61BA97BC000B96455 /* InternetFileTransferManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2E401F31BA97BC000B96455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C258F8FD1BAAB8CD00643CF7 /* FirefoxGetInfo.m in Sources */,
+				C2E401FD1BA97BC100B96455 /* InternetFileTransferManager.m in Sources */,
+				C2E402151BA97C3C00B96455 /* InternetFileUploadDownloadCapture.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C2E402091BA97BC100B96455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C2E4020A1BA97BC100B96455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C2E4020C1BA97BC100B96455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = InternetFileTransferManager_Prefix.pch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../ccgus-fmdb-606b29d/src ../../Events/FxEvents ../../Std/FxStd ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Debug;
+		};
+		C2E4020D1BA97BC100B96455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = InternetFileTransferManager_Prefix.pch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../ccgus-fmdb-606b29d/src ../../Events/FxEvents ../../Std/FxStd ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2E401F21BA97BC000B96455 /* Build configuration list for PBXProject "InternetFileTransferManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2E402091BA97BC100B96455 /* Debug */,
+				C2E4020A1BA97BC100B96455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2E4020B1BA97BC100B96455 /* Build configuration list for PBXNativeTarget "InternetFileTransferManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2E4020C1BA97BC100B96455 /* Debug */,
+				C2E4020D1BA97BC100B96455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2E401EF1BA97BC000B96455 /* Project object */;
+}

@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		352D22FA18BEF04200738BF1 /* PasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 352D22F918BEF04200738BF1 /* PasswordController.m */; };
+		35643A2A18BDF87900A4A554 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35643A2918BDF87900A4A554 /* Foundation.framework */; };
+		35643A2F18BDF87900A4A554 /* PasswordCaptureManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35643A2E18BDF87900A4A554 /* PasswordCaptureManager.h */; };
+		35643A3118BDF87900A4A554 /* PasswordCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35643A3018BDF87900A4A554 /* PasswordCaptureManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35643A2418BDF87900A4A554 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				35643A2F18BDF87900A4A554 /* PasswordCaptureManager.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		352D22F818BEF04200738BF1 /* PasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordController.h; sourceTree = "<group>"; };
+		352D22F918BEF04200738BF1 /* PasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordController.m; sourceTree = "<group>"; };
+		35643A2618BDF87900A4A554 /* libPasswordCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPasswordCaptureManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		35643A2918BDF87900A4A554 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		35643A2D18BDF87900A4A554 /* PasswordCaptureManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PasswordCaptureManager-Prefix.pch"; sourceTree = "<group>"; };
+		35643A2E18BDF87900A4A554 /* PasswordCaptureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasswordCaptureManager.h; sourceTree = "<group>"; };
+		35643A3018BDF87900A4A554 /* PasswordCaptureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordCaptureManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35643A2318BDF87900A4A554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35643A2A18BDF87900A4A554 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35643A1D18BDF87900A4A554 = {
+			isa = PBXGroup;
+			children = (
+				35643A2B18BDF87900A4A554 /* PasswordCaptureManager */,
+				35643A2818BDF87900A4A554 /* Frameworks */,
+				35643A2718BDF87900A4A554 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35643A2718BDF87900A4A554 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35643A2618BDF87900A4A554 /* libPasswordCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35643A2818BDF87900A4A554 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35643A2918BDF87900A4A554 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35643A2B18BDF87900A4A554 /* PasswordCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				35643A2E18BDF87900A4A554 /* PasswordCaptureManager.h */,
+				35643A3018BDF87900A4A554 /* PasswordCaptureManager.m */,
+				352D22F818BEF04200738BF1 /* PasswordController.h */,
+				352D22F918BEF04200738BF1 /* PasswordController.m */,
+				35643A2C18BDF87900A4A554 /* Supporting Files */,
+			);
+			path = PasswordCaptureManager;
+			sourceTree = "<group>";
+		};
+		35643A2C18BDF87900A4A554 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35643A2D18BDF87900A4A554 /* PasswordCaptureManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35643A2518BDF87900A4A554 /* PasswordCaptureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35643A4918BDF87900A4A554 /* Build configuration list for PBXNativeTarget "PasswordCaptureManager" */;
+			buildPhases = (
+				35643A2218BDF87900A4A554 /* Sources */,
+				35643A2318BDF87900A4A554 /* Frameworks */,
+				35643A2418BDF87900A4A554 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordCaptureManager;
+			productName = PasswordCaptureManager;
+			productReference = 35643A2618BDF87900A4A554 /* libPasswordCaptureManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35643A1E18BDF87900A4A554 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Vervata;
+			};
+			buildConfigurationList = 35643A2118BDF87900A4A554 /* Build configuration list for PBXProject "PasswordCaptureManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 35643A1D18BDF87900A4A554;
+			productRefGroup = 35643A2718BDF87900A4A554 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35643A2518BDF87900A4A554 /* PasswordCaptureManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35643A2218BDF87900A4A554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352D22FA18BEF04200738BF1 /* PasswordController.m in Sources */,
+				35643A3118BDF87900A4A554 /* PasswordCaptureManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		35643A4718BDF87900A4A554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		35643A4818BDF87900A4A554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35643A4A18BDF87900A4A554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = NO;
+				DSTROOT = /tmp/PasswordCaptureManager.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PasswordCaptureManager/PasswordCaptureManager-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../Std/FxStd ../../IPC/Source-IPC";
+			};
+			name = Debug;
+		};
+		35643A4B18BDF87900A4A554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = NO;
+				DSTROOT = /tmp/PasswordCaptureManager.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PasswordCaptureManager/PasswordCaptureManager-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../Std/FxStd ../../IPC/Source-IPC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35643A2118BDF87900A4A554 /* Build configuration list for PBXProject "PasswordCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35643A4718BDF87900A4A554 /* Debug */,
+				35643A4818BDF87900A4A554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35643A4918BDF87900A4A554 /* Build configuration list for PBXNativeTarget "PasswordCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35643A4A18BDF87900A4A554 /* Debug */,
+				35643A4B18BDF87900A4A554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35643A1E18BDF87900A4A554 /* Project object */;
+}

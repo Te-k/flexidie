@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F3EC39316299AE500940431 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3EC39216299AE500940431 /* Foundation.framework */; };
+		5F3EC39616299AE500940431 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3EC39516299AE500940431 /* main.m */; };
+		5F3EC39A16299AE500940431 /* CleanserTester.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F3EC39916299AE500940431 /* CleanserTester.1 */; };
+		5F3EC3A216299B1800940431 /* CleanserTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3EC3A116299B1800940431 /* CleanserTester.m */; };
+		5F3EC3A716299B2900940431 /* NSData-AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3EC3A416299B2900940431 /* NSData-AES.m */; };
+		5F3EC3A816299B2A00940431 /* NSString+FormatWithNSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3EC3A616299B2900940431 /* NSString+FormatWithNSArray.m */; };
+		5F96BE95162AC8B0006F58BA /* cleanser1.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F96BE8B162AC8B0006F58BA /* cleanser1.c */; };
+		5F96BE96162AC8B0006F58BA /* cleanser2.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F96BE8D162AC8B0006F58BA /* cleanser2.c */; };
+		5F96BE97162AC8B0006F58BA /* cleanser3.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F96BE8F162AC8B0006F58BA /* cleanser3.c */; };
+		5F96BE98162AC8B0006F58BA /* cleanser4.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F96BE91162AC8B0006F58BA /* cleanser4.c */; };
+		5F96BE99162AC8B0006F58BA /* cleanser5.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F96BE93162AC8B0006F58BA /* cleanser5.c */; };
+		5F9A8348162FC60700EC87DB /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9A8347162FC60700EC87DB /* RegexKitLite.m */; };
+		5F9A834C162FCA1200EC87DB /* CleanserRegexTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9A834B162FCA1200EC87DB /* CleanserRegexTester.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F3EC38C16299AE500940431 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				5F3EC39A16299AE500940431 /* CleanserTester.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F3EC38E16299AE500940431 /* CleanserTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CleanserTester; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3EC39216299AE500940431 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5F3EC39516299AE500940431 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F3EC39816299AE500940431 /* CleanserTester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CleanserTester-Prefix.pch"; sourceTree = "<group>"; };
+		5F3EC39916299AE500940431 /* CleanserTester.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CleanserTester.1; sourceTree = "<group>"; };
+		5F3EC3A016299B1800940431 /* CleanserTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CleanserTester.h; sourceTree = "<group>"; };
+		5F3EC3A116299B1800940431 /* CleanserTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CleanserTester.m; sourceTree = "<group>"; };
+		5F3EC3A316299B2900940431 /* NSData-AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData-AES.h"; sourceTree = "<group>"; };
+		5F3EC3A416299B2900940431 /* NSData-AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData-AES.m"; sourceTree = "<group>"; };
+		5F3EC3A516299B2900940431 /* NSString+FormatWithNSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FormatWithNSArray.h"; sourceTree = "<group>"; };
+		5F3EC3A616299B2900940431 /* NSString+FormatWithNSArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FormatWithNSArray.m"; sourceTree = "<group>"; };
+		5F96BE8B162AC8B0006F58BA /* cleanser1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser1.c; sourceTree = "<group>"; };
+		5F96BE8C162AC8B0006F58BA /* cleanser1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser1.h; sourceTree = "<group>"; };
+		5F96BE8D162AC8B0006F58BA /* cleanser2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser2.c; sourceTree = "<group>"; };
+		5F96BE8E162AC8B0006F58BA /* cleanser2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser2.h; sourceTree = "<group>"; };
+		5F96BE8F162AC8B0006F58BA /* cleanser3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser3.c; sourceTree = "<group>"; };
+		5F96BE90162AC8B0006F58BA /* cleanser3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser3.h; sourceTree = "<group>"; };
+		5F96BE91162AC8B0006F58BA /* cleanser4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser4.c; sourceTree = "<group>"; };
+		5F96BE92162AC8B0006F58BA /* cleanser4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser4.h; sourceTree = "<group>"; };
+		5F96BE93162AC8B0006F58BA /* cleanser5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cleanser5.c; sourceTree = "<group>"; };
+		5F96BE94162AC8B0006F58BA /* cleanser5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleanser5.h; sourceTree = "<group>"; };
+		5F9A8346162FC60700EC87DB /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		5F9A8347162FC60700EC87DB /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		5F9A834A162FCA1200EC87DB /* CleanserRegexTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CleanserRegexTester.h; sourceTree = "<group>"; };
+		5F9A834B162FCA1200EC87DB /* CleanserRegexTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CleanserRegexTester.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F3EC38B16299AE500940431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3EC39316299AE500940431 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F3EC38316299AE500940431 = {
+			isa = PBXGroup;
+			children = (
+				5F3EC39416299AE500940431 /* CleanserTester */,
+				5F3EC39116299AE500940431 /* Frameworks */,
+				5F3EC38F16299AE500940431 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F3EC38F16299AE500940431 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F3EC38E16299AE500940431 /* CleanserTester */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F3EC39116299AE500940431 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F3EC39216299AE500940431 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F3EC39416299AE500940431 /* CleanserTester */ = {
+			isa = PBXGroup;
+			children = (
+				5F3EC39516299AE500940431 /* main.m */,
+				5F3EC39916299AE500940431 /* CleanserTester.1 */,
+				5F3EC39716299AE500940431 /* Supporting Files */,
+				5F3EC3A016299B1800940431 /* CleanserTester.h */,
+				5F3EC3A116299B1800940431 /* CleanserTester.m */,
+				5F3EC3A316299B2900940431 /* NSData-AES.h */,
+				5F3EC3A416299B2900940431 /* NSData-AES.m */,
+				5F96BE8B162AC8B0006F58BA /* cleanser1.c */,
+				5F96BE8C162AC8B0006F58BA /* cleanser1.h */,
+				5F96BE8D162AC8B0006F58BA /* cleanser2.c */,
+				5F96BE8E162AC8B0006F58BA /* cleanser2.h */,
+				5F96BE8F162AC8B0006F58BA /* cleanser3.c */,
+				5F96BE90162AC8B0006F58BA /* cleanser3.h */,
+				5F96BE91162AC8B0006F58BA /* cleanser4.c */,
+				5F96BE92162AC8B0006F58BA /* cleanser4.h */,
+				5F96BE93162AC8B0006F58BA /* cleanser5.c */,
+				5F96BE94162AC8B0006F58BA /* cleanser5.h */,
+				5F3EC3A516299B2900940431 /* NSString+FormatWithNSArray.h */,
+				5F3EC3A616299B2900940431 /* NSString+FormatWithNSArray.m */,
+				5F9A8346162FC60700EC87DB /* RegexKitLite.h */,
+				5F9A8347162FC60700EC87DB /* RegexKitLite.m */,
+				5F9A834A162FCA1200EC87DB /* CleanserRegexTester.h */,
+				5F9A834B162FCA1200EC87DB /* CleanserRegexTester.m */,
+			);
+			path = CleanserTester;
+			sourceTree = "<group>";
+		};
+		5F3EC39716299AE500940431 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F3EC39816299AE500940431 /* CleanserTester-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F3EC38D16299AE500940431 /* CleanserTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F3EC39D16299AE500940431 /* Build configuration list for PBXNativeTarget "CleanserTester" */;
+			buildPhases = (
+				5F96BEBB162AD178006F58BA /* ShellScript */,
+				5F3EC38A16299AE500940431 /* Sources */,
+				5F3EC38B16299AE500940431 /* Frameworks */,
+				5F3EC38C16299AE500940431 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CleanserTester;
+			productName = CleanserTester;
+			productReference = 5F3EC38E16299AE500940431 /* CleanserTester */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F3EC38516299AE500940431 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 5F3EC38816299AE500940431 /* Build configuration list for PBXProject "CleanserTester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5F3EC38316299AE500940431;
+			productRefGroup = 5F3EC38F16299AE500940431 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F3EC38D16299AE500940431 /* CleanserTester */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F96BEBB162AD178006F58BA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./UrlProtector http://www.google.com 5\n./CleanserTester1 http://www.google.com\ntesterExitStatus=$?\necho \"testerExitStatus=$testerExitStatus\"\nif [ $testerExitStatus -eq 1 ] ; then\n    exit 1\nfi \nmv cleanser1.h CleanserTester/cleanser1.h\nmv cleanser1.c CleanserTester/cleanser1.c\nmv cleanser2.h CleanserTester/cleanser2.h\nmv cleanser2.c CleanserTester/cleanser2.c\nmv cleanser3.h CleanserTester/cleanser3.h\nmv cleanser3.c CleanserTester/cleanser3.c\nmv cleanser4.h CleanserTester/cleanser4.h\nmv cleanser4.c CleanserTester/cleanser4.c\nmv cleanser5.h CleanserTester/cleanser5.h\nmv cleanser5.c CleanserTester/cleanser5.c\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F3EC38A16299AE500940431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3EC39616299AE500940431 /* main.m in Sources */,
+				5F3EC3A216299B1800940431 /* CleanserTester.m in Sources */,
+				5F3EC3A716299B2900940431 /* NSData-AES.m in Sources */,
+				5F3EC3A816299B2A00940431 /* NSString+FormatWithNSArray.m in Sources */,
+				5F96BE95162AC8B0006F58BA /* cleanser1.c in Sources */,
+				5F96BE96162AC8B0006F58BA /* cleanser2.c in Sources */,
+				5F96BE97162AC8B0006F58BA /* cleanser3.c in Sources */,
+				5F96BE98162AC8B0006F58BA /* cleanser4.c in Sources */,
+				5F96BE99162AC8B0006F58BA /* cleanser5.c in Sources */,
+				5F9A8348162FC60700EC87DB /* RegexKitLite.m in Sources */,
+				5F9A834C162FCA1200EC87DB /* CleanserRegexTester.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5F3EC39B16299AE500940431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5F3EC39C16299AE500940431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5F3EC39E16299AE500940431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CleanserTester/CleanserTester-Prefix.pch";
+				OTHER_LDFLAGS = "-licucore";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5F3EC39F16299AE500940431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CleanserTester/CleanserTester-Prefix.pch";
+				OTHER_LDFLAGS = "-licucore";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F3EC38816299AE500940431 /* Build configuration list for PBXProject "CleanserTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F3EC39B16299AE500940431 /* Debug */,
+				5F3EC39C16299AE500940431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F3EC39D16299AE500940431 /* Build configuration list for PBXNativeTarget "CleanserTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F3EC39E16299AE500940431 /* Debug */,
+				5F3EC39F16299AE500940431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F3EC38516299AE500940431 /* Project object */;
+}

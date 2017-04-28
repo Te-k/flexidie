@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		350D0C46177452A800CD473A /* SoftwareUpdateManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = C237525D176F1ADD00BA7111 /* SoftwareUpdateManagerImpl.m */; };
+		AA747D9F0F9514B9006C5449 /* SoftwareUpdateManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* SoftwareUpdateManager_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		C20009C71898F32100EB74B3 /* SoftwareUpdateManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* SoftwareUpdateManager_Prefix.pch */; };
+		C20009C81898F32100EB74B3 /* SoftwareUpdateManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = C237525C176F1ADD00BA7111 /* SoftwareUpdateManagerImpl.h */; };
+		C20009C91898F32100EB74B3 /* SoftwareUpdateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C237535F176F1B4800BA7111 /* SoftwareUpdateManager.h */; };
+		C20009CA1898F32100EB74B3 /* SoftwareUpdateDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C2375361176F1B8C00BA7111 /* SoftwareUpdateDelegate.h */; };
+		C20009CB1898F32100EB74B3 /* SoftwareInstaller.h in Headers */ = {isa = PBXBuildFile; fileRef = C2375373176F1CD500BA7111 /* SoftwareInstaller.h */; };
+		C20009CD1898F32100EB74B3 /* SoftwareInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = C2375374176F1CD500BA7111 /* SoftwareInstaller.m */; };
+		C20009CE1898F32100EB74B3 /* SoftwareUpdateManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = C237525D176F1ADD00BA7111 /* SoftwareUpdateManagerImpl.m */; };
+		C20009D01898F32100EB74B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		C237525E176F1ADD00BA7111 /* SoftwareUpdateManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = C237525C176F1ADD00BA7111 /* SoftwareUpdateManagerImpl.h */; };
+		C2375360176F1B4800BA7111 /* SoftwareUpdateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C237535F176F1B4800BA7111 /* SoftwareUpdateManager.h */; };
+		C2375362176F1B8C00BA7111 /* SoftwareUpdateDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C2375361176F1B8C00BA7111 /* SoftwareUpdateDelegate.h */; };
+		C2375375176F1CD500BA7111 /* SoftwareInstaller.h in Headers */ = {isa = PBXBuildFile; fileRef = C2375373176F1CD500BA7111 /* SoftwareInstaller.h */; };
+		C2375376176F1CD500BA7111 /* SoftwareInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = C2375374176F1CD500BA7111 /* SoftwareInstaller.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA747D9E0F9514B9006C5449 /* SoftwareUpdateManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftwareUpdateManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C20009D41898F32100EB74B3 /* libSoftwareUpdateManagerMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSoftwareUpdateManagerMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C237525C176F1ADD00BA7111 /* SoftwareUpdateManagerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftwareUpdateManagerImpl.h; sourceTree = "<group>"; };
+		C237525D176F1ADD00BA7111 /* SoftwareUpdateManagerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftwareUpdateManagerImpl.m; sourceTree = "<group>"; };
+		C237535F176F1B4800BA7111 /* SoftwareUpdateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftwareUpdateManager.h; sourceTree = "<group>"; };
+		C2375361176F1B8C00BA7111 /* SoftwareUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftwareUpdateDelegate.h; sourceTree = "<group>"; };
+		C2375373176F1CD500BA7111 /* SoftwareInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftwareInstaller.h; sourceTree = "<group>"; };
+		C2375374176F1CD500BA7111 /* SoftwareInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftwareInstaller.m; sourceTree = "<group>"; };
+		D2AAC07E0554694100DB518D /* libSoftwareUpdateManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSoftwareUpdateManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C20009CF1898F32100EB74B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20009D01898F32100EB74B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libSoftwareUpdateManager.a */,
+				C20009D41898F32100EB74B3 /* libSoftwareUpdateManagerMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* SoftwareUpdateManager */ = {
+			isa = PBXGroup;
+			children = (
+				C237535E176F1B2D00BA7111 /* Protocol */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = SoftwareUpdateManager;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C237525C176F1ADD00BA7111 /* SoftwareUpdateManagerImpl.h */,
+				C237525D176F1ADD00BA7111 /* SoftwareUpdateManagerImpl.m */,
+				C2375373176F1CD500BA7111 /* SoftwareInstaller.h */,
+				C2375374176F1CD500BA7111 /* SoftwareInstaller.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* SoftwareUpdateManager_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		C237535E176F1B2D00BA7111 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C237535F176F1B4800BA7111 /* SoftwareUpdateManager.h */,
+				C2375361176F1B8C00BA7111 /* SoftwareUpdateDelegate.h */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C20009C61898F32100EB74B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20009C71898F32100EB74B3 /* SoftwareUpdateManager_Prefix.pch in Headers */,
+				C20009C81898F32100EB74B3 /* SoftwareUpdateManagerImpl.h in Headers */,
+				C20009C91898F32100EB74B3 /* SoftwareUpdateManager.h in Headers */,
+				C20009CA1898F32100EB74B3 /* SoftwareUpdateDelegate.h in Headers */,
+				C20009CB1898F32100EB74B3 /* SoftwareInstaller.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* SoftwareUpdateManager_Prefix.pch in Headers */,
+				C237525E176F1ADD00BA7111 /* SoftwareUpdateManagerImpl.h in Headers */,
+				C2375360176F1B4800BA7111 /* SoftwareUpdateManager.h in Headers */,
+				C2375362176F1B8C00BA7111 /* SoftwareUpdateDelegate.h in Headers */,
+				C2375375176F1CD500BA7111 /* SoftwareInstaller.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C20009C51898F32100EB74B3 /* SoftwareUpdateManagerMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C20009D11898F32100EB74B3 /* Build configuration list for PBXNativeTarget "SoftwareUpdateManagerMac" */;
+			buildPhases = (
+				C20009C61898F32100EB74B3 /* Headers */,
+				C20009CC1898F32100EB74B3 /* Sources */,
+				C20009CF1898F32100EB74B3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoftwareUpdateManagerMac;
+			productName = SoftwareUpdateManager;
+			productReference = C20009D41898F32100EB74B3 /* libSoftwareUpdateManagerMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC07D0554694100DB518D /* SoftwareUpdateManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "SoftwareUpdateManager" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoftwareUpdateManager;
+			productName = SoftwareUpdateManager;
+			productReference = D2AAC07E0554694100DB518D /* libSoftwareUpdateManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "SoftwareUpdateManager" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* SoftwareUpdateManager */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* SoftwareUpdateManager */,
+				C20009C51898F32100EB74B3 /* SoftwareUpdateManagerMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C20009CC1898F32100EB74B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20009CD1898F32100EB74B3 /* SoftwareInstaller.m in Sources */,
+				C20009CE1898F32100EB74B3 /* SoftwareUpdateManagerImpl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2375376176F1CD500BA7111 /* SoftwareInstaller.m in Sources */,
+				350D0C46177452A800CD473A /* SoftwareUpdateManagerImpl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/SoftwareUpdateManager.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SoftwareUpdateManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = SoftwareUpdateManager;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../CRC32/Source-CRC32 ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/Command/** ../../DataDeliveryManager/DDM/** ../../DataDeliveryManager/DDM ../../Std/FxStd ../../IPC/Source-IPC";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/SoftwareUpdateManager.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SoftwareUpdateManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = SoftwareUpdateManager;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../CRC32/Source-CRC32/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/Command/** ../../DataDeliveryManager/DDM/** ../../DataDeliveryManager/DDM ../../Std/FxStd ../../IPC/Source-IPC";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+		C20009D21898F32100EB74B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/SoftwareUpdateManager.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SoftwareUpdateManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = SoftwareUpdateManagerMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../CRC32/Source-CRC32/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/Command/** ../../DataDeliveryManager/DDM/** ../../DataDeliveryManager/DDM ../../Std/FxStd ../../IPC/Source-IPC";
+			};
+			name = Debug;
+		};
+		C20009D31898F32100EB74B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DSTROOT = /tmp/SoftwareUpdateManager.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SoftwareUpdateManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = SoftwareUpdateManagerMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../CRC32/Source-CRC32/** ../../PhoenixEngine/Phoenix/ProtocolBuilder/Classes/Command/** ../../DataDeliveryManager/DDM/** ../../DataDeliveryManager/DDM ../../Std/FxStd ../../IPC/Source-IPC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "SoftwareUpdateManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "SoftwareUpdateManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C20009D11898F32100EB74B3 /* Build configuration list for PBXNativeTarget "SoftwareUpdateManagerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C20009D21898F32100EB74B3 /* Debug */,
+				C20009D31898F32100EB74B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

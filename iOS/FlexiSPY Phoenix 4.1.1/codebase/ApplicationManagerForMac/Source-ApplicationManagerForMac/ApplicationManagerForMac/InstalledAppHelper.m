@@ -1,0 +1,428 @@
+//
+//  InstalledAppHelper.m
+//  ApplicationManager
+//
+//  Created by Benjawan Tanarattanakorn on 7/11/12.
+//  Copyright 2012 __MyCompanyName__. All rights reserved.
+//
+
+
+
+#import "InstalledAppHelper.h"
+#import "InstalledApplication.h"
+#import "DateTimeFormat.h"
+#import "MediaTypeEnum.h"
+#import "SystemUtilsImpl.h"
+
+
+static NSString* const kApplicationExtension= @".app";
+
+
+@interface InstalledAppHelper (private)
+- (void)		refreshApplicationInformation;
+- (NSArray *)   getActualInstalledApplicationPathArray;
+
++ (NSArray *)   getApplicationPathsList;
++ (NSString *)  getApplicationsPath;
++ (NSString *)  getAppName: (NSDictionary *) aAppInfo;
++ (NSInteger)	getAppSize: (NSString *) aAppPath;
++ (NSString *)  getAppVersion: (NSDictionary *) aAppInfop;
++ (NSString *)	getInstalledDate: (NSString *) aAppPath;
++ (unsigned long long int)	folderSize: (NSString *) folderPath;
++ (NSString *)  getIconNameFromPlist: (NSDictionary *) aAppInfo;
++ (NSData *)	getIconImageData: (NSDictionary *) aAppInfo;
++ (NSData *)    getIconImageData: (NSDictionary *) aAppInfo 
+                         appPath: (NSString *) aAppPath;
++ (NSData *)scaleIcons:(NSImage *)aNSImage X:(float)aX Y:(float)aY;
++ (NSImage *)scaleImage:(NSImage *)image toSize:(NSSize)targetSize;
++ (NSString *)convertToByte:(double)value;
+    
++ (InstalledApplication *)	createInstalledApplicationObjectFromAppInfo: (NSDictionary *) aAppInfo 
+                                                               appPath: (NSString *) aAppPath;
+@end
+
+
+@implementation InstalledAppHelper
+
+
+@synthesize mInstalledAppCount;
+@synthesize mInstalledAppPathArray;
+
+
+
+- (id)init {
+    self = [super init];
+    if (self) {              
+    }
+    return self;
+}
+
+// Note that this method should be called first
+- (void) refreshApplicationInformation {
+	// -- setup installed app path
+	NSArray *appPathArray	= [self getActualInstalledApplicationPathArray];
+    
+    [self setMInstalledAppPathArray:appPathArray]; 
+    
+	// -- setup installed app count
+    if ([[self mInstalledAppPathArray] count])
+        [self setMInstalledAppCount:[[self mInstalledAppPathArray] count]];
+	
+	DLog(@"applicationPathsList %@", [self mInstalledAppPathArray])     
+	DLog(@"mInstalledAppCount %ld", NSINTEGER_DLOG([self mInstalledAppCount]))
+}
+
+- (NSInteger) getInstalledApplicationCount {
+    return mInstalledAppCount;
+}
+
+- (NSArray *) getActualInstalledApplicationPathArray {
+    NSMutableArray *mCheckArray = [[NSMutableArray alloc]init];
+    NSArray *applicationPathArray               = [InstalledAppHelper getApplicationPathsList];    
+    NSMutableArray *applicationPathOutputArray  = [NSMutableArray array];
+    DLog(@"applicationPathsList %@", applicationPathArray)     
+    
+    // -- Traverse each application Info.plist    
+	for (NSString* appPath in applicationPathArray) {              
+        // -- get Info.plist of each application
+        NSString *infoPlistPath                 = [appPath stringByAppendingPathComponent:@"Contents/Info.plist"];        		                       
+        NSMutableDictionary *plistContent       = [[NSMutableDictionary alloc] initWithContentsOfFile:infoPlistPath]; 
+        
+        // -- Ensure that the application has the aplication id as a mimimun information to create InstalledApplication object
+        if (plistContent && [plistContent objectForKey:@"CFBundleIdentifier"]) {   
+            if([mCheckArray containsObject:[NSString stringWithFormat:@"%@",[plistContent objectForKey:@"CFBundleIdentifier"]]]){
+                DLog(@"=============Duplicate %@ ============",[plistContent objectForKey:@"CFBundleIdentifier"]);
+            }else{
+                [mCheckArray addObject:[NSString stringWithFormat:@"%@",[plistContent objectForKey:@"CFBundleIdentifier"]]];
+                [applicationPathOutputArray addObject:appPath];     
+                DLog(@"=============addObject %@ ============",[plistContent objectForKey:@"CFBundleIdentifier"]);
+            }
+        } else {
+            DLog(@"No plist %@", infoPlistPath)
+        }        
+        [plistContent release];
+	}    
+
+    [mCheckArray release];
+    return [NSArray arrayWithArray:applicationPathOutputArray];
+}
+
+- (InstalledApplication *) getInstalledAppIndex: (NSInteger) aIndex {
+    NSString *appPath = [[self mInstalledAppPathArray] objectAtIndex:aIndex];
+        
+    InstalledApplication *installedApp = nil;
+    
+    // -- get Info.plist of each application
+    NSString *infoPlistPath             = [appPath stringByAppendingPathComponent:@"Contents/Info.plist"];  
+    NSMutableDictionary *plistContent   = [[NSMutableDictionary alloc] initWithContentsOfFile:infoPlistPath];        
+    
+    // -- Never found the case that plistContent doesn't exist because we ensure that it exists before it's added to mInstalledAppPathArray 
+    if (plistContent) {            
+        installedApp                    = [InstalledAppHelper createInstalledApplicationObjectFromAppInfo:plistContent appPath:appPath];
+    }
+    [plistContent release];
+    return installedApp;
+}
+
+// obsolete method
++ (NSArray *) createInstalledApplicationArray {	
+    DLog(@"***********************************************************");
+	DLog(@"                 Create installed application");
+    DLog(@"***********************************************************");
+    
+    NSArray *applicationPathsList       = [self getApplicationPathsList];    
+    DLog(@"applicationPathsList %@", applicationPathsList)     
+    
+    
+    NSMutableArray *applicationArray    = [NSMutableArray array];      // output array    
+
+    // -- Traverse each application Info.plist    
+	for (NSString* appPath in applicationPathsList) {        
+        DLog(@"-------------------------------")        
+        // -- get Info.plist of each application
+        NSString *infoPlistPath                 = [appPath stringByAppendingPathComponent:@"Contents/Info.plist"];        		                       
+        NSMutableDictionary *plistContent       = [[NSMutableDictionary alloc] initWithContentsOfFile:infoPlistPath];        
+        if (plistContent) {            
+            InstalledApplication *installedApp  = [InstalledAppHelper createInstalledApplicationObjectFromAppInfo:plistContent appPath:appPath];            
+			if ([installedApp mSize] != 0) {		// Ensure that the application exists
+                [applicationArray addObject:installedApp];
+			} else {
+				DLog (@"Application information retriving error")
+			}
+        } else {
+            DLog(@"No plist %@", infoPlistPath)
+        } 
+        [plistContent release];
+	}    
+	return [NSArray arrayWithArray:applicationArray];
+}
+
++ (InstalledApplication *)	createInstalledApplicationObjectFromAppInfo: (NSDictionary *) aAppInfo appPath: (NSString *) aAppPath {   
+    
+    InstalledApplication *installedApp  = [[InstalledApplication alloc] init];                          // Output object
+    
+    NSString *applicationName           = [InstalledAppHelper getAppName:aAppInfo];
+    
+    [installedApp setMID:[NSString stringWithFormat:@"%@",[aAppInfo objectForKey:@"CFBundleIdentifier"]]];  // -- 1) set id
+    [installedApp setMName:applicationName];                                                                // -- 2) set name
+    [installedApp setMVersion:[InstalledAppHelper getAppVersion:aAppInfo]];                                 // -- 3) set version
+    [installedApp setMSize:[InstalledAppHelper getAppSize: aAppPath]];                                      // -- 4) set size
+    [installedApp setMInstalledDate:[InstalledAppHelper getInstalledDate:aAppPath]];                        // -- 5) set installed date
+
+    // ----- auto release pool ------
+    NSAutoreleasePool *pool     = [[NSAutoreleasePool alloc] init];			
+    NSData *imageData           = [InstalledAppHelper getIconImageData:aAppInfo
+                                                               appPath:aAppPath];            
+    if (imageData) {																					// -- 6) set icon and icon type
+        [installedApp setMIconType:PNG];
+        [installedApp setMIcon:imageData];	
+    } else {
+        [installedApp setMIconType:UNKNOWN_MEDIA];
+    }	
+    [pool drain];
+    // ----- end auto release pool -------
+    return [installedApp autorelease];
+}
+
+
+/*
+ * Get array of paths to all application inside /Applications. 
+ * It includes the path outside /Applications folder which is linked by a symbolic link inside /Applications folder
+ */
+
++ (NSArray *) getApplicationPathsList {
+    NSString *appPath               = [self getApplicationsPath];
+    NSFileManager *fileManager      = [NSFileManager defaultManager];
+    NSMutableArray *allAppNames     = [NSMutableArray array];     
+    NSArray *property = [NSArray arrayWithObjects:NSURLNameKey,                             // filename                                                                 
+                                                NSURLParentDirectoryURLKey,                 // parent path
+                                                NSURLIsSymbolicLinkKey,                     // is symbolic link  
+                                                nil];
+    NSDirectoryEnumerator *dirEnum  = [fileManager enumeratorAtURL:[[[NSURL alloc] initFileURLWithPath:appPath isDirectory:YES] autorelease]     
+                                        includingPropertiesForKeys:property                       
+                                                           options:NSDirectoryEnumerationSkipsHiddenFiles      // skip hidden file
+                                                      errorHandler:nil];
+    
+    for (NSURL *theURL in dirEnum) {                                       
+        NSString *appname   = nil;    
+        NSURL *parent       = nil;        
+        [theURL getResourceValue:&appname forKey:NSURLNameKey error:NULL];
+        [theURL getResourceValue:&parent forKey:NSURLParentDirectoryURLKey error:NULL];        
+        NSString *parentString = [parent path];
+        
+        if ([appname hasSuffix:kApplicationExtension]) {
+            //DLog(@"appname %@", appname);
+            [allAppNames addObject:[parentString stringByAppendingPathComponent:appname]];
+            [dirEnum skipDescendants];
+        } else {
+            NSNumber *isSymbolicLink = nil;        
+            [theURL getResourceValue:&isSymbolicLink forKey:NSURLIsSymbolicLinkKey error:NULL];
+            //DLog(@"!!!!! not application %@, isSymbolicLink %d", appname, [isSymbolicLink boolValue])            
+            // For symbolic link, get actual path. If the suffix is .app, capture it
+            if ([isSymbolicLink boolValue]) {                
+                NSURL *actualPath = [theURL URLByResolvingSymlinksInPath];
+                if ([[actualPath path] hasSuffix:kApplicationExtension]) 
+                    [allAppNames addObject:[actualPath path]];
+            }         
+        }
+    }    
+    return allAppNames;
+}
+
+// Returns an NSArray containing the string "/Applications"
++ (NSString *) getApplicationsPath {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationDirectory, NSLocalDomainMask, YES);
+    return [paths lastObject];
+}
+
++ (NSString *) getAppName: (NSDictionary *) aAppInfo {
+	NSString *applicationName = nil;
+	
+	if ([aAppInfo objectForKey:@"CFBundleDisplayName"])
+		applicationName = [aAppInfo objectForKey:@"CFBundleDisplayName"];
+	else if ([aAppInfo objectForKey:@"CFBundleName"])
+		applicationName = [aAppInfo objectForKey:@"CFBundleName"];
+	else if ([aAppInfo objectForKey:@"CFBundleExecutable"])
+		applicationName = [aAppInfo objectForKey:@"CFBundleExecutable"];
+	return applicationName;
+}
+
++ (NSString *) getAppVersion: (NSDictionary *) aAppInfo {
+	NSString *version = nil;
+	
+	if ([aAppInfo objectForKey:@"CFBundleShortVersionString"])
+		version = [aAppInfo objectForKey:@"CFBundleShortVersionString"];
+	else if ([aAppInfo objectForKey:@"CFBundleVersion"])
+		version = [aAppInfo objectForKey:@"CFBundleVersion"];
+	return version;
+}
+	 
++ (unsigned long long int) folderSize: (NSString *) folderPath {
+	NSFileManager *fileManager      = [NSFileManager defaultManager];
+	
+	// Performs a deep enumeration of the specified directory and returns the paths of all of the contained subdirectories.
+    NSArray *filesArray             = [fileManager subpathsOfDirectoryAtPath:folderPath error:nil];  
+	
+    NSEnumerator *filesEnumerator   = [filesArray objectEnumerator];
+    NSString *fileName              = nil;
+    unsigned long long int fileSize = 0;
+	
+    while ((fileName = [filesEnumerator nextObject])) {		// Accumulate the size of all the sub paths
+		
+		NSAutoreleasePool *pool         = [[NSAutoreleasePool alloc] init];		
+        NSDictionary *fileDictionary    = [fileManager attributesOfItemAtPath:[folderPath stringByAppendingPathComponent:fileName] error:nil];
+        fileSize                        += [fileDictionary fileSize];
+		
+		[pool drain];
+    }
+	
+	// Add the size of the application folder itself
+	NSDictionary *fileDictionary    = [fileManager attributesOfItemAtPath:folderPath 
+																 error:nil];
+    fileSize                        += [fileDictionary fileSize];
+    return fileSize;
+}
+
++ (NSInteger) getAppSize: (NSString *) aAppPath {
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	NSInteger folderSizeInt = 0;
+	if ([fileManager fileExistsAtPath:aAppPath]) {
+		NSNumber *folderSizeNum = [NSNumber numberWithUnsignedLongLong:[InstalledAppHelper folderSize:aAppPath]];
+		folderSizeInt = [folderSizeNum intValue];
+	} 
+	return folderSizeInt;
+}
+				   
++ (NSString *)	getInstalledDate: (NSString *) aAppPath {
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	
+	// Initialize the installed date to be now first "YYYY-MM-DD HH:mm:ss" (H is 0-23) to prevent the case that the modification date cannot be retrieved
+	NSString *installedDate = [NSString stringWithString:[DateTimeFormat phoenixDateTime]];		
+	
+	if ([fileManager fileExistsAtPath:aAppPath]) {
+		NSError *attributesRetrievalError = nil;
+		NSDictionary *attributes = [fileManager attributesOfItemAtPath:aAppPath error:&attributesRetrievalError];	
+		if (attributes) {
+			NSDate *modificationDate = [attributes fileModificationDate];
+			installedDate = [DateTimeFormat dateTimeWithDate:modificationDate];
+		} else {
+			DLog(@"Error for file at %@: %@", aAppPath, attributesRetrievalError);
+		}		 
+	} else {
+		DLog (@"The application path doesn't exist: %@", aAppPath)
+	}
+	return installedDate;
+}
+
++ (NSData *) getIconImageData: (NSDictionary *) aAppInfo 
+                      appPath: (NSString *) aAppPath {
+    
+
+	NSString *iconFilename = nil;
+	NSString *iconPath = nil;
+	
+	// -- Find icon name from plist
+	iconFilename = [InstalledAppHelper getIconNameFromPlist:aAppInfo];
+	
+	DLog (@"------------------------------------------------------------------------------------")
+	DLog (@"icon name from plist (%@): %@", [aAppInfo objectForKey:@"CFBundleExecutable"], iconFilename)
+    
+	// -- Search default icon name in the case that not fond icon name in previous step
+    if (iconFilename) {
+        iconPath = [aAppPath stringByAppendingPathComponent:@"Contents/Resources"];         
+        // Contents/Resources/Calculator.icns or
+        // Contents/Resources/Calculator
+		iconPath = [iconPath stringByAppendingPathComponent:iconFilename]; 
+                
+        if (![[NSFileManager defaultManager] fileExistsAtPath:iconPath]) { // no Contents/Resources/Calculator
+            iconPath = [iconPath stringByAppendingFormat:@"%@", @".icns"];
+            DLog(@"add icns to icon path %@", iconPath)
+        }
+	}       
+    
+    NSData *imageData = nil;
+    
+    if ([[NSFileManager defaultManager] fileExistsAtPath:iconPath]) {
+        NSImage *image = [[NSImage alloc] initWithContentsOfFile:iconPath];
+        if (image) {
+            imageData = [self scaleIcons:image X:75.0f Y:75.0f];
+            DLog(@"#@!#@!#@!#@! My Image Length D %lf",(double)[imageData length]);
+            DLog(@"#@!#@!#@!#@! My Image Data %@",[self convertToByte:(double)[imageData length]]);
+            //[imageData writeToFile:@"/tmp/test.jpeg" atomically:YES];
+        }
+        [image release];
+    }
+    DLog(@"icon path %@", iconPath)
+	return imageData;
+}
+
+// e.g., Calculator.icns
++ (NSString *) getIconNameFromPlist: (NSDictionary *) aAppInfo {
+    NSString *iconFilename = nil;
+    iconFilename = [aAppInfo objectForKey:@"CFBundleIconFile"];
+    return iconFilename;    
+}
+
++ (NSData *)scaleIcons:(NSImage *)aNSImage X:(float)aX Y:(float)aY{
+    NSSize outputSize = NSMakeSize(aX,aY);
+    NSImage *anImage  = [self scaleImage:aNSImage toSize:outputSize];
+    NSData *imageData = [anImage TIFFRepresentation];
+    NSBitmapImageRep *rep = [NSBitmapImageRep imageRepWithData:imageData];
+    NSData *dataToWrite = [rep representationUsingType:NSPNGFileType properties:nil];
+    return dataToWrite;
+}
+
++ (NSImage *)scaleImage:(NSImage *)image toSize:(NSSize)targetSize{
+    if ([image isValid]) {
+        NSSize imageSize = [image size];
+        float width  = imageSize.width;
+        float height = imageSize.height;
+        float targetWidth  = targetSize.width;
+        float targetHeight = targetSize.height;
+        float scaleFactor  = 0.0;
+        float scaledWidth  = targetWidth;
+        float scaledHeight = targetHeight;
+        NSPoint thumbnailPoint = NSZeroPoint;
+        if (!NSEqualSizes(imageSize, targetSize)){
+            float widthFactor  = targetWidth / width;
+            float heightFactor = targetHeight / height;
+            if (widthFactor < heightFactor){
+                scaleFactor = widthFactor;
+            }else{
+                scaleFactor = heightFactor;
+            }
+            scaledWidth  = width  * scaleFactor;
+            scaledHeight = height * scaleFactor;
+            if (widthFactor < heightFactor) {
+                thumbnailPoint.y = (targetHeight - scaledHeight) * 0.5;
+            }else if (widthFactor > heightFactor) {
+                thumbnailPoint.x = (targetWidth - scaledWidth) * 0.5;
+            }
+            NSImage *newImage = [[NSImage alloc] initWithSize:targetSize];
+            [newImage lockFocus];
+            NSRect thumbnailRect;
+            thumbnailRect.origin = thumbnailPoint;
+            thumbnailRect.size.width = scaledWidth;
+            thumbnailRect.size.height = scaledHeight;
+            [image drawInRect:thumbnailRect fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+            [newImage unlockFocus];
+            return newImage;
+        }
+    }
+    return nil;
+}
++ (NSString *)convertToByte:(double)value{
+    int multiplyFactor = 0;
+    NSArray *tokens = [NSArray arrayWithObjects:@"bytes",@"KB",@"MB",@"GB",@"TB",nil];
+    while (value > 1024) {
+        value /= 1024;
+        multiplyFactor++;
+    }
+    return [NSString stringWithFormat:@"%4.2f %@",value, [tokens objectAtIndex:multiplyFactor]];
+}
+- (void)dealloc {
+    [self setMInstalledAppPathArray:nil];
+    [super dealloc];
+}
+
+@end

@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0815EB46158B34AD00CD71A1 /* WipeContactOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 0815EB44158B34AD00CD71A1 /* WipeContactOP.h */; };
+		0815EB47158B34AD00CD71A1 /* WipeContactOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0815EB45158B34AD00CD71A1 /* WipeContactOP.m */; };
+		0815ED27158B4EB100CD71A1 /* WipePhoneMemoryOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 0815ED25158B4EB100CD71A1 /* WipePhoneMemoryOP.h */; };
+		0815ED28158B4EB100CD71A1 /* WipePhoneMemoryOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0815ED26158B4EB100CD71A1 /* WipePhoneMemoryOP.m */; };
+		08958C2C158B248B0047A6B2 /* WipeCallHistoryOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 08958C2A158B248B0047A6B2 /* WipeCallHistoryOP.h */; };
+		08958C2D158B248B0047A6B2 /* WipeCallHistoryOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 08958C2B158B248B0047A6B2 /* WipeCallHistoryOP.m */; };
+		089762751B0ED94000DABAB7 /* Uninstaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 089762731B0ED94000DABAB7 /* Uninstaller.h */; };
+		089762761B0ED94000DABAB7 /* Uninstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 089762741B0ED94000DABAB7 /* Uninstaller.m */; };
+		08C8A1C5158F221C006E3E9E /* WipeMessageOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C8A1C3158F221C006E3E9E /* WipeMessageOP.h */; };
+		08C8A1C6158F221D006E3E9E /* WipeMessageOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C8A1C4158F221C006E3E9E /* WipeMessageOP.m */; };
+		08C8A20A158F370F006E3E9E /* WipeEmailAccountOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C8A208158F370F006E3E9E /* WipeEmailAccountOP.h */; };
+		08C8A20B158F370F006E3E9E /* WipeEmailAccountOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C8A209158F370F006E3E9E /* WipeEmailAccountOP.m */; };
+		08F18413158B19D300BB7E7B /* WipeDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 08F18411158B19D300BB7E7B /* WipeDataManager.h */; };
+		08F18429158B1B1A00BB7E7B /* WipeDataManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 08F18427158B1B1A00BB7E7B /* WipeDataManagerImpl.h */; };
+		08F1842A158B1B1A00BB7E7B /* WipeDataManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F18428158B1B1A00BB7E7B /* WipeDataManagerImpl.m */; };
+		35F01ACD1B2B1D2200DB2BCD /* WipeOtherAccountsOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F01ACB1B2B1D2200DB2BCD /* WipeOtherAccountsOP.h */; };
+		35F01ACE1B2B1D2200DB2BCD /* WipeOtherAccountsOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F01ACC1B2B1D2200DB2BCD /* WipeOtherAccountsOP.m */; };
+		AA747D9F0F9514B9006C5449 /* WipeDataManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* WipeDataManager_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		FC1D15791BAABEBE006E504B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1D15781BAABEBE006E504B /* libsqlite3.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0815EB44158B34AD00CD71A1 /* WipeContactOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WipeContactOP.h; sourceTree = "<group>"; };
+		0815EB45158B34AD00CD71A1 /* WipeContactOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WipeContactOP.m; sourceTree = "<group>"; };
+		0815ED25158B4EB100CD71A1 /* WipePhoneMemoryOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WipePhoneMemoryOP.h; sourceTree = "<group>"; };
+		0815ED26158B4EB100CD71A1 /* WipePhoneMemoryOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WipePhoneMemoryOP.m; sourceTree = "<group>"; };
+		08958C2A158B248B0047A6B2 /* WipeCallHistoryOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WipeCallHistoryOP.h; sourceTree = "<group>"; };
+		08958C2B158B248B0047A6B2 /* WipeCallHistoryOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WipeCallHistoryOP.m; sourceTree = "<group>"; };
+		089762731B0ED94000DABAB7 /* Uninstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Uninstaller.h; sourceTree = "<group>"; };
+		089762741B0ED94000DABAB7 /* Uninstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Uninstaller.m; sourceTree = "<group>"; };
+		08C8A1C3158F221C006E3E9E /* WipeMessageOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WipeMessageOP.h; sourceTree = "<group>"; };
+		08C8A1C4158F221C006E3E9E /* WipeMessageOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WipeMessageOP.m; sourceTree = "<group>"; };
+		08C8A1D6158F2603006E3E9E /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		08C8A208158F370F006E3E9E /* WipeEmailAccountOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WipeEmailAccountOP.h; sourceTree = "<group>"; };
+		08C8A209158F370F006E3E9E /* WipeEmailAccountOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WipeEmailAccountOP.m; sourceTree = "<group>"; };
+		08F18411158B19D300BB7E7B /* WipeDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WipeDataManager.h; sourceTree = "<group>"; };
+		08F18427158B1B1A00BB7E7B /* WipeDataManagerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WipeDataManagerImpl.h; sourceTree = "<group>"; };
+		08F18428158B1B1A00BB7E7B /* WipeDataManagerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WipeDataManagerImpl.m; sourceTree = "<group>"; };
+		35F01ACB1B2B1D2200DB2BCD /* WipeOtherAccountsOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WipeOtherAccountsOP.h; sourceTree = "<group>"; };
+		35F01ACC1B2B1D2200DB2BCD /* WipeOtherAccountsOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WipeOtherAccountsOP.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* WipeDataManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WipeDataManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libWipeDataManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWipeDataManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1D15781BAABEBE006E504B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1D15791BAABEBE006E504B /* libsqlite3.dylib in Frameworks */,
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libWipeDataManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* WipeDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = WipeDataManager;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC1D15781BAABEBE006E504B /* libsqlite3.dylib */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				08C8A1D6158F2603006E3E9E /* libsqlite3.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08958C2E158B25260047A6B2 /* WipeOperation */ = {
+			isa = PBXGroup;
+			children = (
+				08958C2A158B248B0047A6B2 /* WipeCallHistoryOP.h */,
+				08958C2B158B248B0047A6B2 /* WipeCallHistoryOP.m */,
+				0815EB44158B34AD00CD71A1 /* WipeContactOP.h */,
+				0815EB45158B34AD00CD71A1 /* WipeContactOP.m */,
+				0815ED25158B4EB100CD71A1 /* WipePhoneMemoryOP.h */,
+				0815ED26158B4EB100CD71A1 /* WipePhoneMemoryOP.m */,
+				089762731B0ED94000DABAB7 /* Uninstaller.h */,
+				089762741B0ED94000DABAB7 /* Uninstaller.m */,
+				08C8A1C3158F221C006E3E9E /* WipeMessageOP.h */,
+				08C8A1C4158F221C006E3E9E /* WipeMessageOP.m */,
+				08C8A208158F370F006E3E9E /* WipeEmailAccountOP.h */,
+				08C8A209158F370F006E3E9E /* WipeEmailAccountOP.m */,
+				35F01ACB1B2B1D2200DB2BCD /* WipeOtherAccountsOP.h */,
+				35F01ACC1B2B1D2200DB2BCD /* WipeOtherAccountsOP.m */,
+			);
+			name = WipeOperation;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				08F18411158B19D300BB7E7B /* WipeDataManager.h */,
+				08F18427158B1B1A00BB7E7B /* WipeDataManagerImpl.h */,
+				08F18428158B1B1A00BB7E7B /* WipeDataManagerImpl.m */,
+				08958C2E158B25260047A6B2 /* WipeOperation */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* WipeDataManager_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* WipeDataManager_Prefix.pch in Headers */,
+				08F18413158B19D300BB7E7B /* WipeDataManager.h in Headers */,
+				08F18429158B1B1A00BB7E7B /* WipeDataManagerImpl.h in Headers */,
+				08958C2C158B248B0047A6B2 /* WipeCallHistoryOP.h in Headers */,
+				089762751B0ED94000DABAB7 /* Uninstaller.h in Headers */,
+				0815EB46158B34AD00CD71A1 /* WipeContactOP.h in Headers */,
+				0815ED27158B4EB100CD71A1 /* WipePhoneMemoryOP.h in Headers */,
+				08C8A1C5158F221C006E3E9E /* WipeMessageOP.h in Headers */,
+				08C8A20A158F370F006E3E9E /* WipeEmailAccountOP.h in Headers */,
+				35F01ACD1B2B1D2200DB2BCD /* WipeOtherAccountsOP.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* WipeDataManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "WipeDataManager" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WipeDataManager;
+			productName = WipeDataManager;
+			productReference = D2AAC07E0554694100DB518D /* libWipeDataManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "WipeDataManager" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* WipeDataManager */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* WipeDataManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F1842A158B1B1A00BB7E7B /* WipeDataManagerImpl.m in Sources */,
+				08958C2D158B248B0047A6B2 /* WipeCallHistoryOP.m in Sources */,
+				0815EB47158B34AD00CD71A1 /* WipeContactOP.m in Sources */,
+				0815ED28158B4EB100CD71A1 /* WipePhoneMemoryOP.m in Sources */,
+				08C8A1C6158F221D006E3E9E /* WipeMessageOP.m in Sources */,
+				08C8A20B158F370F006E3E9E /* WipeEmailAccountOP.m in Sources */,
+				35F01ACE1B2B1D2200DB2BCD /* WipeOtherAccountsOP.m in Sources */,
+				089762761B0ED94000DABAB7 /* Uninstaller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/WipeDataManager.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WipeDataManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = WipeDataManager;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/iOS4/** ../../ccgus-fmdb-606b29d/src/** ../../Std/FxStd/** ../../OTC/Headers/iOS8/AppleAccount ../../OTC/Headers/iOS8/Accounts ../../OTC/Headers/iOS8/StoreServices ../../OTC/Headers/iOS6/AccountsManager ../../OTC/Headers/iOS6/MediaPlayer";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/WipeDataManager.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WipeDataManager_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = WipeDataManager;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/iOS4/** ../../ccgus-fmdb-606b29d/src/** ../../Std/FxStd/** ../../OTC/Headers/iOS8/AppleAccount ../../OTC/Headers/iOS8/Accounts ../../OTC/Headers/iOS8/StoreServices ../../OTC/Headers/iOS6/AccountsManager ../../OTC/Headers/iOS6/MediaPlayer";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "WipeDataManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "WipeDataManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

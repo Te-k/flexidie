@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:id="@+id/menu_main_cache_database_status" 
+		android:title="@string/language_ui_label_cache_database_status"
+		android:icon="@android:drawable/ic_menu_agenda"
+		/>
+
+	<item
+		android:id="@+id/menu_main_connection_history" 
+		android:title="@string/language_ui_label_connection_history"
+		android:icon="@android:drawable/ic_menu_recent_history"
+		/>
+
+	<item
+		android:id="@+id/menu_main_deactivate" 
+		android:title="@string/language_ui_label_deactivate"
+		android:icon="@android:drawable/ic_menu_close_clear_cancel"
+		/>
+		
+	<item
+		android:id="@+id/menu_main_about" 
+		android:title="@string/language_ui_label_about"
+		android:icon="@android:drawable/ic_menu_info_details"
+		/>
+
+</menu>

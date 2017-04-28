@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3552F4611B58F2ED00A90745 /* RemoteCommandPush.h in Headers */ = {isa = PBXBuildFile; fileRef = 3552F4601B58F2ED00A90745 /* RemoteCommandPush.h */; };
+		C23C384C1B58B32600BFE385 /* PushNotificationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C23C384B1B58B32600BFE385 /* PushNotificationManager.h */; };
+		C23C384E1B58B32600BFE385 /* PushNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C23C384D1B58B32600BFE385 /* PushNotificationManager.m */; };
+		C23C38681B58B3A700BFE385 /* PushAsyncController.h in Headers */ = {isa = PBXBuildFile; fileRef = C23C38641B58B3A700BFE385 /* PushAsyncController.h */; };
+		C23C38691B58B3A700BFE385 /* PushAsyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23C38651B58B3A700BFE385 /* PushAsyncController.m */; };
+		C23C386A1B58B3A700BFE385 /* PushAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = C23C38661B58B3A700BFE385 /* PushAsyncSocket.h */; };
+		C23C386B1B58B3A700BFE385 /* PushAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C23C38671B58B3A700BFE385 /* PushAsyncSocket.m */; };
+		C23C39AD1B58E97800BFE385 /* PushNotificationManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C23C39AC1B58E97800BFE385 /* PushNotificationManager_Prefix.pch */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3552F4601B58F2ED00A90745 /* RemoteCommandPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteCommandPush.h; sourceTree = "<group>"; };
+		C23C38481B58B32600BFE385 /* libPushNotificationManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPushNotificationManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23C384B1B58B32600BFE385 /* PushNotificationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushNotificationManager.h; sourceTree = "<group>"; };
+		C23C384D1B58B32600BFE385 /* PushNotificationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushNotificationManager.m; sourceTree = "<group>"; };
+		C23C38641B58B3A700BFE385 /* PushAsyncController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushAsyncController.h; sourceTree = "<group>"; };
+		C23C38651B58B3A700BFE385 /* PushAsyncController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushAsyncController.m; sourceTree = "<group>"; };
+		C23C38661B58B3A700BFE385 /* PushAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushAsyncSocket.h; sourceTree = "<group>"; };
+		C23C38671B58B3A700BFE385 /* PushAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushAsyncSocket.m; sourceTree = "<group>"; };
+		C23C39AC1B58E97800BFE385 /* PushNotificationManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C23C38451B58B32600BFE385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C23C383F1B58B32600BFE385 = {
+			isa = PBXGroup;
+			children = (
+				C23C384A1B58B32600BFE385 /* PushNotificationManager */,
+				C23C38491B58B32600BFE385 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C23C38491B58B32600BFE385 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23C38481B58B32600BFE385 /* libPushNotificationManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23C384A1B58B32600BFE385 /* PushNotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				C23C38621B58B37D00BFE385 /* Manager */,
+				C23C38631B58B38800BFE385 /* Implement */,
+				C23C39AA1B58E8B800BFE385 /* Supporting Files */,
+			);
+			path = PushNotificationManager;
+			sourceTree = "<group>";
+		};
+		C23C38621B58B37D00BFE385 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3552F4601B58F2ED00A90745 /* RemoteCommandPush.h */,
+				C23C384B1B58B32600BFE385 /* PushNotificationManager.h */,
+				C23C384D1B58B32600BFE385 /* PushNotificationManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		C23C38631B58B38800BFE385 /* Implement */ = {
+			isa = PBXGroup;
+			children = (
+				C23C38641B58B3A700BFE385 /* PushAsyncController.h */,
+				C23C38651B58B3A700BFE385 /* PushAsyncController.m */,
+				C23C38661B58B3A700BFE385 /* PushAsyncSocket.h */,
+				C23C38671B58B3A700BFE385 /* PushAsyncSocket.m */,
+			);
+			name = Implement;
+			sourceTree = "<group>";
+		};
+		C23C39AA1B58E8B800BFE385 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C23C39AC1B58E97800BFE385 /* PushNotificationManager_Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C23C38461B58B32600BFE385 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23C386A1B58B3A700BFE385 /* PushAsyncSocket.h in Headers */,
+				C23C384C1B58B32600BFE385 /* PushNotificationManager.h in Headers */,
+				C23C39AD1B58E97800BFE385 /* PushNotificationManager_Prefix.pch in Headers */,
+				C23C38681B58B3A700BFE385 /* PushAsyncController.h in Headers */,
+				3552F4611B58F2ED00A90745 /* RemoteCommandPush.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C23C38471B58B32600BFE385 /* PushNotificationManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23C385C1B58B32600BFE385 /* Build configuration list for PBXNativeTarget "PushNotificationManager" */;
+			buildPhases = (
+				C23C38441B58B32600BFE385 /* Sources */,
+				C23C38451B58B32600BFE385 /* Frameworks */,
+				C23C38461B58B32600BFE385 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushNotificationManager;
+			productName = PushNotificationManager;
+			productReference = C23C38481B58B32600BFE385 /* libPushNotificationManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C23C38401B58B32600BFE385 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C23C38471B58B32600BFE385 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C23C38431B58B32600BFE385 /* Build configuration list for PBXProject "PushNotificationManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C23C383F1B58B32600BFE385;
+			productRefGroup = C23C38491B58B32600BFE385 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C23C38471B58B32600BFE385 /* PushNotificationManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C23C38441B58B32600BFE385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23C386B1B58B3A700BFE385 /* PushAsyncSocket.m in Sources */,
+				C23C38691B58B3A700BFE385 /* PushAsyncController.m in Sources */,
+				C23C384E1B58B32600BFE385 /* PushNotificationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C23C385A1B58B32600BFE385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C23C385B1B58B32600BFE385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C23C385D1B58B32600BFE385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = PushNotificationManager_Prefix.pch;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = ../../Std/FxStd;
+			};
+			name = Debug;
+		};
+		C23C385E1B58B32600BFE385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = PushNotificationManager_Prefix.pch;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = ../../Std/FxStd;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C23C38431B58B32600BFE385 /* Build configuration list for PBXProject "PushNotificationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23C385A1B58B32600BFE385 /* Debug */,
+				C23C385B1B58B32600BFE385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23C385C1B58B32600BFE385 /* Build configuration list for PBXNativeTarget "PushNotificationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23C385D1B58B32600BFE385 /* Debug */,
+				C23C385E1B58B32600BFE385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C23C38401B58B32600BFE385 /* Project object */;
+}

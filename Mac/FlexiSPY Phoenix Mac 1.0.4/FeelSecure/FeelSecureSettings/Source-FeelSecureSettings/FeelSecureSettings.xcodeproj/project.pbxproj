@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35A28FC715E7418C0076A9F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A28FC615E7418C0076A9F7 /* Foundation.framework */; };
+		35A28FC915E7418C0076A9F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A28FC815E7418C0076A9F7 /* UIKit.framework */; };
+		35A28FCB15E7418C0076A9F7 /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A28FCA15E7418C0076A9F7 /* Preferences.framework */; };
+		35A28FD615E7418C0076A9F7 /* FeelSecureSettingsController.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A28FD515E7418C0076A9F7 /* FeelSecureSettingsController.h */; };
+		35A28FD815E7418C0076A9F7 /* FeelSecureSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A28FD715E7418C0076A9F7 /* FeelSecureSettingsController.m */; };
+		35B72A6915E7541F00050574 /* FeelSecureSettingsIcon.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B72A5E15E752D300050574 /* FeelSecureSettingsIcon.png */; };
+		35B72A6A15E7542300050574 /* FeelSecureSettings.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B72A5D15E752C500050574 /* FeelSecureSettings.plist */; };
+		35B72AE515E76B2A00050574 /* EmergencyNumberSettings.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35B72AE315E76B0700050574 /* EmergencyNumberSettings.plist */; };
+		35B72B1215E7715800050574 /* EmergencyNumberController.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B72B1015E7715800050574 /* EmergencyNumberController.h */; };
+		35B72B1315E7715800050574 /* EmergencyNumberController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B72B1115E7715800050574 /* EmergencyNumberController.m */; };
+		35B72CD415E78D0A00050574 /* libFxStd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B72CD315E78D0100050574 /* libFxStd.a */; };
+		35B72CED15E78DAE00050574 /* libCryptography.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B72CE815E78D9C00050574 /* libCryptography.a */; };
+		35B72CEE15E78DB300050574 /* libIPC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B72CE215E78D8900050574 /* libIPC.a */; };
+		35B72DA615E7968800050574 /* libPreferences.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B72DA515E7968300050574 /* libPreferences.a */; };
+		35B72DB615E797C300050574 /* PreferenceManagerUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B72DB415E797C300050574 /* PreferenceManagerUtils.h */; };
+		35B72DB715E797C300050574 /* PreferenceManagerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B72DB515E797C300050574 /* PreferenceManagerUtils.m */; };
+		35BC357815EB654200142CE1 /* PreferencesSettingsKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 35BC357715EB654200142CE1 /* PreferencesSettingsKeys.h */; };
+		35BC369915EB977000142CE1 /* SpringBoardServices in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BC369815EB977000142CE1 /* SpringBoardServices */; };
+		35C99E2C15EDC3A30033496F /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C99E2B15EDC3990033496F /* libFMDB.a */; };
+		35C99E3015EDC3D20033496F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C99E2F15EDC3D20033496F /* libsqlite3.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35B72CD215E78D0100050574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B72CCE15E78D0100050574 /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		35B72CD515E78D1300050574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B72CCE15E78D0100050574 /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		35B72CE115E78D8900050574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B72CDD15E78D8900050574 /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		35B72CE715E78D9C00050574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B72CE315E78D9C00050574 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		35B72CE915E78DA400050574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B72CDD15E78D8900050574 /* IPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		35B72CEB15E78DA600050574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B72CE315E78D9C00050574 /* Cryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		35B72DA415E7968300050574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B72DA015E7968300050574 /* Preferences.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Preferences;
+		};
+		35B72DA815E7969500050574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B72DA015E7968300050574 /* Preferences.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Preferences;
+		};
+		35C99E2815EDC3990033496F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35C99E2315EDC3990033496F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		35C99E2A15EDC3990033496F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35C99E2315EDC3990033496F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		35C99E2D15EDC3B20033496F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35C99E2315EDC3990033496F /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE4290EE12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35B72A6815E753FC00050574 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				35B72A6A15E7542300050574 /* FeelSecureSettings.plist in CopyFiles */,
+				35B72AE515E76B2A00050574 /* EmergencyNumberSettings.plist in CopyFiles */,
+				35B72A6915E7541F00050574 /* FeelSecureSettingsIcon.png in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		35A28FC315E7418C0076A9F7 /* FeelSecureSettings.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeelSecureSettings.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		35A28FC615E7418C0076A9F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		35A28FC815E7418C0076A9F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		35A28FCA15E7418C0076A9F7 /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = System/Library/Frameworks/Preferences.framework; sourceTree = SDKROOT; };
+		35A28FCE15E7418C0076A9F7 /* FeelSecureSettings-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FeelSecureSettings-Prefix.pch"; sourceTree = "<group>"; };
+		35A28FD415E7418C0076A9F7 /* FeelSecureSettings-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FeelSecureSettings-Info.plist"; sourceTree = "<group>"; };
+		35A28FD515E7418C0076A9F7 /* FeelSecureSettingsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeelSecureSettingsController.h; sourceTree = "<group>"; };
+		35A28FD715E7418C0076A9F7 /* FeelSecureSettingsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeelSecureSettingsController.m; sourceTree = "<group>"; };
+		35B72A5D15E752C500050574 /* FeelSecureSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = FeelSecureSettings.plist; path = Resources/FeelSecureSettings.plist; sourceTree = "<group>"; };
+		35B72A5E15E752D300050574 /* FeelSecureSettingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FeelSecureSettingsIcon.png; path = Resources/FeelSecureSettingsIcon.png; sourceTree = "<group>"; };
+		35B72A8815E754D800050574 /* FeelSecureSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FeelSecureSettings.plist; sourceTree = "<group>"; };
+		35B72AE315E76B0700050574 /* EmergencyNumberSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EmergencyNumberSettings.plist; sourceTree = "<group>"; };
+		35B72B1015E7715800050574 /* EmergencyNumberController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmergencyNumberController.h; sourceTree = "<group>"; };
+		35B72B1115E7715800050574 /* EmergencyNumberController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyNumberController.m; sourceTree = "<group>"; };
+		35B72CCE15E78D0100050574 /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../../codebase/Std/FxStd/FxStd.xcodeproj; sourceTree = SOURCE_ROOT; };
+		35B72CDD15E78D8900050574 /* IPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IPC.xcodeproj; path = "../../../codebase/IPC/Source-IPC/IPC.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35B72CE315E78D9C00050574 /* Cryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cryptography.xcodeproj; path = "../../../codebase/Cryptography/Source-Cryptography/Cryptography.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35B72DA015E7968300050574 /* Preferences.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Preferences.xcodeproj; path = "../../../codebase/Preferences/Source-Preferences/Preferences.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35B72DB415E797C300050574 /* PreferenceManagerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceManagerUtils.h; sourceTree = "<group>"; };
+		35B72DB515E797C300050574 /* PreferenceManagerUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceManagerUtils.m; sourceTree = "<group>"; };
+		35BC357715EB654200142CE1 /* PreferencesSettingsKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesSettingsKeys.h; sourceTree = "<group>"; };
+		35BC369815EB977000142CE1 /* SpringBoardServices */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = SpringBoardServices; path = ../../../codebase/OTC/Frameworks/iOS3/SpringBoardServices.framework/SpringBoardServices; sourceTree = SOURCE_ROOT; };
+		35C99E2315EDC3990033496F /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = "../../../codebase/ccgus-fmdb-606b29d/fmdb.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35C99E2F15EDC3D20033496F /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		35C99EC915EDF2860033496F /* com.app.ssmp.FeelSecureSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.app.ssmp.FeelSecureSettings.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35A28FBF15E7418C0076A9F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C99E2C15EDC3A30033496F /* libFMDB.a in Frameworks */,
+				35B72DA615E7968800050574 /* libPreferences.a in Frameworks */,
+				35B72CED15E78DAE00050574 /* libCryptography.a in Frameworks */,
+				35B72CEE15E78DB300050574 /* libIPC.a in Frameworks */,
+				35B72CD415E78D0A00050574 /* libFxStd.a in Frameworks */,
+				35A28FC715E7418C0076A9F7 /* Foundation.framework in Frameworks */,
+				35A28FC915E7418C0076A9F7 /* UIKit.framework in Frameworks */,
+				35A28FCB15E7418C0076A9F7 /* Preferences.framework in Frameworks */,
+				35BC369915EB977000142CE1 /* SpringBoardServices in Frameworks */,
+				35C99E3015EDC3D20033496F /* libsqlite3.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35A28FB715E7418C0076A9F7 = {
+			isa = PBXGroup;
+			children = (
+				35C99E2315EDC3990033496F /* fmdb.xcodeproj */,
+				35B72DA015E7968300050574 /* Preferences.xcodeproj */,
+				35B72CE315E78D9C00050574 /* Cryptography.xcodeproj */,
+				35B72CDD15E78D8900050574 /* IPC.xcodeproj */,
+				35B72CCE15E78D0100050574 /* FxStd.xcodeproj */,
+				35A28FCC15E7418C0076A9F7 /* FeelSecureSettings */,
+				35A28FC515E7418C0076A9F7 /* Frameworks */,
+				35A28FC415E7418C0076A9F7 /* Products */,
+				35C99E2F15EDC3D20033496F /* libsqlite3.0.dylib */,
+			);
+			sourceTree = "<group>";
+		};
+		35A28FC415E7418C0076A9F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35A28FC315E7418C0076A9F7 /* FeelSecureSettings.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35A28FC515E7418C0076A9F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35BC369815EB977000142CE1 /* SpringBoardServices */,
+				35A28FC615E7418C0076A9F7 /* Foundation.framework */,
+				35A28FC815E7418C0076A9F7 /* UIKit.framework */,
+				35A28FCA15E7418C0076A9F7 /* Preferences.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35A28FCC15E7418C0076A9F7 /* FeelSecureSettings */ = {
+			isa = PBXGroup;
+			children = (
+				35A28FD515E7418C0076A9F7 /* FeelSecureSettingsController.h */,
+				35A28FD715E7418C0076A9F7 /* FeelSecureSettingsController.m */,
+				35B72B1015E7715800050574 /* EmergencyNumberController.h */,
+				35B72B1115E7715800050574 /* EmergencyNumberController.m */,
+				35B72DB415E797C300050574 /* PreferenceManagerUtils.h */,
+				35B72DB515E797C300050574 /* PreferenceManagerUtils.m */,
+				35BC357715EB654200142CE1 /* PreferencesSettingsKeys.h */,
+				35A28FCD15E7418C0076A9F7 /* Supporting Files */,
+			);
+			path = FeelSecureSettings;
+			sourceTree = "<group>";
+		};
+		35A28FCD15E7418C0076A9F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35B72A8815E754D800050574 /* FeelSecureSettings.plist */,
+				35B72A5E15E752D300050574 /* FeelSecureSettingsIcon.png */,
+				35B72A5D15E752C500050574 /* FeelSecureSettings.plist */,
+				35A28FCE15E7418C0076A9F7 /* FeelSecureSettings-Prefix.pch */,
+				35A28FD415E7418C0076A9F7 /* FeelSecureSettings-Info.plist */,
+				35B72AE315E76B0700050574 /* EmergencyNumberSettings.plist */,
+				35C99EC915EDF2860033496F /* com.app.ssmp.FeelSecureSettings.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35B72CCF15E78D0100050574 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35B72CD315E78D0100050574 /* libFxStd.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35B72CDE15E78D8900050574 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35B72CE215E78D8900050574 /* libIPC.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35B72CE415E78D9C00050574 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35B72CE815E78D9C00050574 /* libCryptography.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35B72DA115E7968300050574 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35B72DA515E7968300050574 /* libPreferences.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35C99E2415EDC3990033496F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35C99E2915EDC3990033496F /* fmdb */,
+				35C99E2B15EDC3990033496F /* libFMDB.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		35A28FC015E7418C0076A9F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A28FD615E7418C0076A9F7 /* FeelSecureSettingsController.h in Headers */,
+				35B72B1215E7715800050574 /* EmergencyNumberController.h in Headers */,
+				35B72DB615E797C300050574 /* PreferenceManagerUtils.h in Headers */,
+				35BC357815EB654200142CE1 /* PreferencesSettingsKeys.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		35A28FC215E7418C0076A9F7 /* FeelSecureSettings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35A28FE915E7418C0076A9F7 /* Build configuration list for PBXNativeTarget "FeelSecureSettings" */;
+			buildPhases = (
+				35A28FBE15E7418C0076A9F7 /* Sources */,
+				35A28FBF15E7418C0076A9F7 /* Frameworks */,
+				35A28FC015E7418C0076A9F7 /* Headers */,
+				35B72A6815E753FC00050574 /* CopyFiles */,
+				358C8C8F15EB9E3400893972 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35B72CD615E78D1300050574 /* PBXTargetDependency */,
+				35B72CEA15E78DA400050574 /* PBXTargetDependency */,
+				35B72CEC15E78DA600050574 /* PBXTargetDependency */,
+				35B72DA915E7969500050574 /* PBXTargetDependency */,
+				35C99E2E15EDC3B20033496F /* PBXTargetDependency */,
+			);
+			name = FeelSecureSettings;
+			productName = FeelSecureSettings;
+			productReference = 35A28FC315E7418C0076A9F7 /* FeelSecureSettings.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35A28FB915E7418C0076A9F7 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 35A28FBC15E7418C0076A9F7 /* Build configuration list for PBXProject "FeelSecureSettings" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 35A28FB715E7418C0076A9F7;
+			productRefGroup = 35A28FC415E7418C0076A9F7 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 35B72CE415E78D9C00050574 /* Products */;
+					ProjectRef = 35B72CE315E78D9C00050574 /* Cryptography.xcodeproj */;
+				},
+				{
+					ProductGroup = 35C99E2415EDC3990033496F /* Products */;
+					ProjectRef = 35C99E2315EDC3990033496F /* fmdb.xcodeproj */;
+				},
+				{
+					ProductGroup = 35B72CCF15E78D0100050574 /* Products */;
+					ProjectRef = 35B72CCE15E78D0100050574 /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = 35B72CDE15E78D8900050574 /* Products */;
+					ProjectRef = 35B72CDD15E78D8900050574 /* IPC.xcodeproj */;
+				},
+				{
+					ProductGroup = 35B72DA115E7968300050574 /* Products */;
+					ProjectRef = 35B72DA015E7968300050574 /* Preferences.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				35A28FC215E7418C0076A9F7 /* FeelSecureSettings */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		35B72CD315E78D0100050574 /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = 35B72CD215E78D0100050574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35B72CE215E78D8900050574 /* libIPC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPC.a;
+			remoteRef = 35B72CE115E78D8900050574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35B72CE815E78D9C00050574 /* libCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptography.a;
+			remoteRef = 35B72CE715E78D9C00050574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35B72DA515E7968300050574 /* libPreferences.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPreferences.a;
+			remoteRef = 35B72DA415E7968300050574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35C99E2915EDC3990033496F /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = 35C99E2815EDC3990033496F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35C99E2B15EDC3990033496F /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = 35C99E2A15EDC3990033496F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		358C8C8F15EB9E3400893972 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Copy output settings bundle from build directory to FSP/FeelSecure/Settings-Bundle folder\nrm -fr ../../Settings-Bundle/${PRODUCT_NAME}.bundle\ncp -fr \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.bundle\" \"../../Settings-Bundle/\"\n\n# Strip unneeded symbols from the binary\nstrip -u -r ../../Settings-Bundle/${PRODUCT_NAME}.bundle/${PRODUCT_NAME}\n\n# Copy preference loader plist to FSP/FeelSecure/Settings-Bundle folder\ncp -f \"./FeelSecureSettings/FeelSecureSettings.plist\" \"../../Settings-Bundle/\"\n\n# Copy default preferences plist to FSP/FeelSecure/Settings-Bundle folder\ncp -f \"./FeelSecureSettings/com.app.ssmp.FeelSecureSettings.plist\" \"../../Settings-Bundle/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35A28FBE15E7418C0076A9F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A28FD815E7418C0076A9F7 /* FeelSecureSettingsController.m in Sources */,
+				35B72B1315E7715800050574 /* EmergencyNumberController.m in Sources */,
+				35B72DB715E797C300050574 /* PreferenceManagerUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35B72CD615E78D1300050574 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStd;
+			targetProxy = 35B72CD515E78D1300050574 /* PBXContainerItemProxy */;
+		};
+		35B72CEA15E78DA400050574 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IPC;
+			targetProxy = 35B72CE915E78DA400050574 /* PBXContainerItemProxy */;
+		};
+		35B72CEC15E78DA600050574 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cryptography;
+			targetProxy = 35B72CEB15E78DA600050574 /* PBXContainerItemProxy */;
+		};
+		35B72DA915E7969500050574 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Preferences;
+			targetProxy = 35B72DA815E7969500050574 /* PBXContainerItemProxy */;
+		};
+		35C99E2E15EDC3B20033496F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			targetProxy = 35C99E2D15EDC3B20033496F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		35A28FE715E7418C0076A9F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		35A28FE815E7418C0076A9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		35A28FEA15E7418C0076A9F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FeelSecureSettings/FeelSecureSettings-Prefix.pch";
+				INFOPLIST_FILE = "FeelSecureSettings/FeelSecureSettings-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../codebase/OTC/Frameworks/iOS3/SpringBoardServices.framework\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos4.0;
+				USER_HEADER_SEARCH_PATHS = "../../../codebase/OTC/Headers/iOS3/SpringBoardServices ../../AppEngine/Source-AppEngine ../../../codebase/Preferences/Source-Preferences ../../../codebase/Cryptography/Source-Cryptography ../../../codebase/IPC/Source-IPC ../../../codebase/Std/FxStd";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		35A28FEB15E7418C0076A9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FeelSecureSettings/FeelSecureSettings-Prefix.pch";
+				INFOPLIST_FILE = "FeelSecureSettings/FeelSecureSettings-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../codebase/OTC/Frameworks/iOS3/SpringBoardServices.framework\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos4.0;
+				USER_HEADER_SEARCH_PATHS = "../../../codebase/OTC/Headers/iOS3/SpringBoardServices ../../AppEngine/Source-AppEngine ../../../codebase/Preferences/Source-Preferences ../../../codebase/Cryptography/Source-Cryptography ../../../codebase/IPC/Source-IPC ../../../codebase/Std/FxStd";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35A28FBC15E7418C0076A9F7 /* Build configuration list for PBXProject "FeelSecureSettings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35A28FE715E7418C0076A9F7 /* Debug */,
+				35A28FE815E7418C0076A9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35A28FE915E7418C0076A9F7 /* Build configuration list for PBXNativeTarget "FeelSecureSettings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35A28FEA15E7418C0076A9F7 /* Debug */,
+				35A28FEB15E7418C0076A9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35A28FB915E7418C0076A9F7 /* Project object */;
+}

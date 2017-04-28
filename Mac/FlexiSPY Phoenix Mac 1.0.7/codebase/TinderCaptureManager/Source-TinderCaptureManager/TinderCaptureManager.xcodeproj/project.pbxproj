@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCC4B8781D420A65006E8510 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC4B8771D420A65006E8510 /* Foundation.framework */; };
+		FCE719C01D420578009DE26C /* TinderCaptureManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCE719BF1D420578009DE26C /* TinderCaptureManager.h */; };
+		FCE719C21D420578009DE26C /* TinderCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE719C11D420578009DE26C /* TinderCaptureManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FCE719BA1D420577009DE26C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				FCE719C01D420578009DE26C /* TinderCaptureManager.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FCC4B8761D420956006E8510 /* TinderCaptureManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TinderCaptureManager-Prefix.pch"; sourceTree = "<group>"; };
+		FCC4B8771D420A65006E8510 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FCE719BC1D420577009DE26C /* libTinderCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTinderCaptureManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCE719BF1D420578009DE26C /* TinderCaptureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TinderCaptureManager.h; sourceTree = "<group>"; };
+		FCE719C11D420578009DE26C /* TinderCaptureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TinderCaptureManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCE719B91D420577009DE26C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC4B8781D420A65006E8510 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3501E34C1D487721000F22AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCC4B8771D420A65006E8510 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCC4B8751D42091F006E8510 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCC4B8761D420956006E8510 /* TinderCaptureManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCE719B31D420577009DE26C = {
+			isa = PBXGroup;
+			children = (
+				FCE719BE1D420578009DE26C /* TinderCaptureManager */,
+				3501E34C1D487721000F22AF /* Frameworks */,
+				FCE719BD1D420577009DE26C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCE719BD1D420577009DE26C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCE719BC1D420577009DE26C /* libTinderCaptureManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCE719BE1D420578009DE26C /* TinderCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				FCE719BF1D420578009DE26C /* TinderCaptureManager.h */,
+				FCE719C11D420578009DE26C /* TinderCaptureManager.m */,
+				FCC4B8751D42091F006E8510 /* Supporting Files */,
+			);
+			path = TinderCaptureManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCE719BB1D420577009DE26C /* TinderCaptureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCE719C51D420578009DE26C /* Build configuration list for PBXNativeTarget "TinderCaptureManager" */;
+			buildPhases = (
+				FCE719B81D420577009DE26C /* Sources */,
+				FCE719B91D420577009DE26C /* Frameworks */,
+				FCE719BA1D420577009DE26C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinderCaptureManager;
+			productName = TinderCaptureManager;
+			productReference = FCE719BC1D420577009DE26C /* libTinderCaptureManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCE719B41D420577009DE26C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Khaneid Hantanasiriskul";
+				TargetAttributes = {
+					FCE719BB1D420577009DE26C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FCE719B71D420577009DE26C /* Build configuration list for PBXProject "TinderCaptureManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FCE719B31D420577009DE26C;
+			productRefGroup = FCE719BD1D420577009DE26C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCE719BB1D420577009DE26C /* TinderCaptureManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCE719B81D420577009DE26C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE719C21D420578009DE26C /* TinderCaptureManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FCE719C31D420578009DE26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TinderCaptureManager/TinderCaptureManager-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../../IPC/Source-IPC ../../EventCenter/Source-EventCenter ../../Events/FxEvents ../../Std/FxStd";
+			};
+			name = Debug;
+		};
+		FCE719C41D420578009DE26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TinderCaptureManager/TinderCaptureManager-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../../IPC/Source-IPC ../../EventCenter/Source-EventCenter ../../Events/FxEvents ../../Std/FxStd";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCE719C61D420578009DE26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PREFIX_HEADER = "TinderCaptureManager/TinderCaptureManager-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../IPC/Source-IPC ../../EventCenter/Source-EventCenter ../../Events/FxEvents ../../Std/FxStd";
+			};
+			name = Debug;
+		};
+		FCE719C71D420578009DE26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PREFIX_HEADER = "TinderCaptureManager/TinderCaptureManager-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../IPC/Source-IPC ../../EventCenter/Source-EventCenter ../../Events/FxEvents ../../Std/FxStd";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCE719B71D420577009DE26C /* Build configuration list for PBXProject "TinderCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE719C31D420578009DE26C /* Debug */,
+				FCE719C41D420578009DE26C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCE719C51D420578009DE26C /* Build configuration list for PBXNativeTarget "TinderCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE719C61D420578009DE26C /* Debug */,
+				FCE719C71D420578009DE26C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCE719B41D420577009DE26C /* Project object */;
+}

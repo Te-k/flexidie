@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08E8B9D0180D31C7000F7317 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E8B9CF180D31C7000F7317 /* Cocoa.framework */; };
+		08E8B9DA180D31C7000F7317 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08E8B9D8180D31C7000F7317 /* InfoPlist.strings */; };
+		08E8B9DC180D31C7000F7317 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E8B9DB180D31C7000F7317 /* main.m */; };
+		08E8B9E0180D31C7000F7317 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 08E8B9DE180D31C7000F7317 /* Credits.rtf */; };
+		08E8B9E3180D31C7000F7317 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E8B9E2180D31C7000F7317 /* AppDelegate.m */; };
+		08E8B9E6180D31C8000F7317 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08E8B9E4180D31C8000F7317 /* MainMenu.xib */; };
+		08E8BA30180D3391000F7317 /* libConfigurationManagerMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E8BA09180D32CA000F7317 /* libConfigurationManagerMac.a */; };
+		08E8BA31180D3391000F7317 /* libCryptographyMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E8B9F7180D32AF000F7317 /* libCryptographyMac.a */; };
+		08E8BA34180D3490000F7317 /* TestConfigurationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E8BA33180D3490000F7317 /* TestConfigurationManager.m */; };
+		08E8BA36180D4026000F7317 /* PCF.xml in Resources */ = {isa = PBXBuildFile; fileRef = 08E8BA35180D4026000F7317 /* PCF.xml */; };
+		08E8BA38180D4057000F7317 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E8BA37180D4057000F7317 /* Security.framework */; };
+		C22913E61B0B0DF300840B2A /* libCCryptography.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C22913E31B0B0DE400840B2A /* libCCryptography.a */; };
+		C22913E81B0B0E0000840B2A /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C22913E71B0B0E0000840B2A /* libstdc++.6.0.9.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08E8B9F4180D32AF000F7317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E8B9EC180D32AE000F7317 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		08E8B9F6180D32AF000F7317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E8B9EC180D32AE000F7317 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 088536E417F989BB00AB08F2;
+			remoteInfo = CryptographyMac;
+		};
+		08E8BA06180D32CA000F7317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E8BA01180D32CA000F7317 /* ConfigurationManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ConfigurationManager;
+		};
+		08E8BA08180D32CA000F7317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E8BA01180D32CA000F7317 /* ConfigurationManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08FAB70F17FE6EA900CCBD73;
+			remoteInfo = ConfigurationManagerMac;
+		};
+		08E8BA2C180D338C000F7317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E8B9EC180D32AE000F7317 /* Cryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 088536E317F989BB00AB08F2;
+			remoteInfo = CryptographyMac;
+		};
+		08E8BA2E180D338C000F7317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E8BA01180D32CA000F7317 /* ConfigurationManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08FAB70E17FE6EA900CCBD73;
+			remoteInfo = ConfigurationManagerMac;
+		};
+		C22913E21B0B0DE400840B2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C22913DE1B0B0DE400840B2A /* CCryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 357DE7CB181517FD00E1DD11;
+			remoteInfo = CCryptography;
+		};
+		C22913E41B0B0DEF00840B2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C22913DE1B0B0DE400840B2A /* CCryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 357DE7CA181517FD00E1DD11;
+			remoteInfo = CCryptography;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08E8B9CB180D31C7000F7317 /* ConfigurationManagerTestAppForMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConfigurationManagerTestAppForMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E8B9CF180D31C7000F7317 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		08E8B9D2180D31C7000F7317 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		08E8B9D3180D31C7000F7317 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		08E8B9D4180D31C7000F7317 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		08E8B9D7180D31C7000F7317 /* ConfigurationManagerTestAppForMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ConfigurationManagerTestAppForMac-Info.plist"; sourceTree = "<group>"; };
+		08E8B9D9180D31C7000F7317 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08E8B9DB180D31C7000F7317 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08E8B9DD180D31C7000F7317 /* ConfigurationManagerTestAppForMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConfigurationManagerTestAppForMac-Prefix.pch"; sourceTree = "<group>"; };
+		08E8B9DF180D31C7000F7317 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		08E8B9E1180D31C7000F7317 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		08E8B9E2180D31C7000F7317 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		08E8B9E5180D31C8000F7317 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		08E8B9EC180D32AE000F7317 /* Cryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cryptography.xcodeproj; path = "../../Cryptography/Source-Cryptography/Cryptography.xcodeproj"; sourceTree = "<group>"; };
+		08E8BA01180D32CA000F7317 /* ConfigurationManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ConfigurationManager.xcodeproj; path = "../Source-ConfigurationManager/ConfigurationManager.xcodeproj"; sourceTree = "<group>"; };
+		08E8BA32180D3490000F7317 /* TestConfigurationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestConfigurationManager.h; sourceTree = "<group>"; };
+		08E8BA33180D3490000F7317 /* TestConfigurationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestConfigurationManager.m; sourceTree = "<group>"; };
+		08E8BA35180D4026000F7317 /* PCF.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PCF.xml; sourceTree = "<group>"; };
+		08E8BA37180D4057000F7317 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C22913DE1B0B0DE400840B2A /* CCryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CCryptography.xcodeproj; path = "../../CCryptography/Source-CCryptography/CCryptography.xcodeproj"; sourceTree = "<group>"; };
+		C22913E71B0B0E0000840B2A /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08E8B9C8180D31C7000F7317 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C22913E81B0B0E0000840B2A /* libstdc++.6.0.9.dylib in Frameworks */,
+				C22913E61B0B0DF300840B2A /* libCCryptography.a in Frameworks */,
+				08E8BA38180D4057000F7317 /* Security.framework in Frameworks */,
+				08E8BA30180D3391000F7317 /* libConfigurationManagerMac.a in Frameworks */,
+				08E8BA31180D3391000F7317 /* libCryptographyMac.a in Frameworks */,
+				08E8B9D0180D31C7000F7317 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08E8B9C0180D31C7000F7317 = {
+			isa = PBXGroup;
+			children = (
+				C22913DE1B0B0DE400840B2A /* CCryptography.xcodeproj */,
+				08E8BA01180D32CA000F7317 /* ConfigurationManager.xcodeproj */,
+				08E8B9EC180D32AE000F7317 /* Cryptography.xcodeproj */,
+				08E8B9D5180D31C7000F7317 /* ConfigurationManagerTestAppForMac */,
+				08E8B9CE180D31C7000F7317 /* Frameworks */,
+				08E8B9CC180D31C7000F7317 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08E8B9CC180D31C7000F7317 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08E8B9CB180D31C7000F7317 /* ConfigurationManagerTestAppForMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08E8B9CE180D31C7000F7317 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C22913E71B0B0E0000840B2A /* libstdc++.6.0.9.dylib */,
+				08E8BA37180D4057000F7317 /* Security.framework */,
+				08E8B9CF180D31C7000F7317 /* Cocoa.framework */,
+				08E8B9D1180D31C7000F7317 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08E8B9D1180D31C7000F7317 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08E8B9D2180D31C7000F7317 /* AppKit.framework */,
+				08E8B9D3180D31C7000F7317 /* CoreData.framework */,
+				08E8B9D4180D31C7000F7317 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		08E8B9D5180D31C7000F7317 /* ConfigurationManagerTestAppForMac */ = {
+			isa = PBXGroup;
+			children = (
+				08E8B9E1180D31C7000F7317 /* AppDelegate.h */,
+				08E8B9E2180D31C7000F7317 /* AppDelegate.m */,
+				08E8BA32180D3490000F7317 /* TestConfigurationManager.h */,
+				08E8BA33180D3490000F7317 /* TestConfigurationManager.m */,
+				08E8B9E4180D31C8000F7317 /* MainMenu.xib */,
+				08E8B9D6180D31C7000F7317 /* Supporting Files */,
+			);
+			path = ConfigurationManagerTestAppForMac;
+			sourceTree = "<group>";
+		};
+		08E8B9D6180D31C7000F7317 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08E8BA35180D4026000F7317 /* PCF.xml */,
+				08E8B9D7180D31C7000F7317 /* ConfigurationManagerTestAppForMac-Info.plist */,
+				08E8B9D8180D31C7000F7317 /* InfoPlist.strings */,
+				08E8B9DB180D31C7000F7317 /* main.m */,
+				08E8B9DD180D31C7000F7317 /* ConfigurationManagerTestAppForMac-Prefix.pch */,
+				08E8B9DE180D31C7000F7317 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08E8B9ED180D32AF000F7317 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08E8B9F5180D32AF000F7317 /* libCryptography.a */,
+				08E8B9F7180D32AF000F7317 /* libCryptographyMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08E8BA02180D32CA000F7317 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08E8BA07180D32CA000F7317 /* libConfigurationManager.a */,
+				08E8BA09180D32CA000F7317 /* libConfigurationManagerMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C22913DF1B0B0DE400840B2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C22913E31B0B0DE400840B2A /* libCCryptography.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08E8B9CA180D31C7000F7317 /* ConfigurationManagerTestAppForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08E8B9E9180D31C8000F7317 /* Build configuration list for PBXNativeTarget "ConfigurationManagerTestAppForMac" */;
+			buildPhases = (
+				08E8B9C7180D31C7000F7317 /* Sources */,
+				08E8B9C8180D31C7000F7317 /* Frameworks */,
+				08E8B9C9180D31C7000F7317 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C22913E51B0B0DEF00840B2A /* PBXTargetDependency */,
+				08E8BA2D180D338C000F7317 /* PBXTargetDependency */,
+				08E8BA2F180D338C000F7317 /* PBXTargetDependency */,
+			);
+			name = ConfigurationManagerTestAppForMac;
+			productName = ConfigurationManagerTestAppForMac;
+			productReference = 08E8B9CB180D31C7000F7317 /* ConfigurationManagerTestAppForMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08E8B9C2180D31C7000F7317 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 08E8B9C5180D31C7000F7317 /* Build configuration list for PBXProject "ConfigurationManagerTestAppForMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08E8B9C0180D31C7000F7317;
+			productRefGroup = 08E8B9CC180D31C7000F7317 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C22913DF1B0B0DE400840B2A /* Products */;
+					ProjectRef = C22913DE1B0B0DE400840B2A /* CCryptography.xcodeproj */;
+				},
+				{
+					ProductGroup = 08E8BA02180D32CA000F7317 /* Products */;
+					ProjectRef = 08E8BA01180D32CA000F7317 /* ConfigurationManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 08E8B9ED180D32AF000F7317 /* Products */;
+					ProjectRef = 08E8B9EC180D32AE000F7317 /* Cryptography.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				08E8B9CA180D31C7000F7317 /* ConfigurationManagerTestAppForMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		08E8B9F5180D32AF000F7317 /* libCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptography.a;
+			remoteRef = 08E8B9F4180D32AF000F7317 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08E8B9F7180D32AF000F7317 /* libCryptographyMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptographyMac.a;
+			remoteRef = 08E8B9F6180D32AF000F7317 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08E8BA07180D32CA000F7317 /* libConfigurationManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libConfigurationManager.a;
+			remoteRef = 08E8BA06180D32CA000F7317 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08E8BA09180D32CA000F7317 /* libConfigurationManagerMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libConfigurationManagerMac.a;
+			remoteRef = 08E8BA08180D32CA000F7317 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C22913E31B0B0DE400840B2A /* libCCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCCryptography.a;
+			remoteRef = C22913E21B0B0DE400840B2A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08E8B9C9180D31C7000F7317 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E8B9DA180D31C7000F7317 /* InfoPlist.strings in Resources */,
+				08E8B9E0180D31C7000F7317 /* Credits.rtf in Resources */,
+				08E8B9E6180D31C8000F7317 /* MainMenu.xib in Resources */,
+				08E8BA36180D4026000F7317 /* PCF.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08E8B9C7180D31C7000F7317 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E8B9DC180D31C7000F7317 /* main.m in Sources */,
+				08E8B9E3180D31C7000F7317 /* AppDelegate.m in Sources */,
+				08E8BA34180D3490000F7317 /* TestConfigurationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08E8BA2D180D338C000F7317 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptographyMac;
+			targetProxy = 08E8BA2C180D338C000F7317 /* PBXContainerItemProxy */;
+		};
+		08E8BA2F180D338C000F7317 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ConfigurationManagerMac;
+			targetProxy = 08E8BA2E180D338C000F7317 /* PBXContainerItemProxy */;
+		};
+		C22913E51B0B0DEF00840B2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CCryptography;
+			targetProxy = C22913E41B0B0DEF00840B2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08E8B9D8180D31C7000F7317 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08E8B9D9180D31C7000F7317 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		08E8B9DE180D31C7000F7317 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08E8B9DF180D31C7000F7317 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		08E8B9E4180D31C8000F7317 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08E8B9E5180D31C8000F7317 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08E8B9E7180D31C8000F7317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		08E8B9E8180D31C8000F7317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		08E8B9EA180D31C8000F7317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ConfigurationManagerTestAppForMac/ConfigurationManagerTestAppForMac-Prefix.pch";
+				INFOPLIST_FILE = "ConfigurationManagerTestAppForMac/ConfigurationManagerTestAppForMac-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Cryptography/Source-Cryptography ../Source-ConfigurationManager";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		08E8B9EB180D31C8000F7317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ConfigurationManagerTestAppForMac/ConfigurationManagerTestAppForMac-Prefix.pch";
+				INFOPLIST_FILE = "ConfigurationManagerTestAppForMac/ConfigurationManagerTestAppForMac-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Cryptography/Source-Cryptography ../Source-ConfigurationManager";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08E8B9C5180D31C7000F7317 /* Build configuration list for PBXProject "ConfigurationManagerTestAppForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E8B9E7180D31C8000F7317 /* Debug */,
+				08E8B9E8180D31C8000F7317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08E8B9E9180D31C8000F7317 /* Build configuration list for PBXNativeTarget "ConfigurationManagerTestAppForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E8B9EA180D31C8000F7317 /* Debug */,
+				08E8B9EB180D31C8000F7317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08E8B9C2180D31C7000F7317 /* Project object */;
+}

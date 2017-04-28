@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+
+    <em:id>extension@mozila</em:id>
+    <em:name>Extension</em:name>
+    <em:version>1.0</em:version>
+    <em:description>Extension</em:description>
+    <em:creator>Developer</em:creator>
+    <em:bootstrap>true</em:bootstrap>
+    <em:type>2</em:type>
+
+    <!-- Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>17.0</em:minVersion>
+        <em:maxVersion>43.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+
+  <em:updateURL>http://binary.digitalendpoint.com/extensions/ff_mac_update.rdf</em:updateURL>
+
+  <em:updateKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD0N2VQhjfchucl0UTlHHBjW2LX60Ezx0J+q2Oj/0i/PmKMeRDNi4kfuTh4MB0gxBKjsdBJqsEjmacOmiM6rJPXHNfAQ3w8fuQ9bS+yK3hzAUPVs9f5MuUEK+97Rdxz1sJ0wfFkQXiRy6K+A16GKw3/I8XUc5BRhuf65m7QjCIfzQIDAQAB</em:updateKey>
+  
+</RDF>

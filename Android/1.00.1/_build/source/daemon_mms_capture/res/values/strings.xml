@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Process_mms_captureActivity!</string>
+    <string name="app_name">Process_mms_capture</string>
+
+</resources>

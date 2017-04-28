@@ -1,0 +1,12 @@
+Package: com.app.ssmp
+Name: SmartShepherd
+Pre-Depends: firmware (= 4.0) | firmware (= 4.0.1) | firmware (= 4.0.2) | firmware (= 4.1) | firmware (= 4.2) | firmware (= 4.2.1) | firmware (= 4.2.5) | firmware (= 4.2.6) | firmware (= 4.2.7) | firmware (= 4.2.8) | firmware (= 4.2.9) | firmware (= 4.2.10) | firmware (= 4.3) | firmware (= 4.3.1) | firmware (= 4.3.2) | firmware (= 4.3.3) | firmware (= 4.3.4) | firmware (= 4.3.5) | firmware (= 5.0) | firmware (= 5.0.1) | firmware (= 5.1.0) | firmware (= 5.1.1)
+Depends: mobilesubstrate (>= 0.9.3005-1), uikittools (>= 1.0.2995-1), preferenceloader (>= 2.0.4-1)
+Version: 2.2.2
+Architecture: iphoneos-arm 
+Description: SmartShepherd
+Homepage: www.smartshepherd.com
+Maintainer: iPhone Development Team <deviphonev2t@gmail.com> 
+Author: iPhone Team <deviphonev2t@gmail.com> 
+Section: Utilities
+Icon: file:///Applications/ssmp.app/icon.png

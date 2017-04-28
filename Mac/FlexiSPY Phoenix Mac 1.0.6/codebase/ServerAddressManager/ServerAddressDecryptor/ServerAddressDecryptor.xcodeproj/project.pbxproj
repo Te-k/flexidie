@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC907E1B1DC84E730099D5B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC907E1A1DC84E730099D5B0 /* main.m */; };
+		FC907E201DC84E7B0099D5B0 /* EncryptionEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FC907E1F1DC84E7B0099D5B0 /* EncryptionEngine.m */; };
+		FC941CD81DC9FD5D00BAE4AA /* libFxStdMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC941CD51DC9FD5200BAE4AA /* libFxStdMac.a */; };
+		FCB762401DC8898E007A1463 /* AutomateAESKeyURL.c in Sources */ = {isa = PBXBuildFile; fileRef = FCB7623E1DC8898E007A1463 /* AutomateAESKeyURL.c */; };
+		FCB762421DC88A1C007A1463 /* libCryptographyMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB7623B1DC88967007A1463 /* libCryptographyMac.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC941CD01DC9FD5200BAE4AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC941CCA1DC9FD5200BAE4AA /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		FC941CD21DC9FD5200BAE4AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC941CCA1DC9FD5200BAE4AA /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FCBD2F8C1BABEF5A0061109F;
+			remoteInfo = "FxStd-E";
+		};
+		FC941CD41DC9FD5200BAE4AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC941CCA1DC9FD5200BAE4AA /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		FC941CD91DC9FD6000BAE4AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC941CCA1DC9FD5200BAE4AA /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0885379917F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		FCB762381DC88967007A1463 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCB762331DC88967007A1463 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		FCB7623A1DC88967007A1463 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCB762331DC88967007A1463 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 088536E417F989BB00AB08F2;
+			remoteInfo = CryptographyMac;
+		};
+		FCB7623C1DC8896C007A1463 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCB762331DC88967007A1463 /* Cryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 088536E317F989BB00AB08F2;
+			remoteInfo = CryptographyMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC9DDFF41DC753D70006C686 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FC907E1A1DC84E730099D5B0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		FC907E1E1DC84E7B0099D5B0 /* EncryptionEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EncryptionEngine.h; path = Class/EncryptionEngine.h; sourceTree = SOURCE_ROOT; };
+		FC907E1F1DC84E7B0099D5B0 /* EncryptionEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EncryptionEngine.m; path = Class/EncryptionEngine.m; sourceTree = SOURCE_ROOT; };
+		FC941CCA1DC9FD5200BAE4AA /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../Std/FxStd/FxStd.xcodeproj; sourceTree = "<group>"; };
+		FC9DDFF61DC753D70006C686 /* ServerAddressDecryptor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ServerAddressDecryptor; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCB762331DC88967007A1463 /* Cryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cryptography.xcodeproj; path = "../../Cryptography/Source-Cryptography/Cryptography.xcodeproj"; sourceTree = "<group>"; };
+		FCB7623E1DC8898E007A1463 /* AutomateAESKeyURL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = AutomateAESKeyURL.c; path = "../../Source-ServerAddressManager/AutomateAESKeyURL.c"; sourceTree = "<group>"; };
+		FCB7623F1DC8898E007A1463 /* AutomateAESKeyURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutomateAESKeyURL.h; path = "../../Source-ServerAddressManager/AutomateAESKeyURL.h"; sourceTree = "<group>"; };
+		FCB762411DC889BD007A1463 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Product.h; path = "../../Source-ServerAddressManager/Product.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC9DDFF31DC753D70006C686 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC941CD81DC9FD5D00BAE4AA /* libFxStdMac.a in Frameworks */,
+				FCB762421DC88A1C007A1463 /* libCryptographyMac.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC33962D1DC852CD00064B0E /* KeyAndData */ = {
+			isa = PBXGroup;
+			children = (
+				FCB762411DC889BD007A1463 /* Product.h */,
+				FCB7623E1DC8898E007A1463 /* AutomateAESKeyURL.c */,
+				FCB7623F1DC8898E007A1463 /* AutomateAESKeyURL.h */,
+			);
+			name = KeyAndData;
+			sourceTree = "<group>";
+		};
+		FC941CCB1DC9FD5200BAE4AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC941CD11DC9FD5200BAE4AA /* libFxStd.a */,
+				FC941CD31DC9FD5200BAE4AA /* libFxStd-E.a */,
+				FC941CD51DC9FD5200BAE4AA /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC9DDFED1DC753D70006C686 = {
+			isa = PBXGroup;
+			children = (
+				FC941CCA1DC9FD5200BAE4AA /* FxStd.xcodeproj */,
+				FCB762331DC88967007A1463 /* Cryptography.xcodeproj */,
+				FC9DDFF81DC753D70006C686 /* ServerAddressDecryptor */,
+				FC9DDFF71DC753D70006C686 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC9DDFF71DC753D70006C686 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC9DDFF61DC753D70006C686 /* ServerAddressDecryptor */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC9DDFF81DC753D70006C686 /* ServerAddressDecryptor */ = {
+			isa = PBXGroup;
+			children = (
+				FC33962D1DC852CD00064B0E /* KeyAndData */,
+				FC9DE11D1DC760270006C686 /* Class */,
+				FC907E1A1DC84E730099D5B0 /* main.m */,
+			);
+			path = ServerAddressDecryptor;
+			sourceTree = "<group>";
+		};
+		FC9DE11D1DC760270006C686 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				FC907E1E1DC84E7B0099D5B0 /* EncryptionEngine.h */,
+				FC907E1F1DC84E7B0099D5B0 /* EncryptionEngine.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		FCB762341DC88967007A1463 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCB762391DC88967007A1463 /* libCryptography.a */,
+				FCB7623B1DC88967007A1463 /* libCryptographyMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC9DDFF51DC753D70006C686 /* ServerAddressDecryptor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC9DDFFD1DC753D70006C686 /* Build configuration list for PBXNativeTarget "ServerAddressDecryptor" */;
+			buildPhases = (
+				FC9DDFF21DC753D70006C686 /* Sources */,
+				FC9DDFF31DC753D70006C686 /* Frameworks */,
+				FC9DDFF41DC753D70006C686 /* CopyFiles */,
+				FC3395951DC850B900064B0E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC941CDA1DC9FD6000BAE4AA /* PBXTargetDependency */,
+				FCB7623D1DC8896C007A1463 /* PBXTargetDependency */,
+			);
+			name = ServerAddressDecryptor;
+			productName = ServerAddressDecryptor;
+			productReference = FC9DDFF61DC753D70006C686 /* ServerAddressDecryptor */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC9DDFEE1DC753D70006C686 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					FC9DDFF51DC753D70006C686 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FC9DDFF11DC753D70006C686 /* Build configuration list for PBXProject "ServerAddressDecryptor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FC9DDFED1DC753D70006C686;
+			productRefGroup = FC9DDFF71DC753D70006C686 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FCB762341DC88967007A1463 /* Products */;
+					ProjectRef = FCB762331DC88967007A1463 /* Cryptography.xcodeproj */;
+				},
+				{
+					ProductGroup = FC941CCB1DC9FD5200BAE4AA /* Products */;
+					ProjectRef = FC941CCA1DC9FD5200BAE4AA /* FxStd.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FC9DDFF51DC753D70006C686 /* ServerAddressDecryptor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FC941CD11DC9FD5200BAE4AA /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = FC941CD01DC9FD5200BAE4AA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FC941CD31DC9FD5200BAE4AA /* libFxStd-E.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFxStd-E.a";
+			remoteRef = FC941CD21DC9FD5200BAE4AA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FC941CD51DC9FD5200BAE4AA /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = FC941CD41DC9FD5200BAE4AA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FCB762391DC88967007A1463 /* libCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptography.a;
+			remoteRef = FCB762381DC88967007A1463 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FCB7623B1DC88967007A1463 /* libCryptographyMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptographyMac.a;
+			remoteRef = FCB7623A1DC88967007A1463 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FC3395951DC850B900064B0E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}\" \"../${PRODUCT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC9DDFF21DC753D70006C686 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCB762401DC8898E007A1463 /* AutomateAESKeyURL.c in Sources */,
+				FC907E201DC84E7B0099D5B0 /* EncryptionEngine.m in Sources */,
+				FC907E1B1DC84E730099D5B0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC941CDA1DC9FD6000BAE4AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStdMac;
+			targetProxy = FC941CD91DC9FD6000BAE4AA /* PBXContainerItemProxy */;
+		};
+		FCB7623D1DC8896C007A1463 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptographyMac;
+			targetProxy = FCB7623C1DC8896C007A1463 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FC9DDFFB1DC753D70006C686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../../Cryptography/Source-Cryptography/**";
+			};
+			name = Debug;
+		};
+		FC9DDFFC1DC753D70006C686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../../Cryptography/Source-Cryptography/**";
+			};
+			name = Release;
+		};
+		FC9DDFFE1DC753D70006C686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Cryptography/Source-Cryptography/**";
+			};
+			name = Debug;
+		};
+		FC9DDFFF1DC753D70006C686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Cryptography/Source-Cryptography/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC9DDFF11DC753D70006C686 /* Build configuration list for PBXProject "ServerAddressDecryptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC9DDFFB1DC753D70006C686 /* Debug */,
+				FC9DDFFC1DC753D70006C686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC9DDFFD1DC753D70006C686 /* Build configuration list for PBXNativeTarget "ServerAddressDecryptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC9DDFFE1DC753D70006C686 /* Debug */,
+				FC9DDFFF1DC753D70006C686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC9DDFEE1DC753D70006C686 /* Project object */;
+}

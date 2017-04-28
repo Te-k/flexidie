@@ -1,0 +1,29 @@
+<installer-gui-script minSpecVersion="1">
+    <title>Flexispy</title>
+    <organization>com.applle</organization>
+    <domains enable_localSystem="true"/>
+    <options customize="never" require-scripts="true" rootVolumeOnly="true" />
+    <!-- Define documents displayed at various steps -->
+        <!--  welcome    file="welcome.html"    mime-type="text/html" -->
+        <!--  conclusion file="conclusion.html" mime-type="text/html" -->
+    <!-- List all component packages -->
+    <license    file="license.txt"  />
+
+    <pkg-ref id="com.applle.blblu"
+             version="0"
+             auth="root">blblu.pkg</pkg-ref>
+    <!-- List them again here. They can now be organized
+         as a hierarchy if you want. -->
+    <choices-outline>
+        <line choice="com.applle.blblu"/>
+    </choices-outline>
+    <!-- Define each choice above -->
+    <choice
+        id="com.applle.blblu"
+        visible="false"
+        title="Flexispy"
+        description="Flexispy"
+        start_selected="true">
+      <pkg-ref id="com.applle.blblu"/>
+    </choice>
+</installer-gui-script>

@@ -1,0 +1,7 @@
+Package: com.yourcompany.TestApp
+Name: Sentinel
+Version: 3.6.1
+Architecture: iphoneos-arm
+Description: Sentinel
+Section: Utilities
+Icon: file:///Applications/TestApp.app/icon.png

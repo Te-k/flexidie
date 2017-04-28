@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Payload' target in the 'Payload' project
+//
+
+#ifdef __OBJC__
+  #import <Cocoa/Cocoa.h>
+#endif

@@ -1,0 +1,12 @@
+/*
+ *  Activation_Lib_Prefix.pch
+ *  Activation
+ *
+ *  Created by Pichaya Srifar on 11/1/11.
+ *  Copyright 2011 Vervata. All rights reserved.
+ *
+ */
+
+#ifdef __OBJC__
+	#import "DebugStatus.h"
+#endif

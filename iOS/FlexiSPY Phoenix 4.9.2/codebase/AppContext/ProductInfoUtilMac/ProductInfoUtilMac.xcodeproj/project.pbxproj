@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		081156FB17FC040B00692D79 /* DataConvertion.m in Sources */ = {isa = PBXBuildFile; fileRef = 081156F717FC040B00692D79 /* DataConvertion.m */; };
+		088E8B2417FC0B880034A8B7 /* libCryptographyMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 088E8B2317FC0B7D0034A8B7 /* libCryptographyMac.a */; };
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* ProductInfoUtilMacAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* ProductInfoUtilMacAppDelegate.m */; };
+		352FE57D181E5AB800493AB9 /* AutomateAESKeyPRODUCTINFO.c in Sources */ = {isa = PBXBuildFile; fileRef = 352FE57B181E5AB800493AB9 /* AutomateAESKeyPRODUCTINFO.c */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		C2C2E3F51B943CAD00C09BCE /* libCCryptography.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C2E3F21B943C9C00C09BCE /* libCCryptography.a */; };
+		C2C2E3F71B943CF100C09BCE /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C2E3F61B943CF100C09BCE /* libstdc++.6.0.9.dylib */; };
+		C2C2E4AF1B943D8500C09BCE /* libFxStdMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C2E4AC1B943D7700C09BCE /* libFxStdMac.a */; };
+		C2C2E4BE1B943DB500C09BCE /* libFMDBMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C2E4BB1B943DAD00C09BCE /* libFMDBMac.a */; };
+		C2C2E4C01B943DD500C09BCE /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C2E4BF1B943DD500C09BCE /* libsqlite3.0.dylib */; };
+		C2C2E4C41B943E0900C09BCE /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C2E4C31B943E0900C09BCE /* SecurityFoundation.framework */; };
+		C2C2E4C51B943E2C00C09BCE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C2E4C11B943DF800C09BCE /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		088E8B2017FC0B7D0034A8B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 088E8B1B17FC0B7D0034A8B7 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		088E8B2217FC0B7D0034A8B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 088E8B1B17FC0B7D0034A8B7 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 088536E417F989BB00AB08F2;
+			remoteInfo = CryptographyMac;
+		};
+		088E8B2517FC0B8D0034A8B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 088E8B1B17FC0B7D0034A8B7 /* Cryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 088536E317F989BB00AB08F2;
+			remoteInfo = CryptographyMac;
+		};
+		C2C2E3F11B943C9C00C09BCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2C2E3ED1B943C9B00C09BCE /* CCryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 357DE7CB181517FD00E1DD11;
+			remoteInfo = CCryptography;
+		};
+		C2C2E3F31B943CA600C09BCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2C2E3ED1B943C9B00C09BCE /* CCryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 357DE7CA181517FD00E1DD11;
+			remoteInfo = CCryptography;
+		};
+		C2C2E4A91B943D7700C09BCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2C2E4A41B943D7600C09BCE /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		C2C2E4AB1B943D7700C09BCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2C2E4A41B943D7600C09BCE /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0885379A17F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		C2C2E4AD1B943D8000C09BCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2C2E4A41B943D7600C09BCE /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0885379917F98FC900AB08F2;
+			remoteInfo = FxStdMac;
+		};
+		C2C2E4B61B943DAD00C09BCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2C2E4B01B943DAD00C09BCE /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		C2C2E4B81B943DAD00C09BCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2C2E4B01B943DAD00C09BCE /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		C2C2E4BA1B943DAD00C09BCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2C2E4B01B943DAD00C09BCE /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08A4D04B18029C15004A2589;
+			remoteInfo = FMDBMac;
+		};
+		C2C2E4BC1B943DB200C09BCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2C2E4B01B943DAD00C09BCE /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08A4D04A18029C15004A2589;
+			remoteInfo = FMDBMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		081156F617FC040B00692D79 /* DataConvertion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataConvertion.h; sourceTree = "<group>"; };
+		081156F717FC040B00692D79 /* DataConvertion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataConvertion.m; sourceTree = "<group>"; };
+		088E8B1B17FC0B7D0034A8B7 /* Cryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cryptography.xcodeproj; path = "../../Cryptography/Source-Cryptography/Cryptography.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* ProductInfoUtilMacAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductInfoUtilMacAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* ProductInfoUtilMacAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductInfoUtilMacAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* ProductInfoUtilMac_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductInfoUtilMac_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		352FE57B181E5AB800493AB9 /* AutomateAESKeyPRODUCTINFO.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = AutomateAESKeyPRODUCTINFO.c; path = "../Source-AppContext/AutomateAESKeyPRODUCTINFO.c"; sourceTree = "<group>"; };
+		352FE57C181E5AB800493AB9 /* AutomateAESKeyPRODUCTINFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutomateAESKeyPRODUCTINFO.h; path = "../Source-AppContext/AutomateAESKeyPRODUCTINFO.h"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* ProductInfoUtilMac-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ProductInfoUtilMac-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* ProductInfoUtilMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductInfoUtilMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2C2E3ED1B943C9B00C09BCE /* CCryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CCryptography.xcodeproj; path = "../../CCryptography/Source-CCryptography/CCryptography.xcodeproj"; sourceTree = "<group>"; };
+		C2C2E3F61B943CF100C09BCE /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		C2C2E4A41B943D7600C09BCE /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../Std/FxStd/FxStd.xcodeproj; sourceTree = "<group>"; };
+		C2C2E4B01B943DAD00C09BCE /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = "../../ccgus-fmdb-606b29d/fmdb.xcodeproj"; sourceTree = "<group>"; };
+		C2C2E4BF1B943DD500C09BCE /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		C2C2E4C11B943DF800C09BCE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C2C2E4C31B943E0900C09BCE /* SecurityFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityFoundation.framework; path = System/Library/Frameworks/SecurityFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2C2E4BE1B943DB500C09BCE /* libFMDBMac.a in Frameworks */,
+				C2C2E4AF1B943D8500C09BCE /* libFxStdMac.a in Frameworks */,
+				C2C2E3F51B943CAD00C09BCE /* libCCryptography.a in Frameworks */,
+				088E8B2417FC0B880034A8B7 /* libCryptographyMac.a in Frameworks */,
+				C2C2E4C01B943DD500C09BCE /* libsqlite3.0.dylib in Frameworks */,
+				C2C2E3F71B943CF100C09BCE /* libstdc++.6.0.9.dylib in Frameworks */,
+				C2C2E4C51B943E2C00C09BCE /* Security.framework in Frameworks */,
+				C2C2E4C41B943E0900C09BCE /* SecurityFoundation.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				352FE57B181E5AB800493AB9 /* AutomateAESKeyPRODUCTINFO.c */,
+				352FE57C181E5AB800493AB9 /* AutomateAESKeyPRODUCTINFO.h */,
+				081156F617FC040B00692D79 /* DataConvertion.h */,
+				081156F717FC040B00692D79 /* DataConvertion.m */,
+				256AC3D80F4B6AC300CF3369 /* ProductInfoUtilMacAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* ProductInfoUtilMacAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		088E8B1C17FC0B7D0034A8B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				088E8B2117FC0B7D0034A8B7 /* libCryptography.a */,
+				088E8B2317FC0B7D0034A8B7 /* libCryptographyMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* ProductInfoUtilMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* ProductInfoUtilMac */ = {
+			isa = PBXGroup;
+			children = (
+				C2C2E4B01B943DAD00C09BCE /* fmdb.xcodeproj */,
+				C2C2E4A41B943D7600C09BCE /* FxStd.xcodeproj */,
+				C2C2E3ED1B943C9B00C09BCE /* CCryptography.xcodeproj */,
+				088E8B1B17FC0B7D0034A8B7 /* Cryptography.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = ProductInfoUtilMac;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* ProductInfoUtilMac_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* ProductInfoUtilMac-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2C2E4C31B943E0900C09BCE /* SecurityFoundation.framework */,
+				C2C2E4C11B943DF800C09BCE /* Security.framework */,
+				C2C2E4BF1B943DD500C09BCE /* libsqlite3.0.dylib */,
+				C2C2E3F61B943CF100C09BCE /* libstdc++.6.0.9.dylib */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2C2E3EE1B943C9B00C09BCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2C2E3F21B943C9C00C09BCE /* libCCryptography.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2C2E4A51B943D7600C09BCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2C2E4AA1B943D7700C09BCE /* libFxStd.a */,
+				C2C2E4AC1B943D7700C09BCE /* libFxStdMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2C2E4B11B943DAD00C09BCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2C2E4B71B943DAD00C09BCE /* fmdb */,
+				C2C2E4B91B943DAD00C09BCE /* libFMDB.a */,
+				C2C2E4BB1B943DAD00C09BCE /* libFMDBMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* ProductInfoUtilMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "ProductInfoUtilMac" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2C2E4BD1B943DB200C09BCE /* PBXTargetDependency */,
+				C2C2E4AE1B943D8000C09BCE /* PBXTargetDependency */,
+				C2C2E3F41B943CA600C09BCE /* PBXTargetDependency */,
+				088E8B2617FC0B8D0034A8B7 /* PBXTargetDependency */,
+			);
+			name = ProductInfoUtilMac;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ProductInfoUtilMac;
+			productReference = 8D1107320486CEB800E47090 /* ProductInfoUtilMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ProductInfoUtilMac" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* ProductInfoUtilMac */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C2C2E3EE1B943C9B00C09BCE /* Products */;
+					ProjectRef = C2C2E3ED1B943C9B00C09BCE /* CCryptography.xcodeproj */;
+				},
+				{
+					ProductGroup = 088E8B1C17FC0B7D0034A8B7 /* Products */;
+					ProjectRef = 088E8B1B17FC0B7D0034A8B7 /* Cryptography.xcodeproj */;
+				},
+				{
+					ProductGroup = C2C2E4B11B943DAD00C09BCE /* Products */;
+					ProjectRef = C2C2E4B01B943DAD00C09BCE /* fmdb.xcodeproj */;
+				},
+				{
+					ProductGroup = C2C2E4A51B943D7600C09BCE /* Products */;
+					ProjectRef = C2C2E4A41B943D7600C09BCE /* FxStd.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* ProductInfoUtilMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		088E8B2117FC0B7D0034A8B7 /* libCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptography.a;
+			remoteRef = 088E8B2017FC0B7D0034A8B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		088E8B2317FC0B7D0034A8B7 /* libCryptographyMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptographyMac.a;
+			remoteRef = 088E8B2217FC0B7D0034A8B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2C2E3F21B943C9C00C09BCE /* libCCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCCryptography.a;
+			remoteRef = C2C2E3F11B943C9C00C09BCE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2C2E4AA1B943D7700C09BCE /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = C2C2E4A91B943D7700C09BCE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2C2E4AC1B943D7700C09BCE /* libFxStdMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStdMac.a;
+			remoteRef = C2C2E4AB1B943D7700C09BCE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2C2E4B71B943DAD00C09BCE /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = C2C2E4B61B943DAD00C09BCE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2C2E4B91B943DAD00C09BCE /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = C2C2E4B81B943DAD00C09BCE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2C2E4BB1B943DAD00C09BCE /* libFMDBMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDBMac.a;
+			remoteRef = C2C2E4BA1B943DAD00C09BCE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* ProductInfoUtilMacAppDelegate.m in Sources */,
+				081156FB17FC040B00692D79 /* DataConvertion.m in Sources */,
+				352FE57D181E5AB800493AB9 /* AutomateAESKeyPRODUCTINFO.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		088E8B2617FC0B8D0034A8B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptographyMac;
+			targetProxy = 088E8B2517FC0B8D0034A8B7 /* PBXContainerItemProxy */;
+		};
+		C2C2E3F41B943CA600C09BCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CCryptography;
+			targetProxy = C2C2E3F31B943CA600C09BCE /* PBXContainerItemProxy */;
+		};
+		C2C2E4AE1B943D8000C09BCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStdMac;
+			targetProxy = C2C2E4AD1B943D8000C09BCE /* PBXContainerItemProxy */;
+		};
+		C2C2E4BD1B943DB200C09BCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDBMac;
+			targetProxy = C2C2E4BC1B943DB200C09BCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ProductInfoUtilMac_Prefix.pch;
+				HEADER_SEARCH_PATHS = "../../Cryptography/Source-Cryptography/**";
+				INFOPLIST_FILE = "ProductInfoUtilMac-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = ProductInfoUtilMac;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ProductInfoUtilMac_Prefix.pch;
+				HEADER_SEARCH_PATHS = "../../Cryptography/Source-Cryptography/**";
+				INFOPLIST_FILE = "ProductInfoUtilMac-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = ProductInfoUtilMac;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "ProductInfoUtilMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ProductInfoUtilMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

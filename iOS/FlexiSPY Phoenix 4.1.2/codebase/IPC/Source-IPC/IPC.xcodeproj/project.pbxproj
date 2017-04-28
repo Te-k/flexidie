@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		086B114C17FA737000D21FD5 /* IPC_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* IPC_Prefix.pch */; };
+		086B114D17FA737000D21FD5 /* SocketIPCSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 359F2E50146BAAF0006DF3A3 /* SocketIPCSender.h */; };
+		086B114E17FA737000D21FD5 /* SocketIPCReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 359F2ED6146BBD3F006DF3A3 /* SocketIPCReader.h */; };
+		086B114F17FA737000D21FD5 /* MessagePortIPCSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 9676FDC514A073F700DCF44B /* MessagePortIPCSender.h */; };
+		086B115017FA737000D21FD5 /* MessagePortIPCReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9676FDC914A0741F00DCF44B /* MessagePortIPCReader.h */; };
+		086B115117FA737000D21FD5 /* SharedFileIPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 35DF380614CEE2B200804713 /* SharedFileIPC.h */; };
+		086B115217FA737000D21FD5 /* AutomateAESKeyIPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C5E2061637948900C764AC /* AutomateAESKeyIPC.h */; };
+		086B115A17FA74D500D21FD5 /* SocketIPCSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F2E51146BAAF0006DF3A3 /* SocketIPCSender.m */; };
+		086B115B17FA74D500D21FD5 /* SocketIPCReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F2ED7146BBD3F006DF3A3 /* SocketIPCReader.m */; };
+		086B115C17FA74D500D21FD5 /* MessagePortIPCSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676FDC614A073F700DCF44B /* MessagePortIPCSender.m */; };
+		086B115D17FA74D500D21FD5 /* MessagePortIPCReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676FDCA14A0741F00DCF44B /* MessagePortIPCReader.m */; };
+		086B115E17FA74D500D21FD5 /* SharedFileIPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF380714CEE2B200804713 /* SharedFileIPC.m */; };
+		086B115F17FA74D500D21FD5 /* AutomateAESKeyIPC.c in Sources */ = {isa = PBXBuildFile; fileRef = 35C5E2051637948900C764AC /* AutomateAESKeyIPC.c */; };
+		353307B3187A8F3B004F05A3 /* DMCenterIPCReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 353307B1187A8F3B004F05A3 /* DMCenterIPCReader.h */; };
+		353307B4187A8F3B004F05A3 /* DMCenterIPCReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 353307B2187A8F3B004F05A3 /* DMCenterIPCReader.m */; };
+		35330802187A980F004F05A3 /* DMCenterIPCSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 35330800187A980F004F05A3 /* DMCenterIPCSender.h */; };
+		35330803187A980F004F05A3 /* DMCenterIPCSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 35330801187A980F004F05A3 /* DMCenterIPCSender.m */; };
+		3541C3271876BC270033AE3C /* SharedFile2IPCSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 3541C3251876BC270033AE3C /* SharedFile2IPCSender.h */; };
+		3541C3281876BC270033AE3C /* SharedFile2IPCSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 3541C3261876BC270033AE3C /* SharedFile2IPCSender.m */; };
+		3541C32B1876BDAC0033AE3C /* SharedFile2IPCReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3541C3291876BDAC0033AE3C /* SharedFile2IPCReader.h */; };
+		3541C32C1876BDAC0033AE3C /* SharedFile2IPCReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3541C32A1876BDAC0033AE3C /* SharedFile2IPCReader.m */; };
+		359F2E52146BAAF0006DF3A3 /* SocketIPCSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 359F2E50146BAAF0006DF3A3 /* SocketIPCSender.h */; };
+		359F2E53146BAAF0006DF3A3 /* SocketIPCSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F2E51146BAAF0006DF3A3 /* SocketIPCSender.m */; };
+		359F2ED8146BBD3F006DF3A3 /* SocketIPCReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 359F2ED6146BBD3F006DF3A3 /* SocketIPCReader.h */; };
+		359F2ED9146BBD3F006DF3A3 /* SocketIPCReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F2ED7146BBD3F006DF3A3 /* SocketIPCReader.m */; };
+		35C5E2071637948900C764AC /* AutomateAESKeyIPC.c in Sources */ = {isa = PBXBuildFile; fileRef = 35C5E2051637948900C764AC /* AutomateAESKeyIPC.c */; };
+		35C5E2081637948900C764AC /* AutomateAESKeyIPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C5E2061637948900C764AC /* AutomateAESKeyIPC.h */; };
+		35DF380814CEE2B200804713 /* SharedFileIPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 35DF380614CEE2B200804713 /* SharedFileIPC.h */; };
+		35DF380914CEE2B200804713 /* SharedFileIPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF380714CEE2B200804713 /* SharedFileIPC.m */; };
+		9676FDC714A073F700DCF44B /* MessagePortIPCSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 9676FDC514A073F700DCF44B /* MessagePortIPCSender.h */; };
+		9676FDC814A073F700DCF44B /* MessagePortIPCSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676FDC614A073F700DCF44B /* MessagePortIPCSender.m */; };
+		9676FDCB14A0741F00DCF44B /* MessagePortIPCReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9676FDC914A0741F00DCF44B /* MessagePortIPCReader.h */; };
+		9676FDCC14A0741F00DCF44B /* MessagePortIPCReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676FDCA14A0741F00DCF44B /* MessagePortIPCReader.m */; };
+		AA747D9F0F9514B9006C5449 /* IPC_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* IPC_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		FC1D15C61BAAD607006E504B /* IPC_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* IPC_Prefix.pch */; };
+		FC1D15C71BAAD607006E504B /* SocketIPCSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 359F2E50146BAAF0006DF3A3 /* SocketIPCSender.h */; };
+		FC1D15C81BAAD607006E504B /* SocketIPCReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 359F2ED6146BBD3F006DF3A3 /* SocketIPCReader.h */; };
+		FC1D15C91BAAD607006E504B /* MessagePortIPCSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 9676FDC514A073F700DCF44B /* MessagePortIPCSender.h */; };
+		FC1D15CA1BAAD607006E504B /* MessagePortIPCReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9676FDC914A0741F00DCF44B /* MessagePortIPCReader.h */; };
+		FC1D15CB1BAAD607006E504B /* SharedFileIPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 35DF380614CEE2B200804713 /* SharedFileIPC.h */; };
+		FC1D15CC1BAAD607006E504B /* AutomateAESKeyIPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C5E2061637948900C764AC /* AutomateAESKeyIPC.h */; };
+		FC1D15CD1BAAD607006E504B /* SharedFile2IPCSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 3541C3251876BC270033AE3C /* SharedFile2IPCSender.h */; };
+		FC1D15CE1BAAD607006E504B /* SharedFile2IPCReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3541C3291876BDAC0033AE3C /* SharedFile2IPCReader.h */; };
+		FC1D15CF1BAAD607006E504B /* DMCenterIPCReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 353307B1187A8F3B004F05A3 /* DMCenterIPCReader.h */; };
+		FC1D15D01BAAD607006E504B /* DMCenterIPCSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 35330800187A980F004F05A3 /* DMCenterIPCSender.h */; };
+		FC1D15D21BAAD607006E504B /* SocketIPCSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F2E51146BAAF0006DF3A3 /* SocketIPCSender.m */; };
+		FC1D15D31BAAD607006E504B /* SocketIPCReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F2ED7146BBD3F006DF3A3 /* SocketIPCReader.m */; };
+		FC1D15D41BAAD607006E504B /* MessagePortIPCSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676FDC614A073F700DCF44B /* MessagePortIPCSender.m */; };
+		FC1D15D51BAAD607006E504B /* MessagePortIPCReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676FDCA14A0741F00DCF44B /* MessagePortIPCReader.m */; };
+		FC1D15D61BAAD607006E504B /* SharedFileIPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF380714CEE2B200804713 /* SharedFileIPC.m */; };
+		FC1D15D71BAAD607006E504B /* AutomateAESKeyIPC.c in Sources */ = {isa = PBXBuildFile; fileRef = 35C5E2051637948900C764AC /* AutomateAESKeyIPC.c */; };
+		FC1D15D81BAAD607006E504B /* SharedFile2IPCSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 3541C3261876BC270033AE3C /* SharedFile2IPCSender.m */; };
+		FC1D15D91BAAD607006E504B /* SharedFile2IPCReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3541C32A1876BDAC0033AE3C /* SharedFile2IPCReader.m */; };
+		FC1D15DA1BAAD607006E504B /* DMCenterIPCReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 353307B2187A8F3B004F05A3 /* DMCenterIPCReader.m */; };
+		FC1D15DB1BAAD607006E504B /* DMCenterIPCSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 35330801187A980F004F05A3 /* DMCenterIPCSender.m */; };
+		FC1D15DD1BAAD607006E504B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		086B114117FA732900D21FD5 /* libIPCMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIPCMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		353307B1187A8F3B004F05A3 /* DMCenterIPCReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCenterIPCReader.h; sourceTree = "<group>"; };
+		353307B2187A8F3B004F05A3 /* DMCenterIPCReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCenterIPCReader.m; sourceTree = "<group>"; };
+		35330800187A980F004F05A3 /* DMCenterIPCSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCenterIPCSender.h; sourceTree = "<group>"; };
+		35330801187A980F004F05A3 /* DMCenterIPCSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCenterIPCSender.m; sourceTree = "<group>"; };
+		3541C3251876BC270033AE3C /* SharedFile2IPCSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedFile2IPCSender.h; sourceTree = "<group>"; };
+		3541C3261876BC270033AE3C /* SharedFile2IPCSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedFile2IPCSender.m; sourceTree = "<group>"; };
+		3541C3291876BDAC0033AE3C /* SharedFile2IPCReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedFile2IPCReader.h; sourceTree = "<group>"; };
+		3541C32A1876BDAC0033AE3C /* SharedFile2IPCReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedFile2IPCReader.m; sourceTree = "<group>"; };
+		359F2E50146BAAF0006DF3A3 /* SocketIPCSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIPCSender.h; sourceTree = "<group>"; };
+		359F2E51146BAAF0006DF3A3 /* SocketIPCSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIPCSender.m; sourceTree = "<group>"; };
+		359F2ED6146BBD3F006DF3A3 /* SocketIPCReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIPCReader.h; sourceTree = "<group>"; };
+		359F2ED7146BBD3F006DF3A3 /* SocketIPCReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIPCReader.m; sourceTree = "<group>"; };
+		35C5E2051637948900C764AC /* AutomateAESKeyIPC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AutomateAESKeyIPC.c; sourceTree = "<group>"; };
+		35C5E2061637948900C764AC /* AutomateAESKeyIPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutomateAESKeyIPC.h; sourceTree = "<group>"; };
+		35DF380614CEE2B200804713 /* SharedFileIPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedFileIPC.h; sourceTree = "<group>"; };
+		35DF380714CEE2B200804713 /* SharedFileIPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedFileIPC.m; sourceTree = "<group>"; };
+		9676FDC514A073F700DCF44B /* MessagePortIPCSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePortIPCSender.h; sourceTree = "<group>"; };
+		9676FDC614A073F700DCF44B /* MessagePortIPCSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagePortIPCSender.m; sourceTree = "<group>"; };
+		9676FDC914A0741F00DCF44B /* MessagePortIPCReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePortIPCReader.h; sourceTree = "<group>"; };
+		9676FDCA14A0741F00DCF44B /* MessagePortIPCReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagePortIPCReader.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* IPC_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPC_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libIPC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIPC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1D15E11BAAD607006E504B /* libIPC-E.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libIPC-E.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		086B113F17FA732900D21FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1D15DC1BAAD607006E504B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1D15DD1BAAD607006E504B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libIPC.a */,
+				086B114117FA732900D21FD5 /* libIPCMac.a */,
+				FC1D15E11BAAD607006E504B /* libIPC-E.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* IPC */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = IPC;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35C5E2051637948900C764AC /* AutomateAESKeyIPC.c */,
+				35C5E2061637948900C764AC /* AutomateAESKeyIPC.h */,
+				359F2E50146BAAF0006DF3A3 /* SocketIPCSender.h */,
+				359F2E51146BAAF0006DF3A3 /* SocketIPCSender.m */,
+				359F2ED6146BBD3F006DF3A3 /* SocketIPCReader.h */,
+				359F2ED7146BBD3F006DF3A3 /* SocketIPCReader.m */,
+				9676FDC514A073F700DCF44B /* MessagePortIPCSender.h */,
+				9676FDC614A073F700DCF44B /* MessagePortIPCSender.m */,
+				9676FDC914A0741F00DCF44B /* MessagePortIPCReader.h */,
+				9676FDCA14A0741F00DCF44B /* MessagePortIPCReader.m */,
+				35DF380614CEE2B200804713 /* SharedFileIPC.h */,
+				35DF380714CEE2B200804713 /* SharedFileIPC.m */,
+				3541C3251876BC270033AE3C /* SharedFile2IPCSender.h */,
+				3541C3261876BC270033AE3C /* SharedFile2IPCSender.m */,
+				3541C3291876BDAC0033AE3C /* SharedFile2IPCReader.h */,
+				3541C32A1876BDAC0033AE3C /* SharedFile2IPCReader.m */,
+				353307B1187A8F3B004F05A3 /* DMCenterIPCReader.h */,
+				353307B2187A8F3B004F05A3 /* DMCenterIPCReader.m */,
+				35330800187A980F004F05A3 /* DMCenterIPCSender.h */,
+				35330801187A980F004F05A3 /* DMCenterIPCSender.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* IPC_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		086B113D17FA732900D21FD5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				086B114C17FA737000D21FD5 /* IPC_Prefix.pch in Headers */,
+				086B114D17FA737000D21FD5 /* SocketIPCSender.h in Headers */,
+				086B114E17FA737000D21FD5 /* SocketIPCReader.h in Headers */,
+				086B114F17FA737000D21FD5 /* MessagePortIPCSender.h in Headers */,
+				086B115017FA737000D21FD5 /* MessagePortIPCReader.h in Headers */,
+				086B115117FA737000D21FD5 /* SharedFileIPC.h in Headers */,
+				086B115217FA737000D21FD5 /* AutomateAESKeyIPC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* IPC_Prefix.pch in Headers */,
+				359F2E52146BAAF0006DF3A3 /* SocketIPCSender.h in Headers */,
+				359F2ED8146BBD3F006DF3A3 /* SocketIPCReader.h in Headers */,
+				9676FDC714A073F700DCF44B /* MessagePortIPCSender.h in Headers */,
+				9676FDCB14A0741F00DCF44B /* MessagePortIPCReader.h in Headers */,
+				35DF380814CEE2B200804713 /* SharedFileIPC.h in Headers */,
+				35C5E2081637948900C764AC /* AutomateAESKeyIPC.h in Headers */,
+				3541C3271876BC270033AE3C /* SharedFile2IPCSender.h in Headers */,
+				3541C32B1876BDAC0033AE3C /* SharedFile2IPCReader.h in Headers */,
+				353307B3187A8F3B004F05A3 /* DMCenterIPCReader.h in Headers */,
+				35330802187A980F004F05A3 /* DMCenterIPCSender.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1D15C51BAAD607006E504B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1D15C61BAAD607006E504B /* IPC_Prefix.pch in Headers */,
+				FC1D15C71BAAD607006E504B /* SocketIPCSender.h in Headers */,
+				FC1D15C81BAAD607006E504B /* SocketIPCReader.h in Headers */,
+				FC1D15C91BAAD607006E504B /* MessagePortIPCSender.h in Headers */,
+				FC1D15CA1BAAD607006E504B /* MessagePortIPCReader.h in Headers */,
+				FC1D15CB1BAAD607006E504B /* SharedFileIPC.h in Headers */,
+				FC1D15CC1BAAD607006E504B /* AutomateAESKeyIPC.h in Headers */,
+				FC1D15CD1BAAD607006E504B /* SharedFile2IPCSender.h in Headers */,
+				FC1D15CE1BAAD607006E504B /* SharedFile2IPCReader.h in Headers */,
+				FC1D15CF1BAAD607006E504B /* DMCenterIPCReader.h in Headers */,
+				FC1D15D01BAAD607006E504B /* DMCenterIPCSender.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		086B114017FA732900D21FD5 /* IPCMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 086B114717FA732C00D21FD5 /* Build configuration list for PBXNativeTarget "IPCMac" */;
+			buildPhases = (
+				086B113D17FA732900D21FD5 /* Headers */,
+				086B113E17FA732900D21FD5 /* Sources */,
+				086B113F17FA732900D21FD5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IPCMac;
+			productName = IPCMac;
+			productReference = 086B114117FA732900D21FD5 /* libIPCMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC07D0554694100DB518D /* IPC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "IPC" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IPC;
+			productName = IPC;
+			productReference = D2AAC07E0554694100DB518D /* libIPC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FC1D15C41BAAD607006E504B /* IPC-E */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC1D15DE1BAAD607006E504B /* Build configuration list for PBXNativeTarget "IPC-E" */;
+			buildPhases = (
+				FC1D15C51BAAD607006E504B /* Headers */,
+				FC1D15D11BAAD607006E504B /* Sources */,
+				FC1D15DC1BAAD607006E504B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IPC-E";
+			productName = IPC;
+			productReference = FC1D15E11BAAD607006E504B /* libIPC-E.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "IPC" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* IPC */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* IPC */,
+				FC1D15C41BAAD607006E504B /* IPC-E */,
+				086B114017FA732900D21FD5 /* IPCMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		086B113E17FA732900D21FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				086B115A17FA74D500D21FD5 /* SocketIPCSender.m in Sources */,
+				086B115B17FA74D500D21FD5 /* SocketIPCReader.m in Sources */,
+				086B115C17FA74D500D21FD5 /* MessagePortIPCSender.m in Sources */,
+				086B115D17FA74D500D21FD5 /* MessagePortIPCReader.m in Sources */,
+				086B115E17FA74D500D21FD5 /* SharedFileIPC.m in Sources */,
+				086B115F17FA74D500D21FD5 /* AutomateAESKeyIPC.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				359F2E53146BAAF0006DF3A3 /* SocketIPCSender.m in Sources */,
+				359F2ED9146BBD3F006DF3A3 /* SocketIPCReader.m in Sources */,
+				9676FDC814A073F700DCF44B /* MessagePortIPCSender.m in Sources */,
+				9676FDCC14A0741F00DCF44B /* MessagePortIPCReader.m in Sources */,
+				35DF380914CEE2B200804713 /* SharedFileIPC.m in Sources */,
+				35C5E2071637948900C764AC /* AutomateAESKeyIPC.c in Sources */,
+				3541C3281876BC270033AE3C /* SharedFile2IPCSender.m in Sources */,
+				3541C32C1876BDAC0033AE3C /* SharedFile2IPCReader.m in Sources */,
+				353307B4187A8F3B004F05A3 /* DMCenterIPCReader.m in Sources */,
+				35330803187A980F004F05A3 /* DMCenterIPCSender.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1D15D11BAAD607006E504B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1D15D21BAAD607006E504B /* SocketIPCSender.m in Sources */,
+				FC1D15D31BAAD607006E504B /* SocketIPCReader.m in Sources */,
+				FC1D15D41BAAD607006E504B /* MessagePortIPCSender.m in Sources */,
+				FC1D15D51BAAD607006E504B /* MessagePortIPCReader.m in Sources */,
+				FC1D15D61BAAD607006E504B /* SharedFileIPC.m in Sources */,
+				FC1D15D71BAAD607006E504B /* AutomateAESKeyIPC.c in Sources */,
+				FC1D15D81BAAD607006E504B /* SharedFile2IPCSender.m in Sources */,
+				FC1D15D91BAAD607006E504B /* SharedFile2IPCReader.m in Sources */,
+				FC1D15DA1BAAD607006E504B /* DMCenterIPCReader.m in Sources */,
+				FC1D15DB1BAAD607006E504B /* DMCenterIPCSender.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		086B114217FA732900D21FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IPC_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"../../Cryptography/Source-Cryptography/**",
+					"../../ccgus-fmdb-606b29d/src/**",
+					"../../Std/FxStd/**",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = IPCMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		086B114317FA732900D21FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IPC_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"../../Cryptography/Source-Cryptography/**",
+					"../../ccgus-fmdb-606b29d/src/**",
+					"../../Std/FxStd/**",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = IPCMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/IPC.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IPC_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = IPC;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/iOS7/AppSupport ../../Cryptography/Source-Cryptography ../../ccgus-fmdb-606b29d/src ../../Std/FxStd/** ../../Std/FxStd";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/IPC.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IPC_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = IPC;
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/iOS7/AppSupport ../../Cryptography/Source-Cryptography ../../ccgus-fmdb-606b29d/src ../../Std/FxStd/** ../../Std/FxStd";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.2;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = ../../Std/FxStd;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = ../../Std/FxStd;
+			};
+			name = Release;
+		};
+		FC1D15DF1BAAD607006E504B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/IPC.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IPC_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "IOS_ENTERPRISE=1";
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/iOS7/AppSupport ../../Cryptography/Source-Cryptography ../../ccgus-fmdb-606b29d/src ../../Std/FxStd/** ../../Std/FxStd";
+			};
+			name = Debug;
+		};
+		FC1D15E01BAAD607006E504B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/IPC.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IPC_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "IOS_ENTERPRISE=1";
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos4.0;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/iOS7/AppSupport ../../Cryptography/Source-Cryptography ../../ccgus-fmdb-606b29d/src ../../Std/FxStd/** ../../Std/FxStd";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		086B114717FA732C00D21FD5 /* Build configuration list for PBXNativeTarget "IPCMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				086B114217FA732900D21FD5 /* Debug */,
+				086B114317FA732900D21FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "IPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "IPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC1D15DE1BAAD607006E504B /* Build configuration list for PBXNativeTarget "IPC-E" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1D15DF1BAAD607006E504B /* Debug */,
+				FC1D15E01BAAD607006E504B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

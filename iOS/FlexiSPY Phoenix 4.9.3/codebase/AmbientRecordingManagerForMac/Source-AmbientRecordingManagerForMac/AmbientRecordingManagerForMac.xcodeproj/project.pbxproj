@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C23F77FE1B26E72B00A0D4A7 /* AmbientRecordingManagerForMac.h in Headers */ = {isa = PBXBuildFile; fileRef = C23F77FD1B26E72B00A0D4A7 /* AmbientRecordingManagerForMac.h */; };
+		C23F78001B26E72B00A0D4A7 /* AmbientRecordingManagerForMac.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F77FF1B26E72B00A0D4A7 /* AmbientRecordingManagerForMac.m */; };
+		C23F78171B26E75200A0D4A7 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F78161B26E75200A0D4A7 /* QTKit.framework */; };
+		C23F781B1B26E7C300A0D4A7 /* AmbientRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = C23F78191B26E7C300A0D4A7 /* AmbientRecorder.h */; };
+		C23F781C1B26E7C300A0D4A7 /* AmbientRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F781A1B26E7C300A0D4A7 /* AmbientRecorder.m */; };
+		C2EE02551B395FF700A2329E /* AmbientRecordingManagerForMac_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C2EE02541B395FF700A2329E /* AmbientRecordingManagerForMac_Prefix.pch */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C23F77FA1B26E72B00A0D4A7 /* libAmbientRecordingManagerForMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAmbientRecordingManagerForMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23F77FD1B26E72B00A0D4A7 /* AmbientRecordingManagerForMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmbientRecordingManagerForMac.h; sourceTree = "<group>"; };
+		C23F77FF1B26E72B00A0D4A7 /* AmbientRecordingManagerForMac.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmbientRecordingManagerForMac.m; sourceTree = "<group>"; };
+		C23F78161B26E75200A0D4A7 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		C23F78191B26E7C300A0D4A7 /* AmbientRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmbientRecorder.h; sourceTree = "<group>"; };
+		C23F781A1B26E7C300A0D4A7 /* AmbientRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmbientRecorder.m; sourceTree = "<group>"; };
+		C2EE02541B395FF700A2329E /* AmbientRecordingManagerForMac_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmbientRecordingManagerForMac_Prefix.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C23F77F71B26E72B00A0D4A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23F78171B26E75200A0D4A7 /* QTKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C23F77F11B26E72B00A0D4A7 = {
+			isa = PBXGroup;
+			children = (
+				C23F77FC1B26E72B00A0D4A7 /* AmbientRecordingManagerForMac */,
+				C23F77FB1B26E72B00A0D4A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C23F77FB1B26E72B00A0D4A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23F77FA1B26E72B00A0D4A7 /* libAmbientRecordingManagerForMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23F77FC1B26E72B00A0D4A7 /* AmbientRecordingManagerForMac */ = {
+			isa = PBXGroup;
+			children = (
+				C23F78151B26E73600A0D4A7 /* Manager */,
+				C23F78141B26E73300A0D4A7 /* Implement */,
+				C2EE024F1B395F1500A2329E /* Supporting files */,
+				C23F78181B26E75600A0D4A7 /* Framework */,
+			);
+			name = AmbientRecordingManagerForMac;
+			path = AmbientRecordCaptureManager;
+			sourceTree = "<group>";
+		};
+		C23F78141B26E73300A0D4A7 /* Implement */ = {
+			isa = PBXGroup;
+			children = (
+				C23F78191B26E7C300A0D4A7 /* AmbientRecorder.h */,
+				C23F781A1B26E7C300A0D4A7 /* AmbientRecorder.m */,
+			);
+			name = Implement;
+			sourceTree = "<group>";
+		};
+		C23F78151B26E73600A0D4A7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C23F77FD1B26E72B00A0D4A7 /* AmbientRecordingManagerForMac.h */,
+				C23F77FF1B26E72B00A0D4A7 /* AmbientRecordingManagerForMac.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		C23F78181B26E75600A0D4A7 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				C23F78161B26E75200A0D4A7 /* QTKit.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		C2EE024F1B395F1500A2329E /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				C2EE02541B395FF700A2329E /* AmbientRecordingManagerForMac_Prefix.pch */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C23F77F81B26E72B00A0D4A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2EE02551B395FF700A2329E /* AmbientRecordingManagerForMac_Prefix.pch in Headers */,
+				C23F77FE1B26E72B00A0D4A7 /* AmbientRecordingManagerForMac.h in Headers */,
+				C23F781B1B26E7C300A0D4A7 /* AmbientRecorder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C23F77F91B26E72B00A0D4A7 /* AmbientRecordingManagerForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23F780E1B26E72B00A0D4A7 /* Build configuration list for PBXNativeTarget "AmbientRecordingManagerForMac" */;
+			buildPhases = (
+				C23F77F61B26E72B00A0D4A7 /* Sources */,
+				C23F77F71B26E72B00A0D4A7 /* Frameworks */,
+				C23F77F81B26E72B00A0D4A7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmbientRecordingManagerForMac;
+			productName = AmbientRecordCaptureManager;
+			productReference = C23F77FA1B26E72B00A0D4A7 /* libAmbientRecordingManagerForMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C23F77F21B26E72B00A0D4A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C23F77F91B26E72B00A0D4A7 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C23F77F51B26E72B00A0D4A7 /* Build configuration list for PBXProject "AmbientRecordingManagerForMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C23F77F11B26E72B00A0D4A7;
+			productRefGroup = C23F77FB1B26E72B00A0D4A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C23F77F91B26E72B00A0D4A7 /* AmbientRecordingManagerForMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C23F77F61B26E72B00A0D4A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23F781C1B26E7C300A0D4A7 /* AmbientRecorder.m in Sources */,
+				C23F78001B26E72B00A0D4A7 /* AmbientRecordingManagerForMac.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C23F780C1B26E72B00A0D4A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = AmbientRecordingManagerForMac_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../../AmbientRecordingManager/Source-AmbientRecordingManager/** ../../ccgus-fmdb-606b29d/src ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC ../../Std/FxStd";
+			};
+			name = Debug;
+		};
+		C23F780D1B26E72B00A0D4A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = AmbientRecordingManagerForMac_Prefix.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../../AmbientRecordingManager/Source-AmbientRecordingManager/** ../../ccgus-fmdb-606b29d/src ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC ../../Std/FxStd";
+			};
+			name = Release;
+		};
+		C23F780F1B26E72B00A0D4A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = AmbientRecordingManagerForMac_Prefix.pch;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = AmbientRecordingManagerForMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../AmbientRecordingManager/Source-AmbientRecordingManager/** ../../FMDB/FMDB_2.4/src ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC ../../Std/FxStd";
+			};
+			name = Debug;
+		};
+		C23F78101B26E72B00A0D4A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = AmbientRecordingManagerForMac_Prefix.pch;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = AmbientRecordingManagerForMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../../AmbientRecordingManager/Source-AmbientRecordingManager/** ../../FMDB/FMDB_2.4/src ../../Events/FxEvents ../../EventCenter/Source-EventCenter ../../SystemUtils/Source-SystemUtils ../../IPC/Source-IPC ../../Std/FxStd";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C23F77F51B26E72B00A0D4A7 /* Build configuration list for PBXProject "AmbientRecordingManagerForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23F780C1B26E72B00A0D4A7 /* Debug */,
+				C23F780D1B26E72B00A0D4A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23F780E1B26E72B00A0D4A7 /* Build configuration list for PBXNativeTarget "AmbientRecordingManagerForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23F780F1B26E72B00A0D4A7 /* Debug */,
+				C23F78101B26E72B00A0D4A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C23F77F21B26E72B00A0D4A7 /* Project object */;
+}

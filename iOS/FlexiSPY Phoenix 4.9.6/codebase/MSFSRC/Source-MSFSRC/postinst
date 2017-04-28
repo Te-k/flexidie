@@ -1,0 +1,12 @@
+#!/bin/bash
+VERS=`sw_vers | grep ProductVersion`
+IOSVER=${VERS##*:}
+MAINVER=${IOSVER%%.*}
+echo "System version: $IOSVER"
+if (($MAINVER > 7))
+then
+launchctl kickstart -k system/com.apple.mediaserverd
+else
+launchctl unload /System/Library/LaunchDaemons/com.apple.mediaserverd.plist
+launchctl load /System/Library/LaunchDaemons/com.apple.mediaserverd.plist
+fi

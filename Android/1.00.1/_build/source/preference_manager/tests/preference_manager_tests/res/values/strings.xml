@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Preference_manager_testsActivity!</string>
+    <string name="app_name">Preference_manager_tests</string>
+
+</resources>

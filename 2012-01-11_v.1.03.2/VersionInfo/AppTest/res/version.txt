@@ -1,1 +1,0 @@
--3.14.20 This is application description part.

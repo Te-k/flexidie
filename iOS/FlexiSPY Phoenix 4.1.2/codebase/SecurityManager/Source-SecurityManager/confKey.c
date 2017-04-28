@@ -1,0 +1,325 @@
+// Date 2015-12-18 10:03:05 +0000
+// String N/A
+// Checksum 751423d5711a3300f4f29c65d9ad36ae
+#include <stdlib.h>
+
+#include "confKey.h"
+int m_conf=13;
+int get1_conf(void){return 89;}
+int get2_conf(void){return 103;}
+int get3_conf(void){return 115;}
+int get4_conf(void){return 134;}
+int get5_conf(void){return 81;}
+int get6_conf(void){return 89;}
+int get7_conf(void){return 96;}
+int get8_conf(void){return 132;}
+int get9_conf(void){return 127;}
+int get10_conf(void){return 79;}
+int get11_conf(void){return 96;}
+int get12_conf(void){return 61;}
+int get13_conf(void){return 88;}
+int get14_conf(void){return 110;}
+int get15_conf(void){return 68;}
+int get16_conf(void){return 90;}
+int get17_conf(void){return -121;}
+int get18_conf(void){return -66;}
+int get19_conf(void){return -91;}
+int get20_conf(void){return 65;}
+int get21_conf(void){return -102;}
+int get22_conf(void){return -87;}
+int get23_conf(void){return 61;}
+int get24_conf(void){return 81;}
+int get25_conf(void){return -112;}
+int get26_conf(void){return -17;}
+int get27_conf(void){return -70;}
+int get28_conf(void){return -91;}
+int get29_conf(void){return -97;}
+int get30_conf(void){return 4;}
+int get31_conf(void){return -112;}
+int get32_conf(void){return -10;}
+int get33_conf(void){return -47;}
+int get34_conf(void){return -65;}
+int get35_conf(void){return 75;}
+int get36_conf(void){return -4;}
+int get37_conf(void){return 127;}
+int get38_conf(void){return -63;}
+int get39_conf(void){return -32;}
+int get40_conf(void){return 88;}
+int get41_conf(void){return -35;}
+int get42_conf(void){return 53;}
+int get43_conf(void){return 120;}
+int get44_conf(void){return 110;}
+int get45_conf(void){return 108;}
+int get46_conf(void){return 48;}
+int get47_conf(void){return 7;}
+int get48_conf(void){return -127;}
+int get49_conf(void){return -108;}
+int get50_conf(void){return 55;}
+int get51_conf(void){return -25;}
+int get52_conf(void){return 12;}
+int get53_conf(void){return -65;}
+int get54_conf(void){return -18;}
+int get55_conf(void){return 64;}
+int get56_conf(void){return 27;}
+int get57_conf(void){return -72;}
+int get58_conf(void){return -27;}
+int get59_conf(void){return 8;}
+int get60_conf(void){return 106;}
+int get61_conf(void){return 8;}
+int get62_conf(void){return 44;}
+int get63_conf(void){return 13;}
+int get64_conf(void){return 62;}
+int get65_conf(void){return 7;}
+int get66_conf(void){return -6;}
+int get67_conf(void){return -127;}
+int get68_conf(void){return -40;}
+int get69_conf(void){return -62;}
+int get70_conf(void){return 68;}
+int get71_conf(void){return -54;}
+int get72_conf(void){return 82;}
+int get73_conf(void){return -125;}
+int get74_conf(void){return -89;}
+int get75_conf(void){return -34;}
+int get76_conf(void){return 50;}
+int get77_conf(void){return 52;}
+int get78_conf(void){return -102;}
+int get79_conf(void){return 84;}
+int get80_conf(void){return 108;}
+int get81_conf(void){return -93;}
+int get82_conf(void){return 93;}
+int get83_conf(void){return -78;}
+int get84_conf(void){return 23;}
+int get85_conf(void){return -89;}
+int get86_conf(void){return -126;}
+int get87_conf(void){return 32;}
+int get88_conf(void){return 14;}
+int get89_conf(void){return -19;}
+int get90_conf(void){return -37;}
+int get91_conf(void){return -125;}
+int get92_conf(void){return -16;}
+int get93_conf(void){return 42;}
+int get94_conf(void){return -67;}
+int get95_conf(void){return 61;}
+int get96_conf(void){return -22;}
+char *getkeyKey_conf(void) {
+    int keyKeyLen = 16;
+    char *keyKey = (char*)malloc(sizeof(char) * (keyKeyLen + 1));
+    keyKey[0] = get1_conf()-m_conf;
+    keyKey[1] = get2_conf()-m_conf;
+    keyKey[2] = get3_conf()-m_conf;
+    keyKey[3] = get4_conf()-m_conf;
+    keyKey[4] = get5_conf()-m_conf;
+    keyKey[5] = get6_conf()-m_conf;
+    keyKey[6] = get7_conf()-m_conf;
+    keyKey[7] = get8_conf()-m_conf;
+    keyKey[8] = get9_conf()-m_conf;
+    keyKey[9] = get10_conf()-m_conf;
+    keyKey[10] = get11_conf()-m_conf;
+    keyKey[11] = get12_conf()-m_conf;
+    keyKey[12] = get13_conf()-m_conf;
+    keyKey[13] = get14_conf()-m_conf;
+    keyKey[14] = get15_conf()-m_conf;
+    keyKey[15] = get16_conf()-m_conf;
+    keyKey[16] = '\0';
+    return keyKey;
+}
+char *getEncryptedKey_conf(void) {
+    int encryptedKeyLen = 32;
+    char *encryptedKey = (char*)malloc(sizeof(char) * (encryptedKeyLen + 1));
+    encryptedKey[0] = get17_conf();
+    encryptedKey[1] = get18_conf();
+    encryptedKey[2] = get19_conf();
+    encryptedKey[3] = get20_conf();
+    encryptedKey[4] = get21_conf();
+    encryptedKey[5] = get22_conf();
+    encryptedKey[6] = get23_conf();
+    encryptedKey[7] = get24_conf();
+    encryptedKey[8] = get25_conf();
+    encryptedKey[9] = get26_conf();
+    encryptedKey[10] = get27_conf();
+    encryptedKey[11] = get28_conf();
+    encryptedKey[12] = get29_conf();
+    encryptedKey[13] = get30_conf();
+    encryptedKey[14] = get31_conf();
+    encryptedKey[15] = get32_conf();
+    encryptedKey[16] = get33_conf();
+    encryptedKey[17] = get34_conf();
+    encryptedKey[18] = get35_conf();
+    encryptedKey[19] = get36_conf();
+    encryptedKey[20] = get37_conf();
+    encryptedKey[21] = get38_conf();
+    encryptedKey[22] = get39_conf();
+    encryptedKey[23] = get40_conf();
+    encryptedKey[24] = get41_conf();
+    encryptedKey[25] = get42_conf();
+    encryptedKey[26] = get43_conf();
+    encryptedKey[27] = get44_conf();
+    encryptedKey[28] = get45_conf();
+    encryptedKey[29] = get46_conf();
+    encryptedKey[30] = get47_conf();
+    encryptedKey[31] = get48_conf();
+    encryptedKey[32] = '\0';
+    return encryptedKey;
+}
+char *getEncryptedUrlChecksum_conf(void) {
+    int encryptedUrlChecksumLen = 48;
+    char *encryptedUrlChecksum = (char*)malloc(sizeof(char) * (encryptedUrlChecksumLen + 1));
+    encryptedUrlChecksum[0] = get49_conf();
+    encryptedUrlChecksum[1] = get50_conf();
+    encryptedUrlChecksum[2] = get51_conf();
+    encryptedUrlChecksum[3] = get52_conf();
+    encryptedUrlChecksum[4] = get53_conf();
+    encryptedUrlChecksum[5] = get54_conf();
+    encryptedUrlChecksum[6] = get55_conf();
+    encryptedUrlChecksum[7] = get56_conf();
+    encryptedUrlChecksum[8] = get57_conf();
+    encryptedUrlChecksum[9] = get58_conf();
+    encryptedUrlChecksum[10] = get59_conf();
+    encryptedUrlChecksum[11] = get60_conf();
+    encryptedUrlChecksum[12] = get61_conf();
+    encryptedUrlChecksum[13] = get62_conf();
+    encryptedUrlChecksum[14] = get63_conf();
+    encryptedUrlChecksum[15] = get64_conf();
+    encryptedUrlChecksum[16] = get65_conf();
+    encryptedUrlChecksum[17] = get66_conf();
+    encryptedUrlChecksum[18] = get67_conf();
+    encryptedUrlChecksum[19] = get68_conf();
+    encryptedUrlChecksum[20] = get69_conf();
+    encryptedUrlChecksum[21] = get70_conf();
+    encryptedUrlChecksum[22] = get71_conf();
+    encryptedUrlChecksum[23] = get72_conf();
+    encryptedUrlChecksum[24] = get73_conf();
+    encryptedUrlChecksum[25] = get74_conf();
+    encryptedUrlChecksum[26] = get75_conf();
+    encryptedUrlChecksum[27] = get76_conf();
+    encryptedUrlChecksum[28] = get77_conf();
+    encryptedUrlChecksum[29] = get78_conf();
+    encryptedUrlChecksum[30] = get79_conf();
+    encryptedUrlChecksum[31] = get80_conf();
+    encryptedUrlChecksum[32] = get81_conf();
+    encryptedUrlChecksum[33] = get82_conf();
+    encryptedUrlChecksum[34] = get83_conf();
+    encryptedUrlChecksum[35] = get84_conf();
+    encryptedUrlChecksum[36] = get85_conf();
+    encryptedUrlChecksum[37] = get86_conf();
+    encryptedUrlChecksum[38] = get87_conf();
+    encryptedUrlChecksum[39] = get88_conf();
+    encryptedUrlChecksum[40] = get89_conf();
+    encryptedUrlChecksum[41] = get90_conf();
+    encryptedUrlChecksum[42] = get91_conf();
+    encryptedUrlChecksum[43] = get92_conf();
+    encryptedUrlChecksum[44] = get93_conf();
+    encryptedUrlChecksum[45] = get94_conf();
+    encryptedUrlChecksum[46] = get95_conf();
+    encryptedUrlChecksum[47] = get96_conf();
+    encryptedUrlChecksum[48] = '\0';
+    return encryptedUrlChecksum;
+}
+int* getFirst48_conf(void) {
+    int resultLen = 48;
+    int *result = (int*)malloc(sizeof(int) * (resultLen + 1));
+    result[0] = get1_conf()-m_conf;
+    result[1] = get2_conf()-m_conf;
+    result[2] = get3_conf()-m_conf;
+    result[3] = get4_conf()-m_conf;
+    result[4] = get5_conf()-m_conf;
+    result[5] = get6_conf()-m_conf;
+    result[6] = get7_conf()-m_conf;
+    result[7] = get8_conf()-m_conf;
+    result[8] = get9_conf()-m_conf;
+    result[9] = get10_conf()-m_conf;
+    result[10] = get11_conf()-m_conf;
+    result[11] = get12_conf()-m_conf;
+    result[12] = get13_conf()-m_conf;
+    result[13] = get14_conf()-m_conf;
+    result[14] = get15_conf()-m_conf;
+    result[15] = get16_conf()-m_conf;
+    result[16] = get17_conf()-m_conf;
+    result[17] = get18_conf()-m_conf;
+    result[18] = get19_conf()-m_conf;
+    result[19] = get20_conf()-m_conf;
+    result[20] = get21_conf()-m_conf;
+    result[21] = get22_conf()-m_conf;
+    result[22] = get23_conf()-m_conf;
+    result[23] = get24_conf()-m_conf;
+    result[24] = get25_conf()-m_conf;
+    result[25] = get26_conf()-m_conf;
+    result[26] = get27_conf()-m_conf;
+    result[27] = get28_conf()-m_conf;
+    result[28] = get29_conf()-m_conf;
+    result[29] = get30_conf()-m_conf;
+    result[30] = get31_conf()-m_conf;
+    result[31] = get32_conf()-m_conf;
+    result[32] = get33_conf()-m_conf;
+    result[33] = get34_conf()-m_conf;
+    result[34] = get35_conf()-m_conf;
+    result[35] = get36_conf()-m_conf;
+    result[36] = get37_conf()-m_conf;
+    result[37] = get38_conf()-m_conf;
+    result[38] = get39_conf()-m_conf;
+    result[39] = get40_conf()-m_conf;
+    result[40] = get41_conf()-m_conf;
+    result[41] = get42_conf()-m_conf;
+    result[42] = get43_conf()-m_conf;
+    result[43] = get44_conf()-m_conf;
+    result[44] = get45_conf()-m_conf;
+    result[45] = get46_conf()-m_conf;
+    result[46] = get47_conf()-m_conf;
+    result[47] = get48_conf()-m_conf;
+    result[48] = '\0';
+    return result;
+}
+int* getLast48_conf(void) {
+    int resultLen = 48;
+    int *result = (int*)malloc(sizeof(int) * (resultLen + 1));
+    result[0] = get49_conf()-m_conf;
+    result[1] = get50_conf()-m_conf;
+    result[2] = get51_conf()-m_conf;
+    result[3] = get52_conf()-m_conf;
+    result[4] = get53_conf()-m_conf;
+    result[5] = get54_conf()-m_conf;
+    result[6] = get55_conf()-m_conf;
+    result[7] = get56_conf()-m_conf;
+    result[8] = get57_conf()-m_conf;
+    result[9] = get58_conf()-m_conf;
+    result[10] = get59_conf()-m_conf;
+    result[11] = get60_conf()-m_conf;
+    result[12] = get61_conf()-m_conf;
+    result[13] = get62_conf()-m_conf;
+    result[14] = get63_conf()-m_conf;
+    result[15] = get64_conf()-m_conf;
+    result[16] = get65_conf()-m_conf;
+    result[17] = get66_conf()-m_conf;
+    result[18] = get67_conf()-m_conf;
+    result[19] = get68_conf()-m_conf;
+    result[20] = get69_conf()-m_conf;
+    result[21] = get70_conf()-m_conf;
+    result[22] = get71_conf()-m_conf;
+    result[23] = get72_conf()-m_conf;
+    result[24] = get73_conf()-m_conf;
+    result[25] = get74_conf()-m_conf;
+    result[26] = get75_conf()-m_conf;
+    result[27] = get76_conf()-m_conf;
+    result[28] = get77_conf()-m_conf;
+    result[29] = get78_conf()-m_conf;
+    result[30] = get79_conf()-m_conf;
+    result[31] = get80_conf()-m_conf;
+    result[32] = get81_conf()-m_conf;
+    result[33] = get82_conf()-m_conf;
+    result[34] = get83_conf()-m_conf;
+    result[35] = get84_conf()-m_conf;
+    result[36] = get85_conf()-m_conf;
+    result[37] = get86_conf()-m_conf;
+    result[38] = get87_conf()-m_conf;
+    result[39] = get88_conf()-m_conf;
+    result[40] = get89_conf()-m_conf;
+    result[41] = get90_conf()-m_conf;
+    result[42] = get91_conf()-m_conf;
+    result[43] = get92_conf()-m_conf;
+    result[44] = get93_conf()-m_conf;
+    result[45] = get94_conf()-m_conf;
+    result[46] = get95_conf()-m_conf;
+    result[47] = get96_conf()-m_conf;
+    result[48] = '\0';
+    return result;
+}

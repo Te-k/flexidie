@@ -1,0 +1,16 @@
+build
+ 
+*.pbxuser
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+!default.pbxuser
+!default.perspectivev3
+!default.mode1v3
+!default.mode2v3
+xcuserdata
+ 
+*~.nib
+*~.xib
+
+.DS_Store

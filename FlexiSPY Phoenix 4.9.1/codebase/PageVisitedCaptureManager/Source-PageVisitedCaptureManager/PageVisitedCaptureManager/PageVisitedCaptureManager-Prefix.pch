@@ -1,8 +1,0 @@
-//
-// Prefix header for all source files of the 'PageVisitedCaptureManager' target in the 'PageVisitedCaptureManager' project
-//
-
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-    #import "DebugStatus.h"
-#endif

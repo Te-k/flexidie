@@ -1,0 +1,30 @@
+
+//---------------------------------------------------------
+// Includes and imports
+//---------------------------------------------------------
+
+// Target conditionals
+#include <TargetConditionals.h>
+
+// General imports for Objective-C
+#ifdef __OBJC__
+#if TARGET_OS_IPHONE
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#elif TARGET_OS_MAC
+#import <Cocoa/Cocoa.h>
+#endif
+#endif
+
+
+//---------------------------------------------------------
+// Macros
+//---------------------------------------------------------
+
+// Extern
+#if defined(__cplusplus)
+#define FILEMD5HASH_EXTERN extern "C"
+#else
+#define FILEMD5HASH_EXTERN extern
+#endif
+

@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/about_dialog"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dip"
+			  >
+	<!-- Content of the TextView is needed to be set programmatically because we need to include
+	version name. -->
+	<TextView  
+		android:id="@+id/about_text_view"	
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:padding="10dip"
+	    android:textSize="15dip"
+	    android:gravity="left"
+	    android:textColor="#ffffff"
+	    />
+</LinearLayout>

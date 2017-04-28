@@ -1,0 +1,277 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		352876791B31384500A3CF9F /* USBAutoActivationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 352876781B31384500A3CF9F /* USBAutoActivationDelegate.h */; };
+		C272C3B11B293C4300355A86 /* USBAutoActivationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C272C3B01B293C4300355A86 /* USBAutoActivationManager.h */; };
+		C272C3B31B293C4300355A86 /* USBAutoActivationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C272C3B21B293C4300355A86 /* USBAutoActivationManager.m */; };
+		C2F2BBB41B299295000B49C7 /* USBAutoActivationManager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C2F2BBB31B299295000B49C7 /* USBAutoActivationManager_Prefix.pch */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		352876781B31384500A3CF9F /* USBAutoActivationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBAutoActivationDelegate.h; sourceTree = "<group>"; };
+		C272C3AD1B293C4300355A86 /* libUSBAutoActivationManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUSBAutoActivationManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C272C3B01B293C4300355A86 /* USBAutoActivationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USBAutoActivationManager.h; sourceTree = "<group>"; };
+		C272C3B21B293C4300355A86 /* USBAutoActivationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USBAutoActivationManager.m; sourceTree = "<group>"; };
+		C2F2BBB31B299295000B49C7 /* USBAutoActivationManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBAutoActivationManager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C272C3AA1B293C4300355A86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C272C3A41B293C4300355A86 = {
+			isa = PBXGroup;
+			children = (
+				C272C3AF1B293C4300355A86 /* USBAutoActivationManager */,
+				C2F2BBB11B299159000B49C7 /* Supporting Files */,
+				C272C3AE1B293C4300355A86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C272C3AE1B293C4300355A86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C272C3AD1B293C4300355A86 /* libUSBAutoActivationManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C272C3AF1B293C4300355A86 /* USBAutoActivationManager */ = {
+			isa = PBXGroup;
+			children = (
+				C272C3B01B293C4300355A86 /* USBAutoActivationManager.h */,
+				C272C3B21B293C4300355A86 /* USBAutoActivationManager.m */,
+				352876781B31384500A3CF9F /* USBAutoActivationDelegate.h */,
+			);
+			path = USBAutoActivationManager;
+			sourceTree = "<group>";
+		};
+		C2F2BBB11B299159000B49C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2F2BBB31B299295000B49C7 /* USBAutoActivationManager_Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = USBAutoActivationManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C272C3AB1B293C4300355A86 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C272C3B11B293C4300355A86 /* USBAutoActivationManager.h in Headers */,
+				C2F2BBB41B299295000B49C7 /* USBAutoActivationManager_Prefix.pch in Headers */,
+				352876791B31384500A3CF9F /* USBAutoActivationDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C272C3AC1B293C4300355A86 /* USBAutoActivationManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C272C3C11B293C4300355A86 /* Build configuration list for PBXNativeTarget "USBAutoActivationManager" */;
+			buildPhases = (
+				C272C3A91B293C4300355A86 /* Sources */,
+				C272C3AA1B293C4300355A86 /* Frameworks */,
+				C272C3AB1B293C4300355A86 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = USBAutoActivationManager;
+			productName = USBAutoActivationManager;
+			productReference = C272C3AD1B293C4300355A86 /* libUSBAutoActivationManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C272C3A51B293C4300355A86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ophat;
+				TargetAttributes = {
+					C272C3AC1B293C4300355A86 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C272C3A81B293C4300355A86 /* Build configuration list for PBXProject "USBAutoActivationManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C272C3A41B293C4300355A86;
+			productRefGroup = C272C3AE1B293C4300355A86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C272C3AC1B293C4300355A86 /* USBAutoActivationManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C272C3A91B293C4300355A86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C272C3B31B293C4300355A86 /* USBAutoActivationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C272C3BF1B293C4300355A86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C272C3C01B293C4300355A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C272C3C21B293C4300355A86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = USBAutoActivationManager_Prefix.pch;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Activation/Source/** ../../LicenseManager/Source-LicenseManager/** ../../DataDeliveryManager/DDM/** ../../AppContext/Source-AppContext ../../PhoneInfo/Source-PhoneInfo/** ../../Std/FxStd ../../../Blueblood";
+			};
+			name = Debug;
+		};
+		C272C3C31B293C4300355A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = USBAutoActivationManager_Prefix.pch;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Activation/Source/** ../../LicenseManager/Source-LicenseManager/** ../../DataDeliveryManager/DDM/** ../../AppContext/Source-AppContext ../../PhoneInfo/Source-PhoneInfo/** ../../Std/FxStd ../../../Blueblood";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C272C3A81B293C4300355A86 /* Build configuration list for PBXProject "USBAutoActivationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C272C3BF1B293C4300355A86 /* Debug */,
+				C272C3C01B293C4300355A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C272C3C11B293C4300355A86 /* Build configuration list for PBXNativeTarget "USBAutoActivationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C272C3C21B293C4300355A86 /* Debug */,
+				C272C3C31B293C4300355A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C272C3A51B293C4300355A86 /* Project object */;
+}

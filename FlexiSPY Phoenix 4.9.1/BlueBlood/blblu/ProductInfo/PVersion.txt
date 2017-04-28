@@ -1,6 +1,0 @@
-/* ======== productID should follow in Product.h ======== */
-/* KNOWIT = 2007 */
-/* LINCE  = 2207 */
-
-ProductID=2007
-Version=1.10.1

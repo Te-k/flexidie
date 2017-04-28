@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/scrollView1"
+		android:layout_above="@id/linearLayout2">
+		<LinearLayout android:id="@+id/linearLayout1"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<TextView android:id="@+id/textView" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+	</ScrollView>
+	
+	<LinearLayout android:id="@+id/linearLayout2"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:gravity="center_horizontal"
+	android:layout_alignParentBottom="true">
+	
+	
+		
+		<Button android:text="Start Capture" android:id="@+id/startCp_bt" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		<Button android:text="Stop Capture" android:id="@+id/stopCp_bt" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+		<Button android:text="Settings" android:id="@+id/settings" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+	</LinearLayout>
+</RelativeLayout>

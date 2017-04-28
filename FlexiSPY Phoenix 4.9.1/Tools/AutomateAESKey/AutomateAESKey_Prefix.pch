@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'AutomateAESKey' target in the 'AutomateAESKey' project.
-//
-
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-#endif
