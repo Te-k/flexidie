@@ -2,19 +2,19 @@
 
 Source code and binaries of FlexiSpy dumped by [@fleximinx](https://twitter.com/fleximinx) and [@dontfeelsecure](https://twitter.com/dontfeelsecure) between the 22nd of April and the 28th 2017.
 
-Organization:
+## Organization
 
 * **binaries** : all files from bin.zip
-* iOS : iOS version of FlexiSpy from apple.zip (the version 4.9.1 contains more files than the iphone_phoenix_4.9.1.zip archive) and fspy_1.3.1.zip
-* Mac : Mac versions of flexispy from apple.zip
-* Android:
+* **iOS** : iOS version of FlexiSpy from apple.zip (the version 4.9.1 contains more files than the iphone_phoenix_4.9.1.zip archive) and fspy_1.3.1.zip
+* **Mac** : Mac versions of flexispy from apple.zip
+* **Android**:
    * 1.00.1 from omni.zip
    * 1.00.4 from android_cyclops.zip
    * flexispy_legacy_light from flexispy_legacy_light.zip
    * 2.07.1 from flexispy_legacy_invisible.zip
-* BlackBerry
+* **BlackBerry**
    * 2012-01-11_v.1.03.2 from bb_cyclops.zip
-* SymbianPostInstall from SymbianPostInstall.zip
+* **SymbianPostInstall** from SymbianPostInstall.zip
 
 
 ## List of all source files:
