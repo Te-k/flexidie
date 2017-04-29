@@ -10,7 +10,7 @@ Source code and binaries of FlexiSpy dumped by [@fleximinx](https://twitter.com/
 * **Android**:
    * 1.00.1 from omni.zip
    * 1.00.4 from android_cyclops.zip
-   * flexispy_legacy_light from flexispy_legacy_light.zip
+   * 1.04.1 from from flexispy_legacy_light.zip
    * 2.07.1 from flexispy_legacy_invisible.zip
 * **BlackBerry**
    * 2012-01-11_v.1.03.2 from bb_cyclops.zip
