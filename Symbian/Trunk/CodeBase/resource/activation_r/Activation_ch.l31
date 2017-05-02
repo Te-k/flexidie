@@ -1,0 +1,119 @@
+/**
+*
+* Copyright (c) Vervata Co,Ltd.
+* @version 1.0
+*/
+#define ELanguage	ELangPrcChinese	// Caption language
+
+//----------------------------------------------------------------------------------------------------------
+//  PRODUCT ACTIVATION MESSAGE
+//----------------------------------------------------------------------------------------------------------
+
+#define text_cmd_exit					 "退出"	//Exit
+#define text_cmd_hide					 "退出"	//Exit
+#define text_cmd_about					 "关于"	//About
+#define text_cmd_help					 "帮助" //Help
+#define text_cmd_uninstall				 "卸载" //Uninstall
+#define text_cmd_deactivate				 "停用" //Deactivate
+#define text_cmd_activate				 "激活" //Activate Product
+#define text_cmd_cancel					 "Cancel Connection"
+#define text_cmd_proxy_settings				 "代理"
+
+#define text_cba_option					 "选项" //Options
+#define text_cba_change					 "修改" //Change
+#define text_cba_save					 "保存" //Save
+#define text_cba_back					 "保存"
+
+#define text_yes					"是" // Yes
+#define text_no						"否" // No
+
+#define text_cba_activation_query_buttons_activate	 "激活" //Activate
+#define text_cba_activation_query_buttons_deactivate	 "停用" //Deactivate
+#define text_cba_activation_query_buttons_cancel	 "取消" //Cancel
+
+#define text_use_proxy					 "使用代理"
+#define text_proxy_address				 "代理地址"
+
+
+#define txt_menu_activa_view_confirm_exit_hdr	"退出程序" // "Exit Application"
+#define txt_menu_activa_view_confirm_exit   	"程序还没有被激活. 确信退出吗?"
+					// "Product is not activated yet. Are you sure you want to exit the application?"
+#define txt_menu_deactiva_view_confirm_exit_hdr "停用程序" // "Deactivate Product"
+#define txt_menu_deactiva_view_confirm_exit    	"确信停用程序吗?" // "Are you sure you want to deactivate product?"
+
+#define text_title_pane_product_activation				"激活" //Activation
+#define text_title_pane_product_deactivation				"停用" //Deactivation
+#define text_title_pane_proxy_settings				"代理"
+
+#define text_cba_activation_query_buttons_activate	 "激活" //Activate
+#define text_cba_activation_query_buttons_deactivate	 "停用" //Deactivate
+#define text_cba_activation_query_buttons_cancel	 "取消" //Cancel
+
+#define text_connecting_dialog_please_wait		 "请稍等..."
+
+//----------------------------------------------------------------------------------------------------------
+//	// Activation view text //
+//----------------------------------------------------------------------------------------------------------
+
+#define TXT_ACTIV_VIEW_ACTIVATION_TITLE		"激活"
+#define TXT_ACTIV_VIEW_ACTIVATION_DETAILS	"软件仍未激活。要激活请进入选项选择“激活” 然后输入您购买时获得的安装码" 
+
+#define TXT_ACTIV_VIEW_DEACTIVATION_TITLE	"软件停用" // Product Deactivation
+#define TXT_ACTIV_VIEW_DEACTIVATION_DETAILS	"要停用软件，请到选择'操作', 并选择'停用' 然后输入FlexiKEY. 停用以后,请登录到我们的网站, 并删除停用的手机设置. \f然后到'设置'界面\n选择'回退'"
+						 //"To deactivate the product go to\nOptions and select 'Deactivate'\nthen enter your Activation Code.\nAfter deactivation, please login\nto your web account to delete\nthe inactive device.\n\nTo go to the settings screen\nselect 'Back'"
+
+#define TEXT_ACTIVATION_CODE_PROMPT			 "输入你的 Activation Code:" //"Enter your Activation Code:"
+
+#define TXT_ACTIV_SERVER_URL	 		"http://www.xwodi.com/factivation_mcli/cmd/productactivate"
+
+#define TXT_ACTIV_DIALOG_HEADER 	   ":: 返回结果 ::" // Result
+
+#define TXT_ACTIV_SUCCESS 			"激活成功"			//0x00
+						//Activation success
+#define TXT_DEACTIV_SUCCESS 			"停用成功"			//0x00
+						//Deactivation success
+
+#define TXT_ACTIVA_ERROR_FF		    	"认证失败. 请联系support@xwodi.com ,并在Email中提供你的 Activation Code."
+						// Authentication Failed. Contact support@xwodi.com, quoting your Activation Code.
+#define TXT_ACTIVA_ERROR_FE		    	"你的 Activation Code 无效. 请联系support@xwodi.com ,并在Email中提供你的 Activation Code."
+						// Your Activation Code is incorrect. Contact support@xwodi.com, quoting your Activation Code
+
+#define TXT_ACTIVA_ERROR_F9		    	"激活失败. 请联系support@xwodi.com ,并在Email中提供你的 Activation Code."
+						// Activation Failed. Contact support@xwodi.com, quoting your Activation Code
+#define TXT_ACTIVA_ERROR_F8		    	"不能创建用户. 请联系support@xwodi.com ,并在Email中提供你的 Activation Code."
+						// Cannot create Account. Contact support@xwodi.com, quoting your Activation Code
+#define TXT_ACTIVA_ERROR_F7		    	"手机已经被其他用户使用,请联系support@xwodi.com ,并在Email中提供你的 Activation Code."
+						// Device already in use by different user. Contact support@xwodi.com, quoting your Activation Code
+#define TXT_ACTIVA_ERROR_F6		    	"你已经重新设置你的激活限制. 请联系support@xwodi.com ,并在Email中提供你的 Activation Code."
+						// You have reached your activation limit. Contact support@xwodi.com, quoting your Activation Code
+#define TXT_ACTIVA_ERROR_F5		    	"激活失败. 订单未处理完成. 请联系support@xwodi.com ,并在Email中提供你的 Activation Code."
+						// Activation Failed. Incomplete Order. Contact support@xwodi.com, quoting your Activation Code
+#define TXT_ACTIVA_ERROR_F4		    	"你的 Activation Code 是无效. 请联系support@xwodi.com ,并在Email中提供你的 Activation Code."
+						// Your Activation Code is incorrect. Contact support@xwodi.com, quoting your Activation Code
+#define TXT_ACTIVA_ERROR_F3		    	"你的 Activation Code 是无效. 请联系support@xwodi.com ,并在Email中提供你的 Activation Code."
+						// Your Activation Code is incorrect. Contact support@xwodi.com, quoting your Activation Code
+#define TXT_ACTIVA_ERROR_F2		    	"你的 Activation Code 是无效. 请联系support@xwodi.com ,并在Email中提供你的 Activation Code."
+						// Your Activation Code is incorrect. Contact support@xwodi.com, quoting your Activation Code
+#define TXT_ACTIVA_ERROR_F1		    	"该帐号已经在其他的手机上面使用. 请先停用它."
+						// Already Activated on another device. Please deactivate on that device first
+#define TXT_ACTIVA_ERROR_F0		    	"系统错误. 请联系support@xwodi.com ,并在Email中提供你的 Activation Code." // just failed
+						// System Error. Contact support@xwodi.com, quoting your Activation Code
+
+#define TXT_ACTIVA_ERROR_EF		    	"停用失败. 这个 Activation Code 已经在使用."
+						// Deactivation failed. This Activation Code is already available for activation
+#define TXT_ACTIVA_ERROR_EE		    	"停用失败. 请联系support@xwodi.com ,并在Email中提供你的 Activation Code."
+						// Deactivation failed. Please contact support@xwodi.com
+#define TXT_ACTIVA_ERROR_UNSPECIFIED		"未知错误"
+						// Unspecified Error
+
+
+#define TXT_ACTIV_FAILED_COMMON_MESSAGE    "激活失败: 0x%X\n" // Activation failed
+
+#define TXT_CONN_HTTP_ERROR 		   "HTTP 错误: %d" // HTTP Error
+#define TXT_CONN_TRANSACTION_FAILED	   "传输失败: %d\n 可能没有选择正确的访问点!\n"
+					   // Transaction failed: %d\nThe selected access point may not be correct!\n
+#define TXT_CONN_CONNECTION_FAILED	   "连接失败: %d\n 可能没有选择正确的访问点!\n"
+					   // Connection failed: %d\nThe selected access point may not be correct!\n
+
+//
+#define text_imei_not_ready_warning		"Getting device IMEI is in process.\n\nPlease try again later."

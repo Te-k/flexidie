@@ -1,0 +1,24 @@
+﻿"user proxy" = "使用代理"
+"proxy address" = "代理地址"
+
+"yes" = "是"
+"no" = "否"
+
+Danny says:
+10.0.0.172:80
+Danny says:
+need add two setting items
+Danny says:
+'use proxy' values 'yes', 'no', default value 'no'
+[Yudh] Nothing... says:
+ok
+Danny says:
+'proxy address' default value '10.0.0.172:80'
+[Yudh] Nothing... says:
+ok
+Danny says:
+good
+Danny says:
+how long? u can give me the new version
+Danny says:
+i need test

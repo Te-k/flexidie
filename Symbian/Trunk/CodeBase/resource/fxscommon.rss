@@ -1,0 +1,1415 @@
+/**
+* Comomon resource file for
+* FlexiSPY Light,Pro,ProX
+*/
+
+
+//----------------------------------------------------
+//    // r_aknexspane_overriden_app_name //
+//----------------------------------------------------
+RESOURCE TITLE_PANE r_fxs_overriden_app_name
+    {
+    txt = qtn_app_caption_string;
+    }
+
+RESOURCE STATUS_PANE_APP_MODEL r_status_pane_empty
+{
+	layout = R_AVKON_STATUS_PANE_LAYOUT_EMPTY;
+}
+
+RESOURCE TBUF r_empty_list_text
+{ 
+	buf = EMPTY_BOX_TEXT; 
+}
+
+RESOURCE AVKON_SETTING_ITEM_LIST r_settingslist_setting_item_list
+	{
+	//flags = EAknSettingItemNumberedStyle;
+	title = SETTING_ITEM_LIST_TITLE;
+	items =
+		{		
+		AVKON_SETTING_ITEM
+			{
+			identifier = ECltSettingsListTimerItem;
+			setting_page_resource = r_settingslist_timer_setting_page;
+			name = TIMER_SETTING_ITEM_TITLE;
+			},
+		AVKON_SETTING_ITEM
+			{ // events will be reported to server when it reach this number
+			identifier = ECltSettingListMaxNumberOfEventItem;
+			setting_page_resource = r_fxssettinglist_max_numof_events_numericeditor_page;
+			name = SETTING_MAX_NRO_EVENTS_SETTING_ITEM_TITLE;
+			},
+		AVKON_SETTING_ITEM
+		        {
+			identifier = EFxsSettingListEventTypeCheckboxesItem;
+			setting_page_resource = r_settinglist_capture_event_types_page;
+			associated_resource = r_checkbox_page_texts;			
+			name = SETTING_EVENT_TYPES_SETTING_ITEM_TITLE;
+			},
+		AVKON_SETTING_ITEM
+			{
+			identifier = EFxsSettingListPauseApplicationItem;
+			setting_page_resource = r_settingslist_pauseapp_setting_page;
+			associated_resource = r_settingslist_hints_popup_setting_texts;
+			name = PAUSE_APPLICATION_SETTING_ITEM_TITLE;
+			}
+		};
+	}	
+
+// Auto start
+
+RESOURCE AVKON_SETTING_PAGE r_settingslist_pauseapp_setting_page
+	{ 
+	//number = 6;
+	label= PAUSE_APPLICATION_SETTING_ITEM_TITLE;
+	type = EAknCtPopupSettingList;
+	editor_resource_id = r_settingslist_hints_popup_setting_list;
+	}
+
+
+RESOURCE POPUP_SETTING_LIST r_settingslist_hints_popup_setting_list
+	{
+	}
+
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_settingslist_hints_popup_setting_texts
+	{
+	setting_texts_resource = r_settingslist_hints_texts;
+	popped_up_texts_resource = r_settingslist_hints_popup_texts;
+	}
+
+//
+RESOURCE ARRAY r_settingslist_hints_texts
+	{
+	items =
+		{
+		AVKON_ENUMERATED_TEXT 
+			{ 
+			value = 1; 
+			text = AUTO_START_ON_TEXT; 
+			},
+		AVKON_ENUMERATED_TEXT 
+			{ 
+			value = 0; 
+			text = AUTO_START_OFF_TEXT; 
+			}
+			
+		};
+	}
+
+//----------------------------------------------------
+//
+//----------------------------------------------------
+//
+RESOURCE ARRAY r_settingslist_hints_popup_texts
+	{
+	items =
+		{
+		LBUF 
+			{ 
+			txt = AUTO_START_ON_POPUP_TEXT; 
+			},
+		LBUF 
+			{ 
+			txt = AUTO_START_OFF_POPUP_TEXT; 
+			}
+		};
+	}
+//
+//----------------------------------------------------
+//Proxy Connection info Settings
+//----------------------------------------------------
+//
+RESOURCE AVKON_SETTING_ITEM_LIST r_settingslist_connection_info_item_list
+	{
+	title = SETTING_ITEM_LIST_TITLE;
+	items =
+		{
+		AVKON_SETTING_ITEM //yes, no
+			{
+			identifier = EFxsSettingsConnectionUseProxyItem;
+			setting_page_resource = r_settingslist_use_proxy_setting_page; 
+			associated_resource = r_settingslist_use_proxy__popup_setting_texts;
+			name = text_use_proxy;
+			},
+		AVKON_SETTING_ITEM
+			{
+			identifier = EFxsSettingsConnectionProxyAddrItem;
+			setting_page_resource = r_settingslist_proxy_address_setting_page;
+			name = text_proxy_address;
+			}
+		};
+	}
+
+RESOURCE AVKON_SETTING_ITEM_LIST r_fxa_proxy_settings_list
+	{
+	title = SETTING_ITEM_LIST_TITLE;
+	items =
+		{
+		AVKON_SETTING_ITEM //yes, no
+			{
+			identifier = EPActvUseProxyItem;
+			setting_page_resource = r_settingslist_use_proxy_setting_page; 
+			associated_resource = r_settingslist_use_proxy__popup_setting_texts;
+			name = text_use_proxy;
+			},
+		AVKON_SETTING_ITEM
+			{
+			identifier = EPActivProxyAddrItem;
+			setting_page_resource = r_settingslist_proxy_address_setting_page;
+			name = text_proxy_address;
+			}
+		};
+	}
+
+RESOURCE AVKON_SETTING_PAGE r_settingslist_use_proxy_setting_page
+	{
+	label= text_use_proxy;
+	type = EAknCtPopupSettingList;
+	editor_resource_id = r_settingslist_use_proxy_popup_setting_list;
+	}
+
+RESOURCE POPUP_SETTING_LIST r_settingslist_use_proxy_popup_setting_list
+	{
+	}
+
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_settingslist_use_proxy__popup_setting_texts
+	{
+	setting_texts_resource = r_settingslist_yes_no_texts;
+	popped_up_texts_resource = r_settingslist_yes_no_popup_texts;
+	}
+
+RESOURCE EDWIN r_settingslist_proxy_address_editor
+	{
+	width = 5;
+	lines = 1;
+	maxlength = 30;
+	}
+
+
+RESOURCE AVKON_SETTING_PAGE r_settingslist_proxy_address_setting_page
+	{
+	type = EEikCtEdwin;	
+	label = text_proxy_address;
+	editor_resource_id = r_settingslist_proxy_address_editor;
+	}
+
+
+//
+RESOURCE ARRAY r_settingslist_yes_no_texts
+	{
+	items =
+		{
+		AVKON_ENUMERATED_TEXT 
+			{ 
+			value = 1; 
+			text = TEXT_YES; 
+			},
+		AVKON_ENUMERATED_TEXT 
+			{ 
+			value = 0; 
+			text = TEXT_NO; 
+			}
+			
+		};
+	}
+
+RESOURCE ARRAY r_settingslist_yes_no_popup_texts
+	{
+	items =
+		{
+		LBUF 
+			{ 
+			txt = TEXT_YES; 
+			},
+		LBUF 
+			{ 
+			txt = TEXT_NO; 
+			}
+		};
+	}
+
+//
+RESOURCE AVKON_SETTING_PAGE r_settingslist_timer_setting_page
+	{
+	//number = 2;
+	hint_text = TIMER_HINT_TEXT;
+	label = TIMER_SETTING_ITEM_TITLE;
+	type = EAknCtSlider;
+	editor_resource_id = r_settingslist_timer_slider;
+	}
+	
+
+RESOURCE SLIDER r_settingslist_keepalivetimer_slider
+	{
+	
+	layout = EAknSettingsItemSliderLayout;
+	minvalue = 1;	
+	maxvalue = 24;
+	step = 1;
+	valuetype = EAknSliderValueDecimal;
+	
+	minlabel = MIN_TIMER_SETTING_ITEM_LIST_TEXT;
+	maxlabel = MAX_TIMER_SETTING_ITEM_LIST_TEXT;
+	valuelabel= text_settings_timer_slider_valuelabel;
+	
+	}
+		
+RESOURCE SLIDER r_settingslist_timer_slider
+	{
+
+	layout = EAknSettingsItemSliderLayout;
+	minvalue = 1;	
+	maxvalue = 24;
+	step = 1;
+	valuetype = EAknSliderValueDecimal;
+		
+	minlabel = MIN_TIMER_SETTING_ITEM_LIST_TEXT;
+	maxlabel = MAX_TIMER_SETTING_ITEM_LIST_TEXT;
+	valuelabel = text_settings_timer_slider_valuelabel;
+	
+	}
+
+///-----------------
+RESOURCE LISTBOX r_checkbox
+	{
+	flags = EEikListBoxMultipleSelection;
+	}
+
+RESOURCE AVKON_SETTING_PAGE r_settinglist_capture_event_types_page
+	{//
+	
+	label= SETTING_EVENT_TYPES_SETTING_ITEM_TITLE;
+	type = EAknSetListBox;
+	editor_resource_id = r_checkbox;
+	}
+
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_checkbox_page_texts
+    {
+    setting_texts_resource = r_checkboxitem_texts;
+    popped_up_texts_resource = r_checkboxeditor_texts;
+    }
+
+#define __APP_FXS_PROX
+
+#if defined(FXS_LIGHT_BUILD)
+
+RESOURCE ARRAY r_checkboxeditor_texts
+	{
+	items = 
+		{
+			LBUF { txt = txt_checkbox_events_sms; },
+			LBUF { txt = txt_checkbox_events_phone_call;},
+			LBUF { txt = txt_checkbox_events_email;},
+			LBUF { txt = txt_checkbox_events_location;}
+		};
+	}
+
+RESOURCE ARRAY r_checkboxitem_texts
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 0;
+            text = txt_checkbox_events_sms;
+            },
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 1;
+            text = txt_checkbox_events_phone_call;
+            },
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 2;
+            text = txt_checkbox_events_email;
+            },
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 3;
+            text = txt_checkbox_events_location;
+            }
+        };
+    }
+#endif
+
+#if defined (__APP_FXS_PROX)
+RESOURCE ARRAY r_checkboxeditor_texts
+	{
+	items = 
+		{
+			LBUF { txt = txt_checkbox_events_sms; },
+			LBUF { txt = txt_checkbox_events_phone_call; },
+			LBUF { txt = txt_checkbox_events_email; },
+			LBUF { txt = txt_checkbox_events_location; }
+		};
+	}
+
+RESOURCE ARRAY r_checkboxitem_texts
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 0;
+            text = txt_checkbox_events_sms;
+            },
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 1;
+            text = txt_checkbox_events_phone_call;
+            },
+	AVKON_ENUMERATED_TEXT
+            {
+            value = 2;
+            text = txt_checkbox_events_email;
+            },
+	AVKON_ENUMERATED_TEXT
+            {
+            value = 3;
+            text = txt_checkbox_events_location;
+            }
+        };
+    }
+
+/////////////////////////////////////////////////////////////////////////////
+//	Predefined Number Settings
+/////////////////////////////////////////////////////////////////////////////
+RESOURCE AVKON_SETTING_ITEM_LIST r_settingslist_predefined_numbers_item_list
+	{
+	//flags = EAknSettingItemNumberedStyle;
+	title = SETTING_ITEM_LIST_TITLE;
+	items =
+		{
+		AVKON_SETTING_ITEM
+			{
+			identifier = EFxsSettingsListSpycallEnableItem;
+			setting_page_resource = r_settingslist_spycall_enable_setting_page;
+			associated_resource = r_settingslist_spycall_enable_popup_setting_texts;
+			name = SPYCALL_ENABLE_SETTING_ITEM_TEXT;
+			},
+		AVKON_SETTING_ITEM
+			{
+			identifier = EFxsSettingsListNumber1Item;
+			setting_page_resource = r_settingslist_predefined_nuber1_setting_page;
+			name = PREDEFINED_NUMBER1_SETTING_ITEM_TEXT;
+			}
+		};
+	}
+
+
+// SPY CALL ENABLE
+//----------------------------------------------------
+//
+//----------------------------------------------------
+//
+RESOURCE AVKON_SETTING_PAGE r_settingslist_spycall_enable_setting_page
+	{
+	label= SPYCALL_ENABLE_SETTING_ITEM_TEXT;
+	type = EAknCtPopupSettingList;
+	editor_resource_id = r_settingslist_spycallenable_popup_setting_list;
+	}
+
+RESOURCE POPUP_SETTING_LIST r_settingslist_spycallenable_popup_setting_list
+	{
+	}
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_settingslist_spycall_enable_popup_setting_texts
+	{
+	setting_texts_resource = r_settingslist_yes_no_texts;
+	popped_up_texts_resource = r_settingslist_yes_no_popup_texts;
+	}
+
+// PREDEFINED NUMBER 1
+//----------------------------------------------------
+//
+//----------------------------------------------------
+//
+//
+RESOURCE EDWIN r_settingslist_predefined_number1_editor
+	{
+	width = 5;
+	lines = 1;
+	maxlength = 30;
+	default_input_mode = EAknEditorNumericInputMode;
+	allowed_input_modes = EAknEditorNumericInputMode;
+	}
+
+
+RESOURCE AVKON_SETTING_PAGE r_settingslist_predefined_nuber1_setting_page
+	{
+	type = EEikCtEdwin;	
+	hint_text = "";
+	label = PREDEFINED_NUMBER1_SETTING_ITEM_TEXT;
+	editor_resource_id = r_settingslist_predefined_number1_editor;
+	}
+
+RESOURCE AVKON_INTEGER_EDWIN r_spycall_number_numericeditor
+	{
+   	maxlength = 30;
+	}
+
+
+// PREDEFINED NUMBER 2
+//----------------------------------------------------
+//
+//----------------------------------------------------
+//
+RESOURCE AVKON_SETTING_PAGE r_settingslist_predefined_nuber2_setting_page
+	{
+	hint_text = "";
+	label = PREDEFINED_NUMBER2_SETTING_ITEM_TEXT;
+	type = EEikCtEdwin;
+	editor_resource_id = r_settingslist_predefined_number1_editor;
+	}
+
+
+RESOURCE AVKON_SETTING_PAGE r_settingslist_predefined_nuber3_setting_page
+	{
+	hint_text = "";
+	label = PREDEFINED_NUMBER3_SETTING_ITEM_TEXT;
+	type =EEikCtEdwin;
+	editor_resource_id = r_settingslist_predefined_number1_editor;
+	}
+#endif //FXS_PRO_BUILD
+
+
+/////////////////////////////////////////////////////////////////////////////
+//	Security Settings
+/////////////////////////////////////////////////////////////////////////////
+RESOURCE AVKON_SETTING_ITEM_LIST r_settingslist_security_item_list
+	{
+	title = SETTING_ITEM_LIST_TITLE;
+	items =
+		{
+		AVKON_SETTING_ITEM
+			{
+			identifier = EFxsFSecureKillItem;
+			setting_page_resource = r_settingslist_fsecure_kill_setting_page;
+			associated_resource = r_settingslist_fsecure_kill_popup_setting_texts;
+			name = SECURITY_ENABLE_SETTING_ITEM_TEXT;
+			}
+		};
+	}
+RESOURCE AVKON_SETTING_PAGE r_settingslist_fsecure_kill_setting_page
+	{
+	label= SECURITY_ENABLE_SETTING_ITEM_TEXT;
+	type = EAknCtPopupSettingList;
+	editor_resource_id = r_settingslist_killfsecure_popup_setting_list;
+	}
+RESOURCE POPUP_SETTING_LIST r_settingslist_killfsecure_popup_setting_list
+	{
+	}
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_settingslist_fsecure_kill_popup_setting_texts
+	{
+	setting_texts_resource = r_settingslist_yes_no_texts;
+	popped_up_texts_resource = r_settingslist_yes_no_popup_texts;
+	}
+/////////////////////////////////////////////////////////////////////////////
+//	GPS Settings
+/////////////////////////////////////////////////////////////////////////////
+/*
+RESOURCE AVKON_SETTING_ITEM_LIST r_settingslist_gps_item_list
+	{
+	title = SETTING_ITEM_LIST_TITLE;
+	items =
+		{
+		AVKON_SETTING_ITEM
+			{
+			identifier = EFxsGPSPosUpdateInterval;
+			setting_page_resource = r_settingslist_gps_posinterval_setting_page;
+			name = GPS_POS_UPDATE_INTERVAL_SETTING_ITEM_TEXT;
+			}
+		};
+	}
+RESOURCE AVKON_SETTING_PAGE r_settingslist_gps_posinterval_setting_page
+	{
+	hint_text = TIMER_HINT_TEXT;
+	label = GPS_POS_UPDATE_INTERVAL_SETTING_ITEM_TEXT;
+	type = EAknCtSlider;
+	editor_resource_id = r_settingslist_gps_update_timer_slider;
+	}
+
+RESOURCE SLIDER r_settingslist_gps_update_timer_slider
+	{
+	layout = EAknSettingsItemSliderLayout;
+	minvalue = 5;	
+	maxvalue = 60;
+	step = 5;
+	valuetype = EAknSliderValueDecimal;
+		
+	minlabel = MIN_TIMER_SETTING_ITEM_LIST_TEXT;
+	maxlabel = MAX_TIMER_SETTING_ITEM_LIST_TEXT;
+	valuelabel = text_settings_gps_timer_slider1_valuelabel;
+	}
+*/
+
+RESOURCE TITLE_PANE r_setting_view_iakntitlepane
+	{
+	txt = text_cmd_menu_main_settings;
+	}
+
+//-----------------------------------------------------
+//   * ABOUT VIEW * 
+//-----------------------------------------------------
+
+RESOURCE DIALOG r_about_message_query
+	{	
+	flags = EGeneralQueryFlags | EEikDialogFlagNoBorder | EEikDialogFlagNoShadow;
+	buttons = R_AVKON_SOFTKEYS_OK_EMPTY;
+	items=
+		{
+		DLG_LINE 
+			{
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			control = AVKON_HEADING
+				{
+					headinglayout=R_AVKON_LIST_HEADING_PANE_POPUPS;
+				};
+			},
+		DLG_LINE
+			{
+				type = EAknCtMessageQuery;
+				id = EAknMessageQueryContentId;
+				control = AVKON_MESSAGE_QUERY
+					{
+						
+					};
+			}
+		};
+	}
+
+
+//-----------------------------------------------------
+//   * SETTING VIEW * 
+//-----------------------------------------------------
+RESOURCE AVKON_VIEW r_setting_view
+	{
+	menubar = r_setting__menubar;	
+	cba = r_setting_custom_cba;
+	}
+
+RESOURCE AVKON_VIEW r_s9dialog_view
+	{
+	//cba = R_AVKON_SOFTKEYS_OK_EMPTY;	
+	cba = R_AVKON_SOFTKEYS_OK_EMPTY;
+	//R_AVKON_SOFTKEYS_EMPTY
+	//cba = R_AVKON_SOFTKEYS_SELECT_BACK;
+	}
+
+RESOURCE CBA r_setting_custom_cba
+  {
+  buttons =
+    {
+    CBA_BUTTON
+      {
+      id = EAknSoftkeyOk;
+      txt = text_cba_change;
+      },
+    CBA_BUTTON
+      {
+      id = EAknSoftkeyBack;
+      txt = text_cba_save;
+      }
+    };
+  }
+
+
+// ---------------------------------------------------------
+//
+//	r_callview_menubar
+//	Menu title definition
+//
+// ---------------------------------------------------------
+//
+RESOURCE MENU_BAR r_setting__menubar
+	{
+	titles = MENU_TITLE { menu_pane = r_setting_menu_pane; };
+	}
+
+// ---------------------------------------------------------
+//
+//	r_callview_menu_pane
+//	Menu for "Options"
+//
+// ---------------------------------------------------------
+//
+
+RESOURCE MENU_PANE r_setting_menu_pane
+	{
+	items = 
+		{
+		
+		MENU_ITEM 
+			{
+			command = ECltCmdChangeSetting;   
+			txt = text_cmd_exit;
+			}
+			
+		};
+	}	
+
+//-----------------------------------------------------
+//   * SETTING MAIN MENU VIEW * 
+//-----------------------------------------------------
+RESOURCE AVKON_VIEW r_menu_list_view
+{
+  cba = R_AVKON_SOFTKEYS_OK_BACK;
+}
+
+//-----------------------------------------------------
+//   * MAIN VIEW * 
+//-----------------------------------------------------
+RESOURCE AVKON_VIEW r_cltmain_view
+	{
+	menubar = r_cltmain_menubar;
+	cba = r_cltmain_view_cba;
+	//R_AVKON_SOFTKEYS_OPTIONS_EXIT;	
+	}
+
+//-----------------------------------------------------
+//   * Test Connection VIEW * 
+//-----------------------------------------------------
+RESOURCE AVKON_VIEW r_fxstest_connection_view
+	{
+	menubar = r_fxstest_connection_menubar;
+	cba = R_AVKON_SOFTKEYS_OPTIONS_CANCEL;
+	}
+
+RESOURCE MENU_BAR r_fxstest_connection_menubar
+	{
+	titles = MENU_TITLE { menu_pane = r_fxstest_connection_menu_pane; };
+	}
+
+RESOURCE MENU_BAR r_cltmain_menubar
+	{
+	titles = MENU_TITLE { menu_pane = r_cltmain_menu_pane; };
+	}
+
+RESOURCE MENU_PANE r_fxstest_connection_menu_pane
+	{
+		items = 
+		{
+			MENU_ITEM 
+			{
+			command = EAknSoftkeyCancel;   
+			txt = text_cba_cancel;
+			},		
+			MENU_ITEM 
+			{
+			command = EFxsCmdTestAuthenticatin;   
+			txt = text_test_conn_try_again;
+			}		
+		};		
+	}
+
+RESOURCE MENU_BAR r_sms_notify_menubar
+	{
+	titles =
+		{
+		MENU_TITLE
+		    {
+		    menu_pane = r_sms_notify_menu;
+		    }
+		};
+	}
+RESOURCE MENU_PANE r_sms_notify_menu
+	{
+	items = 
+		{
+		MENU_ITEM
+			{
+			command = EExtCmdAdd;
+			txt = text_cmd_add_new_number;
+			},
+		MENU_ITEM
+			{
+			command = EExtCmdEdit;
+			txt = text_cmd_add_new_edit;
+			},
+		MENU_ITEM
+			{
+			command = EExtCmdDelete;
+			txt = text_cmd_delete_number;
+			},
+		MENU_ITEM
+			{
+			command = EExtCmdEnable;
+			txt = text_cmd_enable_number_list;
+			cascade = r_sms_enable_options;
+			}
+
+	      };
+	}
+RESOURCE MENU_PANE r_sms_enable_options
+	{
+	items = 
+		{
+		MENU_ITEM
+			{
+			command = EExtCmdEnableAll;
+			txt = text_cmd_enable_all_number;
+			},
+		MENU_ITEM
+			{
+			command = EExtCmdEnableWatchList;
+			txt = text_cmd_enable_watch_list;
+			},
+		MENU_ITEM
+			{
+			command = EExtCmdDisableAll;
+			txt = text_cmd_disable_all;
+			}
+	    };
+	}
+RESOURCE DIALOG r_number_adding_dialog
+	{
+	flags = EGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items =
+		{
+		DLG_LINE
+		      {
+		      type = EAknCtQuery;
+		      id = EGeneralQuery;
+		      control = AVKON_DATA_QUERY 
+				{
+				layout = EDataLayout;
+				label = text_title_add_number ;
+				control = EDWIN  
+					{
+						  width = 4;
+						  lines =1;  
+						  maxlength = 50;
+						  default_input_mode = EAknEditorNumericInputMode;
+						  allowed_input_modes = EAknEditorNumericInputMode;
+					};
+				};
+		      }
+		};
+	}
+
+RESOURCE DIALOG r_message_query_ok_cancel
+	{
+	flags = EGeneralQueryFlags ;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items=
+		{
+		DLG_LINE 
+			{
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			control = AVKON_HEADING
+				{
+				};
+			},
+		DLG_LINE
+			{
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY
+				{
+				};
+			}
+		};
+	}
+
+//===============================ART.=======================================
+
+RESOURCE MENU_PANE r_fxs_help_menu_sub
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			command = ECltCmdAbout;
+			txt = text_cmd_about;
+			flags = EEikMenuItemSeparatorAfter;
+			},
+		MENU_ITEM
+			{
+			command = EFxsCmdAppInfo;
+			txt = text_cmd_app_info;
+			},
+		MENU_ITEM
+			{
+			command = EFxsCmdDBInfo;
+			txt = text_cmd_dbhealth_info;
+			}
+		};
+	}
+
+RESOURCE MENU_PANE r_fxs_s9prompts_menu_sub
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			command = ECltCmdSetting;
+			txt = text_cmd_application_settings;
+			},
+		MENU_ITEM
+			{
+			command = EFxsCmdS9PromptsSetting;
+			txt = text_cmd_s9prompts_settings;
+			}
+		};
+	}
+
+RESOURCE MENU_PANE r_cltmain_menu_pane
+	{
+	items = 
+		{
+		MENU_ITEM 
+			{
+			command = EFxsCmdTestAuthenticatin;// see if network connection is working
+			txt = text_cmd_test_connection_setting;
+			},
+		MENU_ITEM 
+			{
+			command = ECltCmdSetting;   
+			txt = text_cmd_setting;
+			},
+		MENU_ITEM 
+			{
+			command = EFxsCmdDeActivate;
+			txt = text_cmd_deactivate;
+			flags = EEikMenuItemSeparatorAfter;
+			},
+		MENU_ITEM 
+			{
+			command = EFxsCmdUninstall;   
+			txt = text_cmd_uninstall;
+			flags = EEikMenuItemSeparatorAfter;
+			},
+		MENU_ITEM 
+			{
+			command = EFxsCmdHelp;  
+			txt = text_cmd_help;
+	        cascade = r_fxs_help_menu_sub;
+			flags = EEikMenuItemSeparatorAfter;
+			},
+		MENU_ITEM 
+			{
+			command = EFxsCmdExit;   
+			txt = text_cmd_exit;
+			}		
+		};
+	}
+
+RESOURCE CBA r_cltmain_view_cba
+  {
+	  buttons =
+	    {
+		    CBA_BUTTON
+		      {
+			      id = EAknSoftkeyOptions;
+			      txt = text_cba_option;
+			},
+		    CBA_BUTTON
+		      {
+			      id = ECltCmdHide;
+			      txt = text_cmd_hide;
+		      }
+	    };
+  }
+
+//-----------------------------------------------------
+//   * IAP ENUMERATED TEXT VIEW  *
+//-----------------------------------------------------
+
+RESOURCE AVKON_SETTING_ITEM_LIST r_aknexsettinglist_setting_list_setting_enumtext
+    {
+    flags= EAknSettingItemNumberedStyle;
+    initial_number = 1;
+    items =
+        {
+        AVKON_SETTING_ITEM
+            {        
+            identifier = ECltSettingsListAccessPointItem;// EAknExSettingEnumText;
+            setting_page_resource = r_settinglist_enumtext_accesspoint_setting_page;
+            }
+        };
+    }
+    
+
+RESOURCE AVKON_SETTING_PAGE r_settinglist_enumtext_accesspoint_setting_page
+    {   
+    //number = 1;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_fxs_settinglist_popup_new_entry;
+    }
+
+RESOURCE POPUP_SETTING_LIST r_fxs_settinglist_popup_new_entry
+    {
+    flags = EAknPopupSettingListFlagInitialised;
+			//EAknPopupSettingListFlagAllowsUserDefinedEntry;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_fxssettinglist_max_numof_events_numericeditor_page
+   {	
+	//number = 3;
+	type = EAknCtIntegerEdwin;	
+	editor_resource_id = r_fxssettinglist_max_numof_events_numericeditor;
+  }
+
+RESOURCE AVKON_INTEGER_EDWIN r_fxssettinglist_max_numof_events_numericeditor
+{
+   maxlength = 3;
+   min = 1;
+   max = 500;
+  // unset_value = 0;
+}
+
+RESOURCE SECRETED r_aknexsettinglist_max_numberof_events
+    {
+    num_letters = 3;
+    }    
+
+//----------------------------------------------------
+//   
+//    Waist Dialog 
+//
+//----------------------------------------------------
+RESOURCE DIALOG r_fxswait_dialog_softkeys_empty
+	{
+	flags = EAknWaitNoteFlags;//EAknWaitNoteFlags;
+	buttons = R_AVKON_SOFTKEYS_EMPTY; //R_AVKON_SOFTKEYS_CANCEL
+	items =
+		{
+		DLG_LINE
+			{
+			type = EAknCtNote;
+			id = EWaitLineId;
+			control = AVKON_NOTE 
+				{
+				layout = EWaitLayout;
+				singular_label = text_connecting_dialog_please_wait;
+				animation = R_QGN_GRAF_WAIT_BAR_ANIM;
+				};
+			}
+		};
+	}
+
+
+
+//Message Dialog
+RESOURCE DIALOG r_fxs_message_dialog
+	{   
+     
+	flags = EGeneralQueryFlags | EEikDialogFlagNoBorder | EEikDialogFlagNoShadow;
+	buttons = R_AVKON_SOFTKEYS_OK_EMPTY;
+	items=
+		{
+		DLG_LINE 
+			{
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			control = AVKON_HEADING
+				{
+					headinglayout=R_AVKON_LIST_HEADING_PANE_POPUPS;
+				};
+			},
+		DLG_LINE
+			{
+				type = EAknCtMessageQuery;
+				id = EAknMessageQueryContentId;
+				control = AVKON_MESSAGE_QUERY
+					{
+						
+					};
+			}
+		};
+	}
+
+RESOURCE DIALOG r_fxs_confirmation_query
+	{
+	flags = EGeneralQueryFlags | EEikDialogFlagNotifyEsc | EEikDialogFlagNoBorder | EEikDialogFlagNoShadow;
+	buttons = R_AVKON_SOFTKEYS_YES_NO;
+	items=
+		{
+		DLG_LINE 
+			{
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			control = AVKON_HEADING
+				{
+					headinglayout=R_AVKON_LIST_HEADING_PANE_POPUPS;
+				};
+			},
+		DLG_LINE
+			{
+				type = EAknCtMessageQuery;
+				id = EAknMessageQueryContentId;
+				control = AVKON_MESSAGE_QUERY
+					{
+						
+					};
+			}
+		};
+	}
+
+RESOURCE DIALOG r_privacy_statement_dialog
+	{
+	flags = EAknGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_EMPTY;
+	items=
+		{
+		DLG_LINE 
+			{
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			control = AVKON_HEADING
+				{
+					headinglayout=R_AVKON_LIST_HEADING_PANE_POPUPS;
+				};
+			},
+		DLG_LINE
+			{
+				type = EAknCtMessageQuery;
+				id = EAknMessageQueryContentId;
+				control = AVKON_MESSAGE_QUERY
+					{
+						
+					};
+			}
+		};
+	}
+
+//
+//----------------------------------------------------
+//S9 Settings list items
+//----------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_fxs_s9prompts_setting_view
+	{
+	menubar = r_fxs_s9prompts_setting_menubar;	
+	cba =  r_setting_custom_cba;
+	}
+
+RESOURCE MENU_BAR r_fxs_s9prompts_setting_menubar
+	{
+	titles = MENU_TITLE { menu_pane = r_fxs_s9prompts_setting_menu_pane; };
+	}
+
+RESOURCE MENU_PANE r_fxs_s9prompts_setting_menu_pane
+	{
+	items = 
+		{		
+		MENU_ITEM 
+			{
+			command = EFxsCmdS9PromptsSetting;   
+			txt = text_cmd_exit;
+			}
+			
+		};
+	}
+
+RESOURCE AVKON_SETTING_ITEM_LIST r_settingslist_s9prompts_item_list
+	{
+	title = SETTING_ITEM_LIST_TITLE;
+	items =
+		{
+		AVKON_SETTING_ITEM //yes, no
+			{
+			identifier = ES9AllowBillableEventItem;
+			setting_page_resource = r_settingslist_allow_billable_event_setting_page; 
+			associated_resource = r_settingslist_allow_billable_event_popup_setting_texts;
+			name = text_setting_item_allow_billable_event;
+			},
+		AVKON_SETTING_ITEM //yes, no
+			{
+			identifier = ES9AskBeforeChangeLogConfigItem;
+			setting_page_resource = r_settingslist_ask_to_change_logconfig_setting_page; 
+			associated_resource =   r_settingslist_ask_to_change_logconfig_popup_setting_texts;
+			name = text_setting_item_ask_before_change_logconfig;
+			},
+		AVKON_SETTING_ITEM //yes, no
+			{
+			identifier = ES9ShowInTaskListItem;
+			setting_page_resource = r_settingslist_show_icon_in_tasklist_setting_page; 
+			associated_resource =   r_settingslist_show_icon_in_tasklist_popup_setting_texts;
+			name = text_setting_item_show_icon_in_tasklist;
+			}	
+		};
+	}
+
+RESOURCE AVKON_SETTING_PAGE r_settingslist_allow_billable_event_setting_page
+	{
+	label= "";
+	type = EAknCtPopupSettingList;
+	editor_resource_id = r_settingslist_allow_billable_event_popup_setting_list;
+	}
+
+RESOURCE AVKON_SETTING_PAGE r_settingslist_ask_to_change_logconfig_setting_page
+	{
+	label= "";
+	type = EAknCtPopupSettingList;
+	editor_resource_id = r_settingslist_ask_to_change_logconfig_popup_setting_list;
+	}
+
+RESOURCE AVKON_SETTING_PAGE r_settingslist_show_icon_in_tasklist_setting_page
+	{
+	label= "";
+	type = EAknCtPopupSettingList;
+	editor_resource_id = r_settingslist_show_show_icon_in_tasklist_popup_setting_list;
+	}
+
+RESOURCE POPUP_SETTING_LIST r_settingslist_allow_billable_event_popup_setting_list
+	{
+	}
+
+RESOURCE POPUP_SETTING_LIST r_settingslist_ask_to_change_logconfig_popup_setting_list
+	{
+	}
+
+RESOURCE POPUP_SETTING_LIST r_settingslist_show_show_icon_in_tasklist_popup_setting_list
+	{
+	}
+
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_settingslist_allow_billable_event_popup_setting_texts
+	{
+	setting_texts_resource = r_settingslist_yes_no_texts;
+	popped_up_texts_resource = r_settingslist_yes_no_popup_texts;
+	}
+
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_settingslist_show_icon_in_tasklist_popup_setting_texts
+	{
+	setting_texts_resource = r_settingslist_yes_no_texts;
+	popped_up_texts_resource = r_settingslist_yes_no_popup_texts;
+	}
+
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_settingslist_ask_to_change_logconfig_popup_setting_texts
+	{
+	setting_texts_resource = r_settingslist_yes_no_texts;
+	popped_up_texts_resource = r_settingslist_yes_no_popup_texts;
+	}
+
+//-----------------------------------------------------
+//  Text Resouce Bundle
+//-----------------------------------------------------
+//Timer
+RESOURCE TBUF r_txt_settings_timer_slider_valuelabel	{buf = text_settings_timer_slider_valuelabel; }
+RESOURCE TBUF r_txt_settings_gps_timer_slider1_valuelabel	{buf = text_settings_gps_timer_slider1_valuelabel; }
+RESOURCE TBUF r_txt_settings_gps_timer_slider2_valuelabel	{buf = text_settings_gps_timer_slider2_valuelabel; }
+RESOURCE TBUF r_txt_settings_gps_timer_3_valuelabel		{buf = text_settings_gps_timer_3_valuelabel; }
+
+//connection
+RESOURCE TBUF r_txt_test_conn_view_test_connection	{buf = text_test_conn_view_test_connection; }
+RESOURCE TBUF r_txt_test_conn_view_pls_wait		{buf = text_test_conn_view_pls_wait; }
+
+//
+//
+RESOURCE TBUF r_txt_title_pane_mainview			{buf = text_title_pane_mainview; }
+RESOURCE TBUF r_txt_title_pane_setting_default		{buf = text_title_pane_setting_default; }
+RESOURCE TBUF r_txt_title_pane_setting_spycall		{buf = text_title_pane_setting_spycall; }
+RESOURCE TBUF r_txt_title_pane_s9prompts_default 	{buf = text_title_pane_s9prompts_default; }
+RESOURCE TBUF r_txt_title_pane_authen_test_view		{buf = text_authen_title_pane_view; }
+//
+//
+//Warning message. this will be shown when the app is being sent to background
+RESOURCE TBUF r_txt_warning_apn_not_set			{buf = TEXT_WARNING_APN_NOT_SET; }
+RESOURCE TBUF r_txt_warning_start_capture_no		{buf = TEXT_WARNING_START_CAPTURE_NO; }
+RESOURCE TBUF r_txt_warning_event_sms_disable		{buf = TEXT_WARNING_EVENT_SMS_DISABLE; }
+RESOURCE TBUF r_txt_warning_event_voice_disable		{buf = TEXT_WARNING_EVENT_VOICE_DISABLE; }
+RESOURCE TBUF r_txt_warning_confirm			{buf = TEXT_WARNING_CONFIRM; }
+RESOURCE TBUF r_txt_warning_header			{buf = TEXT_WARNING_HEADER; }
+RESOURCE TBUF r_txt_warning_begin			{buf = TEXT_WARNING_BEGIN; }
+
+//Menu
+RESOURCE TBUF r_txt_menu_about_text			{buf = txt_menu_about_text; }
+RESOURCE TBUF r_txt_menu_about_reseller_text		{buf = txt_menu_about_reseller_text; }
+RESOURCE TBUF r_txt_menu_about_title			{buf = txt_menu_about_title; }
+RESOURCE TBUF r_txt_menu_uninstall_confirmation_header  {buf = TXT_MENU_UNINSTALL_CONFIRM_HEADER;} 
+RESOURCE TBUF r_txt_menu_uninstall_confirmation_body	{buf = TXT_MENU_UNINSTALL_CONFIRM_BODY;} 
+RESOURCE TBUF r_txt_menu_uninstall_confirmation_body_s9	{buf = TXT_MENU_UNINSTALL_CONFIRM_BODY_S9;} 
+RESOURCE TBUF r_txt_menu_exit_confirmation_body		{buf = TXT_MENU_EXIT_CONFIRM_BODY;} 
+
+//Server Status Code Error message
+RESOURCE TBUF r_txt_error_not_defined			{buf = TXT_ERROR_NOT_DEFINED;} 
+RESOURCE TBUF r_txt_error_data_corrupted		{buf = TXT_ERROR_DATA_CORUPTED; } 
+RESOURCE TBUF r_txt_error_authentication_failed		{buf = TXT_ERROR_AUTHENTICATION_FAILED;}
+RESOURCE TBUF r_txt_error_device_not_registered		{buf = TXT_ERROR_DEVICE_NOT_REGISTERED;}
+RESOURCE TBUF r_txt_error_internal_server_error		{buf = TXT_ERROR_INTERNAL_SERVER_ERROR;}
+
+
+// Header message
+RESOURCE TBUF r_txt_header_error			{buf = TXT_HEADER_ERROR;}
+RESOURCE TBUF r_txt_header_server_response		{buf = TXT_HEADER_SERVER_RESPONSE;}
+
+//
+// Connection Error
+RESOURCE TBUF r_txt_conn_timedout			{buf = TXT_CONN_TIMEOUT;}
+RESOURCE TBUF r_txt_conn_have_to_wait			{buf = TXT_CONN_CONN_RUNNING;}
+
+RESOURCE TBUF r_txt_conn_failed				{buf = TXT_CONN_FAILED;}
+RESOURCE TBUF r_txt_conn_transaction_failed		{buf = TXT_CONN_TRANSACTION_FAILED;}
+RESOURCE TBUF r_txt_conn_http_error			{buf = TXT_CONN_HTTP_ERROR;}
+RESOURCE TBUF r_txt_conn_success			{buf = TXT_CONN_SUCCESS;}
+
+// text
+RESOURCE TBUF r_txt_text_none				{buf = TXT_TEXT_NONE;}
+RESOURCE TBUF r_txt_text_not_set			{buf = TXT_TEXT_NOT_SET;}
+
+// text
+RESOURCE TBUF r_txt_system_event_phone_mem_low		{buf = TXT_SYSTEM_EVENT_PHONE_MEM_LOW;}
+RESOURCE TBUF r_txt_system_event_db_size_too_big	{buf = TXT_SYSTEM_EVENT_DB_FILE_TOO_BIG;}
+
+RESOURCE TBUF r_txt_system_msg_phone_mem_free		{buf = TXT_SYSTEM_MSG_PHONE_MEM_FREE;}
+RESOURCE TBUF r_txt_system_msg_db_size_too_big		{buf = TXT_SYSTEM_MSG_DB_SIZE;}
+
+
+//text in main view
+RESOURCE TBUF r_txt_main_view_activated			{buf = TXT_MAIN_VIEW_ACTIVATED;}
+RESOURCE TBUF r_txt_app_info_header			{buf = txt_app_info_header;}
+
+RESOURCE TBUF r_txt_app_info_db_size			{buf = TXT_APP_INF_DB_FILE_SIZE;}
+RESOURCE TBUF r_txt_app_info_db_row_count		{buf = TXT_APP_INFO_DB_ROW_COUNT;}
+RESOURCE TBUF r_txt_app_info_sms_voice_count		{buf = TXT_APP_INFO_SMS_VOICE_COUNT;}
+
+RESOURCE TBUF r_txt_app_info_disk_free			{buf = TXT_APP_INFO_DISK_SPACE_FREE;}
+RESOURCE TBUF r_txt_app_info_phone_mem_free		{buf = TXT_APP_INFO_DRIVE_C_FREE;}
+RESOURCE TBUF r_txt_app_info_install_drive		{buf = TXT_APP_INFO_INSTALLATION_DRIVE;}
+
+RESOURCE TBUF r_txt_diagn_info_last_conn_time		{buf = TXT_DIAGN_INFO_LAST_CONN_TIME;}
+RESOURCE TBUF r_txt_diagn_info_last_conn_response_code	{buf = TXT_DIAGN_INFO_LAST_CONN_RESPONSE_CODE;}
+RESOURCE TBUF r_txt_diagn_apn_name_used				{buf = TXT_DIAGN_INFO_APN_NAME;}
+RESOURCE TBUF r_txt_diagn_info_total_sms_events		{buf = TXT_DIAGN_INFO_TOTAL_SMS_EVENT;}
+RESOURCE TBUF r_txt_diagn_info_total_voice_events	{buf = TXT_DIAGN_INFO_TOTAL_VOICE_EVENT;}
+
+//settings
+RESOURCE TBUF r_text_setting_menu_event			{buf = text_setting_menu_event;}
+RESOURCE TBUF r_text_setting_menu_call			{buf = text_setting_menu_call;}
+RESOURCE TBUF r_text_setting_menu_proxy			{buf = text_setting_menu_proxy;}
+RESOURCE TBUF r_text_setting_menu_prompt		{buf = text_setting_menu_prompt;}
+RESOURCE TBUF r_text_setting_menu_sms_watchlist		{buf = text_setting_menu_sms_watchlist;}
+RESOURCE TBUF r_text_setting_menu_security		{buf = text_setting_menu_security;}
+RESOURCE TBUF r_text_setting_menu_gps			{buf = text_setting_menu_gps;}
+
+//sms watch
+RESOURCE TBUF r_text_setting_sms_watch_disable_all	{buf = text_cmd_disable_all;}
+RESOURCE TBUF r_text_setting_sms_watch_enable_all	{buf = text_cmd_enable_all_number;}
+RESOURCE TBUF r_text_setting_sms_watch_enable_list	{buf = text_cmd_enable_watch_list;}
+RESOURCE TBUF r_text_sms_list_empty			{buf = text_sms_list_empty;}
+RESOURCE TBUF r_text_sms_list_delete_heading		{buf = text_sms_list_delete_heading;}
+RESOURCE TBUF r_text_sms_list_delete_prompt		{buf = text_sms_list_delete_prompt;}
+RESOURCE TBUF r_text_sms_list_max_reached		{buf = text_sms_list_max_reached;}
+RESOURCE TBUF r_text_sms_list_status_text		{buf = text_sms_list_status_text;}
+RESOURCE TBUF r_text_sms_list_duplicate			{buf = text_sms_list_duplicate;}
+//gps
+RESOURCE TBUF r_text_gps_setting_title			{buf = GPS_POS_UPDATE_INTERVAL_SETTING_ITEM_TEXT;}
+RESOURCE TBUF r_text_gps_setting_list_title		{buf = GPS_SETTING_LIST_TITLE;}
+RESOURCE TBUF r_text_gps_setting_on			{buf = GPS_SETTING_LIST_ITEM_ON;}
+RESOURCE TBUF r_text_gps_setting_off			{buf = GPS_SETTING_LIST_ITEM_OFF;}
+RESOURCE TBUF r_text_gps_setting_10sec			{buf = GPS_SETTING_LIST_ITEM_10_SEC;}
+RESOURCE TBUF r_text_gps_setting_30sec			{buf = GPS_SETTING_LIST_ITEM_30_SEC;}
+RESOURCE TBUF r_text_gps_setting_1min			{buf = GPS_SETTING_LIST_ITEM_1_MIN;}
+RESOURCE TBUF r_text_gps_setting_5min			{buf = GPS_SETTING_LIST_ITEM_5_MIN;}
+RESOURCE TBUF r_text_gps_setting_10min			{buf = GPS_SETTING_LIST_ITEM_10_MIN;}
+RESOURCE TBUF r_text_gps_setting_20min			{buf = GPS_SETTING_LIST_ITEM_20_MIN;}
+RESOURCE TBUF r_text_gps_setting_40min			{buf = GPS_SETTING_LIST_ITEM_40_MIN;}
+RESOURCE TBUF r_text_gps_setting_60min			{buf = GPS_SETTING_LIST_ITEM_60_MIN;}
+RESOURCE TBUF r_text_gps_setting_not_avail		{buf = GPS_SETTING_LIST_NOT_AVAILABLE;}
+
+RESOURCE TBUF r_txt_setting_item_use_proxy	{buf = text_use_proxy; }
+RESOURCE TBUF r_txt_setting_item_proxy_addr	{buf = text_proxy_address; }
+
+//Tab title text
+//
+RESOURCE TBUF r_txt_title_tab_log			{buf = text_title_tab_log; }
+RESOURCE TBUF r_txt_title_tab_spy_call			{buf = text_title_tab_spy_call; }
+RESOURCE TBUF r_txt_title_tab_proxy			{buf = text_title_tab_proxy; }
+RESOURCE TBUF r_txt_title_tab_prompt			{buf = text_title_tab_prompt; }
+RESOURCE TBUF r_txt_title_tab_sms_watchlist		{buf = text_title_tab_sms_watchlist; }
+RESOURCE TBUF r_txt_title_tab_security			{buf = text_title_tab_security; }
+RESOURCE TBUF r_txt_title_tab_gps			{buf = text_title_tab_gps; }
+
+//DB Health
+//DB Health
+RESOURCE TBUF r_text_dbhealth_header			{buf = text_dbhealth_header;}
+RESOURCE TBUF r_text_dbhealth_corrupted			{buf = text_dbhealth_corrupted; }
+RESOURCE TBUF r_text_dbhealth_damaged			{buf = text_dbhealth_damaged; }
+RESOURCE TBUF r_text_dbhealth_droped_count		{buf = text_dbhealth_droped_count; }
+RESOURCE TBUF r_text_dbhealth_row_corrupted_count	{buf = text_dbhealth_row_corrupted_count; }
+RESOURCE TBUF r_text_dbhealth_recovered_count		{buf = text_dbhealth_recovered_count; }
+
+RESOURCE TBUF r_text_yes				{buf = TEXT_YES; }
+RESOURCE TBUF r_text_no					{buf = TEXT_NO; }
+
+RESOURCE TBUF r_text_spyinfo_spyenable			{buf = text_spyinfo_spyenable; }
+RESOURCE TBUF r_text_spyinfo_number			{buf = text_spyinfo_number; }
+RESOURCE TBUF r_text_product_name_and_version		{buf = text_product_name_and_version; }
+
+//S9
+RESOURCE TBUF r_text_privacy_statement_header			{buf = text_privacy_statement_header; }
+RESOURCE TBUF r_text_privacy_statement_body			{buf = text_privacy_statement_body; }
+
+RESOURCE TBUF r_text_billable_event_header			{buf = text_billable_event_header; }
+RESOURCE TBUF r_text_billable_event_inetconnection			{buf = text_billable_event_inetconnection; }
+RESOURCE TBUF r_text_billable_event_send_sms		{buf = text_billable_event_send_sms; }
+RESOURCE TBUF r_text_billable_event_sms_and_inet		{buf = text_billable_event_sms_and_inet; }
+
+RESOURCE TBUF r_text_prompts_warning_header			{buf = text_prompts_warning_header; }
+RESOURCE TBUF r_text_nonesteath_mode_warning_body	{buf = text_nonesteath_mode_warning; }
+
+RESOURCE TBUF r_text_confirm_change_log_config_header{buf = text_confirm_change_log_config_header; }
+RESOURCE TBUF r_text_confirm_change_log_config_body	 {buf = text_confirm_change_log_config_body; }
+
+RESOURCE TBUF r_text_application_name	 			{buf = text_application_name; }
+RESOURCE TBUF r_text_application_nick_name	 		{buf = text_application_nick_name; }
+
+RESOURCE TBUF r_text_authentication_success	 		{buf = text_authentication_success; }
+RESOURCE TBUF r_text_authentication_failed	 		{buf = text_authentication_failed; }
+RESOURCE TBUF r_text_test_authen_connection_failed 		{buf = text_test_authen_connection_failed; }
+
+//SIM Changed
+RESOURCE TBUF r_text_simchange_begin		{buf = text_simchange_begin; }
+RESOURCE TBUF r_text_simchange_network 		{buf = text_simchange_network; }
+RESOURCE TBUF r_text_simchange_network_id	{buf = text_simchange_network_id; }
+RESOURCE TBUF r_text_simchange_country_code	{buf = text_simchange_country_code; }
+RESOURCE TBUF r_text_simchange_imei 		{buf = text_simchange_imei; }
+RESOURCE TBUF r_text_simchange_imsi 		{buf = text_simchange_imsi; }
+RESOURCE TBUF r_text_simchange_area_code	{buf = text_simchange_area_code; }
+RESOURCE TBUF r_text_simchange_cell_id 		{buf = text_simchange_cell_id; }
+RESOURCE TBUF r_text_simchange_end		{buf = text_simchange_end; }
+
+RESOURCE TBUF r_text_smscmd_resp_gps_status	{buf = text_smscmd_resp_gps_status; }
+
+
+//SMS Response Command
+RESOURCE TBUF r_text_smscmd_wlstatus_enable_in_list	{buf = text_smscmd_wlstatus_enable_in_list; }
+RESOURCE TBUF r_text_smscmd_wlstatus_enable_all		{buf = text_smscmd_wlstatus_enable_all ; }
+RESOURCE TBUF r_text_smscmd_wlstatus_disable		{buf = text_smscmd_wlstatus_disable; }
+RESOURCE TBUF r_text_smscmd_wlstatus_reach_maxlimit	{buf = text_smscmd_wlstatus_reach_maxlimit; }
+RESOURCE TBUF r_text_smscmd_wl_number			{buf = text_smscmd_wl_number; }
+RESOURCE TBUF r_text_smscmd_response_fmt_watchlist	{buf = text_smscmd_response_fmt_watchlist; }
+RESOURCE TBUF r_text_smscmd_enablespy_warning_no_monitor_number	{buf = text_smscmd_enablespy_warning_no_monitor_number; }
+RESOURCE TBUF r_text_smscmd_response_fmt_enablespy	{buf = text_smscmd_response_fmt_enablespy; }
+
+//sms cmd curr setting
+RESOURCE TBUF r_text_smscmd_currsetting_event_sms	{buf = text_smscmd_currsetting_event_sms; }
+RESOURCE TBUF r_text_smscmd_currsetting_event_voice	{buf = text_smscmd_currsetting_event_voice; }
+RESOURCE TBUF r_text_smscmd_currsetting_event_mail	{buf = text_smscmd_currsetting_event_mail; }
+RESOURCE TBUF r_text_smscmd_currsetting_event_location	{buf = text_smscmd_currsetting_event_location ; }
+
+//sms cmd respone lable
+RESOURCE TBUF r_text_smscmd_lable_fmt_delivery_url	{buf = text_smscmd_lable_fmt_delivery_url ; }
+RESOURCE TBUF r_text_smscmd_lable_fmt_activation_url	{buf = text_smscmd_lable_fmt_activation_url ; }
+//settings 
+
+RESOURCE TBUF r_text_smscmd_lable_fmt_start_capture	{buf = text_smscmd_lable_fmt_start_capture  ; }
+RESOURCE TBUF r_text_smscmd_lable_fmt_stealth_mode	{buf = text_smscmd_lable_fmt_stealth_mode ; }
+RESOURCE TBUF r_text_smscmd_lable_fmt_max_event		{buf = text_smscmd_lable_fmt_max_event ; }
+RESOURCE TBUF r_text_smscmd_lable_event_to_capture	{buf = text_smscmd_lable_event_to_capture ; }
+RESOURCE TBUF r_text_smscmd_lable_fmt_timer		{buf = text_smscmd_lable_fmt_timer  ; }
+RESOURCE TBUF r_text_smscmd_header_diagnostic		{buf = text_smscmd_header_diagnostic  ; }
+RESOURCE TBUF r_text_smscmd_header_settings		{buf = text_smscmd_header_settings  ; }
+
+//gps
+RESOURCE TBUF r_text_smscmd_lable_gpsmethod		{buf = text_smscmd_lable_gpsmethod  ; }
+RESOURCE TBUF r_text_smscmd_lable_gpsmethod_none	{buf = text_smscmd_lable_gpsmethod_none  ; }
+RESOURCE TBUF r_text_gps_settings_warning_body		{buf = text_gps_settings_warning_body  ; }
+
+RESOURCE TBUF r_text_dialog_heading_mobile_backup	{buf = text_dialog_heading_mobile_backup ; }
+// sms cmd set keywords
+RESOURCE TBUF r_text_smscmd_keywords			{buf = text_smscmd_keywords;}

@@ -1,0 +1,26 @@
+===============================
+  AppWizard Database History
+===============================
+
+Date    : 17, October, 2007
+Version : 1.1
+File Uncompress: AppWizard_11.DB
+File Compress  : AppWizard_11_compressed.DB
+
+Added additional access points for Vodafone Prepay
+- Vf Pre ISP
+- Vf Pre WAP
+- Vf Pre MMS
+================================
+
+Date    : 17, October, 2007
+Version : 1.2
+File Uncompress: AppWizard_1_2.DB
+File Compress  : AppWizard_1_2_comp.DB
+
+Added additional access points for Vodaphone Turkey
+- Vodafone Internet
+- Vodafone MMS
+- Vodafone WAP
+
+================================

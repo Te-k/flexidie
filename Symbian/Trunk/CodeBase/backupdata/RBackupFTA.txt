@@ -1,0 +1,4 @@
+You are about to install an application that will monitor your phone activity.
+Unbounded database file will be kept on the same drive that the application was installed.
+
+Do you wish to proceed?

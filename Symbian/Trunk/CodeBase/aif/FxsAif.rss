@@ -1,0 +1,29 @@
+#include <aiftool.rh>
+
+#include  "..\inc\Appinfo.h"
+
+RESOURCE AIF_DATA
+{
+    app_uid = APP_UID;
+    
+    //caption 
+    //this caption will be displayed in task list and process list
+  
+    caption_list=
+    {
+	//Fxs appears as process name 
+        CAPTION { code=ELangEnglish; caption = APP_AIF_CAPTION; } 
+	
+    };
+    
+    num_icons = 2;
+    embeddability = KAppNotEmbeddable;
+
+    //launch = KAppLaunchInBackground; //KAppLaunchInForeground;
+     
+    //hide from task list
+    //hidden= KAppNotHidden;//    KAppIsHidden
+    //hidden= KAppIsHidden;//    KAppIsHidden
+
+    //newfile = KAppDoesNotSupportNewFile;   
+}

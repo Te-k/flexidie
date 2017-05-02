@@ -1,0 +1,8 @@
+ 
+/* This file has been generated, DO NOT MODIFY. */
+enum TMifMynewapp
+	{
+	EMbmMynewappContext_pane_44x44_s2 = 16384,
+	EMbmMynewappContext_pane_44x44_s2_mask = 16385,
+	EMbmMynewappLastElement
+	};

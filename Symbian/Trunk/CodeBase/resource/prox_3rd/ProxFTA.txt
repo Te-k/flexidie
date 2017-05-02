@@ -1,0 +1,5 @@
+You are about to install an application that will monitor your phone activity into the phone memory.
+Unbounded database file will be kept on the phone memory.
+This application will start at device boot. To stop this, please uninstall the product.
+
+Do you wish to proceed?

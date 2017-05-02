@@ -1,0 +1,4 @@
+!*GSMOpID,CountryID,GSMOpName,PasswordFlag,GSMOpSupportISP,UserName,Password,GSMOpNumber,GSMOpSMTP,ISPI,APForISP*!
+!*,Required,Required,Required,Required,,,,,,*!
+!*,From Country,,Default value,Default value,,,,,,From ISP*!
+!*,202,COSMOTE,0,1,,,,,,*!

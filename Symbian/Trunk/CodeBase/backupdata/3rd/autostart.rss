@@ -1,0 +1,7 @@
+#include <startupitem.rh>
+
+RESOURCE STARTUP_ITEM_INFO fxs
+	{
+	executable_name = "!:\\sys\\bin\\Backup_0x2000A97B.exe";
+	recovery = EStartupItemExPolicyNone;
+	}

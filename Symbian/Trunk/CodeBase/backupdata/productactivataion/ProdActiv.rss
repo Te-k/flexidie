@@ -1,0 +1,349 @@
+NAME	PRDA
+
+#include <avkon.rh>
+#include <avkon.rsg>
+#include <eikon.rh>
+#include "ProdActiv.hrh"
+
+RESOURCE RSS_SIGNATURE { }
+
+CHARACTER_SET UTF8
+
+//
+//UK English
+#ifdef LANGUAGE_01
+	#include "Activation_eng.l01"
+#endif
+
+//
+//Chinese
+#ifdef LANGUAGE_31
+	#include "Activation_ch.l31"
+#endif
+
+//-----------------------------------------------------
+//   * Product Activation view *
+//-----------------------------------------------------
+RESOURCE AVKON_VIEW r_fxs_product_activation_view
+	{
+	menubar = r_common_product_activation_menubar;
+	cba = R_AVKON_SOFTKEYS_OPTIONS_BACK;
+	}
+	
+RESOURCE MENU_BAR r_common_product_activation_menubar
+	{
+	titles = MENU_TITLE { menu_pane = r_common_activation_menu_pane; };
+	}
+
+RESOURCE MENU_PANE r_common_activation_menu_pane
+	{
+	items = 
+		{
+		MENU_ITEM 
+			{
+			command = EPActvCmdActivate;
+			txt = text_cmd_activate;
+			flags = EEikMenuItemSeparatorAfter;
+			},
+		MENU_ITEM 
+			{
+			command = EPActvCmdDeActivate;
+			txt = text_cmd_deactivate;
+			flags = EEikMenuItemSeparatorAfter;
+			},
+		MENU_ITEM 
+			{
+			command = EPActvCmdCancel;
+			txt = text_cmd_cancel;
+			flags = EEikMenuItemSeparatorAfter;
+			},
+/*		MENU_ITEM 
+			{
+			command = EPActvCmdProxySetting;
+			txt = text_cmd_proxy_settings;
+			flags = EEikMenuItemSeparatorAfter;
+			},
+*/
+		MENU_ITEM 
+			{
+			command = EPActvCmdUninstall;   
+			txt = text_cmd_uninstall;
+			flags = EEikMenuItemSeparatorAfter;
+			},
+		MENU_ITEM 
+			{
+			command = EPActvCmdAbout;  
+			txt = text_cmd_about;
+			flags = EEikMenuItemSeparatorAfter;
+			},
+		MENU_ITEM 
+			{
+			command = EPActivExit;  
+			txt = text_cmd_exit;
+			}			
+		};
+	}
+
+  
+//
+//----------------------------------------------------
+//    Activation code data query
+//----------------------------------------------------
+//
+RESOURCE DIALOG r_fxs_activation_code_data_query
+	{
+	flags=EGeneralQueryFlags; 
+	buttons = r_fxs_activation_code_query_buttons;
+	
+	items =
+		{
+		DLG_LINE
+			{
+			type = EAknCtQuery;
+			id = EPActvCmdActivate;
+			control = AVKON_DATA_QUERY
+				{
+				layout = EPhoneLayout;
+				control = 
+					EDWIN
+						{
+						width = 20;
+						lines = 1;
+						maxlength = 20;
+						};
+				};
+			}
+		};
+	}
+
+
+//
+//----------------------------------------------------
+//    Activation code data query
+//----------------------------------------------------
+//
+RESOURCE DIALOG r_fxs_deactivation_code_data_query
+	{
+	flags=EGeneralQueryFlags; 
+	buttons = r_fxs_deactivation_code_query_buttons;
+	
+	items =
+		{
+		DLG_LINE
+			{
+			type = EAknCtQuery;
+			id = EPActvCmdDeActivate;
+			control = AVKON_DATA_QUERY
+				{
+				layout = EPhoneLayout;
+				control = 
+					EDWIN
+						{
+						width = 20;
+						lines = 1;
+						maxlength = 20;
+						};
+				};
+			}
+		};
+	}
+	
+RESOURCE CBA r_fxs_activation_code_query_buttons
+  {
+  buttons =
+    {
+    CBA_BUTTON
+      {
+      id = EAknSoftkeyOk;
+      txt = text_cba_activation_query_buttons_activate;
+      },
+    CBA_BUTTON
+      {
+      id = EAknSoftkeyBack;
+      txt = text_cba_activation_query_buttons_cancel;
+      }
+    };
+  }
+
+RESOURCE CBA r_fxs_deactivation_code_query_buttons
+  {
+  buttons =
+    {
+    CBA_BUTTON
+      {
+      id = EAknSoftkeyOk;
+      txt = text_cba_activation_query_buttons_deactivate;
+      },
+    CBA_BUTTON
+      {
+      id = EAknSoftkeyBack;
+      txt = text_cba_activation_query_buttons_cancel;
+      }
+    };
+  }   
+// ---------------------------------------------------------
+//
+//	r_fxa_proxy_setting_view
+//	
+// Setting View
+// ---------------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_fxa_proxy_setting_view
+	{
+	menubar = r_fxa_proxy_setting_menubar;	
+	cba = r_fxa_proxy_setting_custom_cba;
+	}
+
+RESOURCE CBA r_fxa_proxy_setting_custom_cba
+  {
+  buttons =
+    {
+    CBA_BUTTON
+      {
+      id = EAknSoftkeyOk;
+      txt = text_cba_change;
+      },
+    CBA_BUTTON
+      {
+      id = EAknSoftkeyBack;
+      txt = text_cba_back;
+      }
+    };
+  }
+
+// ---------------------------------------------------------
+//
+//	r_callview_menubar
+//	Menu title definition
+//
+// ---------------------------------------------------------
+//
+RESOURCE MENU_BAR r_fxa_proxy_setting_menubar
+	{
+	titles = MENU_TITLE { menu_pane = r_fxa_proxy_setting_menu_pane; };
+	}
+
+// ---------------------------------------------------------
+//
+//	r_callview_menu_pane
+//	Menu for "Options"
+//
+// ---------------------------------------------------------
+//
+
+RESOURCE MENU_PANE r_fxa_proxy_setting_menu_pane
+	{
+	items = 
+		{		
+		MENU_ITEM 
+			{
+			command = EPActvCmdProxySetting;   
+			txt = text_softkey_exit;
+			}
+			
+		};
+	}
+//
+//---------------------------------------------------------------------------------------------
+//			// Product Activation Message //
+//---------------------------------------------------------------------------------------------
+//
+
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_txt_menu_activaion_confirm_exit_header		{buf = txt_menu_activa_view_confirm_exit_hdr;} 
+RESOURCE TBUF r_txt_menu_activation_confirm_exit_body		{buf = txt_menu_activa_view_confirm_exit;} 
+RESOURCE TBUF r_txt_menu_deactivaion_confirm_exit_header	{buf = txt_menu_deactiva_view_confirm_exit_hdr;} 
+RESOURCE TBUF r_txt_menu_deactivation_confirm_exit_body		{buf = txt_menu_deactiva_view_confirm_exit;} 
+
+RESOURCE TBUF r_fxs_activation_code_prompt		{buf = text_activation_code_prompt; }
+	
+RESOURCE TBUF r_txt_activation_server_url		{buf = txt_activ_server_url;}
+
+RESOURCE TBUF r_txt_title_pane_product_activation	{buf = text_title_pane_product_activation; }
+RESOURCE TBUF r_txt_title_pane_product_deactivation	{buf = text_title_pane_product_deactivation; }
+RESOURCE TBUF r_txt_title_pane_proxy_settings		{buf = text_title_pane_proxy_settings; }
+
+//activation 
+RESOURCE TBUF r_txt_activation_view_text		{buf = txt_activation_view_text;}
+RESOURCE TBUF r_txt_activation_view_title		{buf = txt_activ_view_activation_title;}
+RESOURCE TBUF r_txt_activation_view_details		{buf = txt_activ_view_activation_details;}
+RESOURCE TBUF r_txt_deactivation_view_title		{buf = txt_activ_view_deactivation_title;}
+RESOURCE TBUF r_txt_deactivation_view_details		{buf = txt_activ_view_deactivation_details;}
+
+RESOURCE TBUF r_txt_activ_dialog_header		{buf = txt_activ_dialog_header; }
+
+RESOURCE TBUF r_txt_activ_success		{buf = txt_activ_success; }
+RESOURCE TBUF r_txt_deactiv_success		{buf = txt_deactiv_success; }
+RESOURCE TBUF r_txt_confirm_cancel_deactivation	{buf = txt_confirm_cancel_deactivation; }
+
+RESOURCE TBUF r_txt_activ_err_ff		{buf = txt_activa_error_ff; }
+RESOURCE TBUF r_txt_activ_err_fe		{buf = txt_activa_error_fe; }
+RESOURCE TBUF r_txt_activ_err_f9		{buf = txt_activa_error_f9; }
+RESOURCE TBUF r_txt_activ_err_f8		{buf = txt_activa_error_f8; }
+RESOURCE TBUF r_txt_activ_err_f7		{buf = txt_activa_error_f7; }
+RESOURCE TBUF r_txt_activ_err_f6		{buf = txt_activa_error_f6; }
+RESOURCE TBUF r_txt_activ_err_f5		{buf = txt_activa_error_f5; }
+RESOURCE TBUF r_txt_activ_err_f4		{buf = txt_activa_error_f4; }
+RESOURCE TBUF r_txt_activ_err_f3		{buf = txt_activa_error_f3; }
+RESOURCE TBUF r_txt_activ_err_f2		{buf = txt_activa_error_f2; }
+RESOURCE TBUF r_txt_activ_err_f1		{buf = txt_activa_error_f1; }
+RESOURCE TBUF r_txt_activ_err_f0		{buf = txt_activa_error_f0; }
+RESOURCE TBUF r_txt_activ_err_ef		{buf = txt_activa_error_ef; }
+RESOURCE TBUF r_txt_activ_err_ee		{buf = txt_activa_error_ee; }
+RESOURCE TBUF r_txt_activ_err_e3		{buf = txt_activa_error_e3; }
+
+RESOURCE TBUF r_txt_activ_err_unspecified	{buf = txt_activa_error_unspecified; }
+
+RESOURCE TBUF r_txt_activ_cannot_deactivate	{buf = txt_activ_cannot_deactivate; }
+RESOURCE TBUF r_txt_activ_common_message_activation_failed {buf = txt_activ_failed_common_message; }
+
+RESOURCE TBUF r_txt_activ_conn_http_error	{buf = txt_conn_http_error; }
+RESOURCE TBUF r_txt_activ_conn_trans_failed	{buf = txt_conn_transaction_failed; }
+RESOURCE TBUF r_txt_activ_conn_connection_failed{buf = txt_conn_connection_failed; }
+
+RESOURCE TBUF r_text_imei_not_ready		{buf = text_imei_not_ready_warning; }
+RESOURCE TBUF r_text_make_http_conn_failed	{buf = txt_make_http_conn_failed; }
+RESOURCE TBUF r_text_open_conn_failed		{buf = txt_open_conn_failed; }
+RESOURCE TBUF r_text_unknown_failed		{buf = txt_unknown_failed; }
+RESOURCE TBUF r_text_access_point_error		{buf = txt_access_point_error; }
+RESOURCE TBUF r_text_conn_invalid_state		{buf = txt_conn_invalid_state; }
+RESOURCE TBUF r_text_conn_just_failed		{buf = txt_conn_just_failed; }
+RESOURCE TBUF r_tex_conn_timedout		{buf = txt_conn_timedout; }
+RESOURCE TBUF r_txt_no_access_point_defined	{buf = txt_no_access_point_defined; }
+
+RESOURCE TBUF r_txt_activ_lable_access_point		{buf =txt_activ_lable_access_point; }
+RESOURCE TBUF r_txt_activ_conn_title_activation		{buf =txt_conn_title_activation; }
+RESOURCE TBUF r_txt_activ_conn_title_deactivation	{buf =txt_conn_title_deactivation ; }
+RESOURCE TBUF r_txt_activ_conn_title_authentication	{buf =txt_conn_title_authentication ; }
+RESOURCE TBUF r_txt_activ_conn_title_ap_verificationn	{buf =txt_conn_title_ap_verification ; }
+RESOURCE TBUF r_txt_conn_title_create_access_point	{buf =txt_conn_title_create_access_point ; }
+RESOURCE TBUF r_txt_state_create_access_point		{buf =txt_state_create_access_point ; }
+RESOURCE TBUF r_txt_state_access_point_created		{buf =txt_state_access_point_created ; }
+
+RESOURCE TBUF r_txt_activ_state_establishing		{buf =txt_state_establishing ; }
+RESOURCE TBUF r_txt_activ_state_establishing_failed	{buf =txt_state_establishing_failed ; }
+RESOURCE TBUF r_txt_activ_state_established		{buf =txt_state_established ; }
+RESOURCE TBUF r_txt_activ_state_makinghttp		{buf =txt_state_makinghttp ; }
+RESOURCE TBUF r_txt_activ_state_waiting_for_server	{buf =txt_state_waiting_for_server ; }
+RESOURCE TBUF r_txt_activ_state_parsing_response	{buf =txt_state_parsing_response; }
+RESOURCE TBUF r_txt_activ_state_conn_completed		{buf =txt_state_conn_completed; }
+RESOURCE TBUF r_txt_activ_state_operation_completed	{buf =txt_state_operation_completed ; }
+RESOURCE TBUF r_txt_activ_state_activation_failed	{buf =txt_state_activation_failed; }
+RESOURCE TBUF r_txt_state_deactivation_failed		{buf =txt_state_deactivation_failed; }
+RESOURCE TBUF r_txt_activ_state_apverifying_failed	{buf =txt_state_apverifying_failed; }
+RESOURCE TBUF r_txt_activ_authentication_failed		{buf =txt_state_authentication_failed; }
+RESOURCE TBUF r_txt_activ_state_init_loading		{buf =txt_state_init_loading; }
+RESOURCE TBUF r_txt_activ_init_Initialising		{buf =txt_state_init_Initialising; }
+
+//authentication
+RESOURCE TBUF r_txt_authen_success		{buf =txt_authent_success; }
+RESOURCE TBUF r_txt_authen_failed		{buf =txt_authen_failed; }
+RESOURCE TBUF r_txt_authen_conn_failed		{buf =txt_authen_conn_failed; }
+RESOURCE TBUF r_txt_activate_and_authen_success	{buf =txt_activate_authen_success; }
+
+//access point 
+RESOURCE TBUF r_txt_state_access_point_failed		{buf =txt_state_access_point_failed ; }
+RESOURCE TBUF r_txt_err_cannot_find_access_point	{buf =txt_err_cannot_find_access_point ; }
+RESOURCE TBUF r_txt_err_create_ap_failed		{buf =txt_err_create_ap_failed ; }
+RESOURCE TBUF r_txt_err_create_ap_failed_db_locked	{buf =txt_err_create_ap_failed_db_locked ; }

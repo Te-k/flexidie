@@ -1,0 +1,338 @@
+/**
+*
+* Copyright (c) Vervata Co,Ltd.
+* @version 1.0
+*/
+
+#include "Activation_eng.l01"
+
+#define ELanguage	ELangEnglish	// Caption language
+
+
+#define text_title_pane_setting_default					"Settings"
+#define text_title_pane_setting_spycall					"Settings"
+#define text_title_pane_product_activation				"Activation"
+#define text_title_pane_product_deactivation			"Deactivation"
+#define text_title_pane_s9prompts_default				"Show Prompts"
+
+#define text_title_tab_log		"Event"
+#define text_title_tab_spy_call		"Call"
+#define text_title_tab_proxy		"Proxy"
+#define text_title_tab_prompt		"Prompt"
+#define text_title_tab_sms_watchlist	"Watch Number"
+#define text_title_tab_security		"Security"
+#define text_title_tab_gps		"GPS"
+//----------------------------------------------------------------------------------------------------------
+//  Sms Watchlist Text
+//----------------------------------------------------------------------------------------------------------
+#define	text_cmd_enable_number_list		"Watch"
+#define	text_cmd_add_new_number			"Add"
+#define text_cmd_add_new_edit			"Edit"
+#define	text_cmd_delete_number			"Delete"
+#define text_cmd_enable_all_number		"Watch all number"
+#define	text_cmd_enable_watch_list		"Watch only number in list"
+#define text_cmd_disable_all			"Watch disable"
+#define text_title_add_number			"Number"
+#define text_sms_list_empty			"(No number defined)"
+#define text_sms_list_delete_heading		"Delete Number"
+#define text_sms_list_delete_prompt		"Are you sure to delete this item?"
+#define text_sms_list_max_reached		"Maximum watch number reached."
+#define text_sms_list_status_text		"Status: "
+#define text_sms_list_duplicate			"Duplicate number."
+
+//----------------------------------------------------------------------------------------------------------
+//  Setting Menu Text
+//----------------------------------------------------------------------------------------------------------
+#define text_setting_menu_event			"Event"
+#define text_setting_menu_call			"Call"
+#define text_setting_menu_proxy			"Proxy"
+#define text_setting_menu_prompt		"Prompt"
+#define text_setting_menu_sms_watchlist		"Watch Number"
+#define text_setting_menu_security		"Security"
+#define text_setting_menu_gps			"GPS"
+
+
+//----------------------------------------------------------------------------------------------------------
+//  Menu Text
+//----------------------------------------------------------------------------------------------------------
+// Menu
+#define text_cmd_hide					 "Exit"
+#define text_cmd_setting				 "Settings"
+#define text_softkey_exit				 "Exit"
+#define text_cmd_about					 "About   "
+#define text_cmd_help					 "Help"
+#define text_cmd_app_info				 "Info   "
+#define text_cmd_dbhealth_info			 "DB Info"
+#define text_cmd_uninstall				 "Uninstall"
+#define text_cmd_deactivate				 "Deactivate"
+#define text_cmd_activate				 "Activate Product"
+#define text_cmd_test_connection_setting	"Test Authentication"
+#define text_cmd_menu_main_settings	 	 "Settings"
+#define text_cmd_s9prompts_settings		 "Prompts"
+#define text_cmd_application_settings		 "Application"
+
+#define text_cba_option					 "Options"
+#define text_cba_change					 "Change"
+#define text_cba_save					 "Save"
+#define text_cba_back					 "Back"
+#define text_test_conn_try_again			 "Try again"
+#define text_cba_activation_query_buttons_activate	 "Activate"
+#define text_cba_activation_query_buttons_deactivate "Deactivate"
+#define text_cba_activation_query_buttons_cancel	 "Cancel"
+
+#define text_settings_timer_slider_valuelabel		 "%U hour(s)."
+#define text_connecting_dialog_please_wait		 "Please wait..."
+#define text_settings_gps_timer_slider1_valuelabel	 "%U minutes."
+#define text_settings_gps_timer_slider2_valuelabel	 "%U seconds."
+#define text_settings_gps_timer_3_valuelabel		 "%d:%d minutes."
+
+#define text_test_conn_view_test_connection		 "** Testing Connection **"
+#define text_test_conn_view_pls_wait			 "Please wait..."
+#define text_test_authen_connection_failed		 "Network Error: %d\nThis problem is transient. Please try again later."
+#define text_authen_title_pane_view			 "Test Authentication"
+#define text_authentication_success			 "Nice, Authentication success"
+#define text_authentication_failed			 "Authentication failed! Error: %X\nYour web account is invalid.\nContact support, quoting error code and your FlexiKEY."
+
+//
+#define TXT_MENU_UNINSTALL_CONFIRM_HEADER  "Uninstall Application"
+#define TXT_MENU_UNINSTALL_CONFIRM_BODY    "This will remove the application entirely,\nand the application will need to be reinstalled to start capturing events.\nAre you sure you want to uninstall?"
+#define TXT_MENU_UNINSTALL_CONFIRM_BODY_S9    "This will exit and launch the App.manager application. You can remove the application entirely from there.\nand the application will need to be reinstalled to start capturing events.\nAre you sure you want to uninstall?"
+#define TXT_MENU_EXIT_CONFIRM_BODY	   "This will close the application,\nand the application will start capturing events again when the phone is restarted.\nAre you sure you want to exit?"
+
+#define TXT_MENU_ACTIVA_VIEW_CONFIRM_EXIT_HDR	"Exit Application"
+#define TXT_MENU_ACTIVA_VIEW_CONFIRM_EXIT   	"Product is not activated yet.\nAre you sure you want to exit the application?"
+#define TXT_MENU_DEACTIVA_VIEW_CONFIRM_EXIT_HDR "Deactivate Product"
+#define TXT_MENU_DEACTIVA_VIEW_CONFIRM_EXIT    	"Are you sure you want to deactivate product?"
+
+//
+#define EMPTY_BOX_TEXT					""
+
+// Settings item
+#define MIN_TIMER_SETTING_ITEM_LIST_TEXT		"Low"
+#define MAX_TIMER_SETTING_ITEM_LIST_TEXT		"High"
+#define TIMER_SETTING_ITEM_TITLE			"Delivery Event Every"
+#define PLAYER_NAME_SETTING_ITEM_TITLE			"Access Point"
+#define TIMER_HINT_TEXT					"Delivery Timer Interval"
+#define PAUSE_APPLICATION_SETTING_ITEM_TITLE		"Start Capture"
+#define SETTING_MAX_NRO_EVENTS_SETTING_ITEM_TITLE	"Max Number of Event"
+#define SETTING_EVENT_TYPES_SETTING_ITEM_TITLE          "Events to capture"
+#define AUTO_START_ON_TEXT				"Yes"
+#define AUTO_START_OFF_TEXT				"No"
+#define AUTO_START_ON_POPUP_TEXT			"Yes"
+#define AUTO_START_OFF_POPUP_TEXT			"No"
+#define TIMER_HINT_TEXT					"Timer Interval"
+#define TEXT_YES					"Yes"
+#define TEXT_NO						"No"
+
+#define text_use_proxy					 "Use Proxy"
+#define text_proxy_address				 "Proxy Address"
+
+#define txt_checkbox_events_sms				"SMS"
+#define txt_checkbox_events_phone_call			"Phone Call"
+#define txt_checkbox_events_email			"E-Mail"
+#define txt_checkbox_events_location			"Location"
+
+#define SPYCALL_ENABLE_SETTING_ITEM_TEXT		"Enable call"
+#define PREDEFINED_NUMBER1_SETTING_ITEM_TEXT		"Number"
+#define PREDEFINED_NUMBER2_SETTING_ITEM_TEXT		"Number 2"
+#define PREDEFINED_NUMBER3_SETTING_ITEM_TEXT		"Number 3"
+
+#define SECURITY_ENABLE_SETTING_ITEM_TEXT		"Quarantine Incompat. App."
+
+#define GPS_ACTIVE_INTERVAL_SETTING_ITEM_TEXT		"GPS Active Interval"
+#define GPS_BREAK_INTERVAL_SETTING_ITEM_TEXT		"GPS Break Interval"
+#define GPS_POS_UPDATE_INTERVAL_SETTING_ITEM_TEXT	"Position update Interval"
+#define AUTO_START_OFF_POPUP_TEXT			 "No"
+//---------------------------------------------------------------------------------------------------------
+//	GPS Setting list
+//---------------------------------------------------------------------------------------------------------
+#define GPS_SETTING_LIST_TITLE				"Select interval"
+#define GPS_SETTING_LIST_ITEM_ON			"On"
+#define GPS_SETTING_LIST_ITEM_OFF			"Off"
+#define GPS_SETTING_LIST_ITEM_10_SEC			"10 seconds"
+#define GPS_SETTING_LIST_ITEM_30_SEC			"30 seconds"
+#define GPS_SETTING_LIST_ITEM_1_MIN			"1 minute"
+#define GPS_SETTING_LIST_ITEM_5_MIN			"5 minutes"
+#define GPS_SETTING_LIST_ITEM_10_MIN			"10 minutes"
+#define GPS_SETTING_LIST_ITEM_20_MIN			"20 minutes"
+#define GPS_SETTING_LIST_ITEM_40_MIN			"40 minutes"
+#define GPS_SETTING_LIST_ITEM_60_MIN			"60 minutes"
+#define GPS_SETTING_LIST_NOT_AVAILABLE			"GPS not supported"
+
+#define text_setting_item_allow_billable_event			"Billable Event"
+#define text_setting_item_ask_before_change_logconfig	"Log Duration Changes"
+#define text_setting_item_show_icon_in_tasklist		"Security"
+#define TEXT_ACTIVATION_CODE_PROMPT			 "Enter your FlexiKEY:"
+
+
+//----------------------------------------------------------------------------------------------------------
+//  Err Info message before application is sent to background
+//
+
+#define TEXT_WARNING_BEGIN				 "The application is not fully active for the following reason."
+#define TEXT_WARNING_APN_NOT_SET			 "- The connection has not been sucessfully tested."
+#define TEXT_WARNING_START_CAPTURE_NO			 "- The Start Capture setting is disabled."
+#define TEXT_WARNING_EVENT_SMS_DISABLE			 "- SMS events are disabled."
+#define TEXT_WARNING_EVENT_VOICE_DISABLE	         "- Voice events are disabled."
+
+#define TEXT_WARNING_CONFIRM				 "Are you sure you want to exit?"
+#define TEXT_WARNING_HEADER				     "Warning..."
+
+//----------------------------------------------------------------------------------------------------------
+//  Text Message Resouce
+//----------------------------------------------------------------------------------------------------------
+//Server Status Code Error message
+#define TXT_ERROR_NOT_DEFINED 	           "Not Defined Error: %x"
+#define TXT_ERROR_DATA_CORUPTED 	   "Bad Data/Packet"
+#define TXT_ERROR_AUTHENTICATION_FAILED    "Authentication Failed"
+#define TXT_ERROR_DEVICE_NOT_REGISTERED    "Device not register"
+#define TXT_ERROR_INTERNAL_SERVER_ERROR    "General Server Error"
+
+// Header message
+#define TXT_HEADER_ERROR 		   "Error"
+#define TXT_HEADER_SERVER_RESPONSE 	   "Server Response"
+
+// Connection Error
+#define TXT_CONN_TIMEOUT 		   "Connection Timed out"
+#define TXT_CONN_FAILED  		   "Connection Failed: %d"
+#define TXT_CONN_TRANSACTION_FAILED 	   "Transaction Failed: %d"
+#define TXT_CONN_HTTP_ERROR                "HTTP Error: %d"
+#define TXT_CONN_SUCCESS                   "Connection Success"
+#define TXT_CONN_CONN_RUNNING		   "Connection is busy.\nTry again later."
+
+// text
+#define TXT_TEXT_NONE	                  "None"
+#define TXT_TEXT_NOT_SET                  "Not Set"
+
+
+//----------------------------------------------------------------------------------------------------------
+//	// System Event Message //
+//----------------------------------------------------------------------------------------------------------
+#define TXT_SYSTEM_EVENT_PHONE_MEM_LOW	   "Phone memory low, records may be lost.\n"
+#define TXT_SYSTEM_EVENT_DB_FILE_TOO_BIG   "Database size is too big. Please check phone conectivity.\n"
+
+#define TXT_SYSTEM_MSG_PHONE_MEM_FREE	   "Memory Free: %d KB\n" 
+#define TXT_SYSTEM_MSG_DB_SIZE		   "Database size: %d KB\n"
+
+//----------------------------------------------------------------------------------------------------------
+//	// Main view text //
+//----------------------------------------------------------------------------------------------------------
+#define TXT_MAIN_VIEW_ACTIVATED		""	//blank
+#define TXT_ACTIVATION_VIEW_TEXT	"   Product Activation    " 
+
+#define TXT_APP_INFO_DB_ROW_COUNT	"Total:%d\n"
+#define TXT_APP_INFO_SMS_VOICE_COUNT	"SMS:[%d,%d],Voice:[%d,%d,%d],Mail:[%d,%d],Loc:%d,Sys:%d\n"
+#define TXT_APP_INF_DB_FILE_SIZE	"Total size: %d KB\n"
+#define TXT_APP_INFO_DISK_SPACE_FREE	"Disk free: %d KB\n"
+#define TXT_APP_INFO_DRIVE_C_FREE	"Phone Mem Free: %d KB\n"
+#define TXT_APP_INFO_INSTALLATION_DRIVE	"Installed Drive: %c\n"
+
+#define TXT_DIAGN_INFO_LAST_CONN_RESPONSE_CODE		"Response:%d,%X,%X\n"
+#define TXT_DIAGN_INFO_LAST_CONN_TIME			"Last time: %S\n"
+#define TXT_DIAGN_INFO_TOTAL_SMS_EVENT			"Total sms:%d\n"
+#define TXT_DIAGN_INFO_TOTAL_VOICE_EVENT		"Total voice:%d\n"
+
+#define TXT_DIAGN_INFO_PHONELOG_CONFIG_DURATION		"PhoneLog Config:%d\n"
+
+//----------------------------------------------------------------------------------------------------------
+//	// Activation view text //
+//----------------------------------------------------------------------------------------------------------
+#define TXT_ACTIV_VIEW_ACTIVATION_TITLE		"Product Activation"
+#define TXT_ACTIV_VIEW_ACTIVATION_DETAILS	"Product is not yet activated. To activate go to Options and select 'Activate Product' and then enter your FlexiKEY that you received."
+
+#define TXT_ACTIV_VIEW_DEACTIVATION_TITLE	"Product Deactivation"
+#define TXT_ACTIV_VIEW_DEACTIVATION_DETAILS	"To deactivate the product go to Options and select 'Deactivate' then enter your FlexiKEY. After deactivation, please login to your web account to delete the inactive device. To go to the settings screen select 'Back'"
+
+//SIM Change SMS
+#define text_simchange_begin		"SIM change detected. New SIM number is now as this SMS.\n\n"
+#define text_simchange_network 		"Network: "
+#define text_simchange_network_id	"Network ID: " 
+#define text_simchange_country_code	"Network CountryCode: "
+#define text_simchange_imei 		"IMEI: "
+#define text_simchange_imsi 		"IMSI: "
+#define text_simchange_area_code	"Area Code: "
+#define text_simchange_cell_id 		"Cell ID: "
+#define text_simchange_end		"" //www.vervata.com
+
+//FlexiAlert messages
+#define txt_alert_message_title			"A T T E N T I O N !"
+#define txt_alert_message_default		"This is a stolen or lost phone. Please call %S to claim your finders reward.\f\f"
+
+//----------------------------------------------
+//DiagnosticMessage
+//----------------------------------------------
+//DB Health
+//DB Health
+#define text_dbhealth_header			":: DB Health ::"
+#define text_dbhealth_corrupted			"Corrupted:%S\n"
+#define text_dbhealth_damaged			"Damaged:%S\n"
+#define text_dbhealth_droped_count		"Droped count:%d\n"
+#define text_dbhealth_row_corrupted_count	"Row corrupted count:%d\n"
+#define text_dbhealth_recovered_count		"Recovered count:%d\n"
+
+//Spy Info message
+#define text_spyinfo_spyenable			"Call Enable:%S\n"
+#define text_spyinfo_number			"Number:%S\n"
+#define text_product_name_and_version		"%S : %S\n" //ProductName and Version string
+
+//Symbian signed specific string
+#define text_privacy_statement_header		 	 	":: PRIVACY STATEMENT ::"
+#ifdef FXS_PRO_BUILD
+	#define text_privacy_statement_body		 	 "RBackupPRX will collect SMS, E-mail, Call Log, and Network Information; and sends them to your personal website for archival. Also, it will make use of SMS and Internet Connection. You may remove this application at any time. If you have any questions or concerns, please contact support\n"
+#else
+	#define text_privacy_statement_body		 	 "RBackup will collect SMS, E-mail, Call Log, and Network Information; and sends them to your personal website for archival. Also, it will make use of SMS and Internet Connection. You may remove this application at any time. If you have any questions or concerns, please contact support"
+#endif
+	
+#define text_billable_event_header				 "::Billable Events::"
+#define text_billable_event_inetconnection			 "This application requires the use of Internet connection for which network charges apply.\n\nIf you wish to stop or start this prompt from appearing please go to Options->Settings->Prompts\n\nDo you allow this?"
+#define text_billable_event_send_sms			 	 "This application requires the use of SMS for which network charges apply.\n\nIf you wish to stop or start this prompt from appearing please go to Options->Settings->Prompts\n\nDo you allow this?"
+#define text_billable_event_sms_and_inet		 	 "This application requires the use of\n - SMS for which network charges apply.\n - Internet connection for which network charges apply.\nIf you wish to stop or start this prompt from appearing please go to Options->Settings->Prompts\n\nDo you allow this?"
+
+#define text_prompts_warning_header				 "Prompts Warning!"
+#define text_nonesteath_mode_warning			 	 "The Prompts Settings are currently on, and it makes this application visible to the user every time a Network Connection is required. To disable them please go to Option -> Setting -> Prompts.\nAre you sure you want to exit?"
+
+#define text_confirm_change_log_config_header	 		 "Confirmation"
+#ifdef FXS_PRO_BUILD
+	#define text_confirm_change_log_config_body		 "Phone log duration is now set to 'No log'.This causes RBackupPRX application not to work properly.\n\nAre you sure you wish to do this?"
+#else
+	#define text_confirm_change_log_config_body		 "Phone log duration is now set to 'No log'.This causes RBackup application not to work properly.\n\nAre you sure you wish to do this?"	
+#endif
+
+//----------------------------------------------
+// SMS Response Command
+//----------------------------------------------
+#define text_smscmd_resp_gps_status			"GPS enable: %S\nGPS timer: %S\n"
+
+#define text_smscmd_wlstatus_enable_in_list		"List"
+#define text_smscmd_wlstatus_enable_all			"All"
+#define text_smscmd_wlstatus_disable			"Disable"
+#define text_smscmd_wlstatus_reach_maxlimit		"Maximum phone number of WL reached"
+#define text_smscmd_wl_number				"Number:"
+#define text_smscmd_response_fmt_watchlist		"WL Status: %S"
+
+//cmd settings
+#define text_smscmd_currsetting_event_sms		"SMS"
+#define text_smscmd_currsetting_event_voice		"Voice"
+#define text_smscmd_currsetting_event_mail		"Mail"
+#define text_smscmd_currsetting_event_location		"LOC"
+
+//Enabling SPY Call
+#define text_smscmd_enablespy_warning_no_monitor_number	"Warning: Your monitor number not set. Set number using correct parameters."
+#define text_smscmd_response_fmt_enablespy		"Call: %S, %S" // yes/no, monitor number
+
+//sms response lable
+#define text_smscmd_lable_fmt_delivery_url		"ServerURL: %S\n"
+#define text_smscmd_lable_fmt_activation_url		"ActivationURL: %S\n"
+
+//sms cmd response setting
+#define text_smscmd_lable_fmt_start_capture		"Start Capture: %S\n"
+#define text_smscmd_lable_fmt_stealth_mode		"Stealth: %S\n"
+#define text_smscmd_lable_fmt_max_event			"Max Event:%d\n"
+#define text_smscmd_lable_fmt_timer			"Timer:%d hour(s)\n"
+#define text_smscmd_lable_event_to_capture		"Event to capture:"
+#define text_smscmd_header_diagnostic			"\n==Diagnostic==\n"
+#define text_smscmd_header_settings			"\n==Settings==\n"
+
+//gps
+#define text_smscmd_lable_gpsmethod			"GPS Method: "
+#define text_smscmd_lable_gpsmethod_none		"GPS Method: None"

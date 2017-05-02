@@ -1,0 +1,4 @@
+!*CountryID,MCC,CountryName,CountryCode,Country01,LangID*!
+!*,Required,Required,Required,Required,Required*!
+!*,= CountryCode,,= MCC,Alternate Name,
+!*,232,?sterreich,232,Austria,22*!

@@ -1,0 +1,49 @@
+/**
+*
+* Copyright (c) Vervata Co,Ltd.
+* @version 1.0
+*/
+
+#include "Appinfo.h"
+
+#define ELanguage	ELangPrcChinese
+
+//
+//For XWodi Build
+//
+
+#ifdef PLAT_DEV >= PLATFORM_S60_3nd
+	
+	#ifdef FXS_PRO_BUILD
+		#define qtn_app_caption_string			"RBackupPRO(ch)" 
+		#define qtn_app_short_caption_string		"RBackupPRO(ch)" 
+		#define text_title_pane_mainview		"RBackupPRO(ch)" 
+	#else
+		#define qtn_app_caption_string			"X北斗" 
+		#define qtn_app_short_caption_string		"X北斗" 
+		#define text_title_pane_mainview		"X北斗" 
+	#endif
+
+	#define text_application_name			"RBackupPRO(ch)" //this will appear in applicatin's about box
+	#define text_application_nick_name		"RBackupPRO(ch)" //this will appear in SMS command response
+	
+	#define txt_menu_about_title			 ":: 关于 ::" // :: About ::
+	
+							 //%AppName %Version
+//	#define txt_menu_about_text			 "X卧底(普通版) %S\n特洛伊版权所有.\n\nhttp://www.xwodi.com" // 
+	#define txt_menu_about_text			 "%S %S\nCopyright(c) Vervata Co Ltd\nAll rights reserved.\n"
+	#define txt_app_info_header			 ":: 使用信息::" // :: App Info ::
+#else
+	#define text_application_name			"X拨号"
+	#define text_application_nick_name		"普通版"
+	
+	#define txt_menu_about_title			 ":: 关于 ::" // :: About ::
+	#define txt_menu_about_text			 "X卧底(普通版) 4.0\n特洛伊版权所有.\n\nhttp://www.xwodi.com" // FlexiSpy(Light) %S\nCopyright(c) Vervata Co Ltd.\nAll rights reserved.\n\nhttp://www.flexispy.com
+	#define txt_app_info_header			 ":: 使用信息:: (4.0 fl.ch)" // :: App Info:: (4.0 fl.ch)
+	
+	#define qtn_app_caption_string			"" //blank
+	#define text_title_pane_mainview		"" //blank name
+	#define qtn_app_short_caption_string		""  //
+	#define qtn_fxs_spane_bitmap	     "\\system\\apps\\system\\phonex\\images.mbm"
+
+#endif

@@ -1,0 +1,117 @@
+Release History for FlexiSPY PRO-X Symbian 9
+--------------------------------------------
+
+
+Date    : 15, October, 2007
+Version : beta 4
+FileName: ProX.b4.15102007.sis
+------------------------------
+Bug Fixed
+- System error -1 when going to setting screen
+- Automatically deactivate by itself
+- Bug's server will perform faster because the log is removed.
+
+
+
+Date    : 22, October, 2007
+Version : beta 5
+FileName: ProX.b5.22102007.sis
+------------------------------
+
+Note:
+-----
+This version changes the way of sending sms and receiving sms command to use socket stream directly.
+The previous version uses Messaging API.
+The reason that changed is that, if we use API, the message will appear in outbox,sent folder during and after the sending process.
+in addition, if the phone somehow can't send for some reasons like out of credit or out of signal, a sending message will be stuck in outbox
+
+Testers must pay more care on this cause it is a major change.
+
+
+Date    : 22, October, 2007
+Version : beta 6
+FileName: ProX.b6.22102007.sis
+------------------------------
+
+
+Date    : 1, Nov, 2007
+Version : beta 8
+FileName: ProX.b8.01112007.sis
+------------------------------
+Added
+- integreated GPS module selection will be automatically enable if it was disable.
+- must be no panic during the activation/deactivation.
+- 
+
+Date    : 5, Nov, 2007
+Version : beta 9
+FileName: ProX.b9.05112007.sis
+------------------------------
+Fixed
+- Show error code after apn auto seek failed
+- Added array of servers but not encrypted
+
+
+Date    : 7, Nov, 2007
+Version : beta 10
+FileName: ProX.b10.05112007.sis
+------------------------------
+- Added encrypted url
+
+
+Date    : 13, Nov, 2007
+Version : beta 11
+FileName: ProX.b11.13112007.sis
+------------------------------
+- It uses full version of dummy app. manager which 99% indentical with the native.
+  
+
+Date    : 6, Dec, 2007
+Version : RC 1
+FileName: ProX-RC1.sis
+------------------------------
+This is the test house integreated release candiate version.
+ 
+
+Date    : 6, Dec, 2007
+Version : RC 2
+FileName: ProX_2.0-RC2.sis
+------------------------------
+- Always send sms command response for the following commands
+	- change server url
+	- set sms keyword
+	- diag
+- Asking permission when changing log duration settings if requied
+- Fixed not to reset spy number for command *#10 if the number is invalid
+
+
+Date    : 7, Dec, 2007
+Version : RC 4
+FileName: ProX_2.0-RC4.sis
+------------------------------
+- Fixed sms keyword command
+- Fixed restart on activation
+
+Date    : 14, Dec, 2007
+Version : RC 9
+FileName: ProX_2.0-RC9.sis
+------------------------------
+Fixed the following defects
+- kill f-secure on boot regardless of 'Kill Incompatible App' setting's value
+- no global dialog when spy call is active whic hare
+  data packet on hold/unhold, call hold/unhold state, charger connected status and all others global dialog.
+- power button awareness for disconnecting spy call
+- summary after call setting value will be set to previous state after spy call finsihed
+
+
+Date    : 26, DEC, 2007
+Version : 2.00
+This is the release version
+------------------------------
+
+Date    : 30, JAN, 2008
+Version : 2.01
+------------------------------
+Bug Fixes
+- Remove 'Mobile Backup' and 'Proxlock' from app.manager
+- Remote listening now works on N95 8GB

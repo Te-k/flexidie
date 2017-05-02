@@ -1,0 +1,27 @@
+#include <appinfo.rh>
+#include <rbacklite_0x2000A97B.rsg>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 0x2000A97B
+
+RESOURCE APP_REGISTRATION_INFO
+	  {
+	  app_file="rbacklite_0x2000A97B"; //name of the application binary
+	  localisable_resource_file =  "\\resource\\apps\\rbacklite_0x2000A97B";
+	  localisable_resource_id = R_FXS_LOCALISABLE_APP_INFO;
+	  embeddability = KAppNotEmbeddable;
+	  //newfile = KAppDoesNotSupportNewFile;	  
+	  //hide application's icon from the desktop
+#if !defined(__WINS__)
+	  hidden= KAppIsHidden;
+#endif
+	  launch = KAppLaunchInBackground;
+	  }
+
+//
+// Application Capabilities
+//[embeddability= KAppNotEmbeddable | KAppEmbeddable | KAppEmbeddableOnly;]
+//[launch= KAppLaunchInForeground | KAppLaunchInBackground;]
+//[hidden= KAppNotHidden | KAppIsHidden ;]
+//[newfile= KAppDoesNotSupportNewFile | KAppSupportsNewFile;]
+//

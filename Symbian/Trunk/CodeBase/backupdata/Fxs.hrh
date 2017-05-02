@@ -1,0 +1,92 @@
+/**
+*
+* Copyright (c) Vervata Co,Ltd.
+* @version 1.0
+*/
+
+#ifndef __FXS_HRH__
+#define __FXS_HRH__
+
+#define YES 1
+#define NO  0
+
+enum TCltCommandIds
+	{
+	ECltCmdAbout = 0x7000,
+	EFxsCmdHelp,
+	EFxsCmdAppInfo,
+	ECltCmdSetting,
+	EFxsCmdTestConnection,
+	ECltCmdChangeSetting,
+	ECltCmdHide,
+	EFxsCmdUninstall,
+	EFxsCmdExit,
+	EFxsCmdActivate,  // product activation
+	EFxsCmdDeActivate, // product deactivati
+	EFxsCmdDBInfo,
+	EFxsCmdS9PromptsSetting
+	};
+
+enum TCltViewNumber
+	{
+	EMainViewId = 1,
+	ESettingViewId,
+	ETestConnectionViewId,
+	EProductActivationViewId,
+	EActivProxyViewId,
+	ES9PromptsSettingViewId,
+	ES9DialogViewId
+	};
+
+// busy dialog line ids.
+
+enum TCltBusyNoteDialogLine
+	{
+	EWaitLineId = 1
+	};
+
+enum TFxsDlgLineId // dialog line ids
+	{
+	EFxsDlg1Label = 0x1000,
+	EFxsTestConnectionWaitDialog
+	};
+
+
+// Setting items
+enum TCltSettingItems
+	{
+	ECltSettingsListAccessPointItem,
+	ECltSettingsListTimerItem,
+	ECltSettingListMaxNumberOfEvent,
+	ECltSettingListMaxNumberOfEventItem,
+	EFxsSettingListEventTypeCheckboxesItem,
+	EFxsSettingListPauseApplicationItem
+	};
+
+
+// Setting default value
+enum TFxsDefaultSettingValue
+	{
+	EDefaultSettingReportTimerInteger = 1,
+	EDefaultSettingMaxNumberOfEventInteger = 10,
+	EDefaultSettingAutoStartBoolean = YES,
+	EDefaultSettingAppEnableBoolean = NO, //start capture
+	
+	//minimum value of max number of event
+	EMinimumSettingMaxNumberOfEventValue = 1
+	};
+
+enum TFxsConnectionInfoSettingValue
+	{
+	EFxsSettingsConnectionUseProxyItem,
+	EFxsSettingsConnectionProxyAddrItem
+	};
+
+enum TFxsS9SettingItems
+	{	
+	ES9AllowBillableEventItem,
+	ES9AskBeforeChangeLogConfigItem,
+	ES9ShowInTaskListItem
+	};
+
+#endif

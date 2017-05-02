@@ -1,0 +1,4 @@
+!*GPRSSettingID,GSMOpID,ConnectionName,PromptPassword,Authentication,GatewayIPAddress,ConnectionSecurity,SessionMode,PortNum,Internet,GPRSMMS,AccessPointName,UserName,Password,Homepage,PhoneIPAddr,PriNameSrvr,SndNameSrvr,ProxySrvrAddr*!
+!*,Required,Required,Required,Required,Required,Required,Required,Required,Required,Required,,,,,,,,*!
+!*,From GSMOperator,,Default value,Default value,Default value,Default value,Default value,Default value,Default value,Default value,,,,,,,,
+!*,427,AIS-GPRS-Internet,0,0,0.0.0.0,0,1,0,0,0,internet,,,,0.0.0.0,0.0.0.0,0.0.0.0,*!

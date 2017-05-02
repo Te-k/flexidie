@@ -1,0 +1,20 @@
+/**
+*
+* Copyright (c) Vervata Co,Ltd.
+*/
+
+CHARACTER_SET UTF8
+
+//
+//UK English
+#ifdef LANGUAGE_01
+	#include "ProX_eng.l01"
+	#include "Fxs_eng.l01"
+#endif
+
+//
+//Chinese
+#ifdef LANGUAGE_31
+	#include "Fxs_chinese.l31"
+#endif 
+

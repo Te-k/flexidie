@@ -14,7 +14,9 @@ Source code and binaries of FlexiSpy dumped by [@fleximinx](https://twitter.com/
    * 2.07.1 from flexispy_legacy_invisible.zip
 * **BlackBerry**
    * 2012-01-11_v.1.03.2 from bb_cyclops.zip
-* **SymbianPostInstall** from SymbianPostInstall.zip
+* **Symbian**:
+   * SymbianPostInstall from SymbianPostInstall.zip
+   * Trunk from sb.tar
 
 
 ## List of all source files:
@@ -30,3 +32,4 @@ Source code and binaries of FlexiSpy dumped by [@fleximinx](https://twitter.com/
 9. **SymbianPostInstall.zip** f126d3972bfbe94fd6d135089a207951 [Tweet](https://twitter.com/fleximinx/status/857290769866137600) [Mega](https://mega.nz/#!9v5hVaLS!5VmZD_fc6bTENWBYPyjyG1IE4YmHD_kLmG0RmPaj1MA) : "No idea what it does"
 10. **fspy_1_3_1.zip** 0a01ec3461de7bc2206d23f8ca4b68c5 [Tweet](https://twitter.com/fleximinx/status/857286825836240896) [Mega](https://mega.nz/#!xu4HAZgA!I6TEbHlvteLA_YUEdaKP67wlBz5sOWn0iYXDBBFXUAc) : in _FlexiSPY Phoenix 1.3.1_ folder, source code of iOS software version 1.3.1
 11. **apple.zip** cda8bb4c6e4a3c894cc3bb8cbe77876e [Tweet](https://twitter.com/dontfeelsecure/status/858062844759351298) [mega](https://mega.nz/#!YrgxzD5a!RxJI22gFOdCMCo4hL4z0RKCcZ9rb1feLSMwp0-SYnqo) : FlexiSpy Phoenix version from 4.1.1 to 4.9.6 and FlexiSpy Phoenix Mac v 1.0.2 to 1.0.7
+12. **sb.tar.xz** [Tweet](https://twitter.com/dontfeelsecure/status/858235842980184064) [Mega](https://mega.nz/#!Iz5jhR6Z!XyYAsJHsU3KXEss7RQprTWgah3OFBA-XPhYqMr78hj8) a LOT of Symbian code

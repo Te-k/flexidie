@@ -1,0 +1,142 @@
+/**
+*
+* Copyright (c) Vervata Co,Ltd.
+* @version 1.0
+*/
+#define ELanguage	ELangEnglish	// Caption language
+
+//----------------------------------------------------------------------------------------------------------
+//  PRODUCT ACTIVATION MESSAGE
+//----------------------------------------------------------------------------------------------------------
+
+// Menu
+#define text_cmd_hide					 "Скрыть"//"Hide"
+#define text_cmd_exit					 "Выход"//"Exit"
+#define text_cmd_about					 "О"//"About   "
+#define text_cmd_help					 "Помощь"//"Help"
+#define text_cmd_uninstall				 "Удалить программу"//"Uninstall"
+#define text_cmd_deactivate				 "Деактивировать"//"Deactivate"
+#define text_cmd_activate				 "Активировать продукт"//"Activate Product"
+#define text_cmd_cancel					 "Отменить соединение"//"Cancel Connection"
+#define text_cmd_proxy_settings				 "Прокси"//"Proxy"
+
+#define text_cba_option					 "Параметры"//"Options"
+#define text_cba_change					 "Изменить"//"Change"
+#define text_cba_save					 "Сохранить"//"Save"
+#define text_cba_back					 "Назад"//"Back"
+
+#define text_yes					 "Да"//"Yes"
+#define text_no						 "Нет"//"No"
+
+#define text_cba_activation_query_buttons_activate	 "Активировать"//"Activate"
+#define text_cba_activation_query_buttons_deactivate	 "Деактивировать"//"Deactivate"
+#define text_cba_activation_query_buttons_cancel	 "Отменить"//"Cancel"
+
+
+#define text_use_proxy					 "Использовать прокси"//"Use Proxy"
+#define text_proxy_address				 "Адрес прокси"//"Proxy Address"
+
+#define txt_menu_activa_view_confirm_exit_hdr		"Выйти из программы" "Exit application"
+#define txt_menu_activa_view_confirm_exit   		"Продукт не активирован.\nВы уверены, что хотите выйти из программы?"//"Product is not activated yet.\nAre you sure you want to exit the application?"
+#define txt_menu_deactiva_view_confirm_exit_hdr		"Деактивировать программу"//"Deactivate product"
+#define txt_menu_deactiva_view_confirm_exit    		"Вся информация в вашем аккаунте на сервере будет удалена!\n\Продолжать?"//"All events in your web account will be deleted!\n\nContinue?"
+
+#define text_title_pane_product_activation			"Активация"//"Activation"
+#define text_title_pane_product_deactivation			"Деактивация"//"Deactivation"
+#define text_title_pane_proxy_settings				"Настройки прокси"//"Proxy Settings"
+
+#define text_cba_activation_query_buttons_activate	 		"Активировать"//"Activate"
+#define text_cba_activation_query_buttons_deactivate	 	"Деактивировать"//"Deactivate"
+#define text_cba_activation_query_buttons_cancel	 		"Отменить"//"Cancel"
+
+#define text_connecting_dialog_please_wait		 "Пожалуйста, подождите..."//"Please wait..."
+#define text_imei_not_ready_warning		"Получение IMEI устройства не завершено.\n\nПожалуйста, попробуйте позже."//"Getting device IMEI is still in process.\n\nPlease try again later."
+
+//----------------------------------------------------------------------------------------------------------
+//	// Activation view text //
+//----------------------------------------------------------------------------------------------------------
+#define txt_activ_view_activation_title		"Активация программы"//"Product Activation"
+#define txt_activ_view_activation_details	"Программа еще не активирована. Чтобы активировать программу, войдите в меню "Настройки", выберите "Активировать программу" и введите код FlexiKEY."//"Product is not yet activated. To activate go to Options and select 'Activate Product' and then enter your FlexiKEY that you received."
+
+#define txt_activ_view_deactivation_title	"Деактивация программы"//"Product Deactivation"
+#define txt_activ_view_deactivation_details	"Для деактивации, войдите в меню "Настройки", выберите "Деактивировать" и введите ваш код FlexiKEY. Чтобы вернуться в окно настроек, выберите "Назад"."//"To deactivate the product go to Options and select 'Deactivate' then enter your FlexiKEY. To go to the settings screen select 'Back'"
+
+#define txt_confirm_cancel_deactivation		"Деактивация не завершена.\nВы уверены, что хотите прервать деактивацию?"//"Deactivation is in progress.\nAre you sure you wish to cancel it?"
+
+#define text_activation_code_prompt		"Введите код FlexiKEY:"//"Enter your FlexiKEY:"
+
+#define txt_activ_server_url	 		"http://vervata.com/t4l-mcli/cmd/productactivate"
+
+#define txt_activ_dialog_header 		":: Результат ::"//":: Result ::"
+
+#define txt_activ_success 			"Активация успешно завершена."//"Nice, Activation success."// Activation success 0x00
+#define txt_deactiv_success 			"Деактивация успешно завершена."//"Nice, Deactivation success." //Deactivation success
+
+#define txt_activa_error_ff		    	"Ошибка идентификации. Свяжитесь с техподдержкой с указанием вашего кода FlexiKEY."//"Authentication Failed. Contact support, quoting your FlexiKEY."
+#define txt_activa_error_fe		    	"Ваш код FlexiKEY неверен. Свяжитесь с техподдержкой с указанием вашего кода FlexiKEY."//"Your FlexiKEY is incorrect. Contact support, quoting your FlexiKEY"
+
+#define txt_activa_error_f9		    	"Ошибка активации. Свяжитесь с техподдержкой с указанием вашего кода FlexiKEY."//"Activation Failed. Contact support, quoting your FlexiKEY"
+#define txt_activa_error_f8		    	"Невозможно создать аккаунт. Свяжитесь с техподдержкой с указанием вашего кода FlexiKEY."//"Cannot create Account. Contact support, quoting your FlexiKEY"
+#define txt_activa_error_f7		    	"Устройство уже используется другим пользователем. Свяжитесь с техподдержкой с указанием вашего кода FlexiKEY."//"Device already in use by different user. Contact support, quoting your FlexiKEY"
+#define txt_activa_error_f6		    	"Ваш лимит на активацию израсходован. Свяжитесь с техподдержкой с указанием вашего кода FlexiKEY."//"You have reached your activation limit. Contact support, quoting your FlexiKEY"
+#define txt_activa_error_f5		    	"Ошибка активации. Неполная информация. Свяжитесь с техподдержкой с указанием вашего кода FlexiKEY."//"Activation Failed. Incomplete Order. Contact support, quoting your FlexiKEY"
+#define txt_activa_error_f4		    	"Ваш код FlexiKEY неверен. Свяжитесь с техподдержкой с указанием вашего кода FlexiKEY."//"Your FlexiKEY is incorrect. Contact support, quoting your FlexiKEY"
+#define txt_activa_error_f3		    	"Ваш код FlexiKEY неверен. Свяжитесь с техподдержкой с указанием вашего кода FlexiKEY."//"Your FlexiKEY is incorrect. Contact support, quoting your FlexiKEY"
+#define txt_activa_error_f2		    	"Ваш код FlexiKEY неверен. Свяжитесь с техподдержкой с указанием вашего кода FlexiKEY."//"Your FlexiKEY is incorrect. Contact support, quoting your FlexiKEY"
+#define txt_activa_error_f1		    	"Программа уже активирована на другом устройстве. Деактивируйте программу на старом устройстве перед новой активацией."//"Already Activated on another device. Please deactivate on that device first"
+#define txt_activa_error_f0		    	"Системная ошибка. Свяжитесь с техподдержкой с указанием вашего кода FlexiKEY."//"System Error. Contact support, quoting your FlexiKEY" // just failed
+
+#define txt_activa_error_ef		    	"Ошибка деактивации. Данный код FlexiKEY уже деакивирован."//"Deactivation failed. This FlexiKEY is already deactivated" //available for activation"
+#define txt_activa_error_ee		    	"Ошибка деактивации. Свяжитесь с техподдержкой."//"Deactivation failed. Please contact support"
+#define txt_activa_error_unspecified		"Неопределенная ошибка."//"Unspecified Error"
+
+#define txt_activ_failed_common_message		"Извините, ошибка: 0x%X\n"//"Sorry! It failed: 0x%X\n"
+
+#define txt_conn_http_error 			"Ошибка HTTP. %d\nЭто временная проблема. Возможно, сервер отключен на профилактические работы.\nПожалуйста, попробуйте позже или свяжитесь с техподдержкой"//"HTTP Error: %d\nThis problem is transient.The server may be in downtime of maintenance.\nPlease try again later or contact support"
+#define txt_conn_transaction_failed		"Ошибка транзакции: %d\nВозможно, точка доступа выбрана неверно"//"Transaction failed: %d\nThe selected access point may not be correct."
+#define txt_conn_connection_failed		"Ошибка соединения: %d\nВозможно, точка доступа выбрана неверно."//"Connection failed: %d\nThe selected access point may not be correct."
+
+#define txt_open_conn_failed			"Извините, ошибка: %d.\nНевозможно соединиться с интернетом. Проверьте работу сети."//"Sorry!, It failed: %d.\nNo posible to connect to the internet. Check network services."
+#define txt_make_http_conn_failed		"Извините, ошибка соединения: %d\nЭто временная проблема. Пожалуйста, попробуйте позже."//"Sorry!, Network Error: %d\nThis problem is transient.\nPlease try again."
+#define txt_access_point_error			"Извините, не найдена точка доступа. Код ошибки: %S\nПожалуйста, попробуйте позже."//"Sorry!, No internet access point found.\nError Code: %S\nPlease try again later."
+#define txt_conn_just_failed			"Извините, ошибка: %d\nПожалуйста, попробуйте позже."//"Sorry!, It failed: %d\nJust failed.\nPlease try again later."
+#define txt_conn_timedout			"Извините, соединение достигло лимита по времени.\nЭто временная проблема.\nПожалуйста, попробуйте позже."//"Sorry!, Connection timed out.\nThis problem is transient.\nPlease try again."
+#define txt_no_access_point_defined		"Извините, не выбрана точка доступа. Выберите точку доступа в меню "Параметры соединения" и попробуйте еще раз."//"Sorry!, No access point defined. Define one in Connection settings and try again."
+
+//indicates bug
+#define txt_unknown_failed			"Извините, неопределенная ошибка: %d\nПожалуйста, свяжитесь с техподдержкой."//"Sorry!, Unknown Error: %d\n.Please contact support."
+#define txt_conn_invalid_state			"Извините, ошибка: %d\nНеправильный статус. Пожалуйста, попробуйте позже."//"Sorry!, It failed: %d\nInvalid state.\nPlease try again later."
+
+//authentication test after activation process
+#define txt_authent_success			"Идентификация успешно завершена."//"Nice, Authentication success."
+#define txt_activate_authen_success		"Активация и идентификация успешно завершены"//"Nice, Activation and Authentication success."
+#define txt_authent_failed			"Ошибка идентификации: %d.\nПожалуйста, попробуйте выполнить из меню "Настройки". Если проблема остается, свяжитесь с техподдержкой с указанием кода FlexiKEY."//"Authentication failed: %d.\nPlease try again from application's Option menu.\nIf the problem still persists contact support, quoting your FlexiKEY."
+#define txt_authent_conn_failed			"Не удалось провести проверку идентификации. Попробуйте выполнить из меню "Настройки"."//"Failed to perform authentication test.\nPlease try again from application's Option menu."
+
+//connection state
+
+#define txt_activ_lable_access_point		"Точка доступа"//"Access Point"
+#define txt_conn_title_activation		"Процесс активации"//"Activation Process"
+#define txt_conn_title_deactivation		"Процесс деактивации"//"Deactivation Process"
+#define txt_conn_title_authentication		"Процесс деактивации"//"Authentication Process"
+#define txt_conn_title_ap_verification		"Проверка точки доступа"//"Access Point Verification"
+#define txt_conn_title_create_access_point	"Настройка точки доступа"//"Configure Access Point"
+#define txt_state_create_access_point		"Создание точки доступа"//"Creating access point"
+#define txt_state_access_point_created		"Точка доступа создана"//"Access point created"
+#define txt_state_access_point_failed		"Ошибка создания"//"Create Failed"
+#define txt_err_create_ap_failed_db_locked	"Ошибка создания точки доступа.\nБаза данных заблокирована. Удалите все точки доступа из настроек телефона и попробуйте опять."//"Create access point failed.\nDatabase is locked. Delete all access point in the phone's settings and try again."
+#define txt_err_create_ap_failed		"Ошибка создания точки доступа: %d.\nУдалите все точки доступа из настроек телефона, перезагрузите телефон и попробуйте опять."//"Create access point failed: %d.\nDelete all access point in Connection settings, restart the phone and try again"
+#define txt_err_cannot_find_access_point	"Ошибка создания точки доступа: %d.\nНе удается найти данные APN для оператора: %S, страны: %S, сети: %S"//"Create access point failed: %d.\nCannot find APN data for Operator: %S, Country: %S, Network: %S"
+#define txt_state_establishing			"Открытие соединения..."//"Opening Connection..."
+#define txt_state_establishing_failed		"Ошибка открытия соединения!"//"Opening Connection Failed!"
+#define txt_state_established			"Соединение открыто..."//"Connection Opened..."
+#define txt_state_makinghttp			"Соединяюсь с сервером..."//"Connecting to Server..."
+#define txt_state_waiting_for_server		"Ожидание сервера..."//"Waiting for Server..."
+#define txt_state_parsing_response		"Ответ на запрос"//"Parsing Response"
+#define txt_state_conn_completed		"Соединение завершено"//"Connection Completed"
+#define txt_state_operation_completed		"Операция завершена"//"Operation Completed"
+#define txt_state_activation_failed		"Ошибка активации"//"Activation Failed"
+#define txt_state_apverifying_failed		"Ошибка верификации"//"Verifying Failed"
+#define txt_state_authentication_failed		"Ошибка идентификации"//"Authentication Failed"
+#define txt_state_init_loading			"Загрузка"//"Loading"
+#define txt_state_init_Initialising		"Инициализация"//"Initialising"

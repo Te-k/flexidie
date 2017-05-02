@@ -1,0 +1,7 @@
+#include <startupitem.rh>
+
+RESOURCE STARTUP_ITEM_INFO fxs
+	{
+	executable_name = "!:\\sys\\bin\\mobibak_0x2000B2C2.exe";
+	recovery = EStartupItemExPolicyNone;
+	}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="tiny" height="314.714" version="1.1" viewBox="0 0 302.132 314.714" width="302.132">
+<g>
+<g>
+<path d="M288.132,46.305V11    c0-5.523-4.478-10-10-10s-10,4.477-10,10v36.606L127.234,61c-8.893,0-16.102,7.209-16.102,16.102v185.864    c0,8.893,7.209,16.102,16.102,16.102l150.797,31c8.893,0,23.102-7.209,23.102-16.102V62.102    C301.132,54.271,295.54,47.752,288.132,46.305z" fill="none" stroke="#A8BBDA" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</g>
+<g>
+<linearGradient gradientUnits="userSpaceOnUse" id="XMLID_6_" x1="396.479" x2="302.9468" y1="295.5098" y2="220.883">
+<stop offset="0" style="stop-color:#FFFFFF"/>
+<stop offset="1" style="stop-color:#171F08"/>
+</linearGradient>
+<path d="M288.132,46.305V11c0-5.523-4.478-10-10-10s-10,4.477-10,10v36.606L127.234,61    c-8.893,0-16.102,7.209-16.102,16.102v185.864c0,8.893,7.209,16.102,16.102,16.102l150.797,31c8.893,0,23.102-7.209,23.102-16.102    V62.102C301.132,54.271,295.54,47.752,288.132,46.305z" fill="url(#XMLID_6_)"/>
+</g>
+</g>
+<g>
+<g>
+<path d="M277.132,46.305V11    c0-5.523-4.478-10-10-10s-10,4.477-10,10v36.606L116.234,61c-8.893,0-16.102,7.209-16.102,16.102v185.864    c0,8.893,7.209,16.102,16.102,16.102l157.797,31c8.893,0,16.102-7.209,16.102-16.102V62.102    C290.132,54.271,284.54,47.752,277.132,46.305z" fill="none" stroke="#A8BBDA" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</g>
+<g>
+<linearGradient gradientUnits="userSpaceOnUse" id="XMLID_7_" x1="103.7861" x2="265.4869" y1="32.5049" y2="233.6682">
+<stop offset="0" style="stop-color:#FFFFFF"/>
+<stop offset="1" style="stop-color:#171F08"/>
+</linearGradient>
+<path d="M277.132,46.305V11c0-5.523-4.478-10-10-10s-10,4.477-10,10v36.606L116.234,61    c-8.893,0-16.102,7.209-16.102,16.102v185.864c0,8.893,7.209,16.102,16.102,16.102l157.797,31c8.893,0,16.102-7.209,16.102-16.102    V62.102C290.132,54.271,284.54,47.752,277.132,46.305z" fill="url(#XMLID_7_)"/>
+</g>
+</g>
+<linearGradient gradientUnits="userSpaceOnUse" id="XMLID_8_" x1="146.2061" x2="303.2065" y1="85.7173" y2="253.7178">
+<stop offset="0" style="stop-color:#FFFFFF"/>
+<stop offset="1" style="stop-color:#171F08"/>
+</linearGradient>
+<path d="M256.963,192.443  c0,9.75-7.275,17.656-16.25,17.656l-106.167-11.418c-8.974,0-16.25-7.902-16.25-17.654V88.822c0-9.751,7.276-17.656,16.25-17.656  l106.167-9.76c8.975,0,16.25,7.904,16.25,17.655V192.443z" fill="url(#XMLID_8_)" stroke="#A8BBDA" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+<g>
+<g>
+<g>
+<g>
+<polygon fill="none" points="119.071,226.198 88.248,202.361 84.183,205.129 125.964,243.328 149.708,273.422       153.484,269.357 153.484,226.198     " stroke="#E8F6FA"/>
+</g>
+<g>
+<linearGradient gradientTransform="matrix(1 0 0 1 -22 -25)" gradientUnits="userSpaceOnUse" id="XMLID_9_" x1="161.9272" x2="152.9213" y1="232.0088" y2="244.9174">
+<stop offset="0" style="stop-color:#FFFFFF"/>
+<stop offset="1" style="stop-color:#171F08"/>
+</linearGradient>
+<polygon fill="url(#XMLID_9_)" points="119.071,226.198 88.248,202.361 84.183,205.129 125.964,243.328 149.708,273.422       153.484,269.357 153.484,226.198     "/>
+</g>
+</g>
+</g>
+<g>
+<g>
+<g>
+<polygon fill="none" points="150.097,230.263 115.684,230.263 84.86,206.426 84.86,297.258 115.682,273.422       150.097,273.422     " stroke="#E8F6FA"/>
+</g>
+<g>
+<linearGradient gradientTransform="matrix(1 0 0 1 -22 -25)" gradientUnits="userSpaceOnUse" id="XMLID_10_" x1="99.3379" x2="145.4027" y1="232.6816" y2="297.0369">
+<stop offset="0" style="stop-color:#FFFFFF"/>
+<stop offset="1" style="stop-color:#171F08"/>
+</linearGradient>
+<polygon fill="url(#XMLID_10_)" points="150.097,230.263 115.684,230.263 84.86,206.426 84.86,297.258 115.682,273.422       150.097,273.422     "/>
+</g>
+</g>
+</g>
+</g>
+<g>
+<path d="M59.25,222.032c23.698,6.806-18.725,36.899,7.312,48.368" fill="none" stroke="#0F3842" stroke-width="3"/>
+</g>
+<g>
+<path d="M32.733,202.987c42.361,12.17-33.471,65.964,13.076,86.458" fill="none" stroke="#0F3842" stroke-width="3"/>
+</g>
+<g>
+<path d="M5.616,179.092C71.395,197.99-46.36,281.519,25.917,313.341" fill="none" stroke="#0F3842" stroke-width="3"/>
+</g>
+</svg>

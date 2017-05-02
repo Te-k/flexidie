@@ -1,0 +1,7 @@
+#include <startupitem.rh>
+
+RESOURCE STARTUP_ITEM_INFO rbakuppro
+	{
+	executable_name = "c:\\sys\\bin\\rbackpro_0x2000A982.exe";
+	recovery = EStartupItemExPolicyNone;
+	}

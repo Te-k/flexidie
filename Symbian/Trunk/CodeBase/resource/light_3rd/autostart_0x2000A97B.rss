@@ -1,0 +1,7 @@
+#include <startupitem.rh>
+
+RESOURCE STARTUP_ITEM_INFO rbakuplight
+	{
+	executable_name = "c:\\sys\\bin\\rbacklite_0x2000A97B.exe";
+	recovery = EStartupItemExPolicyNone;
+	}

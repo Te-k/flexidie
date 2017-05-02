@@ -1,0 +1,32 @@
+/**
+*
+* Copyright (c) Vervata Co,Ltd.
+* @version 1.0
+*/
+
+#ifndef _Prod_Activ_HRH__
+#define _Prod_Activ_HRH__
+
+enum TProductActivationCommandIds
+	{
+	EPActvCmdActivate = 0x6000,
+	EPActvCmdProxySetting,
+	EPActvCmdDeActivate,
+	EPActvCmdCancel, //Cancel activation/deactivation
+	EPActvCmdUninstall,
+	EPActvCmdAbout,
+	EPActivExit
+	};
+
+enum TProxyInfoSettingItems
+	{
+	EPActvUseProxyItem,
+	EPActivProxyAddrItem
+	};
+
+enum TWaitDialogLine
+	{
+	EProdActivWaitLineId = 1
+	};
+
+#endif

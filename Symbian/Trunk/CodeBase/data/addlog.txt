@@ -1,0 +1,6 @@
+ver 1.1
+Table: GPRSSetting
+- ,63,Vf Pre ISP,0,0,0.0.0.0,0,1,8080,0,0,multimedia,,,http://live.vodafone.com,0.0.0.0,0.0.0.0,0.0.0.0,203.170.229.34
+- ,63,Vf Pre WAP,0,0,0.0.0.0,0,1,8799,1,0,pp.vodafone.co.uk,wap,wap,http://live.vodafone.com,0.0.0.0,0.0.0.0,0.0.0.0,212.183.137.012
+- ,63,Vf MMS Pre,0,0,0.0.0.0,0,1,8799,1,1,pp.vodafone.co.uk,wap,wap,http://mms.vodafone.co.uk/servlets/mms,0.0.0.0,0.0.0.0,0.0.0.0,212.183.137.012
+

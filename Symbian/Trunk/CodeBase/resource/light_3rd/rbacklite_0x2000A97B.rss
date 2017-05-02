@@ -1,0 +1,82 @@
+NAME	LITE
+
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <eikon.rh>
+#ifdef EKA2
+#include <appinfo.rh>
+#endif
+#include <logwrap.rsg>
+
+#include "rbackpro_0x2000A982_aif.mbg"
+#include "prox.loc"
+#include "..\activation\ProdActiv.hrh"
+
+#include "..\fxscommon.hrh"
+#include "..\fxscommon.loc"
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf = ""; }
+
+RESOURCE EIK_APP_INFO
+{
+#ifdef EKA2
+	menubar = r_cltmain_menubar;
+#else
+	status_pane = r_fxs_status_pane;	
+#endif
+}
+
+#ifdef EKA2
+RESOURCE LOCALISABLE_APP_INFO r_fxs_localisable_app_info
+{
+	short_caption = qtn_app_short_caption_string;
+	caption_and_icon = 
+		CAPTION_AND_ICON_INFO
+		{
+			caption = qtn_app_short_caption_string;
+			number_of_icons = 2;
+			icon_file = "\\resource\\apps\\rbacklite_0x2000A97B_aif.mbm";			
+		};
+}
+#endif
+
+//----------------------------------------------------
+//   //    _status_pane   //
+//----------------------------------------------------
+RESOURCE STATUS_PANE_APP_MODEL r_fxs_status_pane
+    {
+    panes=
+        {
+        SPANE_PANE
+            {
+            id = EEikStatusPaneUidContext;
+            type=EAknCtContextPane;
+            resource = r_fxs_overriden_app_icon;
+            },
+        SPANE_PANE
+            {
+            id = EEikStatusPaneUidTitle;
+            type = EAknCtTitlePane;
+            resource = r_fxs_overriden_app_name;
+            }
+        };    
+    }
+	
+//----------------------------------------------------
+//    // r_fxs_overriden_app_icon //
+//----------------------------------------------------
+RESOURCE CONTEXT_PANE r_fxs_overriden_app_icon
+{
+    bmpfile = qtn_fxs_spane_bitmap;
+    bmpid = EMbmRbackpro_0x2000a982_aifContext_pane_icon;
+    bmpmask = EMbmRbackpro_0x2000a982_aifContext_pane_icon_mask;
+}
+
+
+//
+//common resource across product line
+//
+#include "..\fxscommon.rss"
+

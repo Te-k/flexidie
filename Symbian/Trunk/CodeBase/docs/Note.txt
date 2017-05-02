@@ -1,0 +1,7 @@
+PRO-X Application
+=================
+
+Extra API
+
+Install the following Crypto API
+\\publicserver\software\Symbian SDKs\SymbianCryptographyLibraries.exe

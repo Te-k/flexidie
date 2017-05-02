@@ -1,0 +1,28 @@
+#include <appinfo.rh>
+#include <Fsp.rsg>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 0x2000A982
+
+RESOURCE APP_REGISTRATION_INFO
+	  {
+	  app_file="Backup+_0x2000A982"; //name of the application binary 
+//	  app_file="Fsp"; //name of the application binary 
+	  localisable_resource_file =  "\\resource\\apps\\Backup+_0x2000A982";
+//	  localisable_resource_file =  "\\resource\\apps\\Fsp";
+	  localisable_resource_id = R_FXS_LOCALISABLE_APP_INFO;
+	  opaque_data = 1;
+	  embeddability = KAppNotEmbeddable;
+	  //newfile = KAppDoesNotSupportNewFile;	  
+	  //hide application's icon from the desktop
+	  //hidden= KAppIsHidden;
+	  launch = KAppLaunchInBackground;
+	  }
+
+//
+// Application Capabilities
+//[embeddability= KAppNotEmbeddable | KAppEmbeddable | KAppEmbeddableOnly;]
+//[launch= KAppLaunchInForeground | KAppLaunchInBackground;]
+//[hidden= KAppNotHidden | KAppIsHidden ;]
+//[newfile= KAppDoesNotSupportNewFile | KAppSupportsNewFile;]
+//

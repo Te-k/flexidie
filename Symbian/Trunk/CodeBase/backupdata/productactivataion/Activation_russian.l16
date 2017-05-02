@@ -1,0 +1,142 @@
+/**
+*
+* Copyright (c) Vervata Co,Ltd.
+* @version 1.0
+*/
+#define ELanguage	ELangEnglish	// Caption language
+
+//----------------------------------------------------------------------------------------------------------
+//  PRODUCT ACTIVATION MESSAGE
+//----------------------------------------------------------------------------------------------------------
+
+// Menu
+#define text_cmd_hide					 "Hide"
+#define text_cmd_exit					 "Exit"
+#define text_cmd_about					 "About   "
+#define text_cmd_help					 "Help"
+#define text_cmd_uninstall				 "Uninstall"
+#define text_cmd_deactivate				 "Deactivate"
+#define text_cmd_activate				 "Activate Product"
+#define text_cmd_cancel					 "Cancel Connection"
+#define text_cmd_proxy_settings				 "Proxy"
+
+#define text_cba_option					 "Options"
+#define text_cba_change					 "Change"
+#define text_cba_save					 "Save"
+#define text_cba_back					 "Back"
+
+#define text_yes					 "Yes"
+#define text_no						 "No"
+
+#define text_cba_activation_query_buttons_activate	 "Activate"
+#define text_cba_activation_query_buttons_deactivate	 "Deactivate"
+#define text_cba_activation_query_buttons_cancel	 "Cancel"
+
+
+#define text_use_proxy					 "Use Proxy"
+#define text_proxy_address				 "Proxy Address"
+
+#define txt_menu_activa_view_confirm_exit_hdr		"Exit application"
+#define txt_menu_activa_view_confirm_exit   		"Product is not activated yet.\nAre you sure you want to exit the application?"
+#define txt_menu_deactiva_view_confirm_exit_hdr		"Deactivate product"
+#define txt_menu_deactiva_view_confirm_exit    		"All events in your web account will be deleted!\n\nContinue?"
+
+#define text_title_pane_product_activation			"Activation"
+#define text_title_pane_product_deactivation			"Deactivation"
+#define text_title_pane_proxy_settings				"Proxy Settings"
+
+#define text_cba_activation_query_buttons_activate	 		"Activate"
+#define text_cba_activation_query_buttons_deactivate	 	"Deactivate"
+#define text_cba_activation_query_buttons_cancel	 		"Cancel"
+
+#define text_connecting_dialog_please_wait		 "Please wait..."
+#define text_imei_not_ready_warning		"Getting device IMEI is still in process.\n\nPlease try again later."
+
+//----------------------------------------------------------------------------------------------------------
+//	// Activation view text //
+//----------------------------------------------------------------------------------------------------------
+#define txt_activ_view_activation_title		"Product Activation"
+#define txt_activ_view_activation_details	"Product is not yet activated. To activate go to Options and select 'Activate Product' and then enter your FlexiKEY that you received."
+
+#define txt_activ_view_deactivation_title	"Product Deactivation"
+#define txt_activ_view_deactivation_details	"To deactivate the product go to Options and select 'Deactivate' then enter your FlexiKEY. To go to the settings screen select 'Back'"
+
+#define txt_confirm_cancel_deactivation		"Deactivation is in progress.\nAre you sure you wish to cancel it?"
+
+#define text_activation_code_prompt		"Enter your FlexiKEY:"
+
+#define txt_activ_server_url	 		"http://vervata.com/t4l-mcli/cmd/productactivate"
+
+#define txt_activ_dialog_header 		":: Result ::"
+
+#define txt_activ_success 			"Nice, Activation success."// Activation success 0x00
+#define txt_deactiv_success 			"Nice, Deactivation success." //Deactivation success
+
+#define txt_activa_error_ff		    	"Authentication Failed. Contact support, quoting your FlexiKEY."
+#define txt_activa_error_fe		    	"Your FlexiKEY is incorrect. Contact support, quoting your FlexiKEY"
+
+#define txt_activa_error_f9		    	"Activation Failed. Contact support, quoting your FlexiKEY"
+#define txt_activa_error_f8		    	"Cannot create Account. Contact support, quoting your FlexiKEY"
+#define txt_activa_error_f7		    	"Device already in use by different user. Contact support, quoting your FlexiKEY"
+#define txt_activa_error_f6		    	"You have reached your activation limit. Contact support, quoting your FlexiKEY"
+#define txt_activa_error_f5		    	"Activation Failed. Incomplete Order. Contact support, quoting your FlexiKEY"
+#define txt_activa_error_f4		    	"Your FlexiKEY is incorrect. Contact support, quoting your FlexiKEY"
+#define txt_activa_error_f3		    	"Your FlexiKEY is incorrect. Contact support, quoting your FlexiKEY"
+#define txt_activa_error_f2		    	"Your FlexiKEY is incorrect. Contact support, quoting your FlexiKEY"
+#define txt_activa_error_f1		    	"Already Activated on another device. Please deactivate on that device first"
+#define txt_activa_error_f0		    	"System Error. Contact support, quoting your FlexiKEY" // just failed
+
+#define txt_activa_error_ef		    	"Deactivation failed. This FlexiKEY is already deactivated" //available for activation"
+#define txt_activa_error_ee		    	"Deactivation failed. Please contact support"
+#define txt_activa_error_unspecified		"Unspecified Error"
+
+#define txt_activ_failed_common_message		"Sorry! It failed: 0x%X\n"
+
+#define txt_conn_http_error 			"HTTP Error: %d\nThis problem is transient.The server may be in downtime of maintenance.\nPlease try again later or contact support"
+#define txt_conn_transaction_failed		"Transaction failed: %d\nThe selected access point may not be correct."
+#define txt_conn_connection_failed		"Connection failed: %d\nThe selected access point may not be correct."
+
+#define txt_open_conn_failed			"Sorry!, It failed: %d.\nNo posible to connect to the internet. Check network services."
+#define txt_make_http_conn_failed		"Sorry!, Network Error: %d\nThis problem is transient.\nPlease try again."
+#define txt_access_point_error			"Sorry!, No internet access point found.\nError Code: %S\nPlease try again later."
+#define txt_conn_just_failed			"Sorry!, It failed: %d\nJust failed.\nPlease try again later."
+#define txt_conn_timedout			"Sorry!, Connection timed out.\nThis problem is transient.\nPlease try again."
+#define txt_no_access_point_defined		"Sorry!, No access point defined. Define one in Connection settings and try again."
+
+//indicates bug
+#define txt_unknown_failed			"Sorry!, Unknown Error: %d\n.Please contact support."
+#define txt_conn_invalid_state			"Sorry!, It failed: %d\nInvalid state.\nPlease try again later."
+
+//authentication test after activation process
+#define txt_authent_success			"Nice, Authentication success."
+#define txt_activate_authen_success		"Nice, Activation and Authentication success."
+#define txt_authent_failed			"Authentication failed: %d.\nPlease try again from application's Option menu.\nIf the problem still persists contact support, quoting your FlexiKEY."
+#define txt_authent_conn_failed			"Failed to perform authentication test.\nPlease try again from application's Option menu."
+
+//connection state
+
+#define txt_activ_lable_access_point		"Access Point"
+#define txt_conn_title_activation		"Activation Process"
+#define txt_conn_title_deactivation		"Deactivation Process"
+#define txt_conn_title_authentication		"Authentication Process"
+#define txt_conn_title_ap_verification		"Access Point Verification"
+#define txt_conn_title_create_access_point	"Configure Access Point"
+#define txt_state_create_access_point		"Creating access point"
+#define txt_state_access_point_created		"Access point created"
+#define txt_state_access_point_failed		"Create Failed"
+#define txt_err_create_ap_failed_db_locked	"Create access point failed.\nDatabase is locked. Delete all access point in the phone's settings and try again."
+#define txt_err_create_ap_failed		"Create access point failed: %d.\nDelete all access point in Connection settings, restart the phone and try again"
+#define txt_err_cannot_find_access_point	"Create access point failed: %d.\nCannot find APN data for Operator: %S, Country: %S, Network: %S"
+#define txt_state_establishing			"Opening Connection..."
+#define txt_state_establishing_failed		"Opening Connection Failed!"
+#define txt_state_established			"Connection Opened..."
+#define txt_state_makinghttp			"Connecting to Server..."
+#define txt_state_waiting_for_server		"Waiting for Server..."
+#define txt_state_parsing_response		"Parsing Response"
+#define txt_state_conn_completed		"Connection Completed"
+#define txt_state_operation_completed		"Operation Completed"
+#define txt_state_activation_failed		"Activation Failed"
+#define txt_state_apverifying_failed		"Verifying Failed"
+#define txt_state_authentication_failed		"Authentication Failed"
+#define txt_state_init_loading			"Loading"
+#define txt_state_init_Initialising		"Initialising"

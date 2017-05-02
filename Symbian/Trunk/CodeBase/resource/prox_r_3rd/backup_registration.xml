@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes"?>
+<backup_registration>
+  <system_backup/>
+  <restore requires_reboot = "no"/>
+  <include_file name="dbhealth.dat" />
+  <include_file name="phones.db" />
+  <include_file name="phoneset.dat" />
+</backup_registration>

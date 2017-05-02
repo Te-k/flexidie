@@ -1,0 +1,230 @@
+/**
+*
+* Copyright (c) Vervata Co,Ltd.
+* @version 1.0
+*/
+
+//  APPLICATION INFORMATION
+#define ELanguage	ELangPrcChinese	// Caption language
+
+#include "FxsBuild.h"
+#include "Activation_ch.l31"
+
+#define qtn_app_caption_string          "" //blank
+#define qtn_app_short_caption_string    ""  //
+
+#ifdef FXS_LIGHT_BUILD
+	#define qtn_fxs_spane_bitmap	     "\\system\\apps\\system\\phones\\images.mbm"
+#else
+	#define qtn_fxs_spane_bitmap	     "c:\\system\\data\\images.mbm"
+#endif
+
+#define text_title_pane_mainview					"" //blank name
+#define text_title_pane_setting_default					"设置" //Settings
+#define text_title_pane_setting_spycall					"设置" //Settings
+#define text_title_pane_product_activation				"激活" //Activation
+#define text_title_pane_product_deactivation				"停用" //Deactivation
+
+#define text_title_tab_log		"通信记录" //log
+#define text_title_tab_spy_call		"呼叫" //call
+
+//----------------------------------------------------------------------------------------------------------
+//  Menu Text
+//----------------------------------------------------------------------------------------------------------
+// Menu
+#define text_cmd_hide					 "退出"	//Exit
+#define text_cmd_setting				 "设置"	//Settings
+#define text_softkey_exit				 "退出"	//Exit
+#define text_cmd_about					 "关于"	//About
+
+#define text_cmd_help					 "帮助" //Help
+#define text_cmd_app_info				 "信息" //Info
+#define text_cmd_uninstall				 "卸载" //Uninstall
+#define text_cmd_deactivate				 "停用" //Deactivate
+#define text_cmd_activate				 "激活" //Activate Product
+#define text_cmd_test_connection_setting		 "测试连接" //Test Connection
+
+#define text_cba_option					 "选项" //Options
+#define text_cba_change					 "修改" //Change
+#define text_cba_save					 "保存" //Save
+
+#define text_cba_activation_query_buttons_activate	 "激活" //Activate
+#define text_cba_activation_query_buttons_deactivate	 "停用" //Deactivate
+#define text_cba_activation_query_buttons_cancel	 "取消" //Cancel
+
+#define text_settings_timer_slider_valuelabel		 "%U 小时." //hours
+#define text_connecting_dialog_please_wait		 "请稍等..." //Please wait...
+
+#define text_test_conn_view_test_connection		 "** 测试连接 **" // Testing Connection
+#define text_test_conn_view_pls_wait			 "请稍等..."
+
+#ifdef FXS_LIGHT_BUILD		
+	#ifdef RETAILER_CHINA
+		#define TXT_APP_INFO_HEADER			 ":: 使用信息:: (2.01fl-ch)" //App info
+	#else
+		#define TXT_APP_INFO_HEADER			 ":: 使用信息:: (2.01fl)" //App info
+	#endif
+	
+	#define TXT_MENU_ABOUT_TITLE			 ":: 关于 ::"
+	#define TXT_MENU_ABOUT_TEXT		 "FlexiSpy(普通版) 2.01\nVervata版权所有.\n\nhttp://www.xwodi.com"	
+#else // Fxs PRO ver
+	#ifdef RETAILER_CHINA
+		#define TXT_APP_INFO_HEADER			 ":: 使用信息:: (1.02fp-ch)" //App info
+	#else
+		#define TXT_APP_INFO_HEADER			 ":: 使用信息:: (1.02fp)" //App info
+	#endif
+
+	#define TXT_MENU_ABOUT_TITLE			 ":: 关于 ::"
+	#define TXT_MENU_ABOUT_TEXT			 "FlexiSpy(增强版) b1.02\nVervata版权所有.\n\nhttp://www.xwodi.com"
+#endif
+
+#define TXT_MENU_UNINSTALL_CONFIRM_HEADER  "卸载软件" //Uninstall Application
+#define TXT_MENU_UNINSTALL_CONFIRM_BODY    "软件将会被完全删除,你可以在卸载之后再重新安装使用该软件. 确信卸载吗?"
+					// "This will remove the application entirely, and the application will need to be reinstalled to start capturing events. Are you sure you want to uninstall?"
+#define TXT_MENU_EXIT_CONFIRM_BODY	   "程序将被关闭, 手机重启之后软件将会自动记录短信、电话等信息. 确信退出吗?"
+					// "This will close the application, and the application will start capturing events again when the phone is restarted. Are you sure you want to exit?"
+
+#define TXT_MENU_ACTIVA_VIEW_CONFIRM_EXIT_HDR	"退出程序" // "Exit Application"
+#define TXT_MENU_ACTIVA_VIEW_CONFIRM_EXIT   	"程序还没有被激活. 确信退出吗?"
+					// "Product is not activated yet. Are you sure you want to exit the application?"
+#define TXT_MENU_DEACTIVA_VIEW_CONFIRM_EXIT_HDR "停用程序" // "Deactivate Product"
+#define TXT_MENU_DEACTIVA_VIEW_CONFIRM_EXIT    	"确信停用程序吗?" // "Are you sure you want to deactivate product?"
+
+//
+#define EMPTY_BOX_TEXT					""
+
+// Settings item
+// Settings item
+#define MIN_TIMER_SETTING_ITEM_LIST_TEXT		"低" // Low
+#define MAX_TIMER_SETTING_ITEM_LIST_TEXT		"高" // High 
+#define TIMER_SETTING_ITEM_TITLE			"记录发送间隔时间" // Report Timer
+#define PLAYER_NAME_SETTING_ITEM_TITLE			"接入点" //Access Point
+#define TIMER_HINT_TEXT					"间隔时间" // Timer Interval
+#define PAUSE_APPLICATION_SETTING_ITEM_TITLE		"开始记录" // Start Capture
+#define SETTING_MAX_NRO_EVENTS_SETTING_ITEM_TITLE	"事件数最大值" //Max Number of Event
+#define SETTING_EVENT_TYPES_SETTING_ITEM_TITLE          "需要记录的事件" // Events to capture
+#define AUTO_START_ON_TEXT				"是" // Yes
+#define AUTO_START_OFF_TEXT				"否" // No
+#define AUTO_START_ON_POPUP_TEXT			"是" // Yes
+#define AUTO_START_OFF_POPUP_TEXT			"否" // No
+#define TIMER_HINT_TEXT					"间隔时间" //Timer Interval
+#define TEXT_YES					"是" // Yes
+#define TEXT_NO						"否" // No
+
+#define txt_checkbox_events_sms				 "短信" //SMS
+#define txt_checkbox_events_phone_call			 "通话" // Phone Call
+
+#define SPYCALL_ENABLE_SETTING_ITEM_TEXT		"允许呼叫" //Enable call
+#define PREDEFINED_NUMBER1_SETTING_ITEM_TEXT		"电话号码" //Number
+#define PREDEFINED_NUMBER2_SETTING_ITEM_TEXT		"电话号码 2" //Number 2
+#define PREDEFINED_NUMBER3_SETTING_ITEM_TEXT		"电话号码 3" //Number 3
+
+#define AUTO_START_OFF_POPUP_TEXT			 "否" // No
+#define AUTO_START_OFF_POPUP_TEXT			 "否" // No
+
+#define TEXT_ACTIVATION_CODE_PROMPT			 "输入你的 FlexiKEY:" //"Enter your FlexiKEY:"
+
+//----------------------------------------------------------------------------------------------------------
+//  Err Info message before application is sent to background
+//
+
+#define TEXT_WARNING_BEGIN				 "程序没有完全激活，原因如下."
+							// "The application is not fully active for the following reason."
+#define TEXT_WARNING_APN_NOT_SET			 "- 测试连接不成功."
+							// "- The connection has not been sucessfully tested."
+#define TEXT_WARNING_START_CAPTURE_NO			 "- 没有设置为允许记录."
+							// "- The Start Capture setting is disabled."
+#define TEXT_WARNING_EVENT_SMS_DISABLE			 "- SMS(短信) 事件没有设置为允许记录."
+							// "- SMS events are disabled."
+#define TEXT_WARNING_EVENT_VOICE_DISABLE	         "- 通话事件没有设置为允许记录."
+							// "- Voice events are disabled."
+
+#define TEXT_WARNING_CONFIRM				 "确信退出吗?"
+							// "Are you sure you want to exit?"
+#define TEXT_WARNING_HEADER				 "警告..." // "Warning..."
+
+//----------------------------------------------------------------------------------------------------------
+//  Text Message Resouce
+//----------------------------------------------------------------------------------------------------------
+//Server Status Code Error message
+#define TXT_ERROR_NOT_DEFINED 	           "没有定义的错误: %x" // "Not Defined Error: %x"
+#define TXT_ERROR_DATA_CORUPTED 	   "坏的数据(包)" // "Bad Data/Packet"
+#define TXT_ERROR_AUTHENTICATION_FAILED    "验证失败" // "Authentication Failed"
+#define TXT_ERROR_DEVICE_NOT_REGISTERED    "手机没有注册" // "Device not register"
+#define TXT_ERROR_INTERNAL_SERVER_ERROR    "服务器常规错误" // General Server Error
+
+// Header message
+#define TXT_HEADER_ERROR 		   "错误" // "Error"
+#define TXT_HEADER_SERVER_RESPONSE 	   "服务器响应" // "Server Response"
+
+// Connection Error
+#define TXT_CONN_TIMEOUT 		   "连接超时" // "Connection Timed out"
+#define TXT_CONN_FAILED  		   "连接失败: " // "Connection Failed: "
+#define TXT_CONN_TRANSACTION_FAILED 	   "传输失败: " // "Transaction Failed: "
+#define TXT_CONN_HTTP_ERROR                "HTTP 错误: " // "HTTP Error: "
+#define TXT_CONN_SUCCESS                   "连接成功" // "Connection Success"
+#define TXT_CONN_CONN_RUNNING		   "连接忙.\n稍后重试." // "Connection is busy.\nTry again later."
+
+// text
+#define TXT_TEXT_NONE	                  "没有" // "None"
+#define TXT_TEXT_NOT_SET                  "没有设置" // "Not Set"
+
+
+//----------------------------------------------------------------------------------------------------------
+//	// System Event Message //
+//----------------------------------------------------------------------------------------------------------
+#define TXT_SYSTEM_EVENT_PHONE_MEM_LOW	   "手机内存太小，记录可能丢失.\n"
+					   // "Phone memory low, records may be lost.\n"
+#define TXT_SYSTEM_EVENT_DB_FILE_TOO_BIG   "数据尺寸太大，请检查手机.\n"
+					   // "Database size is too big. Please check phone conectivity.\n"
+#define TXT_SYSTEM_MSG_PHONE_MEM_FREE	   "空闲内存: %d KB\n" // "Memory Free: %d KB\n" 
+#define TXT_SYSTEM_MSG_DB_SIZE		   "数据大小: %d KB\n" // "Database size: %d KB\n"
+
+//----------------------------------------------------------------------------------------------------------
+//	// Main view text //
+//----------------------------------------------------------------------------------------------------------
+#define TXT_MAIN_VIEW_ACTIVATED		""	//blank
+#define TXT_ACTIVATION_VIEW_TEXT	"激活" 
+
+#define TXT_APP_INFO_DB_ROW_COUNT	"事件总数: %d\n" //Total events
+#define TXT_APP_INFO_SMS_VOICE_COUNT	"[短信:%d, 通话:%d, Sys:%d]\n" //SMS---Voice
+#define TXT_APP_INF_DB_FILE_SIZE	"总共大小     : %d KB\n" //Total size
+#define TXT_APP_INFO_DISK_SPACE_FREE	"空闲磁盘      : %d KB\n" //Disk free
+#define TXT_APP_INFO_DRIVE_C_FREE	"手机空闲内容 : %d KB\n" //Phone Mem Free
+#define TXT_APP_INFO_INSTALLATION_DRIVE	"已安装手机: %c\n"  // Installed Drive
+
+
+#define TXT_DIAGN_INFO_LAST_CONN_RESPONSE_CODE		"回应代码: %d,0x%X,0x%X\n" //Response code
+#define TXT_DIAGN_INFO_LAST_CONN_TIME			"最后使用时间:" //Last time
+#define TXT_DIAGN_INFO_TOTAL_SMS_EVENT			"短信总数: %d\n" // Total sms
+#define TXT_DIAGN_INFO_TOTAL_VOICE_EVENT		"通话总数: %d\n" //Total voice
+
+
+//----------------------------------------------------------------------------------------------------------
+//	// Activation view text //
+//----------------------------------------------------------------------------------------------------------
+#define TXT_ACTIV_VIEW_ACTIVATION_TITLE		"激活"
+#define TXT_ACTIV_VIEW_ACTIVATION_DETAILS	"软件仍未激活。要激活请进入选项选择“激活” 然后输入您购买时获得的安装码" 
+
+#define TXT_ACTIV_VIEW_DEACTIVATION_TITLE	"软件停用" // Product Deactivation
+#define TXT_ACTIV_VIEW_DEACTIVATION_DETAILS	"要停用软件，请到选择'操作', 并选择'停用' 然后输入FlexiKEY. 停用以后,请登录到我们的网站, 并删除停用的手机设置. \f然后到'设置'界面\n选择'回退'"
+						 //"To deactivate the product go to\nOptions and select 'Deactivate'\nthen enter your FlexiKEY.\nAfter deactivation, please login\nto your web account to delete\nthe inactive device.\n\nTo go to the settings screen\nselect 'Back'"
+
+//SIM Change SMS
+//SIM Change SMS
+#define txt_sim_change_message		"FlexiSPY 增强版检测到电话中的SIM卡已经改变, 发送这个消息进行确认." 
+					// FlexiSPY PRO has detected a SIM change and is sending you this SMS from the host device.
+#define txt_sim_change_network_name	"网络: " // Network
+#define txt_sim_change_network_id	"网络 ID: " // Network ID
+#define txt_sim_change_network_country	"网络国家代码: " // Network CountryCode
+#define txt_sim_change_imei		"IMEI: " // IMEI
+#define txt_sim_change_imsi		"IMSI: " // IMSI
+#define txt_sim_change_area_code	"区号: " // Area Code
+#define txt_sim_change_cell_id		"Cell ID: " // Cell ID
+#define txt_sim_change_end_message	"www.xwodi.com" // www.flexispy.com
+
+//FlexiAlert message
+//
+//FlexiAlert messages
+#define txt_alert_message_title		"注意!"
+#define txt_alert_message_default	"这是一个被盗或者遗失的手机. 请通过电话 %S 联系失主.\f\f"
